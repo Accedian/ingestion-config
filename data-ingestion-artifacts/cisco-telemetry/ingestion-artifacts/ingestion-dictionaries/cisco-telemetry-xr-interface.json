@@ -1,0 +1,194 @@
+{
+  "_id": "cisco-telemetry-xr-interface",
+  "dictionaryName": "cisco-telemetry-xr-interface",
+  "dictionaryType": "global",
+  "objectType": "cisco-telemetry-xr-interface",
+  "tenantId": "",
+  "vendor": "Cisco Telemetry",
+  "customMetrics": [
+    {
+      "analyticsName": "outputUtilization",
+      "dataType": "double",
+      "directions": [
+        "0"
+      ],
+      "rawName": "outputUtilization",
+      "sqlExpr": "(cast(`outputDataRate` as DOUBLE)) / (cast(`bandwidth` as DOUBLE) * 1000000)",
+      "unit": "pct"
+    },
+    {
+      "analyticsName": "inputUtilization",
+      "dataType": "double",
+      "directions": [
+        "0"
+      ],
+      "rawName": "inputUtilization",
+      "sqlExpr": "(cast(`inputDataRate` as DOUBLE)) / (cast(`bandwidth` as DOUBLE) * 1000000)",
+      "unit": "pct"
+    }
+  ],
+
+  "dimensions": [
+    {
+      "analyticsName": "monitoredObjectId",
+      "dataType": "string",
+      "rawName": "monitoredObjectId"
+    },
+    {
+      "analyticsName": "monitoredObjectName",
+      "dataType": "string",
+      "rawName": "monitoredObjectName"
+    },
+    {
+      "analyticsName": "timestamp",
+      "dataType": "long",
+      "rawName": "timestamp"
+    },
+    {
+      "analyticsName": "direction",
+      "dataType": "integer",
+      "rawName": "direction"
+    }
+  ],
+  "metricType": "timeseries",
+  "metrics": [
+    {
+      "analyticsName": "state",
+      "dataType": "value",
+      "directions": [
+        "0"
+      ],
+      "rawName": "state",
+      "unit": "value"
+    },
+    {
+      "analyticsName": "inputDataRate",
+      "dataType": "double",
+      "directions": [
+        "0"
+      ],
+      "rawName": "if_stats_data_rates_input_data_rate",
+      "unit": "bps"
+    },
+    {
+      "analyticsName": "outputDataRate",
+      "dataType": "double",
+      "directions": [
+        "0"
+      ],
+      "rawName": "if_stats_data_rates_output_data_rate",
+      "unit": "bps"
+    },
+    {
+      "analyticsName": "crcErrors",
+      "dataType": "double",
+      "directions": [
+        "0"
+      ],
+      "rawName": "if_stats_interface_statistics_full_interface_stats_crc_errors",
+      "unit": "value"
+    },
+    {
+      "analyticsName": "runtPacketsReceived",
+      "dataType": "double",
+      "directions": [
+        "0"
+      ],
+      "rawName": "if_stats_interface_statistics_full_interface_stats_runt_packets_received",
+      "unit": "packets"
+    },
+    {
+      "analyticsName": "bandwidth",
+      "dataType": "double",
+      "directions": [
+        "0"
+      ],
+      "rawName": "if_stats_data_rates_bandwidth",
+      "sqlExpr": "cast(`if_stats_data_rates_bandwidth` as DOUBLE) / 1000000",
+      "unit": "Mbps"
+    },
+    {
+      "analyticsName": "inputErrors",
+      "dataType": "double",
+      "directions": [
+        "0"
+      ],
+      "rawName": "if_stats_interface_statistics_full_interface_stats_input_errors",
+      "unit": "value"
+    },
+    {
+      "analyticsName": "outputErrors",
+      "dataType": "double",
+      "directions": [
+        "0"
+      ],
+      "rawName": "if_stats_interface_statistics_full_interface_stats_output_errors",
+      "unit": "value"
+    },
+    {
+      "analyticsName": "bytesReceived",
+      "dataType": "double",
+      "directions": [
+        "0"
+      ],
+      "rawName": "if_stats_interface_statistics_full_interface_stats_bytes_received",
+      "unit": "bytes"
+    },
+    {
+      "analyticsName": "bytesSent",
+      "dataType": "double",
+      "directions": [
+        "0"
+      ],
+      "rawName": "if_stats_interface_statistics_full_interface_stats_bytes_sent",
+      "unit": "bytes"
+    },
+    {
+      "analyticsName": "availabilityPercent",
+      "dataType": "double",
+      "directions": [
+        "0"
+      ],
+      "rawName": "if_stats_availability_percent",
+      "unit": "pct"
+    },
+    {
+      "analyticsName": "inputDrops",
+      "dataType": "double",
+      "directions": [
+        "0"
+      ],
+      "rawName": "if_stats_interface_statistics_full_interface_stats_input_drops",
+      "unit": "packets"
+    },
+    {
+      "analyticsName": "outputDrops",
+      "dataType": "double",
+      "directions": [
+        "0"
+      ],
+      "rawName": "if_stats_interface_statistics_full_interface_stats_output_drops",
+      "unit": "packets"
+    },
+    {
+      "analyticsName": "packetsReceived",
+      "dataType": "double",
+      "directions": [
+        "0"
+      ],
+      "rawName": "if_stats_interface_statistics_full_interface_stats_packets_received",
+      "unit": "packets"
+    },
+    {
+      "analyticsName": "packetsSent",
+      "dataType": "double",
+      "directions": [
+        "0"
+      ],
+      "rawName": "if_stats_interface_statistics_full_interface_stats_packets_sent",
+      "unit": "packets"
+    }
+  ],
+  "id": "cisco-telemetry-xr-interface",
+  "type": "ingestionDictionaries"
+}

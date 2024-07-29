@@ -1,0 +1,232 @@
+scrape_configs:
+- job_name: cisco-telemetry-xr-ipsla
+  relabel_configs:
+  - source_labels: [ sessionId ]
+    target_label: monitoredObjectId
+  - source_labels: [ sessionName ]
+    target_label: monitoredObjectName
+
+  - source_labels: [_name_]
+    regex: 'ipsla_common_stats_max_response_time'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_common_stats_min_response_time'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_common_stats_response_time'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_common_stats_response_time_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_jitter_in'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_jitter_in'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_jitter"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_jitter_out'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_jitter_out'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_jitter"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_negative_ds_max'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_negative_ds_max'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_negative_max"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_negative_sd_max'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_negative_sd_max'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_negative_max"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_negative_ds_min'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_negative_ds_min'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_negative_min"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_negative_sd_min'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_negative_sd_min'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_negative_min"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_positive_ds_sum'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_positive_ds_sum'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_positive_sum"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_positive_sd_sum'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_positive_sd_sum'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_positive_sum"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_negative_ds_sum'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_negative_ds_sum'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_negative_sum"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_negative_sd_sum'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_negative_sd_sum'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_negative_sum"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_negative_ds_count'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_negative_ds_count'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_negative_count"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_negative_sd_count'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_negative_sd_count'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_negative_count"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_positive_ds_count'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_positive_ds_count'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_positive_count"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_positive_sd_count'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_positive_sd_count'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_positive_count"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_one_way_ds_max'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_one_way_ds_max'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_one_way_max"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_one_way_sd_max'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_one_way_sd_max'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_one_way_max"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_one_way_ds_min'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_one_way_ds_min'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_one_way_min"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_one_way_sd_min'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_one_way_sd_min'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_one_way_min"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_packet_loss_ds'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_packet_loss_ds'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_packet_loss"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_packet_loss_sd'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_packet_loss_sd'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_packet_loss"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_packet_late_arrivals'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_packet_mia'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_packet_out_of_sequence'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_packet_skipped'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_positive_ds_max'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_positive_ds_max'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_positive_max"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_positive_sd_max'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_positive_sd_max'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_positive_max"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_positive_ds_min'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_positive_ds_min'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_positive_min"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_positive_sd_min'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_specific_stats_udp_jitter_stats_positive_sd_min'
+    target_label: _name_
+    replacement: "ipsla_specific_stats_udp_jitter_stats_positive_min"

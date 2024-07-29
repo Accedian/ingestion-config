@@ -1,0 +1,118 @@
+{
+    "_id": "cisco-telemetry-xr-dmm",
+    "_rev": "",
+    "dictionaryName": "cisco-telemetry-xr-dmm",
+    "dictionaryType": "global",
+    "tenantId": "",
+    "objectType": "cisco-telemetry-xr-dmm",
+    "vendor": "Cisco Telemetry",
+    "dimensions": [
+      {
+        "analyticsName": "monitoredObjectId",
+        "dataType": "string",
+        "rawName": "monitoredObjectId"
+      },
+      {
+        "analyticsName": "monitoredObjectName",
+        "dataType": "string",
+        "rawName": "monitoredObjectName"
+      },
+      {
+        "analyticsName": "timestamp",
+        "dataType": "long",
+        "rawName": "timestamp"
+      },
+      {
+        "analyticsName": "direction",
+        "dataType": "integer",
+        "rawName": "direction"
+      },
+      {
+        "analyticsName": "objectType",
+        "dataType": "string",
+        "rawName": "objectType"
+      }
+    ],
+    "metricType": "timeseries",
+    "metrics": [
+      {
+        "analyticsName": "jitterAverage",
+        "dataType": "double",
+        "directions": [
+          "0",
+          "1"
+        ],
+        "rawName": "sla_stats_metric_one_way_jitter_operation_metric_bucket_average",
+        "unit": "μs"
+      },
+      {
+        "analyticsName": "jitterMaximum",
+        "dataType": "double",
+        "directions": [
+          "0",
+          "1"
+        ],
+        "rawName": "sla_stats_metric_one_way_jitter_operation_metric_bucket_maximum",
+        "unit": "μs"
+      },
+      {
+        "analyticsName": "jitterMinimum",
+        "dataType": "double",
+        "directions": [
+          "0",
+          "1"
+        ],
+        "rawName": "sla_stats_metric_one_way_jitter_operation_metric_bucket_minimum",
+        "unit": "μs"
+      },
+      {
+        "analyticsName": "jitterStandardDeviation",
+        "dataType": "double",
+        "directions": [
+          "0",
+          "1"
+        ],
+        "rawName": "sla_stats_metric_one_way_jitter_operation_metric_bucket_standard_deviation",
+        "unit": "μs"
+      },
+      {
+        "analyticsName": "delayAverage",
+        "dataType": "double",
+        "directions": [
+          "2"
+        ],
+        "rawName": "sla_stats_metric_round_trip_delay_operation_metric_bucket_average",
+        "unit": "μs"
+      },
+      {
+        "analyticsName": "delayMaximum",
+        "dataType": "double",
+        "directions": [
+          "2"
+        ],
+        "rawName": "sla_stats_metric_round_trip_delay_operation_metric_bucket_maximum",
+        "unit": "μs"
+      },
+      {
+        "analyticsName": "delayMinimum",
+        "dataType": "double",
+        "directions": [
+          "2"
+        ],
+        "rawName": "sla_stats_metric_round_trip_delay_operation_metric_bucket_minimum",
+        "unit": "μs"
+      },
+      {
+        "analyticsName": "delayStandardDeviation",
+        "dataType": "double",
+        "directions": [
+          "2"
+        ],
+        "rawName": "sla_stats_metric_round_trip_delay_operation_metric_bucket_standard_deviation",
+        "unit": "μs"
+      }
+    ],
+    "customMetrics": [],
+    "id": "cisco-telemetry-xr-dmm",
+    "type": "ingestionDictionaries"
+}
