@@ -76,15 +76,15 @@
       "unit": "bps"
     },
     {
-      "analyticsName": "generalStatsTotalTransmitRate",
+      "analyticsName": "generalStatsTotalTransmitRatePercent",
       "dataType": "double",
       "directions": [
         "0",
         "1"
       ],
-      "rawName": "generalStatsTotalTransmitRate",
+      "rawName": "generalStatsTotalTransmitRatePercent",
       "sqlExpr": "if(isnull(`policy_stats_class_stats_general_stats_total_transmit_rate`), ((cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_total_transmit_rate` as DOUBLE) * 1000) / (cast(`meta.bandwidth` as DOUBLE) * 1000)), ((cast(`policy_stats_class_stats_general_stats_total_transmit_rate` as DOUBLE) * 1000) / (cast(`meta.bandwidth` as DOUBLE) * 1000)))",
-      "unit": "pct"
+      "unit": "ratio"
     },
     {
       "analyticsName": "policeStatsConformRatePercent",
@@ -95,7 +95,7 @@
       ],
       "rawName": "policeStatsConformRatePercent",
       "sqlExpr": "if(isnull(`policy_stats_class_stats_police_stats_array_conform_rate`), ((cast(`policy_stats_class_stats_child_policy_class_stats_police_stats_array_conform_rate` as DOUBLE) * 1000) / (cast(`meta.bandwidth` as DOUBLE) * 1000)), ((cast(`policy_stats_class_stats_police_stats_array_conform_rate` as DOUBLE) * 1000) / (cast(`meta.bandwidth` as DOUBLE) * 1000)))",
-      "unit": "pct"
+      "unit": "ratio"
     },
     {
       "analyticsName": "policeStatsExceedRatePercent",
@@ -106,7 +106,7 @@
       ],
       "rawName": "policeStatsExceedRatePercent",
       "sqlExpr": "if(isnull(`policy_stats_class_stats_police_stats_array_exceed_rate`), ((cast(`policy_stats_class_stats_child_policy_class_stats_police_stats_array_exceed_rate` as DOUBLE) * 1000) / (cast(`meta.bandwidth` as DOUBLE) * 1000)), ((cast(`policy_stats_class_stats_police_stats_array_exceed_rate` as DOUBLE) * 1000) / (cast(`meta.bandwidth` as DOUBLE) * 1000)))",
-      "unit": "pct"
+      "unit": "ratio"
     },
     {
       "analyticsName": "generalStatsTotalDropRatePercent",
@@ -117,7 +117,7 @@
       ],
       "rawName": "generalStatsTotalDropRatePercent",
       "sqlExpr": "if(isnull(`policy_stats_class_stats_general_stats_total_drop_rate`), ((cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_rate` as DOUBLE) * 1000) / (cast(`meta.bandwidth` as DOUBLE) * 1000)), ((cast(`policy_stats_class_stats_general_stats_total_drop_rate` as DOUBLE) * 1000) / (cast(`meta.bandwidth` as DOUBLE) * 1000)))",
-      "unit": "pct"
+      "unit": "ratio"
     },
     {
       "analyticsName": "generalStatsTransmitPackets",
@@ -128,7 +128,7 @@
       ],
       "rawName": "generalStatsTransmitPackets",
       "sqlExpr": "if(isnull(`policy_stats_class_stats_general_stats_transmit_packets`), (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_packets` as DOUBLE)), (cast(`policy_stats_class_stats_general_stats_transmit_packets` as DOUBLE)))",
-      "unit": "pct"
+      "unit": "packets"
     },
     {
       "analyticsName": "generalStatsTransmitBytes",
@@ -139,7 +139,7 @@
       ],
       "rawName": "generalStatsTransmitBytes",
       "sqlExpr": "if(isnull(`policy_stats_class_stats_general_stats_transmit_bytes`), (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_bytes` as DOUBLE) * 1000), (cast(`policy_stats_class_stats_general_stats_transmit_bytes` as DOUBLE) * 1000))",
-      "unit": "pct"
+      "unit": "bytes"
     },
     {
       "analyticsName": "generalStatsDropPacketsIn",
@@ -148,12 +148,12 @@
         "0",
         "1"
       ],
-      "rawName": "generalStatsDropPackets",
+      "rawName": "generalStatsDropPacketsIn",
       "sqlExpr": "if(isnull(`policy_in_stats_class_stats_general_stats_total_drop_packets`), (cast(`policy_in_stats_class_stats_child_policy_class_stats_general_stats_total_drop_packets` as DOUBLE)), (cast(`policy_in_stats_class_stats_general_stats_total_drop_packets` as DOUBLE)))",
-      "unit": "pct"
+      "unit": "packets"
     },
     {
-      "analyticsName": "generalStatsDropBytesIn",
+      "analyticsName": "generalStatsDropBytes",
       "dataType": "double",
       "directions": [
         "0",
@@ -161,7 +161,7 @@
       ],
       "rawName": "generalStatsDropBytes",
       "sqlExpr": "if(isnull(`policy_stats_class_stats_general_stats_total_drop_bytes`), (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes` as DOUBLE)* 1000), (cast(`policy_stats_class_stats_general_stats_total_drop_bytes` as DOUBLE) * 1000))",
-      "unit": "pct"
+      "unit": "bytes"
     },
     {
       "analyticsName": "generalStatsDropPackets",
@@ -172,19 +172,19 @@
       ],
       "rawName": "generalStatsDropPackets",
       "sqlExpr": "if(isnull(`policy_stats_class_stats_general_stats_total_drop_packets`), (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_packets` as DOUBLE)), (cast(`policy_stats_class_stats_general_stats_total_drop_packets` as DOUBLE)))",
-      "unit": "pct"
+      "unit": "packets"
     },
     {
-      "analyticsName": "generalStatsDropBytes",
+      "analyticsName": "generalStatsDropBytesIn",
       "dataType": "double",
       "directions": [
         "0",
         "1"
       ],
-      "rawName": "generalStatsDropBytes",
+      "rawName": "generalStatsDropBytesIn",
       "sqlExpr": "if(isnull(`policy_in_stats_class_stats_general_stats_total_drop_bytes`), (cast(`policy_in_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes` as DOUBLE)* 1000), (cast(`policy_in_stats_class_stats_general_stats_total_drop_bytes` as DOUBLE) * 1000))",
-      "unit": "pct"
-    }
+      "unit": "bytes"
+}
   ],
   "dimensions": [
     {

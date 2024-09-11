@@ -36,81 +36,81 @@
     "metricType": "timeseries",
     "metrics": [
       {
-        "analyticsName": "jitterAverage",
+        "analyticsName": "jitterAvg",
         "dataType": "double",
         "directions": [
-          "0",
-          "1"
+            "0",
+            "1"
         ],
         "rawName": "sla_stats_metric_one_way_jitter_operation_metric_bucket_average",
-        "unit": "μs"
-      },
-      {
-        "analyticsName": "jitterMaximum",
+        "unit": "µs"
+    },
+    {
+        "analyticsName": "jitterMax",
         "dataType": "double",
         "directions": [
-          "0",
-          "1"
+            "0",
+            "1"
         ],
         "rawName": "sla_stats_metric_one_way_jitter_operation_metric_bucket_maximum",
-        "unit": "μs"
-      },
-      {
-        "analyticsName": "jitterMinimum",
+        "unit": "µs"
+    },
+    {
+        "analyticsName": "jitterMin",
         "dataType": "double",
         "directions": [
-          "0",
-          "1"
+            "0",
+            "1"
         ],
         "rawName": "sla_stats_metric_one_way_jitter_operation_metric_bucket_minimum",
-        "unit": "μs"
-      },
-      {
-        "analyticsName": "jitterStandardDeviation",
+        "unit": "µs"
+    },
+    {
+        "analyticsName": "jitterStdDev",
         "dataType": "double",
         "directions": [
-          "0",
-          "1"
+            "0",
+            "1"
         ],
         "rawName": "sla_stats_metric_one_way_jitter_operation_metric_bucket_standard_deviation",
-        "unit": "μs"
-      },
-      {
-        "analyticsName": "delayAverage",
+        "unit": "µs"
+    },
+    {
+        "analyticsName": "delayAvg",
         "dataType": "double",
         "directions": [
-          "2"
+            "2"
         ],
         "rawName": "sla_stats_metric_round_trip_delay_operation_metric_bucket_average",
-        "unit": "μs"
-      },
-      {
-        "analyticsName": "delayMaximum",
+        "unit": "µs"
+    },
+    {
+        "analyticsName": "delayMax",
         "dataType": "double",
         "directions": [
-          "2"
+            "2"
         ],
         "rawName": "sla_stats_metric_round_trip_delay_operation_metric_bucket_maximum",
-        "unit": "μs"
-      },
-      {
-        "analyticsName": "delayMinimum",
+        "unit": "µs"
+    },
+    {
+        "analyticsName": "delayMin",
         "dataType": "double",
         "directions": [
-          "2"
+            "2"
         ],
         "rawName": "sla_stats_metric_round_trip_delay_operation_metric_bucket_minimum",
-        "unit": "μs"
-      },
-      {
-        "analyticsName": "delayStandardDeviation",
+        "unit": "µs"
+    },
+    {
+        "analyticsName": "delayStdDev",
         "dataType": "double",
         "directions": [
-          "2"
+            "2"
         ],
         "rawName": "sla_stats_metric_round_trip_delay_operation_metric_bucket_standard_deviation",
-        "unit": "μs"
-      }
+        "unit": "µs"
+    }
     ],
     "customMetrics": [],
     "id": "cisco-telemetry-xr-dmm",

@@ -8,24 +8,24 @@
   "vendor": "Cisco Telemetry",
   "customMetrics": [
     {
-      "analyticsName": "usedApplicationMemory",
+      "analyticsName": "memoryUsed",
       "dataType": "double",
       "directions": [
         "-1"
       ],
-      "rawName": "usedApplicationMemory",
-      "sqlExpr": "(`ramMemory` - `freeApplicationMemory`)",
+      "rawName": "memoryUsed",
+      "sqlExpr": "( cast(`memoryTotal` as DOUBLE) - cast(`memoryFree` as DOUBLE) )",
       "unit": "bytes"
     },
     {
-      "analyticsName": "usedApplicationMemoryPct",
+      "analyticsName": "memoryPct",
       "dataType": "double",
       "directions": [
-        "-1"
+          "-1"
       ],
-      "rawName": "usedApplicationMemoryPct",
-      "sqlExpr": "(((`ramMemory` - `freeApplicationMemory`) / `ramMemory`) * 100)",
-      "unit": "pct"
+      "rawName": "memoryPct",
+      "sqlExpr": "((( cast(`memoryTotal` as DOUBLE) - cast(`memoryFree` as DOUBLE) ) / cast(`memoryTotal` as DOUBLE)) * 100)",
+"unit": "pct"
     }
   ],
   "dimensions": [
@@ -78,7 +78,7 @@
   "metricType": "timeseries",
   "metrics": [
     {
-      "analyticsName": "cpuFiveMinute",
+      "analyticsName": "cpuFiveMinutes",
       "dataType": "double",
       "directions": [
         "-1"
@@ -87,7 +87,7 @@
       "unit": "pct"
     },
     {
-      "analyticsName": "freeApplicationMemory",
+      "analyticsName": "memoryFree",
       "dataType": "double",
       "directions": [
         "-1"
@@ -96,7 +96,7 @@
       "unit": "bytes"
     },
     {
-      "analyticsName": "ramMemory",
+      "analyticsName": "memoryTotal",
       "dataType": "double",
       "directions": [
         "-1"
