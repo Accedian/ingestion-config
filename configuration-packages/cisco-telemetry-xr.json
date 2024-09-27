@@ -1,0 +1,9 @@
+{
+  "objects": [
+    "cisco-telemetry-xr-environment",
+    "cisco-telemetry-xr-interface",
+    "cisco-telemetry-xr-policy",
+    "cisco-telemetry-xr-ipsla",
+    "cisco-telemetry-xr-sla"
+  ]
+}
