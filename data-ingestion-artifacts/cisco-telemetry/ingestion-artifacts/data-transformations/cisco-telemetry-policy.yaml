@@ -1,5 +1,4 @@
-scrape_configs:
-- job_name: cisco-telemetry-xr-policy
+- job_name: cisco-telemetry-xr-policy-ak
   relabel_configs:
     - source_labels: [sessionId]
       target_label: monitoredObjectId
@@ -193,3 +192,35 @@ scrape_configs:
       regex: 'policy_out_stats_class_stats_general_stats_pre_policy_matched_packets'
       target_label: _name_
       replacement: "policy_stats_class_stats_general_stats_pre_policy_matched_packets"
+    - source_labels: [ _name_ ]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate"
+    - source_labels: [ _name_ ]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate"
+    - source_labels: [ _name_ ]
+      regex: 'policy_in_stats_class_stats_queue_stats_array_exceed_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_queue_stats_array_exceed_rate"
+    - source_labels: [ _name_ ]
+      regex: 'policy_out_stats_class_stats_queue_stats_array_exceed_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_queue_stats_array_exceed_rate"
+    - source_labels: [ _name_ ]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets"
+    - source_labels: [ _name_ ]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets"
+    - source_labels: [ _name_ ]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes"
+    - source_labels: [ _name_ ]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes"

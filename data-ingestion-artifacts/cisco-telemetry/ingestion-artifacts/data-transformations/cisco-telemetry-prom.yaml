@@ -1,0 +1,769 @@
+scrape_configs:
+
+- job_name: cisco-telemetry-xr-dmm-ak
+  relabel_configs:
+    - source_labels: [ sessionId ]
+      target_label: monitoredObjectId
+    - source_labels: [ sessionName ]
+      target_label: monitoredObjectName
+
+    ## Assign correct directions
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_jitter_sd_operation_metric_bucket_minimum'
+      target_label: direction
+      replacement: "0"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_jitter_sd_operation_metric_bucket_maximum'
+      target_label: direction
+      replacement: "0"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_jitter_sd_operation_metric_bucket_average'
+      target_label: direction
+      replacement: "0"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_jitter_sd_operation_metric_bucket_standard_deviation'
+      target_label: direction
+      replacement: "0"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_jitter_ds_operation_metric_bucket_minimum'
+      target_label: direction
+      replacement: "1"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_jitter_ds_operation_metric_bucket_maximum'
+      target_label: direction
+      replacement: "1"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_jitter_ds_operation_metric_bucket_average'
+      target_label: direction
+      replacement: "1"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_jitter_ds_operation_metric_bucket_standard_deviation'
+      target_label: direction
+      replacement: "1"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_round_trip_delay_operation_metric_bucket_minimum'
+      target_label: direction
+      replacement: "2"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_round_trip_delay_operation_metric_bucket_maximum'
+      target_label: direction
+      replacement: "2"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_round_trip_delay_operation_metric_bucket_average'
+      target_label: direction
+      replacement: "2"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_round_trip_delay_operation_metric_bucket_standard_deviation'
+      target_label: direction
+      replacement: "2"
+    - source_labels: [_name_]
+      regex: 'sla_stats_delay_var_avg_rt'
+      target_label: direction
+      replacement: "2"
+
+    ## Apply metric renaming
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_jitter_sd_operation_metric_bucket_minimum'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_jitter_operation_metric_bucket_minimum"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_jitter_ds_operation_metric_bucket_minimum'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_jitter_operation_metric_bucket_minimum"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_jitter_sd_operation_metric_bucket_maximum'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_jitter_operation_metric_bucket_maximum"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_jitter_ds_operation_metric_bucket_maximum'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_jitter_operation_metric_bucket_maximum"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_jitter_sd_operation_metric_bucket_average'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_jitter_operation_metric_bucket_average"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_jitter_ds_operation_metric_bucket_average'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_jitter_operation_metric_bucket_average"
+    - source_labels: [_name_]
+      regex: 'sla_stats_delay_var_avg_rt'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_jitter_operation_metric_bucket_average"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_jitter_sd_operation_metric_bucket_standard_deviation'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_jitter_operation_metric_bucket_standard_deviation"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_jitter_ds_operation_metric_bucket_standard_deviation'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_jitter_operation_metric_bucket_standard_deviation"
+
+- job_name: throughput
+  ## Relabeling rules which apply to label names.
+  ## Note - by default the original labels are also kept.  If you wish to have the original named
+  ##        labels removed, use a 'dropLabel' action such as the following:
+  ##  - regex: {{insert your label name here}}
+  ##    action: labeldrop
+  relabel_configs:
+  - source_labels: [testSessionId]
+    target_label: objectId
+  - source_labels: [objectId]
+    target_label: monitoredObjectId
+  - source_labels: [testSessionName]
+    target_label: monitoredObjectName
+  - source_labels: [testSessionId]
+    target_label: sessionId
+  - source_labels: [direction]
+    regex: "far-end"
+    target_label: "direction"
+    replacement: "0"
+  - source_labels: [direction]
+    regex: "near-end"
+    target_label: "direction"
+    replacement: "1"
+  - source_labels: [direction]
+    regex: "round-trip"
+    target_label: "direction"
+    replacement: "2"
+  - source_labels: [timestamp]
+    target_label: "date"
+  - source_labels: [Timestamp]
+    target_label: "timestamp"
+  - source_labels: [testSessionId]
+    target_label: "sessionId"
+  - regex: "testSessionId"
+    action: labeldrop
+  - source_labels: [testSessionName]
+    target_label: "name"
+- job_name: cisco-telemetry-xr-slm-ak
+  relabel_configs:
+    - source_labels: [sessionId]
+      target_label: monitoredObjectId
+    - source_labels: [sessionName]
+      target_label: monitoredObjectName
+
+    ## Assign correct directions
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_standard_deviation'
+      target_label: direction
+      replacement: "0"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_standard_deviation'
+      target_label: direction
+      replacement: "1"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_contents_unaggregated_sample_frames_lost'
+      target_label: direction
+      replacement: "0"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_contents_unaggregated_sample_frames_sent'
+      target_label: direction
+      replacement: "0"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_contents_unaggregated_sample_frames_lost'
+      target_label: direction
+      replacement: "1"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_contents_unaggregated_sample_frames_sent'
+      target_label: direction
+      replacement: "1"
+    - source_labels: [_name_]
+      regex: 'sla_stats_availabilityPct'
+      target_label: direction
+      replacement: "0"
+
+    ## Apply metric renaming
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_standard_deviation'
+      target_label: _name_
+      replacement: "lossStdDev"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_standard_deviation'
+      target_label: _name_
+      replacement: "lossStdDev"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_contents_unaggregated_sample_frames_lost'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_contents_unaggregated_sample_frames_lost"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_contents_unaggregated_sample_frames_lost'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_contents_unaggregated_sample_frames_lost"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_contents_unaggregated_sample_frames_sent'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_contents_unaggregated_sample_frames_sent"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_contents_unaggregated_sample_frames_sent'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_contents_unaggregated_sample_frames_sent"
+
+- job_name: cisco-telemetry-xr-ipsla-icmp-echo-ak
+  relabel_configs:
+  - source_labels: [ sessionId ]
+    target_label: monitoredObjectId
+  - source_labels: [ sessionName ]
+    target_label: monitoredObjectName
+
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_busy_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_disconnect_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_dropped_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_internal_error_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_max_response_time'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_min_response_time'
+    target_label: direction
+    replacement: "2" 
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_no_connection_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_ok_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_response_time'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_sequence_error_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_sum_response_time'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_sum2_response_time'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_timeout_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_verify_error_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_response_time_count'
+    target_label: direction
+    replacement: "2"
+
+
+- job_name: cisco-telemetry-xr-ipsla-udp-jitter-ak
+  relabel_configs:
+  - source_labels: [ sessionId ]
+    target_label: monitoredObjectId
+  - source_labels: [ sessionName ]
+    target_label: monitoredObjectName
+
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_common_stats_max_response_time'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_common_stats_min_response_time'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_common_stats_response_time'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_common_stats_response_time_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_common_stats_sum_response_time'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_jitter_in'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_jitter_in'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_jitter"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_jitter_out'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_jitter_out'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_jitter"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_ds_max'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_ds_max'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_negative_max"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_sd_max'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_sd_max'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_negative_max"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_ds_min'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_ds_min'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_negative_min"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_sd_min'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_sd_min'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_negative_min"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_ds_sum'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_ds_sum'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_positive_sum"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_sd_sum'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_sd_sum'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_positive_sum"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_ds_sum'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_ds_sum'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_negative_sum"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_sd_sum'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_sd_sum'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_negative_sum"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_ds_count'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_ds_count'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_negative_count"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_sd_count'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_sd_count'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_negative_count"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_ds_count'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_ds_count'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_positive_count"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_sd_count'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_sd_count'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_positive_count"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_packet_loss_ds'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_packet_loss_ds'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_packet_loss"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_packet_loss_sd'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_packet_loss_sd'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_packet_loss"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_ds_max'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_ds_max'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_positive_max"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_sd_max'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_sd_max'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_positive_max"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_ds_min'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_ds_min'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_positive_min"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_sd_min'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_sd_min'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_positive_min"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_packet_late_arrivals'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_packet_mia'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_packet_out_of_sequence'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_packet_skipped'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_packet_invalid_tstamp'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_internal_errors_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_busies_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_one_way_ds_max'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_one_way_ds_max'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_one_way_max"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_one_way_sd_max'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_one_way_sd_max'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_one_way_max"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_one_way_ds_min'
+    target_label: direction
+    replacement: "1"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_one_way_ds_min'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_one_way_min"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_one_way_sd_min'
+    target_label: direction
+    replacement: "0"
+  - source_labels: [_name_]
+    regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_one_way_sd_min'
+    target_label: _name_
+    replacement: "ipsla_jitter_specific_stats_udp_jitter_stats_one_way_min"
+
+
+- job_name: default
+  ## Relabeling rules which apply to label names.
+  ## Note - by default the original labels are also kept.  If you wish to have the original named
+  ##        labels removed, use a 'dropLabel' action such as the following:
+  ##  - regex: {{insert your label name here}}
+  ##    action: labeldrop
+  relabel_configs:
+  - source_labels: [sessionId]
+    target_label: monitoredObjectId
+  - source_labels: [sessionName]
+    target_label: monitoredObjectName
+  - source_labels: [direction]
+    regex: "far-end"
+    target_label: "direction"
+    replacement: "0"
+  - source_labels: [direction]
+    regex: "near-end"
+    target_label: "direction"
+    replacement: "1"
+  - source_labels: [direction]
+    regex: "round-trip"
+    target_label: "direction"
+    replacement: "2"
+
+- job_name: cisco-telemetry-xr-policy-ak
+  relabel_configs:
+    - source_labels: [sessionId]
+      target_label: monitoredObjectId
+    - source_labels: [sessionName]
+      target_label: monitoredObjectName
+
+    ## Assign correct directions
+    - source_labels: [_name_]
+      regex: "(policy_in.*)"
+      target_label: direction
+      replacement: "1"
+    - source_labels: [_name_]
+      regex: "(policy_out.*)"
+      target_label: direction
+      replacement: "0"
+
+    ## Apply metric renaming
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_queue_stats_array_conform_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_queue_stats_array_conform_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_queue_stats_array_conform_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_queue_stats_array_conform_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_police_stats_array_conform_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_police_stats_array_conform_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_police_stats_array_conform_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_police_stats_array_conform_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_police_stats_array_exceed_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_police_stats_array_exceed_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_police_stats_array_exceed_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_police_stats_array_exceed_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_total_drop_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_total_drop_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_total_transmit_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_total_transmit_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_total_transmit_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_total_transmit_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_match_data_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_match_data_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_match_data_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_match_data_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_general_stats_match_data_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_match_data_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_general_stats_match_data_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_match_data_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_general_stats_total_drop_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_total_drop_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_general_stats_total_drop_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_total_drop_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_general_stats_total_transmit_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_total_transmit_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_general_stats_total_transmit_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_total_transmit_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_police_stats_array_conform_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_police_stats_array_conform_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_police_stats_array_conform_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_police_stats_array_conform_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_police_stats_array_exceed_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_police_stats_array_exceed_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_police_stats_array_exceed_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_police_stats_array_exceed_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_queue_stats_array_conform_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_queue_stats_array_conform_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_queue_stats_array_conform_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_queue_stats_array_conform_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_general_stats_transmit_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_transmit_packets"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_general_stats_transmit_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_transmit_packets"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_transmit_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_packets"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_transmit_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_packets"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_general_stats_transmit_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_transmit_bytes"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_general_stats_transmit_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_transmit_bytes"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_transmit_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_bytes"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_transmit_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_bytes"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_general_stats_total_drop_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_total_drop_packets"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_general_stats_total_drop_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_total_drop_packets"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_total_drop_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_packets"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_total_drop_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_packets"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_general_stats_total_drop_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_total_drop_bytes"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_general_stats_total_drop_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_total_drop_bytes"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_general_stats_pre_policy_matched_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_pre_policy_matched_packets"
+    - source_labels: [ _name_ ]
+      regex: 'policy_in_stats_class_stats_general_stats_pre_policy_matched_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_pre_policy_matched_bytes"
+    - source_labels: [ _name_ ]
+      regex: 'policy_out_stats_class_stats_general_stats_pre_policy_matched_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_pre_policy_matched_bytes"
+    - source_labels: [ _name_ ]
+      regex: 'policy_out_stats_class_stats_general_stats_pre_policy_matched_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_pre_policy_matched_packets"
+    - source_labels: [ _name_ ]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate"
+    - source_labels: [ _name_ ]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate"
+    - source_labels: [ _name_ ]
+      regex: 'policy_in_stats_class_stats_queue_stats_array_exceed_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_queue_stats_array_exceed_rate"
+    - source_labels: [ _name_ ]
+      regex: 'policy_out_stats_class_stats_queue_stats_array_exceed_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_queue_stats_array_exceed_rate"
+    - source_labels: [ _name_ ]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets"
+    - source_labels: [ _name_ ]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets"
+    - source_labels: [ _name_ ]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes"
+    - source_labels: [ _name_ ]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes"

@@ -1,0 +1,67 @@
+- job_name: cisco-telemetry-xr-ipsla-icmp-echo-ak
+  relabel_configs:
+  - source_labels: [ sessionId ]
+    target_label: monitoredObjectId
+  - source_labels: [ sessionName ]
+    target_label: monitoredObjectName
+
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_busy_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_disconnect_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_dropped_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_internal_error_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_max_response_time'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_min_response_time'
+    target_label: direction
+    replacement: "2" 
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_no_connection_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_ok_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_response_time'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_sequence_error_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_sum_response_time'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_sum2_response_time'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_timeout_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_verify_error_count'
+    target_label: direction
+    replacement: "2"
+  - source_labels: [_name_]
+    regex: 'ipsla_echo_common_stats_response_time_count'
+    target_label: direction
+    replacement: "2"
