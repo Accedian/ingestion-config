@@ -1,0 +1,213 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "openmetricscisco-telemetry-xr-ipsla-icmp-echo-ak",
+            "_rev": "3-26cc57085492bf8cbae814471a9ee025",
+            "createdTimestamp": 1727313369916,
+            "customMetrics": [
+                {
+                    "analyticsName": "Reachability_percent",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "Reachability_percent",
+                    "sqlExpr": "(cast(`ipsla_echo_common_stats_ok_count` as DOUBLE) * 100) / (cast(`ipsla_echo_common_stats_ok_count` as DOUBLE) + cast(`ipsla_echo_common_stats_timeout_count` as DOUBLE) + cast(`ipsla_echo_common_stats_busy_count` as DOUBLE) + cast(`ipsla_echo_common_stats_disconnect_count` as DOUBLE) + cast(`ipsla_echo_common_stats_dropped_count` as DOUBLE) + cast(`ipsla_echo_common_stats_internal_error_count` as DOUBLE) + cast(`ipsla_echo_common_stats_no_connection_count` as DOUBLE))",
+                    "unit": "pct"
+                },
+                {
+                    "analyticsName": "packetsLostPct",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "packetsLostPct",
+                    "sqlExpr": "100 - (cast(`ipsla_echo_common_stats_ok_count` as DOUBLE) * 100) / (cast(`ipsla_echo_common_stats_ok_count` as DOUBLE) + cast(`ipsla_echo_common_stats_timeout_count` as DOUBLE) + cast(`ipsla_echo_common_stats_busy_count` as DOUBLE) + cast(`ipsla_echo_common_stats_disconnect_count` as DOUBLE) + cast(`ipsla_echo_common_stats_dropped_count` as DOUBLE) + cast(`ipsla_echo_common_stats_internal_error_count` as DOUBLE) + cast(`ipsla_echo_common_stats_no_connection_count` as DOUBLE))",
+                    "unit": "pct"
+                }
+            ],
+            "dictionaryName": "openmetrics-cisco-telemetry-xr-ipsla-icmp-echo-ak",
+            "dictionaryType": "custom",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                }
+            ],
+            "lastModifiedTimestamp": 1727313369916,
+            "metricType": "timeseries",
+            "metrics": [
+                {
+                    "analyticsName": "ipsla_echo_common_stats_busy_count",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_echo_common_stats_busy_count"
+                },
+                {
+                    "analyticsName": "ipsla_echo_common_stats_disconnect_count",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_echo_common_stats_disconnect_count"
+                },
+                {
+                    "analyticsName": "ipsla_echo_common_stats_dropped_count",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_echo_common_stats_dropped_count"
+                },
+                {
+                    "analyticsName": "ipsla_echo_common_stats_internal_error_count",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_echo_common_stats_internal_error_count"
+                },
+                {
+                    "analyticsName": "delayMax",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_echo_common_stats_max_response_time",
+                    "sqlExpr": "cast(`ipsla_echo_common_stats_max_response_time` as DOUBLE) * 1000",
+                    "unit": "μs"
+                },
+                {
+                    "analyticsName": "delayMin",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_echo_common_stats_min_response_time",
+                    "sqlExpr": "cast(`ipsla_echo_common_stats_min_response_time` as DOUBLE) * 1000",
+                    "unit": "μs"
+                },
+                {
+                    "analyticsName": "ipsla_echo_common_stats_no_connection_count",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_echo_common_stats_no_connection_count"
+                },
+                {
+                    "analyticsName": "ipsla_echo_common_stats_ok_count",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_echo_common_stats_ok_count"
+                },
+                {
+                    "analyticsName": "delayAvg",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_echo_common_stats_response_time",
+                    "sqlExpr": "cast(`ipsla_echo_common_stats_response_time` as DOUBLE) * 1000",
+                    "unit": "μs"
+                },
+                {
+                    "analyticsName": "ipsla_echo_common_stats_sequence_error_count",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_echo_common_stats_sequence_error_count"
+                },
+                {
+                    "analyticsName": "ipsla_echo_common_stats_sum2_response_time",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_echo_common_stats_sum2_response_time"
+                },
+                {
+                    "analyticsName": "ipsla_echo_common_stats_sum_response_time",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_echo_common_stats_sum_response_time"
+                },
+                {
+                    "analyticsName": "ipsla_echo_common_stats_timeout_count",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_echo_common_stats_timeout_count"
+                },
+                {
+                    "analyticsName": "ipsla_echo_common_stats_verify_error_count",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_echo_common_stats_verify_error_count"
+                }
+            ],
+            "objectType": "cisco-telemetry-xr-ipsla-icmp-echo-ak",
+            "tenantId": "020213ee-bcd0-4819-89a3-ee1e370148e7",
+            "vendor": "openmetrics"
+        },
+        "id": "openmetricscisco-telemetry-xr-ipsla-icmp-echo-ak",
+        "type": "ingestionDictionaries"
+    },
+    "violations": []
+}

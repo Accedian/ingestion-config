@@ -1,110 +1,122 @@
 {
-
-  "_id": "cisco-telemetry-xr-environment",
-  "dictionaryName": "cisco-telemetry-xr-environment",
-  "dictionaryType": "global",
-  "objectType": "cisco-telemetry-xr-environment",
-  "tenantId": "",
-  "vendor": "Cisco Telemetry",
-  "customMetrics": [
-    {
-      "analyticsName": "memoryUsed",
-      "dataType": "double",
-      "directions": [
-        "-1"
-      ],
-      "rawName": "memoryUsed",
-      "sqlExpr": "( cast(`memoryTotal` as DOUBLE) - cast(`memoryFree` as DOUBLE) )",
-      "unit": "bytes"
+    "data": {
+        "attributes": {
+            "_id": "openmetricscisco-telemetry-xr-environment-ak",
+            "_rev": "3-fea9639b53b6e226ec4307485481a906",
+            "createdTimestamp": 1727313309975,
+            "customMetrics": [
+                {
+                    "analyticsName": "usedApplicationMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "usedApplicationMemory",
+                    "sqlExpr": "(`ramMemory` - `freeApplicationMemory`)",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "usedApplicationMemoryPct",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "usedApplicationMemoryPct",
+                    "sqlExpr": "(((`ramMemory` - `freeApplicationMemory`) / `ramMemory`) * 100)",
+                    "unit": "pct"
+                }
+            ],
+            "dictionaryName": "openmetrics-cisco-telemetry-xr-environment-ak",
+            "dictionaryType": "custom",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                }
+            ],
+            "lastModifiedTimestamp": 1727313309975,
+            "metricType": "timeseries",
+            "metrics": [
+                {
+                    "analyticsName": "cpuFiveMinute",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "cpu_util_total_cpu_five_minute",
+                    "unit": "pct"
+                },
+                {
+                    "analyticsName": "freeApplicationMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "node_summary_free_application_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "ramMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "node_summary_ram_memory",
+                    "unit": "bytes"
+                }
+            ],
+            "objectType": "cisco-telemetry-xr-environment-ak",
+            "tenantId": "020213ee-bcd0-4819-89a3-ee1e370148e7",
+            "vendor": "openmetrics"
+        },
+        "id": "openmetricscisco-telemetry-xr-environment-ak",
+        "type": "ingestionDictionaries"
     },
-    {
-      "analyticsName": "memoryPct",
-      "dataType": "double",
-      "directions": [
-          "-1"
-      ],
-      "rawName": "memoryPct",
-      "sqlExpr": "((( cast(`memoryTotal` as DOUBLE) - cast(`memoryFree` as DOUBLE) ) / cast(`memoryTotal` as DOUBLE)) * 100)",
-"unit": "pct"
-    }
-  ],
-  "dimensions": [
-    {
-      "analyticsName": "monitoredObjectId",
-      "dataType": "string",
-      "rawName": "monitoredObjectId"
-    },
-    {
-      "analyticsName": "monitoredObjectName",
-      "dataType": "string",
-      "rawName": "monitoredObjectName"
-    },
-    {
-      "analyticsName": "timestamp",
-      "dataType": "long",
-      "rawName": "timestamp"
-    },
-    {
-      "analyticsName": "node_name",
-      "dataType": "string",
-      "rawName": "node_name"
-    },
-    {
-      "analyticsName": "direction",
-      "dataType": "integer",
-      "rawName": "direction"
-    },
-    {
-      "analyticsName": "host",
-      "dataType": "string",
-      "rawName": "host"
-    },
-    {
-      "analyticsName": "path",
-      "dataType": "string",
-      "rawName": "path"
-    },
-    {
-      "analyticsName": "source",
-      "dataType": "string",
-      "rawName": "source"
-    },
-    {
-      "analyticsName": "subscription",
-      "dataType": "string",
-      "rawName": "subscription"
-    }
-  ],
-  "metricType": "timeseries",
-  "metrics": [
-    {
-      "analyticsName": "cpuFiveMinutes",
-      "dataType": "double",
-      "directions": [
-        "-1"
-      ],
-      "rawName": "cpu_util_total_cpu_five_minute",
-      "unit": "pct"
-    },
-    {
-      "analyticsName": "memoryFree",
-      "dataType": "double",
-      "directions": [
-        "-1"
-      ],
-      "rawName": "node_summary_free_application_memory",
-      "unit": "bytes"
-    },
-    {
-      "analyticsName": "memoryTotal",
-      "dataType": "double",
-      "directions": [
-        "-1"
-      ],
-      "rawName": "node_summary_ram_memory",
-      "unit": "bytes"
-    }
-  ],
-  "id": "cisco-telemetry-xr-environment",
-  "type": "ingestionDictionaries"
+    "violations": []
 }
