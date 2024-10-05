@@ -1,0 +1,134 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "openmetricscisco-telemetry-xr-slm-ak",
+            "_rev": "5-af8250a176621f17b125a0f7499fa749",
+            "createdTimestamp": 1727313310697,
+            "customMetrics": [
+                {
+                    "analyticsName": "packetsLostPct",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "packetsLostPct",
+                    "sqlExpr": "case when isnotnull(`slmSent`) and isnotnull(`packetsLost`) then (cast((`packetsLost` as DOUBLE) / cast(`slmSent` as DOUBLE)) * 100) end",
+                    "unit": "pct"
+                },
+                {
+                    "analyticsName": "availability_percent",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "availability_percent",
+                    "sqlExpr": "availabilityPct",
+                    "unit": "pct"
+                }
+            ],
+            "dictionaryName": "openmetrics-cisco-telemetry-xr-slm-ak",
+            "dictionaryType": "custom",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                }
+            ],
+            "lastModifiedTimestamp": 1727313370988,
+            "metricType": "timeseries",
+            "metrics": [
+                {
+                    "analyticsName": "lossStdDev",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "lossStdDev"
+                },
+                {
+                    "analyticsName": "packetsLost",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "sla_stats_metric_one_way_flr_operation_metric_bucket_contents_unaggregated_sample_frames_lost",
+                    "unit": "frames"
+                },
+                {
+                    "analyticsName": "slmSent",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "sla_stats_metric_one_way_flr_operation_metric_bucket_contents_unaggregated_sample_frames_sent",
+                    "unit": "frames"
+                },
+                                {
+                    "analyticsName": "availabilityPct",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "sla_stats_availabilityPct",
+                    "unit": "pct"
+                }
+            ],
+            "objectType": "cisco-telemetry-xr-slm-ak",
+            "tenantId": "020213ee-bcd0-4819-89a3-ee1e370148e7",
+            "vendor": "openmetrics"
+        },
+        "id": "openmetricscisco-telemetry-xr-slm-ak",
+        "type": "ingestionDictionaries"
+    },
+    "violations": []
+}
