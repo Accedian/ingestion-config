@@ -1,0 +1,21 @@
+"cisco-telemetry-xr-interface": {
+  "delta": {
+    "metrics": [
+      "if_stats_interface_statistics_full_interface_stats_bytes_received",
+      "if_stats_interface_statistics_full_interface_stats_bytes_sent",
+      "if_stats_interface_statistics_full_interface_stats_input_errors",
+      "if_stats_interface_statistics_full_interface_stats_output_errors",
+      "if_stats_interface_statistics_full_interface_stats_crc_errors",
+      "if_stats_interface_statistics_full_interface_stats_packets_sent",
+      "if_stats_interface_statistics_full_interface_stats_packets_received",
+      "if_stats_interface_statistics_full_interface_stats_input_drops",
+      "if_stats_interface_statistics_full_interface_stats_output_drops"
+    ]
+  },
+  "rate": {
+    "metrics": [
+      "if_stats_interface_statistics_full_interface_stats_bytes_received_rate",
+      "if_stats_interface_statistics_full_interface_stats_bytes_sent_rate"
+    ]
+  }
+}

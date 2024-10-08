@@ -1,4 +1,3 @@
-scrape_configs:
 - job_name: cisco-telemetry-xr-policy
   relabel_configs:
     - source_labels: [sessionId]
