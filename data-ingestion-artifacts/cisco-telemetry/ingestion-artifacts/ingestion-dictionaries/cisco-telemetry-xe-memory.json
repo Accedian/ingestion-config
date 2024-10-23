@@ -4,7 +4,18 @@
             "_id": "openmetricscisco-telemetry-xe-memory-ak",
             "_rev": "1-3e32c5b5e0470dd60744af40bba50a5a",
             "createdTimestamp": 1729662857369,
-            "customMetrics": null,
+            "customMetrics": [
+                {
+                    "analyticsName": "memoryPct",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "memoryPct",
+                    "sqlExpr": "(cast(`memoryUsed` as DOUBLE)) / (cast(`memoryTotal` as DOUBLE) * 100)",
+                    "unit": "pct"
+                }
+            ],
             "dictionaryName": "openmetrics-cisco-telemetry-xe-memory-ak",
             "dictionaryType": "custom",
             "dimensions": [
