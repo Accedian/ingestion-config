@@ -1,0 +1,110 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "openmetricscisco-telemetry-xe-cpu-ak",
+            "_rev": "1-6f4ffad9c03e02591753b8ce118e7271",
+            "createdTimestamp": 1729662856939,
+            "customMetrics": null,
+            "dictionaryName": "openmetrics-cisco-telemetry-xe-cpu-ak",
+            "dictionaryType": "custom",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                }
+            ],
+            "lastModifiedTimestamp": 1729662856939,
+            "metricType": "timeseries",
+            "metrics": [
+            {
+                "analyticsName": "cpuFiveMinutes",
+                "dataType": "double",
+                "directions": [
+                    "-1"
+                ],
+                "rawName": "xe_cpu_stats_five_minutes",
+                "unit": "pct"
+            },
+            {
+                "analyticsName": "cpuFiveSeconds",
+                "dataType": "double",
+                "directions": [
+                    "-1"
+                ],
+                "rawName": "xe_cpu_stats_five_seconds",
+                "unit": "pct"
+            },
+            {
+                "analyticsName": "cpuFiveSecondsIntr",
+                "dataType": "double",
+                "directions": [
+                    "-1"
+                ],
+                "rawName": "xe_cpu_stats_five_seconds_intr",
+                "unit": "pct"
+            },
+            {
+                "analyticsName": "cpuOneMinute",
+                "dataType": "double",
+                "directions": [
+                    "-1"
+                ],
+                "rawName": "xe_cpu_stats_one_minute",
+                "unit": "pct"
+            }
+            ],
+            "objectType": "cisco-telemetry-xe-cpu-ak",
+            "tenantId": "020213ee-bcd0-4819-89a3-ee1e370148e7",
+            "vendor": "openmetrics"
+        },
+        "id": "openmetricscisco-telemetry-xe-cpu-ak",
+        "type": "ingestionDictionaries"
+    },
+    "violations": []
+}

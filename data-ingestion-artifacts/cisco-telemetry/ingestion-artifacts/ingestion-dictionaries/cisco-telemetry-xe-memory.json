@@ -1,0 +1,119 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "openmetricscisco-telemetry-xe-memory-ak",
+            "_rev": "1-3e32c5b5e0470dd60744af40bba50a5a",
+            "createdTimestamp": 1729662857369,
+            "customMetrics": null,
+            "dictionaryName": "openmetrics-cisco-telemetry-xe-memory-ak",
+            "dictionaryType": "custom",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                }
+            ],
+            "lastModifiedTimestamp": 1729662857369,
+            "metricType": "timeseries",
+            "metrics": [
+            {
+                "analyticsName": "memoryFree",
+                "dataType": "double",
+                "directions": [
+                    "-1"
+                ],
+                "rawName": "xe_memory_stats_free_memory",
+                "unit": "bytes"
+            },
+            {
+                "analyticsName": "highestUsage",
+                "dataType": "double",
+                "directions": [
+                    "-1"
+                ],
+                "rawName": "xe_memory_stats_highest_usage",
+                "unit": "bytes"
+            },
+            {
+                "analyticsName": "lowestUsage",
+                "dataType": "double",
+                "directions": [
+                    "-1"
+                ],
+                "rawName": "xe_memory_stats_lowest_usage",
+                "unit": "bytes"
+            },
+            {
+                "analyticsName": "memoryTotal",
+                "dataType": "double",
+                "directions": [
+                    "-1"
+                ],
+                "rawName": "xe_memory_stats_total_memory",
+                "unit": "bytes"
+            },
+            {
+                "analyticsName": "memoryUsed",
+                "dataType": "double",
+                "directions": [
+                    "-1"
+                ],
+                "rawName": "xe_memory_stats_used_memory",
+                "unit": "bytes"
+            }
+            ],
+            "objectType": "cisco-telemetry-xe-memory-ak",
+            "tenantId": "020213ee-bcd0-4819-89a3-ee1e370148e7",
+            "vendor": "openmetrics"
+        },
+        "id": "openmetricscisco-telemetry-xe-memory-ak",
+        "type": "ingestionDictionaries"
+    },
+    "violations": []
+}
