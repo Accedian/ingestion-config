@@ -9,10 +9,10 @@
                     "analyticsName": "memoryPct",
                     "dataType": "double",
                     "directions": [
-                        "0"
+                        "-1"
                     ],
                     "rawName": "memoryPct",
-                    "sqlExpr": "(cast(`memoryUsed` as DOUBLE)) / (cast(`memoryTotal` as DOUBLE) * 100)",
+                    "sqlExpr": "((cast(`memoryUsed` as DOUBLE)) / (cast(`memoryTotal` as DOUBLE)) * 100)",
                     "unit": "pct"
                 }
             ],
