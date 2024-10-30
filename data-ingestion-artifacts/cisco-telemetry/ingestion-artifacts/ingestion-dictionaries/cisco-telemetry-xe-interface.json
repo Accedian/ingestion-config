@@ -2,89 +2,99 @@
     "data": {
         "attributes": {
             "_id": "openmetricscisco-telemetry-xe-interface-ak",
-            "_rev": "2-581d779ac4eaec9c76441b90894ac669",
-            "createdTimestamp": 1729662857134,
+            "_rev": "8-d266b7a5261b2d1675d1a178b5fd3e05",
+            "createdTimestamp": 1730105785361,
             "customMetrics": [
-            {
-                "analyticsName": "inputUtilization",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "inputUtilization",
-                "sqlExpr": "(( cast(`inputDataRate` as DOUBLE) ) / (cast (`bandwidth` as DOUBLE) * 1000000) * 100)",
-                "unit": "pct"
-            },
-            {
-                "analyticsName": "outputUtilization",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "outputUtilization",
-                "sqlExpr": "(( cast(`outputDataRate` as DOUBLE) ) / (cast (`bandwidth` as DOUBLE) * 1000000) * 100)",
-                "unit": "pct"
-            },
-            {
-                "analyticsName": "packetsReceived",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "packetsReceived",
-                "sqlExpr": "(cast(`inputBroadcastPkts` as DOUBLE)) + (cast(`inputMulticastPkts` as DOUBLE) + (cast(`inputUnicastPkts` as DOUBLE) )",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "packetsSent",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "packetsSent",
-                "sqlExpr": "(cast(`outputBroadcastPkts` as DOUBLE)) + (cast(`outputMulticastPkts` as DOUBLE) + (cast(`outputUnicastPkts` as DOUBLE) )",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "inputDiscards",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "inputDiscards",
-                "sqlExpr": "if(isnull(`xe_if_stats_statistics_in_discards_64`), (cast(`xe_if_stats_statistics_in_discards` as DOUBLE)), (cast(`xe_if_stats_statistics_in_discards_64` as DOUBLE)))",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "inputErrors",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "inputErrors",
-                "sqlExpr": "if(isnull(`xe_if_stats_statistics_in_errors_64`), (cast(`xe_if_stats_statistics_in_errors` as DOUBLE)), (cast(`xe_if_stats_statistics_in_errors_64` as DOUBLE)))",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "inputUnknownProtos",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "inputUnknownProtos",
-                "sqlExpr": "if(isnull(`xe_if_stats_statistics_in_unknown_protos_64`), (cast(`xe_if_stats_statistics_in_unknown_protos` as DOUBLE)), (cast(`xe_if_stats_statistics_in_unknown_protos_64` as DOUBLE)))",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "bytesSent",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "bytesSent",
-                "sqlExpr": "if(isnull(`xe_if_stats_statistics_out_octets_64`), (cast(`xe_if_stats_statistics_out_octets` as DOUBLE)), (cast(`xe_if_stats_statistics_out_octets_64` as DOUBLE)))",
-                "unit": "bytes"
-            }
+                {
+                    "analyticsName": "inputUtilization",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "inputUtilization",
+                    "sqlExpr": "(cast(`inputDataRate` as DOUBLE) * 100) / (cast (`interfaceBandwidth` as DOUBLE))",
+                    "unit": "pct"
+                },
+                {
+                    "analyticsName": "outputUtilization",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "outputUtilization",
+                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_out_octets_64_rate`), ((cast(`xe_if_stats_statistics_out_octets_rate` as DOUBLE) * 800) / cast (`interfaceBandwidth` as DOUBLE)), ((cast(`xe_if_stats_statistics_out_octets_64_rate` as DOUBLE) * 800) / cast (`interfaceBandwidth` as DOUBLE)))",
+                    "unit": "pct"
+                },
+                {
+                    "analyticsName": "packetsReceived",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "packetsReceived",
+                    "sqlExpr": "((cast(`inputBroadcastPkts` as DOUBLE)) + (cast(`inputMulticastPkts` as DOUBLE)) + (cast(`inputUnicastPkts` as DOUBLE)))",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "packetsSent",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "packetsSent",
+                    "sqlExpr": "((cast(`outputBroadcastPkts` as DOUBLE)) + (cast(`outputMulticastPkts` as DOUBLE)) + (cast(`outputUnicastPkts` as DOUBLE)))",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "inputDiscards",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "inputDiscards",
+                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_in_discards_64`), (cast(`xe_if_stats_statistics_in_discards` as DOUBLE)), (cast(`xe_if_stats_statistics_in_discards_64` as DOUBLE)))",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "inputErrors",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "inputErrors",
+                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_in_errors_64`), (cast(`xe_if_stats_statistics_in_errors` as DOUBLE)), (cast(`xe_if_stats_statistics_in_errors_64` as DOUBLE)))",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "inputUnknownProtos",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "inputUnknownProtos",
+                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_in_unknown_protos_64`), (cast(`xe_if_stats_statistics_in_unknown_protos` as DOUBLE)), (cast(`xe_if_stats_statistics_in_unknown_protos_64` as DOUBLE)))",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "bytesSent",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "bytesSent",
+                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_out_octets_64`), (cast(`xe_if_stats_statistics_out_octets` as DOUBLE)), (cast(`xe_if_stats_statistics_out_octets_64` as DOUBLE)))",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "outputDataRate",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "outputDataRate",
+                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_out_octets_64_rate`), (cast(`xe_if_stats_statistics_out_octets_rate` as DOUBLE) * 8), (cast(`xe_if_stats_statistics_out_octets_64_rate` as DOUBLE) * 8))",
+                    "unit": "bps"
+                }
             ],
             "dictionaryName": "openmetrics-cisco-telemetry-xe-interface-ak",
             "dictionaryType": "custom",
@@ -140,723 +150,748 @@
                     "rawName": "sessionName"
                 }
             ],
-            "lastModifiedTimestamp": 1729671227431,
+            "lastModifiedTimestamp": 1730276683568,
             "metricType": "timeseries",
             "metrics": [
-            {
-                "analyticsName": "dot3AlignmentErrors",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_alignment_errors",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "dot3CarrierSenseErrors",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_carrier_sense_errors",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "dot3DeferredTransmissions",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_deferred_transmissions",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "dot3ExcessiveCollisions",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_excessive_collisions",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "dot3FcsErrors",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_fcs_errors",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "dot3FrameTooLongs",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_frame_too_longs",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "dot3HcAlignmentErrors",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_hc_alignment_errors",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "dot3HcFcsErrors",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_hc_fcs_errors",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "dot3HcFrameTooLongs",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_hc_frame_too_longs",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "dot3HcInpauseFrames",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_hc_inpause_frames",
-                "unit": "frames"
-            },
-            {
-                "analyticsName": "dot3HcInternalMacReceiveErrors",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_hc_internal_mac_receive_errors",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "dot3HcInternalMacTransmitErrors",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_hc_internal_mac_transmit_errors",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "dot3HcOutpauseFrames",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_hc_outpause_frames",
-                "unit": "frames"
-            },
-            {
-                "analyticsName": "dot3HcSymbolErrors",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_hc_symbol_errors",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "dot3InternalMacReceiveErrors",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_internal_mac_receive_errors",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "dot3InternalMacTransmitErrors",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_internal_mac_transmit_errors",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "dot3LateCollisions",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_late_collisions",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "dot3MultipleCollisionFrames",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_multiple_collision_frames",
-                "unit": "frames"
-            },
-            {
-                "analyticsName": "dot3SingleCollisionFrames",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_single_collision_frames",
-                "unit": "frames"
-            },
-            {
-                "analyticsName": "dot3SqeTestErrors",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_sqe_test_errors",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "dot3SymbolErrors",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_symbol_errors",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "etherIn8021QFrames",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_in_8021q_frames",
-                "unit": "frames"
-            },
-            {
-                "analyticsName": "etherInFragmentFrames",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_in_fragment_frames",
-                "unit": "frames"
-            },
-            {
-                "analyticsName": "etherInJabberFrames",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_in_jabber_frames",
-                "unit": "frames"
-            },
-            {
-                "analyticsName": "etherInMacControlFrames",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_in_mac_control_frames",
-                "unit": "frames"
-            },
-            {
-                "analyticsName": "etherInMacPauseFrames",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_in_mac_pause_frames",
-                "unit": "frames"
-            },
-            {
-                "analyticsName": "etherInOversizeFrames",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_in_oversize_frames",
-                "unit": "frames"
-            },
-            {
-                "analyticsName": "etherOut8021QFrames",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_out_8021q_frames",
-                "unit": "frames"
-            },
-            {
-                "analyticsName": "etherOutMacControlFrames",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_out_mac_control_frames",
-                "unit": "frames"
-            },
-            {
-                "analyticsName": "etherOutMacPauseFrames",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_ether_stats_out_mac_pause_frames",
-                "unit": "frames"
-            },
-            {
-                "analyticsName": "mtu",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_mtu",
-                "unit": "bytes"
-            },
-            {
-                "analyticsName": "bandwidth",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_speed",
-                "sqlExpr": "cast(`xe_if_stats_speed` as DOUBLE) / 1000000",
-                "unit": "Mbps"
-            },
-            {
-                "analyticsName": "inputBroadcastPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_in_broadcast_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "crcErrors",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_in_crc_errors",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "xe_if_stats_statistics_in_discards",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_in_discards",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "xe_if_stats_statistics_in_discards_64",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_in_discards_64",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "xe_if_stats_statistics_in_errors",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_in_errors",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "xe_if_stats_statistics_in_errors_64",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_in_errors_64",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "inputMulticastPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_in_multicast_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "bytesReceived",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_in_octets",
-                "unit": "bytes"
-            },
-            {
-                "analyticsName": "inputUnicastPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_in_unicast_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "xe_if_stats_statistics_in_unknown_protos",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_in_unknown_protos",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "xe_if_stats_statistics_in_unknown_protos_64",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_in_unknown_protos_64",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "numFlaps",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_num_flaps",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "outputBroadcastPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_out_broadcast_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "outputDiscards",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_out_discards",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "outputErrors",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_out_errors",
-                "unit": "value"
-            },
-            {
-                "analyticsName": "outputMulticastPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_out_multicast_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "xe_if_stats_statistics_out_octets",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_out_octets",
-                "unit": "bytes"
-            },
-            {
-                "analyticsName": "xe_if_stats_statistics_out_octets_64",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_out_octets_64",
-                "unit": "bytes"
-            },
-            {
-                "analyticsName": "outputUnicastPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_out_unicast_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "inputDataRate",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_rx_kbps",
-                "sqlExpr": "cast(`xe_if_stats_statistics_rx_kbps` as DOUBLE) * 1000",
-                "unit": "bps"
-            },
-            {
-                "analyticsName": "inputPacketRate",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_rx_pps",
-                "unit": "pps"
-            },
-            {
-                "analyticsName": "outputDataRate",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_tx_kbps",
-                "sqlExpr": "cast(`xe_if_stats_statistics_tx_kbps` as DOUBLE) * 1000",
-                "unit": "bps"
-            },
-            {
-                "analyticsName": "outputPacketRate",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_statistics_tx_pps",
-                "unit": "pps"
-            },
-            {
-                "analyticsName": "v4InputDiscardedPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v4_protocol_stats_in_discarded_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "v4InputErrorPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v4_protocol_stats_in_error_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "v4InputForwardedOctets",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v4_protocol_stats_in_forwarded_octets",
-                "unit": "bytes"
-            },
-            {
-                "analyticsName": "v4InputForwardedPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v4_protocol_stats_in_forwarded_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "v4InputOctets",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v4_protocol_stats_in_octets",
-                "unit": "bytes"
-            },
-            {
-                "analyticsName": "v4InputPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v4_protocol_stats_in_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "v4OutputDiscardedPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v4_protocol_stats_out_discarded_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "v4OutputErrorPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v4_protocol_stats_out_error_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "v4OutputForwardedOctets",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v4_protocol_stats_out_forwarded_octets",
-                "unit": "bytes"
-            },
-            {
-                "analyticsName": "v4OutputForwardedPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v4_protocol_stats_out_forwarded_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "v4OutputOctets",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v4_protocol_stats_out_octets",
-                "unit": "bytes"
-            },
-            {
-                "analyticsName": "v4OutputPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v4_protocol_stats_out_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "v6InputDiscardedPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v6_protocol_stats_in_discarded_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "v6InputErrorPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v6_protocol_stats_in_error_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "v6InputForwardedOctets",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v6_protocol_stats_in_forwarded_octets",
-                "unit": "bytes"
-            },
-            {
-                "analyticsName": "v6InputForwardedPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v6_protocol_stats_in_forwarded_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "v6InputOctets",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v6_protocol_stats_in_octets",
-                "unit": "bytes"
-            },
-            {
-                "analyticsName": "v6InputPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v6_protocol_stats_in_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "v6OutputDiscardedPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v6_protocol_stats_out_discarded_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "v6OutputErrorPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v6_protocol_stats_out_error_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "v6OutputForwardedOctets",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v6_protocol_stats_out_forwarded_octets",
-                "unit": "bytes"
-            },
-            {
-                "analyticsName": "v6OutputForwardedPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v6_protocol_stats_out_forwarded_pkts",
-                "unit": "packets"
-            },
-            {
-                "analyticsName": "v6OutputOctets",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v6_protocol_stats_out_octets",
-                "unit": "bytes"
-            },
-            {
-                "analyticsName": "v6OutputPkts",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "xe_if_stats_v6_protocol_stats_out_pkts",
-                "unit": "packets"
-            }
+                {
+                    "analyticsName": "dot3AlignmentErrors",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_alignment_errors",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dot3CarrierSenseErrors",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_carrier_sense_errors",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dot3DeferredTransmissions",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_deferred_transmissions",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dot3ExcessiveCollisions",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_excessive_collisions",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dot3FcsErrors",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_fcs_errors",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dot3FrameTooLongs",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_frame_too_longs",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dot3HcAlignmentErrors",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_hc_alignment_errors",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dot3HcFcsErrors",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_hc_fcs_errors",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dot3HcFrameTooLongs",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_hc_frame_too_longs",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dot3HcInpauseFrames",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_hc_inpause_frames",
+                    "unit": "frames"
+                },
+                {
+                    "analyticsName": "dot3HcInternalMacReceiveErrors",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_hc_internal_mac_receive_errors",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dot3HcInternalMacTransmitErrors",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_hc_internal_mac_transmit_errors",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dot3HcOutpauseFrames",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_hc_outpause_frames",
+                    "unit": "frames"
+                },
+                {
+                    "analyticsName": "dot3HcSymbolErrors",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_hc_symbol_errors",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dot3InternalMacReceiveErrors",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_internal_mac_receive_errors",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dot3InternalMacTransmitErrors",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_internal_mac_transmit_errors",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dot3LateCollisions",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_late_collisions",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dot3MultipleCollisionFrames",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_multiple_collision_frames",
+                    "unit": "frames"
+                },
+                {
+                    "analyticsName": "dot3SingleCollisionFrames",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_single_collision_frames",
+                    "unit": "frames"
+                },
+                {
+                    "analyticsName": "dot3SqeTestErrors",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_sqe_test_errors",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dot3SymbolErrors",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_dot3_counters_dot3_error_counters_v2_dot3_symbol_errors",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "etherIn8021QFrames",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_in_8021q_frames",
+                    "unit": "frames"
+                },
+                {
+                    "analyticsName": "etherInFragmentFrames",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_in_fragment_frames",
+                    "unit": "frames"
+                },
+                {
+                    "analyticsName": "etherInJabberFrames",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_in_jabber_frames",
+                    "unit": "frames"
+                },
+                {
+                    "analyticsName": "etherInMacControlFrames",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_in_mac_control_frames",
+                    "unit": "frames"
+                },
+                {
+                    "analyticsName": "etherInMacPauseFrames",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_in_mac_pause_frames",
+                    "unit": "frames"
+                },
+                {
+                    "analyticsName": "etherInOversizeFrames",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_in_oversize_frames",
+                    "unit": "frames"
+                },
+                {
+                    "analyticsName": "etherOut8021QFrames",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_out_8021q_frames",
+                    "unit": "frames"
+                },
+                {
+                    "analyticsName": "etherOutMacControlFrames",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_out_mac_control_frames",
+                    "unit": "frames"
+                },
+                {
+                    "analyticsName": "etherOutMacPauseFrames",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_ether_stats_out_mac_pause_frames",
+                    "unit": "frames"
+                },
+                {
+                    "analyticsName": "mtu",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_mtu",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "interfaceBandwidth",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_speed",
+                    "unit": "bps"
+                },
+                {
+                    "analyticsName": "inputBroadcastPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_in_broadcast_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "crcErrors",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_in_crc_errors",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "xe_if_stats_statistics_in_discards",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_in_discards",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "xe_if_stats_statistics_in_discards_64",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_in_discards_64",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "xe_if_stats_statistics_in_errors",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_in_errors",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "xe_if_stats_statistics_in_errors_64",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_in_errors_64",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "inputMulticastPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_in_multicast_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "bytesReceived",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_in_octets",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "inputDataRate",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_in_octets_rate",
+                    "sqlExpr": "cast(`xe_if_stats_statistics_in_octets_rate` as DOUBLE) * 8",
+                    "unit": "bps"
+                },
+                {
+                    "analyticsName": "inputUnicastPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_in_unicast_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "xe_if_stats_statistics_in_unknown_protos",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_in_unknown_protos",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "xe_if_stats_statistics_in_unknown_protos_64",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_in_unknown_protos_64",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "numFlaps",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_num_flaps",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "outputBroadcastPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_out_broadcast_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "outputDiscards",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_out_discards",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "outputErrors",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_out_errors",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "outputMulticastPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_out_multicast_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "xe_if_stats_statistics_out_octets",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_out_octets",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "xe_if_stats_statistics_out_octets_rate",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_out_octets_rate"
+                },
+                {
+                    "analyticsName": "xe_if_stats_statistics_out_octets_64",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_out_octets_64",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "xe_if_stats_statistics_out_octets_64_rate",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_out_octets_64_rate"
+                },
+                {
+                    "analyticsName": "outputUnicastPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_out_unicast_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "xe_if_stats_statistics_rx",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_rx_kbps",
+                    "sqlExpr": "cast(`xe_if_stats_statistics_rx_kbps` as DOUBLE) * 1000",
+                    "unit": "bps"
+                },
+                {
+                    "analyticsName": "inputPacketRate",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_rx_pps",
+                    "unit": "pps"
+                },
+                {
+                    "analyticsName": "xe_if_stats_statistics_tx",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_tx_kbps",
+                    "sqlExpr": "cast(`xe_if_stats_statistics_tx_kbps` as DOUBLE) * 1000",
+                    "unit": "bps"
+                },
+                {
+                    "analyticsName": "outputPacketRate",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_statistics_tx_pps",
+                    "unit": "pps"
+                },
+                {
+                    "analyticsName": "v4InputDiscardedPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v4_protocol_stats_in_discarded_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "v4InputErrorPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v4_protocol_stats_in_error_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "v4InputForwardedOctets",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v4_protocol_stats_in_forwarded_octets",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "v4InputForwardedPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v4_protocol_stats_in_forwarded_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "v4InputOctets",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v4_protocol_stats_in_octets",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "v4InputPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v4_protocol_stats_in_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "v4OutputDiscardedPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v4_protocol_stats_out_discarded_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "v4OutputErrorPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v4_protocol_stats_out_error_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "v4OutputForwardedOctets",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v4_protocol_stats_out_forwarded_octets",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "v4OutputForwardedPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v4_protocol_stats_out_forwarded_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "v4OutputOctets",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v4_protocol_stats_out_octets",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "v4OutputPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v4_protocol_stats_out_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "v6InputDiscardedPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v6_protocol_stats_in_discarded_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "v6InputErrorPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v6_protocol_stats_in_error_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "v6InputForwardedOctets",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v6_protocol_stats_in_forwarded_octets",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "v6InputForwardedPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v6_protocol_stats_in_forwarded_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "v6InputOctets",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v6_protocol_stats_in_octets",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "v6InputPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v6_protocol_stats_in_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "v6OutputDiscardedPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v6_protocol_stats_out_discarded_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "v6OutputErrorPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v6_protocol_stats_out_error_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "v6OutputForwardedOctets",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v6_protocol_stats_out_forwarded_octets",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "v6OutputForwardedPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v6_protocol_stats_out_forwarded_pkts",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "v6OutputOctets",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v6_protocol_stats_out_octets",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "v6OutputPkts",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "xe_if_stats_v6_protocol_stats_out_pkts",
+                    "unit": "packets"
+                }
             ],
             "objectType": "cisco-telemetry-xe-interface-ak",
             "tenantId": "020213ee-bcd0-4819-89a3-ee1e370148e7",
