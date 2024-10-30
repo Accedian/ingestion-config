@@ -1,0 +1,2092 @@
+{
+    "data": {
+        "attributes": {
+            "NATSConfig": {
+                "host": "http://127.0.0.1"
+            },
+            "_rev": "4-bb702491f4396e8ecf82eac6e215facb",
+            "agentProxyConfig": {
+                "agentProxyHost": "0.0.0.0",
+                "agentProxyJWT": true,
+                "agentProxyPort": 55777,
+                "agentProxyTLS": true,
+                "agentProxyURL": "/publisher",
+                "orchestratorHost": "proserv.dhus-labs.analytics.accedian.io",
+                "orchestratorPort": 443,
+                "orchestratorURL": "sensor-control"
+            },
+            "createdTimestamp": 1729554444,
+            "datahubConnectionRetryFrequency": 30,
+            "datahubHeartbeatFrequency": 60,
+            "datatype": "connectorConfig",
+            "lastModifiedTimestamp": 1730272499,
+            "loglvl": "",
+            "name": "nettas-cisco-ios-xe",
+            "openMetricsConfig": {
+                "blockDuplicateAgentIds": false,
+                "metricMappingsVersion": "0.16.0",
+                "metricsGatewayHost": "0.0.0.0",
+                "metricsGatewayJWT": true,
+                "metricsGatewayPort": 55888,
+                "metricsGatewayTLS": true,
+                "metricsGatewayURL": "/publisher",
+                "operations": {
+                    "cisco-telemetry-xe-interface-ak": {
+                        "delta": {
+                            "metrics": [
+                                "xe_if_stats_statistics_out_octets",
+                                "xe_if_stats_statistics_out_octets_64",
+                                "xe_if_stats_statistics_in_octets",
+                                "xe_if_stats_statistics_out_unicast_pkts",
+                                "xe_if_stats_statistics_in_unicast_pkts"
+                            ]
+                        },
+                        "rate": {
+                            "metrics": [
+                                "xe_if_stats_statistics_out_octets_rate",
+                                "xe_if_stats_statistics_out_octets_64_rate",
+                                "xe_if_stats_statistics_in_octets_rate"
+                            ]
+                        }
+                    }
+                },
+                "prometheusConfig": "scrape_configs:\n\n- job_name: cisco-telemetry-xr-dmm\n  relabel_configs:\n    - source_labels: [ sessionId ]\n      target_label: monitoredObjectId\n    - source_labels: [ sessionName ]\n      target_label: monitoredObjectName\n\n    ## Assign correct directions\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_jitter_sd_operation_metric_bucket_minimum'\n      target_label: direction\n      replacement: \"0\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_jitter_sd_operation_metric_bucket_maximum'\n      target_label: direction\n      replacement: \"0\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_jitter_sd_operation_metric_bucket_average'\n      target_label: direction\n      replacement: \"0\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_jitter_sd_operation_metric_bucket_standard_deviation'\n      target_label: direction\n      replacement: \"0\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_jitter_ds_operation_metric_bucket_minimum'\n      target_label: direction\n      replacement: \"1\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_jitter_ds_operation_metric_bucket_maximum'\n      target_label: direction\n      replacement: \"1\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_jitter_ds_operation_metric_bucket_average'\n      target_label: direction\n      replacement: \"1\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_jitter_ds_operation_metric_bucket_standard_deviation'\n      target_label: direction\n      replacement: \"1\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_round_trip_delay_operation_metric_bucket_minimum'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_round_trip_delay_operation_metric_bucket_maximum'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_round_trip_delay_operation_metric_bucket_average'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_round_trip_delay_operation_metric_bucket_standard_deviation'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_delay_var_avg_rt'\n      target_label: direction\n      replacement: \"2\"\n\n    ## Apply metric renaming\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_jitter_sd_operation_metric_bucket_minimum'\n      target_label: _name_\n      replacement: \"sla_stats_metric_one_way_jitter_operation_metric_bucket_minimum\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_jitter_ds_operation_metric_bucket_minimum'\n      target_label: _name_\n      replacement: \"sla_stats_metric_one_way_jitter_operation_metric_bucket_minimum\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_jitter_sd_operation_metric_bucket_maximum'\n      target_label: _name_\n      replacement: \"sla_stats_metric_one_way_jitter_operation_metric_bucket_maximum\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_jitter_ds_operation_metric_bucket_maximum'\n      target_label: _name_\n      replacement: \"sla_stats_metric_one_way_jitter_operation_metric_bucket_maximum\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_jitter_sd_operation_metric_bucket_average'\n      target_label: _name_\n      replacement: \"sla_stats_metric_one_way_jitter_operation_metric_bucket_average\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_jitter_ds_operation_metric_bucket_average'\n      target_label: _name_\n      replacement: \"sla_stats_metric_one_way_jitter_operation_metric_bucket_average\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_delay_var_avg_rt'\n      target_label: _name_\n      replacement: \"sla_stats_metric_one_way_jitter_operation_metric_bucket_average\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_jitter_sd_operation_metric_bucket_standard_deviation'\n      target_label: _name_\n      replacement: \"sla_stats_metric_one_way_jitter_operation_metric_bucket_standard_deviation\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_jitter_ds_operation_metric_bucket_standard_deviation'\n      target_label: _name_\n      replacement: \"sla_stats_metric_one_way_jitter_operation_metric_bucket_standard_deviation\"\n- job_name: throughput\n  ## Relabeling rules which apply to label names.\n  ## Note - by default the original labels are also kept.  If you wish to have the original named\n  ##        labels removed, use a 'dropLabel' action such as the following:\n  ##  - regex: {{insert your label name here}}\n  ##    action: labeldrop\n  relabel_configs:\n  - source_labels: [testSessionId]\n    target_label: objectId\n  - source_labels: [objectId]\n    target_label: monitoredObjectId\n  - source_labels: [testSessionName]\n    target_label: monitoredObjectName\n  - source_labels: [testSessionId]\n    target_label: sessionId\n  - source_labels: [direction]\n    regex: \"far-end\"\n    target_label: \"direction\"\n    replacement: \"0\"\n  - source_labels: [direction]\n    regex: \"near-end\"\n    target_label: \"direction\"\n    replacement: \"1\"\n  - source_labels: [direction]\n    regex: \"round-trip\"\n    target_label: \"direction\"\n    replacement: \"2\"\n  - source_labels: [timestamp]\n    target_label: \"date\"\n  - source_labels: [Timestamp]\n    target_label: \"timestamp\"\n  - source_labels: [testSessionId]\n    target_label: \"sessionId\"\n  - regex: \"testSessionId\"\n    action: labeldrop\n  - source_labels: [testSessionName]\n    target_label: \"name\"\n- job_name: cisco-telemetry-xr-ipsla-icmp-echo\n  relabel_configs:\n    - source_labels: [ sessionId ]\n      target_label: monitoredObjectId\n    - source_labels: [ sessionName ]\n      target_label: monitoredObjectName\n\n    - source_labels: [_name_]\n      regex: 'ipsla_echo_common_stats_busy_count'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_echo_common_stats_disconnect_count'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_echo_common_stats_dropped_count'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_echo_common_stats_internal_error_count'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_echo_common_stats_max_response_time'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_echo_common_stats_min_response_time'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_echo_common_stats_no_connection_count'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_echo_common_stats_ok_count'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_echo_common_stats_response_time'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_echo_common_stats_sequence_error_count'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_echo_common_stats_sum_response_time'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_echo_common_stats_sum2_response_time'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_echo_common_stats_timeout_count'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_echo_common_stats_verify_error_count'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_echo_common_stats_response_time_count'\n      target_label: direction\n      replacement: \"2\"\n\n- job_name: cisco-telemetry-xr-slm\n  relabel_configs:\n    - source_labels: [sessionId]\n      target_label: monitoredObjectId\n    - source_labels: [sessionName]\n      target_label: monitoredObjectName\n\n    ## Assign correct directions\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_standard_deviation'\n      target_label: direction\n      replacement: \"0\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_standard_deviation'\n      target_label: direction\n      replacement: \"1\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_contents_unaggregated_sample_frames_lost'\n      target_label: direction\n      replacement: \"0\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_contents_unaggregated_sample_frames_sent'\n      target_label: direction\n      replacement: \"0\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_contents_unaggregated_sample_frames_lost'\n      target_label: direction\n      replacement: \"1\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_contents_unaggregated_sample_frames_sent'\n      target_label: direction\n      replacement: \"1\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_availabilityPct'\n      target_label: direction\n      replacement: \"0\"\n\n    ## Apply metric renaming\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_standard_deviation'\n      target_label: _name_\n      replacement: \"lossStdDev\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_standard_deviation'\n      target_label: _name_\n      replacement: \"lossStdDev\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_contents_unaggregated_sample_frames_lost'\n      target_label: _name_\n      replacement: \"sla_stats_metric_one_way_flr_operation_metric_bucket_contents_unaggregated_sample_frames_lost\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_contents_unaggregated_sample_frames_lost'\n      target_label: _name_\n      replacement: \"sla_stats_metric_one_way_flr_operation_metric_bucket_contents_unaggregated_sample_frames_lost\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_contents_unaggregated_sample_frames_sent'\n      target_label: _name_\n      replacement: \"sla_stats_metric_one_way_flr_operation_metric_bucket_contents_unaggregated_sample_frames_sent\"\n    - source_labels: [_name_]\n      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_contents_unaggregated_sample_frames_sent'\n      target_label: _name_\n      replacement: \"sla_stats_metric_one_way_flr_operation_metric_bucket_contents_unaggregated_sample_frames_sent\"\n- job_name: cisco-telemetry-xr-ipsla-udp-jitter\n  relabel_configs:\n    - source_labels: [ sessionId ]\n      target_label: monitoredObjectId\n    - source_labels: [ sessionName ]\n      target_label: monitoredObjectName\n\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_common_stats_max_response_time'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_common_stats_min_response_time'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_common_stats_response_time'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_common_stats_response_time_count'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_common_stats_sum_response_time'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_jitter_in'\n      target_label: direction\n      replacement: \"1\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_jitter_in'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_jitter\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_jitter_out'\n      target_label: direction\n      replacement: \"0\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_jitter_out'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_jitter\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_ds_max'\n      target_label: direction\n      replacement: \"1\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_ds_max'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_negative_max\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_sd_max'\n      target_label: direction\n      replacement: \"0\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_sd_max'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_negative_max\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_ds_min'\n      target_label: direction\n      replacement: \"1\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_ds_min'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_negative_min\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_sd_min'\n      target_label: direction\n      replacement: \"0\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_sd_min'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_negative_min\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_ds_sum'\n      target_label: direction\n      replacement: \"1\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_ds_sum'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_positive_sum\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_sd_sum'\n      target_label: direction\n      replacement: \"0\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_sd_sum'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_positive_sum\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_ds_sum'\n      target_label: direction\n      replacement: \"1\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_ds_sum'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_negative_sum\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_sd_sum'\n      target_label: direction\n      replacement: \"0\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_sd_sum'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_negative_sum\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_ds_count'\n      target_label: direction\n      replacement: \"1\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_ds_count'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_negative_count\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_sd_count'\n      target_label: direction\n      replacement: \"0\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_negative_sd_count'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_negative_count\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_ds_count'\n      target_label: direction\n      replacement: \"1\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_ds_count'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_positive_count\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_sd_count'\n      target_label: direction\n      replacement: \"0\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_sd_count'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_positive_count\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_packet_loss_ds'\n      target_label: direction\n      replacement: \"1\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_packet_loss_ds'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_packet_loss\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_packet_loss_sd'\n      target_label: direction\n      replacement: \"0\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_packet_loss_sd'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_packet_loss\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_ds_max'\n      target_label: direction\n      replacement: \"1\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_ds_max'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_positive_max\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_sd_max'\n      target_label: direction\n      replacement: \"0\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_sd_max'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_positive_max\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_ds_min'\n      target_label: direction\n      replacement: \"1\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_ds_min'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_positive_min\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_sd_min'\n      target_label: direction\n      replacement: \"0\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_positive_sd_min'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_positive_min\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_packet_late_arrivals'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_packet_mia'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_packet_out_of_sequence'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_packet_skipped'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_packet_invalid_tstamp'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_internal_errors_count'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_busies_count'\n      target_label: direction\n      replacement: \"2\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_one_way_ds_max'\n      target_label: direction\n      replacement: \"1\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_one_way_ds_max'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_one_way_max\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_one_way_sd_max'\n      target_label: direction\n      replacement: \"0\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_one_way_sd_max'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_one_way_max\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_one_way_ds_min'\n      target_label: direction\n      replacement: \"1\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_one_way_ds_min'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_one_way_min\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_one_way_sd_min'\n      target_label: direction\n      replacement: \"0\"\n    - source_labels: [_name_]\n      regex: 'ipsla_jitter_specific_stats_udp_jitter_stats_one_way_sd_min'\n      target_label: _name_\n      replacement: \"ipsla_jitter_specific_stats_udp_jitter_stats_one_way_min\"\n- job_name: default\n  ## Relabeling rules which apply to label names.\n  ## Note - by default the original labels are also kept.  If you wish to have the original named\n  ##        labels removed, use a 'dropLabel' action such as the following:\n  ##  - regex: {{insert your label name here}}\n  ##    action: labeldrop\n  relabel_configs:\n  - source_labels: [sessionId]\n    target_label: monitoredObjectId\n  - source_labels: [sessionName]\n    target_label: monitoredObjectName\n  - source_labels: [direction]\n    regex: \"far-end\"\n    target_label: \"direction\"\n    replacement: \"0\"\n  - source_labels: [direction]\n    regex: \"near-end\"\n    target_label: \"direction\"\n    replacement: \"1\"\n  - source_labels: [direction]\n    regex: \"round-trip\"\n    target_label: \"direction\"\n    replacement: \"2\"\n\n- job_name: cisco-telemetry-xr-policy\n  relabel_configs:\n    - source_labels: [sessionId]\n      target_label: monitoredObjectId\n    - source_labels: [sessionName]\n      target_label: monitoredObjectName\n\n    ## Assign correct directions\n    - source_labels: [_name_]\n      regex: \"(policy_in.*)\"\n      target_label: direction\n      replacement: \"1\"\n    - source_labels: [_name_]\n      regex: \"(policy_out.*)\"\n      target_label: direction\n      replacement: \"0\"\n\n    ## Apply metric renaming\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_queue_stats_array_conform_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_queue_stats_array_conform_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_out_stats_class_stats_queue_stats_array_conform_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_queue_stats_array_conform_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_child_policy_class_stats_police_stats_array_conform_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_police_stats_array_conform_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_out_stats_class_stats_child_policy_class_stats_police_stats_array_conform_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_police_stats_array_conform_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_child_policy_class_stats_police_stats_array_exceed_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_police_stats_array_exceed_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_out_stats_class_stats_child_policy_class_stats_police_stats_array_exceed_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_police_stats_array_exceed_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_total_drop_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_total_drop_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_total_transmit_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_general_stats_total_transmit_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_total_transmit_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_general_stats_total_transmit_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_match_data_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_general_stats_match_data_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_match_data_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_general_stats_match_data_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_general_stats_match_data_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_general_stats_match_data_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_out_stats_class_stats_general_stats_match_data_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_general_stats_match_data_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_general_stats_total_drop_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_general_stats_total_drop_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_out_stats_class_stats_general_stats_total_drop_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_general_stats_total_drop_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_general_stats_total_transmit_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_general_stats_total_transmit_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_out_stats_class_stats_general_stats_total_transmit_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_general_stats_total_transmit_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_police_stats_array_conform_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_police_stats_array_conform_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_out_stats_class_stats_police_stats_array_conform_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_police_stats_array_conform_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_police_stats_array_exceed_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_police_stats_array_exceed_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_out_stats_class_stats_police_stats_array_exceed_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_police_stats_array_exceed_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_child_policy_class_stats_queue_stats_array_conform_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_queue_stats_array_conform_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_out_stats_class_stats_child_policy_class_stats_queue_stats_array_conform_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_queue_stats_array_conform_rate\"\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_general_stats_transmit_packets'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_general_stats_transmit_packets\"\n    - source_labels: [_name_]\n      regex: 'policy_out_stats_class_stats_general_stats_transmit_packets'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_general_stats_transmit_packets\"\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_transmit_packets'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_packets\"\n    - source_labels: [_name_]\n      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_transmit_packets'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_packets\"\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_general_stats_transmit_bytes'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_general_stats_transmit_bytes\"\n    - source_labels: [_name_]\n      regex: 'policy_out_stats_class_stats_general_stats_transmit_bytes'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_general_stats_transmit_bytes\"\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_transmit_bytes'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_bytes\"\n    - source_labels: [_name_]\n      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_transmit_bytes'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_bytes\"\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_general_stats_total_drop_packets'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_general_stats_total_drop_packets\"\n    - source_labels: [_name_]\n      regex: 'policy_out_stats_class_stats_general_stats_total_drop_packets'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_general_stats_total_drop_packets\"\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_total_drop_packets'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_packets\"\n    - source_labels: [_name_]\n      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_total_drop_packets'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_packets\"\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_general_stats_total_drop_bytes'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_general_stats_total_drop_bytes\"\n    - source_labels: [_name_]\n      regex: 'policy_out_stats_class_stats_general_stats_total_drop_bytes'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_general_stats_total_drop_bytes\"\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes\"\n    - source_labels: [_name_]\n      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes\"\n    - source_labels: [_name_]\n      regex: 'policy_in_stats_class_stats_general_stats_pre_policy_matched_packets'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_general_stats_pre_policy_matched_packets\"\n    - source_labels: [ _name_ ]\n      regex: 'policy_in_stats_class_stats_general_stats_pre_policy_matched_bytes'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_general_stats_pre_policy_matched_bytes\"\n    - source_labels: [ _name_ ]\n      regex: 'policy_out_stats_class_stats_general_stats_pre_policy_matched_bytes'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_general_stats_pre_policy_matched_bytes\"\n    - source_labels: [ _name_ ]\n      regex: 'policy_out_stats_class_stats_general_stats_pre_policy_matched_packets'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_general_stats_pre_policy_matched_packets\"\n    - source_labels: [ _name_ ]\n      regex: 'policy_in_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate\"\n    - source_labels: [ _name_ ]\n      regex: 'policy_out_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate\"\n    - source_labels: [ _name_ ]\n      regex: 'policy_in_stats_class_stats_queue_stats_array_exceed_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_queue_stats_array_exceed_rate\"\n    - source_labels: [ _name_ ]\n      regex: 'policy_out_stats_class_stats_queue_stats_array_exceed_rate'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_queue_stats_array_exceed_rate\"\n    - source_labels: [ _name_ ]\n      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets\"\n    - source_labels: [ _name_ ]\n      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets\"\n    - source_labels: [ _name_ ]\n      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes\"\n    - source_labels: [ _name_ ]\n      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes'\n      target_label: _name_\n      replacement: \"policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes\"\n\n- job_name: cisco-telemetry-xe-interface-ak\n  relabel_configs:\n    - source_labels: [ sessionId ]\n      target_label: monitoredObjectId\n    - source_labels: [ sessionName ]\n      target_label: monitoredObjectName\n- job_name: cisco-telemetry-xe-cpu-ak\n  relabel_configs:\n    - source_labels: [ sessionId ]\n      target_label: monitoredObjectId\n    - source_labels: [ sessionName ]\n      target_label: monitoredObjectName\n- job_name: cisco-telemetry-xe-memory-ak\n  relabel_configs:\n    - source_labels: [ sessionId ]\n      target_label: monitoredObjectId\n    - source_labels: [ sessionName ]\n      target_label: monitoredObjectName\n\n- job_name: cisco-telemetry-xe-ietf-interface-ak\n  relabel_configs:\n    - source_labels: [ sessionId ]\n      target_label: monitoredObjectId\n    - source_labels: [ sessionName ]\n      target_label: monitoredObjectName",
+                "recordMappings": [
+                    {
+                        "mappingMatch": {
+                            "key": "echo-icmp",
+                            "matches": "unused"
+                        },
+                        "mappingType": "array",
+                        "mappings": [
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "name",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionName"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "direction",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "direction"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "statTime",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawRecordType": "timestamp",
+                                "rawSourceName": "Timestamp"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "deviceId",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "agentId"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "Interval",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "reportInterval"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "sessionId",
+                                "includeInObjectId": true,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionId"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "sessionPmStatError",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmStatError"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "statStatus",
+                                    "Parameter": "sessionPmStatError",
+                                    "Type": "interpolate"
+                                },
+                                "headerName": "statStatus",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmStatStatus"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dmin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayMinUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayMaxUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dmean",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayAvgUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dStdDev",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayStdDevUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dp25",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP25Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dp50",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP50Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dp75",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP75Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dp95",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP95Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dpLo",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP96Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dpMi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP98Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dpHi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP99Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvMaxUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvmean",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvAvgUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvp25",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP25Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvp50",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP50Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvp75",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP75Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvp95",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP95Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvpLo",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP96Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvpMi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP98Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvpHi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP99Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jmin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvMinUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvMaxUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jmean",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvAvgUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jStdDev",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvAvgUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jp25",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP25Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jp50",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP50Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jp75",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP75Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jp95",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP95Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jpLo",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP96Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jpMi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP98Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jpHi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP99Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "lostpkts",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmLostPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "multiply",
+                                    "Parameter": "10000",
+                                    "Type": "fixed"
+                                },
+                                "headerName": "lostperc",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmLostPktsPerc"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "misorderpkts",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmReorderedPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "duplicatepkts",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDuplicatedPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "toolatepkts",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDuplicatedPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "rxpkts",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmRxPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "lostburstmin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmLostPktsBurstMin"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "lostburstmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmLostPktsBurstMax"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "lostperiods",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmLostPktsPeriods"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "rxbytes",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmRxPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "multiply",
+                                    "Parameter": "4",
+                                    "Type": "fixed"
+                                },
+                                "headerName": "tosmin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDscpMin"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "multiply",
+                                    "Parameter": "4",
+                                    "Type": "fixed"
+                                },
+                                "headerName": "tosmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDscpMax"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "ttlmin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmTtlMin"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "ttlmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmTtlMax"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "vpriomin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmVprioMin"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "vpriomax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmVprioMax"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "multiply",
+                                    "Parameter": "1000000",
+                                    "Type": "fixed"
+                                },
+                                "headerName": "mos",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmMos"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "r",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmRvalue"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "syncStatus",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmSyncQuality"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "fCongestion",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "fCongestion"
+                            }
+                        ],
+                        "monitoredObjectId": "echo-icmp",
+                        "objectType": "echo-icmp"
+                    },
+                    {
+                        "mappingMatch": {
+                            "key": "twamp-sf",
+                            "matches": "unused"
+                        },
+                        "mappingType": "array",
+                        "mappings": [
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "name",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionName"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "direction",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "direction"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "statTime",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawRecordType": "timestamp",
+                                "rawSourceName": "Timestamp"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "deviceId",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "agentId"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "Interval",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "reportInterval"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "sessionId",
+                                "includeInObjectId": true,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionId"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "sessionPmStatError",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmStatError"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "statStatus",
+                                    "Parameter": "sessionPmStatError",
+                                    "Type": "interpolate"
+                                },
+                                "headerName": "statStatus",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmStatStatus"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dmin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayMinUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayMaxUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dmean",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayAvgUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dStdDev",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayStdDevUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dp25",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP25Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dp50",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP50Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dp75",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP75Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dp95",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP95Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dpLo",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP96Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dpMi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP98Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dpHi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP99Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvMaxUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvmean",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvAvgUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvp25",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP25Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvp50",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP50Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvp75",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP75Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvp95",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP95Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvpLo",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP96Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvpMi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP98Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvpHi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP99Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jmin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvMinUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvMaxUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jmean",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvAvgUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jStdDev",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvAvgUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jp25",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP25Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jp50",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP50Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jp75",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP75Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jp95",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP95Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jpLo",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP96Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jpMi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP98Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jpHi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP99Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "lostpkts",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmLostPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "multiply",
+                                    "Parameter": "10000",
+                                    "Type": "fixed"
+                                },
+                                "headerName": "lostperc",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmLostPktsPerc"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "misorderpkts",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmReorderedPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "duplicatepkts",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDuplicatedPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "toolatepkts",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDuplicatedPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "rxpkts",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmRxPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "lostburstmin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmLostPktsBurstMin"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "lostburstmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmLostPktsBurstMax"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "lostperiods",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmLostPktsPeriods"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "rxbytes",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmRxPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "multiply",
+                                    "Parameter": "4",
+                                    "Type": "fixed"
+                                },
+                                "headerName": "tosmin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDscpMin"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "multiply",
+                                    "Parameter": "4",
+                                    "Type": "fixed"
+                                },
+                                "headerName": "tosmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDscpMax"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "ttlmin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmTtlMin"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "ttlmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmTtlMax"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "vpriomin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmVprioMin"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "vpriomax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmVprioMax"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "multiply",
+                                    "Parameter": "1000000",
+                                    "Type": "fixed"
+                                },
+                                "headerName": "mos",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmMos"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "r",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmRvalue"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "syncStatus",
+                                    "Parameter": "sessionPmSyncQuality",
+                                    "Type": "interpolate"
+                                },
+                                "headerName": "syncStatus",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmSyncQuality"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "fCongestion",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "fCongestion"
+                            }
+                        ],
+                        "monitoredObjectId": "twamp-sf",
+                        "objectType": "twamp-sf"
+                    },
+                    {
+                        "mappingMatch": {
+                            "key": "echo-udp",
+                            "matches": "unused"
+                        },
+                        "mappingType": "array",
+                        "mappings": [
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "name",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionName"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "direction",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "direction"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "statTime",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawRecordType": "timestamp",
+                                "rawSourceName": "Timestamp"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "deviceId",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "agentId"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "Interval",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "reportInterval"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "sessionId",
+                                "includeInObjectId": true,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionId"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "sessionPmStatError",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmStatError"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "statStatus",
+                                    "Parameter": "sessionPmStatError",
+                                    "Type": "interpolate"
+                                },
+                                "headerName": "statStatus",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmStatStatus"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dmin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayMinUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayMaxUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dmean",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayAvgUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dStdDev",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayStdDevUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dp25",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP25Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dp50",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP50Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dp75",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP75Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dp95",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP95Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dpLo",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP96Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dpMi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP98Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dpHi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP99Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvMaxUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvmean",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvAvgUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvp25",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP25Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvp50",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP50Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvp75",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP75Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvp95",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP95Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvpLo",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP96Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvpMi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP98Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvpHi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP99Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jmin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvMinUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvMaxUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jmean",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvAvgUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jStdDev",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvAvgUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jp25",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP25Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jp50",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP50Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jp75",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP75Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jp95",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP95Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jpLo",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP96Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jpMi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP98Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jpHi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP99Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "lostpkts",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmLostPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "multiply",
+                                    "Parameter": "10000",
+                                    "Type": "fixed"
+                                },
+                                "headerName": "lostperc",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmLostPktsPerc"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "misorderpkts",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmReorderedPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "duplicatepkts",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDuplicatedPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "toolatepkts",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDuplicatedPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "rxpkts",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmRxPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "lostburstmin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmLostPktsBurstMin"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "lostburstmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmLostPktsBurstMax"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "lostperiods",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmLostPktsPeriods"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "rxbytes",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmRxPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "multiply",
+                                    "Parameter": "4",
+                                    "Type": "fixed"
+                                },
+                                "headerName": "tosmin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDscpMin"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "multiply",
+                                    "Parameter": "4",
+                                    "Type": "fixed"
+                                },
+                                "headerName": "tosmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDscpMax"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "ttlmin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmTtlMin"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "ttlmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmTtlMax"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "vpriomin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmVprioMin"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "vpriomax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmVprioMax"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "multiply",
+                                    "Parameter": "1000000",
+                                    "Type": "fixed"
+                                },
+                                "headerName": "mos",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmMos"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "r",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmRvalue"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "syncStatus",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmSyncQuality"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "fCongestion",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "fCongestion"
+                            }
+                        ],
+                        "monitoredObjectId": "echo-udp",
+                        "objectType": "echo-udp"
+                    },
+                    {
+                        "mappingMatch": {
+                            "key": "twamp-sl",
+                            "matches": "unused"
+                        },
+                        "mappingType": "array",
+                        "mappings": [
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "name",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionName"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "direction",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "direction"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "statTime",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawRecordType": "timestamp",
+                                "rawSourceName": "Timestamp"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "deviceId",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "agentId"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "Interval",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "reportInterval"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "sessionId",
+                                "includeInObjectId": true,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionId"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "sessionPmStatError",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmStatError"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "statStatus",
+                                    "Parameter": "sessionPmStatError",
+                                    "Type": "interpolate"
+                                },
+                                "headerName": "statStatus",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmStatStatus"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dmin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayMinUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayMaxUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dmean",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayAvgUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dStdDev",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayStdDevUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dp25",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP25Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dp50",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP50Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dp75",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP75Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dp95",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP95Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dpLo",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP96Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dpMi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP98Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dpHi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDelayP99Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvMaxUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvmean",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvAvgUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvp25",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP25Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvp50",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP50Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvp75",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP75Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvp95",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP95Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvpLo",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP96Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvpMi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP98Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "dvpHi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmPdvP99Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jmin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvMinUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvMaxUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jmean",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvAvgUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jStdDev",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvAvgUs"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jp25",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP25Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jp50",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP50Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jp75",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP75Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jp95",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP95Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jpLo",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP96Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jpMi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP98Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "jpHi",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmIpdvP99Us"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "lostpkts",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmLostPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "multiply",
+                                    "Parameter": "10000",
+                                    "Type": "fixed"
+                                },
+                                "headerName": "lostperc",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmLostPktsPerc"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "misorderpkts",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmReorderedPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "duplicatepkts",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDuplicatedPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "toolatepkts",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDuplicatedPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "rxpkts",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmRxPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "lostburstmin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmLostPktsBurstMin"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "lostburstmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmLostPktsBurstMax"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "lostperiods",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmLostPktsPeriods"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "rxbytes",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmRxPkts"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "multiply",
+                                    "Parameter": "4",
+                                    "Type": "fixed"
+                                },
+                                "headerName": "tosmin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDscpMin"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "multiply",
+                                    "Parameter": "4",
+                                    "Type": "fixed"
+                                },
+                                "headerName": "tosmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmDscpMax"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "ttlmin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmTtlMin"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "ttlmax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmTtlMax"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "vpriomin",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmVprioMin"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "vpriomax",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmVprioMax"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "multiply",
+                                    "Parameter": "1000000",
+                                    "Type": "fixed"
+                                },
+                                "headerName": "mos",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmMos"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "r",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmRvalue"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {
+                                    "Operation": "syncStatus",
+                                    "Parameter": "sessionPmSyncQuality",
+                                    "Type": "interpolate"
+                                },
+                                "headerName": "syncStatus",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "sessionPmSyncQuality"
+                            },
+                            {
+                                "InstanceIDIdx": null,
+                                "Transformation": {},
+                                "headerName": "fCongestion",
+                                "includeInObjectId": false,
+                                "objectIdJoinKey": "",
+                                "rawSourceName": "fCongestion"
+                            }
+                        ],
+                        "monitoredObjectId": "twamp-sl",
+                        "objectType": "twamp-sl"
+                    }
+                ]
+            },
+            "pollingFrequency": 30,
+            "port": 22002,
+            "templateId": "sensor-agent",
+            "tenantId": "020213ee-bcd0-4819-89a3-ee1e370148e7",
+            "type": "OpenMetrics",
+            "url": "/publisher",
+            "zone": "nettas-cisco-ios-xe"
+        },
+        "id": "b8d8ae53-89c3-403c-afc0-b5fe556bed20",
+        "type": "connectorConfigs"
+    }
+}
