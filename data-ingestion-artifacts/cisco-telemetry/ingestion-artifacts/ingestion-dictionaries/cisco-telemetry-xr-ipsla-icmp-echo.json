@@ -1,32 +1,30 @@
 {
     "data": {
         "attributes": {
-            "_id": "openmetricscisco-telemetry-xr-ipsla-icmp-echo-ak",
-            "_rev": "3-26cc57085492bf8cbae814471a9ee025",
-            "createdTimestamp": 1727313369916,
+            "_id": "cisco-cisco-telemetry-xr-ipsla-icmp-echo",
             "customMetrics": [
                 {
-                    "analyticsName": "Reachability_percent",
+                    "analyticsName": "reachabilityPct",
                     "dataType": "double",
                     "directions": [
-                        "0"
+                        "2"
                     ],
-                    "rawName": "Reachability_percent",
-                    "sqlExpr": "(cast(`ipsla_echo_common_stats_ok_count` as DOUBLE) * 100) / (cast(`ipsla_echo_common_stats_ok_count` as DOUBLE) + cast(`ipsla_echo_common_stats_timeout_count` as DOUBLE) + cast(`ipsla_echo_common_stats_busy_count` as DOUBLE) + cast(`ipsla_echo_common_stats_disconnect_count` as DOUBLE) + cast(`ipsla_echo_common_stats_dropped_count` as DOUBLE) + cast(`ipsla_echo_common_stats_internal_error_count` as DOUBLE) + cast(`ipsla_echo_common_stats_no_connection_count` as DOUBLE))",
+                    "rawName": "reachabilityPct",
+                    "sqlExpr": "(cast(`okCount` as DOUBLE) * 100) / (cast(`okCount` as DOUBLE) + cast(`timeoutCount` as DOUBLE) + cast(`busyCount` as DOUBLE) + cast(`disconnectCount` as DOUBLE) + cast(`droppedCount` as DOUBLE) + cast(`internalErrorCount` as DOUBLE) + cast(`noConnectionCount` as DOUBLE))",
                     "unit": "pct"
                 },
                 {
                     "analyticsName": "packetsLostPct",
-                    "dataType": "double",
+                    "dataType": "float",
                     "directions": [
-                        "0"
+                        "2"
                     ],
                     "rawName": "packetsLostPct",
-                    "sqlExpr": "100 - (cast(`ipsla_echo_common_stats_ok_count` as DOUBLE) * 100) / (cast(`ipsla_echo_common_stats_ok_count` as DOUBLE) + cast(`ipsla_echo_common_stats_timeout_count` as DOUBLE) + cast(`ipsla_echo_common_stats_busy_count` as DOUBLE) + cast(`ipsla_echo_common_stats_disconnect_count` as DOUBLE) + cast(`ipsla_echo_common_stats_dropped_count` as DOUBLE) + cast(`ipsla_echo_common_stats_internal_error_count` as DOUBLE) + cast(`ipsla_echo_common_stats_no_connection_count` as DOUBLE))",
+                    "sqlExpr": "100 - (cast(`okCount` as DOUBLE) * 100) / (cast(`okCount` as DOUBLE) + cast(`timeoutCount` as DOUBLE) + cast(`busyCount` as DOUBLE) + cast(`disconnectCount` as DOUBLE) + cast(`droppedCount` as DOUBLE) + cast(`internalErrorCount` as DOUBLE) + cast(`noConnectionCount` as DOUBLE))",
                     "unit": "pct"
                 }
             ],
-            "dictionaryName": "openmetrics-cisco-telemetry-xr-ipsla-icmp-echo-ak",
+            "dictionaryName": "cisco-telemetry-xr-ipsla-icmp-echo",
             "dictionaryType": "custom",
             "dimensions": [
                 {
@@ -80,11 +78,10 @@
                     "rawName": "sessionName"
                 }
             ],
-            "lastModifiedTimestamp": 1727313369916,
             "metricType": "timeseries",
             "metrics": [
                 {
-                    "analyticsName": "ipsla_echo_common_stats_busy_count",
+                    "analyticsName": "busyCount",
                     "dataType": "double",
                     "directions": [
                         "2"
@@ -92,7 +89,7 @@
                     "rawName": "ipsla_echo_common_stats_busy_count"
                 },
                 {
-                    "analyticsName": "ipsla_echo_common_stats_disconnect_count",
+                    "analyticsName": "disconnectCount",
                     "dataType": "double",
                     "directions": [
                         "2"
@@ -100,7 +97,7 @@
                     "rawName": "ipsla_echo_common_stats_disconnect_count"
                 },
                 {
-                    "analyticsName": "ipsla_echo_common_stats_dropped_count",
+                    "analyticsName": "droppedCount",
                     "dataType": "double",
                     "directions": [
                         "2"
@@ -108,7 +105,7 @@
                     "rawName": "ipsla_echo_common_stats_dropped_count"
                 },
                 {
-                    "analyticsName": "ipsla_echo_common_stats_internal_error_count",
+                    "analyticsName": "internalErrorCount",
                     "dataType": "double",
                     "directions": [
                         "2"
@@ -136,7 +133,7 @@
                     "unit": "μs"
                 },
                 {
-                    "analyticsName": "ipsla_echo_common_stats_no_connection_count",
+                    "analyticsName": "noConnectionCount",
                     "dataType": "double",
                     "directions": [
                         "2"
@@ -144,7 +141,7 @@
                     "rawName": "ipsla_echo_common_stats_no_connection_count"
                 },
                 {
-                    "analyticsName": "ipsla_echo_common_stats_ok_count",
+                    "analyticsName": "okCount",
                     "dataType": "double",
                     "directions": [
                         "2"
@@ -162,7 +159,7 @@
                     "unit": "μs"
                 },
                 {
-                    "analyticsName": "ipsla_echo_common_stats_sequence_error_count",
+                    "analyticsName": "sequenceErrorCount",
                     "dataType": "double",
                     "directions": [
                         "2"
@@ -170,7 +167,7 @@
                     "rawName": "ipsla_echo_common_stats_sequence_error_count"
                 },
                 {
-                    "analyticsName": "ipsla_echo_common_stats_sum2_response_time",
+                    "analyticsName": "sum2ResponseTime",
                     "dataType": "double",
                     "directions": [
                         "2"
@@ -178,7 +175,7 @@
                     "rawName": "ipsla_echo_common_stats_sum2_response_time"
                 },
                 {
-                    "analyticsName": "ipsla_echo_common_stats_sum_response_time",
+                    "analyticsName": "sumResponseTime",
                     "dataType": "double",
                     "directions": [
                         "2"
@@ -186,7 +183,7 @@
                     "rawName": "ipsla_echo_common_stats_sum_response_time"
                 },
                 {
-                    "analyticsName": "ipsla_echo_common_stats_timeout_count",
+                    "analyticsName": "timeoutCount",
                     "dataType": "double",
                     "directions": [
                         "2"
@@ -194,7 +191,7 @@
                     "rawName": "ipsla_echo_common_stats_timeout_count"
                 },
                 {
-                    "analyticsName": "ipsla_echo_common_stats_verify_error_count",
+                    "analyticsName": "verifyErrorCount",
                     "dataType": "double",
                     "directions": [
                         "2"
@@ -202,11 +199,10 @@
                     "rawName": "ipsla_echo_common_stats_verify_error_count"
                 }
             ],
-            "objectType": "cisco-telemetry-xr-ipsla-icmp-echo-ak",
-            "tenantId": "020213ee-bcd0-4819-89a3-ee1e370148e7",
-            "vendor": "openmetrics"
+            "objectType": "cisco-telemetry-xr-ipsla-icmp-echo",
+            "vendor": "cisco"
         },
-        "id": "openmetricscisco-telemetry-xr-ipsla-icmp-echo-ak",
+        "id": "cisco-cisco-telemetry-xr-ipsla-icmp-echo",
         "type": "ingestionDictionaries"
     },
     "violations": []

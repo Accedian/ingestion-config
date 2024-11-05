@@ -1,4 +1,4 @@
-- job_name: cisco-telemetry-xr-slm-ak
+- job_name: cisco-telemetry-xr-slm
   relabel_configs:
     - source_labels: [sessionId]
       target_label: monitoredObjectId

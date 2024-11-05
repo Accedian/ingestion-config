@@ -1,9 +1,7 @@
 {
     "data": {
         "attributes": {
-            "_id": "openmetricscisco-telemetry-xr-environment-ak",
-            "_rev": "3-fea9639b53b6e226ec4307485481a906",
-            "createdTimestamp": 1727313309975,
+            "_id": "cisco-cisco-telemetry-xr-environment",
             "customMetrics": [
                 {
                     "analyticsName": "usedApplicationMemory",
@@ -26,7 +24,7 @@
                     "unit": "pct"
                 }
             ],
-            "dictionaryName": "openmetrics-cisco-telemetry-xr-environment-ak",
+            "dictionaryName": "cisco-cisco-telemetry-xr-environment",
             "dictionaryType": "custom",
             "dimensions": [
                 {
@@ -80,11 +78,10 @@
                     "rawName": "sessionName"
                 }
             ],
-            "lastModifiedTimestamp": 1727313309975,
             "metricType": "timeseries",
             "metrics": [
                 {
-                    "analyticsName": "cpuFiveMinute",
+                    "analyticsName": "cpuFiveMinutes",
                     "dataType": "double",
                     "directions": [
                         "-1"
@@ -111,11 +108,10 @@
                     "unit": "bytes"
                 }
             ],
-            "objectType": "cisco-telemetry-xr-environment-ak",
-            "tenantId": "020213ee-bcd0-4819-89a3-ee1e370148e7",
-            "vendor": "openmetrics"
+            "objectType": "cisco-telemetry-xr-environment",
+            "vendor": "cisco"
         },
-        "id": "openmetricscisco-telemetry-xr-environment-ak",
+        "id": "cisco-cisco-telemetry-xr-environment",
         "type": "ingestionDictionaries"
     },
     "violations": []

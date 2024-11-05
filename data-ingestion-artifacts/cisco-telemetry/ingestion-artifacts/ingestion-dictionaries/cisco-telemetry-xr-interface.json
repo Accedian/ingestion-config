@@ -1,9 +1,7 @@
 {
     "data": {
         "attributes": {
-            "_id": "openmetricscisco-telemetry-xr-interface-ak",
-            "_rev": "3-53279ed49fcae20028c4e480e03751f3",
-            "createdTimestamp": 1727313310413,
+            "_id": "cisco-cisco-telemetry-xr-interface",
             "customMetrics": [
                 {
                 "analyticsName": "outputUtilization",
@@ -12,7 +10,7 @@
                     "0"
                 ],
                 "rawName": "outputUtilization",
-                "sqlExpr": "if(isnull(`if_stats_data_rates_output_data_rate`), ((cast(`if_stats_interface_statistics_full_interface_stats_bytes_sent_rate` as DOUBLE) * 800) / cast(`interfaceBandwidth` as DOUBLE)), ((cast(`if_stats_data_rates_output_data_rate` as DOUBLE) * 100000) / cast(`interfaceBandwidth` as DOUBLE)))",
+                "sqlExpr": " ((cast(`outputDataRate` as DOUBLE) / cast(`interfaceBandwidth` as DOUBLE))*100)",
                 "unit": "pct"
             },
             {
@@ -22,31 +20,11 @@
                     "0"
                 ],
                 "rawName": "inputUtilization",
-                "sqlExpr": "if(isnull(`if_stats_data_rates_input_data_rate`), ((cast(`if_stats_interface_statistics_full_interface_stats_bytes_received_rate` as DOUBLE) * 800) / cast(`interfaceBandwidth` as DOUBLE)), ((cast(`if_stats_data_rates_input_data_rate` as DOUBLE) * 100000) / cast(`interfaceBandwidth` as DOUBLE)))",
+                "sqlExpr": "((cast(`inputDataRate` as DOUBLE) / cast(`interfaceBandwidth` as DOUBLE))*100)",
                 "unit": "pct"
-            },
-            {
-                "analyticsName": "inputDataRate",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "inputDataRate",
-                "sqlExpr": "if(isnull(`if_stats_data_rates_input_data_rate`), (cast(`if_stats_interface_statistics_full_interface_stats_bytes_received_rate` as DOUBLE) * 8), (cast(`if_stats_data_rates_input_data_rate` as DOUBLE) * 1000))",
-                "unit": "bps"
-            },
-            {
-                "analyticsName": "outputDataRate",
-                "dataType": "double",
-                "directions": [
-                    "0"
-                ],
-                "rawName": "outputDataRate",
-                "sqlExpr": "if(isnull(`if_stats_data_rates_output_data_rate`), (cast(`if_stats_interface_statistics_full_interface_stats_bytes_sent_rate` as DOUBLE) * 8), (cast(`if_stats_data_rates_output_data_rate` as DOUBLE) * 1000))",
-                "unit": "bps"
             }
             ],
-            "dictionaryName": "openmetrics-cisco-telemetry-xr-interface-ak",
+            "dictionaryName": "cisco-cisco-telemetry-xr-interface",
             "dictionaryType": "custom",
             "dimensions": [
                 {
@@ -100,11 +78,30 @@
                     "rawName": "sessionName"
                 }
             ],
-            "lastModifiedTimestamp": 1727313310413,
             "metricType": "timeseries",
             "metrics": [
                 {
-                    "analyticsName": "availabilityPercent",
+                    "analyticsName": "inputDataRate",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "inputDataRate",
+                    "sqlExpr": "if(isnull(`if_stats_data_rates_input_data_rate`), (cast(`if_stats_interface_statistics_full_interface_stats_bytes_received_rate` as DOUBLE) * 8), (cast(`if_stats_data_rates_input_data_rate` as DOUBLE) * 1000))",
+                    "unit": "bps"
+                },
+                {
+                    "analyticsName": "outputDataRate",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "outputDataRate",
+                    "sqlExpr": "if(isnull(`if_stats_data_rates_output_data_rate`), (cast(`if_stats_interface_statistics_full_interface_stats_bytes_sent_rate` as DOUBLE) * 8), (cast(`if_stats_data_rates_output_data_rate` as DOUBLE) * 1000))",
+                    "unit": "bps"
+                },
+                {
+                    "analyticsName": "availabilityPct",
                     "dataType": "double",
                     "directions": [
                         "0"
@@ -133,14 +130,6 @@
                     "unit": "bps"
                 },
                 {
-                    "analyticsName": "if_stats_data_rates_input_data_rate",
-                    "dataType": "double",
-                    "directions": [
-                        "0"
-                    ],
-                    "rawName": "if_stats_data_rates_input_data_rate"
-                },
-                {
                     "analyticsName": "inputPacketRate",
                     "dataType": "double",
                     "directions": [
@@ -148,14 +137,6 @@
                     ],
                     "rawName": "if_stats_data_rates_input_packet_rate",
                     "unit": "pps"
-                },
-                {
-                    "analyticsName": "if_stats_data_rates_output_data_rate",
-                    "dataType": "double",
-                    "directions": [
-                        "0"
-                    ],
-                    "rawName": "if_stats_data_rates_output_data_rate"
                 },
                 {
                     "analyticsName": "outputPacketRate",
@@ -176,14 +157,6 @@
                     "unit": "bytes"
                 },
                 {
-                    "analyticsName": "if_stats_interface_statistics_full_interface_stats_bytes_received_rate",
-                    "dataType": "double",
-                    "directions": [
-                        "0"
-                    ],
-                    "rawName": "if_stats_interface_statistics_full_interface_stats_bytes_received_rate"
-                },
-                {
                     "analyticsName": "bytesSent",
                     "dataType": "double",
                     "directions": [
@@ -191,14 +164,6 @@
                     ],
                     "rawName": "if_stats_interface_statistics_full_interface_stats_bytes_sent",
                     "unit": "bytes"
-                },
-                {
-                    "analyticsName": "if_stats_interface_statistics_full_interface_stats_bytes_sent_rate",
-                    "dataType": "double",
-                    "directions": [
-                        "0"
-                    ],
-                    "rawName": "if_stats_interface_statistics_full_interface_stats_bytes_sent_rate"
                 },
                 {
                     "analyticsName": "crcErrors",
@@ -273,11 +238,10 @@
                     "unit": "packets"
                 }
             ],
-            "objectType": "cisco-telemetry-xr-interface-ak",
-            "tenantId": "020213ee-bcd0-4819-89a3-ee1e370148e7",
-            "vendor": "openmetrics"
+            "objectType": "cisco-telemetry-xr-interface",
+            "vendor": "cisco"
         },
-        "id": "openmetricscisco-telemetry-xr-interface-ak",
+        "id": "cisco-cisco-telemetry-xr-interface",
         "type": "ingestionDictionaries"
     },
     "violations": []

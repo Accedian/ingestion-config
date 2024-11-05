@@ -1,6 +1,6 @@
 scrape_configs:
 
-- job_name: cisco-telemetry-xr-dmm-ak
+- job_name: cisco-telemetry-xr-dmm
   relabel_configs:
     - source_labels: [ sessionId ]
       target_label: monitoredObjectId

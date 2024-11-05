@@ -1,11 +1,9 @@
 {
     "data": {
         "attributes": {
-            "_id": "openmetricscisco-telemetry-xr-dmm-ak",
-            "_rev": "5-04eb48ec9d175248bc15aec9b38c455d",
-            "createdTimestamp": 1727313309524,
+            "_id": "cisco-cisco-telemetry-xr-dmm",
             "customMetrics": null,
-            "dictionaryName": "openmetrics-cisco-telemetry-xr-dmm-ak",
+            "dictionaryName": "cisco-cisco-telemetry-xr-dmm",
             "dictionaryType": "custom",
             "dimensions": [
                 {
@@ -59,7 +57,6 @@
                     "rawName": "sessionName"
                 }
             ],
-            "lastModifiedTimestamp": 1727313369399,
             "metricType": "timeseries",
             "metrics": [
                 {
@@ -144,11 +141,10 @@
                     "unit": "μs"
                 }
             ],
-            "objectType": "cisco-telemetry-xr-dmm-ak",
-            "tenantId": "020213ee-bcd0-4819-89a3-ee1e370148e7",
-            "vendor": "openmetrics"
+            "objectType": "cisco-telemetry-xr-dmm",
+            "vendor": "cisco"
         },
-        "id": "openmetricscisco-telemetry-xr-dmm-ak",
+        "id": "cisco-cisco-telemetry-xr-dmm",
         "type": "ingestionDictionaries"
     },
     "violations": []

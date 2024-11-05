@@ -1,4 +1,4 @@
-- job_name: cisco-telemetry-xr-ipsla-icmp-echo-ak
+- job_name: cisco-telemetry-xr-ipsla-icmp-echo
   relabel_configs:
   - source_labels: [ sessionId ]
     target_label: monitoredObjectId

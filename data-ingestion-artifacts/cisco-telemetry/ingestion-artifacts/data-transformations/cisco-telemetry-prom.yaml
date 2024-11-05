@@ -1,6 +1,6 @@
 scrape_configs:
 
-- job_name: cisco-telemetry-xr-dmm-ak
+- job_name: cisco-telemetry-xr-dmm
   relabel_configs:
     - source_labels: [ sessionId ]
       target_label: monitoredObjectId
@@ -136,7 +136,7 @@ scrape_configs:
     action: labeldrop
   - source_labels: [testSessionName]
     target_label: "name"
-- job_name: cisco-telemetry-xr-slm-ak
+- job_name: cisco-telemetry-xr-slm
   relabel_configs:
     - source_labels: [sessionId]
       target_label: monitoredObjectId
@@ -199,7 +199,7 @@ scrape_configs:
       target_label: _name_
       replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_contents_unaggregated_sample_frames_sent"
 
-- job_name: cisco-telemetry-xr-ipsla-icmp-echo-ak
+- job_name: cisco-telemetry-xr-ipsla-icmp-echo
   relabel_configs:
   - source_labels: [ sessionId ]
     target_label: monitoredObjectId
@@ -268,7 +268,7 @@ scrape_configs:
     replacement: "2"
 
 
-- job_name: cisco-telemetry-xr-ipsla-udp-jitter-ak
+- job_name: cisco-telemetry-xr-ipsla-udp-jitter
   relabel_configs:
   - source_labels: [ sessionId ]
     target_label: monitoredObjectId
@@ -541,7 +541,7 @@ scrape_configs:
     target_label: "direction"
     replacement: "2"
 
-- job_name: cisco-telemetry-xr-policy-ak
+- job_name: cisco-telemetry-xr-policy
   relabel_configs:
     - source_labels: [sessionId]
       target_label: monitoredObjectId

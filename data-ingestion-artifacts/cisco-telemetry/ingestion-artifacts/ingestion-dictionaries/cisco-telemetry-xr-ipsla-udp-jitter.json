@@ -1,11 +1,9 @@
 {
     "data": {
         "attributes": {
-            "_id": "openmetricscisco-telemetry-xr-ipsla-udp-jitter-ak",
-            "_rev": "11-04de9f0dd57c107b5390575de8ec6ca3",
-            "createdTimestamp": 1727318837845,
+            "_id": "cisco-cisco-telemetry-xr-ipsla-udp-jitter",
             "customMetrics": null,
-            "dictionaryName": "openmetrics-cisco-telemetry-xr-ipsla-udp-jitter-ak",
+            "dictionaryName": "cisco-telemetry-xr-ipsla-udp-jitter",
             "dictionaryType": "custom",
             "dimensions": [
                 {
@@ -59,7 +57,6 @@
                     "rawName": "sessionName"
                 }
             ],
-            "lastModifiedTimestamp": 1727318837845,
             "metricType": "timeseries",
             "metrics": [
                 {
@@ -102,7 +99,7 @@
                     "unit": "packets"
                 },
                 {
-                    "analyticsName": "ipsla_jitter_common_stats_sum_response_time",
+                    "analyticsName": "jitterSumResponseTime",
                     "dataType": "double",
                     "directions": [
                         "2"
@@ -110,20 +107,22 @@
                     "rawName": "ipsla_jitter_common_stats_sum_response_time"
                 },
                 {
-                    "analyticsName": "ipsla_jitter_specific_stats_udp_jitter_stats_busies_count",
+                    "analyticsName": "jitterBusiesCount",
                     "dataType": "double",
                     "directions": [
                         "2"
                     ],
-                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_busies_count"
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_busies_count",
+                    "unit": "value"
                 },
                 {
-                    "analyticsName": "ipsla_jitter_specific_stats_udp_jitter_stats_internal_errors_count",
+                    "analyticsName": "jitterInternalErrorsCount",
                     "dataType": "double",
                     "directions": [
                         "2"
                     ],
-                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_internal_errors_count"
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_internal_errors_count",
+                    "unit": "value"
                 },
                 {
                     "analyticsName": "jitterAvg",
@@ -199,12 +198,13 @@
                     "unit": "µs"
                 },
                 {
-                    "analyticsName": "ipsla_jitter_specific_stats_udp_jitter_stats_packet_invalid_tstamp",
+                    "analyticsName": "jitterPacketInvalidTimestamp",
                     "dataType": "double",
                     "directions": [
                         "2"
                     ],
-                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_packet_invalid_tstamp"
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_packet_invalid_tstamp",
+                    "unit": "value"
                 },
                 {
                     "analyticsName": "packetsTooLate",
@@ -290,11 +290,10 @@
                     "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_positive_sum"
                 }
             ],
-            "objectType": "cisco-telemetry-xr-ipsla-udp-jitter-ak",
-            "tenantId": "020213ee-bcd0-4819-89a3-ee1e370148e7",
-            "vendor": "openmetrics"
+            "objectType": "cisco-telemetry-xr-ipsla-udp-jitter",
+            "vendor": "cisco"
         },
-        "id": "openmetricscisco-telemetry-xr-ipsla-udp-jitter-ak",
+        "id": "cisco-cisco-telemetry-xr-ipsla-udp-jitter",
         "type": "ingestionDictionaries"
     },
     "violations": []

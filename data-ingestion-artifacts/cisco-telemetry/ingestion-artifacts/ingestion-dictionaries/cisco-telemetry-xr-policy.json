@@ -1,10 +1,64 @@
 {
     "data": {
         "attributes": {
-            "_id": "openmetricscisco-telemetry-xr-policy-ak",
-            "_rev": "8-883f6f74ed720bdf99a0f25c15d91398",
-            "createdTimestamp": 1727313370685,
-            "customMetrics": [
+            "_id": "cisco-cisco-telemetry-xr-policy",
+            "customMetrics": null,
+            "dictionaryName": "cisco-cisco-telemetry-xr-policy",
+            "dictionaryType": "custom",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                }
+            ],
+            "metricType": "timeseries",
+            "metrics": [
                 {
                     "analyticsName": "generalStatsTotalTransmitRate",
                     "dataType": "double",
@@ -90,7 +144,7 @@
                         "1"
                     ],
                     "rawName": "generalStatsTransmitBytes",
-                    "sqlExpr": "if(isnull(`policy_stats_class_stats_general_stats_transmit_bytes`), (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_bytes` as DOUBLE) * 1000), (cast(`policy_stats_class_stats_general_stats_transmit_bytes` as DOUBLE) * 1000))",
+                    "sqlExpr": "if(isnull(`policy_stats_class_stats_general_stats_transmit_bytes`), (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_bytes` as DOUBLE)), (cast(`policy_stats_class_stats_general_stats_transmit_bytes` as DOUBLE)))",
                     "unit": "bytes"
                 },
                 {
@@ -112,307 +166,47 @@
                         "1"
                     ],
                     "rawName": "generalStatsDropBytes",
-                    "sqlExpr": "if(isnull(`policy_stats_class_stats_general_stats_total_drop_bytes`), (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes` as DOUBLE)* 1000), (cast(`policy_stats_class_stats_general_stats_total_drop_bytes` as DOUBLE) * 1000))",
+                    "sqlExpr": "if(isnull(`policy_stats_class_stats_general_stats_total_drop_bytes`), (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes` as DOUBLE)), (cast(`policy_stats_class_stats_general_stats_total_drop_bytes` as DOUBLE)))",
                     "unit": "bytes"
+                },
+                {
+                    "analyticsName": "generalStatsPrePolicyMatchedBytes",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "generalStatsDropBytes",
+                    "sqlExpr": "if(isnull(`policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes`), (cast(`policy_stats_class_stats_general_stats_pre_policy_matched_bytes` as DOUBLE)), (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes` as DOUBLE)))",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "generalStatsPrePolicyMatchedPackets",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "generalStatsDropBytes",
+                    "sqlExpr": "if(isnull(`policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets`), (cast(`policy_stats_class_stats_general_stats_pre_policy_matched_packets` as DOUBLE)), (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets` as DOUBLE)))",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "queueStatsArrayExceedRate",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "generalStatsDropBytes",
+                    "sqlExpr": "if(isnull(`policy_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate`), (cast(`policy_stats_class_stats_queue_stats_array_exceed_rate` as DOUBLE) * 1000), (cast(`policy_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate` as DOUBLE) * 1000))",
+                    "unit": "bps"
                 }
             ],
-            "dictionaryName": "openmetrics-cisco-telemetry-xr-policy-ak",
-            "dictionaryType": "custom",
-            "dimensions": [
-                {
-                    "analyticsName": "monitoredObjectId",
-                    "dataType": "string",
-                    "rawName": "monitoredObjectId"
-                },
-                {
-                    "analyticsName": "monitoredObjectName",
-                    "dataType": "string",
-                    "rawName": "monitoredObjectName"
-                },
-                {
-                    "analyticsName": "timestamp",
-                    "dataType": "long",
-                    "rawName": "timestamp"
-                },
-                {
-                    "analyticsName": "direction",
-                    "dataType": "integer",
-                    "rawName": "direction"
-                },
-                {
-                    "analyticsName": "agentId",
-                    "dataType": "string",
-                    "rawName": "agentId"
-                },
-                {
-                    "analyticsName": "agentName",
-                    "dataType": "string",
-                    "rawName": "agentName"
-                },
-                {
-                    "analyticsName": "agentType",
-                    "dataType": "string",
-                    "rawName": "agentType"
-                },
-                {
-                    "analyticsName": "objectType",
-                    "dataType": "string",
-                    "rawName": "objectType"
-                },
-                {
-                    "analyticsName": "sessionId",
-                    "dataType": "string",
-                    "rawName": "sessionId"
-                },
-                {
-                    "analyticsName": "sessionName",
-                    "dataType": "string",
-                    "rawName": "sessionName"
-                }
-            ],
-            "lastModifiedTimestamp": 1727427189784,
-            "metricType": "timeseries",
-            "metrics": [
-                {
-                    "analyticsName": "policy_stats_class_stats_child_policy_class_stats_general_stats_match_data_rate",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_child_policy_class_stats_general_stats_match_data_rate"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_packets",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_packets"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_rate",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_rate"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_child_policy_class_stats_general_stats_total_transmit_rate",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_child_policy_class_stats_general_stats_total_transmit_rate"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_bytes",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_bytes"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_packets",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_packets"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_child_policy_class_stats_police_stats_array_conform_rate",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_child_policy_class_stats_police_stats_array_conform_rate"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_child_policy_class_stats_police_stats_array_exceed_rate",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_child_policy_class_stats_police_stats_array_exceed_rate"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_child_policy_class_stats_queue_stats_array_conform_rate",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_child_policy_class_stats_queue_stats_array_conform_rate"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_general_stats_match_data_rate",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_general_stats_match_data_rate"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_general_stats_pre_policy_matched_bytes",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_general_stats_pre_policy_matched_bytes"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_general_stats_pre_policy_matched_packets",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_general_stats_pre_policy_matched_packets"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_general_stats_total_drop_bytes",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_general_stats_total_drop_bytes"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_general_stats_total_drop_packets",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_general_stats_total_drop_packets"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_general_stats_total_drop_rate",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_general_stats_total_drop_rate"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_general_stats_total_transmit_rate",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_general_stats_total_transmit_rate"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_general_stats_transmit_bytes",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_general_stats_transmit_bytes"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_general_stats_transmit_packets",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_general_stats_transmit_packets"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_police_stats_array_conform_rate",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_police_stats_array_conform_rate"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_police_stats_array_exceed_rate",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_police_stats_array_exceed_rate"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_queue_stats_array_conform_rate",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_queue_stats_array_conform_rate"
-                },
-                {
-                    "analyticsName": "policy_stats_class_stats_queue_stats_array_exceed_rate",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "policy_stats_class_stats_queue_stats_array_exceed_rate"
-                }
-            ],
-            "objectType": "cisco-telemetry-xr-policy-ak",
-            "tenantId": "020213ee-bcd0-4819-89a3-ee1e370148e7",
-            "vendor": "openmetrics"
+            "objectType": "cisco-telemetry-xr-policy",
+            "vendor": "cisco"
         },
-        "id": "openmetricscisco-telemetry-xr-policy-ak",
+        "id": "cisco-cisco-telemetry-xr-policy",
         "type": "ingestionDictionaries"
     },
     "violations": []

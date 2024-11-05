@@ -1,13 +1,11 @@
 {
     "data": {
         "attributes": {
-            "_id": "openmetricscisco-telemetry-xr-slm-ak",
-            "_rev": "5-af8250a176621f17b125a0f7499fa749",
-            "createdTimestamp": 1727313310697,
+            "_id": "cisco-cisco-telemetry-xr-slm",
             "customMetrics": [
                 {
                     "analyticsName": "packetsLostPct",
-                    "dataType": "double",
+                    "dataType": "float",
                     "directions": [
                         "0",
                         "1"
@@ -15,19 +13,9 @@
                     "rawName": "packetsLostPct",
                     "sqlExpr": "case when isnotnull(`slmSent`) and isnotnull(`packetsLost`) then (cast((`packetsLost` as DOUBLE) / cast(`slmSent` as DOUBLE)) * 100) end",
                     "unit": "pct"
-                },
-                {
-                    "analyticsName": "availability_percent",
-                    "dataType": "double",
-                    "directions": [
-                        "0"
-                    ],
-                    "rawName": "availability_percent",
-                    "sqlExpr": "availabilityPct",
-                    "unit": "pct"
                 }
             ],
-            "dictionaryName": "openmetrics-cisco-telemetry-xr-slm-ak",
+            "dictionaryName": "cisco-cisco-telemetry-xr-slm",
             "dictionaryType": "custom",
             "dimensions": [
                 {
@@ -81,7 +69,6 @@
                     "rawName": "sessionName"
                 }
             ],
-            "lastModifiedTimestamp": 1727313370988,
             "metricType": "timeseries",
             "metrics": [
                 {
@@ -113,7 +100,7 @@
                     "rawName": "sla_stats_metric_one_way_flr_operation_metric_bucket_contents_unaggregated_sample_frames_sent",
                     "unit": "frames"
                 },
-                                {
+                {
                     "analyticsName": "availabilityPct",
                     "dataType": "double",
                     "directions": [
@@ -123,11 +110,10 @@
                     "unit": "pct"
                 }
             ],
-            "objectType": "cisco-telemetry-xr-slm-ak",
-            "tenantId": "020213ee-bcd0-4819-89a3-ee1e370148e7",
-            "vendor": "openmetrics"
+            "objectType": "cisco-telemetry-xr-slm",
+            "vendor": "cisco"
         },
-        "id": "openmetricscisco-telemetry-xr-slm-ak",
+        "id": "cisco-cisco-telemetry-xr-slm",
         "type": "ingestionDictionaries"
     },
     "violations": []
