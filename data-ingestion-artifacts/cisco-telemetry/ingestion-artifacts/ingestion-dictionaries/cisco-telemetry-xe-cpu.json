@@ -1,11 +1,9 @@
 {
     "data": {
         "attributes": {
-            "_id": "openmetricscisco-telemetry-xe-cpu-ak",
-            "_rev": "1-6f4ffad9c03e02591753b8ce118e7271",
-            "createdTimestamp": 1729662856939,
+            "_id": "cisco-cisco-telemetry-xe-cpu",
             "customMetrics": null,
-            "dictionaryName": "openmetrics-cisco-telemetry-xe-cpu-ak",
+            "dictionaryName": "cisco-cisco-telemetry-xe-cpu",
             "dictionaryType": "custom",
             "dimensions": [
                 {
@@ -59,7 +57,6 @@
                     "rawName": "sessionName"
                 }
             ],
-            "lastModifiedTimestamp": 1729662856939,
             "metricType": "timeseries",
             "metrics": [
             {
@@ -99,11 +96,10 @@
                 "unit": "pct"
             }
             ],
-            "objectType": "cisco-telemetry-xe-cpu-ak",
-            "tenantId": "020213ee-bcd0-4819-89a3-ee1e370148e7",
-            "vendor": "openmetrics"
+            "objectType": "cisco-telemetry-xe-cpu",
+            "vendor": "cisco"
         },
-        "id": "openmetricscisco-telemetry-xe-cpu-ak",
+        "id": "cisco-cisco-telemetry-xe-cpu",
         "type": "ingestionDictionaries"
     },
     "violations": []

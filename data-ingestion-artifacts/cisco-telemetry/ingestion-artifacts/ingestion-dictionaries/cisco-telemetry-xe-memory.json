@@ -1,9 +1,7 @@
 {
     "data": {
         "attributes": {
-            "_id": "openmetricscisco-telemetry-xe-memory-ak",
-            "_rev": "1-3e32c5b5e0470dd60744af40bba50a5a",
-            "createdTimestamp": 1729662857369,
+            "_id": "cisco-cisco-telemetry-xe-memory",
             "customMetrics": [
                 {
                     "analyticsName": "memoryPct",
@@ -16,7 +14,7 @@
                     "unit": "pct"
                 }
             ],
-            "dictionaryName": "openmetrics-cisco-telemetry-xe-memory-ak",
+            "dictionaryName": "cisco-cisco-telemetry-xe-memory",
             "dictionaryType": "custom",
             "dimensions": [
                 {
@@ -70,7 +68,6 @@
                     "rawName": "sessionName"
                 }
             ],
-            "lastModifiedTimestamp": 1729662857369,
             "metricType": "timeseries",
             "metrics": [
             {
@@ -119,11 +116,10 @@
                 "unit": "bytes"
             }
             ],
-            "objectType": "cisco-telemetry-xe-memory-ak",
-            "tenantId": "020213ee-bcd0-4819-89a3-ee1e370148e7",
-            "vendor": "openmetrics"
+            "objectType": "cisco-telemetry-xe-memory",
+            "vendor": "cisco"
         },
-        "id": "openmetricscisco-telemetry-xe-memory-ak",
+        "id": "cisco-cisco-telemetry-xe-memory",
         "type": "ingestionDictionaries"
     },
     "violations": []
