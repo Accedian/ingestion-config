@@ -1,9 +1,7 @@
 {
     "data": {
         "attributes": {
-            "_id": "openmetricscisco-telemetry-xe-interface-ak",
-            "_rev": "8-d266b7a5261b2d1675d1a178b5fd3e05",
-            "createdTimestamp": 1730105785361,
+            "_id": "cisco-cisco-telemetry-xe-interface",
             "customMetrics": [
                 {
                     "analyticsName": "inputUtilization",
@@ -22,7 +20,7 @@
                         "0"
                     ],
                     "rawName": "outputUtilization",
-                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_out_octets_64_rate`), ((cast(`xe_if_stats_statistics_out_octets_rate` as DOUBLE) * 800) / cast (`interfaceBandwidth` as DOUBLE)), ((cast(`xe_if_stats_statistics_out_octets_64_rate` as DOUBLE) * 800) / cast (`interfaceBandwidth` as DOUBLE)))",
+                    "sqlExpr": "(cast(`outputDataRate` as DOUBLE) * 100) / (cast (`interfaceBandwidth` as DOUBLE))",
                     "unit": "pct"
                 },
                 {
@@ -44,59 +42,9 @@
                     "rawName": "packetsSent",
                     "sqlExpr": "((cast(`outputBroadcastPkts` as DOUBLE)) + (cast(`outputMulticastPkts` as DOUBLE)) + (cast(`outputUnicastPkts` as DOUBLE)))",
                     "unit": "packets"
-                },
-                {
-                    "analyticsName": "inputDiscards",
-                    "dataType": "double",
-                    "directions": [
-                        "0"
-                    ],
-                    "rawName": "inputDiscards",
-                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_in_discards_64`), (cast(`xe_if_stats_statistics_in_discards` as DOUBLE)), (cast(`xe_if_stats_statistics_in_discards_64` as DOUBLE)))",
-                    "unit": "packets"
-                },
-                {
-                    "analyticsName": "inputErrors",
-                    "dataType": "double",
-                    "directions": [
-                        "0"
-                    ],
-                    "rawName": "inputErrors",
-                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_in_errors_64`), (cast(`xe_if_stats_statistics_in_errors` as DOUBLE)), (cast(`xe_if_stats_statistics_in_errors_64` as DOUBLE)))",
-                    "unit": "value"
-                },
-                {
-                    "analyticsName": "inputUnknownProtos",
-                    "dataType": "double",
-                    "directions": [
-                        "0"
-                    ],
-                    "rawName": "inputUnknownProtos",
-                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_in_unknown_protos_64`), (cast(`xe_if_stats_statistics_in_unknown_protos` as DOUBLE)), (cast(`xe_if_stats_statistics_in_unknown_protos_64` as DOUBLE)))",
-                    "unit": "packets"
-                },
-                {
-                    "analyticsName": "bytesSent",
-                    "dataType": "double",
-                    "directions": [
-                        "0"
-                    ],
-                    "rawName": "bytesSent",
-                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_out_octets_64`), (cast(`xe_if_stats_statistics_out_octets` as DOUBLE)), (cast(`xe_if_stats_statistics_out_octets_64` as DOUBLE)))",
-                    "unit": "bytes"
-                },
-                {
-                    "analyticsName": "outputDataRate",
-                    "dataType": "double",
-                    "directions": [
-                        "0"
-                    ],
-                    "rawName": "outputDataRate",
-                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_out_octets_64_rate`), (cast(`xe_if_stats_statistics_out_octets_rate` as DOUBLE) * 8), (cast(`xe_if_stats_statistics_out_octets_64_rate` as DOUBLE) * 8))",
-                    "unit": "bps"
                 }
             ],
-            "dictionaryName": "openmetrics-cisco-telemetry-xe-interface-ak",
+            "dictionaryName": "cisco-cisco-telemetry-xe-interface",
             "dictionaryType": "custom",
             "dimensions": [
                 {
@@ -150,9 +98,58 @@
                     "rawName": "sessionName"
                 }
             ],
-            "lastModifiedTimestamp": 1730276683568,
             "metricType": "timeseries",
             "metrics": [
+                {
+                    "analyticsName": "inputDiscards",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "inputDiscards",
+                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_in_discards_64`), (cast(`xe_if_stats_statistics_in_discards` as DOUBLE)), (cast(`xe_if_stats_statistics_in_discards_64` as DOUBLE)))",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "inputErrors",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "inputErrors",
+                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_in_errors_64`), (cast(`xe_if_stats_statistics_in_errors` as DOUBLE)), (cast(`xe_if_stats_statistics_in_errors_64` as DOUBLE)))",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "inputUnknownProtos",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "inputUnknownProtos",
+                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_in_unknown_protos_64`), (cast(`xe_if_stats_statistics_in_unknown_protos` as DOUBLE)), (cast(`xe_if_stats_statistics_in_unknown_protos_64` as DOUBLE)))",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "bytesSent",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "bytesSent",
+                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_out_octets_64`), (cast(`xe_if_stats_statistics_out_octets` as DOUBLE)), (cast(`xe_if_stats_statistics_out_octets_64` as DOUBLE)))",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "outputDataRate",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "outputDataRate",
+                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_out_octets_64_rate`), (cast(`xe_if_stats_statistics_out_octets_rate` as DOUBLE) * 8), (cast(`xe_if_stats_statistics_out_octets_64_rate` as DOUBLE) * 8))",
+                    "unit": "bps"
+                },
                 {
                     "analyticsName": "dot3AlignmentErrors",
                     "dataType": "double",
@@ -460,42 +457,6 @@
                     "unit": "value"
                 },
                 {
-                    "analyticsName": "xe_if_stats_statistics_in_discards",
-                    "dataType": "double",
-                    "directions": [
-                        "0"
-                    ],
-                    "rawName": "xe_if_stats_statistics_in_discards",
-                    "unit": "packets"
-                },
-                {
-                    "analyticsName": "xe_if_stats_statistics_in_discards_64",
-                    "dataType": "double",
-                    "directions": [
-                        "0"
-                    ],
-                    "rawName": "xe_if_stats_statistics_in_discards_64",
-                    "unit": "packets"
-                },
-                {
-                    "analyticsName": "xe_if_stats_statistics_in_errors",
-                    "dataType": "double",
-                    "directions": [
-                        "0"
-                    ],
-                    "rawName": "xe_if_stats_statistics_in_errors",
-                    "unit": "value"
-                },
-                {
-                    "analyticsName": "xe_if_stats_statistics_in_errors_64",
-                    "dataType": "double",
-                    "directions": [
-                        "0"
-                    ],
-                    "rawName": "xe_if_stats_statistics_in_errors_64",
-                    "unit": "value"
-                },
-                {
                     "analyticsName": "inputMulticastPkts",
                     "dataType": "double",
                     "directions": [
@@ -530,24 +491,6 @@
                         "0"
                     ],
                     "rawName": "xe_if_stats_statistics_in_unicast_pkts",
-                    "unit": "packets"
-                },
-                {
-                    "analyticsName": "xe_if_stats_statistics_in_unknown_protos",
-                    "dataType": "double",
-                    "directions": [
-                        "0"
-                    ],
-                    "rawName": "xe_if_stats_statistics_in_unknown_protos",
-                    "unit": "packets"
-                },
-                {
-                    "analyticsName": "xe_if_stats_statistics_in_unknown_protos_64",
-                    "dataType": "double",
-                    "directions": [
-                        "0"
-                    ],
-                    "rawName": "xe_if_stats_statistics_in_unknown_protos_64",
                     "unit": "packets"
                 },
                 {
@@ -596,40 +539,6 @@
                     "unit": "packets"
                 },
                 {
-                    "analyticsName": "xe_if_stats_statistics_out_octets",
-                    "dataType": "double",
-                    "directions": [
-                        "0"
-                    ],
-                    "rawName": "xe_if_stats_statistics_out_octets",
-                    "unit": "bytes"
-                },
-                {
-                    "analyticsName": "xe_if_stats_statistics_out_octets_rate",
-                    "dataType": "double",
-                    "directions": [
-                        "0"
-                    ],
-                    "rawName": "xe_if_stats_statistics_out_octets_rate"
-                },
-                {
-                    "analyticsName": "xe_if_stats_statistics_out_octets_64",
-                    "dataType": "double",
-                    "directions": [
-                        "0"
-                    ],
-                    "rawName": "xe_if_stats_statistics_out_octets_64",
-                    "unit": "bytes"
-                },
-                {
-                    "analyticsName": "xe_if_stats_statistics_out_octets_64_rate",
-                    "dataType": "double",
-                    "directions": [
-                        "0"
-                    ],
-                    "rawName": "xe_if_stats_statistics_out_octets_64_rate"
-                },
-                {
                     "analyticsName": "outputUnicastPkts",
                     "dataType": "double",
                     "directions": [
@@ -639,7 +548,7 @@
                     "unit": "packets"
                 },
                 {
-                    "analyticsName": "xe_if_stats_statistics_rx",
+                    "analyticsName": "rxBps",
                     "dataType": "double",
                     "directions": [
                         "0"
@@ -658,7 +567,7 @@
                     "unit": "pps"
                 },
                 {
-                    "analyticsName": "xe_if_stats_statistics_tx",
+                    "analyticsName": "txBps",
                     "dataType": "double",
                     "directions": [
                         "0"
@@ -893,11 +802,10 @@
                     "unit": "packets"
                 }
             ],
-            "objectType": "cisco-telemetry-xe-interface-ak",
-            "tenantId": "020213ee-bcd0-4819-89a3-ee1e370148e7",
-            "vendor": "openmetrics"
+            "objectType": "cisco-telemetry-xe-interface",
+            "vendor": "cisco"
         },
-        "id": "openmetricscisco-telemetry-xe-interface-ak",
+        "id": "cisco-cisco-telemetry-xe-interface",
         "type": "ingestionDictionaries"
     },
     "violations": []
