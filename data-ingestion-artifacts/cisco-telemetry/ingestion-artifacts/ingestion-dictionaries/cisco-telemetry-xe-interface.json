@@ -45,7 +45,7 @@
                 }
             ],
             "dictionaryName": "cisco-cisco-telemetry-xe-interface",
-            "dictionaryType": "custom",
+            "dictionaryType": "global",
             "dimensions": [
                 {
                     "analyticsName": "monitoredObjectId",
@@ -106,8 +106,8 @@
                     "directions": [
                         "0"
                     ],
-                    "rawName": "inputDiscards",
-                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_in_discards_64`), (cast(`xe_if_stats_statistics_in_discards` as DOUBLE)), (cast(`xe_if_stats_statistics_in_discards_64` as DOUBLE)))",
+                    "rawName": "xe_if_stats_statistics_in_discards",
+                    "sqlExpr": "case when `xe_if_stats_statistics_in_discards_64` != 0 then (cast(`xe_if_stats_statistics_in_discards_64` as DOUBLE)) else (cast(`xe_if_stats_statistics_in_discards` as DOUBLE)) end",
                     "unit": "packets"
                 },
                 {
@@ -116,8 +116,8 @@
                     "directions": [
                         "0"
                     ],
-                    "rawName": "inputErrors",
-                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_in_errors_64`), (cast(`xe_if_stats_statistics_in_errors` as DOUBLE)), (cast(`xe_if_stats_statistics_in_errors_64` as DOUBLE)))",
+                    "rawName": "xe_if_stats_statistics_in_errors",
+                    "sqlExpr": "case when `xe_if_stats_statistics_in_errors_64` != 0 then (cast(`xe_if_stats_statistics_in_errors_64` as DOUBLE)) else (cast(`xe_if_stats_statistics_in_errors` as DOUBLE)) end",
                     "unit": "value"
                 },
                 {
@@ -126,8 +126,8 @@
                     "directions": [
                         "0"
                     ],
-                    "rawName": "inputUnknownProtos",
-                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_in_unknown_protos_64`), (cast(`xe_if_stats_statistics_in_unknown_protos` as DOUBLE)), (cast(`xe_if_stats_statistics_in_unknown_protos_64` as DOUBLE)))",
+                    "rawName": "xe_if_stats_statistics_in_unknown_protos",
+                    "sqlExpr": "case when `xe_if_stats_statistics_in_unknown_protos_64` != 0 then (cast(`xe_if_stats_statistics_in_unknown_protos_64` as DOUBLE)) else (cast(`xe_if_stats_statistics_in_unknown_protos` as DOUBLE)) end",
                     "unit": "packets"
                 },
                 {
@@ -136,8 +136,8 @@
                     "directions": [
                         "0"
                     ],
-                    "rawName": "bytesSent",
-                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_out_octets_64`), (cast(`xe_if_stats_statistics_out_octets` as DOUBLE)), (cast(`xe_if_stats_statistics_out_octets_64` as DOUBLE)))",
+                    "rawName": "xe_if_stats_statistics_out_octets",
+                    "sqlExpr": "case when `xe_if_stats_statistics_out_octets_64` != 0 then (cast(`xe_if_stats_statistics_out_octets_64` as DOUBLE)) else (cast(`xe_if_stats_statistics_out_octets` as DOUBLE)) end",
                     "unit": "bytes"
                 },
                 {
@@ -146,8 +146,8 @@
                     "directions": [
                         "0"
                     ],
-                    "rawName": "outputDataRate",
-                    "sqlExpr": "if(isnull(`xe_if_stats_statistics_out_octets_64_rate`), (cast(`xe_if_stats_statistics_out_octets_rate` as DOUBLE) * 8), (cast(`xe_if_stats_statistics_out_octets_64_rate` as DOUBLE) * 8))",
+                    "rawName": "xe_if_stats_statistics_out_octets_rate",
+                    "sqlExpr": "case when `xe_if_stats_statistics_out_octets_64_rate` != 0 then (cast(`xe_if_stats_statistics_out_octets_64_rate` as DOUBLE) * 8) else (cast(`xe_if_stats_statistics_out_octets_rate` as DOUBLE) * 8) end",
                     "unit": "bps"
                 },
                 {
