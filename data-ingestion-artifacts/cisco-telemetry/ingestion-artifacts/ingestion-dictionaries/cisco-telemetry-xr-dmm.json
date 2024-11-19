@@ -4,7 +4,7 @@
             "_id": "cisco-cisco-telemetry-xr-dmm",
             "customMetrics": null,
             "dictionaryName": "cisco-cisco-telemetry-xr-dmm",
-            "dictionaryType": "custom",
+            "dictionaryType": "global",
             "dimensions": [
                 {
                     "analyticsName": "monitoredObjectId",

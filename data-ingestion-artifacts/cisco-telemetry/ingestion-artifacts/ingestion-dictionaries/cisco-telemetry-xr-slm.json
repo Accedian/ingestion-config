@@ -16,7 +16,7 @@
                 }
             ],
             "dictionaryName": "cisco-cisco-telemetry-xr-slm",
-            "dictionaryType": "custom",
+            "dictionaryType": "global",
             "dimensions": [
                 {
                     "analyticsName": "monitoredObjectId",

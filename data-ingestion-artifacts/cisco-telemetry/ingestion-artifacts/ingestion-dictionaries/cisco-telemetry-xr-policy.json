@@ -4,7 +4,7 @@
             "_id": "cisco-cisco-telemetry-xr-policy",
             "customMetrics": null,
             "dictionaryName": "cisco-cisco-telemetry-xr-policy",
-            "dictionaryType": "custom",
+            "dictionaryType": "global",
             "dimensions": [
                 {
                     "analyticsName": "monitoredObjectId",
@@ -66,8 +66,8 @@
                         "0",
                         "1"
                     ],
-                    "rawName": "generalStatsTotalTransmitRate",
-                    "sqlExpr": "if(isnull(`policy_stats_class_stats_general_stats_total_transmit_rate`), (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_total_transmit_rate` as DOUBLE) * 1000), (cast(`policy_stats_class_stats_general_stats_total_transmit_rate` as DOUBLE) * 1000))",
+                    "rawName": "policy_stats_class_stats_general_stats_total_transmit_rate",
+                    "sqlExpr": "case when `policy_stats_class_stats_child_policy_class_stats_general_stats_total_transmit_rate` != 0 then (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_total_transmit_rate` as DOUBLE) * 1000) else (cast(`policy_stats_class_stats_general_stats_total_transmit_rate` as DOUBLE) * 1000) end",
                     "unit": "bps"
                 },
                 {
@@ -77,41 +77,52 @@
                         "0",
                         "1"
                     ],
-                    "rawName": "generalStatsTotalDropRate",
-                    "sqlExpr": "if(isnull(`policy_stats_class_stats_general_stats_total_drop_rate`), (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_rate` as DOUBLE) * 1000), (cast(`policy_stats_class_stats_general_stats_total_drop_rate` as DOUBLE) * 1000))",
+                    "rawName": "policy_stats_class_stats_general_stats_total_drop_rate",
+                    "sqlExpr": "case when `policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_rate` != 0 then (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_rate` as DOUBLE) * 1000) else (cast(`policy_stats_class_stats_general_stats_total_drop_rate` as DOUBLE) * 1000) end",
                     "unit": "bps"
                 },
                 {
-                    "analyticsName": "policeStatsConformRate",
+                    "analyticsName": "policeStatsArrayConformRate",
                     "dataType": "double",
                     "directions": [
                         "0",
                         "1"
                     ],
-                    "rawName": "policeStatsConformRate",
-                    "sqlExpr": "if(isnull(`policy_stats_class_stats_police_stats_array_conform_rate`), (cast(`policy_stats_class_stats_child_policy_class_stats_police_stats_array_conform_rate` as DOUBLE) * 1000), (cast(`policy_stats_class_stats_police_stats_array_conform_rate` as DOUBLE) * 1000))",
+                    "rawName": "policy_stats_class_stats_police_stats_array_conform_rate",
+                    "sqlExpr": "case when `policy_stats_class_stats_child_policy_class_stats_police_stats_array_conform_rate` != 0 then (cast(`policy_stats_class_stats_child_policy_class_stats_police_stats_array_conform_rate` as DOUBLE) * 1000) else (cast(`policy_stats_class_stats_police_stats_array_conform_rate` as DOUBLE) * 1000) end",
                     "unit": "bps"
                 },
                 {
-                    "analyticsName": "queueStatsConformRate",
+                    "analyticsName": "queueStatsArrayConformRate",
                     "dataType": "double",
                     "directions": [
                         "0",
                         "1"
                     ],
-                    "rawName": "queueStatsConformRate",
-                    "sqlExpr": "if(isnull(`policy_stats_class_stats_queue_stats_array_conform_rate`), (cast(`policy_stats_class_stats_child_policy_class_stats_queue_stats_array_conform_rate` as DOUBLE) * 1000), (cast(`policy_stats_class_stats_queue_stats_array_conform_rate` as DOUBLE) * 1000))",
+                    "rawName": "policy_stats_class_stats_queue_stats_array_conform_rate",
+                    "sqlExpr": "case when `policy_stats_class_stats_child_policy_class_stats_queue_stats_array_conform_rate` != 0 then (cast(`policy_stats_class_stats_child_policy_class_stats_queue_stats_array_conform_rate` as DOUBLE) * 1000) else (cast(`policy_stats_class_stats_queue_stats_array_conform_rate` as DOUBLE) * 1000) end",
                     "unit": "bps"
                 },
                 {
-                    "analyticsName": "policeStatsExceedRate",
+                    "analyticsName": "policeStatsArrayExceedRate",
                     "dataType": "double",
                     "directions": [
                         "0",
                         "1"
                     ],
-                    "rawName": "policeStatsExceedRate",
-                    "sqlExpr": "if(isnull(`policy_stats_class_stats_police_stats_array_exceed_rate`), (cast(`policy_stats_class_stats_child_policy_class_stats_police_stats_array_exceed_rate` as DOUBLE) * 1000), (cast(`policy_stats_class_stats_police_stats_array_exceed_rate` as DOUBLE) * 1000))",
+                    "rawName": "policy_stats_class_stats_police_stats_array_exceed_rate",
+                    "sqlExpr": "case when `policy_stats_class_stats_child_policy_class_stats_police_stats_array_exceed_rate` != 0 then (cast(`policy_stats_class_stats_child_policy_class_stats_police_stats_array_exceed_rate` as DOUBLE) * 1000) else (cast(`policy_stats_class_stats_police_stats_array_exceed_rate` as DOUBLE) * 1000) end",
+                    "unit": "bps"
+                },
+                {
+                    "analyticsName": "queueStatsArrayExceedRate",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "policy_stats_class_stats_queue_stats_array_exceed_rate",
+                    "sqlExpr": "case when `policy_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate` != 0 then (cast(`policy_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate` as DOUBLE) * 1000) else (cast(`policy_stats_class_stats_queue_stats_array_exceed_rate` as DOUBLE) * 1000) end",
                     "unit": "bps"
                 },
                 {
@@ -121,8 +132,8 @@
                         "0",
                         "1"
                     ],
-                    "rawName": "generalStatsMatchDataRate",
-                    "sqlExpr": "if(isnull(`policy_stats_class_stats_general_stats_match_data_rate`), (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_match_data_rate` as DOUBLE) * 1000), (cast(`policy_stats_class_stats_general_stats_match_data_rate` as DOUBLE) * 1000))",
+                    "rawName": "policy_stats_class_stats_general_stats_match_data_rate",
+                    "sqlExpr": "case when `policy_stats_class_stats_child_policy_class_stats_general_stats_match_data_rate` != 0 then (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_match_data_rate` as DOUBLE) * 1000) else (cast(`policy_stats_class_stats_general_stats_match_data_rate` as DOUBLE) * 1000) end",
                     "unit": "bps"
                 },
                 {
@@ -132,8 +143,8 @@
                         "0",
                         "1"
                     ],
-                    "rawName": "generalStatsTransmitPackets",
-                    "sqlExpr": "if(isnull(`policy_stats_class_stats_general_stats_transmit_packets`), (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_packets` as DOUBLE)), (cast(`policy_stats_class_stats_general_stats_transmit_packets` as DOUBLE)))",
+                    "rawName": "policy_stats_class_stats_general_stats_transmit_packets",
+                    "sqlExpr": "case when `policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_packets` != 0 then (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_packets` as DOUBLE)) else (cast(`policy_stats_class_stats_general_stats_transmit_packets` as DOUBLE)) end",
                     "unit": "packets"
                 },
                 {
@@ -143,8 +154,8 @@
                         "0",
                         "1"
                     ],
-                    "rawName": "generalStatsTransmitBytes",
-                    "sqlExpr": "if(isnull(`policy_stats_class_stats_general_stats_transmit_bytes`), (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_bytes` as DOUBLE)), (cast(`policy_stats_class_stats_general_stats_transmit_bytes` as DOUBLE)))",
+                    "rawName": "policy_stats_class_stats_general_stats_transmit_bytes",
+                    "sqlExpr": "case when `policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_bytes` != 0 then (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_bytes` as DOUBLE)) else (cast(`policy_stats_class_stats_general_stats_transmit_bytes` as DOUBLE)) end",
                     "unit": "bytes"
                 },
                 {
@@ -154,8 +165,8 @@
                         "0",
                         "1"
                     ],
-                    "rawName": "generalStatsDropPackets",
-                    "sqlExpr": "if(isnull(`policy_stats_class_stats_general_stats_total_drop_packets`), (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_packets` as DOUBLE)), (cast(`policy_stats_class_stats_general_stats_total_drop_packets` as DOUBLE)))",
+                    "rawName": "policy_stats_class_stats_general_stats_total_drop_packets",
+                    "sqlExpr": "case when `policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_packets` != 0 then (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_packets` as DOUBLE)) else (cast(`policy_stats_class_stats_general_stats_total_drop_packets` as DOUBLE)) end",
                     "unit": "packets"
                 },
                 {
@@ -165,8 +176,8 @@
                         "0",
                         "1"
                     ],
-                    "rawName": "generalStatsDropBytes",
-                    "sqlExpr": "if(isnull(`policy_stats_class_stats_general_stats_total_drop_bytes`), (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes` as DOUBLE)), (cast(`policy_stats_class_stats_general_stats_total_drop_bytes` as DOUBLE)))",
+                    "rawName": "policy_stats_class_stats_general_stats_total_drop_bytes",
+                    "sqlExpr": "case when `policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes` != 0 then (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes` as DOUBLE)) else (cast(`policy_stats_class_stats_general_stats_total_drop_bytes` as DOUBLE)) end",
                     "unit": "bytes"
                 },
                 {
@@ -176,8 +187,8 @@
                         "0",
                         "1"
                     ],
-                    "rawName": "generalStatsDropBytes",
-                    "sqlExpr": "if(isnull(`policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes`), (cast(`policy_stats_class_stats_general_stats_pre_policy_matched_bytes` as DOUBLE)), (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes` as DOUBLE)))",
+                    "rawName": "policy_stats_class_stats_general_stats_pre_policy_matched_bytes",
+                    "sqlExpr": "case when `policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes` != 0 then (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes` as DOUBLE)) else (cast(`policy_stats_class_stats_general_stats_pre_policy_matched_bytes` as DOUBLE)) end",
                     "unit": "bytes"
                 },
                 {
@@ -187,20 +198,9 @@
                         "0",
                         "1"
                     ],
-                    "rawName": "generalStatsDropBytes",
-                    "sqlExpr": "if(isnull(`policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets`), (cast(`policy_stats_class_stats_general_stats_pre_policy_matched_packets` as DOUBLE)), (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets` as DOUBLE)))",
+                    "rawName": "policy_stats_class_stats_general_stats_pre_policy_matched_packets",
+                    "sqlExpr": "case when `policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets` != 0 then (cast(`policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets` as DOUBLE)) else (cast(`policy_stats_class_stats_general_stats_pre_policy_matched_packets` as DOUBLE)) end",
                     "unit": "packets"
-                },
-                {
-                    "analyticsName": "queueStatsArrayExceedRate",
-                    "dataType": "double",
-                    "directions": [
-                        "0",
-                        "1"
-                    ],
-                    "rawName": "generalStatsDropBytes",
-                    "sqlExpr": "if(isnull(`policy_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate`), (cast(`policy_stats_class_stats_queue_stats_array_exceed_rate` as DOUBLE) * 1000), (cast(`policy_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate` as DOUBLE) * 1000))",
-                    "unit": "bps"
                 }
             ],
             "objectType": "cisco-telemetry-xr-policy",

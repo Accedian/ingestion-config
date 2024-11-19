@@ -4,7 +4,7 @@
             "_id": "cisco-cisco-telemetry-xr-ipsla-udp-jitter",
             "customMetrics": null,
             "dictionaryName": "cisco-telemetry-xr-ipsla-udp-jitter",
-            "dictionaryType": "custom",
+            "dictionaryType": "global",
             "dimensions": [
                 {
                     "analyticsName": "monitoredObjectId",

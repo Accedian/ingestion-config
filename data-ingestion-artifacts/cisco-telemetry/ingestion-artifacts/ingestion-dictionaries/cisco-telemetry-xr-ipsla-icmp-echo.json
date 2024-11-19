@@ -25,7 +25,7 @@
                 }
             ],
             "dictionaryName": "cisco-telemetry-xr-ipsla-icmp-echo",
-            "dictionaryType": "custom",
+            "dictionaryType": "global",
             "dimensions": [
                 {
                     "analyticsName": "monitoredObjectId",

@@ -25,7 +25,7 @@
             }
             ],
             "dictionaryName": "cisco-cisco-telemetry-xr-interface",
-            "dictionaryType": "custom",
+            "dictionaryType": "global",
             "dimensions": [
                 {
                     "analyticsName": "monitoredObjectId",
@@ -86,8 +86,8 @@
                     "directions": [
                         "0"
                     ],
-                    "rawName": "inputDataRate",
-                    "sqlExpr": "if(isnull(`if_stats_data_rates_input_data_rate`), (cast(`if_stats_interface_statistics_full_interface_stats_bytes_received_rate` as DOUBLE) * 8), (cast(`if_stats_data_rates_input_data_rate` as DOUBLE) * 1000))",
+                    "rawName": "if_stats_data_rates_input_data_rate",
+                    "sqlExpr": "case when `if_stats_data_rates_input_data_rate` != 0 then (cast(`if_stats_data_rates_input_data_rate` as DOUBLE) * 1000) else (cast(`if_stats_interface_statistics_full_interface_stats_bytes_received_rate` as DOUBLE) * 8) end",
                     "unit": "bps"
                 },
                 {
@@ -96,10 +96,11 @@
                     "directions": [
                         "0"
                     ],
-                    "rawName": "outputDataRate",
-                    "sqlExpr": "if(isnull(`if_stats_data_rates_output_data_rate`), (cast(`if_stats_interface_statistics_full_interface_stats_bytes_sent_rate` as DOUBLE) * 8), (cast(`if_stats_data_rates_output_data_rate` as DOUBLE) * 1000))",
+                    "rawName": "if_stats_data_rates_output_data_rate",
+                    "sqlExpr": "case when `if_stats_data_rates_output_data_rate` != 0 then (cast(`if_stats_data_rates_output_data_rate` as DOUBLE) * 1000) else (cast(`if_stats_interface_statistics_full_interface_stats_bytes_sent_rate` as DOUBLE) * 8) end",
                     "unit": "bps"
                 },
+
                 {
                     "analyticsName": "availabilityPct",
                     "dataType": "double",
