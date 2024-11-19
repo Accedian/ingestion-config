@@ -15,7 +15,7 @@
                 }
             ],
             "dictionaryName": "cisco-cisco-telemetry-xe-memory",
-            "dictionaryType": "custom",
+            "dictionaryType": "global",
             "dimensions": [
                 {
                     "analyticsName": "monitoredObjectId",
