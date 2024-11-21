@@ -11,7 +11,7 @@
                         "1"
                     ],
                     "rawName": "packetsLostPct",
-                    "sqlExpr": "case when isnotnull(`slmSent`) and isnotnull(`packetsLost`) then (cast((`packetsLost` as DOUBLE) / cast(`slmSent` as DOUBLE)) * 100) end",
+                    "sqlExpr": "case when isnotnull(`slmSent`) and isnotnull(`packetsLost`) then ( ( cast(`packetsLost` as DOUBLE) / cast(`slmSent` as DOUBLE) ) * 100) end",
                     "unit": "pct"
                 }
             ],
