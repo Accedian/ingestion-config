@@ -3,7 +3,7 @@
         "attributes": {
             "_id": "cisco-cisco-telemetry-xr-policy",
             "customMetrics": null,
-            "dictionaryName": "cisco-cisco-telemetry-xr-policy",
+            "dictionaryName": "cisco-telemetry-xr-policy",
             "dictionaryType": "global",
             "dimensions": [
                 {

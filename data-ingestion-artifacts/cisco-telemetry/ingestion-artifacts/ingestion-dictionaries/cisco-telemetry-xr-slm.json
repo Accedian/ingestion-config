@@ -15,7 +15,7 @@
                     "unit": "pct"
                 }
             ],
-            "dictionaryName": "cisco-cisco-telemetry-xr-slm",
+            "dictionaryName": "cisco-telemetry-xr-slm",
             "dictionaryType": "global",
             "dimensions": [
                 {

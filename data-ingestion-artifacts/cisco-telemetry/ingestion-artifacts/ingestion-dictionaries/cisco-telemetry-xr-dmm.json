@@ -3,7 +3,7 @@
         "attributes": {
             "_id": "cisco-cisco-telemetry-xr-dmm",
             "customMetrics": null,
-            "dictionaryName": "cisco-cisco-telemetry-xr-dmm",
+            "dictionaryName": "cisco-telemetry-xr-dmm",
             "dictionaryType": "global",
             "dimensions": [
                 {
