@@ -7,36 +7,145 @@
 
     ## Assign correct directions
     - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_sent'
+      target_label: direction
+      replacement: "0"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_lost'
+      target_label: direction
+      replacement: "0"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_corrupt'
+      target_label: direction
+      replacement: "0"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_out_of_order'
+      target_label: direction
+      replacement: "0"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_duplicates'
+      target_label: direction
+      replacement: "0"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_minimum'
+      target_label: direction
+      replacement: "0"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_maximum'
+      target_label: direction
+      replacement: "0"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_average'
+      target_label: direction
+      replacement: "0"
+    - source_labels: [_name_]
       regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_standard_deviation'
       target_label: direction
       replacement: "0"
     - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_sent'
+      target_label: direction
+      replacement: "1"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_lost'
+      target_label: direction
+      replacement: "1"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_corrupt'
+      target_label: direction
+      replacement: "1"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_out_of_order'
+      target_label: direction
+      replacement: "1"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_duplicates'
+      target_label: direction
+      replacement: "1"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_minimum'
+      target_label: direction
+      replacement: "1"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_maximum'
+      target_label: direction
+      replacement: "1"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_average'
+      target_label: direction
+      replacement: "1"
+    - source_labels: [_name_]
       regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_standard_deviation'
       target_label: direction
       replacement: "1"
-    - source_labels: [_name_]
-      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_contents_unaggregated_sample_frames_lost'
-      target_label: direction
-      replacement: "0"
-    - source_labels: [_name_]
-      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_contents_unaggregated_sample_frames_sent'
-      target_label: direction
-      replacement: "0"
-    - source_labels: [_name_]
-      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_contents_unaggregated_sample_frames_lost'
-      target_label: direction
-      replacement: "1"
-    - source_labels: [_name_]
-      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_contents_unaggregated_sample_frames_sent'
-      target_label: direction
-      replacement: "1"
-    - source_labels: [_name_]
-      regex: 'sla_stats_availabilityPct'
-      target_label: direction
-      replacement: "0"
 
     ## Apply metric renaming
     - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_sent'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_sent"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_sent'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_sent"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_lost'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_lost"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_lost'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_lost"
+
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_corrupt'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_corrupt"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_corrupt'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_corrupt"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_out_of_order'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_out_of_order"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_out_of_order'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_out_of_order"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_duplicates'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_duplicates"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_duplicates'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_duplicates"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_minimum'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_minimum"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_minimum'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_minimum"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_maximum'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_maximum"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_maximum'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_maximum"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_average'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_average"
+    - source_labels: [_name_]
+      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_average'
+      target_label: _name_
+      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_average"
+    - source_labels: [_name_]
       regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_standard_deviation'
       target_label: _name_
       replacement: "lossStdDev"
@@ -44,19 +153,8 @@
       regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_standard_deviation'
       target_label: _name_
       replacement: "lossStdDev"
-    - source_labels: [_name_]
-      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_contents_unaggregated_sample_frames_lost'
-      target_label: _name_
-      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_contents_unaggregated_sample_frames_lost"
-    - source_labels: [_name_]
-      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_contents_unaggregated_sample_frames_lost'
-      target_label: _name_
-      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_contents_unaggregated_sample_frames_lost"
-    - source_labels: [_name_]
-      regex: 'sla_stats_metric_one_way_flr_sd_operation_metric_bucket_contents_unaggregated_sample_frames_sent'
-      target_label: _name_
-      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_contents_unaggregated_sample_frames_sent"
-    - source_labels: [_name_]
-      regex: 'sla_stats_metric_one_way_flr_ds_operation_metric_bucket_contents_unaggregated_sample_frames_sent'
-      target_label: _name_
-      replacement: "sla_stats_metric_one_way_flr_operation_metric_bucket_contents_unaggregated_sample_frames_sent"
+
+
+
+
+
