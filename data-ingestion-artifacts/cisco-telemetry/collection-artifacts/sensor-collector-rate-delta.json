@@ -42,7 +42,8 @@
                                 "if_stats_interface_statistics_full_interface_stats_packets_sent",
                                 "if_stats_interface_statistics_full_interface_stats_packets_received",
                                 "if_stats_interface_statistics_full_interface_stats_input_drops",
-                                "if_stats_interface_statistics_full_interface_stats_output_drops"
+                                "if_stats_interface_statistics_full_interface_stats_output_drops",
+                                "if_stats_interface_statistics_full_interface_stats_runt_packets_received"
                             ]
                         },
                         "rate": {
