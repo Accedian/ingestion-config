@@ -1,0 +1,15 @@
+services:
+  telemetry-collector:
+    container_name: "starlink-telemetry-api-collector"
+    image: "agent-telemetry-amd64-python3:r24.09"
+    environment:
+      AGENT_MANAGEMENT_PROXY: "172.17.0.1"
+      AGENT_MANAGEMENT_PROXY_PORT: 55778
+    volumes:
+      - type: bind
+        source: ./secrets.yaml
+        target: /run/secrets/secrets.yaml
+      - type: bind
+        source: ./starlink_telemetry.py
+        target: /tmp/starlink_telemetry.py
+
