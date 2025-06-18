@@ -1,30 +1,21 @@
 {
     "data": {
         "attributes": {
-            "_id": "cisco-cisco-telemetry-xr-environment",
+            "_id": "cisco-cisco-telemetry-xr-slm",
             "customMetrics": [
                 {
-                    "analyticsName": "usedApplicationMemory",
-                    "dataType": "double",
+                    "analyticsName": "packetsLostPct",
+                    "dataType": "float",
                     "directions": [
-                        "-1"
+                        "0",
+                        "1"
                     ],
-                    "rawName": "usedApplicationMemory",
-                    "sqlExpr": "(`ramMemory` - `freeApplicationMemory`)",
-                    "unit": "bytes"
-                },
-                {
-                    "analyticsName": "usedApplicationMemoryPct",
-                    "dataType": "double",
-                    "directions": [
-                        "-1"
-                    ],
-                    "rawName": "usedApplicationMemoryPct",
-                    "sqlExpr": "(((`ramMemory` - `freeApplicationMemory`) / `ramMemory`) * 100)",
+                    "rawName": "packetsLostPct",
+                    "sqlExpr": "case when isnotnull(`slmSent`) and isnotnull(`packetsLost`) then ( ( cast(`packetsLost` as DOUBLE) / cast(`slmSent` as DOUBLE) ) * 100) end",
                     "unit": "pct"
                 }
             ],
-            "dictionaryName": "cisco-telemetry-xr-environment",
+            "dictionaryName": "cisco-telemetry-xr-slm",
             "dictionaryType": "global",
             "dimensions": [
                 {
@@ -81,37 +72,59 @@
             "metricType": "timeseries",
             "metrics": [
                 {
-                    "analyticsName": "cpuFiveMinutes",
+                    "analyticsName": "lossStdDev",
                     "dataType": "double",
                     "directions": [
-                        "-1"
+                        "0",
+                        "1"
                     ],
-                    "rawName": "cpu_util_total_cpu_five_minute",
-                    "unit": "pct"
+                    "rawName": "lossStdDev"
                 },
                 {
-                    "analyticsName": "freeApplicationMemory",
+                    "analyticsName": "packetsLost",
                     "dataType": "double",
                     "directions": [
-                        "-1"
+                        "0",
+                        "1"
                     ],
-                    "rawName": "node_summary_free_application_memory",
-                    "unit": "bytes"
+                    "rawName": "sla_stats_metric_one_way_flr_operation_metric_bucket_lost",
+                    "unit": "frames"
                 },
                 {
-                    "analyticsName": "ramMemory",
+                    "analyticsName": "slmSent",
                     "dataType": "double",
                     "directions": [
-                        "-1"
+                        "0",
+                        "1"
                     ],
-                    "rawName": "node_summary_ram_memory",
-                    "unit": "bytes"
+                    "rawName": "sla_stats_metric_one_way_flr_operation_metric_bucket_sent",
+                    "unit": "frames"
+                },
+                {
+                    "analyticsName": "packetsCorrupt",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "sla_stats_metric_one_way_flr_operation_metric_bucket_corrupt",
+                    "unit": "frames"
+                },
+                {
+                    "analyticsName": "packetsDuplicated",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "sla_stats_metric_one_way_flr_operation_metric_bucket_duplicates",
+                    "unit": "frames"
                 }
             ],
-            "objectType": "cisco-telemetry-xr-environment",
+            "objectType": "cisco-telemetry-xr-slm",
             "vendor": "cisco"
         },
-        "id": "cisco-cisco-telemetry-xr-environment",
+        "id": "cisco-cisco-telemetry-xr-slm",
         "type": "ingestionDictionaries"
     },
     "violations": []

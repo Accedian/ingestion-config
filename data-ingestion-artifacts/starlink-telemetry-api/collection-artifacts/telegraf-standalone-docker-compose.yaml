@@ -1,0 +1,16 @@
+version: '3'
+services:
+  telegraf:
+    image: "telegraf-python3"
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    restart: "always"
+    volumes:
+      - type: bind
+        source: ./telegraf.conf
+        target: /etc/telegraf/telegraf.conf
+      - type: bind
+        source: ./starlink_telemetry.py
+        target: /tmp/starlink_telemetry.py
+
