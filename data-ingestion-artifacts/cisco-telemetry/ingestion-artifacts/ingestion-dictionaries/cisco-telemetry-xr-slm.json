@@ -1,0 +1,131 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "cisco-cisco-telemetry-xr-slm",
+            "customMetrics": [
+                {
+                    "analyticsName": "packetsLostPct",
+                    "dataType": "float",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "packetsLostPct",
+                    "sqlExpr": "case when isnotnull(`slmSent`) and isnotnull(`packetsLost`) then ( ( cast(`packetsLost` as DOUBLE) / cast(`slmSent` as DOUBLE) ) * 100) end",
+                    "unit": "pct"
+                }
+            ],
+            "dictionaryName": "cisco-telemetry-xr-slm",
+            "dictionaryType": "global",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                }
+            ],
+            "metricType": "timeseries",
+            "metrics": [
+                {
+                    "analyticsName": "lossStdDev",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "lossStdDev"
+                },
+                {
+                    "analyticsName": "packetsLost",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "sla_stats_metric_one_way_flr_operation_metric_bucket_lost",
+                    "unit": "frames"
+                },
+                {
+                    "analyticsName": "slmSent",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "sla_stats_metric_one_way_flr_operation_metric_bucket_sent",
+                    "unit": "frames"
+                },
+                {
+                    "analyticsName": "packetsCorrupt",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "sla_stats_metric_one_way_flr_operation_metric_bucket_corrupt",
+                    "unit": "frames"
+                },
+                {
+                    "analyticsName": "packetsDuplicated",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "sla_stats_metric_one_way_flr_operation_metric_bucket_duplicates",
+                    "unit": "frames"
+                }
+            ],
+            "objectType": "cisco-telemetry-xr-slm",
+            "vendor": "cisco"
+        },
+        "id": "cisco-cisco-telemetry-xr-slm",
+        "type": "ingestionDictionaries"
+    },
+    "violations": []
+}

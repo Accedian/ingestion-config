@@ -1,0 +1,118 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "cisco-cisco-telemetry-xr-environment",
+            "customMetrics": [
+                {
+                    "analyticsName": "usedApplicationMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "usedApplicationMemory",
+                    "sqlExpr": "(`ramMemory` - `freeApplicationMemory`)",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "usedApplicationMemoryPct",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "usedApplicationMemoryPct",
+                    "sqlExpr": "(((`ramMemory` - `freeApplicationMemory`) / `ramMemory`) * 100)",
+                    "unit": "pct"
+                }
+            ],
+            "dictionaryName": "cisco-telemetry-xr-environment",
+            "dictionaryType": "global",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                }
+            ],
+            "metricType": "timeseries",
+            "metrics": [
+                {
+                    "analyticsName": "cpuFiveMinutes",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "cpu_util_total_cpu_five_minute",
+                    "unit": "pct"
+                },
+                {
+                    "analyticsName": "freeApplicationMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "node_summary_free_application_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "ramMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "node_summary_ram_memory",
+                    "unit": "bytes"
+                }
+            ],
+            "objectType": "cisco-telemetry-xr-environment",
+            "vendor": "cisco"
+        },
+        "id": "cisco-cisco-telemetry-xr-environment",
+        "type": "ingestionDictionaries"
+    },
+    "violations": []
+}
