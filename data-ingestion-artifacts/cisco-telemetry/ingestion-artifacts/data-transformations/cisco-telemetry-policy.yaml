@@ -1,0 +1,226 @@
+- job_name: cisco-telemetry-xr-policy
+  relabel_configs:
+    - source_labels: [sessionId]
+      target_label: monitoredObjectId
+    - source_labels: [sessionName]
+      target_label: monitoredObjectName
+
+    ## Assign correct directions
+    - source_labels: [_name_]
+      regex: "(policy_in.*)"
+      target_label: direction
+      replacement: "1"
+    - source_labels: [_name_]
+      regex: "(policy_out.*)"
+      target_label: direction
+      replacement: "0"
+
+    ## Apply metric renaming
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_queue_stats_array_conform_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_queue_stats_array_conform_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_queue_stats_array_conform_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_queue_stats_array_conform_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_police_stats_array_conform_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_police_stats_array_conform_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_police_stats_array_conform_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_police_stats_array_conform_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_police_stats_array_exceed_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_police_stats_array_exceed_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_police_stats_array_exceed_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_police_stats_array_exceed_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_total_drop_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_total_drop_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_total_transmit_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_total_transmit_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_total_transmit_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_total_transmit_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_match_data_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_match_data_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_match_data_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_match_data_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_general_stats_match_data_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_match_data_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_general_stats_match_data_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_match_data_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_general_stats_total_drop_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_total_drop_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_general_stats_total_drop_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_total_drop_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_general_stats_total_transmit_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_total_transmit_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_general_stats_total_transmit_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_total_transmit_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_police_stats_array_conform_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_police_stats_array_conform_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_police_stats_array_conform_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_police_stats_array_conform_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_police_stats_array_exceed_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_police_stats_array_exceed_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_police_stats_array_exceed_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_police_stats_array_exceed_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_queue_stats_array_conform_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_queue_stats_array_conform_rate"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_queue_stats_array_conform_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_queue_stats_array_conform_rate"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_general_stats_transmit_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_transmit_packets"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_general_stats_transmit_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_transmit_packets"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_transmit_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_packets"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_transmit_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_packets"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_general_stats_transmit_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_transmit_bytes"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_general_stats_transmit_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_transmit_bytes"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_transmit_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_bytes"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_transmit_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_transmit_bytes"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_general_stats_total_drop_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_total_drop_packets"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_general_stats_total_drop_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_total_drop_packets"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_total_drop_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_packets"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_total_drop_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_packets"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_general_stats_total_drop_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_total_drop_bytes"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_general_stats_total_drop_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_total_drop_bytes"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes"
+    - source_labels: [_name_]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_total_drop_bytes"
+    - source_labels: [_name_]
+      regex: 'policy_in_stats_class_stats_general_stats_pre_policy_matched_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_pre_policy_matched_packets"
+    - source_labels: [ _name_ ]
+      regex: 'policy_in_stats_class_stats_general_stats_pre_policy_matched_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_pre_policy_matched_bytes"
+    - source_labels: [ _name_ ]
+      regex: 'policy_out_stats_class_stats_general_stats_pre_policy_matched_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_pre_policy_matched_bytes"
+    - source_labels: [ _name_ ]
+      regex: 'policy_out_stats_class_stats_general_stats_pre_policy_matched_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_general_stats_pre_policy_matched_packets"
+    - source_labels: [ _name_ ]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate"
+    - source_labels: [ _name_ ]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_queue_stats_array_exceed_rate"
+    - source_labels: [ _name_ ]
+      regex: 'policy_in_stats_class_stats_queue_stats_array_exceed_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_queue_stats_array_exceed_rate"
+    - source_labels: [ _name_ ]
+      regex: 'policy_out_stats_class_stats_queue_stats_array_exceed_rate'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_queue_stats_array_exceed_rate"
+    - source_labels: [ _name_ ]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets"
+    - source_labels: [ _name_ ]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_packets"
+    - source_labels: [ _name_ ]
+      regex: 'policy_in_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes"
+    - source_labels: [ _name_ ]
+      regex: 'policy_out_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes'
+      target_label: _name_
+      replacement: "policy_stats_class_stats_child_policy_class_stats_general_stats_pre_policy_matched_bytes"

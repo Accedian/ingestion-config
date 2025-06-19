@@ -4,7 +4,7 @@
             "NATSConfig": {
                 "host": "http://127.0.0.1"
             },
-            "_rev": "4-bb702491f4396e8ecf82eac6e215facb",
+            "_rev": "6-f55ff903ad31198e228e5c60420f6148",
             "agentProxyConfig": {
                 "agentProxyHost": "0.0.0.0",
                 "agentProxyJWT": true,
@@ -2155,9 +2155,9 @@
             "tenantId": "020213ee-bcd0-4819-89a3-ee1e370148e7",
             "type": "OpenMetrics",
             "url": "/publisher",
-            "zone": "nettas-cisco-ios-xe"
+            "zone": "ciscotelemetrycollectoragent"
         },
-        "id": "b8d8ae53-89c3-403c-afc0-b5fe556bed20",
+        "id": "8486125a-7c19-4c26-b262-a0c3cb089066",
         "type": "connectorConfigs"
     }
 }

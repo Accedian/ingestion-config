@@ -1,0 +1,212 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "openmetricsStarlink-Telemetry-API",
+            "_rev": "4-be107b42d5c9b55a4119627e2f828090",
+            "createdTimestamp": 1744934009588,
+            "customMetrics": null,
+            "dictionaryName": "openmetrics-Starlink-Telemetry-API",
+            "dictionaryType": "global",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "go_version",
+                    "dataType": "string",
+                    "rawName": "go_version"
+                },
+                {
+                    "analyticsName": "host",
+                    "dataType": "string",
+                    "rawName": "host"
+                },
+                {
+                    "analyticsName": "input",
+                    "dataType": "string",
+                    "rawName": "input"
+                },
+                {
+                    "analyticsName": "name",
+                    "dataType": "string",
+                    "rawName": "name"
+                },
+                {
+                    "analyticsName": "objectId",
+                    "dataType": "string",
+                    "rawName": "objectId"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "output",
+                    "dataType": "string",
+                    "rawName": "output"
+                },
+                {
+                    "analyticsName": "processor",
+                    "dataType": "string",
+                    "rawName": "processor"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                },
+                {
+                    "analyticsName": "type",
+                    "dataType": "string",
+                    "rawName": "type"
+                },
+                {
+                    "analyticsName": "version",
+                    "dataType": "string",
+                    "rawName": "version"
+                },
+                {
+                    "analyticsName": "DeviceId",
+                    "dataType": "string",
+                    "rawName": "DeviceId"
+                },
+                {
+                    "analyticsName": "DeviceType",
+                    "dataType": "string",
+                    "rawName": "DeviceType"
+                },
+                {
+                    "analyticsName": "H3CellId",
+                    "dataType": "string",
+                    "rawName": "H3CellId"
+                },
+                {
+                    "analyticsName": "RunningSoftwareVersion",
+                    "dataType": "string",
+                    "rawName": "RunningSoftwareVersion"
+                }
+            ],
+            "lastModifiedTimestamp": 1745328101455,
+            "metricType": "timeseries",
+            "metrics": [
+                {
+                    "analyticsName": "downlinkThroughput",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "starlink_telemetry_api_DownlinkThroughput",
+                    "unit": "Mbps"
+                },
+                {
+                    "analyticsName": "obstructionPercentTime",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "starlink_telemetry_api_ObstructionPercentTime",
+                    "unit": "pct"
+                },
+                {
+                    "analyticsName": "pingDropRateAvg",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "starlink_telemetry_api_PingDropRateAvg",
+                    "unit": "pct"
+                },
+                {
+                    "analyticsName": "pingLatencyMsAvg",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "starlink_telemetry_api_PingLatencyMsAvg",
+                    "unit": "ms"
+                },
+                {
+                    "analyticsName": "secondsUntilSwupdateRebootPossible",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "starlink_telemetry_api_SecondsUntilSwupdateRebootPossible",
+                    "unit": "s"
+                },
+                {
+                    "analyticsName": "signalQuality",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "starlink_telemetry_api_SignalQuality",
+                    "sqlExpr": "cast(`starlink_telemetry_api_SignalQuality` as FLOAT)*100",
+                    "unit": "pct"
+                },
+                {
+                    "analyticsName": "uplinkThroughput",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "starlink_telemetry_api_UplinkThroughput",
+                    "unit": "Mbps"
+                },
+                {
+                    "analyticsName": "uptime",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "starlink_telemetry_api_Uptime",
+                    "unit": "samples"
+                }
+            ],
+            "objectType": "Starlink-Telemetry-API",
+            "tenantId": "21743f38-ad0e-42ed-a8cb-45d96e0d42f0",
+            "vendor": "openmetrics"
+        },
+        "id": "openmetricsStarlink-Telemetry-API",
+        "type": "ingestionDictionaries"
+    },
+    "violations": []
+}

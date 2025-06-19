@@ -1,0 +1,300 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "cisco-cisco-telemetry-xr-ipsla-udp-jitter",
+            "customMetrics": null,
+            "dictionaryName": "cisco-telemetry-xr-ipsla-udp-jitter",
+            "dictionaryType": "global",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                }
+            ],
+            "metricType": "timeseries",
+            "metrics": [
+                {
+                    "analyticsName": "delayMax",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_jitter_common_stats_max_response_time",
+                    "sqlExpr": "cast(`ipsla_jitter_common_stats_max_response_time` as DOUBLE) * 1000",
+                    "unit": "µs"
+                },
+                {
+                    "analyticsName": "delayMin",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_jitter_common_stats_min_response_time",
+                    "sqlExpr": "cast(`ipsla_jitter_common_stats_min_response_time` as DOUBLE) * 1000",
+                    "unit": "µs"
+                },
+                {
+                    "analyticsName": "delayAvg",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_jitter_common_stats_response_time",
+                    "sqlExpr": "cast(`ipsla_jitter_common_stats_response_time` as DOUBLE) * 1000",
+                    "unit": "μs"
+                },
+                {
+                    "analyticsName": "packetsReceived",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_jitter_common_stats_response_time_count",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "jitterSumResponseTime",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_jitter_common_stats_sum_response_time"
+                },
+                {
+                    "analyticsName": "jitterBusiesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_busies_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "jitterInternalErrorsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_internal_errors_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "jitterAvg",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_jitter",
+                    "sqlExpr": "cast(`ipsla_jitter_specific_stats_udp_jitter_stats_jitter` as DOUBLE) * 1000",
+                    "unit": "µs"
+                },
+                {
+                    "analyticsName": "jitterNegativeCount",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_negative_count",
+                    "unit": "value"         
+                },
+                {
+                    "analyticsName": "jitterNegativeMax",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_negative_max",
+                    "unit": "ms"
+                },
+                {
+                    "analyticsName": "jitterNegativeMin",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_negative_min",
+                    "unit": "ms"
+                },
+                {
+                    "analyticsName": "jitterNegativeSum",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_negative_sum",
+                    "unit": "ms"
+                },
+                {
+                    "analyticsName": "jitterMax",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_one_way_max",
+                    "sqlExpr": "cast(`ipsla_jitter_specific_stats_udp_jitter_stats_one_way_max` as DOUBLE) * 1000",
+                    "unit": "µs"
+                },
+                {
+                    "analyticsName": "jitterMin",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_one_way_min",
+                    "sqlExpr": "cast(`ipsla_jitter_specific_stats_udp_jitter_stats_one_way_min` as DOUBLE) * 1000",
+                    "unit": "µs"
+                },
+                {
+                    "analyticsName": "jitterPacketInvalidTimestamp",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_packet_invalid_tstamp",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "packetsTooLate",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_packet_late_arrivals",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "packetsLost",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_packet_loss",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "packetMia",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_packet_mia",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "packetsMisordered",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_packet_out_of_sequence",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "packetsSkipped",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_packet_skipped",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "jitterPositiveCount",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_positive_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "jitterPositiveMax",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_positive_max"
+                },
+                {
+                    "analyticsName": "jitterPositiveMin",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_positive_min"
+                },
+                {
+                    "analyticsName": "jitterPositiveSum",
+                    "dataType": "double",
+                    "directions": [
+                        "0",
+                        "1"
+                    ],
+                    "rawName": "ipsla_jitter_specific_stats_udp_jitter_stats_positive_sum"
+                }
+            ],
+            "objectType": "cisco-telemetry-xr-ipsla-udp-jitter",
+            "vendor": "cisco"
+        },
+        "id": "cisco-cisco-telemetry-xr-ipsla-udp-jitter",
+        "type": "ingestionDictionaries"
+    },
+    "violations": []
+}
