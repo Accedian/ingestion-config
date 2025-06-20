@@ -1,0 +1,106 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "cisco-cisco-telemetry-xe-cpu",
+            "customMetrics": null,
+            "dictionaryName": "cisco-cisco-telemetry-xe-cpu",
+            "dictionaryType": "global",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                }
+            ],
+            "metricType": "timeseries",
+            "metrics": [
+            {
+                "analyticsName": "cpuFiveMinutes",
+                "dataType": "double",
+                "directions": [
+                    "-1"
+                ],
+                "rawName": "xe_cpu_stats_five_minutes",
+                "unit": "pct"
+            },
+            {
+                "analyticsName": "cpuFiveSeconds",
+                "dataType": "double",
+                "directions": [
+                    "-1"
+                ],
+                "rawName": "xe_cpu_stats_five_seconds",
+                "unit": "pct"
+            },
+            {
+                "analyticsName": "cpuFiveSecondsIntr",
+                "dataType": "double",
+                "directions": [
+                    "-1"
+                ],
+                "rawName": "xe_cpu_stats_five_seconds_intr",
+                "unit": "pct"
+            },
+            {
+                "analyticsName": "cpuOneMinute",
+                "dataType": "double",
+                "directions": [
+                    "-1"
+                ],
+                "rawName": "xe_cpu_stats_one_minute",
+                "unit": "pct"
+            }
+            ],
+            "objectType": "cisco-telemetry-xe-cpu",
+            "vendor": "cisco"
+        },
+        "id": "cisco-cisco-telemetry-xe-cpu",
+        "type": "ingestionDictionaries"
+    },
+    "violations": []
+}
