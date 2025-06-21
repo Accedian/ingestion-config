@@ -1,0 +1,157 @@
+{
+  "data": {
+    "attributes": {
+      "_id": "openmetricscisco-mobilitycore-pm-card",
+      "_rev": "3-9137dcd56841ca84fba931cbb0e0c143",
+      "createdTimestamp": 1748891119020,
+      "customMetrics": null,
+      "dictionaryName": "openmetrics-cisco-mobilitycore-pm-card",
+      "dictionaryType": "global",
+      "dimensions": [
+        {
+          "analyticsName": "monitoredObjectId",
+          "dataType": "string",
+          "rawName": "monitoredObjectId"
+        },
+        {
+          "analyticsName": "monitoredObjectName",
+          "dataType": "string",
+          "rawName": "monitoredObjectName"
+        },
+        {
+          "analyticsName": "timestamp",
+          "dataType": "long",
+          "rawName": "timestamp"
+        },
+        {
+          "analyticsName": "direction",
+          "dataType": "integer",
+          "rawName": "direction"
+        },
+        {
+          "analyticsName": "agentId",
+          "dataType": "string",
+          "rawName": "agentId"
+        },
+        {
+          "analyticsName": "agentName",
+          "dataType": "string",
+          "rawName": "agentName"
+        },
+        {
+          "analyticsName": "agentType",
+          "dataType": "string",
+          "rawName": "agentType"
+        },
+        {
+          "analyticsName": "host",
+          "dataType": "string",
+          "rawName": "host"
+        },
+        {
+          "analyticsName": "index",
+          "dataType": "string",
+          "rawName": "index"
+        },
+        {
+          "analyticsName": "kpi",
+          "dataType": "string",
+          "rawName": "kpi"
+        },
+        {
+          "analyticsName": "node_id",
+          "dataType": "string",
+          "rawName": "node_id"
+        },
+        {
+          "analyticsName": "objectType",
+          "dataType": "string",
+          "rawName": "objectType"
+        },
+        {
+          "analyticsName": "schema",
+          "dataType": "string",
+          "rawName": "schema"
+        },
+        {
+          "analyticsName": "sessionId",
+          "dataType": "string",
+          "rawName": "sessionId"
+        },
+        {
+          "analyticsName": "sessionName",
+          "dataType": "string",
+          "rawName": "sessionName"
+        },
+        {
+          "analyticsName": "source_ip",
+          "dataType": "string",
+          "rawName": "source_ip"
+        },
+        {
+          "analyticsName": "device",
+          "dataType": "string",
+          "rawName": "device"
+        }
+      ],
+      "lastModifiedTimestamp": 1749054610083,
+      "metricType": "timeseries",
+      "metrics": [
+        {
+          "analyticsName": "aggregatepCpuLoadBusy",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Aggregate_CPU_Load_Busy_value"
+        },
+        {
+          "analyticsName": "agregateCpuMemoryUsageNew",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Aggregate_CPU_Memory_Usage_New_value"
+        },
+        {
+          "analyticsName": "agregateCpuMemoryUsage",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Aggregate_CPU_Memory_Usage_value"
+        },
+        {
+          "analyticsName": "cpu0MemoryUtilization",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "CPU0_Memory_Utilization_value"
+        },
+        {
+          "analyticsName": "cpu0Utilization",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "CPU0_Utilization_value"
+        },
+        {
+          "analyticsName": "avg15CpuBusy",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "avg15_cpubusy_value"
+        }
+      ],
+      "objectType": "cisco-mobilitycore-pm-card",
+      "tenantId": "f9bea852-9920-4be7-aeef-29568a6eafaa",
+      "vendor": "openmetrics"
+    },
+    "id": "openmetricscisco-mobilitycore-pm-card",
+    "type": "ingestionDictionaries"
+  },
+  "violations": []
+}
