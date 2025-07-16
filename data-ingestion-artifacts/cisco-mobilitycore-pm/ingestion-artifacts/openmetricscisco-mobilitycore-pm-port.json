@@ -1,0 +1,166 @@
+{
+  "data": {
+    "attributes": {
+      "_id": "openmetricscisco-mobilitycore-pm-port",
+      "_rev": "2-fef76b62d7e1e5cb40270c1fd2258c3b",
+      "createdTimestamp": 1750937486755,
+      "customMetrics": null,
+      "dictionaryName": "openmetrics-cisco-mobilitycore-pm-port",
+      "dictionaryType": "global",
+      "dimensions": [
+        {
+          "analyticsName": "monitoredObjectId",
+          "dataType": "string",
+          "rawName": "monitoredObjectId"
+        },
+        {
+          "analyticsName": "monitoredObjectName",
+          "dataType": "string",
+          "rawName": "monitoredObjectName"
+        },
+        {
+          "analyticsName": "timestamp",
+          "dataType": "long",
+          "rawName": "timestamp"
+        },
+        {
+          "analyticsName": "direction",
+          "dataType": "integer",
+          "rawName": "direction"
+        },
+        {
+          "analyticsName": "agentId",
+          "dataType": "string",
+          "rawName": "agentId"
+        },
+        {
+          "analyticsName": "agentName",
+          "dataType": "string",
+          "rawName": "agentName"
+        },
+        {
+          "analyticsName": "agentType",
+          "dataType": "string",
+          "rawName": "agentType"
+        },
+        {
+          "analyticsName": "host",
+          "dataType": "string",
+          "rawName": "host"
+        },
+        {
+          "analyticsName": "index",
+          "dataType": "string",
+          "rawName": "index"
+        },
+        {
+          "analyticsName": "kpi",
+          "dataType": "string",
+          "rawName": "kpi"
+        },
+        {
+          "analyticsName": "node_id",
+          "dataType": "string",
+          "rawName": "node_id"
+        },
+        {
+          "analyticsName": "objectType",
+          "dataType": "string",
+          "rawName": "objectType"
+        },
+        {
+          "analyticsName": "schema",
+          "dataType": "string",
+          "rawName": "schema"
+        },
+        {
+          "analyticsName": "sessionId",
+          "dataType": "string",
+          "rawName": "sessionId"
+        },
+        {
+          "analyticsName": "sessionName",
+          "dataType": "string",
+          "rawName": "sessionName"
+        },
+        {
+          "analyticsName": "source_ip",
+          "dataType": "string",
+          "rawName": "source_ip"
+        }
+      ],
+      "lastModifiedTimestamp": 1750950300610,
+      "metricType": "timeseries",
+      "metrics": [
+        {
+          "analyticsName": "portUtilization",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Port_Utilization_r_value",
+          "unit": "pct"
+        },
+        {
+          "analyticsName": "portUtilizationUplink",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Port_Utilization_Uplink_r_value",
+          "unit": "pct"
+        },
+        {
+          "analyticsName": "portUtilizationDownlink",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Port_Utilization_Downlink_r_value",
+          "unit": "pct"
+        },
+        {
+          "analyticsName": "systemThroughputPort",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "System_Throughput_Port_r_value"
+        },
+        {
+          "analyticsName": "systemUplinkThroughputPort",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "System_Uplink_Throughput_Port_r_value"
+        },
+        {
+          "analyticsName": "portRxDiscPackets",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Port_rx_disc_packets_r_value",
+          "unit": "packets"
+        },
+        {
+          "analyticsName": "dataVolumePort",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Data_Volume_Port_r_value",
+          "sqlExpr": "cast(`Data_Volume_Port_r_value` as DOUBLE)*1024*1024",
+          "unit": "bytes"
+        }
+      ],
+      "objectType": "cisco-mobilitycore-pm-port",
+      "tenantId": "f9bea852-9920-4be7-aeef-29568a6eafaa",
+      "vendor": "openmetrics"
+    },
+    "id": "openmetricscisco-mobilitycore-pm-port",
+    "type": "ingestionDictionaries"
+  },
+  "violations": []
+}
