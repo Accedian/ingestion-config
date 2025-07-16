@@ -1,0 +1,356 @@
+{
+  "data": {
+    "attributes": {
+      "_id": "openmetricscisco-mobilitycore-pm-5gsystem",
+      "_rev": "1-538ccb92459acd7fa775b842e8bae0dd",
+      "createdTimestamp": 1752678933492,
+      "customMetrics": null,
+      "dictionaryName": "openmetrics-cisco-mobilitycore-pm-5gsystem",
+      "dictionaryType": "global",
+      "dimensions": [
+        {
+          "analyticsName": "monitoredObjectId",
+          "dataType": "string",
+          "rawName": "monitoredObjectId"
+        },
+        {
+          "analyticsName": "monitoredObjectName",
+          "dataType": "string",
+          "rawName": "monitoredObjectName"
+        },
+        {
+          "analyticsName": "timestamp",
+          "dataType": "long",
+          "rawName": "timestamp"
+        },
+        {
+          "analyticsName": "direction",
+          "dataType": "integer",
+          "rawName": "direction"
+        },
+        {
+          "analyticsName": "agentId",
+          "dataType": "string",
+          "rawName": "agentId"
+        },
+        {
+          "analyticsName": "agentName",
+          "dataType": "string",
+          "rawName": "agentName"
+        },
+        {
+          "analyticsName": "agentType",
+          "dataType": "string",
+          "rawName": "agentType"
+        },
+        {
+          "analyticsName": "host",
+          "dataType": "string",
+          "rawName": "host"
+        },
+        {
+          "analyticsName": "index",
+          "dataType": "string",
+          "rawName": "index"
+        },
+        {
+          "analyticsName": "kpi",
+          "dataType": "string",
+          "rawName": "kpi"
+        },
+        {
+          "analyticsName": "node_id",
+          "dataType": "string",
+          "rawName": "node_id"
+        },
+        {
+          "analyticsName": "objectType",
+          "dataType": "string",
+          "rawName": "objectType"
+        },
+        {
+          "analyticsName": "schema",
+          "dataType": "string",
+          "rawName": "schema"
+        },
+        {
+          "analyticsName": "sessionId",
+          "dataType": "string",
+          "rawName": "sessionId"
+        },
+        {
+          "analyticsName": "sessionName",
+          "dataType": "string",
+          "rawName": "sessionName"
+        },
+        {
+          "analyticsName": "source_ip",
+          "dataType": "string",
+          "rawName": "source_ip"
+        }
+      ],
+      "lastModifiedTimestamp": 1752678933492,
+      "metricType": "timeseries",
+      "metrics": [
+        {
+          "analyticsName": "configurationChangeTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "configuration_change_total_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "containerDeploymentReadyState",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "container_deployment_ready_state_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "cpuCoreCount",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cpu_core_count_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "cpuIdle",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cpu_idle_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "cpuIowait",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cpu_iowait_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "cpuSoftirq",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cpu_softirq_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "cpuSteal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cpu_steal_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "cpuSystem",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cpu_system_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "cpuUser",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cpu_user_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "cpuUtilizationAvg",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cpu_utilization_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "entitlementStatus",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "entitlement_status_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "filesystemRootAvailBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "filesystem_root_avail_bytes_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "k8sPodsStatus",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "k8s_pods_status_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "kubeletNodeStatus",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "kubelet_node_status_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "memoryUsed",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "memory_used_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "networkErrorsTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "network_errors_total_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "nodeDiskRateReadBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "node_disk_rate_read_bytes_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "nodeDiskRateWriteBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "node_disk_rate_write_bytes_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "nodeLoad15",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "node_load15_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "nodeLoad1",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "node_load1_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "nodeLoad5",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "node_load5_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "nodeMemoryFreeBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "node_memory_free_bytes_value",
+          "unit": "bytes"
+        },
+        {
+          "analyticsName": "numberOfCpuCoreAvailablePerHost",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "number_of_cpu_core_available_per_host_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "numberOfDaemonsReady",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "number_of_daemons_ready_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "statefulsetReadyPercent",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "statefulset_ready_percent_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "systemMode",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "system_mode_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "systemRunningPercent",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "system_running_percent_value",
+          "unit": "pct"
+        },
+        {
+          "analyticsName": "systemRunning",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "system_running_value",
+          "unit": "value"
+        }
+      ],
+      "objectType": "cisco-mobilitycore-pm-5gsystem",
+      "tenantId": "ba364911-560c-4c66-adea-0ec5d754498d",
+      "vendor": "openmetrics"
+    },
+    "id": "openmetricscisco-mobilitycore-pm-5gsystem",
+    "type": "ingestionDictionaries"
+  },
+  "violations": []
+}
