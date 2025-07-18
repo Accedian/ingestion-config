@@ -98,7 +98,7 @@
       "metricType": "timeseries",
       "metrics": [
         {
-          "analyticsName": "podAverageCpuUsage",
+          "analyticsName": "cpuUtilizationAvg",
           "dataType": "double",
           "directions": [
             "-1"
@@ -106,7 +106,7 @@
           "rawName": "AMF_Pod_Average_Cpu_Usage_value"
         },
         {
-          "analyticsName": "podAverageMemUsage",
+          "analyticsName": "memoryUsageAvg",
           "dataType": "double",
           "directions": [
             "-1"
