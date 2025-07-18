@@ -98,7 +98,7 @@
       "metricType": "timeseries",
       "metrics": [
         {
-          "analyticsName": "containerMaxCpuUsage",
+          "analyticsName": "cpuUtilizationMax",
           "dataType": "double",
           "directions": [
             "-1"
@@ -106,7 +106,7 @@
           "rawName": "AMF_Container_Max_Cpu_Usage_value"
         },
         {
-          "analyticsName": "containerMaxMemUsage",
+          "analyticsName": "memoryUsageMax",
           "dataType": "double",
           "directions": [
             "-1"
