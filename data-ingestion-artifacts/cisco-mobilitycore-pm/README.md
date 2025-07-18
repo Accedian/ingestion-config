@@ -7,6 +7,7 @@ This set of files represents the first integration between Provider Connectivity
 ## Tradeoffs and important notes
 
 The telegraf config is build with the expectation that the payload will comply with a few requirements. It also would benefit from templating to decouple the target IP addresses for the kafka server from the actual transformation.
+The telegraf config is build with the expectation that the payload will comply with a few requirements. It also would benefit from templating to decouple the target IP addresses for the kafka server from the actual transformation.
 
 1. As it stands, target IP/port for Kafka is embedded in the config which doesnt scale and makes it more difficult to deploy.
 1. The json payloads on the kafka bus need to comply with the expected format and contain a minimum required set of key:value pairs. See below for reference
