@@ -98,20 +98,31 @@
       "metricType": "timeseries",
       "metrics": [
         {
+          "analyticsName": "aggregateCpuLoadBusyNew",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Aggregate_CPU_Load_Busy_New_value",
+          "unit": "value"
+        },
+        {
           "analyticsName": "cpuLoadBusy",
           "dataType": "double",
           "directions": [
             "-1"
           ],
-          "rawName": "Aggregate_CPU_Load_Busy_value"
+          "rawName": "Aggregate_CPU_Load_Busy_value",
+          "unit": "value"
         },
         {
-          "analyticsName": "agregateCpuMemoryUsageNew",
+          "analyticsName": "aggregateCpuMemoryUsageNew",
           "dataType": "double",
           "directions": [
             "-1"
           ],
-          "rawName": "Aggregate_CPU_Memory_Usage_New_value"
+          "rawName": "Aggregate_CPU_Memory_Usage_New_value",
+          "unit": "value"
         },
         {
           "analyticsName": "memoryUsageAvg",
@@ -119,7 +130,26 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Aggregate_CPU_Memory_Usage_value"
+          "rawName": "Aggregate_CPU_Memory_Usage_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "averageSessionManagerCpuUtilization",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Average_Session_Manager_CPU_Utilization_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "averageSessionManagerMemoryUtilization",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Average_Session_Manager_Memory_Utilization_value",
+          "unit": "value"
         },
         {
           "analyticsName": "memoryUsageAvgCPU0",
@@ -127,7 +157,8 @@
           "directions": [
             "-1"
           ],
-          "rawName": "CPU0_Memory_Utilization_value"
+          "rawName": "CPU0_Memory_Utilization_value",
+          "unit": "value"
         },
         {
           "analyticsName": "cpuUtilizationAvg",
@@ -135,7 +166,107 @@
           "directions": [
             "-1"
           ],
-          "rawName": "CPU0_Utilization_value"
+          "rawName": "CPU0_Utilization_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "currentNpuUtilization",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Current_NPU_Utilization_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "linkManagerAverageCpuUtilization",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Link_Manager_Average_CPU_Utilization_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "linkManagerAverageMemoryUtilization",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Link_Manager_Average_Memory_Utilization_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "mmeManagerAverageCpuUtilization",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Manager_Average_CPU_Utilization_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "mmeManagerAverageMemoryUtilization",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Manager_Average_Memory_Utilization_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "mmeManagerMaximumCpuUtilization",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Manager_Maximum_CPU_Utilization_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "mmeManagerMaximumMemoryUtilization",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Manager_Maximum_Memory_Utilization_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "numberOfActiveMmeManagerInstances",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Number_Of_Active_MME_Manager_Instances_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "sessionManagerAverageCpuUtilization",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Session_Manager_Average_CPU_Utilization_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "sessionManagerAverageMemoryUtilization",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Session_Manager_Average_Memory_Utilization_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "sessionManagerMaximumCpuUtilization",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Session_Manager_Maximum_CPU_Utilization_value",
+          "unit": "value"
         },
         {
           "analyticsName": "cpuLoadBusy15",
@@ -143,7 +274,8 @@
           "directions": [
             "-1"
           ],
-          "rawName": "avg15_cpubusy_value"
+          "rawName": "avg15_cpubusy_value",
+          "unit": "value"
         }
       ],
       "objectType": "cisco-mobilitycore-pm-card",
