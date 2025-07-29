@@ -87,7 +87,7 @@
                         "0"
                     ],
                     "rawName": "if_stats_data_rates_input_data_rate",
-                    "sqlExpr": "case when `if_stats_data_rates_input_data_rate` != 0 then (cast(`if_stats_data_rates_input_data_rate` as DOUBLE) * 1000) else (cast(`if_stats_interface_statistics_full_interface_stats_bytes_received_rate` as DOUBLE) * 8) end",
+                    "sqlExpr": "case when `if_stats_data_rates_input_data_rate` != null then (cast(`if_stats_data_rates_input_data_rate` as DOUBLE) * 1000) else (cast(`if_stats_interface_statistics_full_interface_stats_bytes_received_rate` as DOUBLE) * 8) end",
                     "unit": "bps"
                 },
                 {
@@ -97,7 +97,7 @@
                         "0"
                     ],
                     "rawName": "if_stats_data_rates_output_data_rate",
-                    "sqlExpr": "case when `if_stats_data_rates_output_data_rate` != 0 then (cast(`if_stats_data_rates_output_data_rate` as DOUBLE) * 1000) else (cast(`if_stats_interface_statistics_full_interface_stats_bytes_sent_rate` as DOUBLE) * 8) end",
+                    "sqlExpr": "case when `if_stats_data_rates_output_data_rate` != null then (cast(`if_stats_data_rates_output_data_rate` as DOUBLE) * 1000) else (cast(`if_stats_interface_statistics_full_interface_stats_bytes_sent_rate` as DOUBLE) * 8) end",
                     "unit": "bps"
                 },
 
