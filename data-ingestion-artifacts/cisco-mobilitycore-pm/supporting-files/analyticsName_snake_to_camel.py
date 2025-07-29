@@ -1,42 +1,61 @@
 import json
 import sys
 
-# Function to convert a string to real camel case
 def to_camel_case(value):
-    # Split the value by underscores
     words = value.split("_")
-    # Convert the first word to lowercase, and capitalize subsequent words
-    camel_case = words[0].lower() + "".join(word.capitalize() for word in words[1:])
-    return camel_case
+    return words[0].lower() + "".join(word.capitalize() for word in words[1:])
 
-# Function to process "analyticsName" values
-def process_analytics_name(value):
-    return to_camel_case(value)
+def clean_analytics_name(name, remove_prefix=False):
+    # Remove trailing '_value'
+    if name.endswith("_value"):
+        name = name[:-6]
+    words = name.split("_")
+    if remove_prefix and len(words) > 1:
+        words = words[1:]  # Remove first word
+    return to_camel_case("_".join(words))
 
-# Recursively process the JSON structure
-def process_json(obj):
+def process_metrics(metrics, remove_prefix=False):
+    for metric in metrics:
+        if "analyticsName" in metric and isinstance(metric["analyticsName"], str):
+            metric["analyticsName"] = clean_analytics_name(
+                metric["analyticsName"], remove_prefix=remove_prefix
+            )
+        if "unit" not in metric:
+            metric["unit"] = "value"
+
+def process_dictionary_type(attributes):
+    if "dictionaryType" in attributes and attributes["dictionaryType"] == "custom":
+        attributes["dictionaryType"] = "global"
+
+def process_json(obj, remove_prefix=False):
     if isinstance(obj, dict):
         for key, value in obj.items():
-            if key == "analyticsName" and isinstance(value, str):
-                obj[key] = process_analytics_name(value)
+            if key == "metrics" and isinstance(value, list):
+                process_metrics(value, remove_prefix=remove_prefix)
+            elif key == "attributes" and isinstance(value, dict):
+                process_dictionary_type(value)
+                process_json(value, remove_prefix=remove_prefix)
             else:
-                process_json(value)
+                process_json(value, remove_prefix=remove_prefix)
     elif isinstance(obj, list):
-        for index, item in enumerate(obj):
-            process_json(item)
+        for item in obj:
+            process_json(item, remove_prefix=remove_prefix)
 
-# Main function
 def main():
-    # Check if the input file is provided
     if len(sys.argv) < 2:
-        print("Usage: python3 process_json.py <input_file> [output_file]")
+        print("Usage: python3 process_json.py <input_file> [output_file] [--remove-prefix]")
         sys.exit(1)
 
-    # Get the input and optional output file paths
-    input_file = sys.argv[1]
-    output_file = sys.argv[2] if len(sys.argv) > 2 else None
+    # Detect optional flag
+    remove_prefix = False
+    args = sys.argv[1:]
+    if "--remove-prefix" in args:
+        remove_prefix = True
+        args.remove("--remove-prefix")
 
-    # Load the JSON file
+    input_file = args[0]
+    output_file = args[1] if len(args) > 1 else None
+
     try:
         with open(input_file, "r") as f:
             data = json.load(f)
@@ -47,12 +66,9 @@ def main():
         print(f"Error: File '{input_file}' is not a valid JSON file.")
         sys.exit(1)
 
-    # Process the JSON data
-    process_json(data)
+    process_json(data, remove_prefix=remove_prefix)
 
-    # Output the results
     if output_file:
-        # Write to the output file
         try:
             with open(output_file, "w") as f:
                 json.dump(data, f, indent=2)
@@ -61,9 +77,7 @@ def main():
             print(f"Error writing to output file: {e}")
             sys.exit(1)
     else:
-        # Print to the console
         print(json.dumps(data, indent=2))
 
-# Entry point
 if __name__ == "__main__":
     main()
