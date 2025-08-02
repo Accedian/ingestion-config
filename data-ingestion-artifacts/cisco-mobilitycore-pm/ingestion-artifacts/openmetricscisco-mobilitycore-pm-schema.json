@@ -103,7 +103,161 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Current_Active_Sessions_value"
+          "rawName": "APN_Current_Active_Sessions_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "callEventsPerSecond",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Call_Events_Per_Second_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "currentNoOfSessions",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Current_No_Of_Sessions_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "sessionSetupTime100ms",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Session_Setup_Time_100ms_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "sessionSetupTime400ms",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Session_Setup_Time_400ms_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "systemCallsActiveLte",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "System_Calls_Active_LTE_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "systemCallsActive",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "System_Calls_Active_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "systemCallsConnectedLte",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "System_Calls_Connected_LTE_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "systemCallsConnected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "System_Calls_Connected_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "systemCallsFailed",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "System_Calls_Failed_R_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "systemCallsRejected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "System_Calls_Rejected_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "systemDlPacketAvgSizeBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "System_DL_Packet_Avg_Size_Bytes_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "systemDlThroughputMbps",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "System_DL_Throughput_Mbps_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "systemThroughputGprs",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "System_Throughput_GPRS_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "systemThroughputMbps",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "System_Throughput_Mbps_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "systemTotalDataVolumeMb",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "System_Total_Data_Volume_MB_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "systemUlPacketAvgSizeBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "System_UL_Packet_Avg_Size_Bytes_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "systemUlThroughputMbps",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "System_UL_Throughput_Mbps_value",
+          "unit": "value"
         }
       ],
       "objectType": "cisco-mobilitycore-pm-schema",

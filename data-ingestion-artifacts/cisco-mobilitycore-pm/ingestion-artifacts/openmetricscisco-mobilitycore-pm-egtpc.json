@@ -1,0 +1,167 @@
+{
+  "data": {
+    "attributes": {
+      "_id": "openmetricscisco-mobilitycore-pm-egtpc",
+      "_rev": "1-76d531b5ca1755e1c55ad62f75599eaa",
+      "createdTimestamp": 1752869174900,
+      "customMetrics": null,
+      "dictionaryName": "openmetrics-cisco-mobilitycore-pm-egtpc",
+      "dictionaryType": "global",
+      "dimensions": [
+        {
+          "analyticsName": "monitoredObjectId",
+          "dataType": "string",
+          "rawName": "monitoredObjectId"
+        },
+        {
+          "analyticsName": "monitoredObjectName",
+          "dataType": "string",
+          "rawName": "monitoredObjectName"
+        },
+        {
+          "analyticsName": "timestamp",
+          "dataType": "long",
+          "rawName": "timestamp"
+        },
+        {
+          "analyticsName": "direction",
+          "dataType": "integer",
+          "rawName": "direction"
+        },
+        {
+          "analyticsName": "agentId",
+          "dataType": "string",
+          "rawName": "agentId"
+        },
+        {
+          "analyticsName": "agentName",
+          "dataType": "string",
+          "rawName": "agentName"
+        },
+        {
+          "analyticsName": "agentType",
+          "dataType": "string",
+          "rawName": "agentType"
+        },
+        {
+          "analyticsName": "host",
+          "dataType": "string",
+          "rawName": "host"
+        },
+        {
+          "analyticsName": "index",
+          "dataType": "string",
+          "rawName": "index"
+        },
+        {
+          "analyticsName": "kpi",
+          "dataType": "string",
+          "rawName": "kpi"
+        },
+        {
+          "analyticsName": "node_id",
+          "dataType": "string",
+          "rawName": "node_id"
+        },
+        {
+          "analyticsName": "objectType",
+          "dataType": "string",
+          "rawName": "objectType"
+        },
+        {
+          "analyticsName": "schema",
+          "dataType": "string",
+          "rawName": "schema"
+        },
+        {
+          "analyticsName": "sessionId",
+          "dataType": "string",
+          "rawName": "sessionId"
+        },
+        {
+          "analyticsName": "sessionName",
+          "dataType": "string",
+          "rawName": "sessionName"
+        },
+        {
+          "analyticsName": "source_ip",
+          "dataType": "string",
+          "rawName": "source_ip"
+        }
+      ],
+      "lastModifiedTimestamp": 1752869174900,
+      "metricType": "timeseries",
+      "metrics": [
+        {
+          "analyticsName": "createBearerRequestSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Create_Bearer_Request_Success_Rate_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "createSessionRequestSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Create_Session_Request_Success_Rate_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "bearerModificationSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "EGTPC_Bearer_Modification_Success_Rate_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "bearerUpdateSuccessRateR",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "EGTPC_Bearer_Update_Success_Rate_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "saegwS11CreateSessionReceivedAttempts",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_EGTPC_S11_Create_Session_Received_Attempts_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "saegwS11CreateSessionResponseSuccess",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_EGTPC_S11_Create_Session_Response_Success_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "saegwS11DeleteBearerRequestAttempts",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_EGTPC_S11_Delete_Bearer_Request_Attempts_value",
+          "unit": "value"
+        }
+      ],
+      "objectType": "cisco-mobilitycore-pm-egtpc",
+      "tenantId": "662576c1-997c-4c47-a321-b8ce68b8f769",
+      "vendor": "openmetrics"
+    },
+    "id": "openmetricscisco-mobilitycore-pm-egtpc",
+    "type": "ingestionDictionaries"
+  },
+  "violations": []
+}

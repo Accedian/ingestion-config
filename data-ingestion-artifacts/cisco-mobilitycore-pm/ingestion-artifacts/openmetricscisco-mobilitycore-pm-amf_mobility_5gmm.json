@@ -103,7 +103,8 @@
           "directions": [
             "-1"
           ],
-          "rawName": "AMF_RegisteredUsers_value"
+          "rawName": "AMF_RegisteredUsers_value",
+          "unit": "value"
         },
         {
           "analyticsName": "serviceRequestsAttempted",
@@ -111,7 +112,8 @@
           "directions": [
             "-1"
           ],
-          "rawName": "VS_MM_ServiceReqAtt_5GS_asKPI_value"
+          "rawName": "VS_MM_ServiceReqAtt_5GS_asKPI_value",
+          "unit": "value"
         },
         {
           "analyticsName": "serviceRequestsSuccessful",
@@ -119,7 +121,8 @@
           "directions": [
             "-1"
           ],
-          "rawName": "VS_MM_ServiceReqSucc_5GS_asKPI_value"
+          "rawName": "VS_MM_ServiceReqSucc_5GS_asKPI_value",
+          "unit": "value"
         }
       ],
       "objectType": "cisco-mobilitycore-pm-amf_mobility_5gmm",
