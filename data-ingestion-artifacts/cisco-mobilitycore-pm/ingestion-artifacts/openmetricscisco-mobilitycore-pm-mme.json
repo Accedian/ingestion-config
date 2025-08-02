@@ -1,0 +1,626 @@
+{
+  "data": {
+    "attributes": {
+      "_id": "openmetricscisco-mobilitycore-pm-mme",
+      "_rev": "2-7a44a053ed8c20bab41b382d0be06426",
+      "createdTimestamp": 1752869175060,
+      "customMetrics": null,
+      "dictionaryName": "openmetrics-cisco-mobilitycore-pm-mme",
+      "dictionaryType": "global",
+      "dimensions": [
+        {
+          "analyticsName": "monitoredObjectId",
+          "dataType": "string",
+          "rawName": "monitoredObjectId"
+        },
+        {
+          "analyticsName": "monitoredObjectName",
+          "dataType": "string",
+          "rawName": "monitoredObjectName"
+        },
+        {
+          "analyticsName": "timestamp",
+          "dataType": "long",
+          "rawName": "timestamp"
+        },
+        {
+          "analyticsName": "direction",
+          "dataType": "integer",
+          "rawName": "direction"
+        },
+        {
+          "analyticsName": "agentId",
+          "dataType": "string",
+          "rawName": "agentId"
+        },
+        {
+          "analyticsName": "agentName",
+          "dataType": "string",
+          "rawName": "agentName"
+        },
+        {
+          "analyticsName": "agentType",
+          "dataType": "string",
+          "rawName": "agentType"
+        },
+        {
+          "analyticsName": "host",
+          "dataType": "string",
+          "rawName": "host"
+        },
+        {
+          "analyticsName": "index",
+          "dataType": "string",
+          "rawName": "index"
+        },
+        {
+          "analyticsName": "kpi",
+          "dataType": "string",
+          "rawName": "kpi"
+        },
+        {
+          "analyticsName": "node_id",
+          "dataType": "string",
+          "rawName": "node_id"
+        },
+        {
+          "analyticsName": "objectType",
+          "dataType": "string",
+          "rawName": "objectType"
+        },
+        {
+          "analyticsName": "schema",
+          "dataType": "string",
+          "rawName": "schema"
+        },
+        {
+          "analyticsName": "sessionId",
+          "dataType": "string",
+          "rawName": "sessionId"
+        },
+        {
+          "analyticsName": "sessionName",
+          "dataType": "string",
+          "rawName": "sessionName"
+        },
+        {
+          "analyticsName": "source_ip",
+          "dataType": "string",
+          "rawName": "source_ip"
+        }
+      ],
+      "lastModifiedTimestamp": 1753683400613,
+      "metricType": "timeseries",
+      "metrics": [
+        {
+          "analyticsName": "combinedAttachSuccessRateEpsOnly",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Combined_Attach_Success_Rate_EPS_Only_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "combinedEpsAttachSuccessRateAf",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Combined_EPS_Attach_Success_Rate_AF_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "connectCurrentCalls",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Connect_Current_Calls_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dcnrAttachAcceptDenied",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_DCNR_Attach_Accept_Denied_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dcnrAttachFailureRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_DCNR_Attach_Failure_Rate_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dcnrAttachReject",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_DCNR_Attach_Reject_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dcnrAttachSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_DCNR_Attach_Success_Rate_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dcnrAttachedPdns",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_DCNR_Attached_PDNs_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dcnrAttachedSubscribers",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_DCNR_Attached_subscribers_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dcnrConnectedPdns",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_DCNR_Connected_PDNs_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dcnrConnectedSubscribers",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_DCNR_Connected_subscribers_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dcnrIdlePdns",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_DCNR_Idle_PDNs_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dcnrIdleSubscribers",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_DCNR_Idle_subscribers_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dcnrInterMmeTauDeniedRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_DCNR_Inter_MME_TAU_Denied_Rate_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dcnrInterMmeTauSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_DCNR_Inter_MME_TAU_Success_Rate_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dcnrInterTauAcceptDenied",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_DCNR_Inter_TAU_Accept_Denied_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dcnrInterTauReject",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_DCNR_Inter_TAU_Reject_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dcnrIntraMmeTauDeniedRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_DCNR_Intra_MME_TAU_Denied_Rate_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dcnrIntraMmeTauSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_DCNR_Intra_MME_TAU_Success_Rate_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dcnrIntraTauAcceptDenied",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_DCNR_Intra_TAU_Accept_Denied_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dcnrPdnConnectionFailures",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_DCNR_PDN_Connection_Failures_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dcnrPdnConnectionSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_DCNR_PDN_Connection_Success_Rate_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dedicatedBearerActivationSuccessRateAf",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Dedicated_Bearer_Activation_Success_Rate_AF_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "defaultBearerActivationSuccessRateAf",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Default_Bearer_Activation_Success_Rate_AF_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "emmAuthenticationSuccessRateAf",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_EMM_Authentication_Success_Rate_AF_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "epsServiceRequestSuccessRateAf",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_EPS_Service_Request_Success_Rate_AF_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "erabModificationBearerLevelSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_ERAB_Modification_Bearer_Level_Success_Rate_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "erabModificationIndicationBearLevelFailures",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_ERAB_Modification_Indication_Bear_Level_Failures_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "interMmeRelocationsS1S10HoOutgoingSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Inter_MME_Relocations_S1_S10_HO_Outgoing_Success_Rate_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "interMmeTrackingAreaUpdateSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Inter_MME_Tracking_Area_Update_Success_Rate_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "intraMmeHandoverSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Intra_MME_Handover_Success_Rate_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "intraMmeTrackingAreaUpdateSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Intra_MME_Tracking_Area_Update_Success_Rate_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "nasAuthenticationAttempts",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_NAS_Authentication_Attempts_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "overallAttachSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Overall_Attach_Success_Rate_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pdnConnectivityAttempts",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_PDN_Connectivity_Attempts_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pdnConnectivitySuccess",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_PDN_Connectivity_Success_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "psPagingSuccessRateQciSeperated",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_PS_Paging_Success_Rate_QCI_Seperated_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pathUpdateFailures",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Path_Update_Failures_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pathUpdateSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Path_Update_Success_Rate_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "s1apErabSetupAttempts",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_S1AP_ERAB_Setup_Attempts_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "s1apErabSetupSuccess",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_S1AP_ERAB_Setup_Success_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "s1HandoverSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_S1_Handover_Success_Rate_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "s1NasCombineAttachAttempts",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_S1_NAS_Combine_Attach_Attempts_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "s1NasCombineAttachSuccess",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_S1_NAS_Combine_Attach_Success_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "s1TauAttempts",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_S1_TAU_Attempts_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "s1TauSuccess",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_S1_TAU_Success_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "totalAttachCurrentSessions",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Total_Attach_Current_Sessions_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "totalNumberCurrentCalls",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Total_Number_Current_Calls_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "trackingAreaUpdateSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Tracking_Area_Update_Success_Rate_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "visitingForeignSubscribersAttached",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Visiting_Foreign_Subscribers_Attached_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "visitingForeignSubscribersConnected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Visiting_Foreign_Subscribers_Connected_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "visitingForeignSubscribersIdle",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_Visiting_Foreign_Subscribers_Idle_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "x2HandoverSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_X2_Handover_Success_Rate_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "erabModificationSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_eRAB_Modification_Success_Rate_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "erabSetupSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MME_eRAB_Setup_Success_Rate_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pagingSuccessRateForPsQci9",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Paging_Success_Rate_for_PS_QCI9_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pagingSuccessRateForVolteQci5",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Paging_Success_Rate_for_Volte_QCI5_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "ueIdentityUnknown",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "UE_Identity_Unknown_value",
+          "unit": "value"
+        }
+      ],
+      "objectType": "cisco-mobilitycore-pm-mme",
+      "tenantId": "662576c1-997c-4c47-a321-b8ce68b8f769",
+      "vendor": "openmetrics"
+    },
+    "id": "openmetricscisco-mobilitycore-pm-mme",
+    "type": "ingestionDictionaries"
+  },
+  "violations": []
+}
