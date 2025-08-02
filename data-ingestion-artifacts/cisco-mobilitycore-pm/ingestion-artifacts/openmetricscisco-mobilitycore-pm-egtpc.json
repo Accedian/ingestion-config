@@ -1,11 +1,11 @@
 {
   "data": {
     "attributes": {
-      "_id": "openmetricscisco-mobilitycore-pm-amf_mobility_5gmm",
-      "_rev": "7-b7d5eaf9f98b197d4be71f60dfb55540",
-      "createdTimestamp": 1748972662124,
+      "_id": "openmetricscisco-mobilitycore-pm-egtpc",
+      "_rev": "1-76d531b5ca1755e1c55ad62f75599eaa",
+      "createdTimestamp": 1752869174900,
       "customMetrics": null,
-      "dictionaryName": "openmetrics-cisco-mobilitycore-pm-amf_mobility_5gmm",
+      "dictionaryName": "openmetrics-cisco-mobilitycore-pm-egtpc",
       "dictionaryType": "global",
       "dimensions": [
         {
@@ -42,11 +42,6 @@
           "analyticsName": "agentType",
           "dataType": "string",
           "rawName": "agentType"
-        },
-        {
-          "analyticsName": "device",
-          "dataType": "string",
-          "rawName": "device"
         },
         {
           "analyticsName": "host",
@@ -94,42 +89,78 @@
           "rawName": "source_ip"
         }
       ],
-      "lastModifiedTimestamp": 1749054258259,
+      "lastModifiedTimestamp": 1752869174900,
       "metricType": "timeseries",
       "metrics": [
         {
-          "analyticsName": "registeredUsers",
+          "analyticsName": "createBearerRequestSuccessRate",
           "dataType": "double",
           "directions": [
             "-1"
           ],
-          "rawName": "AMF_RegisteredUsers_value",
+          "rawName": "Create_Bearer_Request_Success_Rate_value",
           "unit": "value"
         },
         {
-          "analyticsName": "serviceRequestsAttempted",
+          "analyticsName": "createSessionRequestSuccessRate",
           "dataType": "double",
           "directions": [
             "-1"
           ],
-          "rawName": "VS_MM_ServiceReqAtt_5GS_asKPI_value",
+          "rawName": "Create_Session_Request_Success_Rate_r_value",
           "unit": "value"
         },
         {
-          "analyticsName": "serviceRequestsSuccessful",
+          "analyticsName": "bearerModificationSuccessRate",
           "dataType": "double",
           "directions": [
             "-1"
           ],
-          "rawName": "VS_MM_ServiceReqSucc_5GS_asKPI_value",
+          "rawName": "EGTPC_Bearer_Modification_Success_Rate_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "bearerUpdateSuccessRateR",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "EGTPC_Bearer_Update_Success_Rate_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "saegwS11CreateSessionReceivedAttempts",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_EGTPC_S11_Create_Session_Received_Attempts_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "saegwS11CreateSessionResponseSuccess",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_EGTPC_S11_Create_Session_Response_Success_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "saegwS11DeleteBearerRequestAttempts",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_EGTPC_S11_Delete_Bearer_Request_Attempts_value",
           "unit": "value"
         }
       ],
-      "objectType": "cisco-mobilitycore-pm-amf_mobility_5gmm",
-      "tenantId": "f9bea852-9920-4be7-aeef-29568a6eafaa",
+      "objectType": "cisco-mobilitycore-pm-egtpc",
+      "tenantId": "662576c1-997c-4c47-a321-b8ce68b8f769",
       "vendor": "openmetrics"
     },
-    "id": "openmetricscisco-mobilitycore-pm-amf_mobility_5gmm",
+    "id": "openmetricscisco-mobilitycore-pm-egtpc",
     "type": "ingestionDictionaries"
   },
   "violations": []
