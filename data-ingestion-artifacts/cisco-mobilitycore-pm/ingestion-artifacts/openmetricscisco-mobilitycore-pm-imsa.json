@@ -1,0 +1,185 @@
+{
+  "data": {
+    "attributes": {
+      "_id": "openmetricscisco-mobilitycore-pm-imsa",
+      "_rev": "1-08862248e3ef06a511f9cb73305cf008",
+      "createdTimestamp": 1752869174986,
+      "customMetrics": null,
+      "dictionaryName": "openmetrics-cisco-mobilitycore-pm-imsa",
+      "dictionaryType": "global",
+      "dimensions": [
+        {
+          "analyticsName": "monitoredObjectId",
+          "dataType": "string",
+          "rawName": "monitoredObjectId"
+        },
+        {
+          "analyticsName": "monitoredObjectName",
+          "dataType": "string",
+          "rawName": "monitoredObjectName"
+        },
+        {
+          "analyticsName": "timestamp",
+          "dataType": "long",
+          "rawName": "timestamp"
+        },
+        {
+          "analyticsName": "direction",
+          "dataType": "integer",
+          "rawName": "direction"
+        },
+        {
+          "analyticsName": "agentId",
+          "dataType": "string",
+          "rawName": "agentId"
+        },
+        {
+          "analyticsName": "agentName",
+          "dataType": "string",
+          "rawName": "agentName"
+        },
+        {
+          "analyticsName": "agentType",
+          "dataType": "string",
+          "rawName": "agentType"
+        },
+        {
+          "analyticsName": "host",
+          "dataType": "string",
+          "rawName": "host"
+        },
+        {
+          "analyticsName": "index",
+          "dataType": "string",
+          "rawName": "index"
+        },
+        {
+          "analyticsName": "kpi",
+          "dataType": "string",
+          "rawName": "kpi"
+        },
+        {
+          "analyticsName": "node_id",
+          "dataType": "string",
+          "rawName": "node_id"
+        },
+        {
+          "analyticsName": "objectType",
+          "dataType": "string",
+          "rawName": "objectType"
+        },
+        {
+          "analyticsName": "schema",
+          "dataType": "string",
+          "rawName": "schema"
+        },
+        {
+          "analyticsName": "sessionId",
+          "dataType": "string",
+          "rawName": "sessionId"
+        },
+        {
+          "analyticsName": "sessionName",
+          "dataType": "string",
+          "rawName": "sessionName"
+        },
+        {
+          "analyticsName": "source_ip",
+          "dataType": "string",
+          "rawName": "source_ip"
+        }
+      ],
+      "lastModifiedTimestamp": 1752869174986,
+      "metricType": "timeseries",
+      "metrics": [
+        {
+          "analyticsName": "dpcaGxCreditControlAnswers",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "DPCA_Gx_Credit_Control_Answers_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dpcaGxCreditControlRequests",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "DPCA_Gx_Credit_Control_Requests_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "gxCreditControlTerminationSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Gx_Credit_Control_Termination_Success_Rate_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "gxRarSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Gx_RAR_Success_Rate_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "gxTransactionsPerSecond",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Gx_Transactions_Per_Second_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "creditControlInitialSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "IMSA_Credit_Control_Initial_Success_Rate_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "creditControlUpdateSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "IMSA_Credit_control_Update_Success_Rate_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "totalCurrentActiveGxSessions",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Total_Current_Active_Gx_Sessions_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "totalGxTransactions",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Total_Gx_Transactions_value",
+          "unit": "value"
+        }
+      ],
+      "objectType": "cisco-mobilitycore-pm-imsa",
+      "tenantId": "662576c1-997c-4c47-a321-b8ce68b8f769",
+      "vendor": "openmetrics"
+    },
+    "id": "openmetricscisco-mobilitycore-pm-imsa",
+    "type": "ingestionDictionaries"
+  },
+  "violations": []
+}

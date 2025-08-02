@@ -1,0 +1,545 @@
+{
+  "data": {
+    "attributes": {
+      "_id": "openmetricscisco-mobilitycore-pm-saegw",
+      "_rev": "2-395173342f1d1c0be5cbfe77bd2d9d29",
+      "createdTimestamp": 1753201594420,
+      "customMetrics": null,
+      "dictionaryName": "openmetrics-cisco-mobilitycore-pm-saegw",
+      "dictionaryType": "global",
+      "dimensions": [
+        {
+          "analyticsName": "monitoredObjectId",
+          "dataType": "string",
+          "rawName": "monitoredObjectId"
+        },
+        {
+          "analyticsName": "monitoredObjectName",
+          "dataType": "string",
+          "rawName": "monitoredObjectName"
+        },
+        {
+          "analyticsName": "timestamp",
+          "dataType": "long",
+          "rawName": "timestamp"
+        },
+        {
+          "analyticsName": "direction",
+          "dataType": "integer",
+          "rawName": "direction"
+        },
+        {
+          "analyticsName": "agentId",
+          "dataType": "string",
+          "rawName": "agentId"
+        },
+        {
+          "analyticsName": "agentName",
+          "dataType": "string",
+          "rawName": "agentName"
+        },
+        {
+          "analyticsName": "agentType",
+          "dataType": "string",
+          "rawName": "agentType"
+        },
+        {
+          "analyticsName": "host",
+          "dataType": "string",
+          "rawName": "host"
+        },
+        {
+          "analyticsName": "index",
+          "dataType": "string",
+          "rawName": "index"
+        },
+        {
+          "analyticsName": "kpi",
+          "dataType": "string",
+          "rawName": "kpi"
+        },
+        {
+          "analyticsName": "node_id",
+          "dataType": "string",
+          "rawName": "node_id"
+        },
+        {
+          "analyticsName": "objectType",
+          "dataType": "string",
+          "rawName": "objectType"
+        },
+        {
+          "analyticsName": "schema",
+          "dataType": "string",
+          "rawName": "schema"
+        },
+        {
+          "analyticsName": "sessionId",
+          "dataType": "string",
+          "rawName": "sessionId"
+        },
+        {
+          "analyticsName": "sessionName",
+          "dataType": "string",
+          "rawName": "sessionName"
+        },
+        {
+          "analyticsName": "source_ip",
+          "dataType": "string",
+          "rawName": "source_ip"
+        }
+      ],
+      "lastModifiedTimestamp": 1753683460717,
+      "metricType": "timeseries",
+      "metrics": [
+        {
+          "analyticsName": "activePdnsHome",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Active_PDNs_Home_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "activePdnsRoaming",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Active_PDNs_Roaming_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "activeSubscribers",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Active_Subscribers_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "currentActivePgwDcnrPdns",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Current_Active_PGW_DCNR_PDNs_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "currentActiveSaegwDcnrPdns",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Current_Active_SAEGW_DCNR_PDNs_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "currentActiveSgwDcnrPdns",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Current_Active_SGW_DCNR_PDNs_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "interSgwS1BasedHandoverSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Inter_SGW_S1_Based_Handover_Success_Rate_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "intraSgwHandoverSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Intra_SGW_Handover_Success_Rate_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "numberOfBearersActiveQci1",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Number_Of_Bearers_Active_QCI1_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "numberOfBearersActiveQci5",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Number_Of_Bearers_Active_QCI5_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "numberOfBearersActiveQci9",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Number_Of_Bearers_Active_QCI9_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "numberOfBearersSetupQci1",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Number_Of_Bearers_Setup_QCI1_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "numberOfBearersSetupQci5",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Number_Of_Bearers_Setup_QCI5_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pdnsActiveVisiting",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_PDNS_Active_Visiting_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pgwActiveSubscribers",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_PGW_Active_Subscribers_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pgwDlPackets",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_PGW_DL_Packets_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pgwDlThroughputGbps",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_PGW_DL_Throughput_Gbps_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pgwDlVolumeMb",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_PGW_DL_Volume_MB_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pgwDedicatedBearersActive",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_PGW_Dedicated_Bearers_Active_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pgwDefaultBearersActive",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_PGW_Default_Bearers_Active_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pgwThroughputQc1Gbps",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_PGW_Throughput_QC1_Gbps_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pgwThroughputQci5Gbps",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_PGW_Throughput_QCI5_Gbps_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pgwThroughputQci9Gbps",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_PGW_Throughput_QCI9_Gbps_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pgwTotalDataVolumeMb",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_PGW_Total_Data_Volume_MB_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pgwUlVolumeMb",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_PGW_UL_Volume_MB_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "qci1ReleasedPgwInitiated",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_QCI1_Released_PGW_Initiated_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "qci1ReleasedS11PathFailure",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_QCI1_Released_S11_Path_Failure_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "qci1ReleasedS1uPathFailure",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_QCI1_Released_S1U_Path_Failure_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "qci1ReleasedS1Error",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_QCI1_Released_S1_Error_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "qci1ReleasedS5Error",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_QCI1_Released_S5_Error_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "qci9ReleasedInactivityTimeout",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_QCI9_Released_Inactivity_Timeout_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "qci9ReleasedLocalReason",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_QCI9_Released_Local_Reason_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "qci9ReleasedOther",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_QCI9_Released_Other_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "qci9ReleasedPdnCleanup",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_QCI9_Released_PDN_Cleanup_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "qci9ReleasedPgwInitiated",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_QCI9_Released_PGW_Initiated_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "totalActiveBearersPGw",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Total_Active_Bearers_P_GW_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "totalCurrentPdnsSGw",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Total_Current_PDNs_S_GW_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "totalNumberOfPgwSessions",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Total_Number_Of_PGW_Sessions_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "totalNumberSGwSessions",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Total_Number_S_GW_Sessions_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "totalNumberOfPgwDcnrPdnsReleased",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Total_Number_of_PGW_DCNR_PDNs_Released_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "totalNumberOfPgwDcnrPdnsSetup",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Total_Number_of_PGW_DCNR_PDNs_Setup_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "totalNumberOfSaegwDcnrPdnsReleased",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Total_Number_of_SAEGW_DCNR_PDNs_Released_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "totalNumberOfSaegwDcnrPdnsSetup",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Total_Number_of_SAEGW_DCNR_PDNs_Setup_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "uplinkThroughputMbps",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Uplink_Throughput_Mbps_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "visitingPdnsReleased",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Visiting_PDNS_Released_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "visitingPdnsSetup",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Visiting_PDNS_Setup_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dedicatedBearerActivationSuccessRate",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_Dedicated_Bearer_Activation_Success_Rate_r_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pgwS5ThroughputGbps",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_PGW_S5_Throughput_Gbps_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pgwS8ThroughputGbps",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SAEGW_PGW_S8_Throughput_Gbps_value",
+          "unit": "value"
+        }
+      ],
+      "objectType": "cisco-mobilitycore-pm-saegw",
+      "tenantId": "662576c1-997c-4c47-a321-b8ce68b8f769",
+      "vendor": "openmetrics"
+    },
+    "id": "openmetricscisco-mobilitycore-pm-saegw",
+    "type": "ingestionDictionaries"
+  },
+  "violations": []
+}
