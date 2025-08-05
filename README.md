@@ -1,9 +1,9 @@
 # Ingestion Configuration
-This repository is intended to act as the source of truth for configuration artifacts associated with the Ingestion pipeline.
+This repository is intended to act as the source of truth for configuration artifacts associated with ingesting  telemetry into PCA.
 
-We recommend that you start any new integration work by creating a new branch from the main branch's latest commit. you new branch should follow the same folder structure as the pre-existing ingestion pipelines. 
+We recommend that you start any new integration work by creating a new branch from the main branch's latest commit. your new branch should follow the same folder structure as the pre-existing ingestion pipelines. 
 
-For any Cisco ingestion work, please work under the `cisco-community` folder.
+For any Cisco ingestion work, please work under the `cisco-community` folder. Our R&D team will be the ones responsible for vetting and moving `cisco-community` configurations into `cisco-pca-product` as submissions get approved and moved into the product. Pull requests made under `cisco-pca-product` will be refused.
 
 Whenever adding a new configuration, please follow the existing tiered logic:
 - First folder tier should be reserved for vendor names (or cross-vendor stardards). 
@@ -21,7 +21,7 @@ Whenever adding a new configuration, please follow the existing tiered logic:
 ---
 - Should contain all your customized ingestion dictionaries.
 - Please follow the guidelines when creating dictionary
-  - If a concept was previously created by an existing type in PCA. Then efforts should be made to reuse the same analyticsName and convert (if needed) the metric value to the same base unit as the existing. i.e. if we already have a cpuUtilization expressed as % with values ranging from 0-100. And you have a cpuUsage with values 0-1. Rename you new metric to cpuUtilization and multiply its value by 100 to conform with the pre-established standard.
+  - If a concept was previously created by an existing type in PCA, then efforts should be made to reuse the same analyticsName and convert (if needed) the metric value to the same base unit as the existing. i.e. if we already have a cpuUtilization expressed as % with values ranging from 0-100. And you have a cpuUsage with values 0-1. Rename you new metric to cpuUtilization and multiply its value by 100 to conform with the pre-established standard.
   - When creating *new* metrics, `analyticsName` should always be in **camelCase**
   - Directions should be used whenever appropriate
   - Basic sqlExpr can be used to cast, convert, or pick, between indicators
@@ -40,7 +40,7 @@ Whenever adding a new configuration, please follow the existing tiered logic:
 
 `telemetry-collector-configuration`
 ---
-- Optional in theory, but we expect the majority of the data feed will have one.
+- Optional in theory, but we expect the majority of the data feeds will have one because most integrations use the telemetry collector. 
 - To contain your Telegraf configuration file
 - To be valid for PCA, your Telegraf configuration file should produce at a minimum:
   - A metric name that complies with OpenMetrics standards
@@ -58,8 +58,8 @@ Whenever adding a new configuration, please follow the existing tiered logic:
 
 `snmp-exporter-configuration` 
 ---
-- Optional. For the high-data-rate SNMP configurations
-- Used to store the snmp-exporter configuration
+- Optional. For the high-data-rate SNMP configurations where the SNMP Exporter architecture was chosen instead of the telemetry collector.
+- Used to store the snmp-exporter configuration.
 
 `README.md`
 ---
