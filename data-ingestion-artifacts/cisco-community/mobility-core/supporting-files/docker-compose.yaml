@@ -1,0 +1,17 @@
+services:
+  telemetry-collector:
+    container_name: "telemetry-collector"
+    image: "gcr.io/sky-agents/agent-telemetry-amd64:r24.09"  
+    environment:
+      AGENT_MANAGEMENT_PROXY: "172.17.0.1"
+      AGENT_MANAGEMENT_PROXY_PORT: 55777
+    volumes:
+      - ./secrets.yaml:/run/secrets/secrets.yaml
+      - ./metrics.out:/tmp/metrics.out
+      - ./missing_schema.out:/tmp/missing_schema.out
+    restart: "always"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "250m"
+
