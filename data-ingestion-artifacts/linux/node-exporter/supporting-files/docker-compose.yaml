@@ -1,0 +1,37 @@
+version: '3'
+services:
+  telegraf:
+    image: "telegraf:latest"
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    restart: "always"
+    volumes:
+      - type: bind
+        source: ../telemetry-collector-configuration/telegraf.conf
+        target: /etc/telegraf/telegraf.conf
+      - type: bind
+        source: ./metrics.out
+        target: /tmp/metrics.out
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+    networks:
+      - node-exporter
+  node-exporter:
+    image: "bitnami/node-exporter:latest"
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    restart: "always"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+    networks:
+      - node-exporter
+
+networks:
+  node-exporter:
+    driver: bridge
