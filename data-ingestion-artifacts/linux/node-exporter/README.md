@@ -11,7 +11,7 @@ I selected and mapped a few of the object types for the example and you could ea
 
 This example also serves as a good starting point to see what needs to be done for ingesting other Prometheus/Openmetrics data sources.
 
-Here is a link to the complete documented procedure use as a reference to this content https://docs.accedian.io/
+Here is a link to the complete documented procedure use as a reference to this content https://docs.accedian.io/on-prem-solution/docs/pca-for-mobility-pm
 
 ## Step 1
 
