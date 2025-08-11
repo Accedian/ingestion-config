@@ -1,0 +1,42 @@
+version: '3'
+## 
+## DOCKER COMPOSE TELEMETRY COLLECTOR AND LOCAL SYSTEM CONFIG
+##
+## Telemetry Collector instance scrapes the openmetrics interface of 
+## the node-exporter on the local system. This config will ultimately
+## send metrics to PCA for building dashboards
+##
+services:
+  telemetry-collector:
+    container_name: "telemetry-node-exporter-collector"
+    image: "gcr.io/sky-agents/agent-telemetry-amd64:r25.07"
+    environment:
+      AGENT_MANAGEMENT_PROXY: "172.17.0.1"
+      AGENT_MANAGEMENT_PROXY_PORT: 55777
+      ## temporary workaround 
+      AGENT_MANAGEMENT_PROXY_USE_SSL: "false"
+    volumes:
+      - type: bind
+        ## build the secrets.yaml file according to the doc here:
+        ## https://docs.accedian.io/on-prem-solution/docs/pca-for-mobility-pm#personal-access-token
+        ## https://docs.accedian.io/on-prem-solution/docs/pca-for-mobility-pm#2-configure-customize-and-deploy-telemetry-collector
+        source: ./secrets.yaml
+        target: /run/secrets/secrets.yaml
+    networks:
+      - node-exporter
+  node-exporter:
+    image: "bitnami/node-exporter:latest"
+    # cap_add:
+    # - NET_ADMIN
+    # - NET_RAW
+    restart: "always"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+    networks:
+      - node-exporter
+
+networks:
+  node-exporter:
+    driver: bridge

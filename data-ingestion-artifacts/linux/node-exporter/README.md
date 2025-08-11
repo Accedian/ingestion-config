@@ -16,7 +16,7 @@ Here is a link to the complete documented procedure use as a reference to this c
 ## Step 1
 
 
-Since the procedure to ingest a new data source starts with a vanilla telegraf instance to discover and model and map your data into the proper objects, I supplied a sample `docker-compose.yaml` file that can be used for a complete standalone test (no PCA needed). Once you have perfected your `telegraf.conf` file in this standalone environment you are ready for step 2.
+Since the procedure to ingest a new data source starts with a vanilla telegraf instance to discover and model and map your data into the proper objects, I supplied a sample `docker-compose-standalone.yaml` file that can be used for a complete standalone test (no PCA needed). Once you have perfected your `telegraf.conf` file in this standalone environment you are ready for step 2.
 
 ### Initial config
 
@@ -85,14 +85,20 @@ Looking at your metric names, see if you can already identify patterns that will
 
 Prerequisite: a working Sensor Collector configured for `"Type": "Gateway"` and `"Metric Configuration": "telemetry-collector"` (this is outside the scope of this document).
 
-1. In your `telegraf.conf`, comment your `[agent]` and `[[output.*]]` configs. Then convert your `telegraf.conf` file into a base64 blob
-2. Create a new Telemetry Collector instance in PCA and select IOS XR
-3. Install this new Telemetry Collector instance on a compute node that will have network access to the node-exporter you wish to scrape (if you need help with these steps refer to the Telemtry collector documentation)
-4. Using the Telemetry Collector ID `GET` the `/api/orchestrate/v3/agents/configuration/{{agentId}}` API
+1. In your `telegraf.conf` from step #1, comment your `[agent]` and `[[output.*]]` configs since we will be supplying those from the SDK. Then convert your `telegraf.conf` file into a base64 blob.
+```
+base64 < telegraf.conf > telegraf.base64
+```
+2. Using the PCA UI, create a new Telemetry Collector instance and select the `IOS XR` Transform configuration. For greater detail, refer to the procedure documented here: 
+- https://docs.accedian.io/on-prem-solution/docs/pca-for-mobility-pm#personal-access-token
+- https://docs.accedian.io/on-prem-solution/docs/pca-for-mobility-pm#2-configure-customize-and-deploy-telemetry-collector
+
+3. Install this new Telemetry Collector instance on a compute node that will have network access to the node-exporter you wish to scrape (if you need help with these steps refer to the Telemtry collector documentation). A sample docker-compose is provided (`docker-compose-telemetry-collector.yaml`).
+4. Using the Telemetry Collector ID (you can see it in the PCA UI) `GET` the `/api/orchestrate/v3/agents/configuration/{{agentId}}` API. 
 5. Edit the JSON payload you got as a response to the API call in #4 to replace the `data -> attributes -> telemetry -> dataCollection` with the one you generated in step #1.  
-6. (optional but nice) Also update the `data -> attributes -> telemetry -> templateName` to something representative of your updated configuration such as "Node-Exporter"
-7. Using the Telemetry Collector ID `PUT` back the `/api/orchestrate/v3/agents/configuration/{{agentId}}` API with your updated configuration
-8. In your Telemetry Collector logs you should see entries indicating a new configuration was applied: 
+6. (optional but recommended) Also update the `data -> attributes -> telemetry -> templateName` to something representative of your updated configuration such as "Node-Exporter"
+7. Using the Telemetry Collector ID, `PUT` back the `/api/orchestrate/v3/agents/configuration/{{agentId}}` API with your updated configuration
+8. In your Telemetry Collector logs you should see entries indicating a new configuration was applied. You can look for messages such as those: 
 ```
 Reloading Telegraf config
 applying new telegraf configuration 'DataCollection: Node-Exporter version 1'
@@ -130,6 +136,30 @@ Sending performance data
 
 ## Step 3
 
-1. Using your API client, GET the dictionaries
-1. Using the dictionaries privided in this git repositories, update as needed
-1. If the dictionaries are not supplied as part of this example, use the provided python script to parse and convert the resulting dictionary that was automatically created to one which conforms with the best practices
+1. When the data flows into PCA, the system will automatically generate new data dictionarie for you. You **MUST** update those dictionaries **BEFORE** turning on metric ingestion in your ingestion profiles to avoid problems down the line.
+1. Using your API client, GET the dictionaries (`{{baseUrl}}/v3/ingestion-dictionaries/:IngestionDictionaryId`)
+1. Using the dictionaries provided in this git repositories, update as needed. More details on this here: https://docs.accedian.io/on-prem-solution/docs/pca-for-mobility-pm#3-install-ingestion-dictionaries-for-mobility-pm-data
+1. If the dictionaries are not supplied as part of this example, use the provided python script to parse and convert the resulting dictionary that was automatically created to one which conforms with the best practices. 
+
+As a general rule, it is recommended to:
+- make a strong effort to reuse existing analyticsName whenever a metric for the same concept already exists. If you need to convert units, do it using sqlExpr
+- If you have to create new metrics, try to standardize on camelCase 
+- Remove repetitive prefix or suffix strings that do not help clarify the metric
+- Avoid making the metric name vendor specific if you can avoid it (future reusability)
+- When appropriate assign units to benefit from auto-summarization (bytes->KB->MB->GB...)
+
+4. Once your dictionaries are in good shape, PATCH them back into the system with (`{{baseUrl}}/v3/ingestion-dictionaries/:IngestionDictionaryId`). If you are not allowed to PATCH because of authorization issues, send your updated dictionaries to CSM as JSON files using the Intercom chat feature built into PCA
+
+## Step 4 
+
+In PCA, navigate to the Settings -> Ingestion to configure your ingestion profile for the new dictionaries you just updated and toggle on all the metrics you need for your use case.
+
+## Step 5 - Future work and finishing touches
+
+Once your data is coming in, your might notice the some metrics are behaving like counters (forever increasing), while others behave like gauges (moving up and down based on the instant value). 
+
+If you want to convert a counter into a gauge, a Sensor Collector configuration will be required. But at this moment this is beyond the scope for this document.
+
+Also, once you start to see the metrics come in, you might want to go back and tweak your dictionary units. This is easy and allowed, simply go back to the dictionary step and tweak and patch until you are satisfied with the result.
+
+Finally, build dashboards.
