@@ -1,9 +1,11 @@
-Node-Exporter example
-===
+# Node-Exporter example
+
 
 This set of files is meant to be used as an introduction into 3rd party (external) data sources ingestion for PCA.
 
 Using this example you can see the various steps required to ingest a new data source in PCA with very little requirements. You can get started on your laptop if you have `docker` available.
+
+This example includes all the completed artifacts, from docker-compose to telegraf.conf, and all the way to ingestion dictionaries. The procedure still explains the steps as if you were building it from zero, but you can look at the files to better understand the process, of simply skip ahead.
 
 I selected and mapped a few of the object types for the example and you could easily follow the same pattern to complete and cover missing metrics if you needed more for your use case.
 
@@ -11,13 +13,75 @@ This example also serves as a good starting point to see what needs to be done f
 
 Here is a link to the complete documented procedure use as a reference to this content https://docs.accedian.io/
 
-Step 1
----
+## Step 1
+
 
 Since the procedure to ingest a new data source starts with a vanilla telegraf instance to discover and model and map your data into the proper objects, I supplied a sample `docker-compose.yaml` file that can be used for a complete standalone test (no PCA needed). Once you have perfected your `telegraf.conf` file in this standalone environment you are ready for step 2.
 
-Step 2
----
+### Initial config
+
+Baby steps. Start with a bare bones telegraf.conf config and build it up step by step while confirming your output in the `docker logs` along the way.
+
+```
+[agent]
+  interval = "60s"
+  flush_interval = "20s"
+  debug = true
+  omit_hostname = true
+
+[[inputs.prometheus]]
+  urls = ["http://node-exporter:9100/metrics"]
+  interval = "60s"
+
+[[outputs.file]]  
+   data_format = "json"
+   # Files to write to, "stdout" is a specially handled file.
+   # files = ["stdout","/tmp/metrics.out"]
+   files = ["stdout"]
+
+```
+
+
+### Required tags for PCA
+
+
+When building your telegraf.conf there are several considerations you need to keep in mind.
+
+There are four key data fields are usually required to be added:
+1.	objectType
+2.	sessionName
+3.	sessionId
+4.	direction 
+
+### Grouping metrics into object types
+
+Start formulating a grouping strategy to regroup metrics into objects when choosing you object types, keep in mind:
+- object types are groups of related metrics, try to regroup your metrics with similar level of parity/sameness 
+- up to 40 metrics can be enabled per object type in PCA at any time, try to use this a a guideline. Object types with fewer than 5 metrics might be to narrow scoped, and those with more than 50 metrics should probably be broken into smaller objects
+- each metric can have up to 4 directions (none, source-destination, destination-source, round-trip)
+- within a given instance of an object, a metric cannot be repeated.
+
+### Naming considerations
+
+- Choose the names of your new **objectTypes** that makes them intuitive, and shows both their uniqueness (and relatedness). Try to make sure to make them descriptive and not overly broad, or overly specific.  
+- Come up with a suitable **sessionName** pattern for your objects that makes them globally unique and clearly understood by the end users. As a rule of thumb, sessionNames are generally built using the supplied tags available in your data stream and some constant value.
+  - Identify the base object: hostname, servicename, customer, basestation, etc.
+  - Identify the specific sub-component (if applicable): interface name, cpu number, network slice, tunnel id, vlan, qos marking, etc
+  - If there is the slightest risk that the combination of tags you choose might be repeated for a different object type, add a trailer that repeats the objectType withing the objectName. That is because the objectName **MUST** be globally unique within the system.
+  - ex: `'host-{{ .Tag "host" }}_cpu-{{ .Tag "cpu" }}_node-exporter-cpu'` will give us: `host-561a0f455637_cpu-0_node-exporter-cpu`. 
+- Based on the information available in your data stream, choose a suitable **sessionId** unique identifier for your objects. This can be the same as the object name, but it doesnt have to be.
+- And finally choose a **direction**, if you don’t know, pick `-1` (None)
+
+### Metric processing and customization
+
+Looking at your metric names, see if you can already identify patterns that will help you:
+1. See if you can find a pattern to sort metrics into those objectTypes you have identified 
+2. Process the names of the metrics (if needed) to make them unique within a given object
+3. Do a 1st pass of data processing to parse the metric names and remove repetitive and filler strings (if needed)
+4. Identify early processing that should be done at this stage (i.e unit conversions) or to compute custom KPIs (if needed)
+5. If applicable, you can choose to also drop/remove any unneeded metric from the data stream at this point to avoid unneeded processing down the line. This can be done with starlark and/or `tag_limit` paired with `fieldinclude` to only select those metrics/fields you want to preserve.
+
+## Step 2
 
 Prerequisite: a working Sensor Collector configured for `"Type": "Gateway"` and `"Metric Configuration": "telemetry-collector"` (this is outside the scope of this document).
 
@@ -64,8 +128,7 @@ Sending performance data
 
 **Note** : It is also expected that you will see a number of warning messages that state: `missing objectType label - data will be discarded`. This is expected and nothing to worry about.
 
-Step 3
----
+## Step 3
 
 1. Using your API client, GET the dictionaries
 1. Using the dictionaries privided in this git repositories, update as needed
