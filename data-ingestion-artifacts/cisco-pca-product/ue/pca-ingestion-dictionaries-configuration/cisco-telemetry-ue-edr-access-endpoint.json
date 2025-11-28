@@ -151,7 +151,8 @@
           "directions": [
             "2"
           ],
-          "rawName": "edr_access_endpoint_BurstRate"
+          "rawName": "edr_access_endpoint_BurstRate",
+          "unit": "Mbps"
         },
         {
           "analyticsName": "burstRateSampleCount",
@@ -159,7 +160,8 @@
           "directions": [
             "2"
           ],
-          "rawName": "edr_access_endpoint_BurstRateSampleCount"
+          "rawName": "edr_access_endpoint_BurstRateSampleCount",
+          "unit": "samples"
         },
         {
           "analyticsName": "burstRateStdDev",
@@ -167,7 +169,8 @@
           "directions": [
             "2"
           ],
-          "rawName": "edr_access_endpoint_BurstRateStdDev"
+          "rawName": "edr_access_endpoint_BurstRateStdDev",
+          "unit": "Mbps"
         },
         {
           "analyticsName": "burstRateStdDevSampleCount",
@@ -183,7 +186,8 @@
           "directions": [
             "2"
           ],
-          "rawName": "edr_access_endpoint_BurstWidth"
+          "rawName": "edr_access_endpoint_BurstWidth",
+          "unit": "ms"
         },
         {
           "analyticsName": "burstWidthSampleCount",
@@ -191,7 +195,8 @@
           "directions": [
             "2"
           ],
-          "rawName": "edr_access_endpoint_BurstWidthSampleCount"
+          "rawName": "edr_access_endpoint_BurstWidthSampleCount",
+          "unit": "samples"
         },
         {
           "analyticsName": "congestionRatio",
@@ -199,7 +204,8 @@
           "directions": [
             "2"
           ],
-          "rawName": "edr_access_endpoint_CongestionRatio"
+          "rawName": "edr_access_endpoint_CongestionRatio",
+          "unit": "pct"
         },
         {
           "analyticsName": "consumptionRate",
@@ -207,7 +213,8 @@
           "directions": [
             "2"
           ],
-          "rawName": "edr_access_endpoint_ConsumptionRate"
+          "rawName": "edr_access_endpoint_ConsumptionRate",
+          "unit": "Mbps"
         },
         {
           "analyticsName": "consumptionRateSampleCount",
@@ -231,7 +238,8 @@
           "directions": [
             "2"
           ],
-          "rawName": "edr_access_endpoint_CxScore"
+          "rawName": "edr_access_endpoint_CxScore",
+          "unit": "rVal"
         },
         {
           "analyticsName": "downlinkVolume",
@@ -239,7 +247,8 @@
           "directions": [
             "2"
           ],
-          "rawName": "edr_access_endpoint_DownlinkVolume"
+          "rawName": "edr_access_endpoint_DownlinkVolume",
+          "unit": "bytes"
         },
         {
           "analyticsName": "flowCountExpired",
@@ -255,7 +264,8 @@
           "directions": [
             "2"
           ],
-          "rawName": "edr_access_endpoint_InterBurstGap"
+          "rawName": "edr_access_endpoint_InterBurstGap",
+          "unit": "ms"
         },
         {
           "analyticsName": "interBurstGapSampleCount",
@@ -263,7 +273,8 @@
           "directions": [
             "2"
           ],
-          "rawName": "edr_access_endpoint_InterBurstGapSampleCount"
+          "rawName": "edr_access_endpoint_InterBurstGapSampleCount",
+          "unit": "samples"
         },
         {
           "analyticsName": "interBurstGapStdDev",
@@ -271,7 +282,8 @@
           "directions": [
             "2"
           ],
-          "rawName": "edr_access_endpoint_InterBurstGapStdDev"
+          "rawName": "edr_access_endpoint_InterBurstGapStdDev",
+          "unit": "ms"
         },
         {
           "analyticsName": "interBurstGapStdDevSampleCount",
@@ -319,7 +331,8 @@
           "directions": [
             "2"
           ],
-          "rawName": "edr_access_endpoint_RetransmissionPercent"
+          "rawName": "edr_access_endpoint_RetransmissionPercent",
+          "unit": "pct"
         },
         {
           "analyticsName": "retransmissionPercentSampleCount",
@@ -343,7 +356,8 @@
           "directions": [
             "2"
           ],
-          "rawName": "edr_access_endpoint_SufficientThroughputPercent"
+          "rawName": "edr_access_endpoint_SufficientThroughputPercent",
+          "unit": "pct"
         },
         {
           "analyticsName": "sufficientThroughputPercentSampleCount",
@@ -359,7 +373,8 @@
           "directions": [
             "2"
           ],
-          "rawName": "edr_access_endpoint_TcpRtt"
+          "rawName": "edr_access_endpoint_TcpRtt",
+          "unit": "ms"
         },
         {
           "analyticsName": "tcpRttSampleCount",
@@ -367,7 +382,8 @@
           "directions": [
             "2"
           ],
-          "rawName": "edr_access_endpoint_TcpRttSampleCount"
+          "rawName": "edr_access_endpoint_TcpRttSampleCount",
+          "unit": "samples"
         },
         {
           "analyticsName": "tcpRttStdDev",
@@ -375,7 +391,8 @@
           "directions": [
             "2"
           ],
-          "rawName": "edr_access_endpoint_TcpRttStdDev"
+          "rawName": "edr_access_endpoint_TcpRttStdDev",
+          "unit": "ms"
         },
         {
           "analyticsName": "tcpRttStdDevSampleCount",
@@ -391,7 +408,8 @@
           "directions": [
             "2"
           ],
-          "rawName": "edr_access_endpoint_TimeTo500KBytes"
+          "rawName": "edr_access_endpoint_TimeTo500KBytes",
+          "unit": "ms"
         },
         {
           "analyticsName": "timeTo500KBytesSampleCount",
@@ -407,7 +425,8 @@
           "directions": [
             "2"
           ],
-          "rawName": "edr_access_endpoint_UplinkVolume"
+          "rawName": "edr_access_endpoint_UplinkVolume",
+          "unit": "bytes"
         },
         {
           "analyticsName": "CiscoUESpeedTest",
