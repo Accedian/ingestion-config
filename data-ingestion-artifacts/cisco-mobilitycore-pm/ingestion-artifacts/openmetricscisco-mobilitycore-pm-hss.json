@@ -98,7 +98,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_S6a_AIR_Attempts_value",
+          "rawName": "MME_S6a_AIR_Attempts",
           "unit": "value"
         },
         {
@@ -107,7 +107,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_S6a_AIR_Success_value",
+          "rawName": "MME_S6a_AIR_Success",
           "unit": "value"
         },
         {
@@ -116,7 +116,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_S6a_ULR_Attempts_value",
+          "rawName": "MME_S6a_ULR_Attempts",
           "unit": "value"
         },
         {
@@ -125,7 +125,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_S6a_ULR_Success_value",
+          "rawName": "MME_S6a_ULR_Success",
           "unit": "value"
         }
       ],

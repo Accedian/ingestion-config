@@ -98,7 +98,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Port_Utilization_r_value",
+          "rawName": "Port_Utilization_r",
           "unit": "pct"
         },
         {
@@ -107,7 +107,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Port_Utilization_Uplink_r_value",
+          "rawName": "Port_Utilization_Uplink_r",
           "unit": "pct"
         },
         {
@@ -116,7 +116,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Port_Utilization_Downlink_r_value",
+          "rawName": "Port_Utilization_Downlink_r",
           "unit": "pct"
         },
         {
@@ -125,7 +125,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "System_Throughput_Port_r_value"
+          "rawName": "System_Throughput_Port_r"
         },
         {
           "analyticsName": "systemUplinkThroughputPort",
@@ -133,7 +133,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "System_Uplink_Throughput_Port_r_value"
+          "rawName": "System_Uplink_Throughput_Port_r"
         },
         {
           "analyticsName": "portRxDiscPackets",
@@ -141,7 +141,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Port_rx_disc_packets_r_value",
+          "rawName": "Port_rx_disc_packets_r",
           "unit": "packets"
         },
         {
@@ -150,8 +150,8 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Data_Volume_Port_r_value",
-          "sqlExpr": "cast(`Data_Volume_Port_r_value` as DOUBLE)*1024*1024",
+          "rawName": "Data_Volume_Port_r",
+          "sqlExpr": "cast(`Data_Volume_Port_r` as DOUBLE)*1024*1024",
           "unit": "bytes"
         }
       ],

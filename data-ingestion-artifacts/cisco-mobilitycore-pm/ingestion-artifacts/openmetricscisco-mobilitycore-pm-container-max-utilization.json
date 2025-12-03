@@ -103,7 +103,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "AMF_Container_Max_Cpu_Usage_value"
+          "rawName": "AMF_Container_Max_Cpu_Usage"
         },
         {
           "analyticsName": "memoryUsageMax",
@@ -111,7 +111,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "AMF_Container_Max_Mem_Usage_value"
+          "rawName": "AMF_Container_Max_Mem_Usage"
         }
       ],
       "objectType": "cisco-mobilitycore-pm-container-max-utilization",

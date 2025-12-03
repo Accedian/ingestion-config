@@ -103,7 +103,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "AMF_RegisteredUsers_value",
+          "rawName": "AMF_RegisteredUsers",
           "unit": "value"
         },
         {
@@ -112,7 +112,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "VS_MM_ServiceReqAtt_5GS_asKPI_value",
+          "rawName": "VS_MM_ServiceReqAtt_5GS_asKPI",
           "unit": "value"
         },
         {
@@ -121,7 +121,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "VS_MM_ServiceReqSucc_5GS_asKPI_value",
+          "rawName": "VS_MM_ServiceReqSucc_5GS_asKPI",
           "unit": "value"
         }
       ],

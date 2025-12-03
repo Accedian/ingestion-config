@@ -98,7 +98,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "configuration_change_total_value",
+          "rawName": "configuration_change_total",
           "unit": "value"
         },
         {
@@ -107,7 +107,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "container_deployment_ready_state_value",
+          "rawName": "container_deployment_ready_state",
           "unit": "value"
         },
         {
@@ -116,7 +116,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "cpu_core_count_value",
+          "rawName": "cpu_core_count",
           "unit": "value"
         },
         {
@@ -125,7 +125,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "cpu_idle_r_value",
+          "rawName": "cpu_idle_r",
           "unit": "value"
         },
         {
@@ -134,7 +134,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "cpu_iowait_value",
+          "rawName": "cpu_iowait",
           "unit": "value"
         },
         {
@@ -143,7 +143,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "cpu_softirq_value",
+          "rawName": "cpu_softirq",
           "unit": "value"
         },
         {
@@ -152,7 +152,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "cpu_steal_value",
+          "rawName": "cpu_steal",
           "unit": "value"
         },
         {
@@ -161,7 +161,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "cpu_system_value",
+          "rawName": "cpu_system",
           "unit": "value"
         },
         {
@@ -170,7 +170,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "cpu_user_value",
+          "rawName": "cpu_user",
           "unit": "value"
         },
         {
@@ -179,7 +179,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "cpu_utilization_value",
+          "rawName": "cpu_utilization",
           "unit": "value"
         },
         {
@@ -188,7 +188,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "entitlement_status_value",
+          "rawName": "entitlement_status",
           "unit": "value"
         },
         {
@@ -197,7 +197,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "filesystem_root_avail_bytes_value",
+          "rawName": "filesystem_root_avail_bytes",
           "unit": "value"
         },
         {
@@ -206,7 +206,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "k8s_pods_status_value",
+          "rawName": "k8s_pods_status",
           "unit": "value"
         },
         {
@@ -215,7 +215,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "kubelet_node_status_value",
+          "rawName": "kubelet_node_status",
           "unit": "value"
         },
         {
@@ -224,7 +224,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "memory_used_value",
+          "rawName": "memory_used",
           "unit": "value"
         },
         {
@@ -233,7 +233,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "network_errors_total_value",
+          "rawName": "network_errors_total",
           "unit": "value"
         },
         {
@@ -242,7 +242,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "node_disk_rate_read_bytes_value",
+          "rawName": "node_disk_rate_read_bytes",
           "unit": "value"
         },
         {
@@ -251,7 +251,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "node_disk_rate_write_bytes_value",
+          "rawName": "node_disk_rate_write_bytes",
           "unit": "value"
         },
         {
@@ -260,7 +260,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "node_load15_value",
+          "rawName": "node_load15",
           "unit": "value"
         },
         {
@@ -269,7 +269,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "node_load1_value",
+          "rawName": "node_load1",
           "unit": "value"
         },
         {
@@ -278,7 +278,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "node_load5_value",
+          "rawName": "node_load5",
           "unit": "value"
         },
         {
@@ -287,7 +287,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "node_memory_free_bytes_value",
+          "rawName": "node_memory_free_bytes",
           "unit": "bytes"
         },
         {
@@ -296,7 +296,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "number_of_cpu_core_available_per_host_value",
+          "rawName": "number_of_cpu_core_available_per_host",
           "unit": "value"
         },
         {
@@ -305,7 +305,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "number_of_daemons_ready_value",
+          "rawName": "number_of_daemons_ready",
           "unit": "value"
         },
         {
@@ -314,7 +314,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "statefulset_ready_percent_value",
+          "rawName": "statefulset_ready_percent",
           "unit": "value"
         },
         {
@@ -323,7 +323,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "system_mode_value",
+          "rawName": "system_mode",
           "unit": "value"
         },
         {
@@ -332,7 +332,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "system_running_percent_value",
+          "rawName": "system_running_percent",
           "unit": "pct"
         },
         {
@@ -341,7 +341,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "system_running_value",
+          "rawName": "system_running",
           "unit": "value"
         }
       ],

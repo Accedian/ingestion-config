@@ -103,7 +103,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Current_Active_Sessions_value",
+          "rawName": "APN_Current_Active_Sessions",
           "unit": "value"
         },
         {
@@ -112,7 +112,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Call_Events_Per_Second_r_value",
+          "rawName": "Call_Events_Per_Second_r",
           "unit": "value"
         },
         {
@@ -121,7 +121,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Current_No_Of_Sessions_r_value",
+          "rawName": "Current_No_Of_Sessions_r",
           "unit": "value"
         },
         {
@@ -130,7 +130,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Session_Setup_Time_100ms_value",
+          "rawName": "Session_Setup_Time_100ms",
           "unit": "value"
         },
         {
@@ -139,7 +139,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Session_Setup_Time_400ms_value",
+          "rawName": "Session_Setup_Time_400ms",
           "unit": "value"
         },
         {
@@ -148,7 +148,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "System_Calls_Active_LTE_r_value",
+          "rawName": "System_Calls_Active_LTE_r",
           "unit": "value"
         },
         {
@@ -157,7 +157,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "System_Calls_Active_r_value",
+          "rawName": "System_Calls_Active_r",
           "unit": "value"
         },
         {
@@ -166,7 +166,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "System_Calls_Connected_LTE_r_value",
+          "rawName": "System_Calls_Connected_LTE_r",
           "unit": "value"
         },
         {
@@ -175,7 +175,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "System_Calls_Connected_r_value",
+          "rawName": "System_Calls_Connected_r",
           "unit": "value"
         },
         {
@@ -184,7 +184,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "System_Calls_Failed_R_value",
+          "rawName": "System_Calls_Failed_R",
           "unit": "value"
         },
         {
@@ -193,7 +193,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "System_Calls_Rejected_r_value",
+          "rawName": "System_Calls_Rejected_r",
           "unit": "value"
         },
         {
@@ -202,7 +202,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "System_DL_Packet_Avg_Size_Bytes_value",
+          "rawName": "System_DL_Packet_Avg_Size_Bytes",
           "unit": "value"
         },
         {
@@ -211,7 +211,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "System_DL_Throughput_Mbps_value",
+          "rawName": "System_DL_Throughput_Mbps",
           "unit": "value"
         },
         {
@@ -220,7 +220,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "System_Throughput_GPRS_value",
+          "rawName": "System_Throughput_GPRS",
           "unit": "value"
         },
         {
@@ -229,7 +229,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "System_Throughput_Mbps_value",
+          "rawName": "System_Throughput_Mbps",
           "unit": "value"
         },
         {
@@ -238,7 +238,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "System_Total_Data_Volume_MB_value",
+          "rawName": "System_Total_Data_Volume_MB",
           "unit": "value"
         },
         {
@@ -247,7 +247,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "System_UL_Packet_Avg_Size_Bytes_value",
+          "rawName": "System_UL_Packet_Avg_Size_Bytes",
           "unit": "value"
         },
         {
@@ -256,7 +256,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "System_UL_Throughput_Mbps_value",
+          "rawName": "System_UL_Throughput_Mbps",
           "unit": "value"
         }
       ],

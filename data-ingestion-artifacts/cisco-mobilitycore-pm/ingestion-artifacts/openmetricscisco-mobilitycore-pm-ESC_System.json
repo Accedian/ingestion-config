@@ -98,7 +98,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "ESC_CPU_Usage_value",
+          "rawName": "ESC_CPU_Usage",
           "unit": "value"
         },
         {
@@ -107,7 +107,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "ESC_Disk_Usage_Cached_memory_value",
+          "rawName": "ESC_Disk_Usage_Cached_memory",
           "unit": "bytes"
         },
         {
@@ -116,7 +116,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "ESC_Disk_Usage_Memory_buffers_value",
+          "rawName": "ESC_Disk_Usage_Memory_buffers",
           "unit": "bytes"
         },
         {
@@ -125,7 +125,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "ESC_Disk_Usage_Physical_memory_value",
+          "rawName": "ESC_Disk_Usage_Physical_memory",
           "unit": "bytes"
         },
         {
@@ -134,7 +134,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "ESC_Disk_Usage_Shared_memory_value",
+          "rawName": "ESC_Disk_Usage_Shared_memory",
           "unit": "bytes"
         },
         {
@@ -143,7 +143,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "ESC_Disk_Usage_Swap_space_value",
+          "rawName": "ESC_Disk_Usage_Swap_space",
           "unit": "bytes"
         },
         {
@@ -152,7 +152,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "ESC_Disk_Usage_Virtual_memory_value",
+          "rawName": "ESC_Disk_Usage_Virtual_memory",
           "unit": "bytes"
         },
         {
@@ -161,7 +161,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "ESC_Disk_Usage__boot_efi_value",
+          "rawName": "ESC_Disk_Usage__boot_efi",
           "unit": "bytes"
         },
         {
@@ -170,7 +170,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "ESC_Disk_Usage__boot_value",
+          "rawName": "ESC_Disk_Usage__boot",
           "unit": "bytes"
         },
         {
@@ -179,7 +179,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "ESC_Disk_Usage__dev_shm_value",
+          "rawName": "ESC_Disk_Usage__dev_shm",
           "unit": "bytes"
         },
         {
@@ -188,7 +188,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "ESC_Disk_Usage__opt_cisco_esc_esc_database_value",
+          "rawName": "ESC_Disk_Usage__opt_cisco_esc_esc_database",
           "unit": "bytes"
         },
         {
@@ -197,7 +197,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "ESC_Disk_Usage__opt_value",
+          "rawName": "ESC_Disk_Usage__opt",
           "unit": "bytes"
         },
         {
@@ -206,7 +206,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "ESC_Disk_Usage__run_value",
+          "rawName": "ESC_Disk_Usage__run",
           "unit": "bytes"
         },
         {
@@ -215,7 +215,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "ESC_Disk_Usage__sys_fs_cgroup_value",
+          "rawName": "ESC_Disk_Usage__sys_fs_cgroup",
           "unit": "bytes"
         },
         {
@@ -224,7 +224,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "ESC_Disk_Usage__tmp_value",
+          "rawName": "ESC_Disk_Usage__tmp",
           "unit": "bytes"
         },
         {
@@ -233,7 +233,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "ESC_Disk_Usage__var_value",
+          "rawName": "ESC_Disk_Usage__var",
           "unit": "bytes"
         },
         {
@@ -242,7 +242,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "ESC_Disk_Usage_root_value",
+          "rawName": "ESC_Disk_Usage_root",
           "unit": "bytes"
         }
       ],

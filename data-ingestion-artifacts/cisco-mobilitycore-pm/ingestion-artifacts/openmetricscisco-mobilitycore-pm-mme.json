@@ -98,7 +98,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Combined_Attach_Success_Rate_EPS_Only_value",
+          "rawName": "MME_Combined_Attach_Success_Rate_EPS_Only",
           "unit": "value"
         },
         {
@@ -107,7 +107,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Combined_EPS_Attach_Success_Rate_AF_value",
+          "rawName": "MME_Combined_EPS_Attach_Success_Rate_AF",
           "unit": "value"
         },
         {
@@ -116,7 +116,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Connect_Current_Calls_value",
+          "rawName": "MME_Connect_Current_Calls",
           "unit": "value"
         },
         {
@@ -125,7 +125,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_DCNR_Attach_Accept_Denied_value",
+          "rawName": "MME_DCNR_Attach_Accept_Denied",
           "unit": "value"
         },
         {
@@ -134,7 +134,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_DCNR_Attach_Failure_Rate_value",
+          "rawName": "MME_DCNR_Attach_Failure_Rate",
           "unit": "value"
         },
         {
@@ -143,7 +143,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_DCNR_Attach_Reject_value",
+          "rawName": "MME_DCNR_Attach_Reject",
           "unit": "value"
         },
         {
@@ -152,7 +152,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_DCNR_Attach_Success_Rate_value",
+          "rawName": "MME_DCNR_Attach_Success_Rate",
           "unit": "value"
         },
         {
@@ -161,7 +161,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_DCNR_Attached_PDNs_value",
+          "rawName": "MME_DCNR_Attached_PDNs",
           "unit": "value"
         },
         {
@@ -170,7 +170,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_DCNR_Attached_subscribers_value",
+          "rawName": "MME_DCNR_Attached_subscribers",
           "unit": "value"
         },
         {
@@ -179,7 +179,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_DCNR_Connected_PDNs_value",
+          "rawName": "MME_DCNR_Connected_PDNs",
           "unit": "value"
         },
         {
@@ -188,7 +188,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_DCNR_Connected_subscribers_value",
+          "rawName": "MME_DCNR_Connected_subscribers",
           "unit": "value"
         },
         {
@@ -197,7 +197,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_DCNR_Idle_PDNs_value",
+          "rawName": "MME_DCNR_Idle_PDNs",
           "unit": "value"
         },
         {
@@ -206,7 +206,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_DCNR_Idle_subscribers_value",
+          "rawName": "MME_DCNR_Idle_subscribers",
           "unit": "value"
         },
         {
@@ -215,7 +215,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_DCNR_Inter_MME_TAU_Denied_Rate_value",
+          "rawName": "MME_DCNR_Inter_MME_TAU_Denied_Rate",
           "unit": "value"
         },
         {
@@ -224,7 +224,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_DCNR_Inter_MME_TAU_Success_Rate_value",
+          "rawName": "MME_DCNR_Inter_MME_TAU_Success_Rate",
           "unit": "value"
         },
         {
@@ -233,7 +233,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_DCNR_Inter_TAU_Accept_Denied_value",
+          "rawName": "MME_DCNR_Inter_TAU_Accept_Denied",
           "unit": "value"
         },
         {
@@ -242,7 +242,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_DCNR_Inter_TAU_Reject_value",
+          "rawName": "MME_DCNR_Inter_TAU_Reject",
           "unit": "value"
         },
         {
@@ -251,7 +251,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_DCNR_Intra_MME_TAU_Denied_Rate_value",
+          "rawName": "MME_DCNR_Intra_MME_TAU_Denied_Rate",
           "unit": "value"
         },
         {
@@ -260,7 +260,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_DCNR_Intra_MME_TAU_Success_Rate_value",
+          "rawName": "MME_DCNR_Intra_MME_TAU_Success_Rate",
           "unit": "value"
         },
         {
@@ -269,7 +269,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_DCNR_Intra_TAU_Accept_Denied_value",
+          "rawName": "MME_DCNR_Intra_TAU_Accept_Denied",
           "unit": "value"
         },
         {
@@ -278,7 +278,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_DCNR_PDN_Connection_Failures_value",
+          "rawName": "MME_DCNR_PDN_Connection_Failures",
           "unit": "value"
         },
         {
@@ -287,7 +287,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_DCNR_PDN_Connection_Success_Rate_value",
+          "rawName": "MME_DCNR_PDN_Connection_Success_Rate",
           "unit": "value"
         },
         {
@@ -296,7 +296,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Dedicated_Bearer_Activation_Success_Rate_AF_r_value",
+          "rawName": "MME_Dedicated_Bearer_Activation_Success_Rate_AF_r",
           "unit": "value"
         },
         {
@@ -305,7 +305,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Default_Bearer_Activation_Success_Rate_AF_r_value",
+          "rawName": "MME_Default_Bearer_Activation_Success_Rate_AF_r",
           "unit": "value"
         },
         {
@@ -314,7 +314,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_EMM_Authentication_Success_Rate_AF_r_value",
+          "rawName": "MME_EMM_Authentication_Success_Rate_AF_r",
           "unit": "value"
         },
         {
@@ -323,7 +323,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_EPS_Service_Request_Success_Rate_AF_r_value",
+          "rawName": "MME_EPS_Service_Request_Success_Rate_AF_r",
           "unit": "value"
         },
         {
@@ -332,7 +332,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_ERAB_Modification_Bearer_Level_Success_Rate_value",
+          "rawName": "MME_ERAB_Modification_Bearer_Level_Success_Rate",
           "unit": "value"
         },
         {
@@ -341,7 +341,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_ERAB_Modification_Indication_Bear_Level_Failures_value",
+          "rawName": "MME_ERAB_Modification_Indication_Bear_Level_Failures",
           "unit": "value"
         },
         {
@@ -350,7 +350,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Inter_MME_Relocations_S1_S10_HO_Outgoing_Success_Rate_value",
+          "rawName": "MME_Inter_MME_Relocations_S1_S10_HO_Outgoing_Success_Rate",
           "unit": "value"
         },
         {
@@ -359,7 +359,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Inter_MME_Tracking_Area_Update_Success_Rate_r_value",
+          "rawName": "MME_Inter_MME_Tracking_Area_Update_Success_Rate_r",
           "unit": "value"
         },
         {
@@ -368,7 +368,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Intra_MME_Handover_Success_Rate_value",
+          "rawName": "MME_Intra_MME_Handover_Success_Rate",
           "unit": "value"
         },
         {
@@ -377,7 +377,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Intra_MME_Tracking_Area_Update_Success_Rate_r_value",
+          "rawName": "MME_Intra_MME_Tracking_Area_Update_Success_Rate_r",
           "unit": "value"
         },
         {
@@ -386,7 +386,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_NAS_Authentication_Attempts_value",
+          "rawName": "MME_NAS_Authentication_Attempts",
           "unit": "value"
         },
         {
@@ -395,7 +395,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Overall_Attach_Success_Rate_value",
+          "rawName": "MME_Overall_Attach_Success_Rate",
           "unit": "value"
         },
         {
@@ -404,7 +404,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_PDN_Connectivity_Attempts_r_value",
+          "rawName": "MME_PDN_Connectivity_Attempts_r",
           "unit": "value"
         },
         {
@@ -413,7 +413,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_PDN_Connectivity_Success_r_value",
+          "rawName": "MME_PDN_Connectivity_Success_r",
           "unit": "value"
         },
         {
@@ -422,7 +422,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_PS_Paging_Success_Rate_QCI_Seperated_r_value",
+          "rawName": "MME_PS_Paging_Success_Rate_QCI_Seperated_r",
           "unit": "value"
         },
         {
@@ -431,7 +431,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Path_Update_Failures_value",
+          "rawName": "MME_Path_Update_Failures",
           "unit": "value"
         },
         {
@@ -440,7 +440,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Path_Update_Success_Rate_r_value",
+          "rawName": "MME_Path_Update_Success_Rate_r",
           "unit": "value"
         },
         {
@@ -449,7 +449,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_S1AP_ERAB_Setup_Attempts_value",
+          "rawName": "MME_S1AP_ERAB_Setup_Attempts",
           "unit": "value"
         },
         {
@@ -458,7 +458,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_S1AP_ERAB_Setup_Success_value",
+          "rawName": "MME_S1AP_ERAB_Setup_Success",
           "unit": "value"
         },
         {
@@ -467,7 +467,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_S1_Handover_Success_Rate_r_value",
+          "rawName": "MME_S1_Handover_Success_Rate_r",
           "unit": "value"
         },
         {
@@ -476,7 +476,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_S1_NAS_Combine_Attach_Attempts_value",
+          "rawName": "MME_S1_NAS_Combine_Attach_Attempts",
           "unit": "value"
         },
         {
@@ -485,7 +485,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_S1_NAS_Combine_Attach_Success_value",
+          "rawName": "MME_S1_NAS_Combine_Attach_Success",
           "unit": "value"
         },
         {
@@ -494,7 +494,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_S1_TAU_Attempts_value",
+          "rawName": "MME_S1_TAU_Attempts",
           "unit": "value"
         },
         {
@@ -503,7 +503,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_S1_TAU_Success_value",
+          "rawName": "MME_S1_TAU_Success",
           "unit": "value"
         },
         {
@@ -512,7 +512,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Total_Attach_Current_Sessions_value",
+          "rawName": "MME_Total_Attach_Current_Sessions",
           "unit": "value"
         },
         {
@@ -521,7 +521,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Total_Number_Current_Calls_value",
+          "rawName": "MME_Total_Number_Current_Calls",
           "unit": "value"
         },
         {
@@ -530,7 +530,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Tracking_Area_Update_Success_Rate_r_value",
+          "rawName": "MME_Tracking_Area_Update_Success_Rate_r",
           "unit": "value"
         },
         {
@@ -539,7 +539,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Visiting_Foreign_Subscribers_Attached_value",
+          "rawName": "MME_Visiting_Foreign_Subscribers_Attached",
           "unit": "value"
         },
         {
@@ -548,7 +548,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Visiting_Foreign_Subscribers_Connected_value",
+          "rawName": "MME_Visiting_Foreign_Subscribers_Connected",
           "unit": "value"
         },
         {
@@ -557,7 +557,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Visiting_Foreign_Subscribers_Idle_value",
+          "rawName": "MME_Visiting_Foreign_Subscribers_Idle",
           "unit": "value"
         },
         {
@@ -566,7 +566,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_X2_Handover_Success_Rate_r_value",
+          "rawName": "MME_X2_Handover_Success_Rate_r",
           "unit": "value"
         },
         {
@@ -575,7 +575,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_eRAB_Modification_Success_Rate_r_value",
+          "rawName": "MME_eRAB_Modification_Success_Rate_r",
           "unit": "value"
         },
         {
@@ -584,7 +584,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_eRAB_Setup_Success_Rate_r_value",
+          "rawName": "MME_eRAB_Setup_Success_Rate_r",
           "unit": "value"
         },
         {
@@ -593,7 +593,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Paging_Success_Rate_for_PS_QCI9_value",
+          "rawName": "Paging_Success_Rate_for_PS_QCI9",
           "unit": "value"
         },
         {
@@ -602,7 +602,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Paging_Success_Rate_for_Volte_QCI5_value",
+          "rawName": "Paging_Success_Rate_for_Volte_QCI5",
           "unit": "value"
         },
         {
@@ -611,7 +611,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "UE_Identity_Unknown_value",
+          "rawName": "UE_Identity_Unknown",
           "unit": "value"
         }
       ],

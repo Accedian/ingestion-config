@@ -98,7 +98,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "DPCA_Gx_Credit_Control_Answers_value",
+          "rawName": "DPCA_Gx_Credit_Control_Answers",
           "unit": "value"
         },
         {
@@ -107,7 +107,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "DPCA_Gx_Credit_Control_Requests_value",
+          "rawName": "DPCA_Gx_Credit_Control_Requests",
           "unit": "value"
         },
         {
@@ -116,7 +116,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Gx_Credit_Control_Termination_Success_Rate_value",
+          "rawName": "Gx_Credit_Control_Termination_Success_Rate",
           "unit": "value"
         },
         {
@@ -125,7 +125,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Gx_RAR_Success_Rate_value",
+          "rawName": "Gx_RAR_Success_Rate",
           "unit": "value"
         },
         {
@@ -134,7 +134,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Gx_Transactions_Per_Second_value",
+          "rawName": "Gx_Transactions_Per_Second",
           "unit": "value"
         },
         {
@@ -143,7 +143,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "IMSA_Credit_Control_Initial_Success_Rate_r_value",
+          "rawName": "IMSA_Credit_Control_Initial_Success_Rate_r",
           "unit": "value"
         },
         {
@@ -152,7 +152,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "IMSA_Credit_control_Update_Success_Rate_r_value",
+          "rawName": "IMSA_Credit_control_Update_Success_Rate_r",
           "unit": "value"
         },
         {
@@ -161,7 +161,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Total_Current_Active_Gx_Sessions_value",
+          "rawName": "Total_Current_Active_Gx_Sessions",
           "unit": "value"
         },
         {
@@ -170,7 +170,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Total_Gx_Transactions_value",
+          "rawName": "Total_Gx_Transactions",
           "unit": "value"
         }
       ],

@@ -98,7 +98,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "EPS_Detach_Success_Rate_PGW_value",
+          "rawName": "EPS_Detach_Success_Rate_PGW",
           "unit": "value"
         },
         {
@@ -107,7 +107,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "PGW_Total_Downlink_Packets_value",
+          "rawName": "PGW_Total_Downlink_Packets",
           "unit": "value"
         }
       ],

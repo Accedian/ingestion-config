@@ -98,7 +98,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "IRGW_Current_Active_SGW_DCNR_PDNs_value",
+          "rawName": "IRGW_Current_Active_SGW_DCNR_PDNs",
           "unit": "value"
         },
         {
@@ -107,7 +107,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "IRGW_SGW_Number_Of_Bearers_Active_QCI1_value",
+          "rawName": "IRGW_SGW_Number_Of_Bearers_Active_QCI1",
           "unit": "value"
         },
         {
@@ -116,7 +116,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "IRGW_SGW_Number_Of_Bearers_Active_QCI5_value",
+          "rawName": "IRGW_SGW_Number_Of_Bearers_Active_QCI5",
           "unit": "value"
         },
         {
@@ -125,7 +125,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "IRGW_SGW_Number_Of_Bearers_Active_QCI9_value",
+          "rawName": "IRGW_SGW_Number_Of_Bearers_Active_QCI9",
           "unit": "value"
         },
         {
@@ -134,7 +134,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "IRGW_SGW_Number_Of_Bearers_Setup_QCI1_value",
+          "rawName": "IRGW_SGW_Number_Of_Bearers_Setup_QCI1",
           "unit": "value"
         },
         {
@@ -143,7 +143,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "IRGW_SGW_Number_Of_Bearers_Setup_QCI5_value",
+          "rawName": "IRGW_SGW_Number_Of_Bearers_Setup_QCI5",
           "unit": "value"
         },
         {
@@ -152,7 +152,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "IRGW_SGW_Number_Of_Bearers_Setup_QCI9_value",
+          "rawName": "IRGW_SGW_Number_Of_Bearers_Setup_QCI9",
           "unit": "value"
         },
         {
@@ -161,7 +161,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "IRGW_Total_Active_Bearers_SGW_value",
+          "rawName": "IRGW_Total_Active_Bearers_SGW",
           "unit": "value"
         },
         {
@@ -170,7 +170,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "IRGW_Total_Bearers_Setup_SGW_value",
+          "rawName": "IRGW_Total_Bearers_Setup_SGW",
           "unit": "value"
         },
         {
@@ -179,7 +179,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "IRGW_Total_Current_PDNs_SGW_value",
+          "rawName": "IRGW_Total_Current_PDNs_SGW",
           "unit": "value"
         },
         {
@@ -188,7 +188,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "IRGW_Total_Number_SGW_Sessions_value",
+          "rawName": "IRGW_Total_Number_SGW_Sessions",
           "unit": "value"
         },
         {
@@ -197,7 +197,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "IRGW_Total_Number_of_SGW_DCNR_PDNs_Released_value",
+          "rawName": "IRGW_Total_Number_of_SGW_DCNR_PDNs_Released",
           "unit": "value"
         },
         {
@@ -206,7 +206,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "IRGW_Total_Number_of_SGW_DCNR_PDNs_Setup_value",
+          "rawName": "IRGW_Total_Number_of_SGW_DCNR_PDNs_Setup",
           "unit": "value"
         },
         {
@@ -215,7 +215,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SGW_S5_Packet_Drop_Ratio_value",
+          "rawName": "SGW_S5_Packet_Drop_Ratio",
           "unit": "value"
         },
         {
@@ -224,7 +224,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SGW_S5_QCI1_Packet_Drop_Ratio_value",
+          "rawName": "SGW_S5_QCI1_Packet_Drop_Ratio",
           "unit": "value"
         }
       ],

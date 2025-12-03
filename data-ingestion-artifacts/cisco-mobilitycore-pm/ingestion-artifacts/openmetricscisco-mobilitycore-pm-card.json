@@ -103,7 +103,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Aggregate_CPU_Load_Busy_New_value",
+          "rawName": "Aggregate_CPU_Load_Busy_New",
           "unit": "value"
         },
         {
@@ -112,7 +112,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Aggregate_CPU_Load_Busy_value",
+          "rawName": "Aggregate_CPU_Load_Busy",
           "unit": "value"
         },
         {
@@ -121,7 +121,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Aggregate_CPU_Memory_Usage_New_value",
+          "rawName": "Aggregate_CPU_Memory_Usage_New",
           "unit": "value"
         },
         {
@@ -130,7 +130,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Aggregate_CPU_Memory_Usage_value",
+          "rawName": "Aggregate_CPU_Memory_Usage",
           "unit": "value"
         },
         {
@@ -139,7 +139,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Average_Session_Manager_CPU_Utilization_value",
+          "rawName": "Average_Session_Manager_CPU_Utilization",
           "unit": "value"
         },
         {
@@ -148,7 +148,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Average_Session_Manager_Memory_Utilization_value",
+          "rawName": "Average_Session_Manager_Memory_Utilization",
           "unit": "value"
         },
         {
@@ -157,7 +157,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "CPU0_Memory_Utilization_value",
+          "rawName": "CPU0_Memory_Utilization",
           "unit": "value"
         },
         {
@@ -166,7 +166,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "CPU0_Utilization_value",
+          "rawName": "CPU0_Utilization",
           "unit": "value"
         },
         {
@@ -175,7 +175,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Current_NPU_Utilization_value",
+          "rawName": "Current_NPU_Utilization",
           "unit": "value"
         },
         {
@@ -184,7 +184,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Link_Manager_Average_CPU_Utilization_value",
+          "rawName": "Link_Manager_Average_CPU_Utilization",
           "unit": "value"
         },
         {
@@ -193,7 +193,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Link_Manager_Average_Memory_Utilization_value",
+          "rawName": "Link_Manager_Average_Memory_Utilization",
           "unit": "value"
         },
         {
@@ -202,7 +202,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Manager_Average_CPU_Utilization_value",
+          "rawName": "MME_Manager_Average_CPU_Utilization",
           "unit": "value"
         },
         {
@@ -211,7 +211,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Manager_Average_Memory_Utilization_value",
+          "rawName": "MME_Manager_Average_Memory_Utilization",
           "unit": "value"
         },
         {
@@ -220,7 +220,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Manager_Maximum_CPU_Utilization_value",
+          "rawName": "MME_Manager_Maximum_CPU_Utilization",
           "unit": "value"
         },
         {
@@ -229,7 +229,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "MME_Manager_Maximum_Memory_Utilization_value",
+          "rawName": "MME_Manager_Maximum_Memory_Utilization",
           "unit": "value"
         },
         {
@@ -238,7 +238,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Number_Of_Active_MME_Manager_Instances_value",
+          "rawName": "Number_Of_Active_MME_Manager_Instances",
           "unit": "value"
         },
         {
@@ -247,7 +247,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Session_Manager_Average_CPU_Utilization_value",
+          "rawName": "Session_Manager_Average_CPU_Utilization",
           "unit": "value"
         },
         {
@@ -256,7 +256,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Session_Manager_Average_Memory_Utilization_value",
+          "rawName": "Session_Manager_Average_Memory_Utilization",
           "unit": "value"
         },
         {
@@ -265,7 +265,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Session_Manager_Maximum_CPU_Utilization_value",
+          "rawName": "Session_Manager_Maximum_CPU_Utilization",
           "unit": "value"
         },
         {
@@ -274,7 +274,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "avg15_cpubusy_value",
+          "rawName": "avg15_cpubusy",
           "unit": "value"
         }
       ],

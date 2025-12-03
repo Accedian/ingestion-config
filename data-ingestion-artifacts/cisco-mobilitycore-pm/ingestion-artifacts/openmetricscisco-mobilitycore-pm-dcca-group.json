@@ -98,7 +98,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "DCCA_Credit_Control_Initial_Success_Rate_value",
+          "rawName": "DCCA_Credit_Control_Initial_Success_Rate",
           "unit": "value"
         },
         {
@@ -107,7 +107,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "DCCA_Credit_Control_Reauthorization_Success_Rate_value",
+          "rawName": "DCCA_Credit_Control_Reauthorization_Success_Rate",
           "unit": "value"
         },
         {
@@ -116,7 +116,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "DCCA_Credit_Control_Termination_Success_Rate_value",
+          "rawName": "DCCA_Credit_Control_Termination_Success_Rate",
           "unit": "value"
         },
         {
@@ -125,7 +125,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "DCCA_Credit_Control_Update_Success_Rate_value",
+          "rawName": "DCCA_Credit_Control_Update_Success_Rate",
           "unit": "value"
         },
         {
@@ -134,7 +134,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "DCCA_Current_Sessions_value",
+          "rawName": "DCCA_Current_Sessions",
           "unit": "value"
         },
         {
@@ -143,7 +143,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "DCCA_Gy_Credit_Control_Answers_value",
+          "rawName": "DCCA_Gy_Credit_Control_Answers",
           "unit": "value"
         },
         {
@@ -152,7 +152,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "DCCA_Gy_Credit_Control_Requests_value",
+          "rawName": "DCCA_Gy_Credit_Control_Requests",
           "unit": "value"
         },
         {
@@ -161,7 +161,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Rakuten_DCCA_Credit_Control_Initial_SR_value",
+          "rawName": "Rakuten_DCCA_Credit_Control_Initial_SR",
           "unit": "value"
         },
         {
@@ -170,7 +170,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Total_Number_of_Gy_Sessions_value",
+          "rawName": "Total_Number_of_Gy_Sessions",
           "unit": "value"
         }
       ],

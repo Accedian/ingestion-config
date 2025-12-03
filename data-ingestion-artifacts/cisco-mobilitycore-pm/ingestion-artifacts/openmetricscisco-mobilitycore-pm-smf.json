@@ -98,7 +98,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "fiveg_always_on_disable_value"
+          "rawName": "fiveg_always_on_disable"
         },
         {
           "analyticsName": "fivegAlwaysOnEnable",
@@ -106,7 +106,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "fiveg_always_on_enable_value"
+          "rawName": "fiveg_always_on_enable"
         },
         {
           "analyticsName": "fivegCurrentPduSessions",
@@ -114,7 +114,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "fiveg_current_pdu_sessions_value"
+          "rawName": "fiveg_current_pdu_sessions"
         },
         {
           "analyticsName": "fivegTotalActiveSessions",
@@ -122,7 +122,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "fiveg_total_active_sessions_value"
+          "rawName": "fiveg_total_active_sessions"
         },
         {
           "analyticsName": "fourgTotalActiveBearers",
@@ -130,7 +130,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "fourg_total_active_bearers_value"
+          "rawName": "fourg_total_active_bearers"
         },
         {
           "analyticsName": "fourgTotalActiveDedicatedBearers",
@@ -138,7 +138,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "fourg_total_active_dedicated_bearers_value"
+          "rawName": "fourg_total_active_dedicated_bearers"
         },
         {
           "analyticsName": "fourgTotalActiveDefaultBearers",
@@ -146,7 +146,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "fourg_total_active_default_bearers_value"
+          "rawName": "fourg_total_active_default_bearers"
         },
         {
           "analyticsName": "fourgTotalActiveSessions",
@@ -154,7 +154,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "fourg_total_active_sessions_value"
+          "rawName": "fourg_total_active_sessions"
         },
         {
           "analyticsName": "n10FailopenTotal",
@@ -162,7 +162,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "n10_failopen_total_value"
+          "rawName": "n10_failopen_total"
         },
         {
           "analyticsName": "n40FailopenTotal",
@@ -170,7 +170,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "n40_failopen_total_value"
+          "rawName": "n40_failopen_total"
         },
         {
           "analyticsName": "n4SessionDeletionSuccess",
@@ -178,7 +178,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "n4_session_deletion_success_value"
+          "rawName": "n4_session_deletion_success"
         },
         {
           "analyticsName": "n7FailopenTotal",
@@ -186,7 +186,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "n7_failopen_total_value"
+          "rawName": "n7_failopen_total"
         },
         {
           "analyticsName": "pduSessionsIpv6",
@@ -194,7 +194,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "pdu_sessions_ipv6_value"
+          "rawName": "pdu_sessions_ipv6"
         },
         {
           "analyticsName": "totalActiveSessions",
@@ -202,7 +202,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "total_active_sessions_value"
+          "rawName": "total_active_sessions"
         },
         {
           "analyticsName": "ueUpStateActive",
@@ -210,7 +210,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "ue_up_state_active_value"
+          "rawName": "ue_up_state_active"
         },
         {
           "analyticsName": "ueUpStateInactive",
@@ -218,7 +218,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "ue_up_state_inactive_value"
+          "rawName": "ue_up_state_inactive"
         }
       ],
       "objectType": "cisco-mobilitycore-pm-smf",

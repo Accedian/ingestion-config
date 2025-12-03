@@ -103,7 +103,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Active_Session_4G_Percentage_value",
+          "rawName": "APN_Active_Session_4G_Percentage",
           "unit": "value"
         },
         {
@@ -112,7 +112,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Active_Sessions_4G_value",
+          "rawName": "APN_Active_Sessions_4G",
           "unit": "value"
         },
         {
@@ -121,7 +121,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Address_Allocation_IP_Pool_value",
+          "rawName": "APN_Address_Allocation_IP_Pool",
           "unit": "value"
         },
         {
@@ -130,7 +130,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Address_Allocation_NotAllocated_value",
+          "rawName": "APN_Address_Allocation_NotAllocated",
           "unit": "value"
         },
         {
@@ -139,7 +139,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Address_Allocation_Radius_Server_value",
+          "rawName": "APN_Address_Allocation_Radius_Server",
           "unit": "value"
         },
         {
@@ -148,7 +148,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Address_Allocation_Static_value",
+          "rawName": "APN_Address_Allocation_Static",
           "unit": "value"
         },
         {
@@ -157,7 +157,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Current_Number_of_Sessions_value",
+          "rawName": "APN_Current_Number_of_Sessions",
           "unit": "value"
         },        {
           "analyticsName": "averageThroughputPerSessionKbps",
@@ -165,7 +165,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Average_Throughput_Per_Session_Kbps_value",
+          "rawName": "APN_Average_Throughput_Per_Session_Kbps",
           "unit": "value"
         },
         {
@@ -174,7 +174,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Create_Session_Request_Success_Rate_r_value",
+          "rawName": "APN_Create_Session_Request_Success_Rate_r",
           "unit": "value"
         },
 
@@ -184,7 +184,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Current_Session_Percentage_value",
+          "rawName": "APN_Current_Session_Percentage",
           "unit": "value"
         },
         {
@@ -193,7 +193,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Data_Rate_Default_Kbps_value",
+          "rawName": "APN_Data_Rate_Default_Kbps",
           "unit": "value"
         },
         {
@@ -202,8 +202,8 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Data_Volume_MB_value",
-          "sqlExpr": "cast(`APN_Data_Volume_MB_value` as DOUBLE) * 1048576",
+          "rawName": "APN_Data_Volume_MB",
+          "sqlExpr": "cast(`APN_Data_Volume_MB` as DOUBLE) * 1048576",
           "unit": "bytes"
         },
         {
@@ -212,7 +212,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Dedicated_Bearer_Activation_Success_Rate_value",
+          "rawName": "APN_Dedicated_Bearer_Activation_Success_Rate",
           "unit": "value"
         },
         {
@@ -221,7 +221,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Default_Bearer_Setup_success_rate_value",
+          "rawName": "APN_Default_Bearer_Setup_success_rate",
           "unit": "value"
         },
         {
@@ -230,7 +230,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Default_Bearer_success_rate_value",
+          "rawName": "APN_Default_Bearer_success_rate",
           "unit": "value"
         },
         {
@@ -239,8 +239,8 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Downlink_Bytes_Dropped_Total_Number_MB_value",
-          "sqlExpr": "cast(`APN_Downlink_Bytes_Dropped_Total_Number_MB_value` as DOUBLE) * 1048576",
+          "rawName": "APN_Downlink_Bytes_Dropped_Total_Number_MB",
+          "sqlExpr": "cast(`APN_Downlink_Bytes_Dropped_Total_Number_MB` as DOUBLE) * 1048576",
           "unit": "bytes"
         },
         {
@@ -249,7 +249,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Number_Of_Default_Bearers_Rejected_value",
+          "rawName": "APN_Number_Of_Default_Bearers_Rejected",
           "unit": "value"
         },
         {
@@ -258,7 +258,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Number_of_Bearer_Active_QCI_1_value",
+          "rawName": "APN_Number_of_Bearer_Active_QCI_1",
           "unit": "value"
         },
         {
@@ -267,7 +267,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Number_of_Bearer_Active_QCI_2_value",
+          "rawName": "APN_Number_of_Bearer_Active_QCI_2",
           "unit": "value"
         },
         {
@@ -276,7 +276,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Number_of_Bearer_Active_QCI_3_value",
+          "rawName": "APN_Number_of_Bearer_Active_QCI_3",
           "unit": "value"
         },
         {
@@ -285,7 +285,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Number_of_Bearer_Active_QCI_4_value",
+          "rawName": "APN_Number_of_Bearer_Active_QCI_4",
           "unit": "value"
         },
         {
@@ -294,7 +294,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Number_of_Bearer_Active_QCI_5_value",
+          "rawName": "APN_Number_of_Bearer_Active_QCI_5",
           "unit": "value"
         },
         {
@@ -303,7 +303,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Number_of_Bearer_Active_QCI_6_value",
+          "rawName": "APN_Number_of_Bearer_Active_QCI_6",
           "unit": "value"
         },
         {
@@ -312,7 +312,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Number_of_Bearer_Active_QCI_7_value",
+          "rawName": "APN_Number_of_Bearer_Active_QCI_7",
           "unit": "value"
         },
         {
@@ -321,7 +321,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Number_of_Bearer_Active_QCI_8_value",
+          "rawName": "APN_Number_of_Bearer_Active_QCI_8",
           "unit": "value"
         },
         {
@@ -330,7 +330,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Number_of_Bearer_Active_QCI_9_value",
+          "rawName": "APN_Number_of_Bearer_Active_QCI_9",
           "unit": "value"
         },
         {
@@ -339,7 +339,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Number_of_Bearer_Setup_QCI_6_value",
+          "rawName": "APN_Number_of_Bearer_Setup_QCI_6",
           "unit": "value"
         },
         {
@@ -348,7 +348,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Number_of_Bearer_Setup_QCI_7_value",
+          "rawName": "APN_Number_of_Bearer_Setup_QCI_7",
           "unit": "value"
         },
         {
@@ -357,7 +357,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Number_of_Bearer_Setup_QCI_8_value",
+          "rawName": "APN_Number_of_Bearer_Setup_QCI_8",
           "unit": "value"
         },
         {
@@ -366,7 +366,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Number_of_Bearer_Setup_QCI_9_value",
+          "rawName": "APN_Number_of_Bearer_Setup_QCI_9",
           "unit": "value"
         },
         {
@@ -375,7 +375,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Packet_Drop_Ratio_QCI6_value",
+          "rawName": "APN_Packet_Drop_Ratio_QCI6",
           "unit": "value"
         },
         {
@@ -384,7 +384,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Packet_Drop_Ratio_QCI7_value",
+          "rawName": "APN_Packet_Drop_Ratio_QCI7",
           "unit": "value"
         },
         {
@@ -393,7 +393,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Packet_Drop_Ratio_QCI8_value",
+          "rawName": "APN_Packet_Drop_Ratio_QCI8",
           "unit": "value"
         },
         {
@@ -402,7 +402,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Packet_Drop_Ratio_QCI9_value",
+          "rawName": "APN_Packet_Drop_Ratio_QCI9",
           "unit": "value"
         },
         {
@@ -411,7 +411,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Packet_Drop_ratio_value",
+          "rawName": "APN_Packet_Drop_ratio",
           "unit": "value"
         },
         {
@@ -420,7 +420,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Packet_Drops_BadHeader_value",
+          "rawName": "APN_Packet_Drops_BadHeader",
           "unit": "value"
         },
         {
@@ -429,7 +429,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Packet_Drops_BadSrcAddress_value",
+          "rawName": "APN_Packet_Drops_BadSrcAddress",
           "unit": "value"
         },
         {
@@ -438,7 +438,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Packet_Drops_FragFailure_value",
+          "rawName": "APN_Packet_Drops_FragFailure",
           "unit": "value"
         },
         {
@@ -447,7 +447,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Packet_Drops_Inacl_value",
+          "rawName": "APN_Packet_Drops_Inacl",
           "unit": "value"
         },
         {
@@ -456,7 +456,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Packet_Drops_Outacl_value",
+          "rawName": "APN_Packet_Drops_Outacl",
           "unit": "value"
         },
         {
@@ -465,7 +465,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Packet_Drops_TTLExceeded_value",
+          "rawName": "APN_Packet_Drops_TTLExceeded",
           "unit": "value"
         },
         {
@@ -474,7 +474,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Packet_Drops_inmisc_value",
+          "rawName": "APN_Packet_Drops_inmisc",
           "unit": "value"
         },
         {
@@ -483,7 +483,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Packet_Drops_outmisc_value",
+          "rawName": "APN_Packet_Drops_outmisc",
           "unit": "value"
         },
         {
@@ -492,7 +492,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Throughput_Mbps_value",
+          "rawName": "APN_Throughput_Mbps",
           "unit": "mbps"
         },
         {
@@ -501,7 +501,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Total_Active_Bearers_value",
+          "rawName": "APN_Total_Active_Bearers",
           "unit": "value"
         },
         {
@@ -510,8 +510,8 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Total_DL_Drop_Gbps_value",
-          "sqlExpr": "cast(`APN_Total_DL_Drop_Gbps_value` as DOUBLE) * 1000000000",
+          "rawName": "APN_Total_DL_Drop_Gbps",
+          "sqlExpr": "cast(`APN_Total_DL_Drop_Gbps` as DOUBLE) * 1000000000",
           "unit": "bps"
         },
         {
@@ -520,8 +520,8 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Total_Drop_Gbps_value",
-          "sqlExpr": "cast(`APN_Total_Drop_Gbps_value` as DOUBLE) * 1000000000",
+          "rawName": "APN_Total_Drop_Gbps",
+          "sqlExpr": "cast(`APN_Total_Drop_Gbps` as DOUBLE) * 1000000000",
           "unit": "bps"
         },
         {
@@ -530,7 +530,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Total_Number_Of_Active_Dedicated_Bearers_value",
+          "rawName": "APN_Total_Number_Of_Active_Dedicated_Bearers",
           "unit": "value"
         },
         {
@@ -539,7 +539,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Total_Number_Of_Active_Default_Bearers_value",
+          "rawName": "APN_Total_Number_Of_Active_Default_Bearers",
           "unit": "value"
         },
         {
@@ -548,7 +548,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Total_Number_Of_Active_IPv4_Sessions_value",
+          "rawName": "APN_Total_Number_Of_Active_IPv4_Sessions",
           "unit": "value"
         },
         {
@@ -557,7 +557,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Total_Number_Of_Active_IPv4_in_IPv6_Sessions_value",
+          "rawName": "APN_Total_Number_Of_Active_IPv4_in_IPv6_Sessions",
           "unit": "value"
         },
         {
@@ -566,7 +566,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Total_Number_Of_Active_IPv6_Sessions_value",
+          "rawName": "APN_Total_Number_Of_Active_IPv6_Sessions",
           "unit": "value"
         },
         {
@@ -575,7 +575,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Total_Number_Of_IPv4_Sessions_Setup_value",
+          "rawName": "APN_Total_Number_Of_IPv4_Sessions_Setup",
           "unit": "value"
         },
         {
@@ -584,7 +584,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Total_Number_Of_IPv4v6_Sessions_Active_value",
+          "rawName": "APN_Total_Number_Of_IPv4v6_Sessions_Active",
           "unit": "value"
         },
         {
@@ -593,7 +593,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Total_Number_Of_IPv4v6_Sessions_Setup_value",
+          "rawName": "APN_Total_Number_Of_IPv4v6_Sessions_Setup",
           "unit": "value"
         },
         {
@@ -602,7 +602,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Total_Number_Of_IPv6_Sessions_Setup_value",
+          "rawName": "APN_Total_Number_Of_IPv6_Sessions_Setup",
           "unit": "value"
         },
         {
@@ -611,8 +611,8 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Total_UL_Drop_Gbps_value",
-          "sqlExpr": "cast(`APN_Total_UL_Drop_Gbps_value` as DOUBLE) * 1000000000",
+          "rawName": "APN_Total_UL_Drop_Gbps",
+          "sqlExpr": "cast(`APN_Total_UL_Drop_Gbps` as DOUBLE) * 1000000000",
           "unit": "bps"
         },
         {
@@ -621,7 +621,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "APN_Uplink_Bytes_Dropped_Total_Number_value",
+          "rawName": "APN_Uplink_Bytes_Dropped_Total_Number",
           "unit": "value"
         }
       ],
