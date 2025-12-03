@@ -98,7 +98,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "IP_Pool_Utilization_Group_Name_r_value",
+          "rawName": "IP_Pool_Utilization_Group_Name_r",
           "unit": "value"
         },
         {
@@ -107,7 +107,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "IP_Pool_Utilization_value",
+          "rawName": "IP_Pool_Utilization",
           "unit": "value"
         }
       ],

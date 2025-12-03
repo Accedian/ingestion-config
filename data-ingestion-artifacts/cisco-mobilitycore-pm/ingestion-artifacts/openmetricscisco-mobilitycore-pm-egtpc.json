@@ -98,7 +98,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Create_Bearer_Request_Success_Rate_value",
+          "rawName": "Create_Bearer_Request_Success_Rate",
           "unit": "value"
         },
         {
@@ -107,7 +107,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "Create_Session_Request_Success_Rate_r_value",
+          "rawName": "Create_Session_Request_Success_Rate_r",
           "unit": "value"
         },
         {
@@ -116,7 +116,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "EGTPC_Bearer_Modification_Success_Rate_r_value",
+          "rawName": "EGTPC_Bearer_Modification_Success_Rate_r",
           "unit": "value"
         },
         {
@@ -125,7 +125,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "EGTPC_Bearer_Update_Success_Rate_r_value",
+          "rawName": "EGTPC_Bearer_Update_Success_Rate_r",
           "unit": "value"
         },
         {
@@ -134,7 +134,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_EGTPC_S11_Create_Session_Received_Attempts_value",
+          "rawName": "SAEGW_EGTPC_S11_Create_Session_Received_Attempts",
           "unit": "value"
         },
         {
@@ -143,7 +143,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_EGTPC_S11_Create_Session_Response_Success_value",
+          "rawName": "SAEGW_EGTPC_S11_Create_Session_Response_Success",
           "unit": "value"
         },
         {
@@ -152,7 +152,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_EGTPC_S11_Delete_Bearer_Request_Attempts_value",
+          "rawName": "SAEGW_EGTPC_S11_Delete_Bearer_Request_Attempts",
           "unit": "value"
         }
       ],

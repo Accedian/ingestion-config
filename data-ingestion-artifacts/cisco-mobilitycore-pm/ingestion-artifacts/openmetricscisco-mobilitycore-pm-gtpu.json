@@ -103,8 +103,8 @@
           "directions": [
             "-1"
           ],
-          "rawName": "GTPU_Downlink_GibaBytes_value",
-          "sqlExpr": "cast(`GTPU_Downlink_GibaBytes_value` as DOUBLE) * 1073741824",
+          "rawName": "GTPU_Downlink_GibaBytes",
+          "sqlExpr": "cast(`GTPU_Downlink_GibaBytes` as DOUBLE) * 1073741824",
           "unit": "bytes"
         },
         {
@@ -113,8 +113,8 @@
           "directions": [
             "-1"
           ],
-          "rawName": "GTPU_Throughput_Gbps_value",
-          "sqlExpr": "cast(`GTPU_Throughput_Gbps_value` as DOUBLE) * 1000000000",
+          "rawName": "GTPU_Throughput_Gbps",
+          "sqlExpr": "cast(`GTPU_Throughput_Gbps` as DOUBLE) * 1000000000",
           "unit": "bps"
         },
         {
@@ -123,8 +123,8 @@
           "directions": [
             "-1"
           ],
-          "rawName": "GTPU_Uplink_GigaBytes_value",
-          "sqlExpr": "cast(`GTPU_Uplink_GigaBytes_value` as DOUBLE) * 1073741824",
+          "rawName": "GTPU_Uplink_GigaBytes",
+          "sqlExpr": "cast(`GTPU_Uplink_GigaBytes` as DOUBLE) * 1073741824",
           "unit": "bytes"
         }
       ],

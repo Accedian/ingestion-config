@@ -103,7 +103,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "AMF_Registered_Subscribers_per_network_value"
+          "rawName": "AMF_Registered_Subscribers_per_network"
         }
       ],
       "objectType": "cisco-mobilitycore-pm-amf_mobility_networkslice",

@@ -98,7 +98,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Active_PDNs_Home_r_value",
+          "rawName": "SAEGW_Active_PDNs_Home_r",
           "unit": "value"
         },
         {
@@ -107,7 +107,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Active_PDNs_Roaming_r_value",
+          "rawName": "SAEGW_Active_PDNs_Roaming_r",
           "unit": "value"
         },
         {
@@ -116,7 +116,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Active_Subscribers_r_value",
+          "rawName": "SAEGW_Active_Subscribers_r",
           "unit": "value"
         },
         {
@@ -125,7 +125,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Current_Active_PGW_DCNR_PDNs_value",
+          "rawName": "SAEGW_Current_Active_PGW_DCNR_PDNs",
           "unit": "value"
         },
         {
@@ -134,7 +134,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Current_Active_SAEGW_DCNR_PDNs_value",
+          "rawName": "SAEGW_Current_Active_SAEGW_DCNR_PDNs",
           "unit": "value"
         },
         {
@@ -143,7 +143,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Current_Active_SGW_DCNR_PDNs_value",
+          "rawName": "SAEGW_Current_Active_SGW_DCNR_PDNs",
           "unit": "value"
         },
         {
@@ -152,7 +152,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Inter_SGW_S1_Based_Handover_Success_Rate_r_value",
+          "rawName": "SAEGW_Inter_SGW_S1_Based_Handover_Success_Rate_r",
           "unit": "value"
         },
         {
@@ -161,7 +161,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Intra_SGW_Handover_Success_Rate_r_value",
+          "rawName": "SAEGW_Intra_SGW_Handover_Success_Rate_r",
           "unit": "value"
         },
         {
@@ -170,7 +170,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Number_Of_Bearers_Active_QCI1_value",
+          "rawName": "SAEGW_Number_Of_Bearers_Active_QCI1",
           "unit": "value"
         },
         {
@@ -179,7 +179,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Number_Of_Bearers_Active_QCI5_value",
+          "rawName": "SAEGW_Number_Of_Bearers_Active_QCI5",
           "unit": "value"
         },
         {
@@ -188,7 +188,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Number_Of_Bearers_Active_QCI9_r_value",
+          "rawName": "SAEGW_Number_Of_Bearers_Active_QCI9_r",
           "unit": "value"
         },
         {
@@ -197,7 +197,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Number_Of_Bearers_Setup_QCI1_value",
+          "rawName": "SAEGW_Number_Of_Bearers_Setup_QCI1",
           "unit": "value"
         },
         {
@@ -206,7 +206,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Number_Of_Bearers_Setup_QCI5_r_value",
+          "rawName": "SAEGW_Number_Of_Bearers_Setup_QCI5_r",
           "unit": "value"
         },
         {
@@ -215,7 +215,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_PDNS_Active_Visiting_value",
+          "rawName": "SAEGW_PDNS_Active_Visiting",
           "unit": "value"
         },
         {
@@ -224,7 +224,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_PGW_Active_Subscribers_r_value",
+          "rawName": "SAEGW_PGW_Active_Subscribers_r",
           "unit": "value"
         },
         {
@@ -233,7 +233,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_PGW_DL_Packets_value",
+          "rawName": "SAEGW_PGW_DL_Packets",
           "unit": "value"
         },
         {
@@ -242,7 +242,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_PGW_DL_Throughput_Gbps_value",
+          "rawName": "SAEGW_PGW_DL_Throughput_Gbps",
           "unit": "value"
         },
         {
@@ -251,7 +251,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_PGW_DL_Volume_MB_value",
+          "rawName": "SAEGW_PGW_DL_Volume_MB",
           "unit": "value"
         },
         {
@@ -260,7 +260,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_PGW_Dedicated_Bearers_Active_r_value",
+          "rawName": "SAEGW_PGW_Dedicated_Bearers_Active_r",
           "unit": "value"
         },
         {
@@ -269,7 +269,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_PGW_Default_Bearers_Active_r_value",
+          "rawName": "SAEGW_PGW_Default_Bearers_Active_r",
           "unit": "value"
         },
         {
@@ -278,7 +278,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_PGW_Throughput_QC1_Gbps_value",
+          "rawName": "SAEGW_PGW_Throughput_QC1_Gbps",
           "unit": "value"
         },
         {
@@ -287,7 +287,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_PGW_Throughput_QCI5_Gbps_value",
+          "rawName": "SAEGW_PGW_Throughput_QCI5_Gbps",
           "unit": "value"
         },
         {
@@ -296,7 +296,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_PGW_Throughput_QCI9_Gbps_value",
+          "rawName": "SAEGW_PGW_Throughput_QCI9_Gbps",
           "unit": "value"
         },
         {
@@ -305,7 +305,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_PGW_Total_Data_Volume_MB_value",
+          "rawName": "SAEGW_PGW_Total_Data_Volume_MB",
           "unit": "value"
         },
         {
@@ -314,7 +314,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_PGW_UL_Volume_MB_value",
+          "rawName": "SAEGW_PGW_UL_Volume_MB",
           "unit": "value"
         },
         {
@@ -323,7 +323,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_QCI1_Released_PGW_Initiated_value",
+          "rawName": "SAEGW_QCI1_Released_PGW_Initiated",
           "unit": "value"
         },
         {
@@ -332,7 +332,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_QCI1_Released_S11_Path_Failure_value",
+          "rawName": "SAEGW_QCI1_Released_S11_Path_Failure",
           "unit": "value"
         },
         {
@@ -341,7 +341,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_QCI1_Released_S1U_Path_Failure_value",
+          "rawName": "SAEGW_QCI1_Released_S1U_Path_Failure",
           "unit": "value"
         },
         {
@@ -350,7 +350,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_QCI1_Released_S1_Error_value",
+          "rawName": "SAEGW_QCI1_Released_S1_Error",
           "unit": "value"
         },
         {
@@ -359,7 +359,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_QCI1_Released_S5_Error_value",
+          "rawName": "SAEGW_QCI1_Released_S5_Error",
           "unit": "value"
         },
         {
@@ -368,7 +368,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_QCI9_Released_Inactivity_Timeout_value",
+          "rawName": "SAEGW_QCI9_Released_Inactivity_Timeout",
           "unit": "value"
         },
         {
@@ -377,7 +377,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_QCI9_Released_Local_Reason_value",
+          "rawName": "SAEGW_QCI9_Released_Local_Reason",
           "unit": "value"
         },
         {
@@ -386,7 +386,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_QCI9_Released_Other_value",
+          "rawName": "SAEGW_QCI9_Released_Other",
           "unit": "value"
         },
         {
@@ -395,7 +395,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_QCI9_Released_PDN_Cleanup_value",
+          "rawName": "SAEGW_QCI9_Released_PDN_Cleanup",
           "unit": "value"
         },
         {
@@ -404,7 +404,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_QCI9_Released_PGW_Initiated_value",
+          "rawName": "SAEGW_QCI9_Released_PGW_Initiated",
           "unit": "value"
         },
         {
@@ -413,7 +413,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Total_Active_Bearers_P_GW_r_value",
+          "rawName": "SAEGW_Total_Active_Bearers_P_GW_r",
           "unit": "value"
         },
         {
@@ -422,7 +422,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Total_Current_PDNs_S_GW_r_value",
+          "rawName": "SAEGW_Total_Current_PDNs_S_GW_r",
           "unit": "value"
         },
         {
@@ -431,7 +431,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Total_Number_Of_PGW_Sessions_value",
+          "rawName": "SAEGW_Total_Number_Of_PGW_Sessions",
           "unit": "value"
         },
         {
@@ -440,7 +440,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Total_Number_S_GW_Sessions_r_value",
+          "rawName": "SAEGW_Total_Number_S_GW_Sessions_r",
           "unit": "value"
         },
         {
@@ -449,7 +449,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Total_Number_of_PGW_DCNR_PDNs_Released_value",
+          "rawName": "SAEGW_Total_Number_of_PGW_DCNR_PDNs_Released",
           "unit": "value"
         },
         {
@@ -458,7 +458,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Total_Number_of_PGW_DCNR_PDNs_Setup_value",
+          "rawName": "SAEGW_Total_Number_of_PGW_DCNR_PDNs_Setup",
           "unit": "value"
         },
         {
@@ -467,7 +467,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Total_Number_of_SAEGW_DCNR_PDNs_Released_value",
+          "rawName": "SAEGW_Total_Number_of_SAEGW_DCNR_PDNs_Released",
           "unit": "value"
         },
         {
@@ -476,7 +476,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Total_Number_of_SAEGW_DCNR_PDNs_Setup_value",
+          "rawName": "SAEGW_Total_Number_of_SAEGW_DCNR_PDNs_Setup",
           "unit": "value"
         },
         {
@@ -485,7 +485,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Uplink_Throughput_Mbps_value",
+          "rawName": "SAEGW_Uplink_Throughput_Mbps",
           "unit": "value"
         },
         {
@@ -494,7 +494,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Visiting_PDNS_Released_value",
+          "rawName": "SAEGW_Visiting_PDNS_Released",
           "unit": "value"
         },
         {
@@ -503,7 +503,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Visiting_PDNS_Setup_value",
+          "rawName": "SAEGW_Visiting_PDNS_Setup",
           "unit": "value"
         },
         {
@@ -512,7 +512,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_Dedicated_Bearer_Activation_Success_Rate_r_value",
+          "rawName": "SAEGW_Dedicated_Bearer_Activation_Success_Rate_r",
           "unit": "value"
         },
         {
@@ -521,7 +521,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_PGW_S5_Throughput_Gbps_value",
+          "rawName": "SAEGW_PGW_S5_Throughput_Gbps",
           "unit": "value"
         },
         {
@@ -530,7 +530,7 @@
           "directions": [
             "-1"
           ],
-          "rawName": "SAEGW_PGW_S8_Throughput_Gbps_value",
+          "rawName": "SAEGW_PGW_S8_Throughput_Gbps",
           "unit": "value"
         }
       ],
