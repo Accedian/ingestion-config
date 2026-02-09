@@ -2,36 +2,63 @@
 
 ## Problem Statement
 
-Rakuten's Matrix schema has a **40 KPI per objectType limit**. The MME schema contains 127 unique KPIs, exceeding this limit and requiring automatic splitting into multiple objectTypes.
+Rakuten's Matrix schema has a **40 KPI per objectType limit**. The MME schema contains 150 unique KPIs, exceeding this limit and requiring automatic splitting into multiple objectTypes.
 
-### Current Schema Analysis
+### Source of Truth
+
+**KPI mappings are defined in the CSV catalog:** `Kpi_calc_Kpicatalog-updatedGrouping.csv`
+
+A Go tool is available to generate splitting rules from this catalog:
+```bash
+# Generate summary of all schemas
+go run generate_splitting_rules.go -format summary
+
+# Generate Starlark rules for MME
+go run generate_splitting_rules.go -format starlark -schema mme
+
+# Generate routing rules
+go run generate_splitting_rules.go -format routing -schema mme
+
+# Validate all groups are under 40 KPIs
+go run generate_splitting_rules.go -format validate
+```
+
+### Current Schema Analysis (from CSV Catalog)
 
 | Schema | Unique KPIs | Status | Action |
 |--------|-------------|--------|--------|
-| `mme` | 127 | **Exceeds limit** | Split into 5 objectTypes |
-| `egtpc` | 28 | ✅ Under limit | No action needed |
-| `schema` | 25 | ✅ Under limit | No action needed |
+| `mme` | 150 | **Exceeds limit** | Split into 7 objectTypes |
+| `egtpc` | 30 | ✅ Under limit | No action needed |
+| `schema` | 30 | ✅ Under limit | No action needed |
+| `mme-paging-profile` | 20 | ✅ Under limit | No action needed |
+| `tai` | 14 | ✅ Under limit | No action needed |
+| `card` | 11 | ✅ Under limit | No action needed |
 | `hss` | 11 | ✅ Under limit | No action needed |
-| `port` | 5 | ✅ Under limit | No action needed |
+| `port` | 11 | ✅ Under limit | No action needed |
+| `apn` | 8 | ✅ Under limit | No action needed |
+| `sbc` | 4 | ✅ Under limit | No action needed |
+| `sx` | 4 | ✅ Under limit | No action needed |
 
 ### MME Schema Split
 
-The 127 MME KPIs are split into **5 objectTypes**, each under 40 KPIs:
+The 150 MME KPIs are split into **7 objectTypes**, each under 40 KPIs:
 
-| ObjectType | KPI Patterns | Count |
-|------------|--------------|-------|
-| `cisco-mobilitycore-pm-mme-inter` | `MME_Inter_*` | 23 |
-| `cisco-mobilitycore-pm-mme-intra` | `MME_Intra_*` | 20 |
-| `cisco-mobilitycore-pm-mme-emm` | `EMM_*`, `EPS_*`, `Intra_MME_*`, `UE_*`, `S1_Paging*` | 22 |
-| `cisco-mobilitycore-pm-mme-pdn` | `MME_PDN_*`, `MME_DCNR_*` | 28 |
-| `cisco-mobilitycore-pm-mme` | All remaining KPIs | 34 |
-| **Total** | | **127** |
+| ObjectType | KPI Count | Description |
+|------------|-----------|-------------|
+| `cisco-mobilitycore-pm-mme` | 26 | Base KPIs (not in split groups) |
+| `cisco-mobilitycore-pm-mme-failure` | 24 | EMM_Attach_Reject_*, MME_*_Failure*, etc. |
+| `cisco-mobilitycore-pm-mme-inter` | 24 | MME_Inter_* KPIs |
+| `cisco-mobilitycore-pm-mme-sr` | 22 | Success rate KPIs |
+| `cisco-mobilitycore-pm-mme-intra` | 20 | MME_Intra_* KPIs |
+| `cisco-mobilitycore-pm-mme-dcnr` | 19 | MME_DCNR_* KPIs |
+| `cisco-mobilitycore-pm-mme-pdn` | 15 | MME_PDN_* KPIs |
+| **Total** | **150** | |
 
 ---
 
 ## Available Solutions
 
-Two production-ready configurations are provided:
+Two production-ready configurations are provided, both using **exact KPI name matching**:
 
 | File | Approach | Best For |
 |------|----------|----------|
@@ -40,46 +67,52 @@ Two production-ready configurations are provided:
 
 ---
 
-## Solution 1: Starlark Processor
+## Solution 1: Starlark Processor (Recommended for Production)
 
 **File:** `telegraf-starlark.conf`
 
 ### How It Works
 
-A centralized Starlark processor applies KPI splitting rules from a dictionary:
+A centralized Starlark processor uses **EXACT_RULES** - a dictionary mapping each KPI name to its objectType suffix. This is the safest approach for production as it uses exact matches only.
 
 ```starlark
-SUFFIX_RULES = {
-    "mme": [
-        ("MME_Inter_", "-inter"),    # 23 KPIs → mme-inter
-        ("MME_Intra_", "-intra"),    # 20 KPIs → mme-intra
-        ("EMM_", "-emm"),            # Part of 22 KPIs → mme-emm
-        ("EPS_", "-emm"),
-        ("Intra_MME_", "-emm"),
-        ("UE_", "-emm"),
-        ("S1_Paging", "-emm"),
-        ("MME_PDN_", "-pdn"),        # Part of 28 KPIs → mme-pdn
-        ("MME_DCNR_", "-pdn"),
-        # Remaining 34 KPIs use base objectType (no suffix)
-    ],
+# Source of truth: Kpi_calc_Kpicatalog-updatedGrouping.csv
+# Logic: Use column 3 (ObjectIdentifier) if defined, otherwise column 2 (Schema)
+
+EXACT_RULES = {
+    # mme-inter: 24 KPIs
+    "MME_Inter_MME_TAU_Reject_eps_not_allowed": "-inter",
+    "MME_Inter_MME_TAU_Reject_illegal_me": "-inter",
+    ...
+    
+    # mme-failure: 24 KPIs
+    "EMM_Attach_Reject_Decode_Failure": "-failure",
+    "EMM_Attach_Reject_EPS_Not_Allowed": "-failure",
+    ...
+    
+    # mme-sr: 22 KPIs
+    "MME_Overall_Attach_Success_Rate": "-sr",
+    ...
 }
+
+def apply(metric):
+    kpi = metric.name
+    suffix = EXACT_RULES.get(kpi, "")  # Simple dict lookup
+    ...
 ```
 
 ### Adding New Rules
 
-To add splitting for another schema (e.g., when `egtpc` exceeds 40 KPIs):
+When the CSV catalog is updated:
 
-```starlark
-SUFFIX_RULES = {
-    "mme": [...],
-    "egtpc": [
-        ("Create_Bearer_", "-bearer"),
-        ("Create_Session_", "-session"),
-    ],
-}
+```bash
+# Regenerate the exact rules from CSV
+go run generate_splitting_rules.go -format starlark -schema <name>
+
+# Copy the output into the EXACT_RULES dictionary
 ```
 
-**Effort:** 1-2 lines of code
+**Effort:** Copy/paste from tool output
 
 ### Advantages
 
@@ -96,19 +129,19 @@ SUFFIX_RULES = {
 
 ---
 
-## Solution 2: Template Routing
+## Solution 2: Template Routing (EXACT RULES)
 
 **File:** `telegraf-routing.conf`
 
 ### How It Works
 
-Uses Telegraf's native `namepass`/`namedrop` filters with template processors:
+Uses Telegraf's native `namepass`/`namedrop` filters with template processors. Now uses **exact KPI names** (no wildcards) for production safety:
 
 ```toml
-# Group 1: Inter metrics → mme-inter
+# Group 1: Inter metrics (24 exact KPIs) → mme-inter
 [[processors.template]]
   order = 7
-  namepass = ["MME_Inter_*"]
+  namepass = ["MME_Inter_MME_Relocations_S1_S10_HO_Incoming_Success_Rate", "MME_Inter_MME_TAU_Reject_eps_not_allowed", ...]
   tag = "objectType"
   template = 'cisco-mobilitycore-pm-{{ .Tag "schema" }}-inter'
   [processors.template.tagpass]
@@ -119,31 +152,15 @@ Uses Telegraf's native `namepass`/`namedrop` filters with template processors:
 
 ### Adding New Rules
 
-To add splitting for another pattern, add **3 processor blocks**:
+Use the generate_splitting_rules.go tool to regenerate rules from CSV:
 
-```toml
-# objectType
-[[processors.template]]
-  namepass = ["NEW_PATTERN_*"]
-  tag = "objectType"
-  template = 'cisco-mobilitycore-pm-{{ .Tag "schema" }}-newsuffix'
-
-# sessionName
-[[processors.template]]
-  namepass = ["NEW_PATTERN_*"]
-  tag = "sessionName"
-  template = '{{ .Tag "device" }}_{{ .Tag "index" }}_cisco-mobilitycore-pm-{{ .Tag "schema" }}-newsuffix'
-
-# sessionId  
-[[processors.template]]
-  namepass = ["NEW_PATTERN_*"]
-  tag = "sessionId"
-  template = '{{ .Tag "node_id" }}_{{ .Tag "index" }}_cisco-mobilitycore-pm-{{ .Tag "schema" }}-newsuffix'
+```bash
+go run generate_splitting_rules.go -format routing -schema mme
 ```
 
-Then update default processors to exclude the new pattern in `namedrop`.
+Then copy the output into the config file.
 
-**Effort:** 6+ locations to modify
+**Effort:** Single command, copy/paste output
 
 ### Advantages
 
@@ -269,8 +286,52 @@ Three output options are provided (choose one):
 | File | Purpose | Lines |
 |------|---------|-------|
 | `telegraf.conf` | Original config (no splitting) | 159 |
-| `telegraf-starlark.conf` | Starlark-based splitting | 400 |
-| `telegraf-routing.conf` | Template routing splitting | 445 |
+| `telegraf-starlark.conf` | Starlark-based splitting | ~430 |
+| `telegraf-routing.conf` | Template routing splitting | ~450 |
+| `Kpi_calc_Kpicatalog-updatedGrouping.csv` | KPI catalog (source of truth) | ~300 |
+| `generate_splitting_rules.go` | Rule generation tool | ~250 |
+
+---
+
+## Generate Splitting Rules Tool
+
+A Go tool is provided to generate Telegraf splitting rules from the KPI CSV catalog.
+
+### Usage
+
+```bash
+# Show summary of all schemas and their KPI counts
+go run generate_splitting_rules.go -format summary
+
+# Generate Starlark rules for all schemas
+go run generate_splitting_rules.go -format starlark
+
+# Generate Starlark rules for a specific schema
+go run generate_splitting_rules.go -format starlark -schema mme
+
+# Generate routing rules
+go run generate_splitting_rules.go -format routing -schema mme
+
+# Export as JSON
+go run generate_splitting_rules.go -format json
+
+# Validate all objectTypes are under 40 KPIs
+go run generate_splitting_rules.go -format validate
+```
+
+### Example Output (summary)
+
+```
+MME (150 KPIs) - ⚠️ SPLIT INTO 7 GROUPS
+--------------------------------------------------
+  ✓ (base)           26 KPIs → cisco-mobilitycore-pm-mme
+  ✓ -failure         24 KPIs → cisco-mobilitycore-pm-mme-failure
+  ✓ -inter           24 KPIs → cisco-mobilitycore-pm-mme-inter
+  ✓ -sr              22 KPIs → cisco-mobilitycore-pm-mme-sr
+  ✓ -intra           20 KPIs → cisco-mobilitycore-pm-mme-intra
+  ✓ -dcnr            19 KPIs → cisco-mobilitycore-pm-mme-dcnr
+  ✓ -pdn             15 KPIs → cisco-mobilitycore-pm-mme-pdn
+```
 
 ---
 
