@@ -35,7 +35,7 @@ type SplittingRules struct {
 func main() {
 	csvFile := flag.String("csv", "Kpi_calc_Kpicatalog-updatedGrouping.csv", "Path to KPI catalog CSV")
 	format := flag.String("format", "summary", "Output format: summary, starlark, routing, json, validate")
-	schema := flag.String("schema", "", "Filter by specific schema")
+	schema := flag.String("schema", "", "Filter output to specific schema (optional - processes all by default)")
 	flag.Parse()
 
 	entries, err := parseCSV(*csvFile)
