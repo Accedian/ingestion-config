@@ -8,20 +8,17 @@ Rakuten's Matrix schema has a **40 KPI per objectType limit**. The MME schema co
 
 **KPI mappings are defined in the CSV catalog:** `Kpi_calc_Kpicatalog-updatedGrouping.csv`
 
-A Go tool is available to generate splitting rules from this catalog:
+A Go tool generates complete Telegraf configurations from this catalog:
 ```bash
-# Generate summary of all schemas
-go run generate_splitting_rules.go -format summary
-
-# Generate Starlark rules for MME
-go run generate_splitting_rules.go -format starlark -schema mme
-
-# Generate routing rules
-go run generate_splitting_rules.go -format routing -schema mme
-
-# Validate all groups are under 40 KPIs
-go run generate_splitting_rules.go -format validate
+# Generate both telegraf-starlark.conf and telegraf-routing.conf
+go run generate_telegraf_configs.go -csv Kpi_calc_Kpicatalog-updatedGrouping.csv -output .
 ```
+
+The tool:
+1. Validates all groups are under 40 KPIs (fails if any exceed)
+2. Generates complete `telegraf-starlark.conf`
+3. Generates complete `telegraf-routing.conf`
+4. Includes KPI limit monitor (safety check) in both configs
 
 ### Current Schema Analysis (from CSV Catalog)
 
@@ -103,16 +100,13 @@ def apply(metric):
 
 ### Adding New Rules
 
-When the CSV catalog is updated:
+When the CSV catalog is updated, regenerate both configs:
 
 ```bash
-# Regenerate the exact rules from CSV
-go run generate_splitting_rules.go -format starlark -schema <name>
-
-# Copy the output into the EXACT_RULES dictionary
+go run generate_telegraf_configs.go -csv Kpi_calc_Kpicatalog-updatedGrouping.csv -output .
 ```
 
-**Effort:** Copy/paste from tool output
+**Effort:** Single command regenerates complete configs
 
 ### Advantages
 
@@ -204,25 +198,35 @@ Performance comparison using Kafka-based testing with 704 messages:
 
 ---
 
-## 40 KPI Limit Safety Check
+## 40 KPI Limit Monitor (Monitor-Only Mode)
 
-Both configurations include a **runtime safety check** that:
+With EXACT_RULES, KPI distribution is guaranteed by the CSV catalog. The safety check now operates in **monitor-only mode**:
 
 1. **Tracks unique KPIs** per objectType
 2. **Generates alerts** when approaching limit (35+ KPIs)
-3. **Drops metrics** that exceed 40 KPIs
+3. **Never drops metrics** - alerts only for unexpected KPIs not in catalog
 4. **Throttles alerts** to 1 per minute per objectType
 5. **Resets counters** every 5 minutes
 
+### Purpose
+
+The monitor detects unexpected KPIs (not in CSV catalog) that arrive at the base objectType. This serves as:
+
+- **Defense in depth** for new KPIs not yet catalogued
+- **Misconfiguration detection** when splitting rules don't match live data
+- **Alerting** without impacting data delivery
+
 ### Alert Metrics
 
-When limits are violated, `kpi_limit_alert` metrics are generated:
+When limits are approached or exceeded, `kpi_limit_alert` metrics are generated:
 
 | Severity | Trigger | Fields |
 |----------|---------|--------|
 | `warning` | 35+ KPIs | `current_count`, `limit`, `message` |
-| `critical` | 40+ KPIs (dropped) | `dropped_kpi`, `dropped_total`, `message` |
-| `critical` | Period summary | `dropped_count`, `unique_kpis` |
+| `critical` | 40+ KPIs (limit exceeded) | `unexpected_kpi`, `exceeded_total`, `message` |
+| `critical` | Period summary | `exceeded_count`, `unique_kpis` |
+
+**Note:** Critical alerts indicate the CSV catalog needs updating with new KPI mappings.
 
 ### Alert Output Options
 
@@ -257,17 +261,17 @@ Three output options are provided (choose one):
 {
   "name": "kpi_limit_alert",
   "tags": {
-    "objectType": "cisco-mobilitycore-pm-mme-extra",
+    "objectType": "cisco-mobilitycore-pm-mme",
     "schema": "mme",
     "severity": "critical",
     "alert_type": "limit_exceeded"
   },
   "fields": {
-    "dropped_kpi": "New_Unexpected_KPI",
-    "current_count": 40,
+    "unexpected_kpi": "New_Uncatalogued_KPI",
+    "current_count": 41,
     "limit": 40,
-    "dropped_total": 1,
-    "message": "KPI limit exceeded for cisco-mobilitycore-pm-mme-extra: New_Unexpected_KPI dropped (total: 1)"
+    "exceeded_total": 1,
+    "message": "KPI limit exceeded for cisco-mobilitycore-pm-mme: New_Uncatalogued_KPI not in CSV catalog (total: 1)"
   }
 }
 ```
@@ -277,7 +281,8 @@ Three output options are provided (choose one):
 1. **Monitor `/tmp/kpi_alerts.log`** for any alert entries
 2. **Set up log aggregation** (Splunk/ELK) to parse alert JSON
 3. **Create dashboards** for `kpi_limit_alert` metrics
-4. **Alert on `severity=critical`** for immediate investigation
+4. **Alert on `severity=critical`** - indicates CSV catalog needs updating
+5. **Action:** When critical alerts appear, add the unexpected KPI to the CSV catalog and regenerate rules
 
 ---
 
@@ -286,51 +291,70 @@ Three output options are provided (choose one):
 | File | Purpose | Lines |
 |------|---------|-------|
 | `telegraf.conf` | Original config (no splitting) | 159 |
-| `telegraf-starlark.conf` | Starlark-based splitting | ~430 |
-| `telegraf-routing.conf` | Template routing splitting | ~450 |
+| `telegraf-starlark.conf` | Starlark-based splitting (auto-generated) | ~400 |
+| `telegraf-routing.conf` | Template routing splitting (auto-generated) | ~450 |
 | `Kpi_calc_Kpicatalog-updatedGrouping.csv` | KPI catalog (source of truth) | ~300 |
-| `generate_splitting_rules.go` | Rule generation tool | ~250 |
+| `generate_telegraf_configs.go` | Complete config generator | ~800 |
 
 ---
 
-## Generate Splitting Rules Tool
+## Config Generator Tool
 
-A Go tool is provided to generate Telegraf splitting rules from the KPI CSV catalog.
+A Go tool generates complete Telegraf configurations from the KPI CSV catalog.
 
 ### Usage
 
 ```bash
-# Show summary of all schemas and their KPI counts
-go run generate_splitting_rules.go -format summary
+# Generate both configs with defaults
+go run generate_telegraf_configs.go -csv Kpi_calc_Kpicatalog-updatedGrouping.csv -output .
 
-# Generate Starlark rules for all schemas
-go run generate_splitting_rules.go -format starlark
+# Custom Kafka broker
+go run generate_telegraf_configs.go -csv catalog.csv -broker kafka.example.com:9092 -output ./configs
 
-# Generate Starlark rules for a specific schema
-go run generate_splitting_rules.go -format starlark -schema mme
-
-# Generate routing rules
-go run generate_splitting_rules.go -format routing -schema mme
-
-# Export as JSON
-go run generate_splitting_rules.go -format json
-
-# Validate all objectTypes are under 40 KPIs
-go run generate_splitting_rules.go -format validate
+# All options
+go run generate_telegraf_configs.go \
+  -csv Kpi_calc_Kpicatalog-updatedGrouping.csv \
+  -output ./generated \
+  -broker kafka.prod.example.com:9092 \
+  -topic pca_kpi_topic \
+  -alert-log /var/log/kpi_alerts.log
 ```
 
-### Example Output (summary)
+### Options
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `-csv` | `Kpi_calc_Kpicatalog-updatedGrouping.csv` | Path to KPI catalog CSV |
+| `-output` | `.` | Output directory for generated configs |
+| `-broker` | `{{server_ip}}:9092` | Kafka broker address |
+| `-topic` | `pca_kpi_topic` | Kafka topic name |
+| `-alert-log` | `/tmp/kpi_alerts.log` | Path for KPI alert log file |
+
+### Example Output
 
 ```
-MME (150 KPIs) - ⚠️ SPLIT INTO 7 GROUPS
---------------------------------------------------
-  ✓ (base)           26 KPIs → cisco-mobilitycore-pm-mme
-  ✓ -failure         24 KPIs → cisco-mobilitycore-pm-mme-failure
-  ✓ -inter           24 KPIs → cisco-mobilitycore-pm-mme-inter
-  ✓ -sr              22 KPIs → cisco-mobilitycore-pm-mme-sr
-  ✓ -intra           20 KPIs → cisco-mobilitycore-pm-mme-intra
-  ✓ -dcnr            19 KPIs → cisco-mobilitycore-pm-mme-dcnr
-  ✓ -pdn             15 KPIs → cisco-mobilitycore-pm-mme-pdn
+=======================================================================
+TELEGRAF CONFIG GENERATOR
+=======================================================================
+CSV: Kpi_calc_Kpicatalog-updatedGrouping.csv
+Output: ./generated
+
+Parsed 295 KPI entries from CSV
+
+--- VALIDATION ---
+✓ All objectTypes within 40 KPI limit
+
+--- SCHEMA SUMMARY ---
+  MME                       150 KPIs  ⚠️ SPLIT (7 groups)
+  EGTPC                      30 KPIs  ✓ OK
+  SCHEMA                     30 KPIs  ✓ OK
+  ...
+
+--- GENERATING CONFIGS ---
+✓ Generated generated/telegraf-starlark.conf
+✓ Generated generated/telegraf-routing.conf
+
+✓ Done!
 ```
 
 ---
@@ -368,25 +392,11 @@ MME (150 KPIs) - ⚠️ SPLIT INTO 7 GROUPS
 
 When adding new schemas that exceed 40 KPIs:
 
-### For Starlark
+1. **Update CSV catalog** - Add groupings to column 3 (ObjectIdentifier)
+2. **Regenerate configs** - Run `go run generate_telegraf_configs.go`
+3. **Deploy** - Replace existing configs with newly generated ones
 
-Add rules to `SUFFIX_RULES` dictionary:
-
-```starlark
-SUFFIX_RULES = {
-    "mme": [...],
-    "new_schema": [
-        ("PREFIX_A_", "-group-a"),
-        ("PREFIX_B_", "-group-b"),
-    ],
-}
-```
-
-### For Routing
-
-1. Add 3 template processor blocks per group
-2. Update default processors' `namedrop` lists
-3. Update documentation
+No manual editing of Telegraf configs required - all rules are derived from CSV.
 
 ---
 
