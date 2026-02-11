@@ -1,19 +1,25 @@
 // generate_telegraf_configs.go - Generate complete Telegraf KPI splitting configurations
 //
-// This tool reads the KPI catalog CSV and generates BOTH:
+// This tool reads the KPI catalog CSV and generates:
 //   - telegraf-starlark.conf (Starlark processor implementation)
 //   - telegraf-routing.conf (Template routing implementation)
+//   - Ingestion dictionaries (optional, with -dictionaries flag)
 //
 // The tool validates all groups are under 40 KPIs before generating configs.
 //
 // Usage:
-//   go run generate_telegraf_configs.go -csv Kpi_calc_Kpicatalog-updatedGrouping.csv -output ./generated
 //
+//	go run generate_telegraf_configs.go -csv Kpi_calc_Kpicatalog-updatedGrouping.csv -output ./generated
+//
+// With dictionary generation:
+//
+//	go run generate_telegraf_configs.go -csv Kpi_calc_Kpicatalog-updatedGrouping.csv -output ./generated -dictionaries ./dictionaries
 package main
 
 import (
 	"bufio"
 	"encoding/csv"
+	"encoding/json"
 	"flag"
 	"fmt"
 	"os"
@@ -21,6 +27,7 @@ import (
 	"sort"
 	"strings"
 	"time"
+	"unicode"
 )
 
 const (
@@ -51,17 +58,19 @@ type SplittingRules struct {
 
 // Config holds the configuration for the generator
 type Config struct {
-	CSVFile      string
-	OutputDir    string
-	KafkaBroker  string
-	KafkaTopic   string
-	AlertLogPath string
+	CSVFile         string
+	OutputDir       string
+	DictionariesDir string
+	KafkaBroker     string
+	KafkaTopic      string
+	AlertLogPath    string
 }
 
 func main() {
 	cfg := Config{}
 	flag.StringVar(&cfg.CSVFile, "csv", "Kpi_calc_Kpicatalog-updatedGrouping.csv", "Path to KPI catalog CSV")
 	flag.StringVar(&cfg.OutputDir, "output", ".", "Output directory for generated configs")
+	flag.StringVar(&cfg.DictionariesDir, "dictionaries", "", "Output directory for ingestion dictionaries (optional)")
 	flag.StringVar(&cfg.KafkaBroker, "broker", "{{server_ip}}:9092", "Kafka broker address")
 	flag.StringVar(&cfg.KafkaTopic, "topic", "pca_kpi_topic", "Kafka topic name")
 	flag.StringVar(&cfg.AlertLogPath, "alert-log", "/tmp/kpi_alerts.log", "Path for KPI alert log file")
@@ -118,6 +127,21 @@ func main() {
 		os.Exit(1)
 	}
 	fmt.Printf("✓ Generated %s\n", routingPath)
+
+	// Generate dictionaries if requested
+	if cfg.DictionariesDir != "" {
+		fmt.Println("\n--- GENERATING DICTIONARIES ---")
+		if err := os.MkdirAll(cfg.DictionariesDir, 0755); err != nil {
+			fmt.Fprintf(os.Stderr, "Error creating dictionaries directory: %v\n", err)
+			os.Exit(1)
+		}
+		count, err := generateDictionaries(cfg.DictionariesDir, rules)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "Error generating dictionaries: %v\n", err)
+			os.Exit(1)
+		}
+		fmt.Printf("✓ Generated %d dictionary files in %s\n", count, cfg.DictionariesDir)
+	}
 
 	fmt.Println("\n✓ Done!")
 }
@@ -804,4 +828,165 @@ func writeP2PRoutingHandler(w *bufio.Writer) {
   schema = ["p2p"]
 
 `)
+}
+
+// =============================================================================
+// DICTIONARY GENERATION
+// =============================================================================
+
+// Dictionary represents an ADH Gather ingestion dictionary
+type Dictionary struct {
+	ID             string             `json:"_id"`
+	CustomMetrics  interface{}        `json:"customMetrics"`
+	DictionaryName string             `json:"dictionaryName"`
+	DictionaryType string             `json:"dictionaryType"`
+	Dimensions     []DictionaryDim    `json:"dimensions"`
+	MetricType     string             `json:"metricType"`
+	Metrics        []DictionaryMetric `json:"metrics"`
+	ObjectType     string             `json:"objectType"`
+	TenantID       string             `json:"tenantId"`
+	Vendor         string             `json:"vendor"`
+	ID2            string             `json:"id"`
+	Type           string             `json:"type"`
+}
+
+// DictionaryDim represents a dimension in the dictionary
+type DictionaryDim struct {
+	AnalyticsName string `json:"analyticsName"`
+	DataType      string `json:"dataType"`
+	RawName       string `json:"rawName"`
+}
+
+// DictionaryMetric represents a metric in the dictionary
+type DictionaryMetric struct {
+	AnalyticsName string   `json:"analyticsName"`
+	DataType      string   `json:"dataType"`
+	Directions    []string `json:"directions"`
+	RawName       string   `json:"rawName"`
+	Unit          string   `json:"unit"`
+}
+
+// Standard dimensions used in all dictionaries
+var standardDimensions = []DictionaryDim{
+	{AnalyticsName: "monitoredObjectId", DataType: "string", RawName: "monitoredObjectId"},
+	{AnalyticsName: "monitoredObjectName", DataType: "string", RawName: "monitoredObjectName"},
+	{AnalyticsName: "timestamp", DataType: "long", RawName: "timestamp"},
+	{AnalyticsName: "direction", DataType: "integer", RawName: "direction"},
+	{AnalyticsName: "agentId", DataType: "string", RawName: "agentId"},
+	{AnalyticsName: "agentName", DataType: "string", RawName: "agentName"},
+	{AnalyticsName: "agentType", DataType: "string", RawName: "agentType"},
+	{AnalyticsName: "host", DataType: "string", RawName: "host"},
+	{AnalyticsName: "index", DataType: "string", RawName: "index"},
+	{AnalyticsName: "kpi", DataType: "string", RawName: "kpi"},
+	{AnalyticsName: "node_id", DataType: "string", RawName: "node_id"},
+	{AnalyticsName: "objectType", DataType: "string", RawName: "objectType"},
+	{AnalyticsName: "schema", DataType: "string", RawName: "schema"},
+	{AnalyticsName: "sessionId", DataType: "string", RawName: "sessionId"},
+	{AnalyticsName: "sessionName", DataType: "string", RawName: "sessionName"},
+	{AnalyticsName: "source_ip", DataType: "string", RawName: "source_ip"},
+}
+
+func generateDictionaries(outputDir string, rules SplittingRules) (int, error) {
+	count := 0
+	for _, groups := range rules.Schemas {
+		for _, g := range groups {
+			dict := createDictionary(g)
+			filename := g.ObjectType + ".json"
+			path := filepath.Join(outputDir, filename)
+
+			data, err := json.MarshalIndent(dict, "", "    ")
+			if err != nil {
+				return count, fmt.Errorf("error marshaling dictionary for %s: %w", g.ObjectType, err)
+			}
+
+			if err := os.WriteFile(path, data, 0644); err != nil {
+				return count, fmt.Errorf("error writing dictionary %s: %w", path, err)
+			}
+			count++
+		}
+	}
+	return count, nil
+}
+
+func createDictionary(g SchemaGroup) Dictionary {
+	// Create dictionary ID with "cisco-" prefix (matching existing pattern)
+	dictID := "cisco-" + g.ObjectType
+
+	// Create metrics from KPIs
+	metrics := make([]DictionaryMetric, len(g.KPIs))
+	for i, kpi := range g.KPIs {
+		metrics[i] = DictionaryMetric{
+			AnalyticsName: toAnalyticsName(kpi),
+			DataType:      "double",
+			Directions:    []string{"-1"},
+			RawName:       kpi,
+			Unit:          "value",
+		}
+	}
+
+	return Dictionary{
+		ID:             dictID,
+		CustomMetrics:  nil,
+		DictionaryName: dictID,
+		DictionaryType: "global",
+		Dimensions:     standardDimensions,
+		MetricType:     "timeseries",
+		Metrics:        metrics,
+		ObjectType:     g.ObjectType,
+		TenantID:       "",
+		Vendor:         "cisco",
+		ID2:            dictID,
+		Type:           "ingestionDictionaries",
+	}
+}
+
+// toAnalyticsName converts a KPI name to camelCase analytics name
+// Example: "MME_DCNR_Attach_Accept_Denied" -> "dcnrAttachAcceptDenied"
+func toAnalyticsName(kpi string) string {
+	// Split by underscore
+	parts := strings.Split(kpi, "_")
+	if len(parts) == 0 {
+		return strings.ToLower(kpi)
+	}
+
+	// Remove common prefixes like MME, SGW, etc.
+	prefixes := map[string]bool{
+		"MME": true, "SGW": true, "PGW": true, "HSS": true,
+		"SAEGW": true, "APN": true, "EGTPC": true, "SX": true,
+		"TAI": true, "SBC": true, "SGS": true, "DCCA": true,
+		"AMF": true, "SMF": true, "UPF": true,
+	}
+
+	// Skip prefix if it's a known schema prefix
+	startIdx := 0
+	if len(parts) > 0 && prefixes[strings.ToUpper(parts[0])] {
+		startIdx = 1
+	}
+
+	if startIdx >= len(parts) {
+		return strings.ToLower(kpi)
+	}
+
+	// Build camelCase
+	var result strings.Builder
+	for i := startIdx; i < len(parts); i++ {
+		part := strings.ToLower(parts[i])
+		if i == startIdx {
+			result.WriteString(part)
+		} else {
+			result.WriteString(capitalize(part))
+		}
+	}
+
+	return result.String()
+}
+
+// capitalize returns the string with the first letter capitalized
+func capitalize(s string) string {
+	if s == "" {
+		return s
+	}
+	runes := []rune(s)
+	runes[0] = unicode.ToUpper(runes[0])
+	return string(runes)
 }
