@@ -406,6 +406,48 @@ EXACT_RULES = {
 
 	fmt.Fprint(w, `}
 
+def clean_index(raw_index):
+    """
+    Clean the index value from JSON array notation and common prefixes.
+    Examples:
+      '["servname#MME-SVC"]' -> 'MME-SVC'
+      '["card#1,port#2"]' -> '1/2'
+      '["NOINDEX"]' -> ''
+      '["apn#internet,qci#5"]' -> 'internet/5'
+    """
+    if not raw_index:
+        return ""
+    
+    # Strip JSON array brackets: ["..."] -> ...
+    clean = raw_index
+    if clean.startswith('["') and clean.endswith('"]'):
+        clean = clean[2:-2]
+    elif clean.startswith('[') and clean.endswith(']'):
+        clean = clean[1:-1]
+    
+    # Handle NOINDEX
+    if clean == "NOINDEX" or clean == "":
+        return ""
+    
+    # Split by comma for multi-key indexes
+    parts = clean.split(",")
+    values = []
+    
+    for part in parts:
+        # Remove prefix before # (e.g., "servname#MME-SVC" -> "MME-SVC")
+        if "#" in part:
+            value = part.split("#", 1)[1]
+        else:
+            value = part
+        
+        # Strip quotes and whitespace
+        value = value.strip().strip('"').strip("'")
+        if value:
+            values.append(value)
+    
+    # Join multiple values with /
+    return "/".join(values)
+
 def apply(metric):
     kpi = metric.name
     schema = metric.tags.get("schema", "")
@@ -420,13 +462,16 @@ def apply(metric):
     object_type_base = "cisco-mobilitycore-pm-" + schema
     object_type = object_type_base + suffix
     
+    # Clean the index value
+    clean_idx = clean_index(index)
+    
     # Build session identifiers
-    if schema == "p2p":
-        session_name = device + "_" + object_type
-        session_id = node_id + "_" + object_type
+    if schema == "p2p" or clean_idx == "":
+        session_name = device
+        session_id = node_id
     else:
-        session_name = device + "_" + index + "_" + object_type
-        session_id = node_id + "_" + index + "_" + object_type
+        session_name = device + " / " + clean_idx
+        session_id = node_id + "_" + clean_idx
     
     metric.tags["sessionName"] = session_name
     metric.tags["sessionId"] = session_id
@@ -454,8 +499,8 @@ def apply(metric):
     node_id = metric.tags.get("node_id", "")
     
     object_type = "cisco-mobilitycore-pm-" + schema
-    session_name = device + "_" + object_type
-    session_id = node_id + "_" + object_type
+    session_name = device
+    session_id = node_id
     
     metric.tags["sessionName"] = session_name
     metric.tags["sessionId"] = session_id
