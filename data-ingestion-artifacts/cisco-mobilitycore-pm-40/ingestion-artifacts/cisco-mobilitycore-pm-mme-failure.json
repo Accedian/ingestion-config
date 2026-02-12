@@ -1,0 +1,307 @@
+{
+    "_id": "cisco-cisco-mobilitycore-pm-mme-failure",
+    "customMetrics": null,
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-mme-failure",
+    "dictionaryType": "global",
+    "dimensions": [
+        {
+            "analyticsName": "monitoredObjectId",
+            "dataType": "string",
+            "rawName": "monitoredObjectId"
+        },
+        {
+            "analyticsName": "monitoredObjectName",
+            "dataType": "string",
+            "rawName": "monitoredObjectName"
+        },
+        {
+            "analyticsName": "timestamp",
+            "dataType": "long",
+            "rawName": "timestamp"
+        },
+        {
+            "analyticsName": "direction",
+            "dataType": "integer",
+            "rawName": "direction"
+        },
+        {
+            "analyticsName": "agentId",
+            "dataType": "string",
+            "rawName": "agentId"
+        },
+        {
+            "analyticsName": "agentName",
+            "dataType": "string",
+            "rawName": "agentName"
+        },
+        {
+            "analyticsName": "agentType",
+            "dataType": "string",
+            "rawName": "agentType"
+        },
+        {
+            "analyticsName": "host",
+            "dataType": "string",
+            "rawName": "host"
+        },
+        {
+            "analyticsName": "index",
+            "dataType": "string",
+            "rawName": "index"
+        },
+        {
+            "analyticsName": "node_id",
+            "dataType": "string",
+            "rawName": "node_id"
+        },
+        {
+            "analyticsName": "objectType",
+            "dataType": "string",
+            "rawName": "objectType"
+        },
+        {
+            "analyticsName": "schema",
+            "dataType": "string",
+            "rawName": "schema"
+        },
+        {
+            "analyticsName": "sessionId",
+            "dataType": "string",
+            "rawName": "sessionId"
+        },
+        {
+            "analyticsName": "sessionName",
+            "dataType": "string",
+            "rawName": "sessionName"
+        },
+        {
+            "analyticsName": "source_ip",
+            "dataType": "string",
+            "rawName": "source_ip"
+        }
+    ],
+    "metricType": "timeseries",
+    "metrics": [
+        {
+            "analyticsName": "emmAttachRejectDecodeFailure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "EMM_Attach_Reject_Decode_Failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "emmAttachRejectEpsNonEpsNotAllowed",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "EMM_Attach_Reject_EPS_Non_EPS_Not_Allowed",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "emmAttachRejectEpsNotAllowed",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "EMM_Attach_Reject_EPS_Not_Allowed",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "emmAttachRejectEsmFailure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "EMM_Attach_Reject_ESM_Failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "emmAttachRejectImeiNotAccept",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "EMM_Attach_Reject_IMEI_Not_Accept",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "emmAttachRejectImsiUnknownHss",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "EMM_Attach_Reject_IMSI_Unknown_HSS",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "emmAttachRejectImplicitDetach",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "EMM_Attach_Reject_Implicit_Detach",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "emmAttachRejectNetworkFailure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "EMM_Attach_Reject_Network_Failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "emmAttachRejectNoEpsServicePlmn",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "EMM_Attach_Reject_No_EPS_Service_PLMN",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "emmAttachRejectNoSuitableCellTa",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "EMM_Attach_Reject_No_Suitable_Cell_TA",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "emmAttachRejectPlmnNotAllowed",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "EMM_Attach_Reject_PLMN_Not_Allowed",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "emmAttachRejectRoamingRestrictTa",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "EMM_Attach_Reject_Roaming_Restrict_TA",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "emmAttachRejectTaNotAllowed",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "EMM_Attach_Reject_TA_Not_Allowed",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "emmAttachRejectIllegalMe",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "EMM_Attach_Reject_illegal_ME",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "emmAttachRejectIllegalUe",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "EMM_Attach_Reject_illegal_UE",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "attachCombinedgutilocalfailures",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Attach_CombinedGUTILocalFailures",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "erabModificationIndicationBearLevelFailures",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_ERAB_Modification_Indication_Bear_Level_Failures",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pathUpdateFailures",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Path_Update_Failures",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "serviceRequestRejectNocellsinta",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Service_Request_Reject_NoCellsInTA",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "serviceRequestRejectNoepsbearer",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Service_Request_Reject_NoEPSBearer",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "serviceRequestRejectNoroaminginta",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Service_Request_Reject_NoRoamingInTA",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "serviceRequestRejectNotauthorizedcsg",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Service_Request_Reject_NotAuthorizedCSG",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "serviceRequestRejectTanotallowed",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Service_Request_Reject_TANotAllowed",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "ueIdentityUnknown",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "UE_Identity_Unknown",
+            "unit": "value"
+        }
+    ],
+    "objectType": "cisco-mobilitycore-pm-mme-failure",
+    "tenantId": "",
+    "vendor": "cisco",
+    "id": "cisco-cisco-mobilitycore-pm-mme-failure",
+    "type": "ingestionDictionaries"
+}

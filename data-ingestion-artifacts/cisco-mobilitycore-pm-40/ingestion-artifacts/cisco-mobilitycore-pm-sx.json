@@ -1,0 +1,127 @@
+{
+    "_id": "cisco-cisco-mobilitycore-pm-sx",
+    "customMetrics": null,
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-sx",
+    "dictionaryType": "global",
+    "dimensions": [
+        {
+            "analyticsName": "monitoredObjectId",
+            "dataType": "string",
+            "rawName": "monitoredObjectId"
+        },
+        {
+            "analyticsName": "monitoredObjectName",
+            "dataType": "string",
+            "rawName": "monitoredObjectName"
+        },
+        {
+            "analyticsName": "timestamp",
+            "dataType": "long",
+            "rawName": "timestamp"
+        },
+        {
+            "analyticsName": "direction",
+            "dataType": "integer",
+            "rawName": "direction"
+        },
+        {
+            "analyticsName": "agentId",
+            "dataType": "string",
+            "rawName": "agentId"
+        },
+        {
+            "analyticsName": "agentName",
+            "dataType": "string",
+            "rawName": "agentName"
+        },
+        {
+            "analyticsName": "agentType",
+            "dataType": "string",
+            "rawName": "agentType"
+        },
+        {
+            "analyticsName": "host",
+            "dataType": "string",
+            "rawName": "host"
+        },
+        {
+            "analyticsName": "index",
+            "dataType": "string",
+            "rawName": "index"
+        },
+        {
+            "analyticsName": "node_id",
+            "dataType": "string",
+            "rawName": "node_id"
+        },
+        {
+            "analyticsName": "objectType",
+            "dataType": "string",
+            "rawName": "objectType"
+        },
+        {
+            "analyticsName": "schema",
+            "dataType": "string",
+            "rawName": "schema"
+        },
+        {
+            "analyticsName": "sessionId",
+            "dataType": "string",
+            "rawName": "sessionId"
+        },
+        {
+            "analyticsName": "sessionName",
+            "dataType": "string",
+            "rawName": "sessionName"
+        },
+        {
+            "analyticsName": "source_ip",
+            "dataType": "string",
+            "rawName": "source_ip"
+        }
+    ],
+    "metricType": "timeseries",
+    "metrics": [
+        {
+            "analyticsName": "retransmitSessionEstablishmentRequestRecvd",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Retransmit_Session_Establishment_Request_Recvd",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "retransmitSessionEstablishmentRequestSent",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Retransmit_Session_Establishment_Request_Sent",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "sessionEstablishmentRequestsNoResponse",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Session_Establishment_Requests_No_Response",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "serviceCallEventsPerSecond",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Sx_Service_Call_Events_Per_Second",
+            "unit": "value"
+        }
+    ],
+    "objectType": "cisco-mobilitycore-pm-sx",
+    "tenantId": "",
+    "vendor": "cisco",
+    "id": "cisco-cisco-mobilitycore-pm-sx",
+    "type": "ingestionDictionaries"
+}

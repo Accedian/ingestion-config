@@ -2,3 +2,4 @@
 .DS_Store
 working-directory
 *.base64
+.vscode

@@ -1,0 +1,163 @@
+{
+    "_id": "cisco-cisco-mobilitycore-pm-apn",
+    "customMetrics": null,
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-apn",
+    "dictionaryType": "global",
+    "dimensions": [
+        {
+            "analyticsName": "monitoredObjectId",
+            "dataType": "string",
+            "rawName": "monitoredObjectId"
+        },
+        {
+            "analyticsName": "monitoredObjectName",
+            "dataType": "string",
+            "rawName": "monitoredObjectName"
+        },
+        {
+            "analyticsName": "timestamp",
+            "dataType": "long",
+            "rawName": "timestamp"
+        },
+        {
+            "analyticsName": "direction",
+            "dataType": "integer",
+            "rawName": "direction"
+        },
+        {
+            "analyticsName": "agentId",
+            "dataType": "string",
+            "rawName": "agentId"
+        },
+        {
+            "analyticsName": "agentName",
+            "dataType": "string",
+            "rawName": "agentName"
+        },
+        {
+            "analyticsName": "agentType",
+            "dataType": "string",
+            "rawName": "agentType"
+        },
+        {
+            "analyticsName": "host",
+            "dataType": "string",
+            "rawName": "host"
+        },
+        {
+            "analyticsName": "index",
+            "dataType": "string",
+            "rawName": "index"
+        },
+        {
+            "analyticsName": "node_id",
+            "dataType": "string",
+            "rawName": "node_id"
+        },
+        {
+            "analyticsName": "objectType",
+            "dataType": "string",
+            "rawName": "objectType"
+        },
+        {
+            "analyticsName": "schema",
+            "dataType": "string",
+            "rawName": "schema"
+        },
+        {
+            "analyticsName": "sessionId",
+            "dataType": "string",
+            "rawName": "sessionId"
+        },
+        {
+            "analyticsName": "sessionName",
+            "dataType": "string",
+            "rawName": "sessionName"
+        },
+        {
+            "analyticsName": "source_ip",
+            "dataType": "string",
+            "rawName": "source_ip"
+        }
+    ],
+    "metricType": "timeseries",
+    "metrics": [
+        {
+            "analyticsName": "currentNumberOfSessions",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "APN_Current_Number_of_Sessions",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "packetDropRatio",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "APN_Packet_Drop_ratio",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "packetDropsTtlexceeded",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "APN_Packet_Drops_TTLExceeded",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "throughputMbps",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "APN_Throughput_Mbps",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "totalNumberOfActiveDedicatedBearers",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "APN_Total_Number_Of_Active_Dedicated_Bearers",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "totalNumberOfActiveDefaultBearers",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "APN_Total_Number_Of_Active_Default_Bearers",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "totalNumberOfActiveIpv4Sessions",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "APN_Total_Number_Of_Active_IPv4_Sessions",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "totalNumberOfActiveIpv6Sessions",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "APN_Total_Number_Of_Active_IPv6_Sessions",
+            "unit": "value"
+        }
+    ],
+    "objectType": "cisco-mobilitycore-pm-apn",
+    "tenantId": "",
+    "vendor": "cisco",
+    "id": "cisco-cisco-mobilitycore-pm-apn",
+    "type": "ingestionDictionaries"
+}

@@ -1,0 +1,361 @@
+{
+    "_id": "cisco-cisco-mobilitycore-pm-egtpc",
+    "customMetrics": null,
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-egtpc",
+    "dictionaryType": "global",
+    "dimensions": [
+        {
+            "analyticsName": "monitoredObjectId",
+            "dataType": "string",
+            "rawName": "monitoredObjectId"
+        },
+        {
+            "analyticsName": "monitoredObjectName",
+            "dataType": "string",
+            "rawName": "monitoredObjectName"
+        },
+        {
+            "analyticsName": "timestamp",
+            "dataType": "long",
+            "rawName": "timestamp"
+        },
+        {
+            "analyticsName": "direction",
+            "dataType": "integer",
+            "rawName": "direction"
+        },
+        {
+            "analyticsName": "agentId",
+            "dataType": "string",
+            "rawName": "agentId"
+        },
+        {
+            "analyticsName": "agentName",
+            "dataType": "string",
+            "rawName": "agentName"
+        },
+        {
+            "analyticsName": "agentType",
+            "dataType": "string",
+            "rawName": "agentType"
+        },
+        {
+            "analyticsName": "host",
+            "dataType": "string",
+            "rawName": "host"
+        },
+        {
+            "analyticsName": "index",
+            "dataType": "string",
+            "rawName": "index"
+        },
+        {
+            "analyticsName": "node_id",
+            "dataType": "string",
+            "rawName": "node_id"
+        },
+        {
+            "analyticsName": "objectType",
+            "dataType": "string",
+            "rawName": "objectType"
+        },
+        {
+            "analyticsName": "schema",
+            "dataType": "string",
+            "rawName": "schema"
+        },
+        {
+            "analyticsName": "sessionId",
+            "dataType": "string",
+            "rawName": "sessionId"
+        },
+        {
+            "analyticsName": "sessionName",
+            "dataType": "string",
+            "rawName": "sessionName"
+        },
+        {
+            "analyticsName": "source_ip",
+            "dataType": "string",
+            "rawName": "source_ip"
+        }
+    ],
+    "metricType": "timeseries",
+    "metrics": [
+        {
+            "analyticsName": "createBearerResponseDeniedContexnotfound",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Bearer_Response_Denied_ContexNotFound",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createBearerResponseDeniedInvalidremotepeerreply",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Bearer_Response_Denied_InvalidRemotePeerReply",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createBearerResponseDeniedNoresourcesavl",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Bearer_Response_Denied_NOResourcesAvl",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createBearerResponseDeniedNoresponse",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Bearer_Response_Denied_NoResponse",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createBearerResponseDeniedRequestrejected",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Bearer_Response_Denied_RequestRejected",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createBearerResponseDeniedSvcnotsupported",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Bearer_Response_Denied_SVCNotSupported",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createBearerResponseDeniedUenotresponding",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Bearer_Response_Denied_UENotResponding",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createBearerResponseDeniedUerefuses",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Bearer_Response_Denied_UERefuses",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createBearerResponseDeniedUnabletopageuesuspend",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Bearer_Response_Denied_UnableToPageUESuspend",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createSessionResponseDeniedApnaccessdenied",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Session_Response_Denied_APNAccessDenied",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createSessionResponseDeniedApnrsttypeincompatible",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Session_Response_Denied_APNRstTypeIncompatible",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createSessionResponseDeniedConditionaliemissing",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Session_Response_Denied_ConditionalIEMissing",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createSessionResponseDeniedContextnotfound",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Session_Response_Denied_ContextNotFound",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createSessionResponseDeniedImsinotknown",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Session_Response_Denied_IMSINotKnown",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createSessionResponseDeniedInvalidemsgformat",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Session_Response_Denied_InvalideMsgFormat",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createSessionResponseDeniedMandatoryiemissing",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Session_Response_Denied_MandatoryIEMissing",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createSessionResponseDeniedNores",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Session_Response_Denied_NoRes",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createSessionResponseDeniedOthercauses",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Session_Response_Denied_OtherCauses",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createSessionResponseDeniedPrefpdntypeunsupported",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Session_Response_Denied_PrefPDNTypeUnsupported",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createSessionResponseDeniedRequestrejected",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Session_Response_Denied_RequestRejected",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createSessionResponseDeniedServiceDenied",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Session_Response_Denied_Service_denied",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createSessionResponseDeniedUserauthfailed",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Session_Response_Denied_UserAuthFailed",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "createSessionResponseDiscarded",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Create_Session_Response_Discarded",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "bearerModificationSuccessRate",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "EGTPC_Bearer_Modification_Success_Rate",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "modifyBearerSuccessRate",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Modify_Bearer_Success_Rate",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "egtpcS11CreateSessionReceivedAttempts",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "SAEGW_EGTPC_S11_Create_Session_Received_Attempts",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "egtpcS11CreateSessionResponseSuccess",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "SAEGW_EGTPC_S11_Create_Session_Response_Success",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "egtpcS11DeleteBearerRequestAttempts",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "SAEGW_EGTPC_S11_Delete_Bearer_Request_Attempts",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "egtpcS11DeleteSessionRequestAttempts",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "SAEGW_EGTPC_S11_Delete_Session_Request_Attempts",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "totalNumberDdnRequestReceived",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Total_Number_DDN_Request_Received",
+            "unit": "value"
+        }
+    ],
+    "objectType": "cisco-mobilitycore-pm-egtpc",
+    "tenantId": "",
+    "vendor": "cisco",
+    "id": "cisco-cisco-mobilitycore-pm-egtpc",
+    "type": "ingestionDictionaries"
+}

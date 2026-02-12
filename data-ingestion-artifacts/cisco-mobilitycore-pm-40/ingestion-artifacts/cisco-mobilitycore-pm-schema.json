@@ -1,0 +1,361 @@
+{
+    "_id": "cisco-cisco-mobilitycore-pm-schema",
+    "customMetrics": null,
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-schema",
+    "dictionaryType": "global",
+    "dimensions": [
+        {
+            "analyticsName": "monitoredObjectId",
+            "dataType": "string",
+            "rawName": "monitoredObjectId"
+        },
+        {
+            "analyticsName": "monitoredObjectName",
+            "dataType": "string",
+            "rawName": "monitoredObjectName"
+        },
+        {
+            "analyticsName": "timestamp",
+            "dataType": "long",
+            "rawName": "timestamp"
+        },
+        {
+            "analyticsName": "direction",
+            "dataType": "integer",
+            "rawName": "direction"
+        },
+        {
+            "analyticsName": "agentId",
+            "dataType": "string",
+            "rawName": "agentId"
+        },
+        {
+            "analyticsName": "agentName",
+            "dataType": "string",
+            "rawName": "agentName"
+        },
+        {
+            "analyticsName": "agentType",
+            "dataType": "string",
+            "rawName": "agentType"
+        },
+        {
+            "analyticsName": "host",
+            "dataType": "string",
+            "rawName": "host"
+        },
+        {
+            "analyticsName": "index",
+            "dataType": "string",
+            "rawName": "index"
+        },
+        {
+            "analyticsName": "node_id",
+            "dataType": "string",
+            "rawName": "node_id"
+        },
+        {
+            "analyticsName": "objectType",
+            "dataType": "string",
+            "rawName": "objectType"
+        },
+        {
+            "analyticsName": "schema",
+            "dataType": "string",
+            "rawName": "schema"
+        },
+        {
+            "analyticsName": "sessionId",
+            "dataType": "string",
+            "rawName": "sessionId"
+        },
+        {
+            "analyticsName": "sessionName",
+            "dataType": "string",
+            "rawName": "sessionName"
+        },
+        {
+            "analyticsName": "source_ip",
+            "dataType": "string",
+            "rawName": "source_ip"
+        }
+    ],
+    "metricType": "timeseries",
+    "metrics": [
+        {
+            "analyticsName": "callEventsPerSecond",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Call_Events_Per_Second",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "currentNoOfSessions",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Current_No_Of_Sessions",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "sessionSetupTime100ms",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Session_Setup_Time_100ms",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "sessionSetupTime1sec",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Session_Setup_Time_1sec",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "sessionSetupTime200ms",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Session_Setup_Time_200ms",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "sessionSetupTime2sec",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Session_Setup_Time_2sec",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "sessionSetupTime300ms",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Session_Setup_Time_300ms",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "sessionSetupTime3sec",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Session_Setup_Time_3sec",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "sessionSetupTime400ms",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Session_Setup_Time_400ms",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "sessionSetupTime4sec",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Session_Setup_Time_4sec",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "sessionSetupTime500ms",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Session_Setup_Time_500ms",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "sessionSetupTime600ms",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Session_Setup_Time_600ms",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "sessionSetupTime6sec",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Session_Setup_Time_6sec",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "sessionSetupTime700ms",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Session_Setup_Time_700ms",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "sessionSetupTime800ms",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Session_Setup_Time_800ms",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "sessionSetupTime900ms",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Session_Setup_Time_900ms",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "systemCallsActive",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "System_Calls_Active",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "systemCallsActiveLte",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "System_Calls_Active_LTE",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "systemCallsConnected",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "System_Calls_Connected",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "systemCallsConnectedLte",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "System_Calls_Connected_LTE",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "systemCallsFailed",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "System_Calls_Failed",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "systemCallsRejected",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "System_Calls_Rejected",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "systemDlPacketAvgSizeBytes",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "System_DL_Packet_Avg_Size_Bytes",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "systemDlThroughputMbps",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "System_DL_Throughput_Mbps",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "systemThroughputMbps",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "System_Throughput_Mbps",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "systemTotalDataVolumeMb",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "System_Total_Data_Volume_MB",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "systemTotalPacketsReceived",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "System_Total_Packets_Received",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "systemTotalPacketsSent",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "System_Total_Packets_Sent",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "systemUlPacketAvgSizeBytes",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "System_UL_Packet_Avg_Size_Bytes",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "systemUlThroughputMbps",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "System_UL_Throughput_Mbps",
+            "unit": "value"
+        }
+    ],
+    "objectType": "cisco-mobilitycore-pm-schema",
+    "tenantId": "",
+    "vendor": "cisco",
+    "id": "cisco-cisco-mobilitycore-pm-schema",
+    "type": "ingestionDictionaries"
+}
