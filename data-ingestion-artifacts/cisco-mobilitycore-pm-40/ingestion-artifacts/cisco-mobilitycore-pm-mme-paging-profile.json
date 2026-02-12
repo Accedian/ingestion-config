@@ -1,0 +1,271 @@
+{
+    "_id": "cisco-cisco-mobilitycore-pm-mme-paging-profile",
+    "customMetrics": null,
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-mme-paging-profile",
+    "dictionaryType": "global",
+    "dimensions": [
+        {
+            "analyticsName": "monitoredObjectId",
+            "dataType": "string",
+            "rawName": "monitoredObjectId"
+        },
+        {
+            "analyticsName": "monitoredObjectName",
+            "dataType": "string",
+            "rawName": "monitoredObjectName"
+        },
+        {
+            "analyticsName": "timestamp",
+            "dataType": "long",
+            "rawName": "timestamp"
+        },
+        {
+            "analyticsName": "direction",
+            "dataType": "integer",
+            "rawName": "direction"
+        },
+        {
+            "analyticsName": "agentId",
+            "dataType": "string",
+            "rawName": "agentId"
+        },
+        {
+            "analyticsName": "agentName",
+            "dataType": "string",
+            "rawName": "agentName"
+        },
+        {
+            "analyticsName": "agentType",
+            "dataType": "string",
+            "rawName": "agentType"
+        },
+        {
+            "analyticsName": "host",
+            "dataType": "string",
+            "rawName": "host"
+        },
+        {
+            "analyticsName": "index",
+            "dataType": "string",
+            "rawName": "index"
+        },
+        {
+            "analyticsName": "node_id",
+            "dataType": "string",
+            "rawName": "node_id"
+        },
+        {
+            "analyticsName": "objectType",
+            "dataType": "string",
+            "rawName": "objectType"
+        },
+        {
+            "analyticsName": "schema",
+            "dataType": "string",
+            "rawName": "schema"
+        },
+        {
+            "analyticsName": "sessionId",
+            "dataType": "string",
+            "rawName": "sessionId"
+        },
+        {
+            "analyticsName": "sessionName",
+            "dataType": "string",
+            "rawName": "sessionName"
+        },
+        {
+            "analyticsName": "source_ip",
+            "dataType": "string",
+            "rawName": "source_ip"
+        }
+    ],
+    "metricType": "timeseries",
+    "metrics": [
+        {
+            "analyticsName": "pagingProfileStage1Attempt",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage1_Attempt",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage1Failure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage1_Failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage1Skipped",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage1_Skipped",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage1Success",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage1_Success",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage2Attempt",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage2_Attempt",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage2Failure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage2_Failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage2Skipped",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage2_Skipped",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage2Success",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage2_Success",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage3Attempt",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage3_Attempt",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage3Failure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage3_Failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage3Skipped",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage3_Skipped",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage3Success",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage3_Success",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage4Attempt",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage4_Attempt",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage4Failure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage4_Failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage4Skipped",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage4_Skipped",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage4Success",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage4_Success",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage5Attempt",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage5_Attempt",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage5Failure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage5_Failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage5Skipped",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage5_Skipped",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage5Success",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage5_Success",
+            "unit": "value"
+        }
+    ],
+    "objectType": "cisco-mobilitycore-pm-mme-paging-profile",
+    "tenantId": "",
+    "vendor": "cisco",
+    "id": "cisco-cisco-mobilitycore-pm-mme-paging-profile",
+    "type": "ingestionDictionaries"
+}

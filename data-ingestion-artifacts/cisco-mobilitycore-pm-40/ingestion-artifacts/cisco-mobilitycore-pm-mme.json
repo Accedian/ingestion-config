@@ -1,0 +1,325 @@
+{
+    "_id": "cisco-cisco-mobilitycore-pm-mme",
+    "customMetrics": null,
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-mme",
+    "dictionaryType": "global",
+    "dimensions": [
+        {
+            "analyticsName": "monitoredObjectId",
+            "dataType": "string",
+            "rawName": "monitoredObjectId"
+        },
+        {
+            "analyticsName": "monitoredObjectName",
+            "dataType": "string",
+            "rawName": "monitoredObjectName"
+        },
+        {
+            "analyticsName": "timestamp",
+            "dataType": "long",
+            "rawName": "timestamp"
+        },
+        {
+            "analyticsName": "direction",
+            "dataType": "integer",
+            "rawName": "direction"
+        },
+        {
+            "analyticsName": "agentId",
+            "dataType": "string",
+            "rawName": "agentId"
+        },
+        {
+            "analyticsName": "agentName",
+            "dataType": "string",
+            "rawName": "agentName"
+        },
+        {
+            "analyticsName": "agentType",
+            "dataType": "string",
+            "rawName": "agentType"
+        },
+        {
+            "analyticsName": "host",
+            "dataType": "string",
+            "rawName": "host"
+        },
+        {
+            "analyticsName": "index",
+            "dataType": "string",
+            "rawName": "index"
+        },
+        {
+            "analyticsName": "node_id",
+            "dataType": "string",
+            "rawName": "node_id"
+        },
+        {
+            "analyticsName": "objectType",
+            "dataType": "string",
+            "rawName": "objectType"
+        },
+        {
+            "analyticsName": "schema",
+            "dataType": "string",
+            "rawName": "schema"
+        },
+        {
+            "analyticsName": "sessionId",
+            "dataType": "string",
+            "rawName": "sessionId"
+        },
+        {
+            "analyticsName": "sessionName",
+            "dataType": "string",
+            "rawName": "sessionName"
+        },
+        {
+            "analyticsName": "source_ip",
+            "dataType": "string",
+            "rawName": "source_ip"
+        }
+    ],
+    "metricType": "timeseries",
+    "metrics": [
+        {
+            "analyticsName": "epsConnMgmtEventNwInititated",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "EPS_Conn_Mgmt_Event_NW_Inititated",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "epsConnMgmtEventUeInitiated",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "EPS_Conn_Mgmt_Event_UE_Initiated",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "epsMobilityMgmtX2Handover",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "EPS_Mobility_Mgmt_X2_Handover",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "ingressPagingPerSubscriberPerHour",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Ingress_Paging_per_Subscriber_per_Hour",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "intraMmeTauAccept",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Intra_MME_TAU_Accept",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "intraMmeTauReject",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Intra_MME_TAU_Reject",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "connectCurrentCalls",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Connect_Current_Calls",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "idleCurrentCalls",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Idle_Current_Calls",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "nasAuthenticationAttempts",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_NAS_Authentication_Attempts",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "nasAuthenticationSuccess",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_NAS_Authentication_Success",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "s1apErabSetupAttempts",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_S1AP_ERAB_Setup_Attempts",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "s1apErabSetupSuccess",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_S1AP_ERAB_Setup_Success",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "s1NasCombineAttachAttempts",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_S1_NAS_Combine_Attach_Attempts",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "s1NasCombineAttachSuccess",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_S1_NAS_Combine_Attach_Success",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "s1TauAttempts",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_S1_TAU_Attempts",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "s1TauSuccess",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_S1_TAU_Success",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "totalAttachCurrentSessions",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Total_Attach_Current_Sessions",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "totalNumberCurrentCalls",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Total_Number_Current_Calls",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "visitingForeignSubscribersAttached",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Visiting_Foreign_Subscribers_Attached",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "visitingForeignSubscribersConnected",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Visiting_Foreign_Subscribers_Connected",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "visitingForeignSubscribersIdle",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Visiting_Foreign_Subscribers_Idle",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "intraNodeTauRejectWithPlmnnotallow",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_intra_node_TAU_reject_with_plmnnotallow",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingPsSuccessLastEnb",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Paging_PS_success_Last_enb",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingPsSuccessLastTai",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Paging_PS_success_Last_tai",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingPsSuccessTaiList",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "Paging_PS_success_tai_list",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "s1PagingEvents",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "S1_Paging_Events",
+            "unit": "value"
+        }
+    ],
+    "objectType": "cisco-mobilitycore-pm-mme",
+    "tenantId": "",
+    "vendor": "cisco",
+    "id": "cisco-cisco-mobilitycore-pm-mme",
+    "type": "ingestionDictionaries"
+}

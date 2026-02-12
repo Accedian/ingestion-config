@@ -1,0 +1,226 @@
+{
+    "_id": "cisco-cisco-mobilitycore-pm-mme-pdn",
+    "customMetrics": null,
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-mme-pdn",
+    "dictionaryType": "global",
+    "dimensions": [
+        {
+            "analyticsName": "monitoredObjectId",
+            "dataType": "string",
+            "rawName": "monitoredObjectId"
+        },
+        {
+            "analyticsName": "monitoredObjectName",
+            "dataType": "string",
+            "rawName": "monitoredObjectName"
+        },
+        {
+            "analyticsName": "timestamp",
+            "dataType": "long",
+            "rawName": "timestamp"
+        },
+        {
+            "analyticsName": "direction",
+            "dataType": "integer",
+            "rawName": "direction"
+        },
+        {
+            "analyticsName": "agentId",
+            "dataType": "string",
+            "rawName": "agentId"
+        },
+        {
+            "analyticsName": "agentName",
+            "dataType": "string",
+            "rawName": "agentName"
+        },
+        {
+            "analyticsName": "agentType",
+            "dataType": "string",
+            "rawName": "agentType"
+        },
+        {
+            "analyticsName": "host",
+            "dataType": "string",
+            "rawName": "host"
+        },
+        {
+            "analyticsName": "index",
+            "dataType": "string",
+            "rawName": "index"
+        },
+        {
+            "analyticsName": "node_id",
+            "dataType": "string",
+            "rawName": "node_id"
+        },
+        {
+            "analyticsName": "objectType",
+            "dataType": "string",
+            "rawName": "objectType"
+        },
+        {
+            "analyticsName": "schema",
+            "dataType": "string",
+            "rawName": "schema"
+        },
+        {
+            "analyticsName": "sessionId",
+            "dataType": "string",
+            "rawName": "sessionId"
+        },
+        {
+            "analyticsName": "sessionName",
+            "dataType": "string",
+            "rawName": "sessionName"
+        },
+        {
+            "analyticsName": "source_ip",
+            "dataType": "string",
+            "rawName": "source_ip"
+        }
+    ],
+    "metricType": "timeseries",
+    "metrics": [
+        {
+            "analyticsName": "pdnConnectivityAttempts",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_PDN_Connectivity_Attempts",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pdnConnectivityRejectApnrestrict",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_PDN_Connectivity_Reject_APNRestrict",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pdnConnectivityRejectApnunknown",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_PDN_Connectivity_Reject_APNUnknown",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pdnConnectivityRejectAuthfailed",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_PDN_Connectivity_Reject_AuthFailed",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pdnConnectivityRejectInvalidbearerid",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_PDN_Connectivity_Reject_InvalidBearerID",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pdnConnectivityRejectInvalidpti",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_PDN_Connectivity_Reject_InvalidPTI",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pdnConnectivityRejectMultiplepdnnotallowed",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_PDN_Connectivity_Reject_MultiplePDNNotAllowed",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pdnConnectivityRejectOdb",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_PDN_Connectivity_Reject_ODB",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pdnConnectivityRejectPdntypeunknown",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_PDN_Connectivity_Reject_PDNTypeUnknown",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pdnConnectivityRejectPgwreject",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_PDN_Connectivity_Reject_PGWReject",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pdnConnectivityRejectPtialreadyinuse",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_PDN_Connectivity_Reject_PTIAlreadyinUse",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pdnConnectivityRejectSvcnotsubscribed",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_PDN_Connectivity_Reject_SVCNotSubscribed",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pdnConnectivityRejectSvcnotsupported",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_PDN_Connectivity_Reject_SVCNotSupported",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pdnConnectivityRejectSvcoutoforder",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_PDN_Connectivity_Reject_SVCOutofOrder",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pdnConnectivitySuccess",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_PDN_Connectivity_Success",
+            "unit": "value"
+        }
+    ],
+    "objectType": "cisco-mobilitycore-pm-mme-pdn",
+    "tenantId": "",
+    "vendor": "cisco",
+    "id": "cisco-cisco-mobilitycore-pm-mme-pdn",
+    "type": "ingestionDictionaries"
+}
