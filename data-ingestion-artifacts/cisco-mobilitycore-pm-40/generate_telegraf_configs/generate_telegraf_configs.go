@@ -621,7 +621,7 @@ func writeTagLimit(w *bufio.Writer) {
   order = 11
   namedrop = ["internal_*"]
   limit = 10
-  keep = ["sessionId", "sessionName", "objectType", "direction", "source_ip"]
+  keep = ["sessionId", "sessionName", "objectType", "direction", "source_ip", "device"]
   [processors.tag_limit.tagdrop]
   schema = ["p2p",""]
 
