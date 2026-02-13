@@ -917,6 +917,7 @@ var standardDimensions = []DictionaryDim{
 	{AnalyticsName: "agentId", DataType: "string", RawName: "agentId"},
 	{AnalyticsName: "agentName", DataType: "string", RawName: "agentName"},
 	{AnalyticsName: "agentType", DataType: "string", RawName: "agentType"},
+	{AnalyticsName: "device", DataType: "string", RawName: "device"},
 	{AnalyticsName: "host", DataType: "string", RawName: "host"},
 	{AnalyticsName: "index", DataType: "string", RawName: "index"},
 	{AnalyticsName: "node_id", DataType: "string", RawName: "node_id"},

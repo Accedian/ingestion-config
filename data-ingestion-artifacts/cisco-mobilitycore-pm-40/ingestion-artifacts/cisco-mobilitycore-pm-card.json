@@ -40,6 +40,11 @@
             "rawName": "agentType"
         },
         {
+            "analyticsName": "device",
+            "dataType": "string",
+            "rawName": "device"
+        },
+        {
             "analyticsName": "host",
             "dataType": "string",
             "rawName": "host"
