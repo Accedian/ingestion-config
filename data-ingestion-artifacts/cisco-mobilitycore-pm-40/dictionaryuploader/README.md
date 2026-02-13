@@ -69,3 +69,7 @@ All dictionaries synchronized successfully!
 - `GET /api/v3/ingestion-dictionaries/{id}` - Fetch existing dictionary
 - `POST /api/v3/ingestion-dictionaries` - Create new dictionary
 - `PUT /api/v3/ingestion-dictionaries/{id}` - Update existing dictionary
+
+## Prerequisites
+
+- Go runtime (minimum version: **1.16**, tested with go1.25.7)
