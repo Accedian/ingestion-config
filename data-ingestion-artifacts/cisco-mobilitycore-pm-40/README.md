@@ -25,9 +25,15 @@ This script will:
 
 ### Step 3: Update Telemetry Collector Configuration
 
+This feature is designed to work with the latest version r25.07 of the TelemetryCollector;  make sure to deploy with the latest version when deploying with `docker compose up --pull always`.
+
 If you have an existing Telemetry Collector deployment, update its configuration to use the newly generated Telegraf configs from `collector_artifacts/`.
 
 Refer to the [Deploying Telemetry Collector in Docker](https://docs.accedian.io/docs/deploying-telemetry-collector-in-docker) guide for deployment instructions.
+
+Note: You must update the generated configuration for the proper value of `{{server_ip}}` in the [telegraf-starlark.conf](collector_artifacts/telegraf-starlark.conf) file. The entire configuration must be base64 encoded and used as the value for the updated TelemetryCollector config as outlined [here](https://docs.accedian.io/docs/telemetry-collector-output-to-kafka#configuring-the-telemetry-collector-to-output-to-kafka)
+
+Update API documentation: https://api.accedian.io/agent-orchestration.html#tag/AgentServiceV3/paths/~1api~1orchestrate~1v3~1agents~1configuration~1%7BagentId%7D/put
 
 ### Step 4: Upload Dictionaries to PCA
 
