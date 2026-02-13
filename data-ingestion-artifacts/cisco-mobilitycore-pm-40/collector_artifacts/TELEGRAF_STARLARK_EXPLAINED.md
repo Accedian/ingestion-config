@@ -18,14 +18,29 @@ This configuration is the **transformation layer** in the Telemetry Collector th
 └─────────────────┘    └─────────────────────────────────┘    └──────────────┘
 ```
 
+## Processing Pipeline
+
+The configuration processes metrics through several ordered stages:
+
+| Order | Processor | Purpose |
+|-------|-----------|---------|
+| 2 | Internal handler | Adds required tags to `internal_*` metrics |
+| 3 | Regex | Cleans index tag - removes `["` and `"]` brackets |
+| 4 | Strings | Cleans index tag - replaces commas with underscores |
+| 7 | KPI Splitting | Routes KPIs to objectTypes, builds session identifiers |
+| 8 | Rename | Renames `node_ip` to `source_ip` |
+| 9 | P2P Filter | Filters out `p2p_protocol#` objects |
+| 10 | KPI Limit Monitor | Monitors for unexpected KPIs exceeding 40 limit |
+| 11 | Tag Limit | Limits tags to required set |
+
 ## Key Transformations
 
 | Input (Raw) | Output (Normalized) | Purpose |
 |-------------|---------------------|---------|
 | `kpi` (metric name) | Used to lookup `objectType` suffix | Routes to correct **Ingestion Dictionary** |
 | `schema` + `suffix` | `objectType` | Links to the dictionary (e.g., `cisco-mobilitycore-pm-mme-failure`) |
-| `device` + `clean_index(index)` | `sessionName` | Human-readable **MonitoredObjectName** (e.g., `mme-node-1 / MME-SVC`) |
-| `node_id` + `clean_index(index)` | `sessionId` | Unique **MonitoredObjectId** |
+| `device` + `index` + `objectType` | `sessionName` | **MonitoredObjectName** (e.g., `mme-node-1_servname#MME-SVC_cisco-mobilitycore-pm-mme-sr`) |
+| `node_id` + `index` + `objectType` | `sessionId` | Unique **MonitoredObjectId** |
 
 ## The EXACT_RULES Dictionary
 
@@ -60,60 +75,39 @@ EXACT_RULES = {
 | `-dcnr` | `cisco-mobilitycore-pm-mme-dcnr` | Dual Connectivity NR metrics |
 | `-pdn` | `cisco-mobilitycore-pm-mme-pdn` | PDN connectivity metrics |
 
-## The `clean_index()` Helper Function
+## Index Cleaning (Pre-Starlark)
 
-The raw `index` values from Cisco Mobility Core come in JSON array format with prefixes. This function cleans them for human-readable sessionNames:
+Before the Starlark processor runs, the `index` tag is cleaned by two processors:
 
-```python
-def clean_index(raw_index):
-    """
-    Clean the index value from JSON array notation and common prefixes.
-    Examples:
-      '["servname#MME-SVC"]' -> 'MME-SVC'
-      '["card#1,port#2"]' -> '1/2'
-      '["NOINDEX"]' -> ''
-      '["apn#internet,qci#5"]' -> 'internet/5'
-    """
-    if not raw_index:
-        return ""
-    
-    # Strip JSON array brackets: ["..."] -> ...
-    clean = raw_index
-    if clean.startswith('["') and clean.endswith('"]'):
-        clean = clean[2:-2]
-    elif clean.startswith('[') and clean.endswith(']'):
-        clean = clean[1:-1]
-    
-    # Handle NOINDEX
-    if clean == "NOINDEX" or clean == "":
-        return ""
-    
-    # Split by comma for multi-key indexes
-    parts = clean.split(",")
-    values = []
-    
-    for part in parts:
-        # Remove prefix before # (e.g., "servname#MME-SVC" -> "MME-SVC")
-        if "#" in part:
-            value = part.split("#", 1)[1]
-        else:
-            value = part
-        
-        value = value.strip().strip('"').strip("'")
-        if value:
-            values.append(value)
-    
-    return "/".join(values)
+### 1. Regex Processor (order 3)
+Removes JSON array brackets from the index:
+```toml
+[[processors.regex]]
+  order = 3
+  [[processors.regex.tags]]
+    key = "index"
+    pattern = '^\["(.*?)"\]$'
+    replacement = '${1}'
+```
+
+### 2. Strings Processor (order 4)
+Replaces commas with underscores:
+```toml
+[[processors.strings]]
+  order = 4
+  [[processors.strings.replace]]
+    tag = "index"
+    old = ","
+    new = "_"
 ```
 
 ### Index Cleaning Examples
 
-| Raw Index | Cleaned Value | Notes |
-|-----------|--------------|-------|
-| `["servname#MME-SVC"]` | `MME-SVC` | Removes JSON brackets and `servname#` prefix |
-| `["card#1,port#2"]` | `1/2` | Handles multi-key, joins with `/` |
-| `["NOINDEX"]` | *(empty)* | Special case - no index needed |
-| `["apn#internet,qci#5"]` | `internet/5` | Multiple values extracted |
+| Raw Index | After Regex | After Strings |
+|-----------|-------------|---------------|
+| `["servname#MME-SVC"]` | `servname#MME-SVC` | `servname#MME-SVC` |
+| `["card#1,port#2"]` | `card#1,port#2` | `card#1_port#2` |
+| `["apn#internet,qci#5"]` | `apn#internet,qci#5` | `apn#internet_qci#5` |
 
 ## The `apply()` Function - Line by Line
 
@@ -122,28 +116,22 @@ def apply(metric):
     kpi = metric.name                          # The KPI name (e.g., "MME_Overall_Attach_Success_Rate")
     schema = metric.tags.get("schema", "")     # DIMENSION: "mme", "sgw", "pgw", "p2p"
     device = metric.tags.get("device", "")     # DIMENSION: device hostname
-    index = metric.tags.get("index", "")       # DIMENSION: interface/cell index (raw JSON format)
+    index = metric.tags.get("index", "")       # DIMENSION: cleaned index value
     node_id = metric.tags.get("node_id", "")   # DIMENSION: unique node identifier
     
     # Step 1: Determine objectType suffix from KPI name
     suffix = EXACT_RULES.get(kpi, "")          # "-failure", "-sr", "" (base), etc.
     
     # Step 2: Build objectType = "cisco-mobilitycore-pm-" + schema + suffix
-    object_type = "cisco-mobilitycore-pm-" + schema + suffix
-    # Example: "cisco-mobilitycore-pm-mme-failure"
+    object_type_base = "cisco-mobilitycore-pm-" + schema
+    object_type = object_type_base + suffix
+    # Example: "cisco-mobilitycore-pm-mme-sr"
     
-    # Step 3: Clean the index value
-    clean_idx = clean_index(index)             # "[servname#MME-SVC]" → "MME-SVC"
+    # Step 3: Build session identifiers (includes objectType for uniqueness)
+    session_name = device + "_" + index + "_" + object_type
+    session_id = node_id + "_" + index + "_" + object_type
     
-    # Step 4: Build MonitoredObject identifiers
-    if schema == "p2p" or clean_idx == "":
-        session_name = device                  # Just device name
-        session_id = node_id                   # Just node ID
-    else:
-        session_name = device + " / " + clean_idx   # Human-readable: "mme-node-1 / MME-SVC"
-        session_id = node_id + "_" + clean_idx      # Unique ID: "node123_MME-SVC"
-    
-    # Step 5: Add required tags for PCA pipeline
+    # Step 4: Add required tags for PCA pipeline
     metric.tags["sessionName"] = session_name   # → MonitoredObjectName
     metric.tags["sessionId"] = session_id       # → MonitoredObjectId
     metric.tags["objectType"] = object_type     # → Links to Ingestion Dictionary
@@ -161,7 +149,6 @@ def apply(metric):
   "kpi": "MME_Overall_Attach_Success_Rate",
   "value": 99.5,
   "index": "[\"servname#MME-SVC\"]",
-  "index": "[\"servname#MME-SVC\"]",
   "timestamp": 1707744000,
   "device": "mme-node-1",
   "node_id": "node123",
@@ -169,24 +156,36 @@ def apply(metric):
 }
 ```
 
-### After Starlark Transformation
+### After Index Cleaning (order 3-4)
 
 ```json
 {
-  "kpi": "MME_Overall_Attach_Success_Rate",    // METRIC: the KPI value
-  "value": 99.5,                               // METRIC: numeric value
+  "kpi": "MME_Overall_Attach_Success_Rate",
+  "value": 99.5,
+  "index": "servname#MME-SVC",
+  "timestamp": 1707744000,
+  "device": "mme-node-1",
+  "node_id": "node123",
+  "schema": "mme"
+}
+```
+
+### After Starlark Transformation (order 7)
+
+```json
+{
+  "kpi": "MME_Overall_Attach_Success_Rate",
+  "value": 99.5,
   "timestamp": 1707744000,
   
-  // DIMENSIONS (for filtering/grouping):
   "device": "mme-node-1",
   "node_id": "node123", 
-  "index": "[\"servname#MME-SVC\"]",           // Raw index (kept for reference)
+  "index": "servname#MME-SVC",
   "schema": "mme",
   
-  // ADDED BY STARLARK (for PCA pipeline):
-  "objectType": "cisco-mobilitycore-pm-mme-sr",   // → Ingestion Dictionary lookup
-  "sessionId": "node123_MME-SVC",                 // → MonitoredObjectId (cleaned)
-  "sessionName": "mme-node-1 / MME-SVC",          // → MonitoredObjectName (human-readable!)
+  "objectType": "cisco-mobilitycore-pm-mme-sr",
+  "sessionId": "node123_servname#MME-SVC_cisco-mobilitycore-pm-mme-sr",
+  "sessionName": "mme-node-1_servname#MME-SVC_cisco-mobilitycore-pm-mme-sr",
   "direction": "-1"
 }
 ```
@@ -224,20 +223,38 @@ The `schema` tag determines the base objectType:
 | `pgw` | `cisco-mobilitycore-pm-pgw` | PDN Gateway |
 | `p2p` | `cisco-mobilitycore-pm-p2p` | Point-to-Point (no index in session ID) |
 
-## Special Handling for p2p Schema and Empty Index
+## Special Handling for p2p Schema
 
-When `schema == "p2p"` OR when the cleaned index is empty (NOINDEX), only the device/node_id is used:
+The p2p schema is handled by a separate Starlark processor that excludes the index from session identifiers:
 
 ```python
-clean_idx = clean_index(index)  # May return "" for NOINDEX or missing
-
-if schema == "p2p" or clean_idx == "":
-    session_name = device           # Just "mme-node-1"
-    session_id = node_id            # Just "node123"
-else:
-    session_name = device + " / " + clean_idx   # "mme-node-1 / MME-SVC"
-    session_id = node_id + "_" + clean_idx      # "node123_MME-SVC"
+def apply(metric):
+    schema = metric.tags.get("schema", "")
+    device = metric.tags.get("device", "")
+    node_id = metric.tags.get("node_id", "")
+    
+    object_type = "cisco-mobilitycore-pm-" + schema
+    session_name = device + "_" + object_type      # No index
+    session_id = node_id + "_" + object_type       # No index
+    
+    metric.tags["sessionName"] = session_name
+    metric.tags["sessionId"] = session_id
+    metric.tags["objectType"] = object_type
+    metric.tags["direction"] = "-1"
+    
+    return metric
 ```
+
+Additionally, p2p metrics with `p2p_protocol#` in the index are filtered out entirely.
+
+## KPI Limit Monitor
+
+The configuration includes a monitor (order 10) that tracks unique KPIs per objectType:
+
+- **Warning** at 35 KPIs: Approaching the limit
+- **Critical** at 40 KPIs: Limit exceeded
+
+This is **monitor-only** - metrics are never dropped. Alerts are written to `/tmp/kpi_alerts.log`.
 
 ---
 
@@ -247,4 +264,4 @@ else:
 
 ---
 
-*Generated: 2026-02-12*
+*Generated: 2026-02-13*
