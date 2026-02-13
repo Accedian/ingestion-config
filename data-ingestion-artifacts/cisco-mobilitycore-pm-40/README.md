@@ -47,6 +47,6 @@ Before running, ensure the following environment variables are properly configur
 
 ## Prerequisites
 
-- Go runtime installed
+- Go runtime (minimum version: **1.16**, tested with go1.25.7)
 - Access to the target PCA instance
 - Valid authentication token
