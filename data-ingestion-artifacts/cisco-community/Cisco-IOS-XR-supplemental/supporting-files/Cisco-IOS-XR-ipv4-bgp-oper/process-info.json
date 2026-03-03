@@ -1,0 +1,1420 @@
+{
+    "node_id_str": "l56",
+    "subscription_id_str": "app_TEST_200000001",
+    "encoding_path": "Cisco-IOS-XR-ipv4-bgp-oper:bgp/instances/instance/instance-active/default-vrf/process-info",
+    "collection_id": "3",
+    "collection_start_time": "1764799673868",
+    "msg_timestamp": "1764799673876",
+    "data_json": [
+        {
+            "timestamp": "1764799673874",
+            "keys": [
+                {
+                    "instance-name": "default"
+                }
+            ],
+            "content": {
+                "process-instance": 0,
+                "vrf-name": "default",
+                "vrf-totals": false,
+                "global": {
+                    "process-instance-node": "node0_RP0_CPU0",
+                    "restart-count": 2,
+                    "path-attributes-entry-count": 37,
+                    "path-attribute-memory": 10656,
+                    "as-path-entry-count": 0,
+                    "as-path-entries-memory": 0,
+                    "community-entry-count": 0,
+                    "community-memory": 0,
+                    "extended-community-entry-count": 0,
+                    "extended-community-memory": 0,
+                    "pe-distinguisher-label-entry-count": 0,
+                    "pe-distinguisher-label-memory": 0,
+                    "pta-entry-count": 0,
+                    "pta-memory": 0,
+                    "tunnel-encap-entry-count": 0,
+                    "tunnel-encap-memory": 0,
+                    "ribrnh-entry-count": 0,
+                    "ribrnh-memory": 0,
+                    "ppmp-entry-count": 0,
+                    "ppmp-memory": 0,
+                    "route-reflectors": 0,
+                    "route-reflector-memory": 0,
+                    "nexthop-count": 1,
+                    "nexthop-memory": 600,
+                    "lsattr-entry-count": 37,
+                    "lsattr-memory": 5680,
+                    "attr-set-entry-count": 0,
+                    "attr-set-memory": 0,
+                    "prefix-sid-label-index-count": 0,
+                    "prefix-sid-label-index-memory": 0,
+                    "prefix-sid-orig-srgb-count": 0,
+                    "prefix-sid-orig-srgb-memory": 0,
+                    "prefix-sid-srv6-layer3-svc-count": 0,
+                    "prefix-sid-srv6-layer3-svc-memory": 0,
+                    "prefix-sid-srv6-layer2-svc-count": 0,
+                    "prefix-sid-srv6-layer2-svc-memory": 0,
+                    "prefix-sid-unk-tl-vs-count": 0,
+                    "prefix-sid-unk-tl-vs-memory": 0,
+                    "oc-rib-attribute-sets-entry-count": 0,
+                    "oc-rib-attribute-set-memory": 0,
+                    "local-as": 1,
+                    "pool-size": [
+                        {
+                            "entry": 200
+                        },
+                        {
+                            "entry": 300
+                        },
+                        {
+                            "entry": 400
+                        },
+                        {
+                            "entry": 500
+                        },
+                        {
+                            "entry": 600
+                        },
+                        {
+                            "entry": 700
+                        },
+                        {
+                            "entry": 800
+                        },
+                        {
+                            "entry": 900
+                        },
+                        {
+                            "entry": 1200
+                        },
+                        {
+                            "entry": 2200
+                        },
+                        {
+                            "entry": 3300
+                        },
+                        {
+                            "entry": 4000
+                        },
+                        {
+                            "entry": 4500
+                        },
+                        {
+                            "entry": 5000
+                        },
+                        {
+                            "entry": 20000
+                        }
+                    ],
+                    "pool-alloc-count": [
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 1
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        }
+                    ],
+                    "pool-free-count": [
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        }
+                    ],
+                    "msg-log-pool-size": [
+                        {
+                            "entry": 100
+                        },
+                        {
+                            "entry": 200
+                        },
+                        {
+                            "entry": 500
+                        },
+                        {
+                            "entry": 2200
+                        },
+                        {
+                            "entry": 4500
+                        }
+                    ],
+                    "msg-log-pool-alloc-count": [
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        }
+                    ],
+                    "msg-log-pool-free-count": [
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        }
+                    ],
+                    "total-vrf-count": 0,
+                    "neighbors-count-total": 0,
+                    "established-neighbors-count-total": 0,
+                    "sn-num-non-dflt-vrf-nbrs": 0,
+                    "sn-num-non-dflt-vrf-nbrs-estab": 0,
+                    "bmp-pool-size": [
+                        {
+                            "entry": 100
+                        },
+                        {
+                            "entry": 200
+                        },
+                        {
+                            "entry": 300
+                        },
+                        {
+                            "entry": 400
+                        },
+                        {
+                            "entry": 500
+                        },
+                        {
+                            "entry": 600
+                        },
+                        {
+                            "entry": 700
+                        },
+                        {
+                            "entry": 800
+                        },
+                        {
+                            "entry": 900
+                        },
+                        {
+                            "entry": 1200
+                        },
+                        {
+                            "entry": 2200
+                        },
+                        {
+                            "entry": 3300
+                        },
+                        {
+                            "entry": 4000
+                        },
+                        {
+                            "entry": 4500
+                        },
+                        {
+                            "entry": 5500
+                        },
+                        {
+                            "entry": 6500
+                        },
+                        {
+                            "entry": 7500
+                        },
+                        {
+                            "entry": 8500
+                        },
+                        {
+                            "entry": 10000
+                        },
+                        {
+                            "entry": 20000
+                        }
+                    ],
+                    "bmp-pool-alloc-count": [
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        }
+                    ],
+                    "bmp-pool-free-count": [
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        },
+                        {
+                            "entry": 0
+                        }
+                    ],
+                    "large-community-entry-count": 0,
+                    "large-community-memory": 0
+                },
+                "vrf": {
+                    "neighbors-count": 0,
+                    "established-neighbors-count": 0,
+                    "update-messages-received": 0,
+                    "update-messages-sent": 0,
+                    "notifications-received": 0,
+                    "notifications-sent": 0,
+                    "network-count": 58,
+                    "path-count": 58
+                },
+                "performance-statistics": {
+                    "global": {
+                        "configuration-items-processed": 0,
+                        "configuration-processing-time": 0,
+                        "edm-requests-count": 2,
+                        "edm-processing-time": 0,
+                        "brib-api-output-messages-sent": 0,
+                        "brib-api-output-bytes-sent": 0,
+                        "brib-api-output-bytes-generated": 0,
+                        "brib-api-output-prefixes-advertised": 0,
+                        "brib-api-output-prefixes-withdrawn": 0,
+                        "brib-api-output-sending-time": 0,
+                        "brib-api-output-generation-time": 0,
+                        "brib-api-output-calls": 0,
+                        "brib-api-input-messages": 0,
+                        "brib-api-input-bytes": 0,
+                        "brib-api-input-prefixes-received": 0,
+                        "brib-api-input-withdrawn-prefixes": 0,
+                        "brib-api-input-processing-time": 0,
+                        "instance-node-role": true,
+                        "active-nsr-mode-enter-time": [
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 1758322530
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            }
+                        ],
+                        "standby-nsr-mode-enter-time": [
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            }
+                        ],
+                        "active-nsrfo-time": [
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            },
+                            {
+                                "entry": 0
+                            }
+                        ],
+                        "active-nsrtcp-phase-two-enter-time": 0,
+                        "sec-active-nsrtcp-phase-two-enter-time": 0,
+                        "proc-scoped-sync-state": "bgp-scope-sync-state-none",
+                        "initial-sync-sessions-added": false,
+                        "in-event-attach-calls": 0,
+                        "out-event-attach-calls": 0,
+                        "in-out-event-attach-calls": 0,
+                        "updgen-timer-running": false,
+                        "updgen-tree-timer-left": "0",
+                        "updgen-tree-timer-expiry": "0",
+                        "current-clock-time": "0",
+                        "updgen-handler-tm": "0",
+                        "io-timer-running": false,
+                        "io-tree-timer-left": "0",
+                        "io-tree-timer-expiry": "0",
+                        "io-handler-tm": "0",
+                        "qad-messages-sent": 0,
+                        "qadack-sent": 0,
+                        "qad-send-failure": 0,
+                        "qad-ac-ks-failure": 0,
+                        "qad-suspends": 0,
+                        "qad-resumes": 0,
+                        "qad-send-drops": 0,
+                        "qad-messages-received": 0,
+                        "qad-processed": 0,
+                        "qad-ac-ks-received": 0,
+                        "qad-timeout-received": 0,
+                        "qad-init-drops": 0,
+                        "qadoos-drops": 0,
+                        "qad-recv-drops": 0,
+                        "qad-timeout-recvd": 0,
+                        "nsr-last-reset-reason": 1,
+                        "redcon-nsr-ready": true,
+                        "redcon-state-time": 0,
+                        "active-nsr-state": 1,
+                        "sec-active-nsr-state": 0,
+                        "total-outstanding-postits": 0,
+                        "total-neighbors-with-pending-postits": 0,
+                        "ipv4rib-server": {
+                            "is-rib-connection-up": true,
+                            "rib-connection-up-count": 1,
+                            "first-rib-connection-up-timestamp": {
+                                "seconds": 1758322229,
+                                "nanoseconds": 344591164
+                            },
+                            "last-rib-connection-up-timestamp": {
+                                "seconds": 1758322229,
+                                "nanoseconds": 344591084
+                            },
+                            "last-rib-connection-up-age": 6477444,
+                            "rib-connection-down-count": 0,
+                            "first-rib-connection-down-timestamp": {
+                                "seconds": 0,
+                                "nanoseconds": 0
+                            },
+                            "last-rib-connection-down-timestamp": {
+                                "seconds": 0,
+                                "nanoseconds": 0
+                            },
+                            "last-rib-connection-down-age": 0
+                        },
+                        "ipv6rib-server": {
+                            "is-rib-connection-up": false,
+                            "rib-connection-up-count": 0,
+                            "first-rib-connection-up-timestamp": {
+                                "seconds": 0,
+                                "nanoseconds": 0
+                            },
+                            "last-rib-connection-up-timestamp": {
+                                "seconds": 0,
+                                "nanoseconds": 0
+                            },
+                            "last-rib-connection-up-age": 0,
+                            "rib-connection-down-count": 0,
+                            "first-rib-connection-down-timestamp": {
+                                "seconds": 0,
+                                "nanoseconds": 0
+                            },
+                            "last-rib-connection-down-timestamp": {
+                                "seconds": 0,
+                                "nanoseconds": 0
+                            },
+                            "last-rib-connection-down-age": 0
+                        },
+                        "te-connection": {
+                            "is-connection-up": true,
+                            "connection-up-count": 1,
+                            "first-connection-up-timestamp": {
+                                "seconds": 1758322230,
+                                "nanoseconds": 509216961
+                            },
+                            "last-connection-up-timestamp": {
+                                "seconds": 1758322230,
+                                "nanoseconds": 509216921
+                            },
+                            "last-connection-up-age": 6477443,
+                            "connection-down-count": 0,
+                            "first-connection-down-timestamp": {
+                                "seconds": 0,
+                                "nanoseconds": 0
+                            },
+                            "last-connection-down-timestamp": {
+                                "seconds": 0,
+                                "nanoseconds": 0
+                            },
+                            "last-connection-down-age": 0
+                        },
+                        "tep2p-auto-tunnel-enabled": true,
+                        "lsd-connection": {
+                            "is-connection-up": true,
+                            "connection-up-count": 1,
+                            "first-connection-up-timestamp": {
+                                "seconds": 1758322245,
+                                "nanoseconds": 392038369
+                            },
+                            "last-connection-up-timestamp": {
+                                "seconds": 1758322245,
+                                "nanoseconds": 392038329
+                            },
+                            "last-connection-up-age": 6477428,
+                            "connection-down-count": 0,
+                            "first-connection-down-timestamp": {
+                                "seconds": 0,
+                                "nanoseconds": 0
+                            },
+                            "last-connection-down-timestamp": {
+                                "seconds": 0,
+                                "nanoseconds": 0
+                            },
+                            "last-connection-down-age": 0
+                        },
+                        "ds-npl": {
+                            "dir-service-conn-state": "connect-estb",
+                            "issu-mgr-conn-state": "connect-done",
+                            "issu-phase": "unknown",
+                            "issu-type-ng": true,
+                            "issuha-option": "unknown",
+                            "local-ds-handle": "187651112110320",
+                            "service-name": "bgp-default",
+                            "dsissu-status-flag": 57,
+                            "npl-priority-statistic": [
+                                {
+                                    "prio-queue-level": "Prio Queue Low",
+                                    "num-sent": [
+                                        {
+                                            "entry": "0"
+                                        },
+                                        {
+                                            "entry": "0"
+                                        },
+                                        {
+                                            "entry": "0"
+                                        },
+                                        {
+                                            "entry": "0"
+                                        },
+                                        {
+                                            "entry": "0"
+                                        }
+                                    ],
+                                    "num-recv": [
+                                        {
+                                            "entry": "0"
+                                        },
+                                        {
+                                            "entry": "0"
+                                        },
+                                        {
+                                            "entry": "0"
+                                        },
+                                        {
+                                            "entry": "0"
+                                        },
+                                        {
+                                            "entry": "0"
+                                        },
+                                        {
+                                            "entry": "0"
+                                        }
+                                    ],
+                                    "num-sent-drop": [
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        }
+                                    ],
+                                    "num-recv-drop": [
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "prio-queue-level": "Prio Queue High",
+                                    "num-sent": [
+                                        {
+                                            "entry": "0"
+                                        },
+                                        {
+                                            "entry": "0"
+                                        },
+                                        {
+                                            "entry": "0"
+                                        },
+                                        {
+                                            "entry": "0"
+                                        },
+                                        {
+                                            "entry": "0"
+                                        }
+                                    ],
+                                    "num-recv": [
+                                        {
+                                            "entry": "0"
+                                        },
+                                        {
+                                            "entry": "0"
+                                        },
+                                        {
+                                            "entry": "0"
+                                        },
+                                        {
+                                            "entry": "0"
+                                        },
+                                        {
+                                            "entry": "0"
+                                        },
+                                        {
+                                            "entry": "0"
+                                        }
+                                    ],
+                                    "num-sent-drop": [
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        }
+                                    ],
+                                    "num-recv-drop": [
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        {
+                                            "value": [
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "npl-endpoint": [
+                                {
+                                    "endpoint-name": "Local Endpoint",
+                                    "node-id": "0/RP0/CPU0",
+                                    "endpoint-handle": "187651112063840",
+                                    "endpoint-stale-flag": false,
+                                    "endpoint-issu-role": "Primary",
+                                    "endpoint-active-flag": true,
+                                    "msg-size": 0,
+                                    "wheel-id": 0,
+                                    "expected-sequence-num": 0,
+                                    "last-sent-sequence-num": 0,
+                                    "npl-initial-sequence-num": 0,
+                                    "endpoint": [
+                                        {
+                                            "entry": 10
+                                        },
+                                        {
+                                            "entry": 11
+                                        },
+                                        {
+                                            "entry": 98
+                                        },
+                                        {
+                                            "entry": 103
+                                        },
+                                        {
+                                            "entry": 112
+                                        },
+                                        {
+                                            "entry": 45
+                                        },
+                                        {
+                                            "entry": 100
+                                        },
+                                        {
+                                            "entry": 101
+                                        },
+                                        {
+                                            "entry": 102
+                                        },
+                                        {
+                                            "entry": 97
+                                        },
+                                        {
+                                            "entry": 117
+                                        },
+                                        {
+                                            "entry": 108
+                                        },
+                                        {
+                                            "entry": 116
+                                        },
+                                        {
+                                            "entry": 16
+                                        },
+                                        {
+                                            "entry": 128
+                                        },
+                                        {
+                                            "entry": 64
+                                        },
+                                        {
+                                            "entry": 24
+                                        },
+                                        {
+                                            "entry": 11
+                                        },
+                                        {
+                                            "entry": 32
+                                        },
+                                        {
+                                            "entry": 128
+                                        },
+                                        {
+                                            "entry": 138
+                                        },
+                                        {
+                                            "entry": 169
+                                        },
+                                        {
+                                            "entry": 177
+                                        },
+                                        {
+                                            "entry": 209
+                                        },
+                                        {
+                                            "entry": 195
+                                        },
+                                        {
+                                            "entry": 130
+                                        },
+                                        {
+                                            "entry": 195
+                                        },
+                                        {
+                                            "entry": 128
+                                        },
+                                        {
+                                            "entry": 1
+                                        },
+                                        {
+                                            "entry": 40
+                                        },
+                                        {
+                                            "entry": 196
+                                        },
+                                        {
+                                            "entry": 169
+                                        },
+                                        {
+                                            "entry": 2
+                                        },
+                                        {
+                                            "entry": 48
+                                        },
+                                        {
+                                            "entry": 202
+                                        },
+                                        {
+                                            "entry": 169
+                                        },
+                                        {
+                                            "entry": 3
+                                        },
+                                        {
+                                            "entry": 56
+                                        },
+                                        {
+                                            "entry": 172
+                                        },
+                                        {
+                                            "entry": 129
+                                        },
+                                        {
+                                            "entry": 128
+                                        },
+                                        {
+                                            "entry": 8
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "receive-stat": [
+                            {
+                                "interval": 30,
+                                "packet-count": 0,
+                                "start-seq": 0,
+                                "end-seq": 0,
+                                "start-time": {
+                                    "seconds": 0,
+                                    "nanoseconds": 0
+                                },
+                                "end-time": {
+                                    "seconds": 0,
+                                    "nanoseconds": 0
+                                },
+                                "avg-time": "0"
+                            },
+                            {
+                                "interval": 60,
+                                "packet-count": 0,
+                                "start-seq": 0,
+                                "end-seq": 0,
+                                "start-time": {
+                                    "seconds": 0,
+                                    "nanoseconds": 0
+                                },
+                                "end-time": {
+                                    "seconds": 0,
+                                    "nanoseconds": 0
+                                },
+                                "avg-time": "0"
+                            },
+                            {
+                                "interval": 180,
+                                "packet-count": 0,
+                                "start-seq": 0,
+                                "end-seq": 0,
+                                "start-time": {
+                                    "seconds": 0,
+                                    "nanoseconds": 0
+                                },
+                                "end-time": {
+                                    "seconds": 0,
+                                    "nanoseconds": 0
+                                },
+                                "avg-time": "0"
+                            }
+                        ],
+                        "scoped-sync-batch-count": 0
+                    },
+                    "vrf": {
+                        "lpts-set-up-time": 0,
+                        "lpts-calls": 0,
+                        "read-throttles-count": 0,
+                        "low-throttled-read-count": 0,
+                        "high-throttled-read-count": 0,
+                        "read-calls-count": 0,
+                        "read-messages-count": 0,
+                        "data-bytes-read": 0,
+                        "io-read-time": 0,
+                        "write-calls-count": 0,
+                        "data-bytes-written": 0,
+                        "io-write-time": 0,
+                        "write-subgroup-calls-count": 0,
+                        "write-subgroup-messages-count": 0,
+                        "subgroup-list-time": 0,
+                        "write-queue-calls-count": 0,
+                        "write-queue-messages-count": 0,
+                        "write-queue-time": 0,
+                        "inbound-update-messages": 0,
+                        "inbound-update-messages-time": 0,
+                        "read-throttled-nbr-count": 0,
+                        "max-read-throttled-nbrs": 0,
+                        "max-read-throttled-nbrs-time": "0",
+                        "write-throttled-nbr-count": 0,
+                        "max-write-throttled-nbrs": 0,
+                        "max-write-throttled-nbrs-time": "0",
+                        "write-throttles-count": 0
+                    }
+                }
+            }
+        }
+    ],
+    "collection_end_time": "1764799673876"
+}
