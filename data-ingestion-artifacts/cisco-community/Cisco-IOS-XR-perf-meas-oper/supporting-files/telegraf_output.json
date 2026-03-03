@@ -1,0 +1,87 @@
+{
+    "fields": {
+        "delay_a_flag_set": 0,
+        "delay_average": 1,
+        "delay_maximum": 1,
+        "delay_minimum": 1,
+        "delay_variance": 0,
+        "interface_handle": 0,
+        "loss_a_flag_set": 0,
+        "number_of_packets_received": 40,
+        "number_of_packets_sent": 40
+    },
+    "name": "sr_pm_last_agg",
+    "tags": {
+        "direction": "2",
+        "host": "e20ee25c97f5",
+        "interface_name": "HundredGigE0/0/1/0",
+        "monitoredObjectId": "ron-cpoc-55a2-2_HundredGigE0/0/1/0_sr_pm_last_agg",
+        "monitoredObjectName": "ron-cpoc-55a2-2_HundredGigE0/0/1/0_sr_pm_last_agg",
+        "node": "0_0_CPU0",
+        "path": "Cisco-IOS-XR-perf-meas-oper:performance-measurement/nodes/node/interfaces/interface-delay/interface-last-aggregations/interface-last-aggregation",
+        "session_id": "4099",
+        "source": "ron-cpoc-55a2-2",
+        "subscription": "PCA-SRPM-Subscription",
+        "timestamp_format": "ptp",
+        "timestamp_source": "local-hardware"
+    },
+    "timestamp": 1772484088
+}
+{
+    "fields": {
+        "delay_a_flag_set": 0,
+        "delay_average": 512,
+        "delay_maximum": 622,
+        "delay_minimum": 441,
+        "delay_variance": 71,
+        "interface_handle": 0,
+        "loss_a_flag_set": 0,
+        "number_of_packets_received": 40,
+        "number_of_packets_sent": 40
+    },
+    "name": "sr_pm_last_agg",
+    "tags": {
+        "direction": "2",
+        "host": "e20ee25c97f5",
+        "interface_name": "TenGigE0/0/0/0",
+        "monitoredObjectId": "ron-cpoc-55a2-2_TenGigE0/0/0/0_sr_pm_last_agg",
+        "monitoredObjectName": "ron-cpoc-55a2-2_TenGigE0/0/0/0_sr_pm_last_agg",
+        "node": "0_0_CPU0",
+        "path": "Cisco-IOS-XR-perf-meas-oper:performance-measurement/nodes/node/interfaces/interface-delay/interface-last-aggregations/interface-last-aggregation",
+        "session_id": "4097",
+        "source": "ron-cpoc-55a2-2",
+        "subscription": "PCA-SRPM-Subscription",
+        "timestamp_format": "ptp",
+        "timestamp_source": "local-hardware"
+    },
+    "timestamp": 1772484081
+}
+{
+    "fields": {
+        "delay_a_flag_set": 0,
+        "delay_average": 0,
+        "delay_maximum": 0,
+        "delay_minimum": 0,
+        "delay_variance": 0,
+        "interface_handle": 0,
+        "loss_a_flag_set": 0,
+        "number_of_packets_received": 0,
+        "number_of_packets_sent": 0
+    },
+    "name": "sr_pm_last_agg",
+    "tags": {
+        "direction": "2",
+        "host": "e20ee25c97f5",
+        "interface_name": "TenGigE0/0/0/10",
+        "monitoredObjectId": "ron-cpoc-55a2-2_TenGigE0/0/0/10_sr_pm_last_agg",
+        "monitoredObjectName": "ron-cpoc-55a2-2_TenGigE0/0/0/10_sr_pm_last_agg",
+        "node": "0_0_CPU0",
+        "path": "Cisco-IOS-XR-perf-meas-oper:performance-measurement/nodes/node/interfaces/interface-delay/interface-last-aggregations/interface-last-aggregation",
+        "session_id": "4098",
+        "source": "ron-cpoc-55a2-2",
+        "subscription": "PCA-SRPM-Subscription",
+        "timestamp_format": "ptp",
+        "timestamp_source": "not-available"
+    },
+    "timestamp": 0
+}

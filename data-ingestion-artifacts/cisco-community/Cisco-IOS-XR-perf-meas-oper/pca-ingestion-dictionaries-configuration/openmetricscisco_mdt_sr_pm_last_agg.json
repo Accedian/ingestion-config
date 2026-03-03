@@ -1,0 +1,207 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "openmetricscisco_mdt_sr_pm_last_agg",
+            "_rev": "2-346f5866377e800e5b9f98388cd26e8a",
+            "customMetrics": null,
+            "dictionaryName": "openmetrics-cisco_mdt_sr_pm_last_agg",
+            "dictionaryType": "global",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "host",
+                    "dataType": "string",
+                    "rawName": "host"
+                },
+                {
+                    "analyticsName": "interface_name",
+                    "dataType": "string",
+                    "rawName": "interface_name"
+                },
+                {
+                    "analyticsName": "node",
+                    "dataType": "string",
+                    "rawName": "node"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "path",
+                    "dataType": "string",
+                    "rawName": "path"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                },
+                {
+                    "analyticsName": "session_id",
+                    "dataType": "string",
+                    "rawName": "session_id"
+                },
+                {
+                    "analyticsName": "source",
+                    "dataType": "string",
+                    "rawName": "source"
+                },
+                {
+                    "analyticsName": "subscription",
+                    "dataType": "string",
+                    "rawName": "subscription"
+                },
+                {
+                    "analyticsName": "timestamp_format",
+                    "dataType": "string",
+                    "rawName": "timestamp_format"
+                },
+                {
+                    "analyticsName": "timestamp_source",
+                    "dataType": "string",
+                    "rawName": "timestamp_source"
+                }
+            ],
+            "metricType": "timeseries",
+            "metrics": [
+                {
+                    "analyticsName": "delay_a_flag_set",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "sr_pm_last_agg_delay_a_flag_set",
+                    "unit": "bool"
+                },
+                {
+                    "analyticsName": "delayAvg",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "sr_pm_last_agg_delay_average",
+                    "unit": "μs"
+                },
+                {
+                    "analyticsName": "delayMax",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "sr_pm_last_agg_delay_maximum",
+                    "unit": "μs"
+                },
+                {
+                    "analyticsName": "delayMin",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "sr_pm_last_agg_delay_minimum",
+                    "unit": "μs"
+                },
+                {
+                    "analyticsName": "delayVariance",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "sr_pm_last_agg_delay_variance",
+                    "unit": "μs"
+                },
+                {
+                    "analyticsName": "interfaceHandle",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "sr_pm_last_agg_interface_handle"
+                },
+                {
+                    "analyticsName": "loss_a_flag_set",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "sr_pm_last_agg_loss_a_flag_set",
+                    "unit": "bool"
+                },
+                {
+                    "analyticsName": "packetsReceived",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "sr_pm_last_agg_number_of_packets_received",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "packetsSent",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "rawName": "sr_pm_last_agg_number_of_packets_sent",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "packetsLost",
+                    "dataType": "double",
+                    "directions": [
+                        "2"
+                    ],
+                    "sqlExpr": "cast(`sr_pm_last_agg_number_of_packets_sent` as DOUBLE) - cast(`sr_pm_last_agg_number_of_packets_received` as DOUBLE)",
+                    "rawName": "sr_pm_last_agg_number_of_packets_sent",
+                    "unit": "packets"
+                }
+            ],
+            "objectType": "cisco_mdt_sr_pm_last_agg",
+            "tenantId": "f39d63a0-e960-4be3-b311-43e5b200c772",
+            "vendor": "openmetrics"
+        },
+        "id": "openmetricscisco_mdt_sr_pm_last_agg",
+        "type": "ingestionDictionaries"
+    },
+    "violations": []
+}

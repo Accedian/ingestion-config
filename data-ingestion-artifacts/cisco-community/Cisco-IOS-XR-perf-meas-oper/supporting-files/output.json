@@ -1,0 +1,615 @@
+{
+    "node_id_str": "ron-cpoc-55a2-2",
+    "subscription_id_str": "app_TEST_200000001",
+    "encoding_path": "Cisco-IOS-XR-perf-meas-oper:performance-measurement/nodes/node/interfaces/interface-details/interface-detail",
+    "collection_id": "15753",
+    "collection_start_time": "1772221763542",
+    "msg_timestamp": "1772221763545",
+    "data_json": [
+        {
+            "timestamp": "1772221763544",
+            "timestamp_nano": "1772221763544966595",
+            "keys": [
+                {
+                    "node": "0/0/CPU0"
+                },
+                {
+                    "interface-name": "HundredGigE0/0/1/0"
+                }
+            ],
+            "content": {
+                "interface-name-xr": "HundredGigE0/0/1/0",
+                "interface-handle": 8,
+                "interface-state": true,
+                "source-address": "100.7.8.1",
+                "source-v6-address": "::",
+                "link-local-iv6-address": "fe80::232:17ff:fe6f:c028",
+                "source-mac-address": "00:32:17:6f:c0:28",
+                "next-hop-mac-address": "00:32:17:72:24:28",
+                "in-use-source-ip-address": {
+                    "ip-address-type": "ipv4",
+                    "ipv4": "100.7.8.1"
+                },
+                "in-use-destination-ip-address": {
+                    "ip-address-type": "ipv4",
+                    "ipv4": "100.7.8.0"
+                },
+                "next-hop": {
+                    "ip-address-type": "unknown"
+                },
+                "primary-vlan-tag": 0,
+                "secondary-vlan-tag": 0,
+                "delay-measurement-session": [
+                    {
+                        "session-id": 4099,
+                        "transport-type": "interface-transport-type",
+                        "measurement-type": "delay-measurement-type",
+                        "profile-name": "default",
+                        "current-probe": {
+                            "probe-start-time-stamp": "1772221759503",
+                            "next-probe-start-time-remaining-in-millisec": 55957,
+                            "next-packet-sent-time-remaining-in-millisec": 1957,
+                            "burst-interval": 3000,
+                            "burst-interval-is-stretched": false,
+                            "tx-interval": 3000000,
+                            "tx-interval-is-stretched": false,
+                            "number-of-packets-sent": 2,
+                            "number-of-packets-received": 2,
+                            "probe-results": {
+                                "average": 1,
+                                "minimum": 1,
+                                "maximum": 1,
+                                "variance": 0
+                            },
+                            "probe-not-running-reason": "probe-is-running"
+                        },
+                        "probe-history": [
+                            {
+                                "measurement-value": "1790",
+                                "query-timestamp": "1772221705503"
+                            },
+                            {
+                                "measurement-value": "1784",
+                                "query-timestamp": "1772221708503"
+                            },
+                            {
+                                "measurement-value": "1786",
+                                "query-timestamp": "1772221711503"
+                            },
+                            {
+                                "measurement-value": "1786",
+                                "query-timestamp": "1772221714503"
+                            },
+                            {
+                                "measurement-value": "1782",
+                                "query-timestamp": "1772221717503"
+                            },
+                            {
+                                "measurement-value": "1786",
+                                "query-timestamp": "1772221720503"
+                            },
+                            {
+                                "measurement-value": "1786",
+                                "query-timestamp": "1772221723503"
+                            },
+                            {
+                                "measurement-value": "1784",
+                                "query-timestamp": "1772221726504"
+                            },
+                            {
+                                "measurement-value": "1788",
+                                "query-timestamp": "1772221729504"
+                            },
+                            {
+                                "measurement-value": "1782",
+                                "query-timestamp": "1772221732504"
+                            },
+                            {
+                                "measurement-value": "1786",
+                                "query-timestamp": "1772221735504"
+                            },
+                            {
+                                "measurement-value": "1786",
+                                "query-timestamp": "1772221738504"
+                            },
+                            {
+                                "measurement-value": "1782",
+                                "query-timestamp": "1772221741504"
+                            },
+                            {
+                                "measurement-value": "1780",
+                                "query-timestamp": "1772221744504"
+                            },
+                            {
+                                "measurement-value": "1788",
+                                "query-timestamp": "1772221747504"
+                            },
+                            {
+                                "measurement-value": "1786",
+                                "query-timestamp": "1772221750505"
+                            },
+                            {
+                                "measurement-value": "1790",
+                                "query-timestamp": "1772221753505"
+                            },
+                            {
+                                "measurement-value": "1782",
+                                "query-timestamp": "1772221756504"
+                            },
+                            {
+                                "measurement-value": "1782",
+                                "query-timestamp": "1772221759505"
+                            },
+                            {
+                                "measurement-value": "1782",
+                                "query-timestamp": "1772221762505"
+                            }
+                        ],
+                        "session-counters": {
+                            "generic-counters": {
+                                "query-packets-sent": "54951",
+                                "query-packet-sent-errors": "0",
+                                "query-packet-sent-error-no-ip-address": "0",
+                                "query-packets-received": "54951",
+                                "received-packet-error-negative-delay": "0",
+                                "received-packet-error-delay-exceeds-threshold": "0",
+                                "received-packet-error-missing-tx-timestamp": "0",
+                                "received-packet-error-missing-rx-timestamp": "0",
+                                "received-packet-error-probe-full": "0",
+                                "received-packet-error-probe-not-started": "0",
+                                "received-packet-control-code-error": "0",
+                                "received-packet-control-code-notification": "0",
+                                "probes-started": "2749",
+                                "probes-complete": "2748",
+                                "probes-incomplete": "0",
+                                "advertisement": "1"
+                            },
+                            "exclusive-counters": {
+                                "transport-type": "interface-transport-type",
+                                "interface-exclusive-counters": {
+                                    "query-packet-sent-error-interface-down": "0",
+                                    "query-packet-sent-error-no-mpls-caps": "0",
+                                    "query-packet-sent-error-ipv4-down-with-v4-next-hop": "0",
+                                    "query-packet-sent-error-ipv6-down-with-v6-next-hop": "0",
+                                    "query-packet-sent-error-ipv4ipv6-down-without-next-hop": "0",
+                                    "query-packet-sent-error-next-hop-mac-missing": "11"
+                                }
+                            }
+                        },
+                        "periodic-advertisement-interval-in-sec": 120,
+                        "last-advertisement-information": {
+                            "time-of-advertisement": "1772056933536",
+                            "advertisement-reason": "first-advertisement",
+                            "advertised-values": {
+                                "average": 1,
+                                "minimum": 1,
+                                "maximum": 2,
+                                "variance": 0
+                            },
+                            "aflag-set": false,
+                            "number-of-packets-sent": 9,
+                            "number-of-packets-received": 9,
+                            "loss-a-flag-set": false
+                        },
+                        "next-advertisement-information": {
+                            "advertisement-interval-probes-remaining": 1,
+                            "advertisement-interval-values": {
+                                "average": 0,
+                                "minimum": 0,
+                                "maximum": 0,
+                                "variance": 0
+                            },
+                            "rolling-average": 1,
+                            "number-of-packets-sent": 0,
+                            "number-of-packets-received": 0
+                        },
+                        "last-notification-control-code": {
+                            "control-code": 0,
+                            "timestamp": "0"
+                        },
+                        "last-error-control-code": {
+                            "control-code": 0,
+                            "timestamp": "0"
+                        },
+                        "responder-address": {
+                            "ip-address-type": "ipv4",
+                            "ipv4": "100.7.8.0"
+                        },
+                        "query-number-of-hops": 1,
+                        "probe-type": "probe-type-none",
+                        "is-srv6": false,
+                        "flow-label": 0,
+                        "timestamp-format": "ptp",
+                        "timestamp-source": "local-hardware",
+                        "last-probe-results": {
+                            "probe-values": {
+                                "average": 1,
+                                "minimum": 1,
+                                "maximum": 1,
+                                "variance": 0
+                            },
+                            "number-of-packets-sent": 20,
+                            "number-of-packets-received": 20,
+                            "delay-a-flag-set": false,
+                            "loss-a-flag-set": false
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "timestamp": "1772221763545",
+            "timestamp_nano": "1772221763545001980",
+            "keys": [
+                {
+                    "node": "0/0/CPU0"
+                },
+                {
+                    "interface-name": "TenGigE0/0/0/0"
+                }
+            ],
+            "content": {
+                "interface-name-xr": "TenGigE0/0/0/0",
+                "interface-handle": 288,
+                "interface-state": true,
+                "source-address": "100.3.6.0",
+                "source-v6-address": "::",
+                "link-local-iv6-address": "fe80::232:17ff:fe6f:c000",
+                "source-mac-address": "00:32:17:6f:c0:00",
+                "next-hop-mac-address": "00:bc:60:4a:64:00",
+                "in-use-source-ip-address": {
+                    "ip-address-type": "ipv4",
+                    "ipv4": "100.3.6.0"
+                },
+                "in-use-destination-ip-address": {
+                    "ip-address-type": "ipv4",
+                    "ipv4": "100.3.6.1"
+                },
+                "next-hop": {
+                    "ip-address-type": "unknown"
+                },
+                "primary-vlan-tag": 0,
+                "secondary-vlan-tag": 0,
+                "delay-measurement-session": [
+                    {
+                        "session-id": 4097,
+                        "transport-type": "interface-transport-type",
+                        "measurement-type": "delay-measurement-type",
+                        "profile-name": "default",
+                        "current-probe": {
+                            "probe-start-time-stamp": "1772221752743",
+                            "next-probe-start-time-remaining-in-millisec": 49197,
+                            "next-packet-sent-time-remaining-in-millisec": 1197,
+                            "burst-interval": 3000,
+                            "burst-interval-is-stretched": false,
+                            "tx-interval": 3000000,
+                            "tx-interval-is-stretched": false,
+                            "number-of-packets-sent": 4,
+                            "number-of-packets-received": 4,
+                            "probe-results": {
+                                "average": 476,
+                                "minimum": 452,
+                                "maximum": 515,
+                                "variance": 24
+                            },
+                            "probe-not-running-reason": "probe-is-running"
+                        },
+                        "probe-history": [
+                            {
+                                "measurement-value": "489742",
+                                "query-timestamp": "1772221704743"
+                            },
+                            {
+                                "measurement-value": "522954",
+                                "query-timestamp": "1772221707743"
+                            },
+                            {
+                                "measurement-value": "450083",
+                                "query-timestamp": "1772221710743"
+                            },
+                            {
+                                "measurement-value": "424797",
+                                "query-timestamp": "1772221713743"
+                            },
+                            {
+                                "measurement-value": "455600",
+                                "query-timestamp": "1772221716743"
+                            },
+                            {
+                                "measurement-value": "450336",
+                                "query-timestamp": "1772221719743"
+                            },
+                            {
+                                "measurement-value": "446440",
+                                "query-timestamp": "1772221722743"
+                            },
+                            {
+                                "measurement-value": "430909",
+                                "query-timestamp": "1772221725743"
+                            },
+                            {
+                                "measurement-value": "609859",
+                                "query-timestamp": "1772221728744"
+                            },
+                            {
+                                "measurement-value": "531174",
+                                "query-timestamp": "1772221731744"
+                            },
+                            {
+                                "measurement-value": "395812",
+                                "query-timestamp": "1772221734744"
+                            },
+                            {
+                                "measurement-value": "435827",
+                                "query-timestamp": "1772221737744"
+                            },
+                            {
+                                "measurement-value": "444002",
+                                "query-timestamp": "1772221740744"
+                            },
+                            {
+                                "measurement-value": "535721",
+                                "query-timestamp": "1772221743744"
+                            },
+                            {
+                                "measurement-value": "439441",
+                                "query-timestamp": "1772221746744"
+                            },
+                            {
+                                "measurement-value": "410266",
+                                "query-timestamp": "1772221749744"
+                            },
+                            {
+                                "measurement-value": "452368",
+                                "query-timestamp": "1772221752744"
+                            },
+                            {
+                                "measurement-value": "459561",
+                                "query-timestamp": "1772221755745"
+                            },
+                            {
+                                "measurement-value": "515062",
+                                "query-timestamp": "1772221758745"
+                            },
+                            {
+                                "measurement-value": "478232",
+                                "query-timestamp": "1772221761745"
+                            }
+                        ],
+                        "session-counters": {
+                            "generic-counters": {
+                                "query-packets-sent": "54953",
+                                "query-packet-sent-errors": "0",
+                                "query-packet-sent-error-no-ip-address": "0",
+                                "query-packets-received": "54953",
+                                "received-packet-error-negative-delay": "0",
+                                "received-packet-error-delay-exceeds-threshold": "0",
+                                "received-packet-error-missing-tx-timestamp": "0",
+                                "received-packet-error-missing-rx-timestamp": "0",
+                                "received-packet-error-probe-full": "0",
+                                "received-packet-error-probe-not-started": "0",
+                                "received-packet-control-code-error": "0",
+                                "received-packet-control-code-notification": "0",
+                                "probes-started": "2749",
+                                "probes-complete": "2748",
+                                "probes-incomplete": "0",
+                                "advertisement": "3"
+                            },
+                            "exclusive-counters": {
+                                "transport-type": "interface-transport-type",
+                                "interface-exclusive-counters": {
+                                    "query-packet-sent-error-interface-down": "0",
+                                    "query-packet-sent-error-no-mpls-caps": "0",
+                                    "query-packet-sent-error-ipv4-down-with-v4-next-hop": "0",
+                                    "query-packet-sent-error-ipv6-down-with-v6-next-hop": "0",
+                                    "query-packet-sent-error-ipv4ipv6-down-without-next-hop": "0",
+                                    "query-packet-sent-error-next-hop-mac-missing": "11"
+                                }
+                            }
+                        },
+                        "periodic-advertisement-interval-in-sec": 120,
+                        "last-advertisement-information": {
+                            "time-of-advertisement": "1772056926738",
+                            "advertisement-reason": "first-advertisement",
+                            "advertised-values": {
+                                "average": 598,
+                                "minimum": 504,
+                                "maximum": 677,
+                                "variance": 94
+                            },
+                            "aflag-set": false,
+                            "number-of-packets-sent": 9,
+                            "number-of-packets-received": 9,
+                            "loss-a-flag-set": false
+                        },
+                        "next-advertisement-information": {
+                            "advertisement-interval-probes-remaining": 1,
+                            "advertisement-interval-values": {
+                                "average": 0,
+                                "minimum": 0,
+                                "maximum": 0,
+                                "variance": 0
+                            },
+                            "rolling-average": 463,
+                            "number-of-packets-sent": 0,
+                            "number-of-packets-received": 0
+                        },
+                        "last-notification-control-code": {
+                            "control-code": 0,
+                            "timestamp": "0"
+                        },
+                        "last-error-control-code": {
+                            "control-code": 0,
+                            "timestamp": "0"
+                        },
+                        "responder-address": {
+                            "ip-address-type": "ipv4",
+                            "ipv4": "100.3.6.1"
+                        },
+                        "query-number-of-hops": 1,
+                        "probe-type": "probe-type-none",
+                        "is-srv6": false,
+                        "flow-label": 0,
+                        "timestamp-format": "ptp",
+                        "timestamp-source": "local-hardware",
+                        "last-probe-results": {
+                            "probe-values": {
+                                "average": 463,
+                                "minimum": 395,
+                                "maximum": 609,
+                                "variance": 68
+                            },
+                            "number-of-packets-sent": 20,
+                            "number-of-packets-received": 20,
+                            "delay-a-flag-set": false,
+                            "loss-a-flag-set": false
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "timestamp": "1772221763545",
+            "timestamp_nano": "1772221763545030245",
+            "keys": [
+                {
+                    "node": "0/0/CPU0"
+                },
+                {
+                    "interface-name": "TenGigE0/0/0/10"
+                }
+            ],
+            "content": {
+                "interface-name-xr": "TenGigE0/0/0/10",
+                "interface-handle": 256,
+                "interface-state": false,
+                "source-address": "100.3.8.10",
+                "source-v6-address": "::",
+                "link-local-iv6-address": "::",
+                "source-mac-address": "00:32:17:6f:c0:0a",
+                "next-hop-mac-address": "00:00:00:00:00:00",
+                "in-use-source-ip-address": {
+                    "ip-address-type": "unknown"
+                },
+                "in-use-destination-ip-address": {
+                    "ip-address-type": "unknown"
+                },
+                "next-hop": {
+                    "ip-address-type": "unknown"
+                },
+                "primary-vlan-tag": 0,
+                "secondary-vlan-tag": 0,
+                "delay-measurement-session": [
+                    {
+                        "session-id": 4098,
+                        "transport-type": "interface-transport-type",
+                        "measurement-type": "delay-measurement-type",
+                        "profile-name": "default",
+                        "current-probe": {
+                            "probe-start-time-stamp": "0",
+                            "next-probe-start-time-remaining-in-millisec": 0,
+                            "next-packet-sent-time-remaining-in-millisec": 0,
+                            "burst-interval": 0,
+                            "burst-interval-is-stretched": false,
+                            "tx-interval": 0,
+                            "tx-interval-is-stretched": false,
+                            "number-of-packets-sent": 0,
+                            "number-of-packets-received": 0,
+                            "probe-results": {
+                                "average": 0,
+                                "minimum": 0,
+                                "maximum": 0,
+                                "variance": 0
+                            },
+                            "probe-not-running-reason": "interface-down"
+                        },
+                        "session-counters": {
+                            "generic-counters": {
+                                "query-packets-sent": "0",
+                                "query-packet-sent-errors": "0",
+                                "query-packet-sent-error-no-ip-address": "0",
+                                "query-packets-received": "0",
+                                "received-packet-error-negative-delay": "0",
+                                "received-packet-error-delay-exceeds-threshold": "0",
+                                "received-packet-error-missing-tx-timestamp": "0",
+                                "received-packet-error-missing-rx-timestamp": "0",
+                                "received-packet-error-probe-full": "0",
+                                "received-packet-error-probe-not-started": "0",
+                                "received-packet-control-code-error": "0",
+                                "received-packet-control-code-notification": "0",
+                                "probes-started": "0",
+                                "probes-complete": "0",
+                                "probes-incomplete": "0",
+                                "advertisement": "2"
+                            },
+                            "exclusive-counters": {
+                                "transport-type": "interface-transport-type",
+                                "interface-exclusive-counters": {
+                                    "query-packet-sent-error-interface-down": "0",
+                                    "query-packet-sent-error-no-mpls-caps": "0",
+                                    "query-packet-sent-error-ipv4-down-with-v4-next-hop": "0",
+                                    "query-packet-sent-error-ipv6-down-with-v6-next-hop": "0",
+                                    "query-packet-sent-error-ipv4ipv6-down-without-next-hop": "0",
+                                    "query-packet-sent-error-next-hop-mac-missing": "0"
+                                }
+                            }
+                        },
+                        "periodic-advertisement-interval-in-sec": 120,
+                        "last-advertisement-information": {
+                            "time-of-advertisement": "1772056774537",
+                            "advertisement-reason": "link-is-down",
+                            "advertised-values": {
+                                "average": 16777215,
+                                "minimum": 16777215,
+                                "maximum": 16777215,
+                                "variance": 0
+                            },
+                            "aflag-set": true,
+                            "number-of-packets-sent": 0,
+                            "number-of-packets-received": 0,
+                            "loss-a-flag-set": false
+                        },
+                        "next-advertisement-information": {
+                            "advertisement-interval-probes-remaining": 2,
+                            "advertisement-interval-values": {
+                                "average": 0,
+                                "minimum": 0,
+                                "maximum": 0,
+                                "variance": 0
+                            },
+                            "rolling-average": 0,
+                            "number-of-packets-sent": 0,
+                            "number-of-packets-received": 0
+                        },
+                        "last-notification-control-code": {
+                            "control-code": 0,
+                            "timestamp": "0"
+                        },
+                        "last-error-control-code": {
+                            "control-code": 0,
+                            "timestamp": "0"
+                        },
+                        "probe-type": "probe-type-none",
+                        "is-srv6": false,
+                        "flow-label": 0,
+                        "timestamp-format": "ptp",
+                        "timestamp-source": "not-available",
+                        "last-probe-results": {
+                            "probe-values": {
+                                "average": 0,
+                                "minimum": 0,
+                                "maximum": 0,
+                                "variance": 0
+                            },
+                            "number-of-packets-sent": 0,
+                            "number-of-packets-received": 0,
+                            "delay-a-flag-set": false,
+                            "loss-a-flag-set": false
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "collection_end_time": "1772221763547"
+}
