@@ -1,7 +1,7 @@
 {
-    "_id": "cisco-cisco-mobilitycore-pm-mme-paging-profile",
+    "_id": "cisco-cisco-mobilitycore-pm-smf-n7fail4xx",
     "customMetrics": null,
-    "dictionaryName": "cisco-cisco-mobilitycore-pm-mme-paging-profile",
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-smf-n7fail4xx",
     "dictionaryType": "global",
     "dimensions": [
         {
@@ -88,234 +88,279 @@
     "metricType": "timeseries",
     "metrics": [
         {
-            "analyticsName": "pagingProfileStage1Attempt",
+            "analyticsName": "combocoreIntN7SmPolicyCreateFailure4xx",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage1_Attempt",
+            "rawName": "combocore_int_n7_sm_policy_create_failure_4xx",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage1Failure",
+            "analyticsName": "combocoreIntN7SmPolicyDeleteFailure4xx",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage1_Failure",
+            "rawName": "combocore_int_n7_sm_policy_delete_failure_4xx",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage1Skipped",
+            "analyticsName": "combocoreIntN7SmPolicyNotifyTerminateFailure4xx",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage1_Skipped",
+            "rawName": "combocore_int_n7_sm_policy_notify_terminate_failure_4xx",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage1Success",
+            "analyticsName": "combocoreIntN7SmPolicyNotifyUpdateFailure4xx",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage1_Success",
+            "rawName": "combocore_int_n7_sm_policy_notify_update_failure_4xx",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage1SuccessRate",
+            "analyticsName": "combocoreIntN7SmPolicyUpdateFailure4xx",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage1_Success_Rate",
+            "rawName": "combocore_int_n7_sm_policy_update_failure_4xx",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage2Attempt",
+            "analyticsName": "combocoreN7SmPolicyCreateFailure400",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage2_Attempt",
+            "rawName": "combocore_n7_sm_policy_create_failure_400",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage2Failure",
+            "analyticsName": "combocoreN7SmPolicyCreateFailure403",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage2_Failure",
+            "rawName": "combocore_n7_sm_policy_create_failure_403",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage2Skipped",
+            "analyticsName": "combocoreN7SmPolicyCreateFailure404",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage2_Skipped",
+            "rawName": "combocore_n7_sm_policy_create_failure_404",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage2Success",
+            "analyticsName": "combocoreN7SmPolicyCreateFailure429",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage2_Success",
+            "rawName": "combocore_n7_sm_policy_create_failure_429",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage2SuccessRate",
+            "analyticsName": "combocoreN7SmPolicyCreateFailure4xx",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage2_Success_Rate",
+            "rawName": "combocore_n7_sm_policy_create_failure_4xx",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage3Attempt",
+            "analyticsName": "combocoreN7SmPolicyDeleteFailure400",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage3_Attempt",
+            "rawName": "combocore_n7_sm_policy_delete_failure_400",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage3Failure",
+            "analyticsName": "combocoreN7SmPolicyDeleteFailure403",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage3_Failure",
+            "rawName": "combocore_n7_sm_policy_delete_failure_403",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage3Skipped",
+            "analyticsName": "combocoreN7SmPolicyDeleteFailure404",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage3_Skipped",
+            "rawName": "combocore_n7_sm_policy_delete_failure_404",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage3Success",
+            "analyticsName": "combocoreN7SmPolicyDeleteFailure429",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage3_Success",
+            "rawName": "combocore_n7_sm_policy_delete_failure_429",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage3SuccessRate",
+            "analyticsName": "combocoreN7SmPolicyDeleteFailure4xx",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage3_Success_Rate",
+            "rawName": "combocore_n7_sm_policy_delete_failure_4xx",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage4Attempt",
+            "analyticsName": "combocoreN7SmPolicyNotifyTerminateFailure400",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage4_Attempt",
+            "rawName": "combocore_n7_sm_policy_notify_terminate_failure_400",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage4Failure",
+            "analyticsName": "combocoreN7SmPolicyNotifyTerminateFailure403",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage4_Failure",
+            "rawName": "combocore_n7_sm_policy_notify_terminate_failure_403",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage4Skipped",
+            "analyticsName": "combocoreN7SmPolicyNotifyTerminateFailure404",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage4_Skipped",
+            "rawName": "combocore_n7_sm_policy_notify_terminate_failure_404",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage4Success",
+            "analyticsName": "combocoreN7SmPolicyNotifyTerminateFailure429",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage4_Success",
+            "rawName": "combocore_n7_sm_policy_notify_terminate_failure_429",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage4SuccessRate",
+            "analyticsName": "combocoreN7SmPolicyNotifyTerminateFailure4xx",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage4_Success_Rate",
+            "rawName": "combocore_n7_sm_policy_notify_terminate_failure_4xx",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage5Attempt",
+            "analyticsName": "combocoreN7SmPolicyNotifyUpdateFailure400",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage5_Attempt",
+            "rawName": "combocore_n7_sm_policy_notify_update_failure_400",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage5Failure",
+            "analyticsName": "combocoreN7SmPolicyNotifyUpdateFailure403",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage5_Failure",
+            "rawName": "combocore_n7_sm_policy_notify_update_failure_403",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage5Skipped",
+            "analyticsName": "combocoreN7SmPolicyNotifyUpdateFailure404",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage5_Skipped",
+            "rawName": "combocore_n7_sm_policy_notify_update_failure_404",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage5Success",
+            "analyticsName": "combocoreN7SmPolicyNotifyUpdateFailure429",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage5_Success",
+            "rawName": "combocore_n7_sm_policy_notify_update_failure_429",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage5SuccessRate",
+            "analyticsName": "combocoreN7SmPolicyNotifyUpdateFailure4xx",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage5_Success_Rate",
+            "rawName": "combocore_n7_sm_policy_notify_update_failure_4xx",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyUpdateFailure400",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_update_failure_400",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyUpdateFailure403",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_update_failure_403",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyUpdateFailure404",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_update_failure_404",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyUpdateFailure429",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_update_failure_429",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyUpdateFailure4xx",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_update_failure_4xx",
             "unit": "value"
         }
     ],
-    "objectType": "cisco-mobilitycore-pm-mme-paging-profile",
+    "objectType": "cisco-mobilitycore-pm-smf-n7fail4xx",
     "tenantId": "",
     "vendor": "cisco",
-    "id": "cisco-cisco-mobilitycore-pm-mme-paging-profile",
+    "id": "cisco-cisco-mobilitycore-pm-smf-n7fail4xx",
     "type": "ingestionDictionaries"
 }

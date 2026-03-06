@@ -1,7 +1,7 @@
 {
-    "_id": "cisco-cisco-mobilitycore-pm-mme-inter",
+    "_id": "cisco-cisco-mobilitycore-pm-smf-apn",
     "customMetrics": null,
-    "dictionaryName": "cisco-cisco-mobilitycore-pm-mme-inter",
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-smf-apn",
     "dictionaryType": "global",
     "dimensions": [
         {
@@ -88,261 +88,297 @@
     "metricType": "timeseries",
     "metrics": [
         {
-            "analyticsName": "interMmeRelocationsS1S10HoIncomingAttempts",
+            "analyticsName": "combocore4gApnCurrentSessions",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_Relocations_S1_S10_HO_Incoming_Attempts",
+            "rawName": "combocore_4g_apn_current_sessions",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeRelocationsS1S10HoIncomingSuccess",
+            "analyticsName": "combocore4gApnTotalNumberOfActiveDedicatedBearers",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_Relocations_S1_S10_HO_Incoming_Success",
+            "rawName": "combocore_4g_apn_total_number_of_active_dedicated_bearers",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeRelocationsS1S10HoIncomingSuccessRate",
+            "analyticsName": "combocore4gCreateSessionRequestSuccessRate",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_Relocations_S1_S10_HO_Incoming_Success_Rate",
+            "rawName": "combocore_4g_create_session_request_success_rate",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeRelocationsS1S10HoOutgoingAttempts",
+            "analyticsName": "combocore4gCreateSessionResponseDeniedApnaccessdenied",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_Relocations_S1_S10_HO_Outgoing_Attempts",
+            "rawName": "combocore_4g_create_session_response_denied_apnaccessdenied",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeRelocationsS1S10HoOutgoingSuccess",
+            "analyticsName": "combocore4gCreateSessionResponseDeniedApnrsttypeincompatible",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_Relocations_S1_S10_HO_Outgoing_Success",
+            "rawName": "combocore_4g_create_session_response_denied_apnrsttypeincompatible",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeRelocationsS1S10HoOutgoingSuccessRate",
+            "analyticsName": "combocore4gCreateSessionResponseDeniedConditionaliemissing",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_Relocations_S1_S10_HO_Outgoing_Success_Rate",
+            "rawName": "combocore_4g_create_session_response_denied_conditionaliemissing",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejNetworkFailHssUnavailable",
+            "analyticsName": "combocore4gCreateSessionResponseDeniedContextnotfound",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Rej_network_fail_hss_unavailable",
+            "rawName": "combocore_4g_create_session_response_denied_contextnotfound",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectEpsNotAllowed",
+            "analyticsName": "combocore4gCreateSessionResponseDeniedImsinotknown",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_eps_not_allowed",
+            "rawName": "combocore_4g_create_session_response_denied_imsinotknown",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectIllegalMe",
+            "analyticsName": "combocore4gCreateSessionResponseDeniedInvalidemsgformat",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_illegal_me",
+            "rawName": "combocore_4g_create_session_response_denied_invalidemsgformat",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectIllegalUe",
+            "analyticsName": "combocore4gCreateSessionResponseDeniedMandatoryiemissing",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_illegal_ue",
+            "rawName": "combocore_4g_create_session_response_denied_mandatoryiemissing",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectImplicitDetached",
+            "analyticsName": "combocore4gCreateSessionResponseDeniedNores",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_implicit_detached",
+            "rawName": "combocore_4g_create_session_response_denied_nores",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectImsiUnknownHss",
+            "analyticsName": "combocore4gCreateSessionResponseDeniedPrefpdntypeunsupported",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_imsi_unknown_hss",
+            "rawName": "combocore_4g_create_session_response_denied_prefpdntypeunsupported",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectNetworkFail",
+            "analyticsName": "combocore4gCreateSessionResponseDeniedUserauthfailed",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_network_fail",
+            "rawName": "combocore_4g_create_session_response_denied_userauthfailed",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectNoSuitableCellTa",
+            "analyticsName": "combocore4gCreateSessionResponseDiscarded",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_no_suitable_cell_ta",
+            "rawName": "combocore_4g_create_session_response_discarded",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectUeIdentityUnk",
+            "analyticsName": "combocore4gCreateSessionResponseServicedenied",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_ue_identity_unk",
+            "rawName": "combocore_4g_create_session_response_servicedenied",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithDecodeFailure",
+            "analyticsName": "combocore4gPdnSessionCreateAttempts",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_with_decode_failure",
+            "rawName": "combocore_4g_pdn_session_create_attempts",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithNoBearerActive",
+            "analyticsName": "combocore4gPdnSessionCreateFailures",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_with_no_bearer_active",
+            "rawName": "combocore_4g_pdn_session_create_failures",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithPlmnnotallow",
+            "analyticsName": "combocore4gPdnSessionCreateSuccess",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_with_plmnnotallow",
+            "rawName": "combocore_4g_pdn_session_create_success",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithTanotallow",
+            "analyticsName": "combocore4gTotalCurrentPdnSessions",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_with_tanotallow",
+            "rawName": "combocore_4g_total_current_pdn_sessions",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectsTotal",
+            "analyticsName": "combocoreApnCreateSessionRequestAttempts",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Rejects_Total",
+            "rawName": "combocore_apn_create_session_request_attempts",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithCongestion",
+            "analyticsName": "combocoreApnCreateSessionRequestFailure",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_reject_with_congestion",
+            "rawName": "combocore_apn_create_session_request_failure",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithCsgnotsubscribed",
+            "analyticsName": "combocoreApnCreateSessionRequestSuccess",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_reject_with_csgnotsubscribed",
+            "rawName": "combocore_apn_create_session_request_success",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithEpsnonepsnotallowed",
+            "analyticsName": "combocoreApnCreateSessionRequestSuccessRate",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_reject_with_epsnonepsnotallowed",
+            "rawName": "combocore_apn_create_session_request_success_rate",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithImeinotaccept",
+            "analyticsName": "combocoreApnIpv4v6Sessions",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_reject_with_imeinotaccept",
+            "rawName": "combocore_apn_ipv4v6_sessions",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithNoepssvcplmn",
+            "analyticsName": "combocoreApnTotalNumberOfActiveIpv4Sessions",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_reject_with_noepssvcplmn",
+            "rawName": "combocore_apn_total_number_of_active_ipv4_sessions",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithRoamingrestrictta",
+            "analyticsName": "combocoreApnTotalNumberOfActiveIpv6Sessions",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_reject_with_roamingrestrictta",
+            "rawName": "combocore_apn_total_number_of_active_ipv6_sessions",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithSeverenetworkfailure",
+            "analyticsName": "combocoreCeps4gPdnSessionSetup",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_reject_with_severenetworkfailure",
+            "rawName": "combocore_ceps_4g_pdn_session_setup",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTrackingAreaUpdateSuccessRate",
+            "analyticsName": "combocoreCreateBearerResponseDeniedUenotresponding",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_Tracking_Area_Update_Success_Rate",
+            "rawName": "combocore_create_bearer_response_denied_uenotresponding",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCreateSessionResponseDeniedRequestrejected",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_create_session_response_denied_requestrejected",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreRetransmitSessionEstablishmentRequestRecvd",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_retransmit_session_establishment_request_recvd",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreRetransmitSessionEstablishmentRequestSent",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_retransmit_session_establishment_request_sent",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreTotalNumberOfPgwSessions",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_total_number_of_pgw_sessions",
             "unit": "value"
         }
     ],
-    "objectType": "cisco-mobilitycore-pm-mme-inter",
+    "objectType": "cisco-mobilitycore-pm-smf-apn",
     "tenantId": "",
     "vendor": "cisco",
-    "id": "cisco-cisco-mobilitycore-pm-mme-inter",
+    "id": "cisco-cisco-mobilitycore-pm-smf-apn",
     "type": "ingestionDictionaries"
 }

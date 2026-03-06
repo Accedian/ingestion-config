@@ -1,7 +1,7 @@
 {
-    "_id": "cisco-cisco-mobilitycore-pm-mme-inter",
+    "_id": "cisco-cisco-mobilitycore-pm-smf-n7fail5xx",
     "customMetrics": null,
-    "dictionaryName": "cisco-cisco-mobilitycore-pm-mme-inter",
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-smf-n7fail5xx",
     "dictionaryType": "global",
     "dimensions": [
         {
@@ -88,261 +88,324 @@
     "metricType": "timeseries",
     "metrics": [
         {
-            "analyticsName": "interMmeRelocationsS1S10HoIncomingAttempts",
+            "analyticsName": "combocoreIntN7SmPolicyCreateFailure5xx",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_Relocations_S1_S10_HO_Incoming_Attempts",
+            "rawName": "combocore_int_n7_sm_policy_create_failure_5xx",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeRelocationsS1S10HoIncomingSuccess",
+            "analyticsName": "combocoreIntN7SmPolicyDeleteFailure5xx",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_Relocations_S1_S10_HO_Incoming_Success",
+            "rawName": "combocore_int_n7_sm_policy_delete_failure_5xx",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeRelocationsS1S10HoIncomingSuccessRate",
+            "analyticsName": "combocoreIntN7SmPolicyNotifyTerminateFailure5xx",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_Relocations_S1_S10_HO_Incoming_Success_Rate",
+            "rawName": "combocore_int_n7_sm_policy_notify_terminate_failure_5xx",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeRelocationsS1S10HoOutgoingAttempts",
+            "analyticsName": "combocoreIntN7SmPolicyNotifyUpdateFailure5xx",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_Relocations_S1_S10_HO_Outgoing_Attempts",
+            "rawName": "combocore_int_n7_sm_policy_notify_update_failure_5xx",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeRelocationsS1S10HoOutgoingSuccess",
+            "analyticsName": "combocoreIntN7SmPolicyUpdateFailure5xx",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_Relocations_S1_S10_HO_Outgoing_Success",
+            "rawName": "combocore_int_n7_sm_policy_update_failure_5xx",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeRelocationsS1S10HoOutgoingSuccessRate",
+            "analyticsName": "combocoreN7SmPolicyCreateFailure500",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_Relocations_S1_S10_HO_Outgoing_Success_Rate",
+            "rawName": "combocore_n7_sm_policy_create_failure_500",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejNetworkFailHssUnavailable",
+            "analyticsName": "combocoreN7SmPolicyCreateFailure501",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Rej_network_fail_hss_unavailable",
+            "rawName": "combocore_n7_sm_policy_create_failure_501",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectEpsNotAllowed",
+            "analyticsName": "combocoreN7SmPolicyCreateFailure502",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_eps_not_allowed",
+            "rawName": "combocore_n7_sm_policy_create_failure_502",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectIllegalMe",
+            "analyticsName": "combocoreN7SmPolicyCreateFailure503",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_illegal_me",
+            "rawName": "combocore_n7_sm_policy_create_failure_503",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectIllegalUe",
+            "analyticsName": "combocoreN7SmPolicyCreateFailure504",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_illegal_ue",
+            "rawName": "combocore_n7_sm_policy_create_failure_504",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectImplicitDetached",
+            "analyticsName": "combocoreN7SmPolicyCreateFailure5xx",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_implicit_detached",
+            "rawName": "combocore_n7_sm_policy_create_failure_5xx",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectImsiUnknownHss",
+            "analyticsName": "combocoreN7SmPolicyDeleteFailure500",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_imsi_unknown_hss",
+            "rawName": "combocore_n7_sm_policy_delete_failure_500",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectNetworkFail",
+            "analyticsName": "combocoreN7SmPolicyDeleteFailure501",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_network_fail",
+            "rawName": "combocore_n7_sm_policy_delete_failure_501",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectNoSuitableCellTa",
+            "analyticsName": "combocoreN7SmPolicyDeleteFailure502",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_no_suitable_cell_ta",
+            "rawName": "combocore_n7_sm_policy_delete_failure_502",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectUeIdentityUnk",
+            "analyticsName": "combocoreN7SmPolicyDeleteFailure503",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_ue_identity_unk",
+            "rawName": "combocore_n7_sm_policy_delete_failure_503",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithDecodeFailure",
+            "analyticsName": "combocoreN7SmPolicyDeleteFailure504",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_with_decode_failure",
+            "rawName": "combocore_n7_sm_policy_delete_failure_504",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithNoBearerActive",
+            "analyticsName": "combocoreN7SmPolicyDeleteFailure5xx",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_with_no_bearer_active",
+            "rawName": "combocore_n7_sm_policy_delete_failure_5xx",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithPlmnnotallow",
+            "analyticsName": "combocoreN7SmPolicyNotifyTerminateFailure500",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_with_plmnnotallow",
+            "rawName": "combocore_n7_sm_policy_notify_terminate_failure_500",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithTanotallow",
+            "analyticsName": "combocoreN7SmPolicyNotifyTerminateFailure501",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Reject_with_tanotallow",
+            "rawName": "combocore_n7_sm_policy_notify_terminate_failure_501",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectsTotal",
+            "analyticsName": "combocoreN7SmPolicyNotifyTerminateFailure502",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_Rejects_Total",
+            "rawName": "combocore_n7_sm_policy_notify_terminate_failure_502",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithCongestion",
+            "analyticsName": "combocoreN7SmPolicyNotifyTerminateFailure503",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_reject_with_congestion",
+            "rawName": "combocore_n7_sm_policy_notify_terminate_failure_503",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithCsgnotsubscribed",
+            "analyticsName": "combocoreN7SmPolicyNotifyTerminateFailure504",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_reject_with_csgnotsubscribed",
+            "rawName": "combocore_n7_sm_policy_notify_terminate_failure_504",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithEpsnonepsnotallowed",
+            "analyticsName": "combocoreN7SmPolicyNotifyTerminateFailure5xx",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_reject_with_epsnonepsnotallowed",
+            "rawName": "combocore_n7_sm_policy_notify_terminate_failure_5xx",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithImeinotaccept",
+            "analyticsName": "combocoreN7SmPolicyNotifyUpdateFailure500",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_reject_with_imeinotaccept",
+            "rawName": "combocore_n7_sm_policy_notify_update_failure_500",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithNoepssvcplmn",
+            "analyticsName": "combocoreN7SmPolicyNotifyUpdateFailure501",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_reject_with_noepssvcplmn",
+            "rawName": "combocore_n7_sm_policy_notify_update_failure_501",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithRoamingrestrictta",
+            "analyticsName": "combocoreN7SmPolicyNotifyUpdateFailure502",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_reject_with_roamingrestrictta",
+            "rawName": "combocore_n7_sm_policy_notify_update_failure_502",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTauRejectWithSeverenetworkfailure",
+            "analyticsName": "combocoreN7SmPolicyNotifyUpdateFailure503",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_TAU_reject_with_severenetworkfailure",
+            "rawName": "combocore_n7_sm_policy_notify_update_failure_503",
             "unit": "value"
         },
         {
-            "analyticsName": "interMmeTrackingAreaUpdateSuccessRate",
+            "analyticsName": "combocoreN7SmPolicyNotifyUpdateFailure504",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Inter_MME_Tracking_Area_Update_Success_Rate",
+            "rawName": "combocore_n7_sm_policy_notify_update_failure_504",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyNotifyUpdateFailure5xx",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_notify_update_failure_5xx",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyUpdateFailure500",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_update_failure_500",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyUpdateFailure501",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_update_failure_501",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyUpdateFailure502",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_update_failure_502",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyUpdateFailure503",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_update_failure_503",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyUpdateFailure504",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_update_failure_504",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyUpdateFailure5xx",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_update_failure_5xx",
             "unit": "value"
         }
     ],
-    "objectType": "cisco-mobilitycore-pm-mme-inter",
+    "objectType": "cisco-mobilitycore-pm-smf-n7fail5xx",
     "tenantId": "",
     "vendor": "cisco",
-    "id": "cisco-cisco-mobilitycore-pm-mme-inter",
+    "id": "cisco-cisco-mobilitycore-pm-smf-n7fail5xx",
     "type": "ingestionDictionaries"
 }

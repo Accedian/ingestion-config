@@ -1,7 +1,7 @@
 {
-    "_id": "cisco-cisco-mobilitycore-pm-tai",
+    "_id": "cisco-cisco-mobilitycore-pm-mme-5g",
     "customMetrics": null,
-    "dictionaryName": "cisco-cisco-mobilitycore-pm-tai",
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-mme-5g",
     "dictionaryType": "global",
     "dimensions": [
         {
@@ -88,189 +88,189 @@
     "metricType": "timeseries",
     "metrics": [
         {
-            "analyticsName": "qci5LastEnbSuccessRate",
+            "analyticsName": "eps5gsHandoverFailureRate",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI5_Last_Enb_Success_Rate",
+            "rawName": "EPS_5GS_Handover_Failure_Rate",
             "unit": "value"
         },
         {
-            "analyticsName": "qci5LastTaiSuccessRate",
+            "analyticsName": "eps5gsHandoverSuccessRate",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI5_Last_Tai_Success_Rate",
+            "rawName": "EPS_5GS_Handover_Success_Rate",
             "unit": "value"
         },
         {
-            "analyticsName": "qci5PagingInitAttempted",
+            "analyticsName": "eps5gsMobilityRegistrationFailureRate",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI5_Paging_Init_Attempted",
+            "rawName": "EPS_5GS_Mobility_Registration_Failure_Rate",
             "unit": "value"
         },
         {
-            "analyticsName": "qci5PagingInitFailure",
+            "analyticsName": "eps5gsMobilityRegistrationSuccessRate",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI5_Paging_Init_Failure",
+            "rawName": "EPS_5GS_Mobility_Registration_Success_Rate",
             "unit": "value"
         },
         {
-            "analyticsName": "qci5PagingInitSuccess",
+            "analyticsName": "fivegsEpsHandoverFailureRate",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI5_Paging_Init_Success",
+            "rawName": "FiveGS_EPS_Handover_Failure_Rate",
             "unit": "value"
         },
         {
-            "analyticsName": "qci5PagingLastEnbSuccess",
+            "analyticsName": "fivegsEpsHandoverSuccessRate",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI5_Paging_Last_Enb_Success",
+            "rawName": "FiveGS_EPS_Handover_Success_Rate",
             "unit": "value"
         },
         {
-            "analyticsName": "qci5PagingLastTaiSuccess",
+            "analyticsName": "fivegsEpsIdleModeMobilityFailureRate",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI5_Paging_Last_Tai_Success",
+            "rawName": "FiveGS_EPS_Idle_Mode_Mobility_Failure_Rate",
             "unit": "value"
         },
         {
-            "analyticsName": "qci5PagingTaiListSuccess",
+            "analyticsName": "fivegsEpsIdleModeMobilitySuccessRate",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI5_Paging_Tai_List_Success",
+            "rawName": "FiveGS_EPS_Idle_Mode_Mobility_Success_Rate",
             "unit": "value"
         },
         {
-            "analyticsName": "qci5TaiListSuccessRate",
+            "analyticsName": "n26ho4gto5gFailure",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI5_Tai_List_Success_Rate",
+            "rawName": "MME_N26ho_4Gto5G_Failure",
             "unit": "value"
         },
         {
-            "analyticsName": "qci9LastEnbSuccessRate",
+            "analyticsName": "n26ho4gto5gSuccess",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI9_Last_Enb_Success_Rate",
+            "rawName": "MME_N26ho_4Gto5G_Success",
             "unit": "value"
         },
         {
-            "analyticsName": "qci9LastTaiSuccessRate",
+            "analyticsName": "n26ho5gto4gFailure",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI9_Last_Tai_Success_Rate",
+            "rawName": "MME_N26ho_5Gto4G_Failure",
             "unit": "value"
         },
         {
-            "analyticsName": "qci9PagingInitAttempted",
+            "analyticsName": "n26ho5gto4gSuccess",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI9_Paging_Init_Attempted",
+            "rawName": "MME_N26ho_5Gto4G_Success",
             "unit": "value"
         },
         {
-            "analyticsName": "qci9PagingInitFailure",
+            "analyticsName": "n26hoForwardrelocationrequestReceive",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI9_Paging_Init_Failure",
+            "rawName": "MME_N26ho_ForwardRelocationRequest_Receive",
             "unit": "value"
         },
         {
-            "analyticsName": "qci9PagingInitSuccess",
+            "analyticsName": "n26hoHandoverrequiredReceive",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI9_Paging_Init_Success",
+            "rawName": "MME_N26ho_HandoverRequired_Receive",
             "unit": "value"
         },
         {
-            "analyticsName": "qci9PagingLastEnbSuccess",
+            "analyticsName": "n26mob4gto5gFailure",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI9_Paging_Last_Enb_Success",
+            "rawName": "MME_N26mob_4Gto5G_Failure",
             "unit": "value"
         },
         {
-            "analyticsName": "qci9PagingLastTaiSuccess",
+            "analyticsName": "n26mob4gto5gSuccess",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI9_Paging_Last_Tai_Success",
+            "rawName": "MME_N26mob_4Gto5G_Success",
             "unit": "value"
         },
         {
-            "analyticsName": "qci9PagingTaiListSuccess",
+            "analyticsName": "n26mob5gto4gFailure",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI9_Paging_Tai_List_Success",
+            "rawName": "MME_N26mob_5Gto4G_Failure",
             "unit": "value"
         },
         {
-            "analyticsName": "qci9TaiListSuccessRate",
+            "analyticsName": "n26mob5gto4gSuccess",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI9_Tai_List_Success_Rate",
+            "rawName": "MME_N26mob_5Gto4G_Success",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingAttempted",
+            "analyticsName": "n26mobConextrequestReceive",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "Tai_Paging_Attempted",
+            "rawName": "MME_N26mob_ConextRequest_Receive",
             "unit": "value"
         },
         {
-            "analyticsName": "s1PagingTx",
+            "analyticsName": "n26mobConextrequestSend",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "Tai_S1_Paging_Tx",
+            "rawName": "MME_N26mob_ConextRequest_Send",
             "unit": "value"
         }
     ],
-    "objectType": "cisco-mobilitycore-pm-tai",
+    "objectType": "cisco-mobilitycore-pm-mme-5g",
     "tenantId": "",
     "vendor": "cisco",
-    "id": "cisco-cisco-mobilitycore-pm-tai",
+    "id": "cisco-cisco-mobilitycore-pm-mme-5g",
     "type": "ingestionDictionaries"
 }

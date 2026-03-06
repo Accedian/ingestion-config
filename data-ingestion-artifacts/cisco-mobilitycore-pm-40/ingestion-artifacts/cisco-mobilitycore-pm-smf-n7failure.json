@@ -1,7 +1,7 @@
 {
-    "_id": "cisco-cisco-mobilitycore-pm-tai",
+    "_id": "cisco-cisco-mobilitycore-pm-smf-n7failure",
     "customMetrics": null,
-    "dictionaryName": "cisco-cisco-mobilitycore-pm-tai",
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-smf-n7failure",
     "dictionaryType": "global",
     "dimensions": [
         {
@@ -88,189 +88,117 @@
     "metricType": "timeseries",
     "metrics": [
         {
-            "analyticsName": "qci5LastEnbSuccessRate",
+            "analyticsName": "combocore5gPduEstFailuresN7PolicyCreateResponseTimeout",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI5_Last_Enb_Success_Rate",
+            "rawName": "combocore_5g_pdu_est_failures_n7_policy_create_response_timeout",
             "unit": "value"
         },
         {
-            "analyticsName": "qci5LastTaiSuccessRate",
+            "analyticsName": "combocore5gPduEstFailuresN7PolicyUpdateResponseTimeout",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI5_Last_Tai_Success_Rate",
+            "rawName": "combocore_5g_pdu_est_failures_n7_policy_update_response_timeout",
             "unit": "value"
         },
         {
-            "analyticsName": "qci5PagingInitAttempted",
+            "analyticsName": "combocoreIntN7SmPolicyCreateFailure",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI5_Paging_Init_Attempted",
+            "rawName": "combocore_int_n7_sm_policy_create_failure",
             "unit": "value"
         },
         {
-            "analyticsName": "qci5PagingInitFailure",
+            "analyticsName": "combocoreIntN7SmPolicyDeleteFailure",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI5_Paging_Init_Failure",
+            "rawName": "combocore_int_n7_sm_policy_delete_failure",
             "unit": "value"
         },
         {
-            "analyticsName": "qci5PagingInitSuccess",
+            "analyticsName": "combocoreIntN7SmPolicyNotifyTerminateFailure",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI5_Paging_Init_Success",
+            "rawName": "combocore_int_n7_sm_policy_notify_terminate_failure",
             "unit": "value"
         },
         {
-            "analyticsName": "qci5PagingLastEnbSuccess",
+            "analyticsName": "combocoreIntN7SmPolicyNotifyUpdateFailure",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI5_Paging_Last_Enb_Success",
+            "rawName": "combocore_int_n7_sm_policy_notify_update_failure",
             "unit": "value"
         },
         {
-            "analyticsName": "qci5PagingLastTaiSuccess",
+            "analyticsName": "combocoreIntN7SmPolicyUpdateFailure",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI5_Paging_Last_Tai_Success",
+            "rawName": "combocore_int_n7_sm_policy_update_failure",
             "unit": "value"
         },
         {
-            "analyticsName": "qci5PagingTaiListSuccess",
+            "analyticsName": "combocoreN7SmPolicyCreateFailure",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI5_Paging_Tai_List_Success",
+            "rawName": "combocore_n7_sm_policy_create_failure",
             "unit": "value"
         },
         {
-            "analyticsName": "qci5TaiListSuccessRate",
+            "analyticsName": "combocoreN7SmPolicyDeleteFailure",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI5_Tai_List_Success_Rate",
+            "rawName": "combocore_n7_sm_policy_delete_failure",
             "unit": "value"
         },
         {
-            "analyticsName": "qci9LastEnbSuccessRate",
+            "analyticsName": "combocoreN7SmPolicyNotifyTerminateFailure",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI9_Last_Enb_Success_Rate",
+            "rawName": "combocore_n7_sm_policy_notify_terminate_failure",
             "unit": "value"
         },
         {
-            "analyticsName": "qci9LastTaiSuccessRate",
+            "analyticsName": "combocoreN7SmPolicyNotifyUpdateFailure",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI9_Last_Tai_Success_Rate",
+            "rawName": "combocore_n7_sm_policy_notify_update_failure",
             "unit": "value"
         },
         {
-            "analyticsName": "qci9PagingInitAttempted",
+            "analyticsName": "combocoreN7SmPolicyUpdateFailure",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "QCI9_Paging_Init_Attempted",
-            "unit": "value"
-        },
-        {
-            "analyticsName": "qci9PagingInitFailure",
-            "dataType": "double",
-            "directions": [
-                "-1"
-            ],
-            "rawName": "QCI9_Paging_Init_Failure",
-            "unit": "value"
-        },
-        {
-            "analyticsName": "qci9PagingInitSuccess",
-            "dataType": "double",
-            "directions": [
-                "-1"
-            ],
-            "rawName": "QCI9_Paging_Init_Success",
-            "unit": "value"
-        },
-        {
-            "analyticsName": "qci9PagingLastEnbSuccess",
-            "dataType": "double",
-            "directions": [
-                "-1"
-            ],
-            "rawName": "QCI9_Paging_Last_Enb_Success",
-            "unit": "value"
-        },
-        {
-            "analyticsName": "qci9PagingLastTaiSuccess",
-            "dataType": "double",
-            "directions": [
-                "-1"
-            ],
-            "rawName": "QCI9_Paging_Last_Tai_Success",
-            "unit": "value"
-        },
-        {
-            "analyticsName": "qci9PagingTaiListSuccess",
-            "dataType": "double",
-            "directions": [
-                "-1"
-            ],
-            "rawName": "QCI9_Paging_Tai_List_Success",
-            "unit": "value"
-        },
-        {
-            "analyticsName": "qci9TaiListSuccessRate",
-            "dataType": "double",
-            "directions": [
-                "-1"
-            ],
-            "rawName": "QCI9_Tai_List_Success_Rate",
-            "unit": "value"
-        },
-        {
-            "analyticsName": "pagingAttempted",
-            "dataType": "double",
-            "directions": [
-                "-1"
-            ],
-            "rawName": "Tai_Paging_Attempted",
-            "unit": "value"
-        },
-        {
-            "analyticsName": "s1PagingTx",
-            "dataType": "double",
-            "directions": [
-                "-1"
-            ],
-            "rawName": "Tai_S1_Paging_Tx",
+            "rawName": "combocore_n7_sm_policy_update_failure",
             "unit": "value"
         }
     ],
-    "objectType": "cisco-mobilitycore-pm-tai",
+    "objectType": "cisco-mobilitycore-pm-smf-n7failure",
     "tenantId": "",
     "vendor": "cisco",
-    "id": "cisco-cisco-mobilitycore-pm-tai",
+    "id": "cisco-cisco-mobilitycore-pm-smf-n7failure",
     "type": "ingestionDictionaries"
 }
