@@ -1,7 +1,7 @@
 {
-    "_id": "cisco-cisco-mobilitycore-pm-mme-paging-profile",
+    "_id": "cisco-cisco-mobilitycore-pm-smf-bearer",
     "customMetrics": null,
-    "dictionaryName": "cisco-cisco-mobilitycore-pm-mme-paging-profile",
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-smf-bearer",
     "dictionaryType": "global",
     "dimensions": [
         {
@@ -88,234 +88,261 @@
     "metricType": "timeseries",
     "metrics": [
         {
-            "analyticsName": "pagingProfileStage1Attempt",
+            "analyticsName": "combocore4gApnDedicatedBearerActivationSuccessRate",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage1_Attempt",
+            "rawName": "combocore_4g_apn_dedicated_bearer_activation_success_rate",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage1Failure",
+            "analyticsName": "combocore4gApnDedicatedBearerSuccess",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage1_Failure",
+            "rawName": "combocore_4g_apn_dedicated_bearer_success",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage1Skipped",
+            "analyticsName": "combocore4gApnDedicatedBearersAttempts",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage1_Skipped",
+            "rawName": "combocore_4g_apn_dedicated_bearers_attempts",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage1Success",
+            "analyticsName": "combocore4gApnDedicatedBearersFailure",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage1_Success",
+            "rawName": "combocore_4g_apn_dedicated_bearers_failure",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage1SuccessRate",
+            "analyticsName": "combocore4gApnDefaultBearerSetupAttempts",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage1_Success_Rate",
+            "rawName": "combocore_4g_apn_default_bearer_setup_attempts",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage2Attempt",
+            "analyticsName": "combocore4gApnDefaultBearerSetupFailure",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage2_Attempt",
+            "rawName": "combocore_4g_apn_default_bearer_setup_failure",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage2Failure",
+            "analyticsName": "combocore4gApnDefaultBearerSetupSuccess",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage2_Failure",
+            "rawName": "combocore_4g_apn_default_bearer_setup_success",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage2Skipped",
+            "analyticsName": "combocore4gApnDefaultBearerSetupSuccessRate",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage2_Skipped",
+            "rawName": "combocore_4g_apn_default_bearer_setup_success_rate",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage2Success",
+            "analyticsName": "combocore4gCnsgwNumberOfBearersActiveQci1",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage2_Success",
+            "rawName": "combocore_4g_cnsgw_number_of_bearers_active_qci1",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage2SuccessRate",
+            "analyticsName": "combocore4gCnsgwNumberOfBearersActiveQci5",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage2_Success_Rate",
+            "rawName": "combocore_4g_cnsgw_number_of_bearers_active_qci5",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage3Attempt",
+            "analyticsName": "combocore4gCnsgwNumberOfBearersActiveQci9",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage3_Attempt",
+            "rawName": "combocore_4g_cnsgw_number_of_bearers_active_qci9",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage3Failure",
+            "analyticsName": "combocore4gCreateBearerRequestAttempts",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage3_Failure",
+            "rawName": "combocore_4g_create_bearer_request_attempts",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage3Skipped",
+            "analyticsName": "combocore4gCreateBearerRequestFailure",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage3_Skipped",
+            "rawName": "combocore_4g_create_bearer_request_failure",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage3Success",
+            "analyticsName": "combocore4gCreateBearerRequestSuccess",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage3_Success",
+            "rawName": "combocore_4g_create_bearer_request_success",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage3SuccessRate",
+            "analyticsName": "combocore4gCreateBearerRequestSuccessRate",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage3_Success_Rate",
+            "rawName": "combocore_4g_create_bearer_request_success_rate",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage4Attempt",
+            "analyticsName": "combocore4gTotalActiveDefaultBearers",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage4_Attempt",
+            "rawName": "combocore_4g_total_active_default_bearers",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage4Failure",
+            "analyticsName": "combocoreCreateBearerResponseDeniedContexnotfound",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage4_Failure",
+            "rawName": "combocore_create_bearer_response_denied_contexnotfound",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage4Skipped",
+            "analyticsName": "combocoreCreateBearerResponseDeniedInvalidremotepeerreply",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage4_Skipped",
+            "rawName": "combocore_create_bearer_response_denied_invalidremotepeerreply",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage4Success",
+            "analyticsName": "combocoreCreateBearerResponseDeniedNoresourcesavl",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage4_Success",
+            "rawName": "combocore_create_bearer_response_denied_noresourcesavl",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage4SuccessRate",
+            "analyticsName": "combocoreCreateBearerResponseDeniedNoresponse",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage4_Success_Rate",
+            "rawName": "combocore_create_bearer_response_denied_noresponse",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage5Attempt",
+            "analyticsName": "combocoreCreateBearerResponseDeniedRequestrejected",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage5_Attempt",
+            "rawName": "combocore_create_bearer_response_denied_requestrejected",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage5Failure",
+            "analyticsName": "combocoreCreateBearerResponseDeniedSvcnotsupported",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage5_Failure",
+            "rawName": "combocore_create_bearer_response_denied_svcnotsupported",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage5Skipped",
+            "analyticsName": "combocoreCreateBearerResponseDeniedUnabletopageuesuspend",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage5_Skipped",
+            "rawName": "combocore_create_bearer_response_denied_unabletopageuesuspend",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage5Success",
+            "analyticsName": "combocoreEgtpc4gBearerModificationAttempts",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage5_Success",
+            "rawName": "combocore_egtpc_4g_bearer_modification_attempts",
             "unit": "value"
         },
         {
-            "analyticsName": "pagingProfileStage5SuccessRate",
+            "analyticsName": "combocoreEgtpc4gBearerModificationFailure",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
-            "rawName": "MME_Paging_Profile_Stage5_Success_Rate",
+            "rawName": "combocore_egtpc_4g_bearer_modification_failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreEgtpc4gBearerModificationSuccess",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_egtpc_4g_bearer_modification_success",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreEgtpc4gBearerModificationSuccessRate",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_egtpc_4g_bearer_modification_success_rate",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreEgtpcBearerUpdateSuccessRate",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_egtpc_bearer_update_success_rate",
             "unit": "value"
         }
     ],
-    "objectType": "cisco-mobilitycore-pm-mme-paging-profile",
+    "objectType": "cisco-mobilitycore-pm-smf-bearer",
     "tenantId": "",
     "vendor": "cisco",
-    "id": "cisco-cisco-mobilitycore-pm-mme-paging-profile",
+    "id": "cisco-cisco-mobilitycore-pm-smf-bearer",
     "type": "ingestionDictionaries"
 }
