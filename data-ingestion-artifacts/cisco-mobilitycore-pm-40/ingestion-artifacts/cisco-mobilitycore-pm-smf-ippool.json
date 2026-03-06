@@ -1,0 +1,159 @@
+{
+    "_id": "cisco-cisco-mobilitycore-pm-smf-ippool",
+    "customMetrics": null,
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-smf-ippool",
+    "dictionaryType": "global",
+    "dimensions": [
+        {
+            "analyticsName": "monitoredObjectId",
+            "dataType": "string",
+            "rawName": "monitoredObjectId"
+        },
+        {
+            "analyticsName": "monitoredObjectName",
+            "dataType": "string",
+            "rawName": "monitoredObjectName"
+        },
+        {
+            "analyticsName": "timestamp",
+            "dataType": "long",
+            "rawName": "timestamp"
+        },
+        {
+            "analyticsName": "direction",
+            "dataType": "integer",
+            "rawName": "direction"
+        },
+        {
+            "analyticsName": "agentId",
+            "dataType": "string",
+            "rawName": "agentId"
+        },
+        {
+            "analyticsName": "agentName",
+            "dataType": "string",
+            "rawName": "agentName"
+        },
+        {
+            "analyticsName": "agentType",
+            "dataType": "string",
+            "rawName": "agentType"
+        },
+        {
+            "analyticsName": "device",
+            "dataType": "string",
+            "rawName": "device"
+        },
+        {
+            "analyticsName": "host",
+            "dataType": "string",
+            "rawName": "host"
+        },
+        {
+            "analyticsName": "index",
+            "dataType": "string",
+            "rawName": "index"
+        },
+        {
+            "analyticsName": "node_id",
+            "dataType": "string",
+            "rawName": "node_id"
+        },
+        {
+            "analyticsName": "objectType",
+            "dataType": "string",
+            "rawName": "objectType"
+        },
+        {
+            "analyticsName": "schema",
+            "dataType": "string",
+            "rawName": "schema"
+        },
+        {
+            "analyticsName": "sessionId",
+            "dataType": "string",
+            "rawName": "sessionId"
+        },
+        {
+            "analyticsName": "sessionName",
+            "dataType": "string",
+            "rawName": "sessionName"
+        },
+        {
+            "analyticsName": "source_ip",
+            "dataType": "string",
+            "rawName": "source_ip"
+        }
+    ],
+    "metricType": "timeseries",
+    "metrics": [
+        {
+            "analyticsName": "combocoreIpPoolUtilization",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_ip_pool_utilization",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreIpUtilization",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_ip_utilization",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreIpamConsumption",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_ipam_consumption",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreIpamTotalAddress",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_ipam_total_address",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreNumberOfBearersSetupQci1Expression",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_number_of_bearers_setup_qci1_expression",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreNumberOfBearersSetupQci5Expression",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_number_of_bearers_setup_qci5_expression",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreNumberOfBearersSetupQci9",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_number_of_bearers_setup_qci9",
+            "unit": "value"
+        }
+    ],
+    "objectType": "cisco-mobilitycore-pm-smf-ippool",
+    "tenantId": "",
+    "vendor": "cisco",
+    "id": "cisco-cisco-mobilitycore-pm-smf-ippool",
+    "type": "ingestionDictionaries"
+}

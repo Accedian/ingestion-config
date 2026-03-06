@@ -1,0 +1,312 @@
+{
+    "_id": "cisco-cisco-mobilitycore-pm-smf-pdn",
+    "customMetrics": null,
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-smf-pdn",
+    "dictionaryType": "global",
+    "dimensions": [
+        {
+            "analyticsName": "monitoredObjectId",
+            "dataType": "string",
+            "rawName": "monitoredObjectId"
+        },
+        {
+            "analyticsName": "monitoredObjectName",
+            "dataType": "string",
+            "rawName": "monitoredObjectName"
+        },
+        {
+            "analyticsName": "timestamp",
+            "dataType": "long",
+            "rawName": "timestamp"
+        },
+        {
+            "analyticsName": "direction",
+            "dataType": "integer",
+            "rawName": "direction"
+        },
+        {
+            "analyticsName": "agentId",
+            "dataType": "string",
+            "rawName": "agentId"
+        },
+        {
+            "analyticsName": "agentName",
+            "dataType": "string",
+            "rawName": "agentName"
+        },
+        {
+            "analyticsName": "agentType",
+            "dataType": "string",
+            "rawName": "agentType"
+        },
+        {
+            "analyticsName": "device",
+            "dataType": "string",
+            "rawName": "device"
+        },
+        {
+            "analyticsName": "host",
+            "dataType": "string",
+            "rawName": "host"
+        },
+        {
+            "analyticsName": "index",
+            "dataType": "string",
+            "rawName": "index"
+        },
+        {
+            "analyticsName": "node_id",
+            "dataType": "string",
+            "rawName": "node_id"
+        },
+        {
+            "analyticsName": "objectType",
+            "dataType": "string",
+            "rawName": "objectType"
+        },
+        {
+            "analyticsName": "schema",
+            "dataType": "string",
+            "rawName": "schema"
+        },
+        {
+            "analyticsName": "sessionId",
+            "dataType": "string",
+            "rawName": "sessionId"
+        },
+        {
+            "analyticsName": "sessionName",
+            "dataType": "string",
+            "rawName": "sessionName"
+        },
+        {
+            "analyticsName": "source_ip",
+            "dataType": "string",
+            "rawName": "source_ip"
+        }
+    ],
+    "metricType": "timeseries",
+    "metrics": [
+        {
+            "analyticsName": "combocore4gCnsgwIntraSgwHandoverSuccessRate",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_cnsgw_intra_sgw_handover_success_rate",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gSmfDedicatedBearerActivationSuccessRate",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_smf_dedicated_bearer_activation_success_rate",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gSmfDefaultBearerActivationSuccessRate",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_smf_default_bearer_activation_success_rate",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gTotalActiveBearersPgw",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_total_active_bearers_pgw",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gTunSentCreinddatafwdngreq",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_tun_sent_creinddatafwdngreq",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCnsgwEgtpcS11CreateSessionRequestAttempts",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_cnsgw_egtpc_s11_create_session_request_attempts",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCnsgwEgtpcS11CreateSessionRequestSuccess",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_cnsgw_egtpc_s11_create_session_request_success",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCnsgwEgtpcS11DeleteBearerRequestAttempts",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_cnsgw_egtpc_s11_delete_bearer_request_attempts",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCnsgwEgtpcS11DeleteSessionRequestAttempts",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_cnsgw_egtpc_s11_delete_session_request_attempts",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCnsgwPdnsSgwAnchored",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_cnsgw_pdns_sgw_anchored",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCnsgwPgwS8ThroughputGbps",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_cnsgw_pgw_s8_throughput_gbps",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCnsgwSgwCdrsGenerated",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_cnsgw_sgw_cdrs_generated",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCurrentActivePgwDcnrPdns",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_current_active_pgw_dcnr_pdns",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocorePgwDedicatedBearersActive",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_pgw_dedicated_bearers_active",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocorePgwDefaultBearersActive",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_pgw_default_bearers_active",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocorePgwS5ThroughputGbps",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_pgw_s5_throughput_gbps",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreSmfActivePdnsHome",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_smf_active_pdns_home",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreSmfActivePdnsRoaming",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_smf_active_pdns_roaming",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreSmfActivePdnsVisiting",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_smf_active_pdns_visiting",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreTotalNumberDdnRequestReceived",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_total_number_ddn_request_received",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreTotalNumberOfPgwDcnrPdnsReleased",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_total_number_of_pgw_dcnr_pdns_released",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreTotalNumberOfPgwDcnrPdnsSetup",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_total_number_of_pgw_dcnr_pdns_setup",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreVisitingPdnsReleased",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_visiting_pdns_released",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreVisitingPdnsSetup",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_visiting_pdns_setup",
+            "unit": "value"
+        }
+    ],
+    "objectType": "cisco-mobilitycore-pm-smf-pdn",
+    "tenantId": "",
+    "vendor": "cisco",
+    "id": "cisco-cisco-mobilitycore-pm-smf-pdn",
+    "type": "ingestionDictionaries"
+}

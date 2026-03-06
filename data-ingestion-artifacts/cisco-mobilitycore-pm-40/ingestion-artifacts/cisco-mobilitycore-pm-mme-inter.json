@@ -88,12 +88,48 @@
     "metricType": "timeseries",
     "metrics": [
         {
+            "analyticsName": "interMmeRelocationsS1S10HoIncomingAttempts",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Inter_MME_Relocations_S1_S10_HO_Incoming_Attempts",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "interMmeRelocationsS1S10HoIncomingSuccess",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Inter_MME_Relocations_S1_S10_HO_Incoming_Success",
+            "unit": "value"
+        },
+        {
             "analyticsName": "interMmeRelocationsS1S10HoIncomingSuccessRate",
             "dataType": "double",
             "directions": [
                 "-1"
             ],
             "rawName": "MME_Inter_MME_Relocations_S1_S10_HO_Incoming_Success_Rate",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "interMmeRelocationsS1S10HoOutgoingAttempts",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Inter_MME_Relocations_S1_S10_HO_Outgoing_Attempts",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "interMmeRelocationsS1S10HoOutgoingSuccess",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Inter_MME_Relocations_S1_S10_HO_Outgoing_Success",
             "unit": "value"
         },
         {

@@ -1,0 +1,204 @@
+{
+    "_id": "cisco-cisco-mobilitycore-pm-smf-n7failure",
+    "customMetrics": null,
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-smf-n7failure",
+    "dictionaryType": "global",
+    "dimensions": [
+        {
+            "analyticsName": "monitoredObjectId",
+            "dataType": "string",
+            "rawName": "monitoredObjectId"
+        },
+        {
+            "analyticsName": "monitoredObjectName",
+            "dataType": "string",
+            "rawName": "monitoredObjectName"
+        },
+        {
+            "analyticsName": "timestamp",
+            "dataType": "long",
+            "rawName": "timestamp"
+        },
+        {
+            "analyticsName": "direction",
+            "dataType": "integer",
+            "rawName": "direction"
+        },
+        {
+            "analyticsName": "agentId",
+            "dataType": "string",
+            "rawName": "agentId"
+        },
+        {
+            "analyticsName": "agentName",
+            "dataType": "string",
+            "rawName": "agentName"
+        },
+        {
+            "analyticsName": "agentType",
+            "dataType": "string",
+            "rawName": "agentType"
+        },
+        {
+            "analyticsName": "device",
+            "dataType": "string",
+            "rawName": "device"
+        },
+        {
+            "analyticsName": "host",
+            "dataType": "string",
+            "rawName": "host"
+        },
+        {
+            "analyticsName": "index",
+            "dataType": "string",
+            "rawName": "index"
+        },
+        {
+            "analyticsName": "node_id",
+            "dataType": "string",
+            "rawName": "node_id"
+        },
+        {
+            "analyticsName": "objectType",
+            "dataType": "string",
+            "rawName": "objectType"
+        },
+        {
+            "analyticsName": "schema",
+            "dataType": "string",
+            "rawName": "schema"
+        },
+        {
+            "analyticsName": "sessionId",
+            "dataType": "string",
+            "rawName": "sessionId"
+        },
+        {
+            "analyticsName": "sessionName",
+            "dataType": "string",
+            "rawName": "sessionName"
+        },
+        {
+            "analyticsName": "source_ip",
+            "dataType": "string",
+            "rawName": "source_ip"
+        }
+    ],
+    "metricType": "timeseries",
+    "metrics": [
+        {
+            "analyticsName": "combocore5gPduEstFailuresN7PolicyCreateResponseTimeout",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_5g_pdu_est_failures_n7_policy_create_response_timeout",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore5gPduEstFailuresN7PolicyUpdateResponseTimeout",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_5g_pdu_est_failures_n7_policy_update_response_timeout",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreIntN7SmPolicyCreateFailure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_int_n7_sm_policy_create_failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreIntN7SmPolicyDeleteFailure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_int_n7_sm_policy_delete_failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreIntN7SmPolicyNotifyTerminateFailure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_int_n7_sm_policy_notify_terminate_failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreIntN7SmPolicyNotifyUpdateFailure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_int_n7_sm_policy_notify_update_failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreIntN7SmPolicyUpdateFailure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_int_n7_sm_policy_update_failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyCreateFailure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_create_failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyDeleteFailure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_delete_failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyNotifyTerminateFailure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_notify_terminate_failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyNotifyUpdateFailure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_notify_update_failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyUpdateFailure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_update_failure",
+            "unit": "value"
+        }
+    ],
+    "objectType": "cisco-mobilitycore-pm-smf-n7failure",
+    "tenantId": "",
+    "vendor": "cisco",
+    "id": "cisco-cisco-mobilitycore-pm-smf-n7failure",
+    "type": "ingestionDictionaries"
+}
