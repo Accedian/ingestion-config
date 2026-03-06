@@ -1,0 +1,411 @@
+{
+    "_id": "cisco-cisco-mobilitycore-pm-smf-n7fail5xx",
+    "customMetrics": null,
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-smf-n7fail5xx",
+    "dictionaryType": "global",
+    "dimensions": [
+        {
+            "analyticsName": "monitoredObjectId",
+            "dataType": "string",
+            "rawName": "monitoredObjectId"
+        },
+        {
+            "analyticsName": "monitoredObjectName",
+            "dataType": "string",
+            "rawName": "monitoredObjectName"
+        },
+        {
+            "analyticsName": "timestamp",
+            "dataType": "long",
+            "rawName": "timestamp"
+        },
+        {
+            "analyticsName": "direction",
+            "dataType": "integer",
+            "rawName": "direction"
+        },
+        {
+            "analyticsName": "agentId",
+            "dataType": "string",
+            "rawName": "agentId"
+        },
+        {
+            "analyticsName": "agentName",
+            "dataType": "string",
+            "rawName": "agentName"
+        },
+        {
+            "analyticsName": "agentType",
+            "dataType": "string",
+            "rawName": "agentType"
+        },
+        {
+            "analyticsName": "device",
+            "dataType": "string",
+            "rawName": "device"
+        },
+        {
+            "analyticsName": "host",
+            "dataType": "string",
+            "rawName": "host"
+        },
+        {
+            "analyticsName": "index",
+            "dataType": "string",
+            "rawName": "index"
+        },
+        {
+            "analyticsName": "node_id",
+            "dataType": "string",
+            "rawName": "node_id"
+        },
+        {
+            "analyticsName": "objectType",
+            "dataType": "string",
+            "rawName": "objectType"
+        },
+        {
+            "analyticsName": "schema",
+            "dataType": "string",
+            "rawName": "schema"
+        },
+        {
+            "analyticsName": "sessionId",
+            "dataType": "string",
+            "rawName": "sessionId"
+        },
+        {
+            "analyticsName": "sessionName",
+            "dataType": "string",
+            "rawName": "sessionName"
+        },
+        {
+            "analyticsName": "source_ip",
+            "dataType": "string",
+            "rawName": "source_ip"
+        }
+    ],
+    "metricType": "timeseries",
+    "metrics": [
+        {
+            "analyticsName": "combocoreIntN7SmPolicyCreateFailure5xx",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_int_n7_sm_policy_create_failure_5xx",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreIntN7SmPolicyDeleteFailure5xx",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_int_n7_sm_policy_delete_failure_5xx",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreIntN7SmPolicyNotifyTerminateFailure5xx",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_int_n7_sm_policy_notify_terminate_failure_5xx",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreIntN7SmPolicyNotifyUpdateFailure5xx",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_int_n7_sm_policy_notify_update_failure_5xx",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreIntN7SmPolicyUpdateFailure5xx",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_int_n7_sm_policy_update_failure_5xx",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyCreateFailure500",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_create_failure_500",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyCreateFailure501",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_create_failure_501",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyCreateFailure502",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_create_failure_502",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyCreateFailure503",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_create_failure_503",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyCreateFailure504",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_create_failure_504",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyCreateFailure5xx",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_create_failure_5xx",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyDeleteFailure500",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_delete_failure_500",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyDeleteFailure501",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_delete_failure_501",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyDeleteFailure502",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_delete_failure_502",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyDeleteFailure503",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_delete_failure_503",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyDeleteFailure504",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_delete_failure_504",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyDeleteFailure5xx",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_delete_failure_5xx",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyNotifyTerminateFailure500",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_notify_terminate_failure_500",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyNotifyTerminateFailure501",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_notify_terminate_failure_501",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyNotifyTerminateFailure502",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_notify_terminate_failure_502",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyNotifyTerminateFailure503",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_notify_terminate_failure_503",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyNotifyTerminateFailure504",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_notify_terminate_failure_504",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyNotifyTerminateFailure5xx",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_notify_terminate_failure_5xx",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyNotifyUpdateFailure500",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_notify_update_failure_500",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyNotifyUpdateFailure501",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_notify_update_failure_501",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyNotifyUpdateFailure502",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_notify_update_failure_502",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyNotifyUpdateFailure503",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_notify_update_failure_503",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyNotifyUpdateFailure504",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_notify_update_failure_504",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyNotifyUpdateFailure5xx",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_notify_update_failure_5xx",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyUpdateFailure500",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_update_failure_500",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyUpdateFailure501",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_update_failure_501",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyUpdateFailure502",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_update_failure_502",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyUpdateFailure503",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_update_failure_503",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyUpdateFailure504",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_update_failure_504",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreN7SmPolicyUpdateFailure5xx",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_n7_sm_policy_update_failure_5xx",
+            "unit": "value"
+        }
+    ],
+    "objectType": "cisco-mobilitycore-pm-smf-n7fail5xx",
+    "tenantId": "",
+    "vendor": "cisco",
+    "id": "cisco-cisco-mobilitycore-pm-smf-n7fail5xx",
+    "type": "ingestionDictionaries"
+}

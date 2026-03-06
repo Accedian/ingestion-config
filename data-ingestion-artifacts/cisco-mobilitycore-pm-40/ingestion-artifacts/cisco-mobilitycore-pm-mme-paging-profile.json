@@ -124,6 +124,15 @@
             "unit": "value"
         },
         {
+            "analyticsName": "pagingProfileStage1SuccessRate",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage1_Success_Rate",
+            "unit": "value"
+        },
+        {
             "analyticsName": "pagingProfileStage2Attempt",
             "dataType": "double",
             "directions": [
@@ -157,6 +166,15 @@
                 "-1"
             ],
             "rawName": "MME_Paging_Profile_Stage2_Success",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage2SuccessRate",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage2_Success_Rate",
             "unit": "value"
         },
         {
@@ -196,6 +214,15 @@
             "unit": "value"
         },
         {
+            "analyticsName": "pagingProfileStage3SuccessRate",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage3_Success_Rate",
+            "unit": "value"
+        },
+        {
             "analyticsName": "pagingProfileStage4Attempt",
             "dataType": "double",
             "directions": [
@@ -232,6 +259,15 @@
             "unit": "value"
         },
         {
+            "analyticsName": "pagingProfileStage4SuccessRate",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage4_Success_Rate",
+            "unit": "value"
+        },
+        {
             "analyticsName": "pagingProfileStage5Attempt",
             "dataType": "double",
             "directions": [
@@ -265,6 +301,15 @@
                 "-1"
             ],
             "rawName": "MME_Paging_Profile_Stage5_Success",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "pagingProfileStage5SuccessRate",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "MME_Paging_Profile_Stage5_Success_Rate",
             "unit": "value"
         }
     ],

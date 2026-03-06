@@ -1,0 +1,186 @@
+{
+    "_id": "cisco-cisco-mobilitycore-pm-smf-cdl",
+    "customMetrics": null,
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-smf-cdl",
+    "dictionaryType": "global",
+    "dimensions": [
+        {
+            "analyticsName": "monitoredObjectId",
+            "dataType": "string",
+            "rawName": "monitoredObjectId"
+        },
+        {
+            "analyticsName": "monitoredObjectName",
+            "dataType": "string",
+            "rawName": "monitoredObjectName"
+        },
+        {
+            "analyticsName": "timestamp",
+            "dataType": "long",
+            "rawName": "timestamp"
+        },
+        {
+            "analyticsName": "direction",
+            "dataType": "integer",
+            "rawName": "direction"
+        },
+        {
+            "analyticsName": "agentId",
+            "dataType": "string",
+            "rawName": "agentId"
+        },
+        {
+            "analyticsName": "agentName",
+            "dataType": "string",
+            "rawName": "agentName"
+        },
+        {
+            "analyticsName": "agentType",
+            "dataType": "string",
+            "rawName": "agentType"
+        },
+        {
+            "analyticsName": "device",
+            "dataType": "string",
+            "rawName": "device"
+        },
+        {
+            "analyticsName": "host",
+            "dataType": "string",
+            "rawName": "host"
+        },
+        {
+            "analyticsName": "index",
+            "dataType": "string",
+            "rawName": "index"
+        },
+        {
+            "analyticsName": "node_id",
+            "dataType": "string",
+            "rawName": "node_id"
+        },
+        {
+            "analyticsName": "objectType",
+            "dataType": "string",
+            "rawName": "objectType"
+        },
+        {
+            "analyticsName": "schema",
+            "dataType": "string",
+            "rawName": "schema"
+        },
+        {
+            "analyticsName": "sessionId",
+            "dataType": "string",
+            "rawName": "sessionId"
+        },
+        {
+            "analyticsName": "sessionName",
+            "dataType": "string",
+            "rawName": "sessionName"
+        },
+        {
+            "analyticsName": "source_ip",
+            "dataType": "string",
+            "rawName": "source_ip"
+        }
+    ],
+    "metricType": "timeseries",
+    "metrics": [
+        {
+            "analyticsName": "combocoreCdlIndexReplication",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_cdl_index_replication",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCdlInterRackReplicationsTotal",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_cdl_inter_rack_replications_total",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCdlIntraRackOperationsFailures",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_cdl_intra_rack_operations_failures",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCdlIntraRackOperationsSuccess",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_cdl_intra_rack_operations_success",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCdlIntraRackOperationsTotal",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_cdl_intra_rack_operations_total",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCdlSessionCountPerSlice",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_cdl_session_count_per_slice",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCdlSessionCountPerSystemId",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_cdl_session_count_per_system_id",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCdlSlotRecordsPerSlice",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_cdl_slot_records_per_slice",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCdlSlotRecordsPerSystemId",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_cdl_slot_records_per_system_id",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCdlTotalSessionCount",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_cdl_total_session_count",
+            "unit": "value"
+        }
+    ],
+    "objectType": "cisco-mobilitycore-pm-smf-cdl",
+    "tenantId": "",
+    "vendor": "cisco",
+    "id": "cisco-cisco-mobilitycore-pm-smf-cdl",
+    "type": "ingestionDictionaries"
+}

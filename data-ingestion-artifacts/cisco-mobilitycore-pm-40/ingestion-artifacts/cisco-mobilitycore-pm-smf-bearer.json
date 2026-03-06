@@ -1,0 +1,348 @@
+{
+    "_id": "cisco-cisco-mobilitycore-pm-smf-bearer",
+    "customMetrics": null,
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-smf-bearer",
+    "dictionaryType": "global",
+    "dimensions": [
+        {
+            "analyticsName": "monitoredObjectId",
+            "dataType": "string",
+            "rawName": "monitoredObjectId"
+        },
+        {
+            "analyticsName": "monitoredObjectName",
+            "dataType": "string",
+            "rawName": "monitoredObjectName"
+        },
+        {
+            "analyticsName": "timestamp",
+            "dataType": "long",
+            "rawName": "timestamp"
+        },
+        {
+            "analyticsName": "direction",
+            "dataType": "integer",
+            "rawName": "direction"
+        },
+        {
+            "analyticsName": "agentId",
+            "dataType": "string",
+            "rawName": "agentId"
+        },
+        {
+            "analyticsName": "agentName",
+            "dataType": "string",
+            "rawName": "agentName"
+        },
+        {
+            "analyticsName": "agentType",
+            "dataType": "string",
+            "rawName": "agentType"
+        },
+        {
+            "analyticsName": "device",
+            "dataType": "string",
+            "rawName": "device"
+        },
+        {
+            "analyticsName": "host",
+            "dataType": "string",
+            "rawName": "host"
+        },
+        {
+            "analyticsName": "index",
+            "dataType": "string",
+            "rawName": "index"
+        },
+        {
+            "analyticsName": "node_id",
+            "dataType": "string",
+            "rawName": "node_id"
+        },
+        {
+            "analyticsName": "objectType",
+            "dataType": "string",
+            "rawName": "objectType"
+        },
+        {
+            "analyticsName": "schema",
+            "dataType": "string",
+            "rawName": "schema"
+        },
+        {
+            "analyticsName": "sessionId",
+            "dataType": "string",
+            "rawName": "sessionId"
+        },
+        {
+            "analyticsName": "sessionName",
+            "dataType": "string",
+            "rawName": "sessionName"
+        },
+        {
+            "analyticsName": "source_ip",
+            "dataType": "string",
+            "rawName": "source_ip"
+        }
+    ],
+    "metricType": "timeseries",
+    "metrics": [
+        {
+            "analyticsName": "combocore4gApnDedicatedBearerActivationSuccessRate",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_apn_dedicated_bearer_activation_success_rate",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gApnDedicatedBearerSuccess",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_apn_dedicated_bearer_success",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gApnDedicatedBearersAttempts",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_apn_dedicated_bearers_attempts",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gApnDedicatedBearersFailure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_apn_dedicated_bearers_failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gApnDefaultBearerSetupAttempts",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_apn_default_bearer_setup_attempts",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gApnDefaultBearerSetupFailure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_apn_default_bearer_setup_failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gApnDefaultBearerSetupSuccess",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_apn_default_bearer_setup_success",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gApnDefaultBearerSetupSuccessRate",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_apn_default_bearer_setup_success_rate",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gCnsgwNumberOfBearersActiveQci1",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_cnsgw_number_of_bearers_active_qci1",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gCnsgwNumberOfBearersActiveQci5",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_cnsgw_number_of_bearers_active_qci5",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gCnsgwNumberOfBearersActiveQci9",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_cnsgw_number_of_bearers_active_qci9",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gCreateBearerRequestAttempts",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_create_bearer_request_attempts",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gCreateBearerRequestFailure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_create_bearer_request_failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gCreateBearerRequestSuccess",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_create_bearer_request_success",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gCreateBearerRequestSuccessRate",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_create_bearer_request_success_rate",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gTotalActiveDefaultBearers",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_total_active_default_bearers",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCreateBearerResponseDeniedContexnotfound",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_create_bearer_response_denied_contexnotfound",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCreateBearerResponseDeniedInvalidremotepeerreply",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_create_bearer_response_denied_invalidremotepeerreply",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCreateBearerResponseDeniedNoresourcesavl",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_create_bearer_response_denied_noresourcesavl",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCreateBearerResponseDeniedNoresponse",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_create_bearer_response_denied_noresponse",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCreateBearerResponseDeniedRequestrejected",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_create_bearer_response_denied_requestrejected",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCreateBearerResponseDeniedSvcnotsupported",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_create_bearer_response_denied_svcnotsupported",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCreateBearerResponseDeniedUnabletopageuesuspend",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_create_bearer_response_denied_unabletopageuesuspend",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreEgtpc4gBearerModificationAttempts",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_egtpc_4g_bearer_modification_attempts",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreEgtpc4gBearerModificationFailure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_egtpc_4g_bearer_modification_failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreEgtpc4gBearerModificationSuccess",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_egtpc_4g_bearer_modification_success",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreEgtpc4gBearerModificationSuccessRate",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_egtpc_4g_bearer_modification_success_rate",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreEgtpcBearerUpdateSuccessRate",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_egtpc_bearer_update_success_rate",
+            "unit": "value"
+        }
+    ],
+    "objectType": "cisco-mobilitycore-pm-smf-bearer",
+    "tenantId": "",
+    "vendor": "cisco",
+    "id": "cisco-cisco-mobilitycore-pm-smf-bearer",
+    "type": "ingestionDictionaries"
+}

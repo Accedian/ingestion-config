@@ -1,0 +1,384 @@
+{
+    "_id": "cisco-cisco-mobilitycore-pm-smf-apn",
+    "customMetrics": null,
+    "dictionaryName": "cisco-cisco-mobilitycore-pm-smf-apn",
+    "dictionaryType": "global",
+    "dimensions": [
+        {
+            "analyticsName": "monitoredObjectId",
+            "dataType": "string",
+            "rawName": "monitoredObjectId"
+        },
+        {
+            "analyticsName": "monitoredObjectName",
+            "dataType": "string",
+            "rawName": "monitoredObjectName"
+        },
+        {
+            "analyticsName": "timestamp",
+            "dataType": "long",
+            "rawName": "timestamp"
+        },
+        {
+            "analyticsName": "direction",
+            "dataType": "integer",
+            "rawName": "direction"
+        },
+        {
+            "analyticsName": "agentId",
+            "dataType": "string",
+            "rawName": "agentId"
+        },
+        {
+            "analyticsName": "agentName",
+            "dataType": "string",
+            "rawName": "agentName"
+        },
+        {
+            "analyticsName": "agentType",
+            "dataType": "string",
+            "rawName": "agentType"
+        },
+        {
+            "analyticsName": "device",
+            "dataType": "string",
+            "rawName": "device"
+        },
+        {
+            "analyticsName": "host",
+            "dataType": "string",
+            "rawName": "host"
+        },
+        {
+            "analyticsName": "index",
+            "dataType": "string",
+            "rawName": "index"
+        },
+        {
+            "analyticsName": "node_id",
+            "dataType": "string",
+            "rawName": "node_id"
+        },
+        {
+            "analyticsName": "objectType",
+            "dataType": "string",
+            "rawName": "objectType"
+        },
+        {
+            "analyticsName": "schema",
+            "dataType": "string",
+            "rawName": "schema"
+        },
+        {
+            "analyticsName": "sessionId",
+            "dataType": "string",
+            "rawName": "sessionId"
+        },
+        {
+            "analyticsName": "sessionName",
+            "dataType": "string",
+            "rawName": "sessionName"
+        },
+        {
+            "analyticsName": "source_ip",
+            "dataType": "string",
+            "rawName": "source_ip"
+        }
+    ],
+    "metricType": "timeseries",
+    "metrics": [
+        {
+            "analyticsName": "combocore4gApnCurrentSessions",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_apn_current_sessions",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gApnTotalNumberOfActiveDedicatedBearers",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_apn_total_number_of_active_dedicated_bearers",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gCreateSessionRequestSuccessRate",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_create_session_request_success_rate",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gCreateSessionResponseDeniedApnaccessdenied",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_create_session_response_denied_apnaccessdenied",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gCreateSessionResponseDeniedApnrsttypeincompatible",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_create_session_response_denied_apnrsttypeincompatible",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gCreateSessionResponseDeniedConditionaliemissing",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_create_session_response_denied_conditionaliemissing",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gCreateSessionResponseDeniedContextnotfound",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_create_session_response_denied_contextnotfound",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gCreateSessionResponseDeniedImsinotknown",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_create_session_response_denied_imsinotknown",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gCreateSessionResponseDeniedInvalidemsgformat",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_create_session_response_denied_invalidemsgformat",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gCreateSessionResponseDeniedMandatoryiemissing",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_create_session_response_denied_mandatoryiemissing",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gCreateSessionResponseDeniedNores",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_create_session_response_denied_nores",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gCreateSessionResponseDeniedPrefpdntypeunsupported",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_create_session_response_denied_prefpdntypeunsupported",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gCreateSessionResponseDeniedUserauthfailed",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_create_session_response_denied_userauthfailed",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gCreateSessionResponseDiscarded",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_create_session_response_discarded",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gCreateSessionResponseServicedenied",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_create_session_response_servicedenied",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gPdnSessionCreateAttempts",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_pdn_session_create_attempts",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gPdnSessionCreateFailures",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_pdn_session_create_failures",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gPdnSessionCreateSuccess",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_pdn_session_create_success",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocore4gTotalCurrentPdnSessions",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_4g_total_current_pdn_sessions",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreApnCreateSessionRequestAttempts",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_apn_create_session_request_attempts",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreApnCreateSessionRequestFailure",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_apn_create_session_request_failure",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreApnCreateSessionRequestSuccess",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_apn_create_session_request_success",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreApnCreateSessionRequestSuccessRate",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_apn_create_session_request_success_rate",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreApnIpv4v6Sessions",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_apn_ipv4v6_sessions",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreApnTotalNumberOfActiveIpv4Sessions",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_apn_total_number_of_active_ipv4_sessions",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreApnTotalNumberOfActiveIpv6Sessions",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_apn_total_number_of_active_ipv6_sessions",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCeps4gPdnSessionSetup",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_ceps_4g_pdn_session_setup",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCreateBearerResponseDeniedUenotresponding",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_create_bearer_response_denied_uenotresponding",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreCreateSessionResponseDeniedRequestrejected",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_create_session_response_denied_requestrejected",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreRetransmitSessionEstablishmentRequestRecvd",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_retransmit_session_establishment_request_recvd",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreRetransmitSessionEstablishmentRequestSent",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_retransmit_session_establishment_request_sent",
+            "unit": "value"
+        },
+        {
+            "analyticsName": "combocoreTotalNumberOfPgwSessions",
+            "dataType": "double",
+            "directions": [
+                "-1"
+            ],
+            "rawName": "combocore_total_number_of_pgw_sessions",
+            "unit": "value"
+        }
+    ],
+    "objectType": "cisco-mobilitycore-pm-smf-apn",
+    "tenantId": "",
+    "vendor": "cisco",
+    "id": "cisco-cisco-mobilitycore-pm-smf-apn",
+    "type": "ingestionDictionaries"
+}

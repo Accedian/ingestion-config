@@ -222,7 +222,12 @@ func buildRules(entries []KPIEntry) SplittingRules {
 			sort.Strings(kpis)
 			list = append(list, SchemaGroup{schema, suffix, objectType, kpis, len(kpis)})
 		}
-		sort.Slice(list, func(i, j int) bool { return list[i].Count > list[j].Count })
+		sort.Slice(list, func(i, j int) bool {
+			if list[i].Count != list[j].Count {
+				return list[i].Count > list[j].Count
+			}
+			return list[i].ObjectType < list[j].ObjectType
+		})
 		rules.Schemas[schema] = list
 	}
 	return rules
