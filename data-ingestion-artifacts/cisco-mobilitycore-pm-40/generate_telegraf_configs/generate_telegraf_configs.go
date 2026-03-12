@@ -329,6 +329,11 @@ func writeKafkaInput(w *bufio.Writer, cfg Config) {
   json_time_key = "timestamp"
   json_time_format = "unix"
   tag_keys = ["device", "kpi","index","node_id","schema", "source_ip", "node_ip"]
+  ## IMPORTANT: Only parse "value" field as metric data.
+  ## This prevents extra JSON fields (e.g. counters, metadata) from becoming
+  ## phantom KPIs with value 0. Without this, any numeric field in the JSON
+  ## that is not in tag_keys would create a new metric named "<kpi>_<field>".
+  fieldpass = ["value"]
 
 `, cfg.KafkaBroker, cfg.KafkaTopic)
 }
