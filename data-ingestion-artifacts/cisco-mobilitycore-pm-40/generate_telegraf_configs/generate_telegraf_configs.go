@@ -720,6 +720,7 @@ var standardDimensions = []DictionaryDim{
 	{AnalyticsName: "host", DataType: "string", RawName: "host"},
 	{AnalyticsName: "index", DataType: "string", RawName: "index"},
 	{AnalyticsName: "node_id", DataType: "string", RawName: "node_id"},
+	{AnalyticsName: "node_type", DataType: "string", RawName: "node_type"},
 	{AnalyticsName: "objectType", DataType: "string", RawName: "objectType"},
 	{AnalyticsName: "schema", DataType: "string", RawName: "schema"},
 	{AnalyticsName: "sessionId", DataType: "string", RawName: "sessionId"},
