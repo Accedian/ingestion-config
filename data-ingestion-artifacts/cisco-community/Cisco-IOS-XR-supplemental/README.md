@@ -36,8 +36,8 @@ Status values:
 |---|---|---|---|---|---|---|---|---|---|---|
 | `ipv4_bgp` | Caroline | yes | yes | yes | yes | no | not identified yet | partial | `partial` | rawName exploration exists in `supporting-files/Cisco-IOS-XR-ipv4-bgp-oper/rawName.txt` |
 | `fib_vrf_summary` | Caroline | yes | yes | yes | yes | no | not identified yet | partial | `partial` | sample exists in `supporting-files/Cisco-IOS-XR-fib-common-oper/` |
-| `ip_rib_ipv4` | Caroline | not obvious in this folder | yes | yes | not obvious yet | no | not identified yet | unclear | `in progress` | alias exists in Telegraf but supporting sample is not clearly present here |
-| `ip_rib_ipv6` | Caroline | not obvious in this folder | yes | yes | not obvious yet | no | not identified yet | unclear | `in progress` | alias exists in Telegraf but supporting sample is not clearly present here |
+| `ip_rib_ipv4` | Caroline | no, query returned empty payload on L56 | yes | yes | not obvious yet | no | not identified yet | source-side gap confirmed on current router | `blocked` | telemetry subscription exists and `mdt_exec` against `Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/bgp/as/information` returned `len 0`; `show route vrf all ipv4 bgp wide` also returned no matching routes |
+| `ip_rib_ipv6` | Caroline | no, query returned empty payload on L56 | yes | yes | not obvious yet | no | not identified yet | source-side gap confirmed on current router | `blocked` | telemetry subscription exists and `mdt_exec` against `Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/bgp/as/information` returned `len 0`; `show route vrf all ipv6 bgp wide` also returned no matching routes |
 | `ipm` | Amish | not obvious in this folder | yes | yes | yes | no | likely needed | blocked | `blocked` | histogram semantics unresolved |
 | `power_management_producer_node` | Amish | not obvious in this folder | yes | yes | yes | no | likely not needed | partial | `in progress` | Telegraf includes embedded tags and unit conversion logic |
 
@@ -53,10 +53,9 @@ Status values:
 
 ### Next recommended steps
 
-1. Confirm supporting sample files for `ip_rib_ipv4`, `ip_rib_ipv6`, `ipm`, and `power_management_producer_node`.
-2. Derive per-model candidate dictionaries from the existing Telegraf output and YANG models.
-3. Decide whether any model needs Sensor Collector delta/rate logic.
-4. Add a repeatable validation workflow with golden samples.
-5. Populate `pca-ingestion-dictionaries-configuration/`.
-
-
+1. Find a router or topology where the IPv4 and IPv6 BGP RIB YANG paths actually return populated data.
+2. Confirm supporting sample files for `ipm` and `power_management_producer_node`.
+3. Derive per-model candidate dictionaries from the existing Telegraf output and YANG models.
+4. Decide whether any model needs Sensor Collector delta/rate logic.
+5. Add a repeatable validation workflow with golden samples.
+6. Populate `pca-ingestion-dictionaries-configuration/`.
