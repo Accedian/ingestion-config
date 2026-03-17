@@ -1,0 +1,316 @@
+Mon Mar 16 20:41:51.666 UTC
+!! Building configuration...
+!! IOS XR Configuration 25.2.1.18I
+!! Last configuration change at Mon Mar 16 20:38:03 2026 by lab
+!
+hostname l57
+username lab
+ group root-lr
+ group cisco-support
+ secret 10 $6$Y0vmA/kiAH9n2A/.$QUYxHxt8oK62AtJTyt16nTGPvgbZ3OunOQWP4FIY1X6aUxN.RzI0QRFoDxu./S2at/H2y0VEZyNKB/J1N8B3x/
+!
+grpc
+ port 57400
+ no-tls
+ min-keepalive-interval 1
+ service-layer
+ !
+!
+telemetry model-driven
+ destination-group PCADestinationGroup
+  address-family ipv6 2001:1109::94a4:5fff:fe82:9537 port 57001
+   encoding self-describing-gpb
+   protocol tcp
+  !
+ !
+ sensor-group PCASensorGroupId
+  sensor-path Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-xr/interface
+  sensor-path Cisco-IOS-XR-envmon-oper:power-management/rack/producers/producer-nodes/producer-node
+  sensor-path Cisco-IOS-XR-fib-common-oper:fib/nodes/node/protocols/protocol/vrfs/vrf/summary
+  sensor-path Cisco-IOS-XR-ip-rib-ipv4-oper:rib/rib-table-ids/rib-table-id/summary-protos/summary-proto
+  sensor-path Cisco-IOS-XR-ipv4-bgp-oper:bgp/instances/instance/instance-active/default-vrf/process-info
+  sensor-path Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/rib-table-ids/rib-table-id/summary-protos/summary-proto
+  sensor-path Cisco-IOS-XR-perf-meas-oper:performance-measurement/nodes/node/endpoints/ep-ipm-receivers/ep-ipm-receiver-metrics
+ !
+ subscription PCASubscriptionId
+  sensor-group-id PCASensorGroupId strict-timer
+  sensor-group-id PCASensorGroupId sample-interval 60000
+  destination-id PCADestinationGroup
+ !
+!
+ptp
+ clock
+  domain 24
+  profile g.8275.1 clock-type T-TSC
+ !
+ profile T-SLAVE
+  multicast target-address ethernet 01-80-C2-00-00-0E
+  transport ethernet
+  port state slave-only
+  sync frequency 16
+  announce frequency 16
+  delay-request frequency 16
+ !
+!
+line default
+ exec-timeout 1440 0
+!
+frequency synchronization
+ quality itu-t option 1
+ log selection changes
+!
+interface Loopback0
+ ipv6 address fcbb:bb00:57::1/128
+!
+interface MgmtEth0/RP0/CPU0/0
+ ipv4 address dhcp
+!
+interface TenGigE0/0/0/0
+ ipv6 enable
+ lldp
+ !
+!
+interface TenGigE0/0/0/1
+ ipv6 enable
+!
+interface TenGigE0/0/0/2
+ ptp
+  profile T-SLAVE
+  local-priority 120
+ !
+ frequency synchronization
+  selection input
+  priority 15
+  wait-to-restore 0
+ !
+!
+interface HundredGigE0/0/0/3
+ shutdown
+!
+interface FourHundredGigE0/0/0/4
+ shutdown
+!
+interface HundredGigE0/0/0/5
+ shutdown
+!
+interface FourHundredGigE0/0/0/6
+ shutdown
+!
+interface HundredGigE0/0/0/7
+ shutdown
+!
+interface FourHundredGigE0/0/0/8
+ shutdown
+!
+interface HundredGigE0/0/0/9
+ shutdown
+!
+interface FourHundredGigE0/0/0/10
+ shutdown
+!
+interface HundredGigE0/0/0/11
+ shutdown
+!
+interface FourHundredGigE0/0/0/12
+ shutdown
+!
+interface HundredGigE0/0/0/13
+ shutdown
+!
+interface FourHundredGigE0/0/0/14
+ shutdown
+!
+interface HundredGigE0/0/0/15
+ shutdown
+!
+interface HundredGigE0/0/0/16
+ shutdown
+!
+interface HundredGigE0/0/0/17
+ shutdown
+!
+interface HundredGigE0/0/0/18
+ shutdown
+!
+interface HundredGigE0/0/0/19
+ shutdown
+!
+interface HundredGigE0/0/0/20
+ shutdown
+!
+interface HundredGigE0/0/0/21
+ shutdown
+!
+interface HundredGigE0/0/0/22
+ shutdown
+!
+interface HundredGigE0/0/0/23
+ shutdown
+!
+interface HundredGigE0/0/0/24
+ shutdown
+!
+interface HundredGigE0/0/0/25
+ shutdown
+!
+interface HundredGigE0/0/0/26
+ shutdown
+!
+interface HundredGigE0/0/0/27
+ shutdown
+!
+interface HundredGigE0/0/0/28
+ shutdown
+!
+interface HundredGigE0/0/0/29
+ shutdown
+!
+interface HundredGigE0/0/0/30
+ shutdown
+!
+interface HundredGigE0/0/0/31
+ shutdown
+!
+interface preconfigure FourHundredGigE0/0/0/0
+ shutdown
+!
+interface preconfigure HundredGigE0/0/0/1
+ shutdown
+!
+interface preconfigure FourHundredGigE0/0/0/2
+ shutdown
+!
+router isis 1
+ is-type level-2-only
+ net 49.0000.0000.0057.00
+ address-family ipv6 unicast
+  metric-style wide
+  advertise link attributes
+  router-id Loopback0
+  segment-routing srv6
+   locator MAIN
+   !
+  !
+ !
+ interface Loopback0
+  address-family ipv6 unicast
+  !
+ !
+ interface TenGigE0/0/0/0
+  point-to-point
+  address-family ipv6 unicast
+  !
+ !
+ interface TenGigE0/0/0/1
+  point-to-point
+  address-family ipv6 unicast
+  !
+ !
+!
+segment-routing
+ srv6
+  locators
+   locator MAIN
+    micro-segment behavior unode psp-usd
+    prefix fcbb:bb00:57::/48
+   !
+  !
+ !
+!
+lldp
+!
+ipsla
+ operation 571
+  type icmp echo
+   source address 10.255.18.157
+   destination address 10.255.18.156
+   timeout 1000
+   frequency 1
+  !
+ !
+ operation 572
+  type udp jitter
+   source address 10.255.18.157
+   destination address 10.255.18.156
+   packet count 10
+   packet interval 20
+   timeout 1000
+   source port 37373
+   datasize request 32
+   destination port 14001
+   frequency 1
+   verify-data
+  !
+ !
+ schedule operation 571
+  start-time now
+  life forever
+ !
+ schedule operation 572
+  start-time now
+  life forever
+ !
+ responder
+  type udp ipv4 address 10.255.18.157 port 14000
+ !
+!
+performance-measurement
+ endpoint ipv6 fcbb:bb00:43::1
+  ip-measurement
+   session-id 4357
+    ipm-profile name IPM
+   !
+  !
+  source-address ipv6 fcbb:bb00:57::1
+ !
+ interface TenGigE0/0/0/0
+  delay-measurement
+  !
+ !
+ interface TenGigE0/0/0/1
+  delay-measurement
+  !
+ !
+ ipm-profile name IPM
+  ipm-sender
+   flow-label spray
+   probe-interval 999
+  !
+  ipm-receiver
+   loss
+    threshold
+     critical 10000
+     suspicious 5000
+    !
+   !
+   latency
+    threshold
+     critical 5000 above 5000
+     moving-avg change 50
+     suspicious 5000 above 2000
+    !
+    histogram template template-max522
+   !
+   liveness-detection 10
+  !
+ !
+ ipm-profile name RECEIVE
+  ipm-receiver
+   latency
+    histogram template template-max522
+   !
+  !
+ !
+ ipm-profile name TRANSMIT
+  ipm-sender
+   flow-label spray
+   probe-interval 1000
+  !
+ !
+!
+ssh server username lab
+ keystring ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDjCi0c0BxuCejH22OGvDq85w6LS5ZkLJM0If/62tGrxfKDsCkO0OsMGTadXCqSu0zZyAn1IvRfzSTpSwntpOV8MrtyzFGiDj7teQhZTTvwffsDV4UCzpn18hA/5UN/oOt5/UKIJOjSLOmihwgzo0KtEluM003Aq3PhziDvmBB7KJBHdpZX+dwofTutVEu99RTtNi4GTNU2mnoZYpL3qAi1kmyq3Iamr48atY4bSBmaP9bp2xJCdj4WpL5jvZgNKPvinswzAJsBn+ESSNi+zE161dVTgFNC4u7xgsKqsngI9/xgDdtkw5ewWX9Vcg3ir+vCqe1sK3GcYD98yRhk9TIGNKCEfwsDe9h4je+eisZd7WrUAfLGdY0oGWmpQC8OwjyiL8OXrrzv7C2PrCHj7bT386vd8byIS9sIyXFA1L6lYpbErAAKRKZ/42gDVXjQh+RQ6/ET92CnVzZNhcklIR7E1HUsCUlWaIEDMXaDdO1CkGIEq++JAc3aTiRuW4zQe6c= jakuhorn@s0
+!
+ssh server vrf default
+end
+

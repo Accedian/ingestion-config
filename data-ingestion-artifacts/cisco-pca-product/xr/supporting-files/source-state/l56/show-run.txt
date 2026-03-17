@@ -1,0 +1,322 @@
+Mon Mar 16 19:50:46.987 UTC
+!! Building configuration...
+!! IOS XR Configuration 25.1.1.41I
+!! Last configuration change at Mon Mar 16 19:50:37 2026 by lab
+!
+hostname l56
+username lab
+ group root-lr
+ group cisco-support
+ secret 10 $6$Y0vmA/kiAH9n2A/.$QUYxHxt8oK62AtJTyt16nTGPvgbZ3OunOQWP4FIY1X6aUxN.RzI0QRFoDxu./S2at/H2y0VEZyNKB/J1N8B3x/
+!
+grpc
+ port 57400
+ no-tls
+ min-keepalive-interval 1
+ service-layer
+ !
+!
+telemetry model-driven
+ destination-group PCADestinationGroup
+  address-family ipv4 10.11.9.10 port 47000
+   encoding self-describing-gpb
+   protocol tcp
+  !
+ !
+ destination-group PCAProductValidationDest
+  address-family ipv4 10.11.9.10 port 47001
+   encoding self-describing-gpb
+   protocol tcp
+  !
+ !
+ sensor-group PCASensorGroupId
+  sensor-path Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-xr/interface
+  sensor-path Cisco-IOS-XR-envmon-oper:power-management/rack/producers/producer-nodes/producer-node
+  sensor-path Cisco-IOS-XR-fib-common-oper:fib/nodes/node/protocols/protocol/vrfs/vrf/summary
+  sensor-path Cisco-IOS-XR-ip-rib-ipv4-oper:rib/rib-table-ids/rib-table-id/summary-protos/summary-proto
+  sensor-path Cisco-IOS-XR-ipv4-bgp-oper:bgp/instances/instance/instance-active/default-vrf/process-info
+  sensor-path Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/rib-table-ids/rib-table-id/summary-protos/summary-proto
+  sensor-path Cisco-IOS-XR-perf-meas-oper:performance-measurement/nodes/node/endpoints/ep-ipm-receivers/ep-ipm-receiver-metrics
+ !
+ sensor-group PCAProductValidationIfSensorGroup
+  sensor-path Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-xr/interface
+ !
+ sensor-group PCAProductValidationEnvSensorGroup
+  sensor-path Cisco-IOS-XR-wdsysmon-fd-oper:system-monitoring/cpu-utilization
+  sensor-path Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary
+ !
+ subscription PCASubscriptionId
+  sensor-group-id PCASensorGroupId strict-timer
+  sensor-group-id PCASensorGroupId sample-interval 60000
+  destination-id PCADestinationGroup
+ !
+ subscription PCAProductValidationIfSub
+  sensor-group-id PCAProductValidationIfSensorGroup strict-timer
+  sensor-group-id PCAProductValidationIfSensorGroup sample-interval 60000
+  destination-id PCAProductValidationDest
+ !
+ subscription PCAProductValidationEnvSub
+  sensor-group-id PCAProductValidationEnvSensorGroup strict-timer
+  sensor-group-id PCAProductValidationEnvSensorGroup sample-interval 60000
+  destination-id PCAProductValidationDest
+ !
+!
+line default
+ exec-timeout 1440 0
+!
+call-home
+ service active
+ contact smart-licensing
+ profile CiscoTAC-1
+  active
+  destination transport-method email disable
+  destination transport-method http
+ !
+!
+interface Loopback0
+ ipv6 address fcbb:bb00:56::1/128
+!
+interface MgmtEth0/RP0/CPU0/0
+ ipv4 address dhcp
+ lldp
+ !
+!
+interface GigabitEthernet0/0/0/28
+ shutdown
+!
+interface GigabitEthernet0/0/0/29
+ shutdown
+!
+interface GigabitEthernet0/0/0/30
+ shutdown
+!
+interface GigabitEthernet0/0/0/31
+ shutdown
+!
+interface TenGigE0/0/0/4.1099
+ ipv6 enable
+ encapsulation dot1q 1099
+!
+interface TenGigE0/0/0/4.1100
+ ipv6 enable
+ encapsulation dot1q 1100
+!
+interface TenGigE0/0/0/4.1103
+ ipv6 enable
+ encapsulation dot1q 1103
+!
+interface TenGigE0/0/0/4.1104
+ ipv6 enable
+ encapsulation dot1q 1104
+!
+interface TenGigE0/0/0/4.1109
+ ipv4 address 10.11.9.1 255.255.255.0
+ ipv6 address 2001:1109::1/64
+ encapsulation dot1q 1109
+!
+interface TenGigE0/0/0/5
+ shutdown
+!
+interface TenGigE0/0/0/27
+ shutdown
+!
+interface HundredGigE0/0/0/0
+ shutdown
+!
+interface HundredGigE0/0/0/1
+ shutdown
+!
+interface HundredGigE0/0/0/2
+ shutdown
+!
+interface HundredGigE0/0/0/3
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/6
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/7
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/8
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/9
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/10
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/11
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/12
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/13
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/14
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/15
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/16
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/17
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/18
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/19
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/20
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/21
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/22
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/23
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/24
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/25
+ shutdown
+!
+interface TwentyFiveGigE0/0/0/26
+ shutdown
+!
+interface preconfigure TwentyFiveGigE0/0/0/4
+ shutdown
+!
+interface preconfigure TwentyFiveGigE0/0/0/5
+ shutdown
+!
+interface preconfigure TwentyFiveGigE0/0/0/27
+ shutdown
+!
+router isis 1
+ is-type level-2-only
+ net 49.0000.0000.0056.00
+ distribute link-state instance-id 7543
+ address-family ipv6 unicast
+  metric-style wide
+  advertise link attributes
+  router-id Loopback0
+  segment-routing srv6
+   locator MAIN
+   !
+  !
+ !
+ interface Loopback0
+  address-family ipv6 unicast
+  !
+ !
+ interface TenGigE0/0/0/4.1099
+  point-to-point
+  address-family ipv6 unicast
+  !
+ !
+ interface TenGigE0/0/0/4.1100
+  point-to-point
+  address-family ipv6 unicast
+  !
+ !
+ interface TenGigE0/0/0/4.1103
+  point-to-point
+  address-family ipv6 unicast
+  !
+ !
+ interface TenGigE0/0/0/4.1104
+  point-to-point
+  address-family ipv6 unicast
+  !
+ !
+!
+router bgp 1
+ bgp router-id 56.56.56.56
+ address-family link-state link-state
+ !
+!
+segment-routing
+ srv6
+  locators
+   locator MAIN
+    micro-segment behavior unode psp-usd
+    prefix fcbb:bb00:56::/48
+   !
+  !
+ !
+!
+lldp
+!
+lslib-server
+!
+performance-measurement
+ interface TenGigE0/0/0/4.1099
+  delay-measurement
+  !
+ !
+ interface TenGigE0/0/0/4.1100
+  delay-measurement
+  !
+ !
+ interface TenGigE0/0/0/4.1103
+  delay-measurement
+  !
+ !
+ interface TenGigE0/0/0/4.1104
+  delay-measurement
+  !
+ !
+!
+ssh server username lab
+ keystring ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDjCi0c0BxuCejH22OGvDq85w6LS5ZkLJM0If/62tGrxfKDsCkO0OsMGTadXCqSu0zZyAn1IvRfzSTpSwntpOV8MrtyzFGiDj7teQhZTTvwffsDV4UCzpn18hA/5UN/oOt5/UKIJOjSLOmihwgzo0KtEluM003Aq3PhziDvmBB7KJBHdpZX+dwofTutVEu99RTtNi4GTNU2mnoZYpL3qAi1kmyq3Iamr48atY4bSBmaP9bp2xJCdj4WpL5jvZgNKPvinswzAJsBn+ESSNi+zE161dVTgFNC4u7xgsKqsngI9/xgDdtkw5ewWX9Vcg3ir+vCqe1sK3GcYD98yRhk9TIGNKCEfwsDe9h4je+eisZd7WrUAfLGdY0oGWmpQC8OwjyiL8OXrrzv7C2PrCHj7bT386vd8byIS9sIyXFA1L6lYpbErAAKRKZ/42gDVXjQh+RQ6/ET92CnVzZNhcklIR7E1HUsCUlWaIEDMXaDdO1CkGIEq++JAc3aTiRuW4zQe6c= jakuhorn@s0
+!
+ssh server vrf default
+ipsla
+ operation 561
+  type icmp echo
+   source address 10.255.18.156
+   destination address 10.255.18.157
+   timeout 1000
+   frequency 1
+  !
+ !
+ operation 562
+  type udp jitter
+   source address 10.255.18.156
+   destination address 10.255.18.157
+   packet count 10
+   packet interval 20
+   timeout 1000
+   source port 37372
+   datasize request 32
+   destination port 14000
+   frequency 1
+   verify-data
+  !
+ !
+ schedule operation 561
+  start-time now
+  life forever
+ !
+ schedule operation 562
+  start-time now
+  life forever
+ !
+ responder
+  type udp ipv4 address 10.255.18.156 port 14001
+ !
+!
+end
+

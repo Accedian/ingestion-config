@@ -1,0 +1,20 @@
+show version
+
+Mon Mar 16 14:42:19.840 UTC
+Cisco IOS XR Software, Version 25.1.1.41I LNT
+Copyright (c) 2013-2024 by Cisco Systems, Inc.
+
+Build Information:
+ Built By     : cisco
+ Built On     : Mon Mar 10 21:10:43 UTC 2025
+ Build Host   : iox-ucs-003
+ Workspace    : /auto/iox-ucs-003-san2/prod/25.1.1.41I.SIT_IMAGE/8000-aarch64/ws/
+ Version      : 25.1.1.41I
+ Label        : 25.1.1.41I
+
+cisco 8000 (CN9130H board )
+cisco 8011-4G24Y4H-I (CN9130H board ) processor with 16GB of memory
+l56 uptime is 25 weeks, 2 days, 15 hours, 55 minutes
+Cisco 8011 Series Fixed 1RU Router 4x100G, 24x1/10/25G, 4xCu
+
+RP/0/RP0/CPU0:l56

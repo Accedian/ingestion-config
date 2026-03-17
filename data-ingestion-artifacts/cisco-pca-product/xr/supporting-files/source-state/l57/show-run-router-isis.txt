@@ -1,0 +1,27 @@
+router isis 1
+ is-type level-2-only
+ net 49.0000.0000.0057.00
+ address-family ipv6 unicast
+  metric-style wide
+  advertise link attributes
+  router-id Loopback0
+  segment-routing srv6
+   locator MAIN
+   !
+  !
+ !
+ interface Loopback0
+  address-family ipv6 unicast
+  !
+ !
+ interface TenGigE0/0/0/0
+  point-to-point
+  address-family ipv6 unicast
+  !
+ !
+ interface TenGigE0/0/0/1
+  point-to-point
+  address-family ipv6 unicast
+  !
+ !
+!
