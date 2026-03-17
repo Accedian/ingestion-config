@@ -1,0 +1,171 @@
+! Live capture from l56 on 2026-03-17
+! Extracted sections relevant to XR product and supplemental validation.
+
+class-map match-any tc7
+ match traffic-class 7
+ end-class-map
+!
+
+policy-map PCA-VALIDATION-IN
+ class class-default
+  police rate percent 100
+   conform-action transmit
+   exceed-action transmit
+  !
+ !
+ end-policy-map
+!
+
+policy-map PCA-VALIDATION-OUT
+ class tc7
+  priority level 1
+ !
+ class class-default
+  bandwidth remaining ratio 255
+ !
+ end-policy-map
+!
+
+ethernet sla
+ profile PCA-DMM type cfm-delay-measurement
+  probe
+   send burst every 1 seconds packet count 10 interval 100 milliseconds
+  !
+  schedule
+   every 1 minutes for 1 minutes
+  !
+  statistics
+   measure round-trip-delay
+   !
+   measure one-way-delay-sd
+   !
+   measure one-way-delay-ds
+   !
+   measure round-trip-jitter
+   !
+   measure one-way-jitter-ds
+   !
+  !
+ !
+ profile PCA-SLM type cfm-synthetic-loss-measurement
+  probe
+   send packet every 1 seconds
+  !
+  schedule
+   every 1 minutes for 1 minutes
+  !
+  statistics
+   measure one-way-loss-sd
+   !
+   measure one-way-loss-ds
+   !
+  !
+ !
+!
+
+ethernet cfm
+ domain PCA-VALIDATION-DOMAIN level 3
+  service PCA-VALIDATION-SERVICE down-meps
+   continuity-check interval 1s
+  !
+ !
+!
+
+ipsla
+ operation 561
+  type icmp echo
+   source address 10.255.18.156
+   destination address 10.255.18.157
+   timeout 1000
+   frequency 1
+  !
+ !
+ operation 562
+  type udp jitter
+   source address 10.255.18.156
+   destination address 10.255.18.157
+   packet count 10
+   packet interval 20
+   timeout 1000
+   source port 37372
+   datasize request 32
+   destination port 14000
+   frequency 1
+   verify-data
+  !
+ !
+ schedule operation 561
+  start-time now
+  life forever
+ !
+ schedule operation 562
+  start-time now
+  life forever
+ !
+ responder
+  type udp ipv4 address 10.255.18.156 port 14001
+ !
+!
+
+interface TenGigE0/0/0/4.1103
+ ipv6 enable
+ ethernet cfm
+  mep domain PCA-VALIDATION-DOMAIN service PCA-VALIDATION-SERVICE mep-id 101
+   loss-measurement counters aggregate
+   sla operation profile PCA-DMM target mep-id 201
+   sla operation profile PCA-SLM target mep-id 201
+  !
+ !
+ encapsulation dot1q 1103
+!
+
+interface TenGigE0/0/0/4.1109
+ service-policy input PCA-VALIDATION-IN
+ service-policy output PCA-VALIDATION-OUT
+ ipv4 address 10.11.9.1 255.255.255.0
+ ipv6 address 2001:1109::1/64
+ encapsulation dot1q 1109
+!
+
+telemetry model-driven
+ destination-group PCADestinationGroup
+  address-family ipv4 10.11.9.10 port 47000
+   encoding self-describing-gpb
+   protocol tcp
+  !
+ !
+ destination-group PCAProductValidationDest
+  address-family ipv4 10.11.9.10 port 47001
+   encoding self-describing-gpb
+   protocol tcp
+  !
+ !
+ sensor-group PCASensorGroupId
+  sensor-path Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-xr/interface
+  sensor-path Cisco-IOS-XR-envmon-oper:power-management/rack/producers/producer-nodes/producer-node
+  sensor-path Cisco-IOS-XR-fib-common-oper:fib/nodes/node/protocols/protocol/vrfs/vrf/summary
+  sensor-path Cisco-IOS-XR-ip-rib-ipv4-oper:rib/rib-table-ids/rib-table-id/summary-protos/summary-proto
+  sensor-path Cisco-IOS-XR-ipv4-bgp-oper:bgp/instances/instance/instance-active/default-vrf/process-info
+  sensor-path Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/rib-table-ids/rib-table-id/summary-protos/summary-proto
+  sensor-path Cisco-IOS-XR-perf-meas-oper:performance-measurement/nodes/node/endpoints/ep-ipm-receivers/ep-ipm-receiver-metrics
+ !
+ sensor-group PCAProductValidationSensorGroup
+  sensor-path Cisco-IOS-XR-wdsysmon-fd-oper:system-monitoring/cpu-utilization
+  sensor-path Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary
+  sensor-path Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-xr/interface
+  sensor-path Cisco-IOS-XR-man-ipsla-oper:ipsla/operation-data/operations/operation/statistics/latest/target
+  sensor-path Cisco-IOS-XR-qos-ma-oper:qos/interface-table/interface/input/service-policy-names/service-policy-instance/statistics
+  sensor-path Cisco-IOS-XR-qos-ma-oper:qos/interface-table/interface/output/service-policy-names/service-policy-instance/statistics
+  sensor-path Cisco-IOS-XR-infra-sla-oper:sla/protocols/Cisco-IOS-XR-ethernet-cfm-oper:ethernet/statistics-historicals/statistics-historical
+ !
+ subscription PCASubscriptionId
+  sensor-group-id PCASensorGroupId strict-timer
+  sensor-group-id PCASensorGroupId sample-interval 60000
+  destination-id PCADestinationGroup
+ !
+ subscription PCAProductValidationSub
+  sensor-group-id PCAProductValidationSensorGroup strict-timer
+  sensor-group-id PCAProductValidationSensorGroup sample-interval 60000
+  destination-id PCAProductValidationDest
+ !
+!
