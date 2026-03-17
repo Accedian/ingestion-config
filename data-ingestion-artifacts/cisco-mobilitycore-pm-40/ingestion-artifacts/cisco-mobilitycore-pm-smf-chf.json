@@ -60,6 +60,11 @@
             "rawName": "node_id"
         },
         {
+            "analyticsName": "node_type",
+            "dataType": "string",
+            "rawName": "node_type"
+        },
+        {
             "analyticsName": "objectType",
             "dataType": "string",
             "rawName": "objectType"
