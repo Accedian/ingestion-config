@@ -62,6 +62,7 @@ type Config struct {
 	DictionariesDir string
 	KafkaBroker     string
 	KafkaTopic      string
+	KafkaVersion    string
 	AlertLogPath    string
 }
 
@@ -72,6 +73,7 @@ func main() {
 	flag.StringVar(&cfg.DictionariesDir, "dictionaries", "", "Output directory for ingestion dictionaries (optional)")
 	flag.StringVar(&cfg.KafkaBroker, "broker", "{{server_ip}}:9092", "Kafka broker address")
 	flag.StringVar(&cfg.KafkaTopic, "topic", "pca_kpi_topic", "Kafka topic name")
+	flag.StringVar(&cfg.KafkaVersion, "kafka-version", "3.9.0", "Kafka protocol version")
 	flag.StringVar(&cfg.AlertLogPath, "alert-log", "/tmp/kpi_alerts.log", "Path for KPI alert log file")
 	flag.Parse()
 
@@ -320,6 +322,7 @@ func writeKafkaInput(w *bufio.Writer, cfg Config) {
 	fmt.Fprintf(w, `[[inputs.kafka_consumer]]
   interval = "60s"
   brokers = ["%s"]
+  kafka_version = "%s"
   topics = ["%s"]
   offset = "oldest"
   max_message_len = 1000000
@@ -328,9 +331,14 @@ func writeKafkaInput(w *bufio.Writer, cfg Config) {
   json_name_key = "kpi"
   json_time_key = "timestamp"
   json_time_format = "unix"
-  tag_keys = ["device", "kpi","index","node_id","schema", "source_ip", "node_ip"]
+  tag_keys = ["device", "kpi","index","node_id","schema", "source_ip", "node_ip", "node_type"]
+  ## IMPORTANT: Only parse "value" field as metric data.
+  ## This prevents extra JSON fields (e.g. counters, metadata) from becoming
+  ## phantom KPIs with value 0. Without this, any numeric field in the JSON
+  ## that is not in tag_keys would create a new metric named "<kpi>_<field>".
+  fieldpass = ["value"]
 
-`, cfg.KafkaBroker, cfg.KafkaTopic)
+`, cfg.KafkaBroker, cfg.KafkaVersion, cfg.KafkaTopic)
 }
 
 func writeIndexCleanup(w *bufio.Writer) {
@@ -712,6 +720,7 @@ var standardDimensions = []DictionaryDim{
 	{AnalyticsName: "host", DataType: "string", RawName: "host"},
 	{AnalyticsName: "index", DataType: "string", RawName: "index"},
 	{AnalyticsName: "node_id", DataType: "string", RawName: "node_id"},
+	{AnalyticsName: "node_type", DataType: "string", RawName: "node_type"},
 	{AnalyticsName: "objectType", DataType: "string", RawName: "objectType"},
 	{AnalyticsName: "schema", DataType: "string", RawName: "schema"},
 	{AnalyticsName: "sessionId", DataType: "string", RawName: "sessionId"},
