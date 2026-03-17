@@ -1,0 +1,62 @@
+RP/0/RP0/CPU0:l56#sh run telemetry model-driven 
+Tue Mar 17 00:51:08.477 UTC
+telemetry model-driven
+ destination-group PCADestinationGroup
+  address-family ipv4 10.11.9.10 port 47000
+   encoding self-describing-gpb
+   protocol tcp
+  !
+ !
+ destination-group PCAProductValidationDest
+  address-family ipv4 10.11.9.10 port 47001
+   encoding self-describing-gpb
+   protocol tcp
+  !
+ !
+ destination-group PCAProductValidationSlaDest
+  address-family ipv4 10.11.9.10 port 47002
+   encoding self-describing-gpb
+   protocol tcp
+  !
+ !
+ sensor-group PCASensorGroupId
+  sensor-path Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-xr/interface
+  sensor-path Cisco-IOS-XR-envmon-oper:power-management/rack/producers/producer-nodes/producer-node
+  sensor-path Cisco-IOS-XR-fib-common-oper:fib/nodes/node/protocols/protocol/vrfs/vrf/summary
+  sensor-path Cisco-IOS-XR-ip-rib-ipv4-oper:rib/rib-table-ids/rib-table-id/summary-protos/summary-proto
+  sensor-path Cisco-IOS-XR-ipv4-bgp-oper:bgp/instances/instance/instance-active/default-vrf/process-info
+  sensor-path Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/rib-table-ids/rib-table-id/summary-protos/summary-proto
+  sensor-path Cisco-IOS-XR-perf-meas-oper:performance-measurement/nodes/node/endpoints/ep-ipm-receivers/ep-ipm-receiver-metrics
+ !
+ sensor-group PCAProductValidationIfSensorGroup
+  sensor-path Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-xr/interface
+ !
+ sensor-group PCAProductValidationEnvSensorGroup
+  sensor-path Cisco-IOS-XR-wdsysmon-fd-oper:system-monitoring/cpu-utilization
+  sensor-path Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary
+ !
+ sensor-group PCAProductValidationSlaSensorGroup
+  sensor-path Cisco-IOS-XR-man-ipsla-oper:ipsla/operation-data/operations/operation/statistics/latest/target
+  sensor-path Cisco-IOS-XR-infra-sla-oper:sla/protocols/Cisco-IOS-XR-ethernet-cfm-oper:ethernet/statistics-historicals/statistics-historical
+ !
+ subscription PCASubscriptionId
+  sensor-group-id PCASensorGroupId strict-timer
+  sensor-group-id PCASensorGroupId sample-interval 60000
+  destination-id PCADestinationGroup
+ !
+ subscription PCAProductValidationIfSub
+  sensor-group-id PCAProductValidationIfSensorGroup strict-timer
+  sensor-group-id PCAProductValidationIfSensorGroup sample-interval 60000
+  destination-id PCAProductValidationDest
+ !
+ subscription PCAProductValidationEnvSub
+  sensor-group-id PCAProductValidationEnvSensorGroup strict-timer
+  sensor-group-id PCAProductValidationEnvSensorGroup sample-interval 60000
+  destination-id PCAProductValidationDest
+ !
+ subscription PCAProductValidationSlaSub
+  sensor-group-id PCAProductValidationSlaSensorGroup strict-timer
+  sensor-group-id PCAProductValidationSlaSensorGroup sample-interval 60000
+  destination-id PCAProductValidationSlaDest
+ !
+!

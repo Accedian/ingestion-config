@@ -1,0 +1,4 @@
+Mon Mar 16 20:02:34.137 UTC
+Legend: pp = Partially Programmed.
+Bridge Group:Bridge-Domain Name  ID    State          Num ACs/up   Num PWs/up    Num PBBs/up Num VNIs/up
+-------------------------------- ----- -------------- ------------ ------------- ----------- -----------
