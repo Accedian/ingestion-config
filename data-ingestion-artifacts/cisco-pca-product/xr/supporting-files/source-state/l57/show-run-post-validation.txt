@@ -8,7 +8,7 @@ hostname l57
 username lab
  group root-lr
  group cisco-support
- secret 10 $6$Y0vmA/kiAH9n2A/.$QUYxHxt8oK62AtJTyt16nTGPvgbZ3OunOQWP4FIY1X6aUxN.RzI0QRFoDxu./S2at/H2y0VEZyNKB/J1N8B3x/
+ secret 10 <REDACTED>
 !
 grpc
  port 57400
@@ -360,8 +360,7 @@ performance-measurement
  !
 !
 ssh server username lab
- keystring ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDjCi0c0BxuCejH22OGvDq85w6LS5ZkLJM0If/62tGrxfKDsCkO0OsMGTadXCqSu0zZyAn1IvRfzSTpSwntpOV8MrtyzFGiDj7teQhZTTvwffsDV4UCzpn18hA/5UN/oOt5/UKIJOjSLOmihwgzo0KtEluM003Aq3PhziDvmBB7KJBHdpZX+dwofTutVEu99RTtNi4GTNU2mnoZYpL3qAi1kmyq3Iamr48atY4bSBmaP9bp2xJCdj4WpL5jvZgNKPvinswzAJsBn+ESSNi+zE161dVTgFNC4u7xgsKqsngI9/xgDdtkw5ewWX9Vcg3ir+vCqe1sK3GcYD98yRhk9TIGNKCEfwsDe9h4je+eisZd7WrUAfLGdY0oGWmpQC8OwjyiL8OXrrzv7C2PrCHj7bT386vd8byIS9sIyXFA1L6lYpbErAAKRKZ/42gDVXjQh+RQ6/ET92CnVzZNhcklIR7E1HUsCUlWaIEDMXaDdO1CkGIEq++JAc3aTiRuW4zQe6c= jakuhorn@s0
+ keystring ssh-rsa <REDACTED>
 !
 ssh server vrf default
 end
-
