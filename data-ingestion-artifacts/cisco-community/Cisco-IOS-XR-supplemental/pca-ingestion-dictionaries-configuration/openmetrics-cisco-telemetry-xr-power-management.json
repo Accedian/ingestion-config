@@ -1,0 +1,248 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "openmetricscisco-telemetry-xr-power-management",
+            "customMetrics": null,
+            "dictionaryName": "openmetrics-cisco-telemetry-xr-power-management",
+            "dictionaryType": "custom",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "name",
+                    "dataType": "string",
+                    "rawName": "name"
+                },
+                {
+                    "analyticsName": "node",
+                    "dataType": "string",
+                    "rawName": "node"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "pemInfoArrayNodeName",
+                    "dataType": "string",
+                    "rawName": "pem_info_array_node_name"
+                },
+                {
+                    "analyticsName": "pemInfoArrayNodeStatus",
+                    "dataType": "string",
+                    "rawName": "pem_info_array_node_status"
+                },
+                {
+                    "analyticsName": "pemInfoArrayNodeType",
+                    "dataType": "string",
+                    "rawName": "pem_info_array_node_type"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                }
+            ],
+            "metricType": "timeseries",
+            "metrics": [
+                {
+                    "analyticsName": "pemInfoArrayMcurrentInA",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "power_management_producer_node_pem_info_array_mcurrent_in_a",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "pemInfoArrayMcurrentInB",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "power_management_producer_node_pem_info_array_mcurrent_in_b",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "pemInfoArrayMcurrentOut",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "power_management_producer_node_pem_info_array_mcurrent_out",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "pemInfoArrayMvoltageInA",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "power_management_producer_node_pem_info_array_mvoltage_in_a",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "pemInfoArrayMvoltageInB",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "power_management_producer_node_pem_info_array_mvoltage_in_b",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "pemInfoArrayMvoltageOut",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "power_management_producer_node_pem_info_array_mvoltage_out",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "pemInfoArrayNumFeed",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "power_management_producer_node_pem_info_array_num_feed",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "mcurrentInA",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "power_management_producer_node_mcurrent_in_a",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "mcurrentInB",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "power_management_producer_node_mcurrent_in_b",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "mcurrentOut",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "power_management_producer_node_mcurrent_out",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "mvoltageInA",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "power_management_producer_node_mvoltage_in_a",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "mvoltageInB",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "power_management_producer_node_mvoltage_in_b",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "mvoltageOut",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "power_management_producer_node_mvoltage_out",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "numFeed",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "power_management_producer_node_num_feed",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "wattsInA",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "power_management_producer_node_watts_in_a",
+                    "unit": "watts"
+                },
+                {
+                    "analyticsName": "wattsInB",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "power_management_producer_node_watts_in_b",
+                    "unit": "watts"
+                },
+                {
+                    "analyticsName": "wattsOut",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "power_management_producer_node_watts_out",
+                    "unit": "watts"
+                }
+            ],
+            "objectType": "cisco-telemetry-xr-power-management",
+            "vendor": "openmetrics"
+        },
+        "id": "openmetricscisco-telemetry-xr-power-management",
+        "type": "ingestionDictionaries"
+    },
+    "violations": []
+}

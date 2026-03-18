@@ -1,0 +1,670 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "openmetricscisco-telemetry-xr-ipv4-bgp",
+            "customMetrics": null,
+            "dictionaryName": "openmetrics-cisco-telemetry-xr-ipv4-bgp",
+            "dictionaryType": "custom",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "processInstanceNode",
+                    "dataType": "string",
+                    "rawName": "global_process_instance_node"
+                },
+                {
+                    "analyticsName": "instanceName",
+                    "dataType": "string",
+                    "rawName": "instance_name"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                },
+                {
+                    "analyticsName": "vrfName",
+                    "dataType": "string",
+                    "rawName": "vrf_name"
+                }
+            ],
+            "metricType": "timeseries",
+            "metrics": [
+                {
+                    "analyticsName": "globalPrefixSidUnkTlVsMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_prefix_sid_unk_tl_vs_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "globalAttrSetEntryCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_attr_set_entry_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "vrfNotificationsSent",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_vrf_notifications_sent",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalAsPathEntriesMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_as_path_entries_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "globalPoolFreeCountEntry",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_pool_free_count_entry",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalPtaMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_pta_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "globalEstablishedNeighborsCountTotal",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_established_neighbors_count_total",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalLsattrMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_lsattr_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "globalRibrnhMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_ribrnh_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "vrfUpdateMessagesSent",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_vrf_update_messages_sent",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalSnNumNonDfltVrfNbrs",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_sn_num_non_dflt_vrf_nbrs",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalRestartCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_restart_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalMsgLogPoolFreeCountEntry",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_msg_log_pool_free_count_entry",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalPathAttributesEntryCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_path_attributes_entry_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalPrefixSidLabelIndexCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_prefix_sid_label_index_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalPpmpMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_ppmp_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "globalNexthopMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_nexthop_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "globalNeighborsCountTotal",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_neighbors_count_total",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalPrefixSidLabelIndexMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_prefix_sid_label_index_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "globalPrefixSidSrv6Layer3SvcMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_prefix_sid_srv6_layer3_svc_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "globalTunnelEncapEntryCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_tunnel_encap_entry_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalPpmpEntryCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_ppmp_entry_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalPrefixSidSrv6Layer2SvcMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_prefix_sid_srv6_layer2_svc_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "globalRouteReflectors",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_route_reflectors",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalLocalAs",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_local_as",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalSnNumNonDfltVrfNbrsEstab",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_sn_num_non_dflt_vrf_nbrs_estab",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "vrfUpdateMessagesReceived",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_vrf_update_messages_received",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalOcRibAttributeSetsEntryCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_oc_rib_attribute_sets_entry_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalTunnelEncapMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_tunnel_encap_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "globalRouteReflectorMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_route_reflector_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "globalLsattrEntryCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_lsattr_entry_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalPeDistinguisherLabelEntryCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_pe_distinguisher_label_entry_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "vrfNetworkCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_vrf_network_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalLargeCommunityMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_large_community_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "globalExtendedCommunityEntryCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_extended_community_entry_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalCommunityEntryCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_community_entry_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "processInstance",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_process_instance",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalPrefixSidOrigSrgbMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_prefix_sid_orig_srgb_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "globalCommunityMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_community_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "vrfEstablishedNeighborsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_vrf_established_neighbors_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalBmpPoolFreeCountEntry",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_bmp_pool_free_count_entry",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalPoolAllocCountEntry",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_pool_alloc_count_entry",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalPathAttributeMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_path_attribute_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "globalBmpPoolSizeEntry",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_bmp_pool_size_entry",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalPrefixSidSrv6Layer2SvcCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_prefix_sid_srv6_layer2_svc_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalPrefixSidUnkTlVsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_prefix_sid_unk_tl_vs_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalAttrSetMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_attr_set_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "globalRibrnhEntryCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_ribrnh_entry_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalPtaEntryCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_pta_entry_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalBmpPoolAllocCountEntry",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_bmp_pool_alloc_count_entry",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalPoolSizeEntry",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_pool_size_entry",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "vrfNotificationsReceived",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_vrf_notifications_received",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalTotalVrfCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_total_vrf_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalExtendedCommunityMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_extended_community_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "globalMsgLogPoolSizeEntry",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_msg_log_pool_size_entry",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalAsPathEntryCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_as_path_entry_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalPeDistinguisherLabelMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_pe_distinguisher_label_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "globalOcRibAttributeSetMemory",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_oc_rib_attribute_set_memory",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "globalLargeCommunityEntryCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_large_community_entry_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalNexthopCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_nexthop_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalMsgLogPoolAllocCountEntry",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_msg_log_pool_alloc_count_entry",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalPrefixSidSrv6Layer3SvcCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_prefix_sid_srv6_layer3_svc_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "vrfNeighborsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_vrf_neighbors_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "globalPrefixSidOrigSrgbCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_global_prefix_sid_orig_srgb_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "vrfPathCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ipv4_bgp_vrf_path_count",
+                    "unit": "value"
+                }
+            ],
+            "objectType": "cisco-telemetry-xr-ipv4-bgp",
+            "vendor": "openmetrics"
+        },
+        "id": "openmetricscisco-telemetry-xr-ipv4-bgp",
+        "type": "ingestionDictionaries"
+    },
+    "violations": []
+}

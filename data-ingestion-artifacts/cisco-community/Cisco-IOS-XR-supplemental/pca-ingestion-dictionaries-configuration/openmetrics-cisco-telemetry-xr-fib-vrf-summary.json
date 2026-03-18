@@ -1,0 +1,441 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "openmetricscisco-telemetry-xr-fib-vrf-summary",
+            "customMetrics": null,
+            "dictionaryName": "openmetrics-cisco-telemetry-xr-fib-vrf-summary",
+            "dictionaryType": "custom",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "loadBalancing",
+                    "dataType": "string",
+                    "rawName": "load_balancing"
+                },
+                {
+                    "analyticsName": "nodeName",
+                    "dataType": "string",
+                    "rawName": "node_name"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "protocolName",
+                    "dataType": "string",
+                    "rawName": "protocol_name"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                },
+                {
+                    "analyticsName": "vrfName",
+                    "dataType": "string",
+                    "rawName": "vrf_name"
+                }
+            ],
+            "metricType": "timeseries",
+            "metrics": [
+                {
+                    "analyticsName": "cefLabelRecycledRoutes",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_cef_label_recycled_routes",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "cefRouteDrops",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_cef_route_drops",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "cefVersionMismatchRouteDrops",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_cef_version_mismatch_route_drops",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "deleteCacheEntries",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_delete_cache_num_entries",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "droppedPathlists",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_dropped_pathlist_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "existingLeafRevisions",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_existing_leaves_revisions",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "extendedPrefixes",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_extended_prefixes",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "fibDefaultPrefix",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_fib_default_prefix",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "fibDefaultPrefixMaskLength",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_fib_default_prefix_mask_length",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "forwardingElements",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_forwarding_elements",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "impositionPrefixes",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_imposition_prefixes",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "incompleteNextHops",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_incomplete_next_hops",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "leavesUsedBytes",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_leaves_used_bytes",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "lispEidPrefixes",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_lisp_eid_prefixes",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "lispEidValidPrefixes",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_lisp_eid_valid_prefixes",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "lispRlocObjects",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_lisp_rloc_objects",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "loadSharingElements",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_load_sharing_elements",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "loadSharingReferences",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_load_sharing_references",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "loadInfoBackwalks",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_loadinfo_backwalks",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "maxResolutionTimer",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_max_resolution_timer",
+                    "unit": "s"
+                },
+                {
+                    "analyticsName": "newUnresolvedEntries",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_new_unresolved_entries",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "nextHops",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_next_hops",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "srLabels",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_number_of_sr_labels",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "srv6EndpointRoutes",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_number_routes_srv6_endpoint",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "srv6HeadendRoutes",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_number_routes_srv6_headend",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "oldUnresolvedEntries",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_old_unresolved_entries",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "prefixInPlaceModifications",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_prefix_in_place_modifications",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "protectedRoutes",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_protected_route_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "reresolveEntries",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_reresolve_entries",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "resolutionTimer",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_resolution_timer",
+                    "unit": "s"
+                },
+                {
+                    "analyticsName": "routes",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_routes",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "slowProcessTimer",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_slow_process_timer",
+                    "unit": "s"
+                },
+                {
+                    "analyticsName": "stalePrefixDeletes",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_stale_prefix_deletes",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "tableId",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_table_id",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "tableIdPointer",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_table_id_pointer",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "totalLoadShareElementBytes",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_total_load_share_element_bytes",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "unresolvedEntries",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_unresolved_entries",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "virtualRouterId",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_virtual_router_id",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "vrfId",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_vrf_summary_vrf_id",
+                    "unit": "value"
+                }
+            ],
+            "objectType": "cisco-telemetry-xr-fib-vrf-summary",
+            "vendor": "openmetrics"
+        },
+        "id": "openmetricscisco-telemetry-xr-fib-vrf-summary",
+        "type": "ingestionDictionaries"
+    },
+    "violations": []
+}
