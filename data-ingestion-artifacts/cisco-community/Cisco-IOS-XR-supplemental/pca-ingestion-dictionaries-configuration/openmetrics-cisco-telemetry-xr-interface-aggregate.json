@@ -1,0 +1,168 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "openmetricscisco-telemetry-xr-interface-aggregate",
+            "customMetrics": null,
+            "dictionaryName": "openmetrics-cisco-telemetry-xr-interface-aggregate",
+            "dictionaryType": "custom",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                }
+            ],
+            "metricType": "timeseries",
+            "metrics": [
+                {
+                    "analyticsName": "dataRatesInputDataRateCount",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "aggregate_interface_data_rates_input_data_rate_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dataRatesInputDataRateMax",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "aggregate_interface_data_rates_input_data_rate_max",
+                    "unit": "bps",
+                    "sqlExpr": "cast(`aggregate_interface_data_rates_input_data_rate_max` as DOUBLE) * 1000"
+                },
+                {
+                    "analyticsName": "dataRatesInputDataRateMean",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "aggregate_interface_data_rates_input_data_rate_mean",
+                    "unit": "bps",
+                    "sqlExpr": "cast(`aggregate_interface_data_rates_input_data_rate_mean` as DOUBLE) * 1000"
+                },
+                {
+                    "analyticsName": "dataRatesInputDataRateMin",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "aggregate_interface_data_rates_input_data_rate_min",
+                    "unit": "bps",
+                    "sqlExpr": "cast(`aggregate_interface_data_rates_input_data_rate_min` as DOUBLE) * 1000"
+                },
+                {
+                    "analyticsName": "dataRatesInputDataRateSum",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "aggregate_interface_data_rates_input_data_rate_sum",
+                    "unit": "bps",
+                    "sqlExpr": "cast(`aggregate_interface_data_rates_input_data_rate_sum` as DOUBLE) * 1000"
+                },
+                {
+                    "analyticsName": "dataRatesOutputDataRateCount",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "aggregate_interface_data_rates_output_data_rate_count",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dataRatesOutputDataRateMax",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "aggregate_interface_data_rates_output_data_rate_max",
+                    "unit": "bps",
+                    "sqlExpr": "cast(`aggregate_interface_data_rates_output_data_rate_max` as DOUBLE) * 1000"
+                },
+                {
+                    "analyticsName": "dataRatesOutputDataRateMean",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "aggregate_interface_data_rates_output_data_rate_mean",
+                    "unit": "bps",
+                    "sqlExpr": "cast(`aggregate_interface_data_rates_output_data_rate_mean` as DOUBLE) * 1000"
+                },
+                {
+                    "analyticsName": "dataRatesOutputDataRateMin",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "aggregate_interface_data_rates_output_data_rate_min",
+                    "unit": "bps",
+                    "sqlExpr": "cast(`aggregate_interface_data_rates_output_data_rate_min` as DOUBLE) * 1000"
+                },
+                {
+                    "analyticsName": "dataRatesOutputDataRateSum",
+                    "dataType": "double",
+                    "directions": [
+                        "0"
+                    ],
+                    "rawName": "aggregate_interface_data_rates_output_data_rate_sum",
+                    "unit": "bps",
+                    "sqlExpr": "cast(`aggregate_interface_data_rates_output_data_rate_sum` as DOUBLE) * 1000"
+                }
+            ],
+            "objectType": "cisco-telemetry-xr-interface-aggregate",
+            "vendor": "openmetrics"
+        },
+        "id": "openmetricscisco-telemetry-xr-interface-aggregate",
+        "type": "ingestionDictionaries"
+    },
+    "violations": []
+}

@@ -1,0 +1,599 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "openmetricscisco-telemetry-xr-ipv6-rib-summary",
+            "customMetrics": null,
+            "dictionaryName": "openmetrics-cisco-telemetry-xr-ipv6-rib-summary",
+            "dictionaryType": "custom",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "af",
+                    "dataType": "string",
+                    "rawName": "af"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "instance",
+                    "dataType": "string",
+                    "rawName": "instance"
+                },
+                {
+                    "analyticsName": "name",
+                    "dataType": "string",
+                    "rawName": "name"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "protoId",
+                    "dataType": "string",
+                    "rawName": "protoid"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                },
+                {
+                    "analyticsName": "tableId",
+                    "dataType": "string",
+                    "rawName": "tableid"
+                }
+            ],
+            "metricType": "timeseries",
+            "metrics": [
+                {
+                    "analyticsName": "activePathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_activePathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "activeRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_activeRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "backupPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_backupPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "backupRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_backupRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "bgpExternalBackupPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_bgpExternalBackupPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "bgpExternalBackupRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_bgpExternalBackupRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "bgpExternalPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_bgpExternalPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "bgpExternalRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_bgpExternalRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "bgpInternalBackupPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_bgpInternalBackupPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "bgpInternalBackupRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_bgpInternalBackupRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "bgpInternalPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_bgpInternalPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "bgpInternalRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_bgpInternalRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "bgpLocalBackupPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_bgpLocalBackupPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "bgpLocalBackupRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_bgpLocalBackupRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "bgpLocalPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_bgpLocalPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "bgpLocalRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_bgpLocalRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "isisL1BackupPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_isisL1BackupPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "isisL1BackupRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_isisL1BackupRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "isisL1IaBackupPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_isisL1IaBackupPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "isisL1IaBackupRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_isisL1IaBackupRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "isisL1IaPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_isisL1IaPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "isisL1IaRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_isisL1IaRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "isisL1PathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_isisL1PathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "isisL1RoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_isisL1RoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "isisL2BackupPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_isisL2BackupPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "isisL2BackupRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_isisL2BackupRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "isisL2PathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_isisL2PathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "isisL2RoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_isisL2RoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "isisSummaryBackupPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_isisSummaryBackupPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "isisSummaryBackupRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_isisSummaryBackupRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "isisSummaryPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_isisSummaryPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "isisSummaryRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_isisSummaryRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfExtern1BackupPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfExtern1BackupPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfExtern1BackupRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfExtern1BackupRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfExtern1PathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfExtern1PathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfExtern1RoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfExtern1RoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfExtern2BackupPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfExtern2BackupPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfExtern2BackupRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfExtern2BackupRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfExtern2PathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfExtern2PathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfExtern2RoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfExtern2RoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfInterBackupPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfInterBackupPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfInterBackupRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfInterBackupRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfInterPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfInterPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfInterRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfInterRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfIntraBackupPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfIntraBackupPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfIntraBackupRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfIntraBackupRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfIntraPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfIntraPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfIntraRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfIntraRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfNssa1BackupPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfNssa1BackupPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfNssa1BackupRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfNssa1BackupRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfNssa1PathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfNssa1PathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfNssa1RoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfNssa1RoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfNssa2BackupPathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfNssa2BackupPathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfNssa2BackupRoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfNssa2BackupRoutesCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfNssa2PathsCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfNssa2PathsCount",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ospfNssa2RoutesCount",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ip_rib_ipv6_ospfNssa2RoutesCount",
+                    "unit": "value"
+                }
+            ],
+            "objectType": "cisco-telemetry-xr-ipv6-rib-summary",
+            "vendor": "openmetrics"
+        },
+        "id": "openmetricscisco-telemetry-xr-ipv6-rib-summary",
+        "type": "ingestionDictionaries"
+    },
+    "violations": []
+}

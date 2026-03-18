@@ -1,0 +1,181 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "openmetricscisco-telemetry-xr-ipm",
+            "customMetrics": null,
+            "dictionaryName": "openmetrics-cisco-telemetry-xr-ipm",
+            "dictionaryType": "custom",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "vrfName",
+                    "dataType": "string",
+                    "rawName": "local_vrf_name"
+                },
+                {
+                    "analyticsName": "localUdpDestinationPort",
+                    "dataType": "string",
+                    "rawName": "local_udp_destination_port"
+                },
+                {
+                    "analyticsName": "localUdpSourcePort",
+                    "dataType": "string",
+                    "rawName": "local_udp_source_port"
+                },
+                {
+                    "analyticsName": "node",
+                    "dataType": "string",
+                    "rawName": "node"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                },
+                {
+                    "analyticsName": "sessionIdLegacy",
+                    "dataType": "string",
+                    "rawName": "session_id"
+                },
+                {
+                    "analyticsName": "sessionIdXr",
+                    "dataType": "string",
+                    "rawName": "session_id_xr"
+                }
+            ],
+            "metricType": "timeseries",
+            "metrics": [
+                {
+                    "analyticsName": "averageLatency",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ep_ipm_receiver_metric_latency_average_latency",
+                    "unit": "\u03bcs"
+                },
+                {
+                    "analyticsName": "expMovingAvgLatency",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ep_ipm_receiver_metric_latency_exp_moving_avg_latency",
+                    "unit": "\u03bcs"
+                },
+                {
+                    "analyticsName": "latencyMedian",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ep_ipm_receiver_metric_latency_latency_median",
+                    "unit": "\u03bcs"
+                },
+                {
+                    "analyticsName": "maximumLatency",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ep_ipm_receiver_metric_latency_maximum_latency",
+                    "unit": "\u03bcs"
+                },
+                {
+                    "analyticsName": "minimumLatency",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ep_ipm_receiver_metric_latency_minimum_latency",
+                    "unit": "\u03bcs"
+                },
+                {
+                    "analyticsName": "actualReceivedPackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ep_ipm_receiver_metric_loss_actual_received_packet",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "expMovingAvgLossRatio",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ep_ipm_receiver_metric_loss_exp_moving_avg_loss_ratio",
+                    "unit": "pct"
+                },
+                {
+                    "analyticsName": "expectedReceivedPackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ep_ipm_receiver_metric_loss_expect_received_packet",
+                    "unit": "packets"
+                },
+                {
+                    "analyticsName": "lostPackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "ep_ipm_receiver_metric_loss_loss_packet",
+                    "unit": "packets"
+                }
+            ],
+            "objectType": "cisco-telemetry-xr-ipm",
+            "vendor": "openmetrics"
+        },
+        "id": "openmetricscisco-telemetry-xr-ipm",
+        "type": "ingestionDictionaries"
+    },
+    "violations": []
+}
