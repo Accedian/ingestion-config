@@ -1,0 +1,8 @@
+[node0_RP0_CPU0:~]$mdt_exec -c30000 -s Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/exceptions-v6
+Enter any key to exit...
+ Sub_id 200000001, flag 0, len 0
+ Sub_id 200000001, flag 4, len 794
+--------
+{"node_id_str":"l56","subscription_id_str":"app_TEST_200000001","encoding_path":"Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/exceptions-v6","collection_id":"130710","collection_start_time":"1773943622608","msg_timestamp":"1773943622616","data_json":[{"timestamp":"1773943622615","keys":[{"node-name":"0/RP0/CPU0"}],"content":{"packet-switched-counter":"0","punt-due-to-receive-counter":"0","broadcast-counter":"0","max-deliver-counter":"0","no-route-counter":"0","ttl-expired-counter":"0","redirect-counter":"0","df-unreachable-counter":"0","icmp-failures-counter":"0","ip-options-counter":"0","unsupported-feature-counter":"0","punt-failure-counter":"0","fragmented-packet-counter":"0","slow-encap-counter":"0","packet-consumed-counter":"0"}}],"collection_end_time":"1773943622616"}
+--------
+ Sub_id 200000001, flag 8, len 0

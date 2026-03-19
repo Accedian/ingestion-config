@@ -1,0 +1,218 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "openmetricscisco-telemetry-xr-fib-exceptions-v4",
+            "customMetrics": null,
+            "dictionaryName": "openmetrics-cisco-telemetry-xr-fib-exceptions-v4",
+            "dictionaryType": "custom",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "nodeName",
+                    "dataType": "string",
+                    "rawName": "node_name"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                }
+            ],
+            "metricType": "timeseries",
+            "metrics": [
+                {
+                    "analyticsName": "packetSwitchedCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_v4_packet_switched_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "puntDueToReceiveCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_v4_punt_due_to_receive_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "broadcastCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_v4_broadcast_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "maxDeliverCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_v4_max_deliver_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "noRouteCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_v4_no_route_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ttlExpiredCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_v4_ttl_expired_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "redirectCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_v4_redirect_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dfUnreachableCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_v4_df_unreachable_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "icmpFailuresCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_v4_icmp_failures_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ipOptionsCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_v4_ip_options_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "unsupportedFeatureCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_v4_unsupported_feature_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "puntFailureCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_v4_punt_failure_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "fragmentedPacketCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_v4_fragmented_packet_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "slowEncapCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_v4_slow_encap_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "packetConsumedCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_v4_packet_consumed_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "totalExceptionPackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_v4_total_exception_packets",
+                    "unit": "value"
+                }
+            ],
+            "objectType": "cisco-telemetry-xr-fib-exceptions-v4",
+            "objectTypeDisplayName": "cisco-telemetry-xr-fib-exceptions-v4"
+        },
+        "id": "openmetricscisco-telemetry-xr-fib-exceptions-v4",
+        "type": "dictionary"
+    }
+}
