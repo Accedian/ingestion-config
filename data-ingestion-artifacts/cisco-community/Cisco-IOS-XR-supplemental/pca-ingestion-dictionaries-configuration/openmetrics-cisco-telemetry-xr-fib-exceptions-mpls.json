@@ -1,0 +1,218 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "openmetricscisco-telemetry-xr-fib-exceptions-mpls",
+            "customMetrics": null,
+            "dictionaryName": "openmetrics-cisco-telemetry-xr-fib-exceptions-mpls",
+            "dictionaryType": "custom",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "nodeName",
+                    "dataType": "string",
+                    "rawName": "node_name"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                }
+            ],
+            "metricType": "timeseries",
+            "metrics": [
+                {
+                    "analyticsName": "packetSwitchedCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_mpls_packet_switched_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "puntDueToReceiveCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_mpls_punt_due_to_receive_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "broadcastCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_mpls_broadcast_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "maxDeliverCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_mpls_max_deliver_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "noRouteCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_mpls_no_route_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ttlExpiredCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_mpls_ttl_expired_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "redirectCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_mpls_redirect_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dfUnreachableCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_mpls_df_unreachable_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "icmpFailuresCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_mpls_icmp_failures_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ipOptionsCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_mpls_ip_options_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "unsupportedFeatureCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_mpls_unsupported_feature_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "puntFailureCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_mpls_punt_failure_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "fragmentedPacketCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_mpls_fragmented_packet_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "slowEncapCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_mpls_slow_encap_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "packetConsumedCounter",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_mpls_packet_consumed_counter",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "totalExceptionPackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_exceptions_mpls_total_exception_packets",
+                    "unit": "value"
+                }
+            ],
+            "objectType": "cisco-telemetry-xr-fib-exceptions-mpls",
+            "objectTypeDisplayName": "cisco-telemetry-xr-fib-exceptions-mpls"
+        },
+        "id": "openmetricscisco-telemetry-xr-fib-exceptions-mpls",
+        "type": "dictionary"
+    }
+}

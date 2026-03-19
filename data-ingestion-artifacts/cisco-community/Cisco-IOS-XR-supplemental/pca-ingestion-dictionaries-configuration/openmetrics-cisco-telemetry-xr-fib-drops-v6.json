@@ -1,0 +1,308 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "openmetricscisco-telemetry-xr-fib-drops-v6",
+            "customMetrics": null,
+            "dictionaryName": "openmetrics-cisco-telemetry-xr-fib-drops-v6",
+            "dictionaryType": "custom",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "nodeName",
+                    "dataType": "string",
+                    "rawName": "node_name"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                }
+            ],
+            "metricType": "timeseries",
+            "metrics": [
+                {
+                    "analyticsName": "noRoutePackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_no_route_packets",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "puntUnreachablePackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_punt_unreachable_packets",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "dfUnreachablePackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_df_unreachable_packets",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "encapsulationFailurePackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_encapsulation_failure_packets",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "incompleteAdjacencyPackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_incomplete_adjacency_packets",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "unresolvedPrefixPackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_unresolved_prefix_packets",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "unsupportedFeaturePackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_unsupported_feature_packets",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "discardPackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_discard_packets",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "checksumErrorPackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_checksum_error_packets",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "fragmenationConsumedPackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_fragmenation_consumed_packets",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "fragmenationFailurePackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_fragmenation_failure_packets",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "nullPackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_null_packets",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "rpfCheckFailurePackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_rpf_check_failure_packets",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "aclInRpfPackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_acl_in_rpf_packets",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "rpDestinationDropPackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_rp_destination_drop_packets",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "totalNumberOfDropPackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_total_number_of_drop_packets",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "mplsDisabledInterface",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_mpls_disabled_interface",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "greLookupFailedDrop",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_gre_lookup_failed_drop",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "greErrorDrop",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_gre_error_drop",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "lispPuntDrops",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_lisp_punt_drops",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "lispEncapErrorDrops",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_lisp_encap_error_drops",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "lispDecapErrorDrops",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_lisp_decap_error_drops",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "multiLabelDrops",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_multi_label_drops",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "unreachableSrLabelDrops",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_unreachable_sr_label_drops",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "ttlExpiredSrLabelDrops",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_ttl_expired_sr_label_drops",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "totalDropPackets",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "fib_drops_v6_total_drop_packets",
+                    "unit": "value"
+                }
+            ],
+            "objectType": "cisco-telemetry-xr-fib-drops-v6",
+            "objectTypeDisplayName": "cisco-telemetry-xr-fib-drops-v6"
+        },
+        "id": "openmetricscisco-telemetry-xr-fib-drops-v6",
+        "type": "dictionary"
+    }
+}
