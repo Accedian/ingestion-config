@@ -73,7 +73,7 @@ func main() {
 	flag.StringVar(&cfg.DictionariesDir, "dictionaries", "", "Output directory for ingestion dictionaries (optional)")
 	flag.StringVar(&cfg.KafkaBroker, "broker", "{{server_ip}}:9092", "Kafka broker address")
 	flag.StringVar(&cfg.KafkaTopic, "topic", "pca_kpi_topic", "Kafka topic name")
-	flag.StringVar(&cfg.KafkaVersion, "kafka-version", "2.6.0", "Kafka protocol version")
+	flag.StringVar(&cfg.KafkaVersion, "kafka-version", "3.9.0", "Kafka protocol version")
 	flag.StringVar(&cfg.AlertLogPath, "alert-log", "/tmp/kpi_alerts.log", "Path for KPI alert log file")
 	flag.Parse()
 
