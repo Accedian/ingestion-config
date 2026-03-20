@@ -2,9 +2,13 @@
 # Usage: KAFKA_VERSION=3.9.0 docker compose up
 
 services:
-  telegraf:
-    container_name: "telegraf"
-    image: telegraf:1.33
+  telemetry-agent:
+    container_name: "telemetry-agent"
+    platform: linux/arm64
+    image: gcr.io/sky-agents/agent-telemetry-arm64:0.82.0
+    entrypoint: ["/usr/bin/telegraf", "--config", "/etc/telegraf/telegraf.conf"]
+    environment:
+      KAFKA_BROKERS: "kafka:9092"
     volumes:
       - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
       - ./out:/mnt/out/

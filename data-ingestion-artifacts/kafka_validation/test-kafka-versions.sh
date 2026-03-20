@@ -142,7 +142,7 @@ test_kafka_version() {
     else
         echo -e "${RED}✗ Kafka $version: FAILED${NC}"
         echo "Telegraf logs:"
-        docker compose logs telegraf | tail -50
+        docker compose logs telemetry-agent | tail -50
         return 1
     fi
 }
