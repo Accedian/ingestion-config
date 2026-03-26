@@ -1,0 +1,159 @@
+{
+  "source": "192.168.20.135:6030",
+  "subscription-name": "default-1774431367",
+  "timestamp": 1774422661279498981,
+  "time": "2026-03-25T08:11:01.279498981+01:00",
+  "updates": [
+    {
+      "Path": "system/state/boot-time",
+      "values": {
+        "system/state/boot-time": 1774422598326710939
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.135:6030",
+  "subscription-name": "default-1774431367",
+  "timestamp": 1774431361299517177,
+  "time": "2026-03-25T10:36:01.299517177+01:00",
+  "updates": [
+    {
+      "Path": "system/state/current-datetime",
+      "values": {
+        "system/state/current-datetime": "2026-03-25T10:36:01+01:00"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.135:6030",
+  "subscription-name": "default-1774431367",
+  "timestamp": 1774422662027321195,
+  "time": "2026-03-25T08:11:02.027321195+01:00",
+  "prefix": "system/state",
+  "updates": [
+    {
+      "Path": "domain-name",
+      "values": {
+        "domain-name": "ns.eantc.de"
+      }
+    },
+    {
+      "Path": "hostname",
+      "values": {
+        "hostname": "ARISTA-135"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.135:6030",
+  "subscription-name": "default-1774431367",
+  "timestamp": 1774429924745048301,
+  "time": "2026-03-25T10:12:04.745048301+01:00",
+  "updates": [
+    {
+      "Path": "system/state/last-configuration-timestamp",
+      "values": {
+        "system/state/last-configuration-timestamp": 1774429924744961261
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.135:6030",
+  "subscription-name": "default-1774431367",
+  "timestamp": 1774422661145804529,
+  "time": "2026-03-25T08:11:01.145804529+01:00",
+  "updates": [
+    {
+      "Path": "system/state/software-version",
+      "values": {
+        "system/state/software-version": "4.36.0F-45915645.eostrunk (engineering build)"
+      }
+    }
+  ]
+}
+{
+  "sync-response": true
+}
+{
+  "source": "192.168.20.135:6030",
+  "subscription-name": "default-1774431367",
+  "timestamp": 1774422661279498981,
+  "time": "2026-03-25T08:11:01.279498981+01:00",
+  "updates": [
+    {
+      "Path": "system/state/boot-time",
+      "values": {
+        "system/state/boot-time": 1774422598326710939
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.135:6030",
+  "subscription-name": "default-1774431367",
+  "timestamp": 1774431391300115203,
+  "time": "2026-03-25T10:36:31.300115203+01:00",
+  "updates": [
+    {
+      "Path": "system/state/current-datetime",
+      "values": {
+        "system/state/current-datetime": "2026-03-25T10:36:31+01:00"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.135:6030",
+  "subscription-name": "default-1774431367",
+  "timestamp": 1774422662027321195,
+  "time": "2026-03-25T08:11:02.027321195+01:00",
+  "prefix": "system/state",
+  "updates": [
+    {
+      "Path": "domain-name",
+      "values": {
+        "domain-name": "ns.eantc.de"
+      }
+    },
+    {
+      "Path": "hostname",
+      "values": {
+        "hostname": "ARISTA-135"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.135:6030",
+  "subscription-name": "default-1774431367",
+  "timestamp": 1774429924745048301,
+  "time": "2026-03-25T10:12:04.745048301+01:00",
+  "updates": [
+    {
+      "Path": "system/state/last-configuration-timestamp",
+      "values": {
+        "system/state/last-configuration-timestamp": 1774429924744961261
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.135:6030",
+  "subscription-name": "default-1774431367",
+  "timestamp": 1774422661145804529,
+  "time": "2026-03-25T08:11:01.145804529+01:00",
+  "updates": [
+    {
+      "Path": "system/state/software-version",
+      "values": {
+        "system/state/software-version": "4.36.0F-45915645.eostrunk (engineering build)"
+      }
+    }
+  ]
+}
+
+received signal 'terminated'. terminating...

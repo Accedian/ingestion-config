@@ -1,0 +1,36 @@
+{
+  "address": "192.168.20.135:6030",
+  "captured_at_utc": "2026-03-25T09:35:11Z",
+  "encoding": "proto",
+  "listener_port": null,
+  "name": "arista",
+  "notes": null,
+  "protocol": "gnmi",
+  "sensors": [],
+  "subscriptions": [
+    {
+      "name": "if_counters",
+      "origin": "openconfig",
+      "path": "/interfaces/interface/state/counters",
+      "sample_interval": "10s"
+    },
+    {
+      "name": "system_health",
+      "origin": "openconfig",
+      "path": "/system/state",
+      "sample_interval": "30s"
+    },
+    {
+      "name": "components",
+      "origin": "openconfig",
+      "path": "/components/component",
+      "sample_interval": "60s"
+    },
+    {
+      "name": "network_instances",
+      "origin": "openconfig",
+      "path": "/network-instances/network-instance/state",
+      "sample_interval": "60s"
+    }
+  ]
+}
