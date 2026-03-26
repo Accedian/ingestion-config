@@ -1,0 +1,12 @@
+version: '3'
+services:
+  telegraf-ribbon:
+    image: "docker.io/telegraf:latest"
+    container_name: "telegraf-ribbon"
+    restart: "always"
+    ports:
+      - "57002:57000"    ## consider changing me too
+    volumes:
+      - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
+      #- ./ribbon.star:/etc/telegraf/ribbon.star:ro
+
