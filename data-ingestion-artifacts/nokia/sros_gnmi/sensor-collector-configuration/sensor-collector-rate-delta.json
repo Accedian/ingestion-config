@@ -1,0 +1,84 @@
+{
+  "openMetricsConfig": {
+    "operations": {
+      "nokia_telemetry_interface": {
+        "delta": {
+          "metrics": [
+            "in_octets",
+            "out_octets",
+            "total_octets",
+            "in_unicast_packets",
+            "out_unicast_packets",
+            "in_multicast_packets",
+            "out_multicast_packets",
+            "total_multicast_packets",
+            "in_broadcast_packets",
+            "out_broadcast_packets",
+            "total_broadcast_packets",
+            "total_packets",
+            "in_errors",
+            "out_errors",
+            "collisions",
+            "crc_align_errors",
+            "drop_events",
+            "fragments",
+            "jabbers",
+            "undersize_packets",
+            "oversize_packets",
+            "ethernet_like_medium_error_fcs",
+            "ethernet_like_medium_error_alignment",
+            "ethernet_like_medium_error_symbol",
+            "ethernet_like_medium_error_carrier_sense",
+            "ethernet_like_medium_error_internal_mac_transmitted",
+            "ethernet_like_medium_error_sqe_test",
+            "ethernet_like_medium_frame_too_long",
+            "ethernet_like_medium_pause_frames_received",
+            "ethernet_like_medium_pause_frames_transmitted",
+            "ethernet_like_medium_collision_excessive",
+            "ethernet_like_medium_collision_late",
+            "ethernet_like_medium_collision_multiple",
+            "ethernet_like_medium_collision_single",
+            "packet_size_octets_64",
+            "packet_size_octets_65_to_127",
+            "packet_size_octets_128_to_255",
+            "packet_size_octets_256_to_511",
+            "packet_size_octets_512_to_1023",
+            "packet_size_octets_1024_to_1518",
+            "packet_size_octets_1519_to_max"
+          ]
+        },
+        "rate": {
+          "metrics": [
+            "in_octets_rate",
+            "out_octets_rate",
+            "total_octets_rate",
+            "in_errors_rate",
+            "out_errors_rate"
+          ]
+        }
+      },
+      "nokia_telemetry_interface_queues": {
+        "delta": {
+          "metrics": [
+            "in_profile_forwarded_octets",
+            "in_profile_forwarded_packets",
+            "in_profile_dropped_octets",
+            "in_profile_dropped_packets",
+            "out_profile_forwarded_octets",
+            "out_profile_forwarded_packets",
+            "out_profile_dropped_octets",
+            "out_profile_dropped_packets"
+          ]
+        },
+        "rate": {
+          "metrics": [
+            "in_profile_forwarded_octets_rate",
+            "out_profile_forwarded_octets_rate",
+            "in_profile_dropped_octets_rate",
+            "out_profile_dropped_octets_rate"
+          ]
+        }
+      }
+    }
+  }
+}

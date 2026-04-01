@@ -1,0 +1,69 @@
+{
+  "openMetricsConfig": {
+    "operations": {
+      "juniper_telemetry_interface": {
+        "delta": {
+          "metrics": [
+            "juniper_interface_in_octets",
+            "juniper_interface_out_octets",
+            "juniper_interface_in_pkts",
+            "juniper_interface_out_pkts",
+            "juniper_interface_in_errors",
+            "juniper_interface_out_errors",
+            "juniper_interface_in_discards",
+            "juniper_interface_out_discards",
+            "juniper_interface_in_fcs_errors",
+            "juniper_interface_in_unicast_pkts",
+            "juniper_interface_out_unicast_pkts",
+            "juniper_interface_in_multicast_pkts",
+            "juniper_interface_out_multicast_pkts",
+            "juniper_interface_in_broadcast_pkts",
+            "juniper_interface_out_broadcast_pkts",
+            "juniper_interface_in_pause_pkts",
+            "juniper_interface_out_pause_pkts",
+            "juniper_interface_in_unknown_proto_pkts",
+            "juniper_interface_out_unknown_proto_pkts",
+            "juniper_subinterface_in_octets",
+            "juniper_subinterface_out_octets",
+            "juniper_subinterface_in_pkts",
+            "juniper_subinterface_out_pkts",
+            "juniper_subinterface_ipv4_in_octets",
+            "juniper_subinterface_ipv4_out_octets",
+            "juniper_subinterface_ipv4_in_pkts",
+            "juniper_subinterface_ipv4_out_pkts",
+            "juniper_subinterface_ipv6_in_octets",
+            "juniper_subinterface_ipv6_out_octets",
+            "juniper_subinterface_ipv6_in_pkts",
+            "juniper_subinterface_ipv6_out_pkts"
+          ]
+        },
+        "rate": {
+          "metrics": [
+            "juniper_interface_in_octets_rate",
+            "juniper_interface_out_octets_rate",
+            "juniper_subinterface_in_octets_rate",
+            "juniper_subinterface_out_octets_rate"
+          ]
+        }
+      },
+      "juniper_telemetry_interface_queues": {
+        "delta": {
+          "metrics": [
+            "juniper_interface_queues_bytes",
+            "juniper_interface_queues_pkts",
+            "juniper_interface_queues_tail_drop_pkts",
+            "juniper_interface_queues_red_drop_pkts",
+            "juniper_interface_queues_red_drop_bytes",
+            "juniper_interface_queues_rl_drop_pkts",
+            "juniper_interface_queues_rl_drop_bytes"
+          ]
+        },
+        "rate": {
+          "metrics": [
+            "juniper_interface_queues_bytes_rate"
+          ]
+        }
+      }
+    }
+  }
+}
