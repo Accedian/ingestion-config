@@ -1,0 +1,94 @@
+! Live capture from l57 on 2026-03-17
+! Extracted sections relevant to XR product validation peer-side setup.
+
+ethernet sla
+ profile PCA-DMM type cfm-delay-measurement
+  probe
+   send burst every 1 seconds packet count 10 interval 100 milliseconds
+  !
+  schedule
+   every 1 minutes for 1 minutes
+  !
+  statistics
+   measure round-trip-delay
+   !
+   measure one-way-delay-sd
+   !
+   measure one-way-delay-ds
+   !
+   measure round-trip-jitter
+   !
+   measure one-way-jitter-ds
+   !
+  !
+ !
+ profile PCA-SLM type cfm-synthetic-loss-measurement
+  probe
+   send packet every 1 seconds
+  !
+  schedule
+   every 1 minutes for 1 minutes
+  !
+  statistics
+   measure one-way-loss-sd
+   !
+   measure one-way-loss-ds
+   !
+  !
+ !
+!
+
+ethernet cfm
+ domain PCA-VALIDATION-DOMAIN level 3
+  service PCA-VALIDATION-SERVICE down-meps
+   continuity-check interval 1s
+  !
+ !
+!
+
+ipsla
+ operation 571
+  type icmp echo
+   source address 10.255.18.157
+   destination address 10.255.18.156
+   timeout 1000
+   frequency 1
+  !
+ !
+ operation 572
+  type udp jitter
+   source address 10.255.18.157
+   destination address 10.255.18.156
+   packet count 10
+   packet interval 20
+   timeout 1000
+   source port 37373
+   datasize request 32
+   destination port 14001
+   frequency 1
+   verify-data
+  !
+ !
+ schedule operation 571
+  start-time now
+  life forever
+ !
+ schedule operation 572
+  start-time now
+  life forever
+ !
+ responder
+  type udp ipv4 address 10.255.18.157 port 14000
+ !
+!
+
+interface TenGigE0/0/0/1
+ ipv6 enable
+ ethernet cfm
+  mep domain PCA-VALIDATION-DOMAIN service PCA-VALIDATION-SERVICE mep-id 201
+   loss-measurement counters aggregate
+   sla operation profile PCA-DMM target mep-id 101
+   sla operation profile PCA-SLM target mep-id 101
+  !
+ !
+!

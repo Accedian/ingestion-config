@@ -1,0 +1,23 @@
+Tue Mar 17 01:45:09.332 UTC
+telemetry model-driven
+ destination-group PCADestinationGroup
+  address-family ipv6 2001:1109::94a4:5fff:fe82:9537 port 57001
+   encoding self-describing-gpb
+   protocol tcp
+  !
+ !
+ sensor-group PCASensorGroupId
+  sensor-path Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-xr/interface
+  sensor-path Cisco-IOS-XR-envmon-oper:power-management/rack/producers/producer-nodes/producer-node
+  sensor-path Cisco-IOS-XR-fib-common-oper:fib/nodes/node/protocols/protocol/vrfs/vrf/summary
+  sensor-path Cisco-IOS-XR-ip-rib-ipv4-oper:rib/rib-table-ids/rib-table-id/summary-protos/summary-proto
+  sensor-path Cisco-IOS-XR-ipv4-bgp-oper:bgp/instances/instance/instance-active/default-vrf/process-info
+  sensor-path Cisco-IOS-XR-ip-rib-ipv6-oper:ipv6-rib/rib-table-ids/rib-table-id/summary-protos/summary-proto
+  sensor-path Cisco-IOS-XR-perf-meas-oper:performance-measurement/nodes/node/endpoints/ep-ipm-receivers/ep-ipm-receiver-metrics
+ !
+ subscription PCASubscriptionId
+  sensor-group-id PCASensorGroupId strict-timer
+  sensor-group-id PCASensorGroupId sample-interval 60000
+  destination-id PCADestinationGroup
+ !
+!
