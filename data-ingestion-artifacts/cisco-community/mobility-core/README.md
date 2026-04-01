@@ -2,6 +2,8 @@
 
 ## Intro
 
+- artifact status: lab reference
+
 This set of files represents the first integration with the Fault & Mobility Performance Monitoring collector. The interface between both systems is a kafka bus.
 
 ## Tradeoffs and important notes

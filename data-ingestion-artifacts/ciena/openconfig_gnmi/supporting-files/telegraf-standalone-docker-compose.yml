@@ -1,0 +1,11 @@
+services:
+  telegraf-ciena:
+    image: "docker.io/telegraf:latest"
+    container_name: "telegraf-ciena"
+    restart: "always"
+    volumes:
+      - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
+      - ./certs:/etc/telegraf/certs:ro
+      - ./output.json:/etc/telegraf/output.json
+    # Note: For dial-in mode, no ports need to be exposed
+    # Telegraf initiates the connection to the Ciena device

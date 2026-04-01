@@ -1,0 +1,4730 @@
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028585972252,
+  "time": "2026-03-25T10:47:08.585972252+01:00",
+  "prefix": "state/system/cpu[sample-period=1]",
+  "updates": [
+    {
+      "Path": "sample-period",
+      "values": {
+        "sample-period": 1
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028586152450,
+  "time": "2026-03-25T10:47:08.58615245+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/bfd",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 284
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "284"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.02"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028586236809,
+  "time": "2026-03-25T10:47:08.586236809+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/bgp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 8316
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "8316"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.1"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.14"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028586323888,
+  "time": "2026-03-25T10:47:08.586323888+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/bgp-pe-ce",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028586408807,
+  "time": "2026-03-25T10:47:08.586408807+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/cflowd",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 71
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "71"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028586479686,
+  "time": "2026-03-25T10:47:08.586479686+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/cards-and-ports",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 4735
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "4735"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.05"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.2"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028586562365,
+  "time": "2026-03-25T10:47:08.586562365+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/dhcp-server",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 19
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "19"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028586647563,
+  "time": "2026-03-25T10:47:08.586647563+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/eth-cfm",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 2639
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "2639"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.03"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.14"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028586731642,
+  "time": "2026-03-25T10:47:08.586731642+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/icc",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 5464
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "5464"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.06"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.29"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028586815201,
+  "time": "2026-03-25T10:47:08.586815201+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/igmp-mld",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 373
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "373"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.03"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028586897800,
+  "time": "2026-03-25T10:47:08.5868978+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/imsi-db-appl",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 42
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "42"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028586970559,
+  "time": "2026-03-25T10:47:08.586970559+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/ip-stack",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 36627
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "36627"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.45"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.49"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028587018919,
+  "time": "2026-03-25T10:47:08.587018919+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/is-is",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 15384
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "15384"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.19"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.25"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028587102238,
+  "time": "2026-03-25T10:47:08.587102238+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/isa",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 4020
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "4020"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.05"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.14"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028587185716,
+  "time": "2026-03-25T10:47:08.587185716+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/ldp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 7865
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "7865"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.09"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.14"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028587265595,
+  "time": "2026-03-25T10:47:08.587265595+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/logging",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 268
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "268"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.02"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028587350194,
+  "time": "2026-03-25T10:47:08.587350194+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/mbuf",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028587429953,
+  "time": "2026-03-25T10:47:08.587429953+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/mcs",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 295
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "295"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.02"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028587512912,
+  "time": "2026-03-25T10:47:08.587512912+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/mpls-rsvp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 3377
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "3377"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.04"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.2"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028587594831,
+  "time": "2026-03-25T10:47:08.587594831+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/mscp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028587679390,
+  "time": "2026-03-25T10:47:08.58767939+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/msdp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028587759869,
+  "time": "2026-03-25T10:47:08.587759869+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/management",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 63294
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "63294"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.79"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "1.99"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028587840268,
+  "time": "2026-03-25T10:47:08.587840268+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/oam",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 8108
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "8108"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.1"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.16"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028587921027,
+  "time": "2026-03-25T10:47:08.587921027+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/ospf",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 31216
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "31216"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.39"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.15"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028588002186,
+  "time": "2026-03-25T10:47:08.588002186+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/sdn-protocols",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 32
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "32"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028588083185,
+  "time": "2026-03-25T10:47:08.588083185+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/pim-l2mcast",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 15
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "15"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028588163864,
+  "time": "2026-03-25T10:47:08.588163864+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/pki",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 60
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "60"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028588243743,
+  "time": "2026-03-25T10:47:08.588243743+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/ptp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 14080
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "14080"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.17"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "1.4"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028588316742,
+  "time": "2026-03-25T10:47:08.588316742+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/rip",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028588403861,
+  "time": "2026-03-25T10:47:08.588403861+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/rtm-policies",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028588485020,
+  "time": "2026-03-25T10:47:08.58848502+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/redundancy",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028588570658,
+  "time": "2026-03-25T10:47:08.588570658+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/snmp-daemon",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028588653977,
+  "time": "2026-03-25T10:47:08.588653977+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/security",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028588738296,
+  "time": "2026-03-25T10:47:08.588738296+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/services",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 4622
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "4622"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.05"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.29"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028588822535,
+  "time": "2026-03-25T10:47:08.588822535+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/stats",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028588902574,
+  "time": "2026-03-25T10:47:08.588902574+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/stats-extended",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028588986413,
+  "time": "2026-03-25T10:47:08.588986413+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/subscriber-mgmt",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 3272
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "3272"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.04"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.04"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028589066492,
+  "time": "2026-03-25T10:47:08.589066492+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/system",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 113298
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "113298"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "1.41"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "3.2"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028589151771,
+  "time": "2026-03-25T10:47:08.589151771+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/traffic-eng",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028589233770,
+  "time": "2026-03-25T10:47:08.58923377+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/tree-sid",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028589313249,
+  "time": "2026-03-25T10:47:08.589313249+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/vrrp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 756
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "756"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.04"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028589398168,
+  "time": "2026-03-25T10:47:08.589398168+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/web-redirect",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 41
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "41"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028589481407,
+  "time": "2026-03-25T10:47:08.589481407+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/hqos-algorithm",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 236
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "236"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.02"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028589564566,
+  "time": "2026-03-25T10:47:08.589564566+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/hqos-statistics",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 184
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "184"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.01"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028589646084,
+  "time": "2026-03-25T10:47:08.589646084+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/iom",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 70215
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "70215"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.87"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "4.42"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028589729283,
+  "time": "2026-03-25T10:47:08.589729283+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/summary/total",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 8000000
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "8000000"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "100.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028589812642,
+  "time": "2026-03-25T10:47:08.589812642+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/summary/idle",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 7600000
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "7600000"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "95.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028589895601,
+  "time": "2026-03-25T10:47:08.589895601+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/summary/usage",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 400000
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "400000"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "5.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028589979280,
+  "time": "2026-03-25T10:47:08.58997928+01:00",
+  "prefix": "state/system/cpu[sample-period=1]/summary/busiest-core-utilization",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 80000
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "80000"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "8.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028590674471,
+  "time": "2026-03-25T10:47:08.590674471+01:00",
+  "prefix": "state/system/cpu[sample-period=60]",
+  "updates": [
+    {
+      "Path": "sample-period",
+      "values": {
+        "sample-period": 60
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028590943268,
+  "time": "2026-03-25T10:47:08.590943268+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/bfd",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 16546
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "16546"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.02"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028591048386,
+  "time": "2026-03-25T10:47:08.591048386+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/bgp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 479371
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "479371"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.09"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.14"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028591134545,
+  "time": "2026-03-25T10:47:08.591134545+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/bgp-pe-ce",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028591218264,
+  "time": "2026-03-25T10:47:08.591218264+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/cflowd",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 4113
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "4113"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028591301263,
+  "time": "2026-03-25T10:47:08.591301263+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/cards-and-ports",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 278910
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "278910"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.05"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.2"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028591384462,
+  "time": "2026-03-25T10:47:08.591384462+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/dhcp-server",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 1005
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "1005"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028591466861,
+  "time": "2026-03-25T10:47:08.591466861+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/eth-cfm",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 156805
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "156805"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.03"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.14"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028591549140,
+  "time": "2026-03-25T10:47:08.59154914+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/icc",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 120362
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "120362"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.02"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.1"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028591631539,
+  "time": "2026-03-25T10:47:08.591631539+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/igmp-mld",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 22316
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "22316"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.03"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028591714298,
+  "time": "2026-03-25T10:47:08.591714298+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/imsi-db-appl",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 2573
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "2573"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028591796697,
+  "time": "2026-03-25T10:47:08.591796697+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/ip-stack",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 1847857
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "1847857"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.38"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.26"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028591878735,
+  "time": "2026-03-25T10:47:08.591878735+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/is-is",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 879728
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "879728"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.18"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.26"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028591960654,
+  "time": "2026-03-25T10:47:08.591960654+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/isa",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 242926
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "242926"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.05"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.14"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028592042893,
+  "time": "2026-03-25T10:47:08.592042893+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/ldp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 464347
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "464347"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.09"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.13"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028592130812,
+  "time": "2026-03-25T10:47:08.592130812+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/logging",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 17112
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "17112"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.02"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028592214771,
+  "time": "2026-03-25T10:47:08.592214771+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/mbuf",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028592298930,
+  "time": "2026-03-25T10:47:08.59229893+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/mcs",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 17074
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "17074"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.02"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028592381809,
+  "time": "2026-03-25T10:47:08.592381809+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/mpls-rsvp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 196759
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "196759"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.04"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.2"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028592462808,
+  "time": "2026-03-25T10:47:08.592462808+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/mscp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028592550207,
+  "time": "2026-03-25T10:47:08.592550207+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/msdp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028592633006,
+  "time": "2026-03-25T10:47:08.592633006+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/management",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 1586368
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "1586368"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.33"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "1.39"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028592716645,
+  "time": "2026-03-25T10:47:08.592716645+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/oam",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 477585
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "477585"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.09"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.16"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028592803483,
+  "time": "2026-03-25T10:47:08.592803483+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/ospf",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 1808812
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "1808812"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.37"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.14"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028592892162,
+  "time": "2026-03-25T10:47:08.592892162+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/sdn-protocols",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 1969
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "1969"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028592979281,
+  "time": "2026-03-25T10:47:08.592979281+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/pim-l2mcast",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 1077
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "1077"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028593059680,
+  "time": "2026-03-25T10:47:08.59305968+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/pki",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 3956
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "3956"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028593144039,
+  "time": "2026-03-25T10:47:08.593144039+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/ptp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 848128
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "848128"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.17"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "1.41"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028593230078,
+  "time": "2026-03-25T10:47:08.593230078+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/rip",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028593314757,
+  "time": "2026-03-25T10:47:08.593314757+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/rtm-policies",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028593397516,
+  "time": "2026-03-25T10:47:08.593397516+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/redundancy",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028593479475,
+  "time": "2026-03-25T10:47:08.593479475+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/snmp-daemon",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028593560034,
+  "time": "2026-03-25T10:47:08.593560034+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/security",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028593645392,
+  "time": "2026-03-25T10:47:08.593645392+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/services",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 266251
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "266251"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.05"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.28"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028593728071,
+  "time": "2026-03-25T10:47:08.593728071+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/stats",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 171
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "171"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028593811110,
+  "time": "2026-03-25T10:47:08.59381111+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/stats-extended",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028593895549,
+  "time": "2026-03-25T10:47:08.593895549+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/subscriber-mgmt",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 189745
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "189745"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.03"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.04"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028593985188,
+  "time": "2026-03-25T10:47:08.593985188+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/system",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 5463094
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "5463094"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "1.13"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "3.15"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028594049747,
+  "time": "2026-03-25T10:47:08.594049747+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/traffic-eng",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028594137586,
+  "time": "2026-03-25T10:47:08.594137586+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/tree-sid",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028594226265,
+  "time": "2026-03-25T10:47:08.594226265+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/vrrp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 44125
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "44125"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.03"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028594317344,
+  "time": "2026-03-25T10:47:08.594317344+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/web-redirect",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 2754
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "2754"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028594408423,
+  "time": "2026-03-25T10:47:08.594408423+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/hqos-algorithm",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 14370
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "14370"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.02"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028594492221,
+  "time": "2026-03-25T10:47:08.594492221+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/hqos-statistics",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 11340
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "11340"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.01"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028594576860,
+  "time": "2026-03-25T10:47:08.59457686+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/iom",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 4092092
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "4092092"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.85"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "4.51"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028594660459,
+  "time": "2026-03-25T10:47:08.594660459+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/summary/total",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 480000000
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "480000000"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "100.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028594743978,
+  "time": "2026-03-25T10:47:08.594743978+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/summary/idle",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 460530000
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "460530000"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "95.94"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028594827417,
+  "time": "2026-03-25T10:47:08.594827417+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/summary/usage",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 19470000
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "19470000"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "4.05"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028594911216,
+  "time": "2026-03-25T10:47:08.594911216+01:00",
+  "prefix": "state/system/cpu[sample-period=60]/summary/busiest-core-utilization",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 4250000
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "4250000"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "7.08"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028595568167,
+  "time": "2026-03-25T10:47:08.595568167+01:00",
+  "prefix": "state/system/cpu[sample-period=300]",
+  "updates": [
+    {
+      "Path": "sample-period",
+      "values": {
+        "sample-period": 300
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028595690726,
+  "time": "2026-03-25T10:47:08.595690726+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/bfd",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 82381
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "82381"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.02"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028595769365,
+  "time": "2026-03-25T10:47:08.595769365+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/bgp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 2401135
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "2401135"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.1"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.14"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028595852444,
+  "time": "2026-03-25T10:47:08.595852444+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/bgp-pe-ce",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028595934483,
+  "time": "2026-03-25T10:47:08.595934483+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/cflowd",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 20434
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "20434"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028596019322,
+  "time": "2026-03-25T10:47:08.596019322+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/cards-and-ports",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 1389705
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "1389705"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.05"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.2"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028596104121,
+  "time": "2026-03-25T10:47:08.596104121+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/dhcp-server",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 5241
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "5241"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028596187119,
+  "time": "2026-03-25T10:47:08.596187119+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/eth-cfm",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 786945
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "786945"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.03"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.14"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028596272078,
+  "time": "2026-03-25T10:47:08.596272078+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/icc",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 526458
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "526458"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.02"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.09"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028596354597,
+  "time": "2026-03-25T10:47:08.596354597+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/igmp-mld",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 112171
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "112171"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.03"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028596437956,
+  "time": "2026-03-25T10:47:08.596437956+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/imsi-db-appl",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 12715
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "12715"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028596525435,
+  "time": "2026-03-25T10:47:08.596525435+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/ip-stack",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 9195896
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "9195896"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.38"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.25"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028596609194,
+  "time": "2026-03-25T10:47:08.596609194+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/is-is",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 4394485
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "4394485"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.18"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.25"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028596689673,
+  "time": "2026-03-25T10:47:08.596689673+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/isa",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 1201976
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "1201976"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.05"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.13"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028596770432,
+  "time": "2026-03-25T10:47:08.596770432+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/ldp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 2308252
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "2308252"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.09"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.13"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028596850871,
+  "time": "2026-03-25T10:47:08.596850871+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/logging",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 84711
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "84711"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.02"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028596930990,
+  "time": "2026-03-25T10:47:08.59693099+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/mbuf",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028597014709,
+  "time": "2026-03-25T10:47:08.597014709+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/mcs",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 85536
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "85536"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.02"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028597095588,
+  "time": "2026-03-25T10:47:08.597095588+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/mpls-rsvp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 973636
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "973636"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.04"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.19"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028597174867,
+  "time": "2026-03-25T10:47:08.597174867+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/mscp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028597256106,
+  "time": "2026-03-25T10:47:08.597256106+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/msdp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028597337664,
+  "time": "2026-03-25T10:47:08.597337664+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/management",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 6858349
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "6858349"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.28"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "1.21"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028597423023,
+  "time": "2026-03-25T10:47:08.597423023+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/oam",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 2391485
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "2391485"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.09"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.16"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028597500942,
+  "time": "2026-03-25T10:47:08.597500942+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/ospf",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 9082300
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "9082300"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.37"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.14"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028597589261,
+  "time": "2026-03-25T10:47:08.597589261+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/sdn-protocols",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 10433
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "10433"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028597670180,
+  "time": "2026-03-25T10:47:08.59767018+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/pim-l2mcast",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 5276
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "5276"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028597753739,
+  "time": "2026-03-25T10:47:08.597753739+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/pki",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 19794
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "19794"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028597839098,
+  "time": "2026-03-25T10:47:08.597839098+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/ptp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 4230587
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "4230587"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.17"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "1.4"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028597919017,
+  "time": "2026-03-25T10:47:08.597919017+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/rip",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028598000296,
+  "time": "2026-03-25T10:47:08.598000296+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/rtm-policies",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028598084215,
+  "time": "2026-03-25T10:47:08.598084215+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/redundancy",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028598170254,
+  "time": "2026-03-25T10:47:08.598170254+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/snmp-daemon",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028598249653,
+  "time": "2026-03-25T10:47:08.598249653+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/security",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028598336771,
+  "time": "2026-03-25T10:47:08.598336771+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/services",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 1335281
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "1335281"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.05"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.28"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028598420170,
+  "time": "2026-03-25T10:47:08.59842017+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/stats",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 821
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "821"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028598504609,
+  "time": "2026-03-25T10:47:08.598504609+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/stats-extended",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028598588448,
+  "time": "2026-03-25T10:47:08.598588448+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/subscriber-mgmt",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 945761
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "945761"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.03"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.04"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028598670687,
+  "time": "2026-03-25T10:47:08.598670687+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/system",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 27151067
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "27151067"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "1.13"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "3.16"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028598735006,
+  "time": "2026-03-25T10:47:08.598735006+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/traffic-eng",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028598825125,
+  "time": "2026-03-25T10:47:08.598825125+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/tree-sid",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 0
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "0"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028598910244,
+  "time": "2026-03-25T10:47:08.598910244+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/vrrp",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 220890
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "220890"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.03"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028598994523,
+  "time": "2026-03-25T10:47:08.598994523+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/web-redirect",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 13968
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "13968"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028599079042,
+  "time": "2026-03-25T10:47:08.599079042+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/hqos-algorithm",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 71592
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "71592"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.02"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028599162081,
+  "time": "2026-03-25T10:47:08.599162081+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/hqos-statistics",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 55819
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "55819"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.0"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "0.01"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028599243960,
+  "time": "2026-03-25T10:47:08.59924396+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/iom",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 20208624
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "20208624"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "0.84"
+      }
+    },
+    {
+      "Path": "capacity-usage",
+      "values": {
+        "capacity-usage": "4.47"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028599325559,
+  "time": "2026-03-25T10:47:08.599325559+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/summary/total",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 2400000000
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "2400000000"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "100.0"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028599410038,
+  "time": "2026-03-25T10:47:08.599410038+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/summary/idle",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 2304340000
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "2304340000"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "96.01"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028599496636,
+  "time": "2026-03-25T10:47:08.599496636+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/summary/usage",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 95660000
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "95660000"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "3.98"
+      }
+    }
+  ]
+}
+{
+  "source": "192.168.20.33:57400",
+  "subscription-name": "default-1774431998",
+  "timestamp": 1774432028599587795,
+  "time": "2026-03-25T10:47:08.599587795+01:00",
+  "prefix": "state/system/cpu[sample-period=300]/summary/busiest-core-utilization",
+  "updates": [
+    {
+      "Path": "cpu-time",
+      "values": {
+        "cpu-time": 20800000
+      }
+    },
+    {
+      "Path": "time-used",
+      "values": {
+        "time-used": "20800000"
+      }
+    },
+    {
+      "Path": "cpu-usage",
+      "values": {
+        "cpu-usage": "6.93"
+      }
+    }
+  ]
+}
+{
+  "sync-response": true
+}
+
+received signal 'terminated'. terminating...

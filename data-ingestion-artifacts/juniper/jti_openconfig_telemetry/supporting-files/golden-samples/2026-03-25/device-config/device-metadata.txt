@@ -1,0 +1,15 @@
+{
+  "address": "192.168.21.33:32767",
+  "captured_at_utc": "2026-03-25T09:43:49Z",
+  "encoding": null,
+  "listener_port": null,
+  "name": "juniper",
+  "notes": "No generic source-native client is assumed here; collector-ingress is the primary raw artifact.",
+  "protocol": "jti_openconfig_telemetry",
+  "sensors": [
+    "/junos/system/linecard/cpu/memory",
+    "/junos/system/linecard/interface/",
+    "/junos/system/linecard/environment"
+  ],
+  "subscriptions": []
+}

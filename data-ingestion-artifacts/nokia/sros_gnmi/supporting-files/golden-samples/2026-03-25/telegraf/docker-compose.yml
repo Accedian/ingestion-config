@@ -1,0 +1,12 @@
+version: '3'
+services:
+  telegraf-nokia:
+    image: "docker.io/telegraf:latest"
+    container_name: "telegraf-nokia"
+    restart: "always"
+ #   ports:
+ #     - "57015:50051"    ## Needed in dial out only
+    volumes:
+      - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
+      #- ./ribbon.star:/etc/telegraf/ribbon.star:ro
+

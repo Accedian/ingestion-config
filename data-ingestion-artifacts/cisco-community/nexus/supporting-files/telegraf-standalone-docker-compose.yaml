@@ -1,0 +1,10 @@
+version: '3'
+services:
+  telegraf-nexus:
+    image: "docker.io/telegraf:latest"
+    container_name: "telegraf-nexus"
+    restart: "always"
+    ports:
+      - "57001:57000" 
+    volumes:
+      - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro

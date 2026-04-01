@@ -1,0 +1,15 @@
+[
+  {
+    "source": "192.168.20.135:6030",
+    "timestamp": 1774431481344885769,
+    "time": "2026-03-25T10:38:01.344885769+01:00",
+    "updates": [
+      {
+        "Path": "network-instances/network-instance[name=mgmt]/state",
+        "values": {
+          "network-instances/network-instance/state": {}
+        }
+      }
+    ]
+  }
+]
