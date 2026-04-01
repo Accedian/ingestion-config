@@ -1,0 +1,456 @@
+{
+  "data": {
+    "attributes": {
+      "_id": "openmetricsCiscoUE-edr-access-endpoint",
+      "_rev": "14-8a937fda3e305a7b5a23ba19e270f902",
+      "createdTimestamp": 1759237174128,
+      "customMetrics": null,
+      "dictionaryName": "openmetrics-CiscoUE-edr-access-endpoint",
+      "dictionaryType": "custom",
+      "dimensions": [
+        {
+          "analyticsName": "monitoredObjectId",
+          "dataType": "string",
+          "rawName": "monitoredObjectId"
+        },
+        {
+          "analyticsName": "monitoredObjectName",
+          "dataType": "string",
+          "rawName": "monitoredObjectName"
+        },
+        {
+          "analyticsName": "timestamp",
+          "dataType": "long",
+          "rawName": "edr_access_endpoint_record_timestamp"
+        },
+        {
+          "analyticsName": "direction",
+          "dataType": "integer",
+          "rawName": "direction"
+        },
+        {
+          "analyticsName": "accessAggregationAlias",
+          "dataType": "string",
+          "rawName": "edr_access_endpoint_AccessAggregationAlias"
+        },
+        {
+          "analyticsName": "accessEndpoint",
+          "dataType": "string",
+          "rawName": "edr_access_endpoint_AccessEndpoint"
+        },
+        {
+          "analyticsName": "siteId",
+          "dataType": "string",
+          "rawName": "edr_access_endpoint_SiteId"
+        },
+        {
+          "analyticsName": "agentId",
+          "dataType": "string",
+          "rawName": "agentId"
+        },
+        {
+          "analyticsName": "agentName",
+          "dataType": "string",
+          "rawName": "agentName"
+        },
+        {
+          "analyticsName": "agentType",
+          "dataType": "string",
+          "rawName": "agentType"
+        },
+        {
+          "analyticsName": "host",
+          "dataType": "string",
+          "rawName": "host"
+        },
+        {
+          "analyticsName": "objectType",
+          "dataType": "string",
+          "rawName": "objectType"
+        },
+        {
+          "analyticsName": "sessionId",
+          "dataType": "string",
+          "rawName": "sessionId"
+        },
+        {
+          "analyticsName": "sessionName",
+          "dataType": "string",
+          "rawName": "sessionName"
+        },
+        {
+          "analyticsName": "accessAggregationId",
+          "dataType": "string",
+          "rawName": "edr_access_endpoint_AccessAggregationId"
+        },
+        {
+          "analyticsName": "accessBandwidth",
+          "dataType": "string",
+          "rawName": "edr_access_endpoint_AccessBandwidth"
+        },
+        {
+          "analyticsName": "accessType",
+          "dataType": "string",
+          "rawName": "edr_access_endpoint_AccessType"
+        },
+        {
+          "analyticsName": "accessEndpointAlias",
+          "dataType": "string",
+          "rawName": "edr_access_endpoint_AccessEndpointAlias"
+        },
+        {
+          "analyticsName": "azimuth",
+          "dataType": "string",
+          "rawName": "edr_access_endpoint_Azimuth"
+        },
+        {
+          "analyticsName": "country",
+          "dataType": "string",
+          "rawName": "edr_access_endpoint_Country"
+        },
+        {
+          "analyticsName": "isCoverageLayer",
+          "dataType": "string",
+          "rawName": "edr_access_endpoint_IsCoverageLayer"
+        },
+        {
+          "analyticsName": "location",
+          "dataType": "string",
+          "rawName": "edr_access_endpoint_Location"
+        },
+        {
+          "analyticsName": "region",
+          "dataType": "string",
+          "rawName": "edr_access_endpoint_Region"
+        },
+        {
+          "analyticsName": "sectorId",
+          "dataType": "string",
+          "rawName": "edr_access_endpoint_SectorId"
+        },
+        {
+          "analyticsName": "trafficProcessor",
+          "dataType": "string",
+          "rawName": "edr_access_endpoint_TrafficProcessor"
+        }
+      ],
+      "lastModifiedTimestamp": 1760697797476,
+      "metricType": "timeseries",
+      "metrics": [
+        {
+          "analyticsName": "subscriberCountAvg",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_AverageSimultaneousActiveSubscriberCount"
+        },
+        {
+          "analyticsName": "burstRate",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_BurstRate",
+          "unit": "Mbps"
+        },
+        {
+          "analyticsName": "burstRateSampleCount",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_BurstRateSampleCount",
+          "unit": "samples"
+        },
+        {
+          "analyticsName": "burstRateStdDev",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_BurstRateStdDev",
+          "unit": "Mbps"
+        },
+        {
+          "analyticsName": "burstRateStdDevSampleCount",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_BurstRateStdDevSampleCount"
+        },
+        {
+          "analyticsName": "burstWidth",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_BurstWidth",
+          "unit": "ms"
+        },
+        {
+          "analyticsName": "burstWidthSampleCount",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_BurstWidthSampleCount",
+          "unit": "samples"
+        },
+        {
+          "analyticsName": "congestionRatio",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_CongestionRatio",
+          "unit": "pct"
+        },
+        {
+          "analyticsName": "consumptionRate",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_ConsumptionRate",
+          "unit": "Mbps"
+        },
+        {
+          "analyticsName": "consumptionRateSampleCount",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_ConsumptionRateSampleCount"
+        },
+        {
+          "analyticsName": "cxSampleCount",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_CxSampleCount"
+        },
+        {
+          "analyticsName": "cxScore",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_CxScore",
+          "unit": "rVal"
+        },
+        {
+          "analyticsName": "downlinkVolume",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_DownlinkVolume",
+          "unit": "bytes"
+        },
+        {
+          "analyticsName": "flowCountExpired",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_FlowCount"
+        },
+        {
+          "analyticsName": "interBurstGap",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_InterBurstGap",
+          "unit": "ms"
+        },
+        {
+          "analyticsName": "interBurstGapSampleCount",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_InterBurstGapSampleCount",
+          "unit": "samples"
+        },
+        {
+          "analyticsName": "interBurstGapStdDev",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_InterBurstGapStdDev",
+          "unit": "ms"
+        },
+        {
+          "analyticsName": "interBurstGapStdDevSampleCount",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_InterBurstGapStdDevSampleCount"
+        },
+        {
+          "analyticsName": "intervalDuration",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_IntervalDuration"
+        },
+        {
+          "analyticsName": "activeSubscriberCountMedian",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_MedianSimultaneousActiveSubscriberCount"
+        },
+        {
+          "analyticsName": "userBandwidthEstimate",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_CiscoUESpeedTest"
+        },
+        {
+          "analyticsName": "userBandwidthEstimateSampleCount",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_CiscoUESpeedTestSampleCount"
+        },
+        {
+          "analyticsName": "retransmissionPercent",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_RetransmissionPercent",
+          "unit": "pct"
+        },
+        {
+          "analyticsName": "retransmissionPercentSampleCount",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_RetransmissionPercentSampleCount"
+        },
+        {
+          "analyticsName": "subscriberBecameActiveCount",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_SubscriberBecomeActiveCount"
+        },
+        {
+          "analyticsName": "sufficientThroughputPercent",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_SufficientThroughputPercent",
+          "unit": "pct"
+        },
+        {
+          "analyticsName": "sufficientThroughputPercentSampleCount",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_SufficientThroughputPercentSampleCount"
+        },
+        {
+          "analyticsName": "tcpRtt",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_TcpRtt",
+          "unit": "ms"
+        },
+        {
+          "analyticsName": "tcpRttSampleCount",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_TcpRttSampleCount",
+          "unit": "samples"
+        },
+        {
+          "analyticsName": "tcpRttStdDev",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_TcpRttStdDev",
+          "unit": "ms"
+        },
+        {
+          "analyticsName": "tcpRttStdDevSampleCount",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_TcpRttStdDevSampleCount"
+        },
+        {
+          "analyticsName": "timeTo500KBytes",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_TimeTo500KBytes",
+          "unit": "ms"
+        },
+        {
+          "analyticsName": "timeTo500KBytesSampleCount",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_TimeTo500KBytesSampleCount"
+        },
+        {
+          "analyticsName": "uplinkVolume",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_UplinkVolume",
+          "unit": "bytes"
+        },
+        {
+          "analyticsName": "CiscoUESpeedTest",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_CiscoUESpeedTest"
+        },
+        {
+          "analyticsName": "CiscoUESpeedTestSampleCount",
+          "dataType": "double",
+          "directions": [
+            "2"
+          ],
+          "rawName": "edr_access_endpoint_CiscoUESpeedTestSampleCount"
+        }
+      ],
+      "objectType": "CiscoUE-edr-access-endpoint",
+      "tenantId": "2ffcc970-a68b-4f4c-954b-416ac093b091",
+      "vendor": "openmetrics"
+    },
+    "id": "openmetricsCiscoUE-edr-access-endpoint",
+    "type": "ingestionDictionaries"
+  },
+  "violations": []
+}
