@@ -74,6 +74,6 @@ When uploading dictionaries, you may encounter a `duplicateObjectType` error if 
 
 ## Prerequisites
 
-- Go runtime (minimum version: **1.16**, tested with go1.25.7)
+- Docker (used to run Go tools via the `golang:1.26.0-alpine3.23` image — no local Go installation required)
 - Access to the target PCA instance
 - Valid authentication token (see [API Authentication Guide](https://api.accedian.io/session.html#section/Quick-setup/Authenticate-to-obtain-an-Authorized-Token))

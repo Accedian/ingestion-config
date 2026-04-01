@@ -22,6 +22,7 @@ import (
 	"bytes"
 	"crypto/tls"
 	"encoding/json"
+	"flag"
 	"fmt"
 	"io"
 	"net/http"
@@ -83,6 +84,19 @@ type UploadResult struct {
 }
 
 func main() {
+	flag.Usage = func() {
+		fmt.Fprintf(os.Stderr, `Dictionary Uploader - Uploads ingestion dictionaries to PCA
+
+Environment Variables:
+  BASE_URL              Base URL of the PCA API (default: https://pca.kajar.npav.accedian.net)
+  AUTHORIZATION_HEADER  Authorization header value (default: Bearer XXXXXXX)
+  DICTIONARIES_PATH     Path to dictionaries directory (default: ./generated_dictionaries)
+  INSECURE_SKIP_VERIFY  Skip TLS certificate verification (default: false)
+  DEBUG                 Enable debug output (default: false)
+`)
+	}
+	flag.Parse()
+
 	cfg := loadConfig()
 
 	fmt.Println("=" + strings.Repeat("=", 70))
