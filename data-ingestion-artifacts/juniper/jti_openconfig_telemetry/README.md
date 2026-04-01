@@ -1,6 +1,7 @@
 # Juniper
 
 - source protocol: JTI / OpenConfig telemetry
+- artifact status: lab reference
 - current scope: Telegraf collector config plus preserved golden samples
 
 Important note:
