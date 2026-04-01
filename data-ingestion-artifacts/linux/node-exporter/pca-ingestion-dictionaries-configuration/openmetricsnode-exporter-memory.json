@@ -1,0 +1,525 @@
+{
+  "data": {
+    "attributes": {
+      "_id": "openmetricsnode-exporter-memory",
+      "_rev": "1-64b037ac1a48fb4be331b1544bc7f05c",
+      "createdTimestamp": 1754669895420,
+      "customMetrics": null,
+      "dictionaryName": "openmetrics-node-exporter-memory",
+      "dictionaryType": "global",
+      "dimensions": [
+        {
+          "analyticsName": "monitoredObjectId",
+          "dataType": "string",
+          "rawName": "monitoredObjectId"
+        },
+        {
+          "analyticsName": "monitoredObjectName",
+          "dataType": "string",
+          "rawName": "monitoredObjectName"
+        },
+        {
+          "analyticsName": "timestamp",
+          "dataType": "long",
+          "rawName": "timestamp"
+        },
+        {
+          "analyticsName": "direction",
+          "dataType": "integer",
+          "rawName": "direction"
+        },
+        {
+          "analyticsName": "agentId",
+          "dataType": "string",
+          "rawName": "agentId"
+        },
+        {
+          "analyticsName": "agentName",
+          "dataType": "string",
+          "rawName": "agentName"
+        },
+        {
+          "analyticsName": "agentType",
+          "dataType": "string",
+          "rawName": "agentType"
+        },
+        {
+          "analyticsName": "host",
+          "dataType": "string",
+          "rawName": "host"
+        },
+        {
+          "analyticsName": "objectType",
+          "dataType": "string",
+          "rawName": "objectType"
+        },
+        {
+          "analyticsName": "sessionId",
+          "dataType": "string",
+          "rawName": "sessionId"
+        },
+        {
+          "analyticsName": "sessionName",
+          "dataType": "string",
+          "rawName": "sessionName"
+        },
+        {
+          "analyticsName": "url",
+          "dataType": "string",
+          "rawName": "url"
+        }
+      ],
+      "lastModifiedTimestamp": 1754669895420,
+      "metricType": "timeseries",
+      "metrics": [
+        {
+          "analyticsName": "activeAnonBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Active_anon_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "activeBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Active_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "activeFileBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Active_file_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "anonHugePagesBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "AnonHugePages_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "anonPagesBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "AnonPages_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "bounceBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Bounce_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "buffersBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Buffers_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "cachedBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Cached_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "cmaFreeBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "CmaFree_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "cmaTotalBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "CmaTotal_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "commitLimitBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "CommitLimit_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "committedASBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Committed_AS_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "directMap1GBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "DirectMap1G_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "directMap2MBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "DirectMap2M_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "directMap4kBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "DirectMap4k_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dirtyBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Dirty_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "hardwareCorruptedBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "HardwareCorrupted_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "hugePagesFree",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "HugePages_Free_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "hugePagesRsvd",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "HugePages_Rsvd_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "hugePagesSurp",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "HugePages_Surp_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "hugePagesTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "HugePages_Total_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "hugepagesizeBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Hugepagesize_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "inactiveAnonBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Inactive_anon_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "inactiveBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Inactive_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "inactiveFileBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Inactive_file_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "kernelStackBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "KernelStack_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "mappedBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Mapped_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "memAvailableBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MemAvailable_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "memFreeBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MemFree_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "memTotalBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "MemTotal_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "mlockedBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Mlocked_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "nFSUnstableBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "NFS_Unstable_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "pageTablesBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "PageTables_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "percpuBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Percpu_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "sReclaimableBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SReclaimable_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "sUnreclaimBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SUnreclaim_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "shmemHugePagesBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "ShmemHugePages_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "shmemPmdMappedBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "ShmemPmdMapped_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "shmemBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Shmem_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "slabBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Slab_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "swapCachedBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SwapCached_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "swapFreeBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SwapFree_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "swapTotalBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "SwapTotal_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "unevictableBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Unevictable_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "vmallocChunkBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "VmallocChunk_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "vmallocTotalBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "VmallocTotal_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "vmallocUsedBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "VmallocUsed_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "writebackTmpBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "WritebackTmp_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "writebackBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Writeback_bytes_gauge",
+          "unit": "value"
+        }
+      ],
+      "objectType": "node-exporter-memory",
+      "tenantId": "662576c1-997c-4c47-a321-b8ce68b8f769",
+      "vendor": "openmetrics"
+    },
+    "id": "openmetricsnode-exporter-memory",
+    "type": "ingestionDictionaries"
+  },
+  "violations": []
+}
