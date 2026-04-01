@@ -1,0 +1,18 @@
+{
+  "address": "192.168.20.105:9339",
+  "captured_at_utc": "2026-03-25T09:40:43Z",
+  "encoding": "json_ietf",
+  "listener_port": null,
+  "name": "ciena",
+  "notes": null,
+  "protocol": "gnmi",
+  "sensors": [],
+  "subscriptions": [
+    {
+      "name": "ciena_interface_counters",
+      "origin": null,
+      "path": "/oc-if:interfaces/oc-if:interface/oc-if:state/oc-if:counters",
+      "sample_interval": "30s"
+    }
+  ]
+}

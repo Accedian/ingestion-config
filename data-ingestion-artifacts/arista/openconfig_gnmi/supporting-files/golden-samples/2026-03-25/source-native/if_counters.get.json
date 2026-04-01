@@ -1,0 +1,1376 @@
+[
+  {
+    "source": "192.168.20.135:6030",
+    "timestamp": 1774431315313386255,
+    "time": "2026-03-25T10:35:15.313386255+01:00",
+    "updates": [
+      {
+        "Path": "interfaces/interface[name=Ethernet1]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet2]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet3]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet4]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet5]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet6]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483098030",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet7]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet8]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet9]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483095884",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet10]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet11]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet12]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet13]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet14]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet15]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483098030",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet16]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet17]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet18]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483098030",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet19]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet20]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet21]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet22]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet23]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet24]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet25]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet26]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet27]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483098030",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet28]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet29]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet30]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet31]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483098030",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet32]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097553",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet33]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet34]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet35]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483098030",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet36]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet37]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet38]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet39]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet40]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet41]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet42]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483098030",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet43]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet44]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet45]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet46]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet47]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet48]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet49/1]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483098030",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet50/1]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet51/1]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet52/1]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483098030",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet53/1]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet54/1]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "1",
+            "openconfig-interfaces:in-broadcast-pkts": "0",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "0",
+            "openconfig-interfaces:in-octets": "0",
+            "openconfig-interfaces:in-pkts": "0",
+            "openconfig-interfaces:in-unicast-pkts": "0",
+            "openconfig-interfaces:out-broadcast-pkts": "0",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "0",
+            "openconfig-interfaces:out-octets": "0",
+            "openconfig-interfaces:out-pkts": "0",
+            "openconfig-interfaces:out-unicast-pkts": "0"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet55/1]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483097791",
+            "openconfig-interfaces:carrier-transitions": "2",
+            "openconfig-interfaces:in-broadcast-pkts": "2",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "1596",
+            "openconfig-interfaces:in-octets": "1580850",
+            "openconfig-interfaces:in-pkts": "1635",
+            "openconfig-interfaces:in-unicast-pkts": "37",
+            "openconfig-interfaces:out-broadcast-pkts": "5",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "2839",
+            "openconfig-interfaces:out-octets": "824109",
+            "openconfig-interfaces:out-pkts": "2862",
+            "openconfig-interfaces:out-unicast-pkts": "18"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Ethernet56/1]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431313483096599",
+            "openconfig-interfaces:carrier-transitions": "2",
+            "openconfig-interfaces:in-broadcast-pkts": "7",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "10502",
+            "openconfig-interfaces:in-octets": "167230358",
+            "openconfig-interfaces:in-pkts": "132881",
+            "openconfig-interfaces:in-unicast-pkts": "122372",
+            "openconfig-interfaces:out-broadcast-pkts": "5",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "2525",
+            "openconfig-interfaces:out-octets": "3968994",
+            "openconfig-interfaces:out-pkts": "57571",
+            "openconfig-interfaces:out-unicast-pkts": "55041"
+          }
+        }
+      },
+      {
+        "Path": "interfaces/interface[name=Management1]/state/counters",
+        "values": {
+          "interfaces/interface/state/counters": {
+            "arista-intf-augments:last-update": "1774431315260949134",
+            "openconfig-interfaces:carrier-transitions": "4",
+            "openconfig-interfaces:in-broadcast-pkts": "63281",
+            "openconfig-interfaces:in-discards": "0",
+            "openconfig-interfaces:in-errors": "0",
+            "openconfig-interfaces:in-fcs-errors": "0",
+            "openconfig-interfaces:in-multicast-pkts": "14445",
+            "openconfig-interfaces:in-octets": "12471096",
+            "openconfig-interfaces:in-pkts": "233973",
+            "openconfig-interfaces:in-unicast-pkts": "156247",
+            "openconfig-interfaces:out-broadcast-pkts": "45",
+            "openconfig-interfaces:out-discards": "0",
+            "openconfig-interfaces:out-errors": "0",
+            "openconfig-interfaces:out-multicast-pkts": "292",
+            "openconfig-interfaces:out-octets": "147691946",
+            "openconfig-interfaces:out-pkts": "149295",
+            "openconfig-interfaces:out-unicast-pkts": "148958"
+          }
+        }
+      }
+    ]
+  }
+]

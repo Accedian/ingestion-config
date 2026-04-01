@@ -1,0 +1,15 @@
+[
+  {
+    "source": "192.168.20.33:57400",
+    "timestamp": 1774431998352416614,
+    "time": "2026-03-25T10:46:38.352416614+01:00",
+    "updates": [
+      {
+        "Path": "state/system/cpu",
+        "values": {
+          "state/system/cpu": null
+        }
+      }
+    ]
+  }
+]

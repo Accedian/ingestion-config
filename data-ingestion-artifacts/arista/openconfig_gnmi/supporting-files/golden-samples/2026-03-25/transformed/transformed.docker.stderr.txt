@@ -1,0 +1,34 @@
+2026-03-25T09:39:48Z I! Loading config: /capture/transformed.telegraf.conf
+2026-03-25T09:39:48Z I! Starting Telegraf 1.35.3 brought to you by InfluxData the makers of InfluxDB
+2026-03-25T09:39:48Z I! Available plugins: 238 inputs, 9 aggregators, 34 processors, 26 parsers, 65 outputs, 6 secret-stores
+2026-03-25T09:39:48Z I! Loaded inputs: gnmi
+2026-03-25T09:39:48Z I! Loaded aggregators: merge
+2026-03-25T09:39:48Z I! Loaded processors: starlark
+2026-03-25T09:39:48Z I! Loaded secretstores:
+2026-03-25T09:39:48Z I! Loaded outputs: file
+2026-03-25T09:39:48Z I! Tags enabled: host=c3ce55e1e3ed
+2026-03-25T09:39:48Z I! [agent] Config: Interval:1m0s, Quiet:false, Hostname:"c3ce55e1e3ed", Flush Interval:50s
+2026-03-25T09:39:48Z W! [agent] The default value of 'skip_processors_after_aggregators' will change to 'true' with Telegraf v1.40.0! If you need the current default behavior, please explicitly set the option to 'false'!
+2026-03-25T09:39:48Z D! [agent] Initializing plugins
+2026-03-25T09:39:48Z D! [inputs.gnmi] Internal alias mapping: map[openconfig:/interfaces/interface/state/counters:if_counters openconfig:/system/state:system_health openconfig:/components/component:components openconfig:/network-instances/network-instance/state:network_instances]
+2026-03-25T09:39:48Z D! [agent] Connecting outputs
+2026-03-25T09:39:48Z D! [agent] Attempting connection to [outputs.file]
+2026-03-25T09:39:48Z D! [agent] Successfully connected to outputs.file
+2026-03-25T09:39:48Z D! [agent] Starting service inputs
+2026-03-25T09:39:48Z D! [aggregators.merge] Updated aggregation range [2026-03-25 09:39:00 +0000 UTC, 2026-03-25 09:40:00 +0000 UTC]
+2026-03-25T09:39:49Z D! [inputs.gnmi] Connection to gNMI device 192.168.20.135:6030 established
+2026-03-25T09:40:00Z D! [aggregators.merge] Updated aggregation range [2026-03-25 09:40:00 +0000 UTC, 2026-03-25 09:41:00 +0000 UTC]
+2026-03-25T09:40:39Z D! [outputs.file] Wrote batch of 194 metrics in 15.82075ms
+2026-03-25T09:40:39Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2026-03-25T09:40:43Z D! [agent] Stopping service inputs
+2026-03-25T09:40:43Z D! [inputs.gnmi] Connection to gNMI device 192.168.20.135:6030 closed
+2026-03-25T09:40:43Z D! [agent] Input channel closed
+2026-03-25T09:40:43Z D! [agent] Processor channel closed
+2026-03-25T09:40:43Z D! [aggregators.merge] Updated aggregation range [2026-03-25 09:40:00 +0000 UTC, 2026-03-25 09:41:00 +0000 UTC]
+2026-03-25T09:40:43Z D! [agent] Aggregator channel closed
+2026-03-25T09:40:43Z D! [agent] Processor channel closed
+2026-03-25T09:40:43Z I! [agent] Hang on, flushing any cached metrics before shutdown
+2026-03-25T09:40:43Z D! [outputs.file] Wrote batch of 277 metrics in 15.071833ms
+2026-03-25T09:40:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2026-03-25T09:40:43Z I! [agent] Stopping running outputs
+2026-03-25T09:40:43Z D! [agent] Stopped Successfully

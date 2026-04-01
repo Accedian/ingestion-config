@@ -1,0 +1,22 @@
+[
+  {
+    "source": "192.168.20.135:6030",
+    "timestamp": 1774431370576939460,
+    "time": "2026-03-25T10:36:10.57693946+01:00",
+    "updates": [
+      {
+        "Path": "system/state",
+        "values": {
+          "system/state": {
+            "openconfig-system:boot-time": "1774422598326710939",
+            "openconfig-system:current-datetime": "2026-03-25T10:36:01+01:00",
+            "openconfig-system:domain-name": "ns.eantc.de",
+            "openconfig-system:hostname": "ARISTA-135",
+            "openconfig-system:last-configuration-timestamp": "1774429924744961261",
+            "openconfig-system:software-version": "4.36.0F-45915645.eostrunk (engineering build)"
+          }
+        }
+      }
+    ]
+  }
+]

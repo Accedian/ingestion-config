@@ -1,0 +1,12 @@
+version: '3'
+services:
+  telegraf-juniper:
+    image: "docker.io/telegraf:latest"
+    container_name: "telegraf-juniper"
+    restart: "always"
+    ports:
+      - "57010:50051"    ## consider changing me too
+    volumes:
+      - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
+      #- ./ribbon.star:/etc/telegraf/ribbon.star:ro
+

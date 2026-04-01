@@ -1,0 +1,53 @@
+{
+  "captured_at_utc": "2026-03-25T09:45:42Z",
+  "name": "juniper",
+  "results": [
+    {
+      "command": [
+        "docker",
+        "run",
+        "--rm",
+        "--name",
+        "eantc-juniper-collector-ingress-1774431829",
+        "-v",
+        "/Users/etmartel/tmp/eantc/collector/opt/juniper_telegraf:/etc/telegraf:ro",
+        "-v",
+        "/Users/etmartel/ai-workspace/90-system/tmp/eantc-golden-captures-20260325-093511/juniper/collector-ingress:/capture",
+        "telegraf:latest",
+        "--config",
+        "/capture/collector-ingress.telegraf.conf"
+      ],
+      "duration_seconds": 56.32,
+      "exit_code": 0,
+      "generated_config": "/Users/etmartel/ai-workspace/90-system/tmp/eantc-golden-captures-20260325-093511/juniper/collector-ingress/collector-ingress.telegraf.conf",
+      "kind": "collector-ingress",
+      "stderr_path": "/Users/etmartel/ai-workspace/90-system/tmp/eantc-golden-captures-20260325-093511/juniper/collector-ingress/collector-ingress.docker.stderr.txt",
+      "stdout_path": "/Users/etmartel/ai-workspace/90-system/tmp/eantc-golden-captures-20260325-093511/juniper/collector-ingress/collector-ingress.docker.stdout.txt",
+      "timed_out": true
+    },
+    {
+      "command": [
+        "docker",
+        "run",
+        "--rm",
+        "--name",
+        "eantc-juniper-transformed-1774431885",
+        "-v",
+        "/Users/etmartel/tmp/eantc/collector/opt/juniper_telegraf:/etc/telegraf:ro",
+        "-v",
+        "/Users/etmartel/ai-workspace/90-system/tmp/eantc-golden-captures-20260325-093511/juniper/transformed:/capture",
+        "telegraf:latest",
+        "--config",
+        "/capture/transformed.telegraf.conf"
+      ],
+      "duration_seconds": 56.31,
+      "exit_code": 0,
+      "generated_config": "/Users/etmartel/ai-workspace/90-system/tmp/eantc-golden-captures-20260325-093511/juniper/transformed/transformed.telegraf.conf",
+      "kind": "transformed",
+      "stderr_path": "/Users/etmartel/ai-workspace/90-system/tmp/eantc-golden-captures-20260325-093511/juniper/transformed/transformed.docker.stderr.txt",
+      "stdout_path": "/Users/etmartel/ai-workspace/90-system/tmp/eantc-golden-captures-20260325-093511/juniper/transformed/transformed.docker.stdout.txt",
+      "timed_out": true
+    }
+  ],
+  "status": "ok"
+}
