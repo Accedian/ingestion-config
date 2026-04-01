@@ -1,6 +1,7 @@
 # Nexus EANTC Interop
 
 - source protocol: Cisco MDT
+- artifact status: lab reference
 - current scope: partial Telegraf collector scaffolding and local device-side notes
 
 Important note:

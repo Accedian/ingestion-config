@@ -2,9 +2,11 @@
 
 ## Intro
 
+- artifact status: lab reference
+
 This pipeline configuration is a little odd because it currently relies on rebuilding the Telemetry Collector. This is demo/early POC/alpha quality. To be fixed in a next version.
 
-This was built as a proof of concept for the Starlink engagement and feeds data from the Starlink Telemetry API https://starlink.readme.io/docs/telemetry-api (PW: `flatmcdishyface`) into this PCA tenant: http://stardust.analytics.accedian.io
+This was built as a proof of concept for the Starlink engagement and feeds data from the Starlink Telemetry API https://starlink.readme.io/docs/telemetry-api into this PCA tenant: http://stardust.analytics.accedian.io
 
 ## Tradeoffs
 

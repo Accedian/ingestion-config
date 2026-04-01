@@ -1,6 +1,7 @@
 # Ribbon
 
 - source protocol: gNMI
+- artifact status: lab reference
 - current scope: partial Telegraf collector scaffolding and local sample artifacts only
 
 Important note:
