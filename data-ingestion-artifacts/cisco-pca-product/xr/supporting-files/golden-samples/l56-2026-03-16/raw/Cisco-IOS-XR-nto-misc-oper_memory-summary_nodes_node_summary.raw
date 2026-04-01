@@ -1,0 +1,9 @@
+[node0_RP0_CPU0:~]$mdt_exec -c30000 -s 'Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary'
+Enter any key to exit...
+ Sub_id 998500000001, flag 0, len 0
+ Sub_id 998500000001, flag 4, len 630
+--------
+{"node_id_str":"l56","subscription_id_str":"app_39301_998500000001","encoding_path":"Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary","collection_id":"75496","collection_start_time":"1773681303813","msg_timestamp":"1773681303821","data_json":[{"timestamp":"1773681303819","keys":[{"node-name":"0/RP0/CPU0"}],"content":{"page-size":4096,"ram-memory":"16463163392","free-physical-memory":"11319545856","system-ram-memory":"16463163392","free-application-memory":"11319545856","image-memory":"4194304","boot-ram-size":"0","reserved-memory":"0","io-memory":"0","flash-system":"0"}}],"collection_end_time":"1773681303821"}
+--------
+ Sub_id 998500000001, flag 8, len 0
+

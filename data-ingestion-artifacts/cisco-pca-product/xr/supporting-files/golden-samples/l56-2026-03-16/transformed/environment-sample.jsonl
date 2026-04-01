@@ -1,0 +1,4 @@
+{"fields":{"total_cpu_five_minute":9},"name":"cpu_util","tags":{"direction":"-1","objectType":"cisco-telemetry-xr-environment","sessionId":"l56_0/RP0/CPU0","sessionName":"l56_0/RP0/CPU0"},"timestamp":1773675312}
+{"fields":{"free_application_memory":11316211712,"ram_memory":16463163392},"name":"node_summary","tags":{"direction":"-1","objectType":"cisco-telemetry-xr-environment","sessionId":"l56_0/RP0/CPU0","sessionName":"l56_0/RP0/CPU0"},"timestamp":1773675314}
+{"fields":{"total_cpu_five_minute":9},"name":"cpu_util","tags":{"direction":"-1","objectType":"cisco-telemetry-xr-environment","sessionId":"l56_0/RP0/CPU0","sessionName":"l56_0/RP0/CPU0"},"timestamp":1773675372}
+{"fields":{"free_application_memory":11316240384,"ram_memory":16463163392},"name":"node_summary","tags":{"direction":"-1","objectType":"cisco-telemetry-xr-environment","sessionId":"l56_0/RP0/CPU0","sessionName":"l56_0/RP0/CPU0"},"timestamp":1773675374}
