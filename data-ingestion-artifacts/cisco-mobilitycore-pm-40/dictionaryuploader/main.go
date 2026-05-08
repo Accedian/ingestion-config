@@ -64,6 +64,7 @@ type Dimension struct {
 	AnalyticsName string `json:"analyticsName"`
 	DataType      string `json:"dataType"`
 	RawName       string `json:"rawName"`
+	SqlExpr       string `json:"sqlExpr,omitempty"`
 }
 
 // Metric represents a metric in the dictionary
@@ -237,6 +238,17 @@ func processOneDictionary(client *http.Client, cfg Config, localDict Dictionary)
 		result.Action = "unchanged"
 		result.Message = "no changes detected"
 		return result
+	}
+
+	if cfg.Debug {
+		fmt.Printf("DEBUG: Dictionary %s differs\n", localDict.ID)
+		for _, ld := range localDict.Dimensions {
+			for _, rd := range remoteDict.Dimensions {
+				if ld.AnalyticsName == rd.AnalyticsName && ld != rd {
+					fmt.Printf("  Dimension %s differs:\n    local:  %+v\n    remote: %+v\n", ld.AnalyticsName, ld, rd)
+				}
+			}
+		}
 	}
 
 	// Dictionary differs - update it with the _rev from remote
@@ -514,28 +526,33 @@ func updateDictionary(client *http.Client, cfg Config, dict Dictionary) error {
 // dictionariesEqual compares two dictionaries, ignoring CouchDB metadata fields
 func dictionariesEqual(local, remote Dictionary) bool {
 	if local.ID != remote.ID {
+		fmt.Printf("  DEBUG: ID differs: local=%q remote=%q\n", local.ID, remote.ID)
 		return false
 	}
 	if local.DictionaryName != remote.DictionaryName {
+		fmt.Printf("  DEBUG: DictionaryName differs: local=%q remote=%q\n", local.DictionaryName, remote.DictionaryName)
 		return false
 	}
 	if local.DictionaryType != remote.DictionaryType {
+		fmt.Printf("  DEBUG: DictionaryType differs: local=%q remote=%q\n", local.DictionaryType, remote.DictionaryType)
 		return false
 	}
 	if local.MetricType != remote.MetricType {
+		fmt.Printf("  DEBUG: MetricType differs: local=%q remote=%q\n", local.MetricType, remote.MetricType)
 		return false
 	}
 	if local.ObjectType != remote.ObjectType {
+		fmt.Printf("  DEBUG: ObjectType differs: local=%q remote=%q\n", local.ObjectType, remote.ObjectType)
 		return false
 	}
 	if local.Vendor != remote.Vendor {
+		fmt.Printf("  DEBUG: Vendor differs: local=%q remote=%q\n", local.Vendor, remote.Vendor)
 		return false
 	}
-	if local.Type != remote.Type {
-		return false
-	}
+	// Note: Type is JSON:API metadata, not dictionary content - skip comparison
 
 	if !dimensionsEqual(local.Dimensions, remote.Dimensions) {
+		fmt.Printf("  DEBUG: Dimensions differ\n")
 		return false
 	}
 
@@ -548,6 +565,7 @@ func dictionariesEqual(local, remote Dictionary) bool {
 
 func dimensionsEqual(local, remote []Dimension) bool {
 	if len(local) != len(remote) {
+		fmt.Printf("    DEBUG: dimension count differs: local=%d remote=%d\n", len(local), len(remote))
 		return false
 	}
 
@@ -559,9 +577,11 @@ func dimensionsEqual(local, remote []Dimension) bool {
 	for _, rd := range remote {
 		ld, exists := localMap[rd.RawName]
 		if !exists {
+			fmt.Printf("    DEBUG: dimension %q not found in local\n", rd.RawName)
 			return false
 		}
 		if !reflect.DeepEqual(ld, rd) {
+			fmt.Printf("    DEBUG: dimension %q differs:\n      local:  %+v\n      remote: %+v\n", rd.RawName, ld, rd)
 			return false
 		}
 	}
