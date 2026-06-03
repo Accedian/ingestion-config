@@ -661,10 +661,10 @@
                 }
             ],
             "objectType": "cisco-telemetry-xr-ipv4-bgp",
-            "vendor": "openmetrics"
+            "vendor": "{{vendorName}}",
+            "tenantId": "{{tenantId}}"
         },
         "id": "openmetricscisco-telemetry-xr-ipv4-bgp",
         "type": "ingestionDictionaries"
-    },
-    "violations": []
+    }
 }

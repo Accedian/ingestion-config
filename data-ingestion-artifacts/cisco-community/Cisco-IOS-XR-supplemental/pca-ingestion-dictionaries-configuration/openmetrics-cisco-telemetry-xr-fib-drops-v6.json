@@ -300,9 +300,10 @@
                 }
             ],
             "objectType": "cisco-telemetry-xr-fib-drops-v6",
-            "objectTypeDisplayName": "cisco-telemetry-xr-fib-drops-v6"
+            "vendor": "{{vendorName}}",
+            "tenantId": "{{tenantId}}"
         },
         "id": "openmetricscisco-telemetry-xr-fib-drops-v6",
-        "type": "dictionary"
+        "type": "ingestionDictionaries"
     }
 }

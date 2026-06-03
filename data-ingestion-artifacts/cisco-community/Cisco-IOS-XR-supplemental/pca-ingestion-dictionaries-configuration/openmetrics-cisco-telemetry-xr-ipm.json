@@ -172,10 +172,10 @@
                 }
             ],
             "objectType": "cisco-telemetry-xr-ipm",
-            "vendor": "openmetrics"
+            "vendor": "{{vendorName}}",
+            "tenantId": "{{tenantId}}"
         },
         "id": "openmetricscisco-telemetry-xr-ipm",
         "type": "ingestionDictionaries"
-    },
-    "violations": []
+    }
 }

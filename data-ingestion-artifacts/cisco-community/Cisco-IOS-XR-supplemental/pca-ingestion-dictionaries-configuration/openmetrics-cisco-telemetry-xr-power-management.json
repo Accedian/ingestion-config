@@ -239,10 +239,10 @@
                 }
             ],
             "objectType": "cisco-telemetry-xr-power-management",
-            "vendor": "openmetrics"
+            "vendor": "{{vendorName}}",
+            "tenantId": "{{tenantId}}"
         },
         "id": "openmetricscisco-telemetry-xr-power-management",
         "type": "ingestionDictionaries"
-    },
-    "violations": []
+    }
 }

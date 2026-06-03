@@ -210,9 +210,10 @@
                 }
             ],
             "objectType": "cisco-telemetry-xr-fib-exceptions-mpls",
-            "objectTypeDisplayName": "cisco-telemetry-xr-fib-exceptions-mpls"
+            "vendor": "{{vendorName}}",
+            "tenantId": "{{tenantId}}"
         },
         "id": "openmetricscisco-telemetry-xr-fib-exceptions-mpls",
-        "type": "dictionary"
+        "type": "ingestionDictionaries"
     }
 }

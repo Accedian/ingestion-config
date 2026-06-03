@@ -56,6 +56,25 @@ Status values:
 | `supporting-files/` | `partial` | useful samples exist for several models, including dated `l57` golden samples for `ip_rib_ipv4` and `ip_rib_ipv6`, plus an `l56` bundle for the five FIB node object types |
 | `working-directory/` | `not started` | currently empty |
 
+### Dictionary Template Packaging
+
+The files under `pca-ingestion-dictionaries-configuration/` are source templates, not tenant-ready uploads.
+
+They now intentionally carry placeholders for tenant packaging:
+
+```json
+"vendor": "{{vendorName}}",
+"tenantId": "{{tenantId}}"
+```
+
+Before submitting to a tenant:
+
+1. Replace `{{vendorName}}` with the tenant-specific vendor value.
+2. Replace `{{tenantId}}` with the target tenant ID.
+3. Keep `data.type = "ingestionDictionaries"`.
+4. Do not add undocumented fields such as `objectTypeDisplayName`.
+5. If building a tenant-specific package, save that output separately from these source templates.
+
 ### Next recommended steps
 
 1. Review the newly added supplemental dictionaries against the live `ipm-demo` reference set and local transformed samples.
