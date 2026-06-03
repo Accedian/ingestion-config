@@ -25,6 +25,7 @@ The Telegraf alias targets the keyed `environment-sensor` list below that contai
 - `telemetry-collector-configuration/transformation-cisco-telemetry-xe-bgp-neighbor.conf`: standalone BGP shaping block for review or later merge.
 - `telemetry-collector-configuration/transformation-cisco-telemetry-xe-environment-sensor.conf`: standalone environment-sensor shaping block for review or later merge.
 - `sensor-collector-configuration/cisco-telemetry-xe-supplemental.yaml`: job list with the three out-of-the-box IOS XE objects plus the two supplemental extension objects.
+- `sensor-collector-configuration/cisco-telemetry-xe-bgp-neighbor-delta-operations.json`: Sensor Collector operations fragment to merge under `openMetricsConfig.operations` for BGP churn-counter deltas.
 - `pca-ingestion-dictionaries-configuration/`: PCA dictionary templates for the two extension object types.
 - `validated-artifacts/`: live-validated tenant dictionaries, deployed collector configuration, and golden samples captured during first lab validation.
 
@@ -60,6 +61,13 @@ Metrics focus on BGP message-count spikes, state/change context, and neighbor me
 - installed prefixes and prefix activity counters
 - negotiated keepalive timers
 - transport ports and MSS
+
+The Sensor Collector delta configuration converts only BGP churn counters to per-interval deltas:
+
+- sent and received opens, updates, notifications, keepalives, and route refreshes
+- sent and received implicit and explicit withdraw counters
+
+It intentionally leaves current-state gauges as raw values, including current prefixes, bestpaths, multipaths, queue depths, timers, ports, and MSS. It also leaves `totalPrefixes` out of the delta list unless a later design explicitly chooses to expose route-arrival churn.
 
 ### Environment Sensor
 
