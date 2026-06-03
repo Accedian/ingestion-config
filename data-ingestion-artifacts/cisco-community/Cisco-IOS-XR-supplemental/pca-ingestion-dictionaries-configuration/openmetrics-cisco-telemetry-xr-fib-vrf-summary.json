@@ -432,10 +432,10 @@
                 }
             ],
             "objectType": "cisco-telemetry-xr-fib-vrf-summary",
-            "vendor": "openmetrics"
+            "vendor": "{{vendorName}}",
+            "tenantId": "{{tenantId}}"
         },
         "id": "openmetricscisco-telemetry-xr-fib-vrf-summary",
         "type": "ingestionDictionaries"
-    },
-    "violations": []
+    }
 }

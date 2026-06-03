@@ -590,10 +590,10 @@
                 }
             ],
             "objectType": "cisco-telemetry-xr-ipv6-rib-summary",
-            "vendor": "openmetrics"
+            "vendor": "{{vendorName}}",
+            "tenantId": "{{tenantId}}"
         },
         "id": "openmetricscisco-telemetry-xr-ipv6-rib-summary",
         "type": "ingestionDictionaries"
-    },
-    "violations": []
+    }
 }

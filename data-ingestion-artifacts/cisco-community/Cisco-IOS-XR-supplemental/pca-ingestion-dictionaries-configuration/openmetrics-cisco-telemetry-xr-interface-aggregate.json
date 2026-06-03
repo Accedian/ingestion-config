@@ -159,10 +159,10 @@
                 }
             ],
             "objectType": "cisco-telemetry-xr-interface-aggregate",
-            "vendor": "openmetrics"
+            "vendor": "{{vendorName}}",
+            "tenantId": "{{tenantId}}"
         },
         "id": "openmetricscisco-telemetry-xr-interface-aggregate",
         "type": "ingestionDictionaries"
-    },
-    "violations": []
+    }
 }
