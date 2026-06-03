@@ -1,0 +1,444 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "cisco-cisco-telemetry-xe-environment-sensor",
+            "customMetrics": null,
+            "dictionaryName": "cisco-cisco-telemetry-xe-environment-sensor",
+            "dictionaryType": "global",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                },
+                {
+                    "analyticsName": "source",
+                    "dataType": "string",
+                    "rawName": "source"
+                }
+            ],
+            "metricType": "timeseries",
+            "metrics": [
+                {
+                    "analyticsName": "HotSwap_Power_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_HotSwap_Power_R0",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "HotSwap_Volts_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_HotSwap_Volts_R0",
+                    "unit": "volt"
+                },
+                {
+                    "analyticsName": "Temp_InltFrnt_1_0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_InltFrnt_1_0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_InltFrnt_2_0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_InltFrnt_2_0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_InltFrnt_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_InltFrnt_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_InltRear_1_0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_InltRear_1_0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_InltRear_2_0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_InltRear_2_0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_InltRear_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_InltRear_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_OtltFrnt_1_0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_OtltFrnt_1_0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_OtltFrnt_2_0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_OtltFrnt_2_0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_OtltFrnt_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_OtltFrnt_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_OtltRear_1_0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_OtltRear_1_0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_OtltRear_2_0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_OtltRear_2_0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_OtltRear_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_OtltRear_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_0_0_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_0_0_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_0_1_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_0_1_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_0_2_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_0_2_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_0_3_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_0_3_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_0_4_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_0_4_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_0_5_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_0_5_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_0_6_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_0_6_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_0_7_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_0_7_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_0_8_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_0_8_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_1_0_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_1_0_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_1_1_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_1_1_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_1_2_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_1_2_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_1_3_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_1_3_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_1_4_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_1_4_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_1_5_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_1_5_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_1_6_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_1_6_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_1_7_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_1_7_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_1_8_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_1_8_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_2_0_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_2_0_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_2_1_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_2_1_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_2_2_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_2_2_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_2_3_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_2_3_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_2_4_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_2_4_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_2_5_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_2_5_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_2_6_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_2_6_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_2_7_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_2_7_R0",
+                    "unit": "deg_c"
+                },
+                {
+                    "analyticsName": "Temp_UADP_2_8_R0",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_environment_sensor_Temp_UADP_2_8_R0",
+                    "unit": "deg_c"
+                }
+            ],
+            "objectType": "cisco-telemetry-xe-environment-sensor",
+            "vendor": "cisco"
+        },
+        "id": "cisco-cisco-telemetry-xe-environment-sensor",
+        "type": "ingestionDictionaries"
+    },
+    "violations": []
+}

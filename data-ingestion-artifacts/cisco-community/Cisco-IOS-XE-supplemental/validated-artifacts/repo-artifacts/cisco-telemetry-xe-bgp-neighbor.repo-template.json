@@ -1,0 +1,422 @@
+{
+    "data": {
+        "attributes": {
+            "_id": "cisco-cisco-telemetry-xe-bgp-neighbor",
+            "customMetrics": null,
+            "dictionaryName": "cisco-cisco-telemetry-xe-bgp-neighbor",
+            "dictionaryType": "global",
+            "dimensions": [
+                {
+                    "analyticsName": "monitoredObjectId",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectId"
+                },
+                {
+                    "analyticsName": "monitoredObjectName",
+                    "dataType": "string",
+                    "rawName": "monitoredObjectName"
+                },
+                {
+                    "analyticsName": "timestamp",
+                    "dataType": "long",
+                    "rawName": "timestamp"
+                },
+                {
+                    "analyticsName": "direction",
+                    "dataType": "integer",
+                    "rawName": "direction"
+                },
+                {
+                    "analyticsName": "agentId",
+                    "dataType": "string",
+                    "rawName": "agentId"
+                },
+                {
+                    "analyticsName": "agentName",
+                    "dataType": "string",
+                    "rawName": "agentName"
+                },
+                {
+                    "analyticsName": "agentType",
+                    "dataType": "string",
+                    "rawName": "agentType"
+                },
+                {
+                    "analyticsName": "objectType",
+                    "dataType": "string",
+                    "rawName": "objectType"
+                },
+                {
+                    "analyticsName": "sessionId",
+                    "dataType": "string",
+                    "rawName": "sessionId"
+                },
+                {
+                    "analyticsName": "sessionName",
+                    "dataType": "string",
+                    "rawName": "sessionName"
+                },
+                {
+                    "analyticsName": "bgpAfiSafi",
+                    "dataType": "string",
+                    "rawName": "bgpAfiSafi"
+                },
+                {
+                    "analyticsName": "bgpVrfName",
+                    "dataType": "string",
+                    "rawName": "bgpVrfName"
+                },
+                {
+                    "analyticsName": "bgpNeighborId",
+                    "dataType": "string",
+                    "rawName": "bgpNeighborId"
+                },
+                {
+                    "analyticsName": "bgpNeighborAs",
+                    "dataType": "string",
+                    "rawName": "bgpNeighborAs"
+                },
+                {
+                    "analyticsName": "bgpLink",
+                    "dataType": "string",
+                    "rawName": "bgpLink"
+                },
+                {
+                    "analyticsName": "bgpDescription",
+                    "dataType": "string",
+                    "rawName": "bgpDescription"
+                },
+                {
+                    "analyticsName": "bgpSessionState",
+                    "dataType": "string",
+                    "rawName": "bgpSessionState"
+                },
+                {
+                    "analyticsName": "bgpConnectionState",
+                    "dataType": "string",
+                    "rawName": "bgpConnectionState"
+                },
+                {
+                    "analyticsName": "bgpResetReason",
+                    "dataType": "string",
+                    "rawName": "bgpResetReason"
+                },
+                {
+                    "analyticsName": "bgpLocalHost",
+                    "dataType": "string",
+                    "rawName": "bgpLocalHost"
+                },
+                {
+                    "analyticsName": "bgpForeignHost",
+                    "dataType": "string",
+                    "rawName": "bgpForeignHost"
+                }
+            ],
+            "metricType": "timeseries",
+            "metrics": [
+                {
+                    "analyticsName": "bgpVersion",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_bgp_version",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "installedPrefixes",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_installed_prefixes",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "holdTime",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_negotiated_keepalive_timers_hold_time",
+                    "unit": "sec"
+                },
+                {
+                    "analyticsName": "keepaliveInterval",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_negotiated_keepalive_timers_keepalive_interval",
+                    "unit": "sec"
+                },
+                {
+                    "analyticsName": "sentOpens",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_bgp_neighbor_counters_sent_opens",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "sentUpdates",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_bgp_neighbor_counters_sent_updates",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "sentNotifications",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_bgp_neighbor_counters_sent_notifications",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "sentKeepalives",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_bgp_neighbor_counters_sent_keepalives",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "sentRouteRefreshes",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_bgp_neighbor_counters_sent_route_refreshes",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "receivedOpens",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_bgp_neighbor_counters_received_opens",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "receivedUpdates",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_bgp_neighbor_counters_received_updates",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "receivedNotifications",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_bgp_neighbor_counters_received_notifications",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "receivedKeepalives",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_bgp_neighbor_counters_received_keepalives",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "receivedRouteRefreshes",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_bgp_neighbor_counters_received_route_refreshes",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "inputQueueDepth",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_bgp_neighbor_counters_inq_depth",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "outputQueueDepth",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_bgp_neighbor_counters_outq_depth",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "connectionTotalEstablished",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_connection_total_established",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "totalDropped",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_connection_total_dropped",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "localPort",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_transport_local_port",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "foreignPort",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_transport_foreign_port",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "mss",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_transport_mss",
+                    "unit": "bytes"
+                },
+                {
+                    "analyticsName": "sentCurrentPrefixes",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_prefix_activity_sent_current_prefixes",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "sentTotalPrefixes",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_prefix_activity_sent_total_prefixes",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "sentImplicitWithdraws",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_prefix_activity_sent_implicit_withdraw",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "sentExplicitWithdraws",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_prefix_activity_sent_explicit_withdraw",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "sentBestpaths",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_prefix_activity_sent_bestpaths",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "sentMultipaths",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_prefix_activity_sent_multipaths",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "receivedCurrentPrefixes",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_prefix_activity_received_current_prefixes",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "receivedTotalPrefixes",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_prefix_activity_received_total_prefixes",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "receivedImplicitWithdraws",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_prefix_activity_received_implicit_withdraw",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "receivedExplicitWithdraws",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_prefix_activity_received_explicit_withdraw",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "receivedBestpaths",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_prefix_activity_received_bestpaths",
+                    "unit": "value"
+                },
+                {
+                    "analyticsName": "receivedMultipaths",
+                    "dataType": "double",
+                    "directions": [
+                        "-1"
+                    ],
+                    "rawName": "xe_bgp_neighbors_prefix_activity_received_multipaths",
+                    "unit": "value"
+                }
+            ],
+            "objectType": "cisco-telemetry-xe-bgp-neighbor",
+            "vendor": "cisco"
+        },
+        "id": "cisco-cisco-telemetry-xe-bgp-neighbor",
+        "type": "ingestionDictionaries"
+    },
+    "violations": []
+}

@@ -1,0 +1,57 @@
+{
+  "tenant": "https://openfiber.analytics.accedian.io",
+  "validatedDate": "2026-06-01",
+  "validation": "User confirmed live data source works; collector smoke test and tenant dictionary publish succeeded.",
+  "collector": {
+    "agentId": "1c94fd13-157b-4029-b8bf-92dd55fc8bc6",
+    "container": "telemetry-collector_XE",
+    "deployedConfig": "collector-deployment/telemetry-collector_XE.deployed.dataTransformation.conf"
+  },
+  "dictionaries": {
+    "bgp": {
+      "id": "cisco-cisco-telemetry-xe-bgp-neighbor",
+      "rev": "2-028ff2daa988a757c4524d84a313da64",
+      "dictionaryType": "custom",
+      "vendor": "cisco",
+      "metrics": 33,
+      "dimensions": 21,
+      "units": [
+        "bytes",
+        "sec",
+        "value"
+      ],
+      "directions": [
+        "-1"
+      ]
+    },
+    "environment": {
+      "id": "cisco-cisco-telemetry-xe-environment-sensor",
+      "rev": "2-b298e5fa81721d7a07dc4adce79a9cdc",
+      "dictionaryType": "custom",
+      "vendor": "cisco",
+      "metrics": 41,
+      "dimensions": 11,
+      "units": [
+        "deg_c",
+        "value",
+        "volt"
+      ],
+      "directions": [
+        "-1"
+      ]
+    }
+  },
+  "goldenSample": {
+    "archive": "golden-samples/xe-supplemental-telegraf-corrected-capture-20260601T151308Z.tar.gz",
+    "rows": 916,
+    "measurements": {
+      "xe_bgp_neighbors": 8,
+      "xe_cpu_stats": 4,
+      "xe_environment_sensor": 164,
+      "xe_if_stats": 728,
+      "xe_memory_stats": 12
+    },
+    "bgpRows": 8,
+    "environmentRows": 164
+  }
+}

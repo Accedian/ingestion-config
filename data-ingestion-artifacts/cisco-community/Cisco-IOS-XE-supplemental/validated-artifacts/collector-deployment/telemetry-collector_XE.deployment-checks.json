@@ -1,0 +1,13 @@
+{
+  "rev_before": "3-250fe3f33c8fb73ca0a6926512bbd760",
+  "rev_after": "4-9b742a2e3f92de2b3eb2b6ed0887cc4e",
+  "replaced_whole_dataTransformation": true,
+  "contains_while_loop": false,
+  "contains_range_sanitizer": true,
+  "default_xe_cpu": true,
+  "default_xe_memory": true,
+  "default_xe_interface": true,
+  "open_fiber_bgp": true,
+  "open_fiber_environment": true,
+  "contains_currentReading_prefix": false
+}

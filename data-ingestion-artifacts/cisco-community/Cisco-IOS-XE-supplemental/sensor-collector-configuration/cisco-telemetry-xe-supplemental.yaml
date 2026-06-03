@@ -1,0 +1,5 @@
+- job_name: cisco-telemetry-xe-interface
+- job_name: cisco-telemetry-xe-cpu
+- job_name: cisco-telemetry-xe-memory
+- job_name: cisco-telemetry-xe-bgp-neighbor
+- job_name: cisco-telemetry-xe-environment-sensor
