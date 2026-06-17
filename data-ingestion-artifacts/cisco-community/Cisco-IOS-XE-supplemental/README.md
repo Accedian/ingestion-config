@@ -10,6 +10,7 @@ The bundled collector configuration starts from the out-of-the-box IOS XE MDT co
 
 - `Cisco-IOS-XE-bgp-oper:bgp-state-data/neighbors/neighbor`
 - `Cisco-IOS-XE-environment-oper:environment-sensors/environment-sensor`
+- `Cisco-IOS-XE-switch-ptp-oper:switch-ptp-oper-data`
 
 The requested IOS XE subscription path for environment telemetry is the parent container:
 
@@ -19,14 +20,24 @@ The requested IOS XE subscription path for environment telemetry is the parent c
 
 The Telegraf alias targets the keyed `environment-sensor` list below that container. The supplemental transform aggregates those sensor rows into one PCA object per router/source, with each sensor reading represented as a named metric.
 
+The PTP subscription path should use the IOS XE YANG prefix, not the module name:
+
+```text
+/switch-ptp-ios-xe-oper:switch-ptp-oper-data
+```
+
+For a `60` second / `1` minute PTP cadence on the Catalyst 9300 lab switch, `update-policy periodic 6000` was the corrected setting. The earlier `10000` setting produced `100` second spacing.
+
 ## Included Artifacts
 
-- `telemetry-collector-configuration/input-cisco-telemetry-xe-supplemental-mdt.conf`: full demo collector config, based on the product IOS XE MDT config plus supplemental BGP/environment additions.
+- `telemetry-collector-configuration/input-cisco-telemetry-xe-supplemental-mdt.conf`: full demo collector config, based on the product IOS XE MDT config plus supplemental BGP/environment/PTP additions.
 - `telemetry-collector-configuration/transformation-cisco-telemetry-xe-bgp-neighbor.conf`: standalone BGP shaping block for review or later merge.
 - `telemetry-collector-configuration/transformation-cisco-telemetry-xe-environment-sensor.conf`: standalone environment-sensor shaping block for review or later merge.
-- `sensor-collector-configuration/cisco-telemetry-xe-supplemental.yaml`: job list with the three out-of-the-box IOS XE objects plus the two supplemental extension objects.
+- `telemetry-collector-configuration/transformation-cisco-telemetry-xe-ptp.conf`: standalone PTP shaping block for review or later merge.
+- `sensor-collector-configuration/cisco-telemetry-xe-supplemental.yaml`: job list with the three out-of-the-box IOS XE objects plus BGP, environment, and four PTP extension objects.
 - `sensor-collector-configuration/cisco-telemetry-xe-bgp-neighbor-delta-operations.json`: Sensor Collector operations fragment to merge under `openMetricsConfig.operations` for BGP churn-counter deltas.
-- `pca-ingestion-dictionaries-configuration/`: PCA dictionary templates for the two extension object types.
+- `pca-ingestion-specifications-configuration/`: PCA ingestion-staging specifications. This is the forward default artifact format.
+- `pca-ingestion-dictionaries-configuration/`: PCA dictionary templates. These remain in the package during the transition from dictionary-first to ingestion-spec-first workflows.
 - `validated-artifacts/`: live-validated tenant dictionaries, deployed collector configuration, and golden samples captured during first lab validation.
 
 ## Object Model
@@ -93,6 +104,31 @@ Examples:
 
 Threshold leaves are intentionally ignored in this supplemental demo model so the dashboard receives one aggregated environment object per router instead of one object per physical sensor.
 
+### PTP
+
+Object types:
+
+- `cisco-telemetry-xe-ptp-clock`
+- `cisco-telemetry-xe-ptp-parent`
+- `cisco-telemetry-xe-ptp-port`
+- `cisco-telemetry-xe-ptp-correction-stats`
+
+Identities:
+
+- clock and parent: stable `source + clock_domain` with type suffixes in `sessionId` and `sessionName`
+- port: stable `source + if_name`
+- correction-stats: stable `source + if_name`; do not include correction sample time in object identity
+
+The correction-stat transform duplicates IOS XE `subordinate_port` into `if_name` so one PCA filter can select both PTP port and correction-stat objects for an interface.
+
+Boolean PTP leaves are normalized upstream to `0` or `1`. IOS XE nanosecond leaves are kept as raw nanosecond fields in Telegraf and normalized in the ingestion spec/dictionary with explicit backtick casts. Final published PTP specs use microseconds for the nanosecond metrics:
+
+```sql
+cast(`raw_metric_name_ns` as DOUBLE) / 1000
+```
+
+The double-quoted expression pattern shown by the staging UI, for example `cast("field" as DOUBLE)`, did not apply correctly during validation.
+
 ## Validation Notes
 
 This package has been validated against a live IOS XE lab and deployed to an existing `telemetry-collector_XE` managed collector.
@@ -110,6 +146,7 @@ Deployment result:
 - deployed field: `telemetry.dataTransformation`
 - deployed config: `validated-artifacts/collector-deployment/telemetry-collector_XE.deployed.dataTransformation.conf`
 - tenant dictionaries were published successfully for BGP neighbor and environment sensor object types
+- tenant ingestion-staging specs were published successfully for the four PTP object types in the United Medley lab
 - user confirmed the configuration works with a live data source
 
 Standalone capture result:
@@ -123,6 +160,7 @@ Golden sample result:
 - environment subscription observed: `700`
 - environment path emitted as `Cisco-IOS-XE-environment-oper:environment-sensors/environment-sensor`
 - BGP path emitted as `Cisco-IOS-XE-bgp-oper:bgp-state-data/neighbors/neighbor`
+- PTP path emitted as `Cisco-IOS-XE-switch-ptp-oper:switch-ptp-oper-data`
 - original `telemetry-collector_XE` was restored healthy after capture
 - environment sample contained 41 sensor name/location pairs from one router/source; the aggregate model creates 1 environment session for that router with 41 current-reading metrics
 - preserved sample archive: `validated-artifacts/golden-samples/xe-supplemental-telegraf-corrected-capture-20260601T151308Z.tar.gz`

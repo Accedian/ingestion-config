@@ -1,7 +1,10 @@
 {
-  "tenant": "https://openfiber.analytics.accedian.io",
-  "validatedDate": "2026-06-01",
-  "validation": "User confirmed live data source works; collector smoke test and tenant dictionary publish succeeded.",
+  "tenant": [
+    "https://openfiber.analytics.accedian.io",
+    "https://united.medley.npav.accedian.net"
+  ],
+  "validatedDate": "2026-06-01 / 2026-06-13 / 2026-06-15",
+  "validation": "BGP/environment collector smoke test and tenant dictionary publish succeeded; PTP ingestion-staging specs were published and PTP clock CSV values validated after microsecond normalization.",
   "collector": {
     "agentId": "1c94fd13-157b-4029-b8bf-92dd55fc8bc6",
     "container": "telemetry-collector_XE",
@@ -39,6 +42,79 @@
       "directions": [
         "-1"
       ]
+    },
+    "clock": {
+      "id": "cisco-cisco-telemetry-xe-ptp-clock",
+      "rev": "6-b00a16d8a03f8cf517507db902677de6",
+      "dictionaryType": "custom",
+      "vendor": "cisco",
+      "metrics": 11,
+      "dimensions": 22,
+      "units": [
+        "bool",
+        "sec",
+        "value",
+        "μs"
+      ],
+      "directions": [
+        "-1"
+      ],
+      "ingestionSpec": "tenant-staging/cisco-telemetry-xe-ptp-clock.specification.live.json",
+      "dictionaryTemplate": "../pca-ingestion-dictionaries-configuration/cisco-telemetry-xe-ptp-clock.json",
+      "liveDictionary": "tenant-dictionaries/cisco-cisco-telemetry-xe-ptp-clock.live.json"
+    },
+    "parent": {
+      "id": "cisco-cisco-telemetry-xe-ptp-parent",
+      "rev": "1-a44bf8e1ef4da269319d78db390a6cca",
+      "dictionaryType": "custom",
+      "vendor": "cisco",
+      "metrics": 5,
+      "dimensions": 16,
+      "units": [
+        "value"
+      ],
+      "directions": [
+        "-1"
+      ],
+      "ingestionSpec": "tenant-staging/cisco-telemetry-xe-ptp-parent.specification.live.json",
+      "dictionaryTemplate": "../pca-ingestion-dictionaries-configuration/cisco-telemetry-xe-ptp-parent.json",
+      "liveDictionary": "tenant-dictionaries/cisco-cisco-telemetry-xe-ptp-parent.live.json"
+    },
+    "port": {
+      "id": "cisco-cisco-telemetry-xe-ptp-port",
+      "rev": "3-0a888f0f63af3a0beacba68fa21dd376",
+      "dictionaryType": "custom",
+      "vendor": "cisco",
+      "metrics": 10,
+      "dimensions": 16,
+      "units": [
+        "bool",
+        "value",
+        "μs"
+      ],
+      "directions": [
+        "-1"
+      ],
+      "ingestionSpec": "tenant-staging/cisco-telemetry-xe-ptp-port.specification.live.json",
+      "dictionaryTemplate": "../pca-ingestion-dictionaries-configuration/cisco-telemetry-xe-ptp-port.json",
+      "liveDictionary": "tenant-dictionaries/cisco-cisco-telemetry-xe-ptp-port.live.json"
+    },
+    "correctionStats": {
+      "id": "cisco-cisco-telemetry-xe-ptp-correction-stats",
+      "rev": "4-10eb96cfd21981c77305c92fa5b65615",
+      "dictionaryType": "custom",
+      "vendor": "cisco",
+      "metrics": 2,
+      "dimensions": 13,
+      "units": [
+        "μs"
+      ],
+      "directions": [
+        "-1"
+      ],
+      "ingestionSpec": "tenant-staging/cisco-telemetry-xe-ptp-correction-stats.specification.live.json",
+      "dictionaryTemplate": "../pca-ingestion-dictionaries-configuration/cisco-telemetry-xe-ptp-correction-stats.json",
+      "liveDictionary": "tenant-dictionaries/cisco-cisco-telemetry-xe-ptp-correction-stats.live.json"
     }
   },
   "goldenSample": {
@@ -52,6 +128,36 @@
       "xe_memory_stats": 12
     },
     "bgpRows": 8,
-    "environmentRows": 164
+    "environmentRows": 164,
+    "ptpArchive": "golden-samples/xe-ptp-c9300-pca-prototype-2-capture-20260612.tar.gz",
+    "ptpRows": 1716,
+    "ptpMeasurements": {
+      "xe_ptp_clock": 13,
+      "xe_ptp_port": 1677,
+      "xe_ptp_parent": 13,
+      "xe_ptp_correction_stats": 13
+    }
+  },
+  "ptpValidation": {
+    "lab": "United Medley / Catalyst 9300 O4-9300-Stack-1",
+    "publishedSpecs": 4,
+    "profileMetricsEnabled": 28,
+    "clockCsvCheck": {
+      "meanPathDelayAverageMs": 0.000427656,
+      "meanPathDelayAverageUs": 0.427656,
+      "meanPathDelayAverageNs": 427.656,
+      "offsetFromMasterRangeNs": [
+        -54,
+        40
+      ],
+      "currentUtcOffsetSeconds": 37
+    },
+    "dictionaryApiComparison": {
+      "date": "2026-06-15",
+      "path": "tenant-dictionaries/united-medley-ptp-dictionary-comparison-20260615.json",
+      "metricDiffs": 0,
+      "dimensionDiffs": 0,
+      "expectedMetadataDiff": "repo dictionary templates use dictionaryType=global; live United Medley dictionaries use dictionaryType=custom"
+    }
   }
 }
