@@ -1,0 +1,105 @@
+{
+  "dataType": "ingestion-specification",
+  "family": "cisco",
+  "objectType": "cisco-telemetry-xe-ptp-correction-stats",
+  "state": "Published",
+  "tenantId": "9ca4447b-e32a-4dc2-af71-2a1219cc3373",
+  "transformations": {
+    "enhancement": {
+      "metrics": []
+    },
+    "ingestion": [],
+    "normalization": {
+      "dimensions": [
+        {
+          "output": "monitoredObjectId",
+          "source": "monitoredObjectId",
+          "type": "string"
+        },
+        {
+          "output": "monitoredObjectName",
+          "source": "monitoredObjectName",
+          "type": "string"
+        },
+        {
+          "output": "timestamp",
+          "source": "timestamp",
+          "type": "long"
+        },
+        {
+          "output": "direction",
+          "source": "direction",
+          "type": "integer"
+        },
+        {
+          "output": "agentId",
+          "source": "agentId",
+          "type": "string"
+        },
+        {
+          "output": "agentName",
+          "source": "agentName",
+          "type": "string"
+        },
+        {
+          "output": "agentType",
+          "source": "agentType",
+          "type": "string"
+        },
+        {
+          "output": "objectType",
+          "source": "objectType",
+          "type": "string"
+        },
+        {
+          "output": "sessionId",
+          "source": "sessionId",
+          "type": "string"
+        },
+        {
+          "output": "sessionName",
+          "source": "sessionName",
+          "type": "string"
+        },
+        {
+          "output": "source",
+          "source": "source",
+          "type": "string"
+        },
+        {
+          "output": "if_name",
+          "source": "if_name",
+          "type": "string"
+        },
+        {
+          "output": "subordinate_port",
+          "source": "subordinate_port",
+          "type": "string"
+        }
+      ],
+      "metrics": [
+        {
+          "directions": [
+            "-1"
+          ],
+          "expression": "cast(`xe_ptp_correction_stats_correction_offset_ns` as DOUBLE) / 1000",
+          "output": "correctionOffset",
+          "source": "xe_ptp_correction_stats_correction_offset_ns",
+          "type": "double",
+          "units": "μs"
+        },
+        {
+          "directions": [
+            "-1"
+          ],
+          "expression": "cast(`xe_ptp_correction_stats_correction_mean_path_delay_ns` as DOUBLE) / 1000",
+          "output": "correctionMeanPathDelay",
+          "source": "xe_ptp_correction_stats_correction_mean_path_delay_ns",
+          "type": "double",
+          "units": "μs"
+        }
+      ]
+    }
+  },
+  "version": "0.0.3"
+}

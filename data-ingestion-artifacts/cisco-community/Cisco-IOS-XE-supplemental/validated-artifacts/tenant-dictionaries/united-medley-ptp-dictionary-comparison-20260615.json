@@ -1,0 +1,86 @@
+[
+  {
+    "objectType": "cisco-telemetry-xe-ptp-clock",
+    "dictionaryName": "cisco-cisco-telemetry-xe-ptp-clock",
+    "status": "diff",
+    "liveId": "cisco-cisco-telemetry-xe-ptp-clock",
+    "liveRev": "6-b00a16d8a03f8cf517507db902677de6",
+    "repoMetricCount": 11,
+    "liveMetricCount": 11,
+    "repoDimensionCount": 22,
+    "liveDimensionCount": 22,
+    "fieldDiffs": {
+      "dictionaryType": {
+        "repo": "global",
+        "live": "custom"
+      }
+    },
+    "metricDiffCount": 0,
+    "dimensionDiffCount": 0,
+    "metricDiffs": [],
+    "dimensionDiffs": []
+  },
+  {
+    "objectType": "cisco-telemetry-xe-ptp-correction-stats",
+    "dictionaryName": "cisco-cisco-telemetry-xe-ptp-correction-stats",
+    "status": "diff",
+    "liveId": "cisco-cisco-telemetry-xe-ptp-correction-stats",
+    "liveRev": "4-10eb96cfd21981c77305c92fa5b65615",
+    "repoMetricCount": 2,
+    "liveMetricCount": 2,
+    "repoDimensionCount": 13,
+    "liveDimensionCount": 13,
+    "fieldDiffs": {
+      "dictionaryType": {
+        "repo": "global",
+        "live": "custom"
+      }
+    },
+    "metricDiffCount": 0,
+    "dimensionDiffCount": 0,
+    "metricDiffs": [],
+    "dimensionDiffs": []
+  },
+  {
+    "objectType": "cisco-telemetry-xe-ptp-parent",
+    "dictionaryName": "cisco-cisco-telemetry-xe-ptp-parent",
+    "status": "diff",
+    "liveId": "cisco-cisco-telemetry-xe-ptp-parent",
+    "liveRev": "1-a44bf8e1ef4da269319d78db390a6cca",
+    "repoMetricCount": 5,
+    "liveMetricCount": 5,
+    "repoDimensionCount": 16,
+    "liveDimensionCount": 16,
+    "fieldDiffs": {
+      "dictionaryType": {
+        "repo": "global",
+        "live": "custom"
+      }
+    },
+    "metricDiffCount": 0,
+    "dimensionDiffCount": 0,
+    "metricDiffs": [],
+    "dimensionDiffs": []
+  },
+  {
+    "objectType": "cisco-telemetry-xe-ptp-port",
+    "dictionaryName": "cisco-cisco-telemetry-xe-ptp-port",
+    "status": "diff",
+    "liveId": "cisco-cisco-telemetry-xe-ptp-port",
+    "liveRev": "3-0a888f0f63af3a0beacba68fa21dd376",
+    "repoMetricCount": 10,
+    "liveMetricCount": 10,
+    "repoDimensionCount": 16,
+    "liveDimensionCount": 16,
+    "fieldDiffs": {
+      "dictionaryType": {
+        "repo": "global",
+        "live": "custom"
+      }
+    },
+    "metricDiffCount": 0,
+    "dimensionDiffCount": 0,
+    "metricDiffs": [],
+    "dimensionDiffs": []
+  }
+]

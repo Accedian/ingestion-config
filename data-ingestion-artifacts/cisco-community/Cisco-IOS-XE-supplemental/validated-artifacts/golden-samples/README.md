@@ -1,6 +1,6 @@
 # IOS XE Supplemental Golden Samples
 
-Golden sample captured from a live IOS XE telemetry source during the 2026-06-01 smoke test. The first validation source was the Open Fiber PCA lab tenant.
+Golden samples captured from live IOS XE telemetry sources. The first BGP/environment validation source was the Open Fiber PCA lab tenant during the `2026-06-01` smoke test. PTP validation used a Catalyst 9300 lab source, `O4-9300-Stack-1`, during the GE Aerospace PTP work on `2026-06-12` through `2026-06-15`.
 
 The source uses Cisco IOS XE MDT / YANG Push dial-out into the XE telemetry collector port. For this protocol path, the preserved collector-ingress and transformed Telegraf output are the practical raw truth; no router-side `mdt_exec` style capture was available.
 
@@ -22,6 +22,14 @@ The source uses Cisco IOS XE MDT / YANG Push dial-out into the XE telemetry coll
   - standalone capture Telegraf configuration used for the smoke sample
 - `proofs/xe-supplemental-standalone-capture-telegraf-container.log`
   - capture container log
+- `xe-ptp-c9300-pca-prototype-2-capture-20260612.tar.gz`
+  - preserved PTP prototype-2 capture bundle from the Catalyst 9300 lab
+- `transformed/xe-ptp-normalized-new-run-only.sample.influx`
+  - filtered normalized PTP PCA-shaped line protocol from the prototype-2 run
+- `transformed/xe-ptp-normalized-new-run-only.sample.json`
+  - same PTP normalized sample in JSON output format
+- `telegraf/xe-ptp-managed-upload-telegraf.conf`
+  - managed Telemetry Collector upload config used for the PTP validation path
 
 ## Measurements Observed
 
@@ -30,6 +38,13 @@ The source uses Cisco IOS XE MDT / YANG Push dial-out into the XE telemetry coll
 - `xe_memory_stats`: `12`
 - `xe_bgp_neighbors`: `8`
 - `xe_cpu_stats`: `4`
+
+PTP prototype-2 normalized sample:
+
+- `xe_ptp_clock`
+- `xe_ptp_parent`
+- `xe_ptp_port`
+- `xe_ptp_correction_stats`
 
 ## Object Identity Notes
 
@@ -46,3 +61,5 @@ source_xe-environment-sensor
 ```
 
 The individual environment current readings are represented as metric names derived from sanitized sensor name plus location.
+
+PTP clock and parent sessions are keyed by source plus clock domain with an object-type suffix. PTP port and correction-stat sessions are keyed by source plus `if_name`, with `subordinate_port` duplicated into `if_name` for correction stats so one PCA filter can select both port and correction-stat records for an interface.
