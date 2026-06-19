@@ -1,0 +1,1203 @@
+{
+  "data": {
+    "attributes": {
+      "_id": "ciscocisco_ios_xr_otu_info",
+      "customMetrics": [],
+      "dictionaryName": "cisco-cisco_ios_xr_otu_info",
+      "dictionaryType": "global",
+      "dimensions": [
+        {
+          "analyticsName": "monitoredObjectId",
+          "dataType": "string",
+          "rawName": "monitoredObjectId"
+        },
+        {
+          "analyticsName": "monitoredObjectName",
+          "dataType": "string",
+          "rawName": "monitoredObjectName"
+        },
+        {
+          "analyticsName": "timestamp",
+          "dataType": "long",
+          "rawName": "timestamp"
+        },
+        {
+          "analyticsName": "direction",
+          "dataType": "integer",
+          "rawName": "direction"
+        },
+        {
+          "analyticsName": "agentId",
+          "dataType": "string",
+          "rawName": "agentId"
+        },
+        {
+          "analyticsName": "agentName",
+          "dataType": "string",
+          "rawName": "agentName"
+        },
+        {
+          "analyticsName": "agentType",
+          "dataType": "string",
+          "rawName": "agentType"
+        },
+        {
+          "analyticsName": "controllerName",
+          "dataType": "string",
+          "rawName": "controller_name"
+        },
+        {
+          "analyticsName": "host",
+          "dataType": "string",
+          "rawName": "host"
+        },
+        {
+          "analyticsName": "hostName",
+          "dataType": "string",
+          "rawName": "host_name"
+        },
+        {
+          "analyticsName": "objectType",
+          "dataType": "string",
+          "rawName": "objectType"
+        },
+        {
+          "analyticsName": "path",
+          "dataType": "string",
+          "rawName": "path"
+        },
+        {
+          "analyticsName": "sessionId",
+          "dataType": "string",
+          "rawName": "sessionId"
+        },
+        {
+          "analyticsName": "sessionName",
+          "dataType": "string",
+          "rawName": "sessionName"
+        },
+        {
+          "analyticsName": "source",
+          "dataType": "string",
+          "rawName": "source"
+        }
+      ],
+      "metricType": "timeseries",
+      "metrics": [
+        {
+          "analyticsName": "autoTtiFlag",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_auto_tti_flag",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "bandwidth",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_bandwidth",
+          "sqlExpr": "cast(`cisco_ios_xr_otu_info_bandwidth` as DOUBLE) * 1000",
+          "unit": "mbps"
+        },
+        {
+          "analyticsName": "ec",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_ec",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "ecValue",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_ec_value",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "gccMode",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_gcc_mode",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "gmplsTvmId",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_gmpls_tvm_id",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "localIfIndex",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_local_if_index",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "localRouterId",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_local_router_id",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "nvOpticalSupport",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_nv_optical_support",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "aisCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_ais_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "aisIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_ais_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "aisIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_ais_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "aisReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_ais_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "bdiCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_bdi_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "bdiIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_bdi_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "bdiIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_bdi_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "bdiReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_bdi_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "biaeCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_biae_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "biaeIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_biae_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "biaeIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_biae_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "biaeReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_biae_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "ecCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_ec_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "ecIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_ec_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "ecIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_ec_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "ecReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_ec_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "eocCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_eoc_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "eocIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_eoc_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "eocIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_eoc_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "eocReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_eoc_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "fecMismatchCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_fec_mismatch_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "fecMismatchIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_fec_mismatch_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "fecMismatchIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_fec_mismatch_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "fecMismatchReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_fec_mismatch_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "fecuncCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_fecunc_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "fecuncIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_fecunc_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "fecuncIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_fecunc_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "fecuncReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_fecunc_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "flexoLofCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_flexo_lof_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "flexoLofIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_flexo_lof_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "flexoLofIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_flexo_lof_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "flexoLofReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_flexo_lof_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "flexoLomCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_flexo_lom_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "flexoLomIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_flexo_lom_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "flexoLomIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_flexo_lom_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "flexoLomReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_flexo_lom_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "fmmCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_fmm_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "fmmIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_fmm_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "fmmIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_fmm_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "fmmReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_fmm_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "gidmCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_gidm_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "gidmIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_gidm_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "gidmIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_gidm_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "gidmReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_gidm_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "iaeCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_iae_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "iaeIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_iae_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "iaeIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_iae_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "iaeReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_iae_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "lofCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_lof_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "lofIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_lof_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "lofIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_lof_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "lofReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_lof_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "lomCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_lom_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "lomIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_lom_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "lomIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_lom_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "lomReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_lom_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "losCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_los_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "losIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_los_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "losIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_los_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "losReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_los_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "oofCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_oof_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "oofIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_oof_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "oofIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_oof_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "oofReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_oof_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "oomCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_oom_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "oomIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_oom_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "oomIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_oom_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "oomReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_oom_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "rdiCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_rdi_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "rdiIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_rdi_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "rdiIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_rdi_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "rdiReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_rdi_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "sdBerCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_sd_ber_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "sdBerIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_sd_ber_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "sdBerIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_sd_ber_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "sdBerReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_sd_ber_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "sfBerCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_sf_ber_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "sfBerIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_sf_ber_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "sfBerIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_sf_ber_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "sfBerReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_sf_ber_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "timCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_tim_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "timIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_tim_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "timIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_tim_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "timReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_tim_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "ucCounter",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_uc_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "ucIsAsserted",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_uc_is_asserted",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "ucIsDetected",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_uc_is_detected",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "ucReportingEnabled",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_alarm_info_uc_reporting_enabled",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "otuFecSatisticsPostFecBer",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_fec_satistics_post_fec_ber",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "otuFecSatisticsPreFecBer",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_otu_fec_satistics_pre_fec_ber",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "preFecBerMantissa",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_pre_fec_ber_mantissa",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "preFecBerValue",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_pre_fec_ber_value",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "preFecMantissa",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_pre_fec_mantissa",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "preFecVal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_pre_fec_val",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "proactiveProactiveStatus",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_proactive_proactive_status",
+          "unit": "bool"
+        },
+        {
+          "analyticsName": "proactiveRevertWindow",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_proactive_revert_window",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "proactiveRvrtThreshCoeff",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_proactive_rvrt_thresh_coeff",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "proactiveRvrtThreshPower",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_proactive_rvrt_thresh_power",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "proactiveTrigThreshCoeff",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_proactive_trig_thresh_coeff",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "proactiveTrigThreshPower",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_proactive_trig_thresh_power",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "proactiveTriggerWindow",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_proactive_trigger_window",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "q",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_q",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "qfactor",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_qfactor",
+          "unit": "db"
+        },
+        {
+          "analyticsName": "qmargin",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_qmargin",
+          "unit": "db"
+        },
+        {
+          "analyticsName": "remoteIfIndex",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_remote_if_index",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "remoteRouterId",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_remote_router_id",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "sd",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_sd",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "sf",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_sf",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "state",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_state",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "ttiModeRecDapiEntry",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_tti_mode_rec_dapi_entry",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "ttiModeRecOperatorSpecificEntry",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_tti_mode_rec_operator_specific_entry",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "ttiModeRecSapiEntry",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_tti_mode_rec_sapi_entry",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "uc",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_uc",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "ucValue",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "cisco_ios_xr_otu_info_uc_value",
+          "unit": "bool"
+        }
+      ],
+      "objectType": "cisco_ios_xr_otu_info",
+      "vendor": "cisco"
+    },
+    "id": "ciscocisco_ios_xr_otu_info",
+    "type": "ingestionDictionaries"
+  },
+  "violations": []
+}
