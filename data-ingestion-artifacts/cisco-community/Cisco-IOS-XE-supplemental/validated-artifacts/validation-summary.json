@@ -3,8 +3,8 @@
     "sanitized IOS XE validation tenant",
     "sanitized PTP validation tenant"
   ],
-  "validatedDate": "2026-06-01 / 2026-06-13 / 2026-06-15",
-  "validation": "BGP/environment collector smoke test and tenant dictionary publish succeeded; PTP ingestion-staging specs were published and PTP clock CSV values validated after microsecond normalization.",
+  "validatedDate": "2026-06-01 / 2026-06-13 / 2026-06-15 / 2026-06-25",
+  "validation": "BGP/environment collector smoke test and tenant dictionary publish succeeded; PTP ingestion-staging specs were published and PTP clock CSV values validated after microsecond normalization; Catalyst 9300 current recapture validated the environment aggregate transform without a fixed field whitelist and preserved PTP correction-stats identity.",
   "collector": {
     "agentId": "1c94fd13-157b-4029-b8bf-92dd55fc8bc6",
     "container": "telemetry-collector_XE",
@@ -136,6 +136,18 @@
       "xe_ptp_port": 1677,
       "xe_ptp_parent": 13,
       "xe_ptp_correction_stats": 13
+    },
+    "currentC9300Archive": "golden-samples/xe-supplemental-c9300-current-capture-20260625.tar.gz",
+    "currentC9300Rows": 752,
+    "currentC9300Measurements": {
+      "xe_if_stats": 296,
+      "xe_environment_sensor": 48,
+      "xe_memory_stats": 9,
+      "xe_cpu_stats": 3,
+      "xe_ptp_port": 387,
+      "xe_ptp_clock": 3,
+      "xe_ptp_parent": 3,
+      "xe_ptp_correction_stats": 3
     }
   },
   "ptpValidation": {

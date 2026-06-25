@@ -101,8 +101,12 @@ Examples:
 - `Temp_UADP_0_0_R0`
 - `Temp_InltFrnt_1_0`
 - `HotSwap_Power_R0`
+- `Inlet_Temp_Sensor_Switch_1`
+- `Power_Supply_A_Switch_2`
 
 Threshold leaves are intentionally ignored in this supplemental demo model so the dashboard receives one aggregated environment object per router instead of one object per physical sensor.
+
+Environment sensor names are inventory-specific. The collector transform does not whitelist a fixed set of environment metric fields, because different IOS XE platforms emit different sensor names and locations. Keep PCA dictionary/profile updates tied to real captured output from the target platform; do not create assumed ingestion-specification files for environment sensors until a tenant-generated export exists.
 
 ### PTP
 
@@ -155,15 +159,19 @@ The package was also smoke-tested by temporarily replacing the running `telemetr
 
 Golden sample result:
 
-- source device observed: sanitized lab switch source
-- BGP subscription observed: `600`
-- environment subscription observed: `700`
+- source devices observed: sanitized IOS XE lab source and sanitized Catalyst 9300 lab source
+- BGP subscription observed in the original smoke capture: `600`
+- environment subscription observed in the original smoke capture: `700`
+- current Catalyst 9300 environment subscription observed: `1700`
 - environment path emitted as `Cisco-IOS-XE-environment-oper:environment-sensors/environment-sensor`
 - BGP path emitted as `Cisco-IOS-XE-bgp-oper:bgp-state-data/neighbors/neighbor`
 - PTP path emitted as `Cisco-IOS-XE-switch-ptp-oper:switch-ptp-oper-data`
 - original `telemetry-collector_XE` was restored healthy after capture
 - environment sample contained 41 sensor name/location pairs from one router/source; the aggregate model creates 1 environment session for that router with 41 current-reading metrics
+- current Catalyst 9300 environment sample contains 16 sensor name/location pairs over 48 transformed rows, using one stable environment session for the router/source
+- current Catalyst 9300 recapture did not include BGP; the earlier BGP smoke sample remains the BGP evidence for this package
 - preserved sample archive: `validated-artifacts/golden-samples/xe-supplemental-telegraf-corrected-capture-20260601T151308Z.tar.gz`
+- current Catalyst 9300 sample archive: `validated-artifacts/golden-samples/xe-supplemental-c9300-current-capture-20260625.tar.gz`
 
 Telegraf normalizes emitted IOS XE leaf/tag names by replacing hyphens with underscores. For example:
 
