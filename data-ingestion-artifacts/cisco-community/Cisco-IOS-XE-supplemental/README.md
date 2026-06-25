@@ -36,9 +36,9 @@ For a `60` second / `1` minute PTP cadence on the Catalyst 9300 lab switch, `upd
 - `telemetry-collector-configuration/transformation-cisco-telemetry-xe-ptp.conf`: standalone PTP shaping block for review or later merge.
 - `sensor-collector-configuration/cisco-telemetry-xe-supplemental.yaml`: job list with the three out-of-the-box IOS XE objects plus BGP, environment, and four PTP extension objects.
 - `sensor-collector-configuration/cisco-telemetry-xe-bgp-neighbor-delta-operations.json`: Sensor Collector operations fragment to merge under `openMetricsConfig.operations` for BGP churn-counter deltas.
-- `pca-ingestion-specifications-configuration/`: PCA ingestion-staging specifications. This is the forward default artifact format.
-- `pca-ingestion-dictionaries-configuration/`: PCA dictionary templates. These remain in the package during the transition from dictionary-first to ingestion-spec-first workflows.
-- `validated-artifacts/`: live-validated tenant dictionaries, deployed collector configuration, and golden samples captured during first lab validation.
+- `pca-ingestion-specifications-configuration/`: PCA ingestion-staging specifications when a tenant-generated export is available. This is the future/default artifact format; at this stage the package includes tenant-generated ingestion specs for the four PTP object types only.
+- `pca-ingestion-dictionaries-configuration/`: PCA dictionary templates for object types that do not yet have a tenant-generated ingestion-spec export. BGP neighbor and environment sensor remain dictionary-template based until real ingestion-spec exports are available.
+- `validated-artifacts/`: sanitized live-validation evidence, deployed collector configuration, and golden samples captured during lab validation.
 
 ## Object Model
 
@@ -88,7 +88,7 @@ Identity:
 
 - `source`
 
-The stable `sessionId` and `sessionName` are `source_xe-environment-sensor`, for example `RM_01-CC-IT-01_xe-environment-sensor`.
+The stable `sessionId` and `sessionName` are `source_xe-environment-sensor`, for example `lab-switch-1_xe-environment-sensor`.
 
 Metadata kept as dimensions:
 
@@ -145,8 +145,8 @@ Deployment result:
 - managed agent id: `1c94fd13-157b-4029-b8bf-92dd55fc8bc6`
 - deployed field: `telemetry.dataTransformation`
 - deployed config: `validated-artifacts/collector-deployment/telemetry-collector_XE.deployed.dataTransformation.conf`
-- tenant dictionaries were published successfully for BGP neighbor and environment sensor object types
-- tenant ingestion-staging specs were published successfully for the four PTP object types in the United Medley lab
+- dictionary templates were validated successfully for BGP neighbor and environment sensor object types
+- tenant-generated ingestion-staging specs were published successfully for the four PTP object types in the PTP validation lab
 - user confirmed the configuration works with a live data source
 
 Standalone capture result:
@@ -155,7 +155,7 @@ The package was also smoke-tested by temporarily replacing the running `telemetr
 
 Golden sample result:
 
-- source device observed: `RM_01-CC-IT-01`
+- source device observed: sanitized lab switch source
 - BGP subscription observed: `600`
 - environment subscription observed: `700`
 - environment path emitted as `Cisco-IOS-XE-environment-oper:environment-sensors/environment-sensor`
@@ -175,6 +175,12 @@ Telegraf normalizes emitted IOS XE leaf/tag names by replacing hyphens with unde
 The collector field filters and Starlark metadata extraction use the emitted Telegraf names, not the raw YANG leaf spelling.
 
 This is still community/demo status, not product promotion.
+
+Ingestion-spec note:
+
+- Do not manufacture ingestion-specification files from dictionary templates or assumptions.
+- BGP neighbor and environment sensor should remain dictionary-template based until a real tenant-generated ingestion-spec export is available.
+- PTP has tenant-generated ingestion-specification exports and is included in the forward-format directory.
 
 Before promoting beyond community/demo status:
 

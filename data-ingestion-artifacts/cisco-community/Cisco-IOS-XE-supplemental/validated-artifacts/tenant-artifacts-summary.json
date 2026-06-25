@@ -1,5 +1,5 @@
 {
-  "tenant": "https://openfiber.analytics.accedian.io",
+  "validationSource": "sanitized IOS XE validation tenant",
   "capturePurpose": "Validated tenant artifacts for IOS XE supplemental BGP/environment telemetry smoke test",
   "dictionaries": {
     "bgp": {
