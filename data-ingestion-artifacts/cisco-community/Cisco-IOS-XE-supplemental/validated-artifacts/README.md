@@ -1,6 +1,6 @@
 # IOS XE Supplemental Validated Artifacts
 
-These sanitized artifacts were validated against live IOS XE telemetry sources. BGP/environment validation was completed on `2026-06-01`; PTP ingestion-staging validation was completed on `2026-06-13`, and clock CSV value validation was checked on `2026-06-15`.
+These sanitized artifacts were validated against live IOS XE telemetry sources. BGP/environment validation was completed on `2026-06-01`; PTP ingestion-staging validation was completed on `2026-06-13`, and clock CSV value validation was checked on `2026-06-15`. A Catalyst 9300 current recapture on `2026-06-25` validates the current environment aggregate transform and the PTP correction-stats session identity.
 
 Validation sources:
 
@@ -14,6 +14,7 @@ Validation status:
 - The managed XE collector was deployed with the combined default IOS XE + supplemental BGP/environment telemetry configuration.
 - Live source data was observed for default XE CPU, memory, interface data plus the new BGP neighbor and environment sensor object types.
 - The BGP and environment dictionary templates were validated successfully through the PCA UI/Weld staging path.
+- The Catalyst 9300 recapture produced transformed environment rows with device-specific sensor names and no fixed collector field whitelist.
 - The PTP object types were published successfully through the PCA ingestion-staging path, producing tenant-generated ingestion-specification exports.
 - PTP clock raw CSV exports showed correct nanosecond normalization after the final microsecond-unit publish.
 - The user confirmed the configuration works with a live data source.
@@ -25,7 +26,7 @@ Validation status:
 - `tenant-staging/`: sanitized staging snapshots for the BGP/environment object types and published PTP ingestion-specification exports. BGP/environment snapshots are retained as validation evidence only; they are not promoted as package ingestion specs.
 - `tenant-profile/`: sanitized ingestion-profile snapshot at capture time. The new object types may still need profile metric enablement depending on tenant state.
 - `collector-deployment/`: deployed managed-agent `telemetry.dataTransformation` configuration and validation checks.
-- `golden-samples/`: live telemetry capture bundle and filtered samples for BGP/environment inspection.
+- `golden-samples/`: live telemetry capture bundles and filtered samples for BGP, environment, and PTP inspection.
 - `repo-artifacts/`: repository-authored dictionary templates matching the live behavioral contract.
 - `../pca-ingestion-specifications-configuration/`: forward-format ingestion specifications for package use.
 - `../pca-ingestion-dictionaries-configuration/`: transition-format dictionary templates for package use.
