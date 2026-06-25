@@ -1,6 +1,6 @@
 # IOS XE Supplemental Golden Samples
 
-Golden samples captured from live IOS XE telemetry sources. The first BGP/environment validation source was the Open Fiber PCA lab tenant during the `2026-06-01` smoke test. PTP validation used a Catalyst 9300 lab source, `O4-9300-Stack-1`, during the GE Aerospace PTP work on `2026-06-12` through `2026-06-15`.
+Golden samples captured from live IOS XE telemetry sources and sanitized for reusable publication. BGP/environment validation used an IOS XE lab source during the `2026-06-01` smoke test. PTP validation used a Catalyst 9300 lab source during `2026-06-12` through `2026-06-15`.
 
 The source uses Cisco IOS XE MDT / YANG Push dial-out into the XE telemetry collector port. For this protocol path, the preserved collector-ingress and transformed Telegraf output are the practical raw truth; no router-side `mdt_exec` style capture was available.
 
@@ -16,7 +16,7 @@ The source uses Cisco IOS XE MDT / YANG Push dial-out into the XE telemetry coll
   - filtered BGP neighbor rows
   - `8` rows
 - `transformed/xe-environment-sensor.sample.influx`
-  - filtered environment sensor rows
+  - filtered environment sensor rows from the original smoke capture
   - `164` rows
 - `telegraf/xe-supplemental-standalone-capture-telegraf.conf`
   - standalone capture Telegraf configuration used for the smoke sample
@@ -61,5 +61,7 @@ source_xe-environment-sensor
 ```
 
 The individual environment current readings are represented as metric names derived from sanitized sensor name plus location.
+
+The preserved BGP/environment smoke sample predates the final aggregate environment transform and is retained as source evidence, not as final-schema proof. Regenerate this sample with the current transform before using it as a strict deployable-output fixture.
 
 PTP clock and parent sessions are keyed by source plus clock domain with an object-type suffix. PTP port and correction-stat sessions are keyed by source plus `if_name`, with `subordinate_port` duplicated into `if_name` for correction stats so one PCA filter can select both port and correction-stat records for an interface.

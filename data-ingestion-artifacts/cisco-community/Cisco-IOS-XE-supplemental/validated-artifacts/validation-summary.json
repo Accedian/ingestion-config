@@ -1,7 +1,7 @@
 {
-  "tenant": [
-    "https://openfiber.analytics.accedian.io",
-    "https://united.medley.npav.accedian.net"
+  "validationSource": [
+    "sanitized IOS XE validation tenant",
+    "sanitized PTP validation tenant"
   ],
   "validatedDate": "2026-06-01 / 2026-06-13 / 2026-06-15",
   "validation": "BGP/environment collector smoke test and tenant dictionary publish succeeded; PTP ingestion-staging specs were published and PTP clock CSV values validated after microsecond normalization.",
@@ -139,7 +139,7 @@
     }
   },
   "ptpValidation": {
-    "lab": "United Medley / Catalyst 9300 O4-9300-Stack-1",
+    "lab": "sanitized PTP validation lab / Catalyst 9300",
     "publishedSpecs": 4,
     "profileMetricsEnabled": 28,
     "clockCsvCheck": {
@@ -154,10 +154,10 @@
     },
     "dictionaryApiComparison": {
       "date": "2026-06-15",
-      "path": "tenant-dictionaries/united-medley-ptp-dictionary-comparison-20260615.json",
+      "path": "tenant-dictionaries/ptp-dictionary-comparison-20260615.json",
       "metricDiffs": 0,
       "dimensionDiffs": 0,
-      "expectedMetadataDiff": "repo dictionary templates use dictionaryType=global; live United Medley dictionaries use dictionaryType=custom"
+      "expectedMetadataDiff": "repo dictionary templates use dictionaryType=global; live validation-lab dictionaries use dictionaryType=custom"
     }
   }
 }
