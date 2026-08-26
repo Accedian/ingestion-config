@@ -1,0 +1,193 @@
+{
+  "attributes": {
+    "_id": "cisco-cisco-telemetry-xe-ptp-port",
+    "_rev": "3-0a888f0f63af3a0beacba68fa21dd376",
+    "createdTimestamp": 1781296688059,
+    "customMetrics": null,
+    "dictionaryName": "cisco-cisco-telemetry-xe-ptp-port",
+    "dictionaryType": "custom",
+    "dimensions": [
+      {
+        "analyticsName": "monitoredObjectId",
+        "dataType": "string",
+        "rawName": "monitoredObjectId"
+      },
+      {
+        "analyticsName": "monitoredObjectName",
+        "dataType": "string",
+        "rawName": "monitoredObjectName"
+      },
+      {
+        "analyticsName": "timestamp",
+        "dataType": "long",
+        "rawName": "timestamp"
+      },
+      {
+        "analyticsName": "direction",
+        "dataType": "integer",
+        "rawName": "direction"
+      },
+      {
+        "analyticsName": "agentId",
+        "dataType": "string",
+        "rawName": "agentId"
+      },
+      {
+        "analyticsName": "agentName",
+        "dataType": "string",
+        "rawName": "agentName"
+      },
+      {
+        "analyticsName": "agentType",
+        "dataType": "string",
+        "rawName": "agentType"
+      },
+      {
+        "analyticsName": "objectType",
+        "dataType": "string",
+        "rawName": "objectType"
+      },
+      {
+        "analyticsName": "sessionId",
+        "dataType": "string",
+        "rawName": "sessionId"
+      },
+      {
+        "analyticsName": "sessionName",
+        "dataType": "string",
+        "rawName": "sessionName"
+      },
+      {
+        "analyticsName": "source",
+        "dataType": "string",
+        "rawName": "source"
+      },
+      {
+        "analyticsName": "if_name",
+        "dataType": "string",
+        "rawName": "if_name"
+      },
+      {
+        "analyticsName": "ptp_clock_id",
+        "dataType": "string",
+        "rawName": "ptp_clock_id"
+      },
+      {
+        "analyticsName": "port_number",
+        "dataType": "string",
+        "rawName": "port_number"
+      },
+      {
+        "analyticsName": "port_state",
+        "dataType": "string",
+        "rawName": "port_state"
+      },
+      {
+        "analyticsName": "ptp_vlan_id",
+        "dataType": "string",
+        "rawName": "ptp_vlan_id"
+      }
+    ],
+    "lastModifiedTimestamp": 1781371186572,
+    "metricType": "timeseries",
+    "metrics": [
+      {
+        "analyticsName": "peerMeanPathDelay",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_port_peer_mean_path_delay_ns",
+        "sqlExpr": "cast(`xe_ptp_port_peer_mean_path_delay_ns` as DOUBLE) / 1000",
+        "unit": "\u03bcs"
+      },
+      {
+        "analyticsName": "syncFaultLimit",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_port_sync_fault_limit_ns",
+        "sqlExpr": "cast(`xe_ptp_port_sync_fault_limit_ns` as DOUBLE) / 1000",
+        "unit": "\u03bcs"
+      },
+      {
+        "analyticsName": "announceReceiptTimeout",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_port_announce_receipt_timeout_count",
+        "unit": "value"
+      },
+      {
+        "analyticsName": "portEnabled",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_port_port_enabled",
+        "unit": "bool"
+      },
+      {
+        "analyticsName": "ptpVlanIdValid",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_port_ptp_vlan_id_valid",
+        "unit": "bool"
+      },
+      {
+        "analyticsName": "tagNativeVlan",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_port_tag_native_vlan",
+        "unit": "bool"
+      },
+      {
+        "analyticsName": "logMeanAnnounceInterval",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_port_log_mean_announce_interval",
+        "unit": "value"
+      },
+      {
+        "analyticsName": "logMeanSyncInterval",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_port_log_mean_sync_interval",
+        "unit": "value"
+      },
+      {
+        "analyticsName": "logMinMeanPdelayReqInterval",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_port_log_min_mean_pdelay_req_interval",
+        "unit": "value"
+      },
+      {
+        "analyticsName": "logMinMeanDelayReqInterval",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_port_log_min_mean_delay_req_interval",
+        "unit": "value"
+      }
+    ],
+    "objectType": "cisco-telemetry-xe-ptp-port",
+    "tenantId": "9ca4447b-e32a-4dc2-af71-2a1219cc3373",
+    "vendor": "cisco"
+  },
+  "id": "cisco-cisco-telemetry-xe-ptp-port",
+  "type": "ingestionDictionaries"
+}

@@ -1,0 +1,22 @@
+{
+  "cisco-telemetry-xe-bgp-neighbor": {
+    "delta": {
+      "metrics": [
+        "xe_bgp_neighbors_bgp_neighbor_counters_sent_opens",
+        "xe_bgp_neighbors_bgp_neighbor_counters_sent_updates",
+        "xe_bgp_neighbors_bgp_neighbor_counters_sent_notifications",
+        "xe_bgp_neighbors_bgp_neighbor_counters_sent_keepalives",
+        "xe_bgp_neighbors_bgp_neighbor_counters_sent_route_refreshes",
+        "xe_bgp_neighbors_bgp_neighbor_counters_received_opens",
+        "xe_bgp_neighbors_bgp_neighbor_counters_received_updates",
+        "xe_bgp_neighbors_bgp_neighbor_counters_received_notifications",
+        "xe_bgp_neighbors_bgp_neighbor_counters_received_keepalives",
+        "xe_bgp_neighbors_bgp_neighbor_counters_received_route_refreshes",
+        "xe_bgp_neighbors_prefix_activity_sent_implicit_withdraw",
+        "xe_bgp_neighbors_prefix_activity_sent_explicit_withdraw",
+        "xe_bgp_neighbors_prefix_activity_received_implicit_withdraw",
+        "xe_bgp_neighbors_prefix_activity_received_explicit_withdraw"
+      ]
+    }
+  }
+}

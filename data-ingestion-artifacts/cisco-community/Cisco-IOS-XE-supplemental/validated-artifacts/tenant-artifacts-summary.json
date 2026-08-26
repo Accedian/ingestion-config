@@ -1,0 +1,47 @@
+{
+  "validationSource": "sanitized IOS XE validation tenant",
+  "capturePurpose": "Validated tenant artifacts for IOS XE supplemental BGP/environment telemetry smoke test",
+  "dictionaries": {
+    "bgp": {
+      "status": 200,
+      "id": "cisco-cisco-telemetry-xe-bgp-neighbor",
+      "rev": "2-028ff2daa988a757c4524d84a313da64",
+      "dictionaryType": "custom",
+      "vendor": "cisco",
+      "metricCount": 33,
+      "dimensionCount": 21,
+      "units": [
+        "bytes",
+        "sec",
+        "value"
+      ],
+      "directions": [
+        "-1"
+      ]
+    },
+    "environment": {
+      "status": 200,
+      "id": "cisco-cisco-telemetry-xe-environment-sensor",
+      "rev": "2-b298e5fa81721d7a07dc4adce79a9cdc",
+      "dictionaryType": "custom",
+      "vendor": "cisco",
+      "metricCount": 41,
+      "dimensionCount": 11,
+      "units": [
+        "deg_c",
+        "value",
+        "volt"
+      ],
+      "directions": [
+        "-1"
+      ]
+    }
+  },
+  "files": [
+    "tenant-dictionaries/cisco-cisco-telemetry-xe-bgp-neighbor.live.json",
+    "tenant-dictionaries/cisco-cisco-telemetry-xe-environment-sensor.live.json",
+    "tenant-profile/ingestion-profiles.snapshot.json",
+    "tenant-staging/cisco-telemetry-xe-bgp-neighbor.specification.live.json",
+    "tenant-staging/cisco-telemetry-xe-environment-sensor.specification.live.json"
+  ]
+}

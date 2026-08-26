@@ -1,0 +1,106 @@
+{
+  "attributes": {
+    "_id": "cisco-cisco-telemetry-xe-ptp-correction-stats",
+    "_rev": "4-10eb96cfd21981c77305c92fa5b65615",
+    "createdTimestamp": 1781297509277,
+    "customMetrics": null,
+    "dictionaryName": "cisco-cisco-telemetry-xe-ptp-correction-stats",
+    "dictionaryType": "custom",
+    "dimensions": [
+      {
+        "analyticsName": "monitoredObjectId",
+        "dataType": "string",
+        "rawName": "monitoredObjectId"
+      },
+      {
+        "analyticsName": "monitoredObjectName",
+        "dataType": "string",
+        "rawName": "monitoredObjectName"
+      },
+      {
+        "analyticsName": "timestamp",
+        "dataType": "long",
+        "rawName": "timestamp"
+      },
+      {
+        "analyticsName": "direction",
+        "dataType": "integer",
+        "rawName": "direction"
+      },
+      {
+        "analyticsName": "agentId",
+        "dataType": "string",
+        "rawName": "agentId"
+      },
+      {
+        "analyticsName": "agentName",
+        "dataType": "string",
+        "rawName": "agentName"
+      },
+      {
+        "analyticsName": "agentType",
+        "dataType": "string",
+        "rawName": "agentType"
+      },
+      {
+        "analyticsName": "objectType",
+        "dataType": "string",
+        "rawName": "objectType"
+      },
+      {
+        "analyticsName": "sessionId",
+        "dataType": "string",
+        "rawName": "sessionId"
+      },
+      {
+        "analyticsName": "sessionName",
+        "dataType": "string",
+        "rawName": "sessionName"
+      },
+      {
+        "analyticsName": "source",
+        "dataType": "string",
+        "rawName": "source"
+      },
+      {
+        "analyticsName": "if_name",
+        "dataType": "string",
+        "rawName": "if_name"
+      },
+      {
+        "analyticsName": "subordinate_port",
+        "dataType": "string",
+        "rawName": "subordinate_port"
+      }
+    ],
+    "lastModifiedTimestamp": 1781370791821,
+    "metricType": "timeseries",
+    "metrics": [
+      {
+        "analyticsName": "correctionOffset",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_correction_stats_correction_offset_ns",
+        "sqlExpr": "cast(`xe_ptp_correction_stats_correction_offset_ns` as DOUBLE) / 1000",
+        "unit": "\u03bcs"
+      },
+      {
+        "analyticsName": "correctionMeanPathDelay",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_correction_stats_correction_mean_path_delay_ns",
+        "sqlExpr": "cast(`xe_ptp_correction_stats_correction_mean_path_delay_ns` as DOUBLE) / 1000",
+        "unit": "\u03bcs"
+      }
+    ],
+    "objectType": "cisco-telemetry-xe-ptp-correction-stats",
+    "tenantId": "9ca4447b-e32a-4dc2-af71-2a1219cc3373",
+    "vendor": "cisco"
+  },
+  "id": "cisco-cisco-telemetry-xe-ptp-correction-stats",
+  "type": "ingestionDictionaries"
+}

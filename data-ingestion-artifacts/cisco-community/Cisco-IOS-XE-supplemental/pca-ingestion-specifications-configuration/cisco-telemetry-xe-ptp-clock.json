@@ -1,0 +1,233 @@
+{
+  "dataType": "ingestion-specification",
+  "family": "cisco",
+  "objectType": "cisco-telemetry-xe-ptp-clock",
+  "permissions": "ReadWrite",
+  "state": "Published",
+  "tenantId": "9ca4447b-e32a-4dc2-af71-2a1219cc3373",
+  "transformations": {
+    "enhancement": {
+      "metrics": []
+    },
+    "ingestion": [],
+    "normalization": {
+      "dimensions": [
+        {
+          "output": "monitoredObjectId",
+          "source": "monitoredObjectId",
+          "type": "string"
+        },
+        {
+          "output": "monitoredObjectName",
+          "source": "monitoredObjectName",
+          "type": "string"
+        },
+        {
+          "output": "timestamp",
+          "source": "timestamp",
+          "type": "long"
+        },
+        {
+          "output": "direction",
+          "source": "direction",
+          "type": "integer"
+        },
+        {
+          "output": "agentId",
+          "source": "agentId",
+          "type": "string"
+        },
+        {
+          "output": "agentName",
+          "source": "agentName",
+          "type": "string"
+        },
+        {
+          "output": "agentType",
+          "source": "agentType",
+          "type": "string"
+        },
+        {
+          "output": "objectType",
+          "source": "objectType",
+          "type": "string"
+        },
+        {
+          "output": "sessionId",
+          "source": "sessionId",
+          "type": "string"
+        },
+        {
+          "output": "sessionName",
+          "source": "sessionName",
+          "type": "string"
+        },
+        {
+          "output": "source",
+          "source": "source",
+          "type": "string"
+        },
+        {
+          "output": "clock_domain",
+          "source": "clock_domain",
+          "type": "string"
+        },
+        {
+          "output": "ptp_device_type",
+          "source": "ptp_device_type",
+          "type": "string"
+        },
+        {
+          "output": "ptp_clock_id",
+          "source": "ptp_clock_id",
+          "type": "string"
+        },
+        {
+          "output": "clock_priority1",
+          "source": "clock_priority1",
+          "type": "string"
+        },
+        {
+          "output": "clock_priority2",
+          "source": "clock_priority2",
+          "type": "string"
+        },
+        {
+          "output": "ptp_local_clock_priority",
+          "source": "ptp_local_clock_priority",
+          "type": "string"
+        },
+        {
+          "output": "profile",
+          "source": "profile",
+          "type": "string"
+        },
+        {
+          "output": "clock_accuracy",
+          "source": "clock_accuracy",
+          "type": "string"
+        },
+        {
+          "output": "transport_protocol",
+          "source": "transport_protocol",
+          "type": "string"
+        },
+        {
+          "output": "delay_mechanism",
+          "source": "delay_mechanism",
+          "type": "string"
+        },
+        {
+          "output": "time_source",
+          "source": "time_source",
+          "type": "string"
+        }
+      ],
+      "metrics": [
+        {
+          "directions": [
+            "-1"
+          ],
+          "expression": "cast(`xe_ptp_clock_offset_from_master_ns` as DOUBLE) / 1000",
+          "output": "offsetFromMaster",
+          "source": "xe_ptp_clock_offset_from_master_ns",
+          "type": "double",
+          "units": "μs"
+        },
+        {
+          "directions": [
+            "-1"
+          ],
+          "output": "clockOffsetScaledLogVariance",
+          "source": "xe_ptp_clock_clock_offset_scaled_log_variance",
+          "type": "double",
+          "units": "value"
+        },
+        {
+          "directions": [
+            "-1"
+          ],
+          "output": "dscpEvent",
+          "source": "xe_ptp_clock_dscp_event",
+          "type": "double",
+          "units": "value"
+        },
+        {
+          "directions": [
+            "-1"
+          ],
+          "output": "clockClass",
+          "source": "xe_ptp_clock_clock_class",
+          "type": "double",
+          "units": "value"
+        },
+        {
+          "directions": [
+            "-1"
+          ],
+          "expression": "cast(`xe_ptp_clock_max_offset_from_master_ns` as DOUBLE) / 1000",
+          "output": "maxOffsetFromMaster",
+          "source": "xe_ptp_clock_max_offset_from_master_ns",
+          "type": "double",
+          "units": "μs"
+        },
+        {
+          "directions": [
+            "-1"
+          ],
+          "output": "numPtpPorts",
+          "source": "xe_ptp_clock_num_ptp_ports_count",
+          "type": "double",
+          "units": "value"
+        },
+        {
+          "directions": [
+            "-1"
+          ],
+          "expression": "cast(`xe_ptp_clock_mean_path_delay_ns` as DOUBLE) / 1000",
+          "output": "meanPathDelay",
+          "source": "xe_ptp_clock_mean_path_delay_ns",
+          "type": "double",
+          "units": "μs"
+        },
+        {
+          "directions": [
+            "-1"
+          ],
+          "output": "timescaleIsPtp",
+          "source": "xe_ptp_clock_timescale_is_ptp",
+          "type": "double",
+          "units": "bool"
+        },
+        {
+          "directions": [
+            "-1"
+          ],
+          "output": "stepsRemoved",
+          "source": "xe_ptp_clock_steps_removed_count",
+          "type": "double",
+          "units": "value"
+        },
+        {
+          "directions": [
+            "-1"
+          ],
+          "output": "currentUtcOffset",
+          "source": "xe_ptp_clock_current_utc_offset_seconds",
+          "type": "double",
+          "units": "sec"
+        },
+        {
+          "directions": [
+            "-1"
+          ],
+          "output": "dscpGeneral",
+          "source": "xe_ptp_clock_dscp_general",
+          "type": "double",
+          "units": "value"
+        }
+      ]
+    }
+  },
+  "version": "0.0.2"
+}

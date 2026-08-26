@@ -1,0 +1,233 @@
+{
+  "attributes": {
+    "_id": "cisco-cisco-telemetry-xe-ptp-clock",
+    "_rev": "6-b00a16d8a03f8cf517507db902677de6",
+    "createdTimestamp": 1781294603675,
+    "customMetrics": null,
+    "dictionaryName": "cisco-cisco-telemetry-xe-ptp-clock",
+    "dictionaryType": "custom",
+    "dimensions": [
+      {
+        "analyticsName": "monitoredObjectId",
+        "dataType": "string",
+        "rawName": "monitoredObjectId"
+      },
+      {
+        "analyticsName": "monitoredObjectName",
+        "dataType": "string",
+        "rawName": "monitoredObjectName"
+      },
+      {
+        "analyticsName": "timestamp",
+        "dataType": "long",
+        "rawName": "timestamp"
+      },
+      {
+        "analyticsName": "direction",
+        "dataType": "integer",
+        "rawName": "direction"
+      },
+      {
+        "analyticsName": "agentId",
+        "dataType": "string",
+        "rawName": "agentId"
+      },
+      {
+        "analyticsName": "agentName",
+        "dataType": "string",
+        "rawName": "agentName"
+      },
+      {
+        "analyticsName": "agentType",
+        "dataType": "string",
+        "rawName": "agentType"
+      },
+      {
+        "analyticsName": "objectType",
+        "dataType": "string",
+        "rawName": "objectType"
+      },
+      {
+        "analyticsName": "sessionId",
+        "dataType": "string",
+        "rawName": "sessionId"
+      },
+      {
+        "analyticsName": "sessionName",
+        "dataType": "string",
+        "rawName": "sessionName"
+      },
+      {
+        "analyticsName": "source",
+        "dataType": "string",
+        "rawName": "source"
+      },
+      {
+        "analyticsName": "clock_domain",
+        "dataType": "string",
+        "rawName": "clock_domain"
+      },
+      {
+        "analyticsName": "ptp_device_type",
+        "dataType": "string",
+        "rawName": "ptp_device_type"
+      },
+      {
+        "analyticsName": "ptp_clock_id",
+        "dataType": "string",
+        "rawName": "ptp_clock_id"
+      },
+      {
+        "analyticsName": "clock_priority1",
+        "dataType": "string",
+        "rawName": "clock_priority1"
+      },
+      {
+        "analyticsName": "clock_priority2",
+        "dataType": "string",
+        "rawName": "clock_priority2"
+      },
+      {
+        "analyticsName": "ptp_local_clock_priority",
+        "dataType": "string",
+        "rawName": "ptp_local_clock_priority"
+      },
+      {
+        "analyticsName": "profile",
+        "dataType": "string",
+        "rawName": "profile"
+      },
+      {
+        "analyticsName": "clock_accuracy",
+        "dataType": "string",
+        "rawName": "clock_accuracy"
+      },
+      {
+        "analyticsName": "transport_protocol",
+        "dataType": "string",
+        "rawName": "transport_protocol"
+      },
+      {
+        "analyticsName": "delay_mechanism",
+        "dataType": "string",
+        "rawName": "delay_mechanism"
+      },
+      {
+        "analyticsName": "time_source",
+        "dataType": "string",
+        "rawName": "time_source"
+      }
+    ],
+    "lastModifiedTimestamp": 1781371097745,
+    "metricType": "timeseries",
+    "metrics": [
+      {
+        "analyticsName": "offsetFromMaster",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_clock_offset_from_master_ns",
+        "sqlExpr": "cast(`xe_ptp_clock_offset_from_master_ns` as DOUBLE) / 1000",
+        "unit": "\u03bcs"
+      },
+      {
+        "analyticsName": "clockOffsetScaledLogVariance",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_clock_clock_offset_scaled_log_variance",
+        "unit": "value"
+      },
+      {
+        "analyticsName": "dscpEvent",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_clock_dscp_event",
+        "unit": "value"
+      },
+      {
+        "analyticsName": "clockClass",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_clock_clock_class",
+        "unit": "value"
+      },
+      {
+        "analyticsName": "maxOffsetFromMaster",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_clock_max_offset_from_master_ns",
+        "sqlExpr": "cast(`xe_ptp_clock_max_offset_from_master_ns` as DOUBLE) / 1000",
+        "unit": "\u03bcs"
+      },
+      {
+        "analyticsName": "numPtpPorts",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_clock_num_ptp_ports_count",
+        "unit": "value"
+      },
+      {
+        "analyticsName": "meanPathDelay",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_clock_mean_path_delay_ns",
+        "sqlExpr": "cast(`xe_ptp_clock_mean_path_delay_ns` as DOUBLE) / 1000",
+        "unit": "\u03bcs"
+      },
+      {
+        "analyticsName": "timescaleIsPtp",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_clock_timescale_is_ptp",
+        "unit": "bool"
+      },
+      {
+        "analyticsName": "stepsRemoved",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_clock_steps_removed_count",
+        "unit": "value"
+      },
+      {
+        "analyticsName": "currentUtcOffset",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_clock_current_utc_offset_seconds",
+        "unit": "sec"
+      },
+      {
+        "analyticsName": "dscpGeneral",
+        "dataType": "double",
+        "directions": [
+          "-1"
+        ],
+        "rawName": "xe_ptp_clock_dscp_general",
+        "unit": "value"
+      }
+    ],
+    "objectType": "cisco-telemetry-xe-ptp-clock",
+    "tenantId": "9ca4447b-e32a-4dc2-af71-2a1219cc3373",
+    "vendor": "cisco"
+  },
+  "id": "cisco-cisco-telemetry-xe-ptp-clock",
+  "type": "ingestionDictionaries"
+}

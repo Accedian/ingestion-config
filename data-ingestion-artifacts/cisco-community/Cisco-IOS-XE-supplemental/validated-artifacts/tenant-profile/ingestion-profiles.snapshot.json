@@ -1,0 +1,2136 @@
+{
+  "status": 200,
+  "headers": {
+    "Date": "Mon, 01 Jun 2026 21:50:13 GMT",
+    "Content-Type": "application/vnd.api+json",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block;",
+    "Cache-Control": "no-cache, no-store, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "Content-Security-Policy": "default-src 'self' https://buff-stage.cisco.com; frame-ancestors 'self'; worker-src 'self' blob: ; frame-src 'self' https://app.vidcast.io https://www.youtube.com; script-src 'self' 'unsafe-eval' https://js.userpilot.io https://app.intercom.io https://widget.intercom.io https://js.intercomcdn.com https://cdn.logrocket.io https://cdn.lr-ingest.io https://cdn.lr-in.com https://cdn.lr-in-prod.com https://cdn.lr-ingest.com https://cdn.ingest-lr.com https://cdn.lr-intake.com https://cdn.intake-lr.com https://cdn.logr-ingest.com https://cdn.lrkt-in.com https://cdn.lgrckt-in.com https://inproductexperience.cisco.com https://sdk.amazonaws.com https://buff-stage.cisco.com https://buffwidget-stage.cisco.com https://buff-ai-stage.cisco.com; base-uri 'self' https://widget.intercom.io https://js.intercomcdn.com; connect-src 'self' https://*.europe5.analytics.accedian.io/ https://auth.europe5.analytics.accedian.io:3443 https://events.mapbox.com https://api.mapbox.com https://api.maptiler.com/ wss://js.userpilot.io deploy.userpilot.io wss://api.userpilot.io https://api.sendgrid.com/v3/templates https://dns.google https://api.intercom.io https://api-iam.intercom.io https://api-ping.intercom.io https://nexus-websocket-a.intercom.io https://nexus-websocket-b.intercom.io https://nexus-long-poller-a.intercom.io https://nexus-long-poller-b.intercom.io wss://nexus-websocket-a.intercom.io wss://nexus-websocket-b.intercom.io https://uploads.intercomcdn.com https://uploads.intercomusercontent.com https://*.logrocket.io https://*.lr-ingest.io https://*.logrocket.com https://*.lr-in.com https://*.lr-in-prod.com https://*.lr-ingest.com https://*.ingest-lr.com https://*.lr-intake.com https://*.intake-lr.com https://*.logr-ingest.com https://*.lrkt-in.com https://*.lgrckt-in.com https://buffapi-stage.cisco.com https://int-id.cisco.com https://buff-stage.cisco.com wss://buff-stage.cisco.com/socket wss://buffwidget-stage.cisco.com/socket https://inproductexperience-aws.cisco.com https://inproductexperience.cisco.com https://checkip.amazonaws.com https://buff-ai-stage.cisco.com wss://buff-ai-stage.cisco.com/socket; child-src 'self' https://share.intercom.io https://intercom-sheets.com https://www.intercom-reporting.com https://www.youtube.com https://player.vimeo.com https://fast.wistia.net; img-src 'self' uploads.userpilot.io data: *.basemaps.cartocdn.com https://api.maptiler.com https://*.tile.maptiler.com/ accedian.com https://downloads.intercomcdn.com https://uploads.intercomusercontent.com https://gifs.intercomcdn.com https://intercom.help https://static.intercomassets.com https://i.ibb.co https://static.intercomcdn.com https://js.intercomcdn.com blob: data: https://static.intercomassets.com https://downloads.intercomcdn.com https://uploads.intercomusercontent.com https://gifs.intercomcdn.com https://video-messages.intercomcdn.com https://messenger-apps.intercom.io https://*.intercom-attachments-5.com https://*.intercom-attachments-6.com https://*.intercom-attachments-9.com https://buff-stage.cisco.com https://buffwidget-stage.cisco.com https://buff-ai-stage.cisco.com https://inproductexperience-aws.cisco.com; media-src data: blob: https://js.intercomcdn.com https://video-messages.intercomcdn.com; style-src 'self' 'unsafe-inline' https://api.mapbox.com https://api.maptiler.com/ https://fonts.googleapis.com https://cloud.typography.com https://buff-stage.cisco.com https://buffwidget-stage.cisco.com https://inproductexperience.cisco.com https://buff-ai-stage.cisco.com; font-src 'self' https://api.mapbox.com https://api.maptiler.com/ https://fonts.gstatic.com data: https://js.intercomcdn.com https://fonts.intercomcdn.com https://buff-stage.cisco.com https://buff-ai-stage.cisco.com;; form-action 'self' https://*.europe5.analytics.accedian.io/ https://auth.europe5.analytics.accedian.io:3443 https://api-iam.intercom.io https://apihub.document360.io/v1/Intercom/sheet https://intercom.help;",
+    "Host": "sanitized-ios-xe-validation-tenant.example",
+    "Strict-Transport-Security": "max-age=15768000; includeSubDomains"
+  },
+  "body": {
+    "data": [
+      {
+        "attributes": {
+          "_id": "e32f3987-f361-4cac-8c70-edd46370475f",
+          "_rev": "16-4669d6c5499c0be65148b7421bcdf304",
+          "createdTimestamp": 1646753191771,
+          "datatype": "ingestionProfile",
+          "flags": null,
+          "lastModifiedTimestamp": 1780348710849,
+          "metricList": [
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "delayMax",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "delayMax",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "delayMax",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "delayP95",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "delayP95",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "delayP95",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "jitterMax",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "jitterMax",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "jitterMax",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "packetsReceived",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "packetsReceived",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "packetsReceived",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "packetsLost",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "packetsLost",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "packetsLost",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "packetsLostPct",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "packetsLostPct",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "packetsLostPct",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": false,
+              "metric": "delayPHi",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": false,
+              "metric": "delayPHi",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": false,
+              "metric": "delayPHi",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "delayVarP95",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "delayVarP95",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "delayVarP95",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": false,
+              "metric": "delayVarPHi",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": false,
+              "metric": "delayVarPHi",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": false,
+              "metric": "delayVarPHi",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "jitterP95",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "jitterP95",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "jitterP95",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": false,
+              "metric": "jitterPHi",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": false,
+              "metric": "jitterPHi",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": false,
+              "metric": "jitterPHi",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "lostBurstMax",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "lostBurstMax",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "lostBurstMax",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "delayPHi",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "delayPHi",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "delayPHi",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "delayVarPHi",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "delayVarPHi",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "delayVarPHi",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "jitterP95",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "jitterP95",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "jitterP95",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "packetsLost",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "packetsLost",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "packetsLost",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "packetsReceived",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "packetsReceived",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "packetsReceived",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "delayMax",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "delayMax",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "delayMax",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "delayVarP95",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "delayVarP95",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "delayVarP95",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "jitterMax",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "jitterMax",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "jitterMax",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "jitterPHi",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "jitterPHi",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "jitterPHi",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "lostBurstMax",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "lostBurstMax",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "lostBurstMax",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "packetsLostPct",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "packetsLostPct",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "packetsLostPct",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "delayP95",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "delayP95",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "delayP95",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": false,
+              "metric": "packetsReceived",
+              "monitoredObjectType": "twamp-pe",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": false,
+              "metric": "packetsReceived",
+              "monitoredObjectType": "twamp-pe",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": false,
+              "metric": "packetsReceived",
+              "monitoredObjectType": "twamp-pe",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": false,
+              "metric": "delayMax",
+              "monitoredObjectType": "twamp-pe",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": false,
+              "metric": "delayMax",
+              "monitoredObjectType": "twamp-pe",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": false,
+              "metric": "delayMax",
+              "monitoredObjectType": "twamp-pe",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": false,
+              "metric": "lostBurstMax",
+              "monitoredObjectType": "twamp-pe",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": false,
+              "metric": "lostBurstMax",
+              "monitoredObjectType": "twamp-pe",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": false,
+              "metric": "lostBurstMax",
+              "monitoredObjectType": "twamp-pe",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": false,
+              "metric": "packetsLost",
+              "monitoredObjectType": "twamp-pe",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": false,
+              "metric": "packetsLost",
+              "monitoredObjectType": "twamp-pe",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": false,
+              "metric": "packetsLost",
+              "monitoredObjectType": "twamp-pe",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": false,
+              "metric": "packetsLostPct",
+              "monitoredObjectType": "twamp-pe",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": false,
+              "metric": "packetsLostPct",
+              "monitoredObjectType": "twamp-pe",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": false,
+              "metric": "packetsLostPct",
+              "monitoredObjectType": "twamp-pe",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "throughputMax",
+              "monitoredObjectType": "flowmeter",
+              "vendor": "accedian-flowmeter"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": false,
+              "metric": "throughputMin",
+              "monitoredObjectType": "flowmeter",
+              "vendor": "accedian-flowmeter"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "bytesReceived",
+              "monitoredObjectType": "flowmeter",
+              "vendor": "accedian-flowmeter"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "packetsReceived",
+              "monitoredObjectType": "flowmeter",
+              "vendor": "accedian-flowmeter"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "throughputAvg",
+              "monitoredObjectType": "flowmeter",
+              "vendor": "accedian-flowmeter"
+            },
+            {
+              "direction": "0",
+              "enabled": true,
+              "metric": "duration",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "1",
+              "enabled": true,
+              "metric": "duration",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "2",
+              "enabled": true,
+              "metric": "duration",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "0",
+              "enabled": true,
+              "metric": "duration",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "1",
+              "enabled": true,
+              "metric": "duration",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "2",
+              "enabled": true,
+              "metric": "duration",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "0",
+              "enabled": true,
+              "metric": "duration",
+              "monitoredObjectType": "twamp-pe",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "1",
+              "enabled": true,
+              "metric": "duration",
+              "monitoredObjectType": "twamp-pe",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "2",
+              "enabled": true,
+              "metric": "duration",
+              "monitoredObjectType": "twamp-pe",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "0",
+              "enabled": true,
+              "metric": "duration",
+              "monitoredObjectType": "flowmeter",
+              "vendor": "accedian-flowmeter"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "fCongestion",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "fCongestion",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "fCongestion",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "delayP25",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "delayP25",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "delayP25",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "delayVarP25",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "delayVarP25",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "delayVarP25",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "ipTOSMax",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "ipTOSMax",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "ipTOSMax",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "mos",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "mos",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "mos",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "packetsDuplicated",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "packetsDuplicated",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "packetsDuplicated",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "packetsMisordered",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "packetsMisordered",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "packetsMisordered",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "ttlMax",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "ttlMax",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "ttlMax",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "delayMin",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": true,
+              "metric": "delayMin",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": true,
+              "metric": "delayMin",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": false,
+              "metric": "delayVarMax",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": false,
+              "metric": "delayVarMax",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": false,
+              "metric": "delayVarMax",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": false,
+              "metric": "packetsTooLate",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "1",
+              "enabled": false,
+              "metric": "packetsTooLate",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "dimensions": {},
+              "direction": "2",
+              "enabled": false,
+              "metric": "packetsTooLate",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "0",
+              "enabled": true,
+              "metric": "syncState",
+              "monitoredObjectType": "eth-lb",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "0",
+              "enabled": true,
+              "metric": "syncQuality",
+              "monitoredObjectType": "eth-lb",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "1",
+              "enabled": true,
+              "metric": "syncState",
+              "monitoredObjectType": "eth-lb",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "1",
+              "enabled": true,
+              "metric": "syncQuality",
+              "monitoredObjectType": "eth-lb",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "2",
+              "enabled": true,
+              "metric": "syncState",
+              "monitoredObjectType": "eth-lb",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "2",
+              "enabled": true,
+              "metric": "syncQuality",
+              "monitoredObjectType": "eth-lb",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "0",
+              "enabled": true,
+              "metric": "syncState",
+              "monitoredObjectType": "eth-vs",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "0",
+              "enabled": true,
+              "metric": "syncQuality",
+              "monitoredObjectType": "eth-vs",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "1",
+              "enabled": true,
+              "metric": "syncState",
+              "monitoredObjectType": "eth-vs",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "1",
+              "enabled": true,
+              "metric": "syncQuality",
+              "monitoredObjectType": "eth-vs",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "2",
+              "enabled": true,
+              "metric": "syncState",
+              "monitoredObjectType": "eth-vs",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "2",
+              "enabled": true,
+              "metric": "syncQuality",
+              "monitoredObjectType": "eth-vs",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "0",
+              "enabled": true,
+              "metric": "syncState",
+              "monitoredObjectType": "eth-dm",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "0",
+              "enabled": true,
+              "metric": "syncQuality",
+              "monitoredObjectType": "eth-dm",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "1",
+              "enabled": true,
+              "metric": "syncState",
+              "monitoredObjectType": "eth-dm",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "1",
+              "enabled": true,
+              "metric": "syncQuality",
+              "monitoredObjectType": "eth-dm",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "2",
+              "enabled": true,
+              "metric": "syncState",
+              "monitoredObjectType": "eth-dm",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "2",
+              "enabled": true,
+              "metric": "syncQuality",
+              "monitoredObjectType": "eth-dm",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "0",
+              "enabled": true,
+              "metric": "syncState",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "0",
+              "enabled": true,
+              "metric": "syncQuality",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "1",
+              "enabled": true,
+              "metric": "syncState",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "1",
+              "enabled": true,
+              "metric": "syncQuality",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "2",
+              "enabled": true,
+              "metric": "syncState",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "2",
+              "enabled": true,
+              "metric": "syncQuality",
+              "monitoredObjectType": "twamp-sl",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "0",
+              "enabled": true,
+              "metric": "syncState",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "0",
+              "enabled": true,
+              "metric": "syncQuality",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "1",
+              "enabled": true,
+              "metric": "syncState",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "1",
+              "enabled": true,
+              "metric": "syncQuality",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "2",
+              "enabled": true,
+              "metric": "syncState",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "2",
+              "enabled": true,
+              "metric": "syncQuality",
+              "monitoredObjectType": "twamp-sf",
+              "vendor": "accedian-twamp"
+            },
+            {
+              "direction": "0",
+              "enabled": true,
+              "metric": "duration",
+              "monitoredObjectType": "eth-dm",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "1",
+              "enabled": true,
+              "metric": "duration",
+              "monitoredObjectType": "eth-dm",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "2",
+              "enabled": true,
+              "metric": "duration",
+              "monitoredObjectType": "eth-dm",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "0",
+              "enabled": true,
+              "metric": "duration",
+              "monitoredObjectType": "eth-vs",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "1",
+              "enabled": true,
+              "metric": "duration",
+              "monitoredObjectType": "eth-vs",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "direction": "2",
+              "enabled": true,
+              "metric": "duration",
+              "monitoredObjectType": "eth-vs",
+              "vendor": "accedian-dmm"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "crcErrors",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "rxBps",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "txBps",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "packetsReceived",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "packetsSent",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "outputUtilization",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "outputUnicastPkts",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "outputPacketRate",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": false,
+              "metric": "outputMulticastPkts",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "outputDataRate",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "numFlaps",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "outputErrors",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "outputDiscards",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": false,
+              "metric": "outputBroadcastPkts",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "inputDataRate",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "inputErrors",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": false,
+              "metric": "inputBroadcastPkts",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "inputDiscards",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": false,
+              "metric": "inputMulticastPkts",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "inputPacketRate",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "inputUnicastPkts",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "interfaceBandwidth",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "inputUtilization",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "0",
+              "enabled": true,
+              "metric": "inputUnknownProtos",
+              "monitoredObjectType": "cisco-telemetry-xe-interface",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "highestUsage",
+              "monitoredObjectType": "cisco-telemetry-xe-memory",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "lowestUsage",
+              "monitoredObjectType": "cisco-telemetry-xe-memory",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "memoryFree",
+              "monitoredObjectType": "cisco-telemetry-xe-memory",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "memoryPct",
+              "monitoredObjectType": "cisco-telemetry-xe-memory",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "memoryTotal",
+              "monitoredObjectType": "cisco-telemetry-xe-memory",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "memoryUsed",
+              "monitoredObjectType": "cisco-telemetry-xe-memory",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "cpuFiveMinutes",
+              "monitoredObjectType": "cisco-telemetry-xe-cpu",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "cpuFiveSeconds",
+              "monitoredObjectType": "cisco-telemetry-xe-cpu",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "cpuFiveSecondsIntr",
+              "monitoredObjectType": "cisco-telemetry-xe-cpu",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "cpuOneMinute",
+              "monitoredObjectType": "cisco-telemetry-xe-cpu",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "connectionTotalEstablished",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": false,
+              "metric": "holdTime",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "inputQueueDepth",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "installedPrefixes",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": false,
+              "metric": "keepaliveInterval",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "outputQueueDepth",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "receivedBestpaths",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "receivedCurrentPrefixes",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "receivedExplicitWithdraws",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "receivedImplicitWithdraws",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "receivedKeepalives",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "receivedMultipaths",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "receivedNotifications",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "receivedOpens",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "receivedRouteRefreshes",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "receivedTotalPrefixes",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "receivedUpdates",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "sentBestpaths",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "sentCurrentPrefixes",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "sentExplicitWithdraws",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "sentImplicitWithdraws",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "sentKeepalives",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "sentMultipaths",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "sentNotifications",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "sentOpens",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "sentRouteRefreshes",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "totalDropped",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "sentUpdates",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "sentTotalPrefixes",
+              "monitoredObjectType": "cisco-telemetry-xe-bgp-neighbor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "Temp_UADP_2_0_R0",
+              "monitoredObjectType": "cisco-telemetry-xe-environment-sensor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "Temp_UADP_1_0_R0",
+              "monitoredObjectType": "cisco-telemetry-xe-environment-sensor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "Temp_UADP_0_0_R0",
+              "monitoredObjectType": "cisco-telemetry-xe-environment-sensor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "HotSwap_Power_R0",
+              "monitoredObjectType": "cisco-telemetry-xe-environment-sensor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "HotSwap_Volts_R0",
+              "monitoredObjectType": "cisco-telemetry-xe-environment-sensor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "Temp_InltFrnt_1_0",
+              "monitoredObjectType": "cisco-telemetry-xe-environment-sensor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "Temp_InltRear_1_0",
+              "monitoredObjectType": "cisco-telemetry-xe-environment-sensor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "Temp_OtltFrnt_1_0",
+              "monitoredObjectType": "cisco-telemetry-xe-environment-sensor",
+              "vendor": "cisco"
+            },
+            {
+              "dimensions": {},
+              "direction": "-1",
+              "enabled": true,
+              "metric": "Temp_OtltRear_1_0",
+              "monitoredObjectType": "cisco-telemetry-xe-environment-sensor",
+              "vendor": "cisco"
+            }
+          ],
+          "metrics": {
+            "vendorMap": {
+              "accedian-dmm": {
+                "monitoredObjectTypeMap": {
+                  "eth-dm": {
+                    "metricMap": {
+                      "duration": true,
+                      "syncQuality": true,
+                      "syncState": true
+                    }
+                  },
+                  "eth-lb": {
+                    "metricMap": {
+                      "syncQuality": true,
+                      "syncState": true
+                    }
+                  },
+                  "eth-vs": {
+                    "metricMap": {
+                      "duration": true,
+                      "syncQuality": true,
+                      "syncState": true
+                    }
+                  }
+                }
+              },
+              "accedian-flowmeter": {
+                "monitoredObjectTypeMap": {
+                  "flowmeter": {
+                    "metricMap": {
+                      "bytesReceived": true,
+                      "duration": true,
+                      "packetsReceived": true,
+                      "throughputAvg": true,
+                      "throughputMax": true,
+                      "throughputMin": false
+                    }
+                  }
+                }
+              },
+              "accedian-twamp": {
+                "monitoredObjectTypeMap": {
+                  "twamp-pe": {
+                    "metricMap": {
+                      "delayMax": false,
+                      "duration": true,
+                      "lostBurstMax": false,
+                      "packetsLost": false,
+                      "packetsLostPct": false,
+                      "packetsReceived": false
+                    }
+                  },
+                  "twamp-sf": {
+                    "metricMap": {
+                      "delayMax": true,
+                      "delayMin": true,
+                      "delayP25": true,
+                      "delayP95": true,
+                      "delayPHi": false,
+                      "delayVarMax": false,
+                      "delayVarP25": true,
+                      "delayVarP95": true,
+                      "delayVarPHi": false,
+                      "duration": true,
+                      "fCongestion": true,
+                      "ipTOSMax": true,
+                      "jitterMax": true,
+                      "jitterP95": true,
+                      "jitterPHi": false,
+                      "lostBurstMax": true,
+                      "mos": true,
+                      "packetsDuplicated": true,
+                      "packetsLost": true,
+                      "packetsLostPct": true,
+                      "packetsMisordered": true,
+                      "packetsReceived": true,
+                      "packetsTooLate": false,
+                      "syncQuality": true,
+                      "syncState": true,
+                      "ttlMax": true
+                    }
+                  },
+                  "twamp-sl": {
+                    "metricMap": {
+                      "delayMax": true,
+                      "delayP95": true,
+                      "delayPHi": true,
+                      "delayVarP95": true,
+                      "delayVarPHi": true,
+                      "duration": true,
+                      "jitterMax": true,
+                      "jitterP95": true,
+                      "jitterPHi": true,
+                      "lostBurstMax": true,
+                      "packetsLost": true,
+                      "packetsLostPct": true,
+                      "packetsReceived": true,
+                      "syncQuality": true,
+                      "syncState": true
+                    }
+                  }
+                }
+              },
+              "cisco": {
+                "monitoredObjectTypeMap": {
+                  "cisco-telemetry-xe-bgp-neighbor": {
+                    "metricMap": {
+                      "connectionTotalEstablished": true,
+                      "holdTime": false,
+                      "inputQueueDepth": true,
+                      "installedPrefixes": true,
+                      "keepaliveInterval": false,
+                      "outputQueueDepth": true,
+                      "receivedBestpaths": true,
+                      "receivedCurrentPrefixes": true,
+                      "receivedExplicitWithdraws": true,
+                      "receivedImplicitWithdraws": true,
+                      "receivedKeepalives": true,
+                      "receivedMultipaths": true,
+                      "receivedNotifications": true,
+                      "receivedOpens": true,
+                      "receivedRouteRefreshes": true,
+                      "receivedTotalPrefixes": true,
+                      "receivedUpdates": true,
+                      "sentBestpaths": true,
+                      "sentCurrentPrefixes": true,
+                      "sentExplicitWithdraws": true,
+                      "sentImplicitWithdraws": true,
+                      "sentKeepalives": true,
+                      "sentMultipaths": true,
+                      "sentNotifications": true,
+                      "sentOpens": true,
+                      "sentRouteRefreshes": true,
+                      "sentTotalPrefixes": true,
+                      "sentUpdates": true,
+                      "totalDropped": true
+                    }
+                  },
+                  "cisco-telemetry-xe-cpu": {
+                    "metricMap": {
+                      "cpuFiveMinutes": true,
+                      "cpuFiveSeconds": true,
+                      "cpuFiveSecondsIntr": true,
+                      "cpuOneMinute": true
+                    }
+                  },
+                  "cisco-telemetry-xe-environment-sensor": {
+                    "metricMap": {
+                      "HotSwap_Power_R0": true,
+                      "HotSwap_Volts_R0": true,
+                      "Temp_InltFrnt_1_0": true,
+                      "Temp_InltRear_1_0": true,
+                      "Temp_OtltFrnt_1_0": true,
+                      "Temp_OtltRear_1_0": true,
+                      "Temp_UADP_0_0_R0": true,
+                      "Temp_UADP_1_0_R0": true,
+                      "Temp_UADP_2_0_R0": true
+                    }
+                  },
+                  "cisco-telemetry-xe-interface": {
+                    "metricMap": {
+                      "crcErrors": true,
+                      "inputBroadcastPkts": false,
+                      "inputDataRate": true,
+                      "inputDiscards": true,
+                      "inputErrors": true,
+                      "inputMulticastPkts": false,
+                      "inputPacketRate": true,
+                      "inputUnicastPkts": true,
+                      "inputUnknownProtos": true,
+                      "inputUtilization": true,
+                      "interfaceBandwidth": true,
+                      "numFlaps": true,
+                      "outputBroadcastPkts": false,
+                      "outputDataRate": true,
+                      "outputDiscards": true,
+                      "outputErrors": true,
+                      "outputMulticastPkts": false,
+                      "outputPacketRate": true,
+                      "outputUnicastPkts": true,
+                      "outputUtilization": true,
+                      "packetsReceived": true,
+                      "packetsSent": true,
+                      "rxBps": true,
+                      "txBps": true
+                    }
+                  },
+                  "cisco-telemetry-xe-memory": {
+                    "metricMap": {
+                      "highestUsage": true,
+                      "lowestUsage": true,
+                      "memoryFree": true,
+                      "memoryPct": true,
+                      "memoryTotal": true,
+                      "memoryUsed": true
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "tenantId": "f2d4d4bc-3765-4dd8-9a09-385677a4c8b9"
+        },
+        "id": "e32f3987-f361-4cac-8c70-edd46370475f",
+        "type": "ingestionProfiles"
+      }
+    ]
+  }
+}
