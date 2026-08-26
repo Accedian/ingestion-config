@@ -1,0 +1,664 @@
+{
+    "node_id_str": "l56",
+    "subscription_id_str": "app_TEST_200000001",
+    "encoding_path": "Cisco-IOS-XR-fib-common-oper:fib/nodes/node/protocols/protocol/vrfs/vrf/summary",
+    "collection_id": "4",
+    "collection_start_time": "1764800156415",
+    "msg_timestamp": "1764800156425",
+    "data_json": [
+        {
+            "timestamp": "1764800156423",
+            "keys": [
+                {
+                    "node-name": "0/RP0/CPU0"
+                },
+                {
+                    "protocol-name": "ipv4"
+                },
+                {
+                    "vrf-name": "default"
+                }
+            ],
+            "content": {
+                "prefix": "30:2e:30:2e:30:2e:30:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00",
+                "table-id": 3758096384,
+                "table-id-pointer": 2558401368,
+                "vrf-id": 1610612736,
+                "virtual-router-id": 536870912,
+                "load-balancing": "l4",
+                "forwarding-elements": 130,
+                "routes": 62,
+                "prefix-in-place-modifications": 0,
+                "stale-prefix-deletes": 0,
+                "load-sharing-elements": 62,
+                "load-sharing-references": "62",
+                "total-load-share-element-bytes": 37200,
+                "exclusive-load-sharing-element": {
+                    "total-load-sharing-element-bytes": 37200,
+                    "total-load-sharing-element-references": "62",
+                    "total-path-list-elements": 62,
+                    "recursive-path-list-elements": 0,
+                    "platform-shared-path-list-elements": 0,
+                    "retry-path-list-elements": 0,
+                    "total-loadinfo-elements": 62,
+                    "recursive-loadinfo-elements": 0,
+                    "platform-shared-loadinfo-elements": 0,
+                    "xpl-loadinfo-elements": 0
+                },
+                "shared-load-sharing-element": {
+                    "total-load-sharing-element-bytes": 0,
+                    "total-load-sharing-element-references": "0",
+                    "total-path-list-elements": 0,
+                    "recursive-path-list-elements": 0,
+                    "platform-shared-path-list-elements": 0,
+                    "retry-path-list-elements": 0,
+                    "total-loadinfo-elements": 0,
+                    "recursive-loadinfo-elements": 0,
+                    "platform-shared-loadinfo-elements": 0,
+                    "xpl-loadinfo-elements": 0
+                },
+                "cross-shared-load-sharing-element": {
+                    "total-load-sharing-element-bytes": 0,
+                    "total-load-sharing-element-references": "0",
+                    "total-path-list-elements": 0,
+                    "recursive-path-list-elements": 0,
+                    "platform-shared-path-list-elements": 0,
+                    "retry-path-list-elements": 0,
+                    "total-loadinfo-elements": 0,
+                    "recursive-loadinfo-elements": 0,
+                    "platform-shared-loadinfo-elements": 0,
+                    "xpl-loadinfo-elements": 0
+                },
+                "encap-shared-load-sharing-element": {
+                    "total-load-sharing-element-bytes": 0,
+                    "total-load-sharing-element-references": "0",
+                    "total-path-list-elements": 0,
+                    "recursive-path-list-elements": 0,
+                    "platform-shared-path-list-elements": 0,
+                    "retry-path-list-elements": 0,
+                    "total-loadinfo-elements": 0,
+                    "recursive-loadinfo-elements": 0,
+                    "platform-shared-loadinfo-elements": 0,
+                    "xpl-loadinfo-elements": 0
+                },
+                "leaves-used-bytes": 12400,
+                "reresolve-entries": 0,
+                "old-unresolved-entries": 0,
+                "new-unresolved-entries": 0,
+                "unresolved-entries": 0,
+                "cef-route-drops": 0,
+                "cef-version-mismatch-route-drops": "0",
+                "delete-cache-num-entries": 0,
+                "existing-leaves-revisions": 0,
+                "fib-default-prefix": 0,
+                "fib-default-prefix-mask-length": 0,
+                "next-hops": 48,
+                "incomplete-next-hops": 0,
+                "resolution-timer": 15,
+                "slow-process-timer": 15,
+                "max-resolution-timer": 15,
+                "imposition-prefixes": 0,
+                "extended-prefixes": 0,
+                "cef-label-recycled-routes": 0,
+                "loadinfo-backwalks": 0,
+                "protected-route-count": 0,
+                "lisp-eid-prefixes": 0,
+                "lisp-eid-valid-prefixes": 0,
+                "lisp-rloc-objects": 0,
+                "number-routes-srv6-headend": 0,
+                "number-routes-srv6-endpoint": 0,
+                "number-of-sr-labels": 0,
+                "dropped-pathlist-count": 0,
+                "prefix-masklen-distribution": {
+                    "unicast-prefix": [
+                        {
+                            "mask-length": 32,
+                            "number-of-prefixes": 50
+                        },
+                        {
+                            "mask-length": 24,
+                            "number-of-prefixes": 2
+                        },
+                        {
+                            "mask-length": 8,
+                            "number-of-prefixes": 1
+                        },
+                        {
+                            "mask-length": 0,
+                            "number-of-prefixes": 1
+                        }
+                    ],
+                    "broadcast-prefix": [
+                        {
+                            "mask-length": 32,
+                            "number-of-prefixes": 6
+                        }
+                    ],
+                    "multicast-prefix": [
+                        {
+                            "mask-length": 24,
+                            "number-of-prefixes": 1
+                        },
+                        {
+                            "mask-length": 4,
+                            "number-of-prefixes": 1
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "timestamp": "1764800156424",
+            "keys": [
+                {
+                    "node-name": "0/RP0/CPU0"
+                },
+                {
+                    "protocol-name": "ipv4"
+                },
+                {
+                    "vrf-name": "**iid"
+                }
+            ],
+            "content": {
+                "prefix": "30:2e:30:2e:30:2e:30:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00",
+                "table-id": 3758098389,
+                "table-id-pointer": 2570616672,
+                "vrf-id": 1610614741,
+                "virtual-router-id": 536870912,
+                "load-balancing": "l4",
+                "forwarding-elements": 11,
+                "routes": 5,
+                "prefix-in-place-modifications": 0,
+                "stale-prefix-deletes": 0,
+                "load-sharing-elements": 5,
+                "load-sharing-references": "5",
+                "total-load-share-element-bytes": 3000,
+                "exclusive-load-sharing-element": {
+                    "total-load-sharing-element-bytes": 3000,
+                    "total-load-sharing-element-references": "5",
+                    "total-path-list-elements": 5,
+                    "recursive-path-list-elements": 0,
+                    "platform-shared-path-list-elements": 0,
+                    "retry-path-list-elements": 0,
+                    "total-loadinfo-elements": 5,
+                    "recursive-loadinfo-elements": 0,
+                    "platform-shared-loadinfo-elements": 0,
+                    "xpl-loadinfo-elements": 0
+                },
+                "shared-load-sharing-element": {
+                    "total-load-sharing-element-bytes": 0,
+                    "total-load-sharing-element-references": "0",
+                    "total-path-list-elements": 0,
+                    "recursive-path-list-elements": 0,
+                    "platform-shared-path-list-elements": 0,
+                    "retry-path-list-elements": 0,
+                    "total-loadinfo-elements": 0,
+                    "recursive-loadinfo-elements": 0,
+                    "platform-shared-loadinfo-elements": 0,
+                    "xpl-loadinfo-elements": 0
+                },
+                "cross-shared-load-sharing-element": {
+                    "total-load-sharing-element-bytes": 0,
+                    "total-load-sharing-element-references": "0",
+                    "total-path-list-elements": 0,
+                    "recursive-path-list-elements": 0,
+                    "platform-shared-path-list-elements": 0,
+                    "retry-path-list-elements": 0,
+                    "total-loadinfo-elements": 0,
+                    "recursive-loadinfo-elements": 0,
+                    "platform-shared-loadinfo-elements": 0,
+                    "xpl-loadinfo-elements": 0
+                },
+                "encap-shared-load-sharing-element": {
+                    "total-load-sharing-element-bytes": 0,
+                    "total-load-sharing-element-references": "0",
+                    "total-path-list-elements": 0,
+                    "recursive-path-list-elements": 0,
+                    "platform-shared-path-list-elements": 0,
+                    "retry-path-list-elements": 0,
+                    "total-loadinfo-elements": 0,
+                    "recursive-loadinfo-elements": 0,
+                    "platform-shared-loadinfo-elements": 0,
+                    "xpl-loadinfo-elements": 0
+                },
+                "leaves-used-bytes": 1000,
+                "reresolve-entries": 0,
+                "old-unresolved-entries": 0,
+                "new-unresolved-entries": 0,
+                "unresolved-entries": 0,
+                "cef-route-drops": 0,
+                "cef-version-mismatch-route-drops": "0",
+                "delete-cache-num-entries": 0,
+                "existing-leaves-revisions": 0,
+                "fib-default-prefix": 0,
+                "fib-default-prefix-mask-length": 0,
+                "next-hops": 0,
+                "incomplete-next-hops": 0,
+                "resolution-timer": 15,
+                "slow-process-timer": 15,
+                "max-resolution-timer": 15,
+                "imposition-prefixes": 0,
+                "extended-prefixes": 0,
+                "cef-label-recycled-routes": 0,
+                "loadinfo-backwalks": 0,
+                "protected-route-count": 0,
+                "lisp-eid-prefixes": 0,
+                "lisp-eid-valid-prefixes": 0,
+                "lisp-rloc-objects": 0,
+                "number-routes-srv6-headend": 0,
+                "number-routes-srv6-endpoint": 0,
+                "number-of-sr-labels": 0,
+                "dropped-pathlist-count": 0,
+                "prefix-masklen-distribution": {
+                    "unicast-prefix": [
+                        {
+                            "mask-length": 0,
+                            "number-of-prefixes": 1
+                        }
+                    ],
+                    "broadcast-prefix": [
+                        {
+                            "mask-length": 32,
+                            "number-of-prefixes": 2
+                        }
+                    ],
+                    "multicast-prefix": [
+                        {
+                            "mask-length": 24,
+                            "number-of-prefixes": 1
+                        },
+                        {
+                            "mask-length": 4,
+                            "number-of-prefixes": 1
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "timestamp": "1764800156429",
+            "keys": [
+                {
+                    "node-name": "0/RP0/CPU0"
+                },
+                {
+                    "protocol-name": "ipv6"
+                },
+                {
+                    "vrf-name": "default"
+                }
+            ],
+            "content": {
+                "prefix": "30:2e:30:2e:30:2e:30:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00",
+                "table-id": 3766484992,
+                "table-id-pointer": 2566608256,
+                "vrf-id": 1610612736,
+                "virtual-router-id": 536870912,
+                "load-balancing": "l4",
+                "forwarding-elements": 77,
+                "routes": 37,
+                "prefix-in-place-modifications": 0,
+                "stale-prefix-deletes": 0,
+                "load-sharing-elements": 25,
+                "load-sharing-references": "36",
+                "total-load-share-element-bytes": 16216,
+                "exclusive-load-sharing-element": {
+                    "total-load-sharing-element-bytes": 8216,
+                    "total-load-sharing-element-references": "13",
+                    "total-path-list-elements": 13,
+                    "recursive-path-list-elements": 0,
+                    "platform-shared-path-list-elements": 0,
+                    "retry-path-list-elements": 0,
+                    "total-loadinfo-elements": 13,
+                    "recursive-loadinfo-elements": 0,
+                    "platform-shared-loadinfo-elements": 0,
+                    "xpl-loadinfo-elements": 0
+                },
+                "shared-load-sharing-element": {
+                    "total-load-sharing-element-bytes": 8000,
+                    "total-load-sharing-element-references": "23",
+                    "total-path-list-elements": 12,
+                    "recursive-path-list-elements": 0,
+                    "platform-shared-path-list-elements": 0,
+                    "retry-path-list-elements": 0,
+                    "total-loadinfo-elements": 12,
+                    "recursive-loadinfo-elements": 0,
+                    "platform-shared-loadinfo-elements": 0,
+                    "xpl-loadinfo-elements": 0
+                },
+                "cross-shared-load-sharing-element": {
+                    "total-load-sharing-element-bytes": 0,
+                    "total-load-sharing-element-references": "0",
+                    "total-path-list-elements": 0,
+                    "recursive-path-list-elements": 0,
+                    "platform-shared-path-list-elements": 0,
+                    "retry-path-list-elements": 0,
+                    "total-loadinfo-elements": 0,
+                    "recursive-loadinfo-elements": 0,
+                    "platform-shared-loadinfo-elements": 0,
+                    "xpl-loadinfo-elements": 0
+                },
+                "encap-shared-load-sharing-element": {
+                    "total-load-sharing-element-bytes": 0,
+                    "total-load-sharing-element-references": "0",
+                    "total-path-list-elements": 0,
+                    "recursive-path-list-elements": 0,
+                    "platform-shared-path-list-elements": 0,
+                    "retry-path-list-elements": 0,
+                    "total-loadinfo-elements": 0,
+                    "recursive-loadinfo-elements": 0,
+                    "platform-shared-loadinfo-elements": 0,
+                    "xpl-loadinfo-elements": 0
+                },
+                "leaves-used-bytes": 7400,
+                "reresolve-entries": 0,
+                "old-unresolved-entries": 0,
+                "new-unresolved-entries": 0,
+                "unresolved-entries": 0,
+                "cef-route-drops": 0,
+                "cef-version-mismatch-route-drops": "0",
+                "delete-cache-num-entries": 0,
+                "existing-leaves-revisions": 6,
+                "fib-default-prefix": 0,
+                "fib-default-prefix-mask-length": 0,
+                "next-hops": 8,
+                "incomplete-next-hops": 0,
+                "resolution-timer": 15,
+                "slow-process-timer": 15,
+                "max-resolution-timer": 15,
+                "imposition-prefixes": 0,
+                "extended-prefixes": 0,
+                "cef-label-recycled-routes": 0,
+                "loadinfo-backwalks": 0,
+                "protected-route-count": 0,
+                "lisp-eid-prefixes": 0,
+                "lisp-eid-valid-prefixes": 0,
+                "lisp-rloc-objects": 0,
+                "number-routes-srv6-headend": 6,
+                "number-routes-srv6-endpoint": 9,
+                "number-of-sr-labels": 0,
+                "dropped-pathlist-count": 0,
+                "prefix-masklen-distribution": {
+                    "unicast-prefix": [
+                        {
+                            "mask-length": 128,
+                            "number-of-prefixes": 13
+                        },
+                        {
+                            "mask-length": 104,
+                            "number-of-prefixes": 1
+                        },
+                        {
+                            "mask-length": 64,
+                            "number-of-prefixes": 5
+                        },
+                        {
+                            "mask-length": 48,
+                            "number-of-prefixes": 11
+                        },
+                        {
+                            "mask-length": 10,
+                            "number-of-prefixes": 1
+                        },
+                        {
+                            "mask-length": 0,
+                            "number-of-prefixes": 1
+                        }
+                    ],
+                    "multicast-prefix": [
+                        {
+                            "mask-length": 128,
+                            "number-of-prefixes": 1
+                        },
+                        {
+                            "mask-length": 104,
+                            "number-of-prefixes": 1
+                        },
+                        {
+                            "mask-length": 16,
+                            "number-of-prefixes": 3
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "timestamp": "1764800156430",
+            "keys": [
+                {
+                    "node-name": "0/RP0/CPU0"
+                },
+                {
+                    "protocol-name": "ipv6"
+                },
+                {
+                    "vrf-name": "**iid"
+                }
+            ],
+            "content": {
+                "prefix": "30:2e:30:2e:30:2e:30:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00",
+                "table-id": 3766486997,
+                "table-id-pointer": 2579295504,
+                "vrf-id": 1610614741,
+                "virtual-router-id": 536870912,
+                "load-balancing": "l4",
+                "forwarding-elements": 15,
+                "routes": 7,
+                "prefix-in-place-modifications": 0,
+                "stale-prefix-deletes": 0,
+                "load-sharing-elements": 7,
+                "load-sharing-references": "7",
+                "total-load-share-element-bytes": 4424,
+                "exclusive-load-sharing-element": {
+                    "total-load-sharing-element-bytes": 4424,
+                    "total-load-sharing-element-references": "7",
+                    "total-path-list-elements": 7,
+                    "recursive-path-list-elements": 0,
+                    "platform-shared-path-list-elements": 0,
+                    "retry-path-list-elements": 0,
+                    "total-loadinfo-elements": 7,
+                    "recursive-loadinfo-elements": 0,
+                    "platform-shared-loadinfo-elements": 0,
+                    "xpl-loadinfo-elements": 0
+                },
+                "shared-load-sharing-element": {
+                    "total-load-sharing-element-bytes": 0,
+                    "total-load-sharing-element-references": "0",
+                    "total-path-list-elements": 0,
+                    "recursive-path-list-elements": 0,
+                    "platform-shared-path-list-elements": 0,
+                    "retry-path-list-elements": 0,
+                    "total-loadinfo-elements": 0,
+                    "recursive-loadinfo-elements": 0,
+                    "platform-shared-loadinfo-elements": 0,
+                    "xpl-loadinfo-elements": 0
+                },
+                "cross-shared-load-sharing-element": {
+                    "total-load-sharing-element-bytes": 0,
+                    "total-load-sharing-element-references": "0",
+                    "total-path-list-elements": 0,
+                    "recursive-path-list-elements": 0,
+                    "platform-shared-path-list-elements": 0,
+                    "retry-path-list-elements": 0,
+                    "total-loadinfo-elements": 0,
+                    "recursive-loadinfo-elements": 0,
+                    "platform-shared-loadinfo-elements": 0,
+                    "xpl-loadinfo-elements": 0
+                },
+                "encap-shared-load-sharing-element": {
+                    "total-load-sharing-element-bytes": 0,
+                    "total-load-sharing-element-references": "0",
+                    "total-path-list-elements": 0,
+                    "recursive-path-list-elements": 0,
+                    "platform-shared-path-list-elements": 0,
+                    "retry-path-list-elements": 0,
+                    "total-loadinfo-elements": 0,
+                    "recursive-loadinfo-elements": 0,
+                    "platform-shared-loadinfo-elements": 0,
+                    "xpl-loadinfo-elements": 0
+                },
+                "leaves-used-bytes": 1400,
+                "reresolve-entries": 0,
+                "old-unresolved-entries": 0,
+                "new-unresolved-entries": 0,
+                "unresolved-entries": 0,
+                "cef-route-drops": 0,
+                "cef-version-mismatch-route-drops": "0",
+                "delete-cache-num-entries": 0,
+                "existing-leaves-revisions": 0,
+                "fib-default-prefix": 0,
+                "fib-default-prefix-mask-length": 0,
+                "next-hops": 0,
+                "incomplete-next-hops": 0,
+                "resolution-timer": 15,
+                "slow-process-timer": 15,
+                "max-resolution-timer": 15,
+                "imposition-prefixes": 0,
+                "extended-prefixes": 0,
+                "cef-label-recycled-routes": 0,
+                "loadinfo-backwalks": 0,
+                "protected-route-count": 0,
+                "lisp-eid-prefixes": 0,
+                "lisp-eid-valid-prefixes": 0,
+                "lisp-rloc-objects": 0,
+                "number-routes-srv6-headend": 0,
+                "number-routes-srv6-endpoint": 0,
+                "number-of-sr-labels": 0,
+                "dropped-pathlist-count": 0,
+                "prefix-masklen-distribution": {
+                    "unicast-prefix": [
+                        {
+                            "mask-length": 10,
+                            "number-of-prefixes": 1
+                        },
+                        {
+                            "mask-length": 0,
+                            "number-of-prefixes": 1
+                        }
+                    ],
+                    "multicast-prefix": [
+                        {
+                            "mask-length": 128,
+                            "number-of-prefixes": 1
+                        },
+                        {
+                            "mask-length": 104,
+                            "number-of-prefixes": 1
+                        },
+                        {
+                            "mask-length": 16,
+                            "number-of-prefixes": 3
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "timestamp": "1764800156434",
+            "keys": [
+                {
+                    "node-name": "0/RP0/CPU0"
+                },
+                {
+                    "protocol-name": "mpls"
+                },
+                {
+                    "vrf-name": "default"
+                }
+            ],
+            "content": {
+                "prefix": "30:2e:30:2e:30:2e:30:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00",
+                "table-id": 0,
+                "table-id-pointer": 2551987064,
+                "vrf-id": 0,
+                "virtual-router-id": 0,
+                "load-balancing": "l4",
+                "forwarding-elements": 9,
+                "routes": 8,
+                "prefix-in-place-modifications": 0,
+                "stale-prefix-deletes": 0,
+                "load-sharing-elements": 8,
+                "load-sharing-references": "16",
+                "total-load-share-element-bytes": 5696,
+                "exclusive-load-sharing-element": {
+                    "total-load-sharing-element-bytes": 5696,
+                    "total-load-sharing-element-references": "16",
+                    "total-path-list-elements": 8,
+                    "recursive-path-list-elements": 0,
+                    "platform-shared-path-list-elements": 0,
+                    "retry-path-list-elements": 0,
+                    "total-loadinfo-elements": 12,
+                    "recursive-loadinfo-elements": 0,
+                    "platform-shared-loadinfo-elements": 0,
+                    "xpl-loadinfo-elements": 0
+                },
+                "shared-load-sharing-element": {
+                    "total-load-sharing-element-bytes": 0,
+                    "total-load-sharing-element-references": "0",
+                    "total-path-list-elements": 0,
+                    "recursive-path-list-elements": 0,
+                    "platform-shared-path-list-elements": 0,
+                    "retry-path-list-elements": 0,
+                    "total-loadinfo-elements": 0,
+                    "recursive-loadinfo-elements": 0,
+                    "platform-shared-loadinfo-elements": 0,
+                    "xpl-loadinfo-elements": 0
+                },
+                "cross-shared-load-sharing-element": {
+                    "total-load-sharing-element-bytes": 0,
+                    "total-load-sharing-element-references": "0",
+                    "total-path-list-elements": 0,
+                    "recursive-path-list-elements": 0,
+                    "platform-shared-path-list-elements": 0,
+                    "retry-path-list-elements": 0,
+                    "total-loadinfo-elements": 0,
+                    "recursive-loadinfo-elements": 0,
+                    "platform-shared-loadinfo-elements": 0,
+                    "xpl-loadinfo-elements": 0
+                },
+                "encap-shared-load-sharing-element": {
+                    "total-load-sharing-element-bytes": 0,
+                    "total-load-sharing-element-references": "0",
+                    "total-path-list-elements": 0,
+                    "recursive-path-list-elements": 0,
+                    "platform-shared-path-list-elements": 0,
+                    "retry-path-list-elements": 0,
+                    "total-loadinfo-elements": 0,
+                    "recursive-loadinfo-elements": 0,
+                    "platform-shared-loadinfo-elements": 0,
+                    "xpl-loadinfo-elements": 0
+                },
+                "leaves-used-bytes": 1600,
+                "reresolve-entries": 0,
+                "old-unresolved-entries": 0,
+                "new-unresolved-entries": 0,
+                "unresolved-entries": 0,
+                "cef-route-drops": 4,
+                "cef-version-mismatch-route-drops": "0",
+                "delete-cache-num-entries": 0,
+                "existing-leaves-revisions": 0,
+                "fib-default-prefix": 0,
+                "fib-default-prefix-mask-length": 0,
+                "next-hops": 0,
+                "incomplete-next-hops": 0,
+                "resolution-timer": 15,
+                "slow-process-timer": 15,
+                "max-resolution-timer": 15,
+                "imposition-prefixes": 0,
+                "extended-prefixes": 8,
+                "cef-label-recycled-routes": 0,
+                "loadinfo-backwalks": 0,
+                "protected-route-count": 0,
+                "lisp-eid-prefixes": 0,
+                "lisp-eid-valid-prefixes": 0,
+                "lisp-rloc-objects": 0,
+                "number-routes-srv6-headend": 0,
+                "number-routes-srv6-endpoint": 0,
+                "number-of-sr-labels": 0,
+                "dropped-pathlist-count": 0
+            }
+        }
+    ],
+    "collection_end_time": "1764800156436"
+}

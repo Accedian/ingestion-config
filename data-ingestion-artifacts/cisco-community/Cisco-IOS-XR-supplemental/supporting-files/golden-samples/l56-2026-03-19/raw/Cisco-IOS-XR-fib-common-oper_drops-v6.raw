@@ -1,0 +1,8 @@
+[node0_RP0_CPU0:~]$mdt_exec -c30000 -s Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops-v6
+Enter any key to exit...
+ Sub_id 200000001, flag 0, len 0
+ Sub_id 200000001, flag 4, len 1115
+--------
+{"node_id_str":"l56","subscription_id_str":"app_TEST_200000001","encoding_path":"Cisco-IOS-XR-fib-common-oper:fib-statistics/nodes/node/drops-v6","collection_id":"130697","collection_start_time":"1773943601027","msg_timestamp":"1773943601037","data_json":[{"timestamp":"1773943601035","keys":[{"node-name":"0/RP0/CPU0"}],"content":{"no-route-packets":"130813","punt-unreachable-packets":"0","df-unreachable-packets":"0","encapsulation-failure-packets":"0","incomplete-adjacency-packets":"0","unresolved-prefix-packets":"0","unsupported-feature-packets":"0","discard-packets":"0","checksum-error-packets":"0","fragmenation-consumed-packets":"0","fragmenation-failure-packets":"0","null-packets":"0","rpf-check-failure-packets":"0","acl-in-rpf-packets":"0","rp-destination-drop-packets":"0","total-number-of-drop-packets":"0","mpls-disabled-interface":"0","gre-lookup-failed-drop":"0","gre-error-drop":"0","lisp-punt-drops":"0","lisp-encap-error-drops":"0","lisp-decap-error-drops":"0","multi-label-drops":"0","unreachable-sr-label-drops":"0","ttl-expired-sr-label-drops":"0"}}],"collection_end_time":"1773943601037"}
+--------
+ Sub_id 200000001, flag 8, len 0
