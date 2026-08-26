@@ -1,0 +1,462 @@
+{
+  "data": {
+    "attributes": {
+      "_id": "openmetricsnode-exporter-netstat",
+      "_rev": "1-59736107935222d3a876daeba5d2eb4a",
+      "createdTimestamp": 1754669895524,
+      "customMetrics": null,
+      "dictionaryName": "openmetrics-node-exporter-netstat",
+      "dictionaryType": "global",
+      "dimensions": [
+        {
+          "analyticsName": "monitoredObjectId",
+          "dataType": "string",
+          "rawName": "monitoredObjectId"
+        },
+        {
+          "analyticsName": "monitoredObjectName",
+          "dataType": "string",
+          "rawName": "monitoredObjectName"
+        },
+        {
+          "analyticsName": "timestamp",
+          "dataType": "long",
+          "rawName": "timestamp"
+        },
+        {
+          "analyticsName": "direction",
+          "dataType": "integer",
+          "rawName": "direction"
+        },
+        {
+          "analyticsName": "agentId",
+          "dataType": "string",
+          "rawName": "agentId"
+        },
+        {
+          "analyticsName": "agentName",
+          "dataType": "string",
+          "rawName": "agentName"
+        },
+        {
+          "analyticsName": "agentType",
+          "dataType": "string",
+          "rawName": "agentType"
+        },
+        {
+          "analyticsName": "host",
+          "dataType": "string",
+          "rawName": "host"
+        },
+        {
+          "analyticsName": "objectType",
+          "dataType": "string",
+          "rawName": "objectType"
+        },
+        {
+          "analyticsName": "sessionId",
+          "dataType": "string",
+          "rawName": "sessionId"
+        },
+        {
+          "analyticsName": "sessionName",
+          "dataType": "string",
+          "rawName": "sessionName"
+        },
+        {
+          "analyticsName": "url",
+          "dataType": "string",
+          "rawName": "url"
+        }
+      ],
+      "lastModifiedTimestamp": 1754669895524,
+      "metricType": "timeseries",
+      "metrics": [
+        {
+          "analyticsName": "icmp6InErrors",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Icmp6_InErrors_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "icmp6InMsgs",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Icmp6_InMsgs_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "icmp6OutMsgs",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Icmp6_OutMsgs_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "icmpInErrors",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Icmp_InErrors_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "icmpInMsgs",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Icmp_InMsgs_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "icmpOutMsgs",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Icmp_OutMsgs_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "ip6InOctets",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Ip6_InOctets_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "ip6OutOctets",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Ip6_OutOctets_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "ipExtInOctets",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "IpExt_InOctets_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "ipExtOutOctets",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "IpExt_OutOctets_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "ipForwarding",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Ip_Forwarding_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "tcpExtListenDrops",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "TcpExt_ListenDrops_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "tcpExtListenOverflows",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "TcpExt_ListenOverflows_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "tcpExtSyncookiesFailed",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "TcpExt_SyncookiesFailed_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "tcpExtSyncookiesRecv",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "TcpExt_SyncookiesRecv_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "tcpExtSyncookiesSent",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "TcpExt_SyncookiesSent_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "tcpExtTCPOFOQueue",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "TcpExt_TCPOFOQueue_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "tcpExtTCPRcvQDrop",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "TcpExt_TCPRcvQDrop_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "tcpExtTCPSynRetrans",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "TcpExt_TCPSynRetrans_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "tcpExtTCPTimeouts",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "TcpExt_TCPTimeouts_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "tcpActiveOpens",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Tcp_ActiveOpens_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "tcpCurrEstab",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Tcp_CurrEstab_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "tcpInErrs",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Tcp_InErrs_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "tcpInSegs",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Tcp_InSegs_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "tcpOutRsts",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Tcp_OutRsts_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "tcpOutSegs",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Tcp_OutSegs_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "tcpPassiveOpens",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Tcp_PassiveOpens_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "tcpRetransSegs",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Tcp_RetransSegs_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "udp6InDatagrams",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Udp6_InDatagrams_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "udp6InErrors",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Udp6_InErrors_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "udp6NoPorts",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Udp6_NoPorts_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "udp6OutDatagrams",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Udp6_OutDatagrams_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "udp6RcvbufErrors",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Udp6_RcvbufErrors_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "udp6SndbufErrors",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Udp6_SndbufErrors_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "udpLite6InErrors",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "UdpLite6_InErrors_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "udpLiteInErrors",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "UdpLite_InErrors_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "udpInDatagrams",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Udp_InDatagrams_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "udpInErrors",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Udp_InErrors_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "udpNoPorts",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Udp_NoPorts_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "udpOutDatagrams",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Udp_OutDatagrams_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "udpRcvbufErrors",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Udp_RcvbufErrors_value",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "udpSndbufErrors",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "Udp_SndbufErrors_value",
+          "unit": "value"
+        }
+      ],
+      "objectType": "node-exporter-netstat",
+      "tenantId": "662576c1-997c-4c47-a321-b8ce68b8f769",
+      "vendor": "openmetrics"
+    },
+    "id": "openmetricsnode-exporter-netstat",
+    "type": "ingestionDictionaries"
+  },
+  "violations": []
+}

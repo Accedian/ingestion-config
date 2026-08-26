@@ -1,0 +1,47 @@
+version: '3'
+## 
+## DOCKER COMPOSE VANILLA TELEGRAF AND LOCAL SYSTEM CONFIG
+##
+## vanilla telegraf instance scrapes the openmetrics interface of 
+## the node-exporter on the local system. Use this to build and 
+## refine your telegraf configuration.
+##
+services:
+  telegraf:
+    image: "telegraf:latest"
+    restart: "always"
+    volumes:
+      - type: bind
+        source: ../telemetry-collector-configuration/telegraf.conf
+        target: /etc/telegraf/telegraf.conf
+      #
+      ## NOTE: Make sure you have an empty file called metrics.out in the local 
+      ## directory before you un-comment and run this configuration, otherwise
+      ## docker will try to create an empty directory and telegraf will fail
+      ## to run.
+      #
+      # - type: bind
+      #   source: ./metrics.out
+      #   target: /tmp/metrics.out
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+    networks:
+      - node-exporter
+  node-exporter:
+    image: "bitnami/node-exporter:latest"
+    # cap_add:
+    # - NET_ADMIN
+    # - NET_RAW
+    restart: "always"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+    networks:
+      - node-exporter
+
+networks:
+  node-exporter:
+    driver: bridge

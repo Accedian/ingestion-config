@@ -1,0 +1,266 @@
+{
+  "data": {
+    "attributes": {
+      "_id": "openmetricsnode-exporter-disk",
+      "_rev": "1-1d53f1562e4a2ed1c4538974779d9098",
+      "createdTimestamp": 1754669895329,
+      "customMetrics": null,
+      "dictionaryName": "openmetrics-node-exporter-disk",
+      "dictionaryType": "global",
+      "dimensions": [
+        {
+          "analyticsName": "monitoredObjectId",
+          "dataType": "string",
+          "rawName": "monitoredObjectId"
+        },
+        {
+          "analyticsName": "monitoredObjectName",
+          "dataType": "string",
+          "rawName": "monitoredObjectName"
+        },
+        {
+          "analyticsName": "timestamp",
+          "dataType": "long",
+          "rawName": "timestamp"
+        },
+        {
+          "analyticsName": "direction",
+          "dataType": "integer",
+          "rawName": "direction"
+        },
+        {
+          "analyticsName": "agentId",
+          "dataType": "string",
+          "rawName": "agentId"
+        },
+        {
+          "analyticsName": "agentName",
+          "dataType": "string",
+          "rawName": "agentName"
+        },
+        {
+          "analyticsName": "agentType",
+          "dataType": "string",
+          "rawName": "agentType"
+        },
+        {
+          "analyticsName": "device",
+          "dataType": "string",
+          "rawName": "device"
+        },
+        {
+          "analyticsName": "host",
+          "dataType": "string",
+          "rawName": "host"
+        },
+        {
+          "analyticsName": "major",
+          "dataType": "string",
+          "rawName": "major"
+        },
+        {
+          "analyticsName": "minor",
+          "dataType": "string",
+          "rawName": "minor"
+        },
+        {
+          "analyticsName": "objectType",
+          "dataType": "string",
+          "rawName": "objectType"
+        },
+        {
+          "analyticsName": "rotational",
+          "dataType": "string",
+          "rawName": "rotational"
+        },
+        {
+          "analyticsName": "sessionId",
+          "dataType": "string",
+          "rawName": "sessionId"
+        },
+        {
+          "analyticsName": "sessionName",
+          "dataType": "string",
+          "rawName": "sessionName"
+        },
+        {
+          "analyticsName": "url",
+          "dataType": "string",
+          "rawName": "url"
+        }
+      ],
+      "lastModifiedTimestamp": 1754669895329,
+      "metricType": "timeseries",
+      "metrics": [
+        {
+          "analyticsName": "discardTimeSecondsTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "discard_time_seconds_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "discardedSectorsTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "discarded_sectors_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "discardsCompletedTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "discards_completed_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "discardsMergedTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "discards_merged_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "flushRequestsTimeSecondsTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "flush_requests_time_seconds_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "flushRequestsTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "flush_requests_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "info",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "info_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "ioNow",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "io_now_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "ioTimeSecondsTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "io_time_seconds_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "ioTimeWeightedSecondsTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "io_time_weighted_seconds_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "readBytesTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "read_bytes_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "readTimeSecondsTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "read_time_seconds_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "readsCompletedTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "reads_completed_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "readsMergedTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "reads_merged_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "writeTimeSecondsTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "write_time_seconds_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "writesCompletedTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "writes_completed_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "writesMergedTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "writes_merged_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "writtenBytesTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "written_bytes_total_counter",
+          "unit": "value"
+        }
+      ],
+      "objectType": "node-exporter-disk",
+      "tenantId": "662576c1-997c-4c47-a321-b8ce68b8f769",
+      "vendor": "openmetrics"
+    },
+    "id": "openmetricsnode-exporter-disk",
+    "type": "ingestionDictionaries"
+  },
+  "violations": []
+}

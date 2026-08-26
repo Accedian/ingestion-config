@@ -1,0 +1,423 @@
+{
+  "data": {
+    "attributes": {
+      "_id": "openmetricsnode-exporter-network",
+      "_rev": "1-064fea6f1dd6bb3bfb2d64c6eef89e9d",
+      "createdTimestamp": 1754669895572,
+      "customMetrics": null,
+      "dictionaryName": "openmetrics-node-exporter-network",
+      "dictionaryType": "global",
+      "dimensions": [
+        {
+          "analyticsName": "monitoredObjectId",
+          "dataType": "string",
+          "rawName": "monitoredObjectId"
+        },
+        {
+          "analyticsName": "monitoredObjectName",
+          "dataType": "string",
+          "rawName": "monitoredObjectName"
+        },
+        {
+          "analyticsName": "timestamp",
+          "dataType": "long",
+          "rawName": "timestamp"
+        },
+        {
+          "analyticsName": "direction",
+          "dataType": "integer",
+          "rawName": "direction"
+        },
+        {
+          "analyticsName": "agentId",
+          "dataType": "string",
+          "rawName": "agentId"
+        },
+        {
+          "analyticsName": "agentName",
+          "dataType": "string",
+          "rawName": "agentName"
+        },
+        {
+          "analyticsName": "agentType",
+          "dataType": "string",
+          "rawName": "agentType"
+        },
+        {
+          "analyticsName": "device",
+          "dataType": "string",
+          "rawName": "device"
+        },
+        {
+          "analyticsName": "duplex",
+          "dataType": "string",
+          "rawName": "duplex"
+        },
+        {
+          "analyticsName": "host",
+          "dataType": "string",
+          "rawName": "host"
+        },
+        {
+          "analyticsName": "objectType",
+          "dataType": "string",
+          "rawName": "objectType"
+        },
+        {
+          "analyticsName": "operstate",
+          "dataType": "string",
+          "rawName": "operstate"
+        },
+        {
+          "analyticsName": "sessionId",
+          "dataType": "string",
+          "rawName": "sessionId"
+        },
+        {
+          "analyticsName": "sessionName",
+          "dataType": "string",
+          "rawName": "sessionName"
+        },
+        {
+          "analyticsName": "url",
+          "dataType": "string",
+          "rawName": "url"
+        }
+      ],
+      "lastModifiedTimestamp": 1754669895572,
+      "metricType": "timeseries",
+      "metrics": [
+        {
+          "analyticsName": "addressAssignType",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "address_assign_type_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "carrierChangesTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "carrier_changes_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "carrierDownChangesTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "carrier_down_changes_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "carrier",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "carrier_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "carrierUpChangesTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "carrier_up_changes_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "deviceId",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "device_id_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "dormant",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "dormant_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "flags",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "flags_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "ifaceId",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "iface_id_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "ifaceLink",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "iface_link_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "ifaceLinkMode",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "iface_link_mode_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "info",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "info_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "mtuBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "mtu_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "nameAssignType",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "name_assign_type_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "netDevGroup",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "net_dev_group_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "protocolType",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "protocol_type_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "receiveBytesTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "receive_bytes_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "receiveCompressedTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "receive_compressed_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "receiveDropTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "receive_drop_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "receiveErrsTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "receive_errs_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "receiveFifoTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "receive_fifo_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "receiveFrameTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "receive_frame_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "receiveMulticastTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "receive_multicast_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "receiveNohandlerTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "receive_nohandler_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "receivePacketsTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "receive_packets_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "speedBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "speed_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "transmitBytesTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "transmit_bytes_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "transmitCarrierTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "transmit_carrier_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "transmitCollsTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "transmit_colls_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "transmitCompressedTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "transmit_compressed_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "transmitDropTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "transmit_drop_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "transmitErrsTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "transmit_errs_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "transmitFifoTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "transmit_fifo_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "transmitPacketsTotal",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "transmit_packets_total_counter",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "transmitQueueLength",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "transmit_queue_length_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "up",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "up_gauge",
+          "unit": "value"
+        }
+      ],
+      "objectType": "node-exporter-network",
+      "tenantId": "662576c1-997c-4c47-a321-b8ce68b8f769",
+      "vendor": "openmetrics"
+    },
+    "id": "openmetricsnode-exporter-network",
+    "type": "ingestionDictionaries"
+  },
+  "violations": []
+}

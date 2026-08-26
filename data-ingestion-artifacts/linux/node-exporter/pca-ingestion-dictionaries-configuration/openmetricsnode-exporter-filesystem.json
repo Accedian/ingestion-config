@@ -1,0 +1,185 @@
+{
+  "data": {
+    "attributes": {
+      "_id": "openmetricsnode-exporter-filesystem",
+      "_rev": "1-b00f72bb7ccf8e0acb00256391effe94",
+      "createdTimestamp": 1754669895371,
+      "customMetrics": null,
+      "dictionaryName": "openmetrics-node-exporter-filesystem",
+      "dictionaryType": "global",
+      "dimensions": [
+        {
+          "analyticsName": "monitoredObjectId",
+          "dataType": "string",
+          "rawName": "monitoredObjectId"
+        },
+        {
+          "analyticsName": "monitoredObjectName",
+          "dataType": "string",
+          "rawName": "monitoredObjectName"
+        },
+        {
+          "analyticsName": "timestamp",
+          "dataType": "long",
+          "rawName": "timestamp"
+        },
+        {
+          "analyticsName": "direction",
+          "dataType": "integer",
+          "rawName": "direction"
+        },
+        {
+          "analyticsName": "agentId",
+          "dataType": "string",
+          "rawName": "agentId"
+        },
+        {
+          "analyticsName": "agentName",
+          "dataType": "string",
+          "rawName": "agentName"
+        },
+        {
+          "analyticsName": "agentType",
+          "dataType": "string",
+          "rawName": "agentType"
+        },
+        {
+          "analyticsName": "fstype",
+          "dataType": "string",
+          "rawName": "fstype"
+        },
+        {
+          "analyticsName": "host",
+          "dataType": "string",
+          "rawName": "host"
+        },
+        {
+          "analyticsName": "major",
+          "dataType": "string",
+          "rawName": "major"
+        },
+        {
+          "analyticsName": "minor",
+          "dataType": "string",
+          "rawName": "minor"
+        },
+        {
+          "analyticsName": "mountpoint",
+          "dataType": "string",
+          "rawName": "mountpoint"
+        },
+        {
+          "analyticsName": "objectType",
+          "dataType": "string",
+          "rawName": "objectType"
+        },
+        {
+          "analyticsName": "sessionId",
+          "dataType": "string",
+          "rawName": "sessionId"
+        },
+        {
+          "analyticsName": "sessionName",
+          "dataType": "string",
+          "rawName": "sessionName"
+        },
+        {
+          "analyticsName": "url",
+          "dataType": "string",
+          "rawName": "url"
+        }
+      ],
+      "lastModifiedTimestamp": 1754669895371,
+      "metricType": "timeseries",
+      "metrics": [
+        {
+          "analyticsName": "availBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "avail_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "deviceError",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "device_error_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "filesFree",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "files_free_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "files",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "files_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "freeBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "free_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "mountInfo",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "mount_info_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "purgeableBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "purgeable_bytes_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "readonly",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "readonly_gauge",
+          "unit": "value"
+        },
+        {
+          "analyticsName": "sizeBytes",
+          "dataType": "double",
+          "directions": [
+            "-1"
+          ],
+          "rawName": "size_bytes_gauge",
+          "unit": "value"
+        }
+      ],
+      "objectType": "node-exporter-filesystem",
+      "tenantId": "662576c1-997c-4c47-a321-b8ce68b8f769",
+      "vendor": "openmetrics"
+    },
+    "id": "openmetricsnode-exporter-filesystem",
+    "type": "ingestionDictionaries"
+  },
+  "violations": []
+}
