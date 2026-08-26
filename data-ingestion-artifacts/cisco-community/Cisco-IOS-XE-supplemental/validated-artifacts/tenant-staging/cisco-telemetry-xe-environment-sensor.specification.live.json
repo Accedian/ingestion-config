@@ -1,0 +1,466 @@
+{
+  "status": 200,
+  "headers": {
+    "Date": "Mon, 01 Jun 2026 21:50:13 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block;",
+    "Cache-Control": "no-cache, no-store, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "Content-Security-Policy": "default-src 'self' https://buff-stage.cisco.com; frame-ancestors 'self'; worker-src 'self' blob: ; frame-src 'self' https://app.vidcast.io https://www.youtube.com; script-src 'self' 'unsafe-eval' https://js.userpilot.io https://app.intercom.io https://widget.intercom.io https://js.intercomcdn.com https://cdn.logrocket.io https://cdn.lr-ingest.io https://cdn.lr-in.com https://cdn.lr-in-prod.com https://cdn.lr-ingest.com https://cdn.ingest-lr.com https://cdn.lr-intake.com https://cdn.intake-lr.com https://cdn.logr-ingest.com https://cdn.lrkt-in.com https://cdn.lgrckt-in.com https://inproductexperience.cisco.com https://sdk.amazonaws.com https://buff-stage.cisco.com https://buffwidget-stage.cisco.com https://buff-ai-stage.cisco.com; base-uri 'self' https://widget.intercom.io https://js.intercomcdn.com; connect-src 'self' https://*.europe5.analytics.accedian.io/ https://auth.europe5.analytics.accedian.io:3443 https://events.mapbox.com https://api.mapbox.com https://api.maptiler.com/ wss://js.userpilot.io deploy.userpilot.io wss://api.userpilot.io https://api.sendgrid.com/v3/templates https://dns.google https://api.intercom.io https://api-iam.intercom.io https://api-ping.intercom.io https://nexus-websocket-a.intercom.io https://nexus-websocket-b.intercom.io https://nexus-long-poller-a.intercom.io https://nexus-long-poller-b.intercom.io wss://nexus-websocket-a.intercom.io wss://nexus-websocket-b.intercom.io https://uploads.intercomcdn.com https://uploads.intercomusercontent.com https://*.logrocket.io https://*.lr-ingest.io https://*.logrocket.com https://*.lr-in.com https://*.lr-in-prod.com https://*.lr-ingest.com https://*.ingest-lr.com https://*.lr-intake.com https://*.intake-lr.com https://*.logr-ingest.com https://*.lrkt-in.com https://*.lgrckt-in.com https://buffapi-stage.cisco.com https://int-id.cisco.com https://buff-stage.cisco.com wss://buff-stage.cisco.com/socket wss://buffwidget-stage.cisco.com/socket https://inproductexperience-aws.cisco.com https://inproductexperience.cisco.com https://checkip.amazonaws.com https://buff-ai-stage.cisco.com wss://buff-ai-stage.cisco.com/socket; child-src 'self' https://share.intercom.io https://intercom-sheets.com https://www.intercom-reporting.com https://www.youtube.com https://player.vimeo.com https://fast.wistia.net; img-src 'self' uploads.userpilot.io data: *.basemaps.cartocdn.com https://api.maptiler.com https://*.tile.maptiler.com/ accedian.com https://downloads.intercomcdn.com https://uploads.intercomusercontent.com https://gifs.intercomcdn.com https://intercom.help https://static.intercomassets.com https://i.ibb.co https://static.intercomcdn.com https://js.intercomcdn.com blob: data: https://static.intercomassets.com https://downloads.intercomcdn.com https://uploads.intercomusercontent.com https://gifs.intercomcdn.com https://video-messages.intercomcdn.com https://messenger-apps.intercom.io https://*.intercom-attachments-5.com https://*.intercom-attachments-6.com https://*.intercom-attachments-9.com https://buff-stage.cisco.com https://buffwidget-stage.cisco.com https://buff-ai-stage.cisco.com https://inproductexperience-aws.cisco.com; media-src data: blob: https://js.intercomcdn.com https://video-messages.intercomcdn.com; style-src 'self' 'unsafe-inline' https://api.mapbox.com https://api.maptiler.com/ https://fonts.googleapis.com https://cloud.typography.com https://buff-stage.cisco.com https://buffwidget-stage.cisco.com https://inproductexperience.cisco.com https://buff-ai-stage.cisco.com; font-src 'self' https://api.mapbox.com https://api.maptiler.com/ https://fonts.gstatic.com data: https://js.intercomcdn.com https://fonts.intercomcdn.com https://buff-stage.cisco.com https://buff-ai-stage.cisco.com;; form-action 'self' https://*.europe5.analytics.accedian.io/ https://auth.europe5.analytics.accedian.io:3443 https://api-iam.intercom.io https://apihub.document360.io/v1/Intercom/sheet https://intercom.help;",
+    "Host": "sanitized-ios-xe-validation-tenant.example",
+    "Strict-Transport-Security": "max-age=15768000; includeSubDomains"
+  },
+  "body": {
+    "_id": "ingestion-specification_2_cisco-telemetry-xe-environment-sensor",
+    "_rev": "8-75f09dad2a6a2e3c018537a5788805de",
+    "data": {
+      "dataType": "ingestion-specification",
+      "family": "cisco",
+      "objectType": "cisco-telemetry-xe-environment-sensor",
+      "state": "Published",
+      "tenantId": "f2d4d4bc-3765-4dd8-9a09-385677a4c8b9",
+      "transformations": {
+        "enhancement": {
+          "metrics": []
+        },
+        "ingestion": [],
+        "normalization": {
+          "dimensions": [
+            {
+              "output": "monitoredObjectId",
+              "source": "monitoredObjectId",
+              "type": "string"
+            },
+            {
+              "output": "monitoredObjectName",
+              "source": "monitoredObjectName",
+              "type": "string"
+            },
+            {
+              "output": "timestamp",
+              "source": "timestamp",
+              "type": "long"
+            },
+            {
+              "output": "direction",
+              "source": "direction",
+              "type": "integer"
+            },
+            {
+              "output": "agentId",
+              "source": "agentId",
+              "type": "string"
+            },
+            {
+              "output": "agentName",
+              "source": "agentName",
+              "type": "string"
+            },
+            {
+              "output": "agentType",
+              "source": "agentType",
+              "type": "string"
+            },
+            {
+              "output": "objectType",
+              "source": "objectType",
+              "type": "string"
+            },
+            {
+              "output": "sessionId",
+              "source": "sessionId",
+              "type": "string"
+            },
+            {
+              "output": "sessionName",
+              "source": "sessionName",
+              "type": "string"
+            },
+            {
+              "output": "source",
+              "source": "source",
+              "type": "string"
+            }
+          ],
+          "metrics": [
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "HotSwap_Power_R0",
+              "source": "xe_environment_sensor_HotSwap_Power_R0",
+              "type": "double",
+              "units": "value"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "HotSwap_Volts_R0",
+              "source": "xe_environment_sensor_HotSwap_Volts_R0",
+              "type": "double",
+              "units": "volt"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_InltFrnt_1_0",
+              "source": "xe_environment_sensor_Temp_InltFrnt_1_0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_InltFrnt_2_0",
+              "source": "xe_environment_sensor_Temp_InltFrnt_2_0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_InltFrnt_R0",
+              "source": "xe_environment_sensor_Temp_InltFrnt_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_InltRear_1_0",
+              "source": "xe_environment_sensor_Temp_InltRear_1_0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_InltRear_2_0",
+              "source": "xe_environment_sensor_Temp_InltRear_2_0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_InltRear_R0",
+              "source": "xe_environment_sensor_Temp_InltRear_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_OtltFrnt_1_0",
+              "source": "xe_environment_sensor_Temp_OtltFrnt_1_0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_OtltFrnt_2_0",
+              "source": "xe_environment_sensor_Temp_OtltFrnt_2_0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_OtltFrnt_R0",
+              "source": "xe_environment_sensor_Temp_OtltFrnt_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_OtltRear_1_0",
+              "source": "xe_environment_sensor_Temp_OtltRear_1_0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_OtltRear_2_0",
+              "source": "xe_environment_sensor_Temp_OtltRear_2_0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_OtltRear_R0",
+              "source": "xe_environment_sensor_Temp_OtltRear_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_0_0_R0",
+              "source": "xe_environment_sensor_Temp_UADP_0_0_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_0_1_R0",
+              "source": "xe_environment_sensor_Temp_UADP_0_1_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_0_2_R0",
+              "source": "xe_environment_sensor_Temp_UADP_0_2_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_0_3_R0",
+              "source": "xe_environment_sensor_Temp_UADP_0_3_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_0_4_R0",
+              "source": "xe_environment_sensor_Temp_UADP_0_4_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_0_5_R0",
+              "source": "xe_environment_sensor_Temp_UADP_0_5_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_0_6_R0",
+              "source": "xe_environment_sensor_Temp_UADP_0_6_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_0_7_R0",
+              "source": "xe_environment_sensor_Temp_UADP_0_7_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_0_8_R0",
+              "source": "xe_environment_sensor_Temp_UADP_0_8_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_1_0_R0",
+              "source": "xe_environment_sensor_Temp_UADP_1_0_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_1_1_R0",
+              "source": "xe_environment_sensor_Temp_UADP_1_1_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_1_2_R0",
+              "source": "xe_environment_sensor_Temp_UADP_1_2_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_1_3_R0",
+              "source": "xe_environment_sensor_Temp_UADP_1_3_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_1_4_R0",
+              "source": "xe_environment_sensor_Temp_UADP_1_4_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_1_5_R0",
+              "source": "xe_environment_sensor_Temp_UADP_1_5_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_1_6_R0",
+              "source": "xe_environment_sensor_Temp_UADP_1_6_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_1_7_R0",
+              "source": "xe_environment_sensor_Temp_UADP_1_7_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_1_8_R0",
+              "source": "xe_environment_sensor_Temp_UADP_1_8_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_2_0_R0",
+              "source": "xe_environment_sensor_Temp_UADP_2_0_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_2_1_R0",
+              "source": "xe_environment_sensor_Temp_UADP_2_1_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_2_2_R0",
+              "source": "xe_environment_sensor_Temp_UADP_2_2_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_2_3_R0",
+              "source": "xe_environment_sensor_Temp_UADP_2_3_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_2_4_R0",
+              "source": "xe_environment_sensor_Temp_UADP_2_4_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_2_5_R0",
+              "source": "xe_environment_sensor_Temp_UADP_2_5_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_2_6_R0",
+              "source": "xe_environment_sensor_Temp_UADP_2_6_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_2_7_R0",
+              "source": "xe_environment_sensor_Temp_UADP_2_7_R0",
+              "type": "double",
+              "units": "deg_c"
+            },
+            {
+              "directions": [
+                "-1"
+              ],
+              "output": "Temp_UADP_2_8_R0",
+              "source": "xe_environment_sensor_Temp_UADP_2_8_R0",
+              "type": "double",
+              "units": "deg_c"
+            }
+          ]
+        }
+      },
+      "version": "0.0.1"
+    }
+  }
+}

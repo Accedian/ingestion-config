@@ -1,0 +1,175 @@
+{
+  "validationSource": [
+    "sanitized IOS XE validation tenant",
+    "sanitized PTP validation tenant"
+  ],
+  "validatedDate": "2026-06-01 / 2026-06-13 / 2026-06-15 / 2026-06-25",
+  "validation": "BGP/environment collector smoke test and tenant dictionary publish succeeded; PTP ingestion-staging specs were published and PTP clock CSV values validated after microsecond normalization; Catalyst 9300 current recapture validated the environment aggregate transform without a fixed field whitelist and preserved PTP correction-stats identity.",
+  "collector": {
+    "agentId": "1c94fd13-157b-4029-b8bf-92dd55fc8bc6",
+    "container": "telemetry-collector_XE",
+    "deployedConfig": "collector-deployment/telemetry-collector_XE.deployed.dataTransformation.conf"
+  },
+  "dictionaries": {
+    "bgp": {
+      "id": "cisco-cisco-telemetry-xe-bgp-neighbor",
+      "rev": "2-028ff2daa988a757c4524d84a313da64",
+      "dictionaryType": "custom",
+      "vendor": "cisco",
+      "metrics": 33,
+      "dimensions": 21,
+      "units": [
+        "bytes",
+        "sec",
+        "value"
+      ],
+      "directions": [
+        "-1"
+      ]
+    },
+    "environment": {
+      "id": "cisco-cisco-telemetry-xe-environment-sensor",
+      "rev": "2-b298e5fa81721d7a07dc4adce79a9cdc",
+      "dictionaryType": "custom",
+      "vendor": "cisco",
+      "metrics": 41,
+      "dimensions": 11,
+      "units": [
+        "deg_c",
+        "value",
+        "volt"
+      ],
+      "directions": [
+        "-1"
+      ]
+    },
+    "clock": {
+      "id": "cisco-cisco-telemetry-xe-ptp-clock",
+      "rev": "6-b00a16d8a03f8cf517507db902677de6",
+      "dictionaryType": "custom",
+      "vendor": "cisco",
+      "metrics": 11,
+      "dimensions": 22,
+      "units": [
+        "bool",
+        "sec",
+        "value",
+        "μs"
+      ],
+      "directions": [
+        "-1"
+      ],
+      "ingestionSpec": "tenant-staging/cisco-telemetry-xe-ptp-clock.specification.live.json",
+      "dictionaryTemplate": "../pca-ingestion-dictionaries-configuration/cisco-telemetry-xe-ptp-clock.json",
+      "liveDictionary": "tenant-dictionaries/cisco-cisco-telemetry-xe-ptp-clock.live.json"
+    },
+    "parent": {
+      "id": "cisco-cisco-telemetry-xe-ptp-parent",
+      "rev": "1-a44bf8e1ef4da269319d78db390a6cca",
+      "dictionaryType": "custom",
+      "vendor": "cisco",
+      "metrics": 5,
+      "dimensions": 16,
+      "units": [
+        "value"
+      ],
+      "directions": [
+        "-1"
+      ],
+      "ingestionSpec": "tenant-staging/cisco-telemetry-xe-ptp-parent.specification.live.json",
+      "dictionaryTemplate": "../pca-ingestion-dictionaries-configuration/cisco-telemetry-xe-ptp-parent.json",
+      "liveDictionary": "tenant-dictionaries/cisco-cisco-telemetry-xe-ptp-parent.live.json"
+    },
+    "port": {
+      "id": "cisco-cisco-telemetry-xe-ptp-port",
+      "rev": "3-0a888f0f63af3a0beacba68fa21dd376",
+      "dictionaryType": "custom",
+      "vendor": "cisco",
+      "metrics": 10,
+      "dimensions": 16,
+      "units": [
+        "bool",
+        "value",
+        "μs"
+      ],
+      "directions": [
+        "-1"
+      ],
+      "ingestionSpec": "tenant-staging/cisco-telemetry-xe-ptp-port.specification.live.json",
+      "dictionaryTemplate": "../pca-ingestion-dictionaries-configuration/cisco-telemetry-xe-ptp-port.json",
+      "liveDictionary": "tenant-dictionaries/cisco-cisco-telemetry-xe-ptp-port.live.json"
+    },
+    "correctionStats": {
+      "id": "cisco-cisco-telemetry-xe-ptp-correction-stats",
+      "rev": "4-10eb96cfd21981c77305c92fa5b65615",
+      "dictionaryType": "custom",
+      "vendor": "cisco",
+      "metrics": 2,
+      "dimensions": 13,
+      "units": [
+        "μs"
+      ],
+      "directions": [
+        "-1"
+      ],
+      "ingestionSpec": "tenant-staging/cisco-telemetry-xe-ptp-correction-stats.specification.live.json",
+      "dictionaryTemplate": "../pca-ingestion-dictionaries-configuration/cisco-telemetry-xe-ptp-correction-stats.json",
+      "liveDictionary": "tenant-dictionaries/cisco-cisco-telemetry-xe-ptp-correction-stats.live.json"
+    }
+  },
+  "goldenSample": {
+    "archive": "golden-samples/xe-supplemental-telegraf-corrected-capture-20260601T151308Z.tar.gz",
+    "rows": 916,
+    "measurements": {
+      "xe_bgp_neighbors": 8,
+      "xe_cpu_stats": 4,
+      "xe_environment_sensor": 164,
+      "xe_if_stats": 728,
+      "xe_memory_stats": 12
+    },
+    "bgpRows": 8,
+    "environmentRows": 164,
+    "ptpArchive": "golden-samples/xe-ptp-c9300-pca-prototype-2-capture-20260612.tar.gz",
+    "ptpRows": 1716,
+    "ptpMeasurements": {
+      "xe_ptp_clock": 13,
+      "xe_ptp_port": 1677,
+      "xe_ptp_parent": 13,
+      "xe_ptp_correction_stats": 13
+    },
+    "currentC9300Archive": "golden-samples/xe-supplemental-c9300-current-capture-20260625.tar.gz",
+    "currentC9300Rows": 752,
+    "currentC9300Measurements": {
+      "xe_if_stats": 296,
+      "xe_environment_sensor": 48,
+      "xe_memory_stats": 9,
+      "xe_cpu_stats": 3,
+      "xe_ptp_port": 387,
+      "xe_ptp_clock": 3,
+      "xe_ptp_parent": 3,
+      "xe_ptp_correction_stats": 3
+    }
+  },
+  "ptpValidation": {
+    "lab": "sanitized PTP validation lab / Catalyst 9300",
+    "publishedSpecs": 4,
+    "profileMetricsEnabled": 28,
+    "clockCsvCheck": {
+      "meanPathDelayAverageMs": 0.000427656,
+      "meanPathDelayAverageUs": 0.427656,
+      "meanPathDelayAverageNs": 427.656,
+      "offsetFromMasterRangeNs": [
+        -54,
+        40
+      ],
+      "currentUtcOffsetSeconds": 37
+    },
+    "dictionaryApiComparison": {
+      "date": "2026-06-15",
+      "path": "tenant-dictionaries/ptp-dictionary-comparison-20260615.json",
+      "metricDiffs": 0,
+      "dimensionDiffs": 0,
+      "expectedMetadataDiff": "repo dictionary templates use dictionaryType=global; live validation-lab dictionaries use dictionaryType=custom"
+    }
+  }
+}
