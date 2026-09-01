@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ARTIFACT_DIR = Path(__file__).resolve().parents[2]
-TELEGRAF_CONF = ARTIFACT_DIR / "telemetry-collector-configuration" / "telegraf.conf"
+TELEGRAF_CONF = ARTIFACT_DIR / "telemetry-collector-configuration" / "cisco-telemetry-xr-supplemental.conf"
 L57_GOLDEN_BATCH = (
     ARTIFACT_DIR
     / "supporting-files"
@@ -146,7 +146,12 @@ class TestXrSupplementalOpenMetricsTagSanitization(unittest.TestCase):
         )
 
         actual = {
-            tag_name: apply_configured_tag_renames("test_metric", tag_name)
+            tag_name: apply_configured_tag_renames(
+                "power_management" if tag_name.startswith("pem_info_array/")
+                else "ep_ipm_receiver_metric" if tag_name.startswith("loss/")
+                else "fib_drops_v4",
+                tag_name,
+            )
             for tag_name in EXPECTED_SLASH_TAG_RENAMES
         }
         self.assertEqual(EXPECTED_SLASH_TAG_RENAMES, actual)
