@@ -73,3 +73,20 @@ Before further XR product work, refresh the saved `show run` state from both rou
 - `ethernet cfm`
 - `ethernet sla`
 - latest `telemetry model-driven` validation wiring
+
+## Supplemental XR Models Promoted from PR #16
+
+The supplemental IOS XR models introduced by PR #16 are now part of the product XR artifact set. Their dictionary definitions are in `pca-ingestion-dictionaries-configuration/`, and their raw captures and transformed validation samples are preserved under `supporting-files/`.
+
+Promoted models:
+
+- IPv4 BGP process information
+- FIB VRF summary
+- FIB drops for IPv4 and IPv6
+- FIB exceptions for IPv4, IPv6, and MPLS
+- IPv4 and IPv6 RIB summaries
+- IPM receiver metrics
+- power-management producer nodes
+- aggregate interface statistics
+
+The source PR describes these additions as exploratory and partially validated. They are therefore included with their evidence and collector wiring for product review; they are not represented as fully live-validated flows until the corresponding device and PCA checks are completed.
