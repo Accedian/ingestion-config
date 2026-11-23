@@ -64,11 +64,11 @@ PTP nanosecond metrics use explicit backtick casts and microsecond units, for ex
 cast(`xe_ptp_clock_mean_path_delay_ns` as DOUBLE) / 1000
 ```
 
-The live validation-lab API comparison found no metric or dimension diffs between the repo templates and tenant dictionaries. The only expected metadata difference is `dictionaryType`: repo templates follow the product/community package convention with `global`, while the live tenant stores the published dictionaries as `custom`.
+The live validation-lab API comparison found no metric or dimension diffs between the repo templates and tenant dictionaries. The only expected metadata difference is `dictionaryType`: repo templates use `global`, while the live tenant stores the published dictionaries as `custom`.
 
 ## Notes
 
-The tenant dictionary artifacts are live `custom` dictionaries. The package templates under `pca-ingestion-dictionaries-configuration/` are cisco-community repo artifacts and may retain template-oriented metadata such as `dictionaryType`.
+The tenant dictionary artifacts are live `custom` dictionaries. The product templates under `pca-ingestion-dictionaries-configuration/` may retain template-oriented metadata such as `dictionaryType`.
 
 During the ingestion-spec transition, keep both artifact families:
 

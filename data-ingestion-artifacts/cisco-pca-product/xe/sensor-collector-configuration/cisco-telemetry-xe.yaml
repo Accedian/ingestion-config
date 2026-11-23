@@ -1,3 +1,12 @@
+# Prometheus scrape job list for the supplemental IOS XE package.
+# Apply cisco-telemetry-xe-bgp-neighbor-delta-operations.json as the companion
+# Sensor Collector operations fragment under openMetricsConfig.operations.
 - job_name: cisco-telemetry-xe-interface
 - job_name: cisco-telemetry-xe-cpu
 - job_name: cisco-telemetry-xe-memory
+- job_name: cisco-telemetry-xe-bgp-neighbor
+- job_name: cisco-telemetry-xe-environment-sensor
+- job_name: cisco-telemetry-xe-ptp-clock
+- job_name: cisco-telemetry-xe-ptp-parent
+- job_name: cisco-telemetry-xe-ptp-port
+- job_name: cisco-telemetry-xe-ptp-correction-stats
